@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actually Free — Find the free apps they don&#x27;t want you to see.</title>
+<meta name="description" content="A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. Find the free apps they don&#x27;t want you to see.">
+<meta property="og:title" content="Actually Free — Find the free apps they don&#x27;t want you to see.">
+<meta property="og:description" content="A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. Find the free apps they don&#x27;t want you to see.">
+<meta property="og:url" content="https://free.certifiable.media/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Actually Free">
+<meta property="og:image" content="https://free.certifiable.media/assets/mascot-cartoon.webp">
+<link rel="icon" href="/assets/mascot-cartoon.webp">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/index.html">
+      <img id="mascot" src="/assets/mascot-cartoon.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
+      <span class="brand-text"><strong>Actually Free</strong><em>Find the free apps they don&#x27;t want you to see.</em></span>
+    </a>
+    <nav class="tabs" aria-label="Site sections">
+      <a href="/index.html" class="active">Directory</a>
+      <a href="/app/derickca-qr-cards.html">QR Cards</a>
+    </nav>
+    <div class="switchers">
+      <div class="switcher" role="group" aria-label="Site mode">
+        <button data-mode="playful" class="on" title="Playful mode">Playful</button><button data-mode="geek" title="Geek mode: full 2000s internet">Geek</button>
+      </div>
+      <div class="switcher" role="group" aria-label="Color theme">
+        <button data-theme="default" class="on" title="Follow system">Default</button><button data-theme="light" title="Light">Light</button><button data-theme="dark" title="Dark">Dark</button>
+      </div>
+    </div>
+  </div>
+  <div class="geek-badge" aria-hidden="true">best viewed at 800&times;600</div>
+</header>
+<main class="directory">
+  <section class="hero">
+    <h1>Actually free Android apps.</h1>
+    <p class="tagline"><span class="marquee-text">Find the free apps they don&#x27;t want you to see.</span></p>
+  </section>
+  <section class="promise-strip" aria-label="Our promise">
+  <span class="promise-label">Every app here:</span> <span class='lock'>✓ No ads</span> &middot; <span class='lock'>✓ No in-app purchases</span> &middot; <span class='lock'>✓ No subscriptions</span>
+</section>
+  <section class="controls" aria-label="Search and filter">
+    <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;…"
+           aria-label="Search apps" autocomplete="off">
+    <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
+      <button class="chip on" data-cat="">All</button>
+      <button class="chip" data-cat="Comms &amp; System">Comms &amp; System</button>
+      <button class="chip" data-cat="Media">Media</button>
+      <button class="chip" data-cat="Utilities">Utilities</button>
+      <button class="chip" data-cat="Utilities / Comms &amp; System">Utilities / Comms &amp; System</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Narrow it down">
+      <button class="pill" data-attr="open_source">Open source</button>
+      <button class="pill" data-attr="offline">Works offline</button>
+      <button class="pill" data-attr="no_account">No account needed</button>
+      <button class="pill" data-attr="made_by_us">Made by us</button>
+    </div>
+    <div class="filter-row sort-row">
+      <label>Sort:
+        <select id="sort">
+          <option value="name">Name A–Z</option>
+          <option value="rating">Highest rated</option>
+        </select>
+      </label>
+      <span id="result-count" class="result-count" aria-live="polite"></span>
+    </div>
+  </section>
+  <section id="grid" class="grid" aria-label="Apps"></section>
+  <p id="empty-state" class="empty-state" hidden></p>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android apps that are
+    actually free. Every app is checked before listing: no ads, no in-app purchases, no subscriptions.
+    If an app breaks the promise, report it and we'll take a look.</p>
+    <p class="footer-links">
+      <a id="suggest-link" href="#">Suggest an app</a> &middot;
+      <a href="/index.html">Directory</a> &middot;
+      <a href="/app/derickca-qr-cards.html">QR Cards</a>
+    </p>
+    <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
+    <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
+    <p class="count-line">We count clicks, not people.</p>
+  </div>
+</footer>
+<script src="/assets/config.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

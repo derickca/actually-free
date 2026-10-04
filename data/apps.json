@@ -1,0 +1,1509 @@
+[
+ {
+  "name": "Aard 2",
+  "package": "itkach.aard2",
+  "slug": "itkach-aard2",
+  "category": "Utilities",
+  "subcategory": "Dictionary",
+  "description": "Offline dictionary",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=itkach.aard2",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.26",
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "AdAway",
+  "package": "org.adaway",
+  "slug": "org-adaway",
+  "category": "Comms & System",
+  "subcategory": "Ad Blocker",
+  "description": "System-wide ad blocker (root or local VPN).",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/AdAway/AdAway"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Aegis Authenticator",
+  "package": "com.beemdevelopment.aegis",
+  "slug": "com-beemdevelopment-aegis",
+  "category": "Comms & System",
+  "subcategory": "Authenticator",
+  "description": "Two-factor authenticator (TOTP/HOTP).",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
+   "fdroid": true,
+   "github": "https://github.com/beemdevelopment/Aegis"
+  },
+  "rating": "4.69",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Alarm Klock",
+  "package": "com.angrydoughnuts.android.alarmclock",
+  "slug": "com-angrydoughnuts-android-alarmclock",
+  "category": "Utilities",
+  "subcategory": "Alarm clock",
+  "description": "An alarm clock",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Amaze File Manager",
+  "package": "com.amaze.filemanager",
+  "slug": "com-amaze-filemanager",
+  "category": "Utilities",
+  "subcategory": "File manager",
+  "description": "An open-source file manager following the Material Design guidelines.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "3.58",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": true
+ },
+ {
+  "name": "AntennaPod",
+  "package": "de.danoeh.antennapod",
+  "slug": "de-danoeh-antennapod",
+  "category": "Media",
+  "subcategory": "Podcast player",
+  "description": "Full-featured podcast player.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=de.danoeh.antennapod",
+   "fdroid": true,
+   "github": "https://github.com/AntennaPod/AntennaPod"
+  },
+  "rating": "4.84",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Audio Recorder",
+  "package": "com.dimowner.audiorecorder",
+  "slug": "com-dimowner-audiorecorder",
+  "category": "Media",
+  "subcategory": "Audio recorder",
+  "description": "Straightforward audio recorder.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/Dimowner/AudioRecorder"
+  },
+  "rating": "4.09",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": true
+ },
+ {
+  "name": "Auxio",
+  "package": "org.oxycblt.auxio",
+  "slug": "org-oxycblt-auxio",
+  "category": "Media",
+  "subcategory": "Music player",
+  "description": "Local music player with a clean interface.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/OxygenCobalt/Auxio"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Barcode Scanner",
+  "package": "com.atharok.barcodescanner",
+  "slug": "com-atharok-barcodescanner",
+  "category": "Utilities",
+  "subcategory": "QR/barcode scanner",
+  "description": "An open-source app that allows you to read and generate barcodes.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.atharok.barcodescanner",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.09",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Binary Eye",
+  "package": "de.markusfisch.android.binaryeye",
+  "slug": "de-markusfisch-android-binaryeye",
+  "category": "Utilities",
+  "subcategory": "QR/barcode scanner",
+  "description": "QR code and barcode scanner with no ads",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye",
+   "fdroid": true,
+   "github": "https://github.com/markusfisch/BinaryEye"
+  },
+  "rating": "4.84",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Breezy Weather",
+  "package": "org.breezyweather",
+  "slug": "org-breezyweather",
+  "category": "Utilities",
+  "subcategory": "Weather",
+  "description": "A feature-rich weather app with good visualizations and many sources.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/breezy-weather/breezy-weather"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Bubble",
+  "package": "org.woheller69.level",
+  "slug": "org-woheller69-level",
+  "category": "Utilities",
+  "subcategory": "Bubble level",
+  "description": "Spirit level and ruler",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Capy Reader",
+  "package": "com.capyreader.app",
+  "slug": "com-capyreader-app",
+  "category": "Media",
+  "subcategory": "RSS reader",
+  "description": "Modern RSS reader.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/jocmp/capyreader"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Chrono",
+  "package": "com.vicolo.chrono",
+  "slug": "com-vicolo-chrono",
+  "category": "Utilities",
+  "subcategory": "Timer/stopwatch",
+  "description": "Modern and powerful clock, alarms, timer and stopwatch.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Clima",
+  "package": "co.prestosole.clima",
+  "slug": "co-prestosole-clima",
+  "category": "Utilities",
+  "subcategory": "Weather",
+  "description": "Beautiful, minimal, and fast weather app",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Compass",
+  "package": "com.bobek.compass",
+  "slug": "com-bobek-compass",
+  "category": "Utilities",
+  "subcategory": "Compass",
+  "description": "A simple and clean compass",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.bobek.compass",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.61",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Converter NOW: Unit Converter",
+  "package": "com.ferrarid.converterpro",
+  "slug": "com-ferrarid-converterpro",
+  "category": "Utilities",
+  "subcategory": "Unit converter",
+  "description": "A simple, immediate and fast unit converter!",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.ferrarid.converterpro",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.51",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "dotGallery (ReFra)",
+  "package": "com.dot.gallery",
+  "slug": "com-dot-gallery",
+  "category": "Media",
+  "subcategory": "Gallery",
+  "description": "Simple photo gallery.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/IacobIonut01/Gallery"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Easer",
+  "package": "ryey.easer.beta",
+  "slug": "ryey-easer-beta",
+  "category": "Comms & System",
+  "subcategory": "System",
+  "description": "FOSS automation (Tasker alternative).",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/renyuneyun/Easer"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Etar - OpenSource Calendar",
+  "package": "ws.xsoh.etar",
+  "slug": "ws-xsoh-etar",
+  "category": "Utilities",
+  "subcategory": "Calendar",
+  "description": "Etar is a material designed open source calendar, for everyone!",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "F-Droid",
+  "package": "org.fdroid.fdroid",
+  "slug": "org-fdroid-fdroid",
+  "category": "Comms & System",
+  "subcategory": "System",
+  "description": "The FOSS app store itself belongs in the directory (it's how users find more actually-free apps).",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "FairEmail",
+  "package": "eu.faircode.email",
+  "slug": "eu-faircode-email",
+  "category": "Comms & System",
+  "subcategory": "Email",
+  "description": "Privacy-focused email client. The F-Droid build is fully unlocked.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/M66B/FairEmail"
+  },
+  "rating": "4.69",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": true
+ },
+ {
+  "name": "Feeder",
+  "package": "com.nononsenseapps.feeder.play",
+  "slug": "com-nononsenseapps-feeder-play",
+  "category": "Media",
+  "subcategory": "RSS reader",
+  "description": "RSS feed reader.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play",
+   "fdroid": true,
+   "github": "https://github.com/spacecowboy/Feeder"
+  },
+  "rating": "3.81",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Firefox",
+  "package": "org.mozilla.firefox",
+  "slug": "org-mozilla-firefox",
+  "category": "Comms & System",
+  "subcategory": "Browser",
+  "description": "The independent web browser.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
+   "fdroid": false,
+   "github": "https://github.com/mozilla-mobile/firefox-android"
+  },
+  "rating": "4.61",
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Flashlight Tiramisu",
+  "package": "com.pdb82.flashlighttiramisu",
+  "slug": "com-pdb82-flashlighttiramisu",
+  "category": "Utilities",
+  "subcategory": "Flashlight",
+  "description": "Flashlight with smoothly adjustable brightness.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "FlorisBoard",
+  "package": "dev.patrickgold.florisboard",
+  "slug": "dev-patrickgold-florisboard",
+  "category": "Comms & System",
+  "subcategory": "Keyboard",
+  "description": "Privacy-focused keyboard.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/florisboard/florisboard"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Flym DecSync",
+  "package": "org.decsync.flym",
+  "slug": "org-decsync-flym",
+  "category": "Media",
+  "subcategory": "RSS reader",
+  "description": "DecSync fork of the Flym RSS reader.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/39aldo39/Flym-DecSync"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify Calendar",
+  "package": "org.fossify.calendar",
+  "slug": "org-fossify-calendar",
+  "category": "Utilities",
+  "subcategory": "Calendar",
+  "description": "Securely plan, schedule, and set reminders with our private calendar app.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.30",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify Clock Beta",
+  "package": "org.fossify.clock",
+  "slug": "org-fossify-clock",
+  "category": "Utilities",
+  "subcategory": "Alarm clock",
+  "description": "Handy, lightweight, open-source clock app with essential features.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.clock",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify Contacts",
+  "package": "org.fossify.contacts",
+  "slug": "org-fossify-contacts",
+  "category": "Comms & System",
+  "subcategory": "Dialer & Contacts",
+  "description": "Contacts manager.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.contacts",
+   "fdroid": true,
+   "github": "https://github.com/FossifyOrg/Contacts"
+  },
+  "rating": "4.24",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify File Manager",
+  "package": "org.fossify.filemanager",
+  "slug": "org-fossify-filemanager",
+  "category": "Utilities",
+  "subcategory": "File manager",
+  "description": "Handy, lightweight, open-source file explorer with essential features.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.filemanager",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.36",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify Gallery",
+  "package": "org.fossify.gallery",
+  "slug": "org-fossify-gallery",
+  "category": "Media",
+  "subcategory": "Gallery",
+  "description": "Successor to Simple Gallery, privacy-focused.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
+   "fdroid": true,
+   "github": "https://github.com/FossifyOrg/Gallery"
+  },
+  "rating": "3.98",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify Phone",
+  "package": "org.fossify.phone",
+  "slug": "org-fossify-phone",
+  "category": "Comms & System",
+  "subcategory": "Dialer & Contacts",
+  "description": "Dialer and phone app.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.phone",
+   "fdroid": true,
+   "github": "https://github.com/FossifyOrg/Phone"
+  },
+  "rating": "4.20",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify SMS Messenger",
+  "package": "org.fossify.messages",
+  "slug": "org-fossify-messages",
+  "category": "Comms & System",
+  "subcategory": "SMS & Messaging",
+  "description": "Text messaging, minus the noise.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.messages",
+   "fdroid": true,
+   "github": "https://github.com/FossifyOrg/Messages"
+  },
+  "rating": "3.16",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Fossify Voice Recorder",
+  "package": "org.fossify.voicerecorder",
+  "slug": "org-fossify-voicerecorder",
+  "category": "Media",
+  "subcategory": "Audio recorder",
+  "description": "Voice recorder — offline, local storage.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.voicerecorder",
+   "fdroid": true,
+   "github": "https://github.com/FossifyOrg/Voice-Recorder"
+  },
+  "rating": "4.48",
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "HomerPlayer2",
+  "package": "com.studio4plus.homerplayer2",
+  "slug": "com-studio4plus-homerplayer2",
+  "category": "Media",
+  "subcategory": "Audiobook player",
+  "description": "Audiobook player designed for seniors — ultra-simple UI.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/msimonides/homerplayer2"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "KeePassDX",
+  "package": "com.kunzisoft.keepass.libre",
+  "slug": "com-kunzisoft-keepass-libre",
+  "category": "Comms & System",
+  "subcategory": "Password Manager",
+  "description": "Password manager (KeePass-compatible).",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/Kunzisoft/KeePassDX"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "KISS Launcher",
+  "package": "fr.neamar.kiss",
+  "slug": "fr-neamar-kiss",
+  "category": "Comms & System",
+  "subcategory": "Launcher",
+  "description": "Minimal search-based launcher.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=fr.neamar.kiss",
+   "fdroid": true,
+   "github": "https://github.com/Neamar/KISS"
+  },
+  "rating": "4.19",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Koler",
+  "package": "com.chooloo.www.koler",
+  "slug": "com-chooloo-www-koler",
+  "category": "Comms & System",
+  "subcategory": "Dialer & Contacts",
+  "description": "Simple phone dialer.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/Chooloo/koler"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "KOReader",
+  "package": "org.koreader.launcher.fdroid",
+  "slug": "org-koreader-launcher-fdroid",
+  "category": "Media",
+  "subcategory": "Ebook reader",
+  "description": "Document reader for e-books and PDFs.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/koreader/koreader"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Lawnchair",
+  "package": "app.lawnchair",
+  "slug": "app-lawnchair",
+  "category": "Comms & System",
+  "subcategory": "Launcher",
+  "description": "Customizable Pixel-style launcher.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "github": "https://github.com/LawnchairLauncher/lawnchair"
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "LxReader (CoolReader NG)",
+  "package": "io.gitlab.coolreader_ng.lxreader.fdroid",
+  "slug": "io-gitlab-coolreader-ng-lxreader-fdroid",
+  "category": "Media",
+  "subcategory": "Ebook reader",
+  "description": "E-book reader (a CoolReader NG fork).",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Markor",
+  "package": "net.gsantner.markor",
+  "slug": "net-gsantner-markor",
+  "category": "Utilities",
+  "subcategory": "Notes",
+  "description": "Text editor - Notes & ToDo. Lightweight. Markdown and todo.txt support.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=net.gsantner.markor",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.78",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Material Files",
+  "package": "me.zhanghai.android.files",
+  "slug": "me-zhanghai-android-files",
+  "category": "Utilities / Comms & System",
+  "subcategory": "File manager",
+  "description": "Open source Material Design file manager",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files",
+   "fdroid": true,
+   "github": "https://github.com/zhanghai/MaterialFiles"
+  },
+  "rating": "4.31",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Material Flashlight",
+  "package": "co.garmax.materialflashlight",
+  "slug": "co-garmax-materialflashlight",
+  "category": "Utilities",
+  "subcategory": "Flashlight",
+  "description": "Flashlight with some cool features",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=co.garmax.materialflashlight",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "mpv-android",
+  "package": "is.xyz.mpv",
+  "slug": "is-xyz-mpv",
+  "category": "Media",
+  "subcategory": "Video player",
+  "description": "Minimalist, powerful player.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=is.xyz.mpv",
+   "fdroid": true,
+   "github": "https://github.com/mpv-android/mpv-android"
+  },
+  "rating": "4.2",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "NetGuard",
+  "package": "eu.faircode.netguard",
+  "slug": "eu-faircode-netguard",
+  "category": "Comms & System",
+  "subcategory": "Firewall",
+  "description": "Firewall that blocks internet access per app. The F-Droid build is fully unlocked.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/M66B/NetGuard"
+  },
+  "rating": "4.25",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": true
+ },
+ {
+  "name": "NewPipe",
+  "package": "org.schabi.newpipe",
+  "slug": "org-schabi-newpipe",
+  "category": "Media",
+  "subcategory": "Video player",
+  "description": "Lightweight YouTube app — no account, no ads.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/TeamNewPipe/NewPipe"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Next Player",
+  "package": "dev.anilbeesetti.nextplayer",
+  "slug": "dev-anilbeesetti-nextplayer",
+  "category": "Media",
+  "subcategory": "Video player",
+  "description": "A clean, simple video player.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer",
+   "fdroid": true,
+   "github": "https://github.com/anilbeesetti/nextplayer"
+  },
+  "rating": "4.31",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Nextcloud",
+  "package": "com.nextcloud.client",
+  "slug": "com-nextcloud-client",
+  "category": "Comms & System",
+  "subcategory": "File Sync",
+  "description": "File sync client (connects to a Nextcloud server).",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
+   "fdroid": true,
+   "github": "https://github.com/nextcloud/android"
+  },
+  "rating": "4.71",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Notally | Minimalist Notes",
+  "package": "com.omgodse.notally",
+  "slug": "com-omgodse-notally",
+  "category": "Utilities",
+  "subcategory": "Notes",
+  "description": "A simple and elegant open source notes app",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.omgodse.notally",
+   "fdroid": true,
+   "github": "https://github.com/omgodse/notally"
+  },
+  "rating": "4.39",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Nova Video Player",
+  "package": "org.courville.nova",
+  "slug": "org-courville-nova",
+  "category": "Media",
+  "subcategory": "Video player",
+  "description": "Video player with network streaming support.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.courville.nova",
+   "fdroid": true,
+   "github": "https://github.com/nova-video-player/aos-AVP"
+  },
+  "rating": "4.12",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Open Camera",
+  "package": "net.sourceforge.opencamera",
+  "slug": "net-sourceforge-opencamera",
+  "category": "Media",
+  "subcategory": "Camera",
+  "description": "Open-source camera app with manual controls.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.0",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": true
+ },
+ {
+  "name": "OpenBoard",
+  "package": "org.dslul.openboard.inputmethod.latin",
+  "slug": "org-dslul-openboard-inputmethod-latin",
+  "category": "Comms & System",
+  "subcategory": "Keyboard",
+  "description": "Open-source keyboard based on AOSP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "github": "https://github.com/OpenBoard-team/OpenBoard"
+  },
+  "rating": null,
+  "attrs": {
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "OpenCalc",
+  "package": "com.darkempire78.opencalculator",
+  "slug": "com-darkempire78-opencalculator",
+  "category": "Utilities",
+  "subcategory": "Calculator",
+  "description": "Simple and beautiful calculator for Android",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.darkempire78.opencalculator",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.16",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "OpenTasks",
+  "package": "org.dmfs.tasks",
+  "slug": "org-dmfs-tasks",
+  "category": "Utilities",
+  "subcategory": "To-do lists",
+  "description": "Keep track of your list of goals",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Pedometer (PFA)",
+  "package": "org.secuso.privacyfriendlyactivitytracker",
+  "slug": "org-secuso-privacyfriendlyactivitytracker",
+  "category": "Utilities",
+  "subcategory": "Pedometer",
+  "description": "Counts your steps in the background. Customize daily goals.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "personalDNSfilter",
+  "package": "dnsfilter.android",
+  "slug": "dnsfilter-android",
+  "category": "Comms & System",
+  "subcategory": "Ad Blocker",
+  "description": "Local DNS filter, no root.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=dnsfilter.android",
+   "fdroid": true,
+   "github": "https://github.com/IngoZenz/personaldnsfilter"
+  },
+  "rating": "4.40",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Phonograph Plus",
+  "package": "player.phonograph.plus",
+  "slug": "player-phonograph-plus",
+  "category": "Media",
+  "subcategory": "Music player",
+  "description": "Material-design local music player (a Phonograph fork).",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/chr56/Phonograph_Plus"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Pocket Paint",
+  "package": "org.catrobat.paintroid",
+  "slug": "org-catrobat-paintroid",
+  "category": "Media",
+  "subcategory": "Image editor",
+  "description": "Draw and edit images.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.catrobat.paintroid",
+   "fdroid": true,
+   "github": "https://github.com/Catrobat/Paintroid"
+  },
+  "rating": "4.38",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Podcini",
+  "package": "ac.mdiq.Podcini.A",
+  "slug": "ac-mdiq-podcini-a",
+  "category": "Media",
+  "subcategory": "Podcast player",
+  "description": "AntennaPod fork with a different UI philosophy.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/XilinJia/Podcini.A"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Podverse",
+  "package": "com.podverse.fdroid",
+  "slug": "com-podverse-fdroid",
+  "category": "Media",
+  "subcategory": "Podcast player",
+  "description": "Podcast app with value4value / Podcasting 2.0 support.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/podverse/podverse-fdroid"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "QDict",
+  "package": "com.annie.dictionary.fork",
+  "slug": "com-annie-dictionary-fork",
+  "category": "Utilities",
+  "subcategory": "Dictionary",
+  "description": "A dictionary application for dictionaries in StarDict format.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "QR Cards",
+  "package": "derickca/qr-cards",
+  "slug": "derickca-qr-cards",
+  "category": "Utilities",
+  "subcategory": "QR codes",
+  "description": "A free offline Android app that keeps QR codes for the people, places, and things you actually need: vCards, guest Wi-Fi, saved addresses. Searchable library with color labels, present mode (full-screen QR at max brightness), a dynamic editor for 9 card types, per-card launcher shortcuts, and PNG/SVG export. No ads, no accounts, fully offline.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "github": "https://github.com/derickca/qr-cards"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": true,
+  "per_badge": false
+ },
+ {
+  "name": "ReadEra",
+  "package": "org.readera",
+  "slug": "org-readera",
+  "category": "Media",
+  "subcategory": "Ebook reader",
+  "description": "E-book and document reader.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.readera",
+   "fdroid": false,
+   "github": null
+  },
+  "rating": "4.86",
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "ReadYou",
+  "package": "me.ash.reader",
+  "slug": "me-ash-reader",
+  "category": "Media",
+  "subcategory": "RSS reader",
+  "description": "RSS reader with a modern interface.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/Ashinch/ReadYou"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Shelter",
+  "package": "net.typeblog.shelter",
+  "slug": "net-typeblog-shelter",
+  "category": "Comms & System",
+  "subcategory": "Privacy Tools",
+  "description": "Isolates apps using Android's work profile.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/PeterCxy/Shelter"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Simple Alarm Clock",
+  "package": "com.better.alarm",
+  "slug": "com-better-alarm",
+  "category": "Utilities",
+  "subcategory": "Alarm clock",
+  "description": "Improved alarm clock",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.better.alarm",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.36",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Simple Keyboard",
+  "package": "rkr.simplekeyboard.inputmethod",
+  "slug": "rkr-simplekeyboard-inputmethod",
+  "category": "Comms & System",
+  "subcategory": "Keyboard",
+  "description": "Minimal LatinIME fork, fully offline.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod",
+   "fdroid": true,
+   "github": "https://github.com/rkkr/simple-keyboard"
+  },
+  "rating": "3.92",
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Snapseed",
+  "package": "com.niksoftware.snapseed",
+  "slug": "com-niksoftware-snapseed",
+  "category": "Media",
+  "subcategory": "Image editor",
+  "description": "Google's free photo editor, no account needed.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.niksoftware.snapseed",
+   "fdroid": false,
+   "github": null
+  },
+  "rating": "4.8",
+  "attrs": {
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Stepsy: Step Counter",
+  "package": "com.nvllz.stepsy",
+  "slug": "com-nvllz-stepsy",
+  "category": "Utilities",
+  "subcategory": "Pedometer",
+  "description": "Your lightweight step counting buddy",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Syncthing-Fork",
+  "package": "com.github.catfriend1.syncthingfork",
+  "slug": "com-github-catfriend1-syncthingfork",
+  "category": "Comms & System",
+  "subcategory": "File Sync",
+  "description": "Decentralized file sync between your devices.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/Catfriend1/syncthing-android"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Termux",
+  "package": "com.termux",
+  "slug": "com-termux",
+  "category": "Comms & System",
+  "subcategory": "System",
+  "description": "Terminal emulator and Linux environment.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.termux",
+   "fdroid": true,
+   "github": "https://github.com/termux/termux-app"
+  },
+  "rating": "4.52",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "TrackerControl",
+  "package": "net.kollnig.missioncontrol.fdroid",
+  "slug": "net-kollnig-missioncontrol-fdroid",
+  "category": "Comms & System",
+  "subcategory": "Ad Blocker",
+  "description": "Monitors and blocks per-app trackers.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/TrackerControl/tracker-control-android"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Unit Converter Ultimate",
+  "package": "com.physphil.android.unitconverterultimate",
+  "slug": "com-physphil-android-unitconverterultimate",
+  "category": "Utilities",
+  "subcategory": "Unit converter",
+  "description": "Convert between units with ease",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Vanilla Music",
+  "package": "ch.blinkenlights.android.vanilla",
+  "slug": "ch-blinkenlights-android-vanilla",
+  "category": "Media",
+  "subcategory": "Music player",
+  "description": "Simple local music player.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/vanilla-music/vanilla"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Vinyl Music Player",
+  "package": "com.poupa.vinylmusicplayer",
+  "slug": "com-poupa-vinylmusicplayer",
+  "category": "Media",
+  "subcategory": "Music player",
+  "description": "Local music player.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.poupa.vinylmusicplayer",
+   "fdroid": true,
+   "github": "https://github.com/VinylMusicPlayer/VinylMusicPlayer"
+  },
+  "rating": "3.89",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "VLC",
+  "package": "org.videolan.vlc",
+  "slug": "org-videolan-vlc",
+  "category": "Media",
+  "subcategory": "Video player",
+  "description": "The classic free media player — plays just about everything.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.videolan.vlc",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": "4.05",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Voice Audiobook Player",
+  "package": "de.ph1b.audiobook",
+  "slug": "de-ph1b-audiobook",
+  "category": "Media",
+  "subcategory": "Audiobook player",
+  "description": "Audiobook player with bookmarks and a sleep timer.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=de.ph1b.audiobook",
+   "fdroid": true,
+   "github": "https://github.com/PaulWoitaschek/Voice"
+  },
+  "rating": "4.6",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ }
+]
