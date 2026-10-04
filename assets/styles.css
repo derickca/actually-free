@@ -120,6 +120,9 @@ a { color: var(--accent); }
   cursor: pointer;
 }
 .switcher button.on { background: var(--ink); color: var(--bg); }
+/* Icon-only theme buttons (FundingSpark's half-circle / sun / moon) */
+.switcher.theme-switcher button { padding: 6px 9px; line-height: 0; }
+.switcher.theme-switcher button svg { width: 17px; height: 17px; display: block; }
 .geek-badge {
   display: none;
   text-align: center;
@@ -438,8 +441,72 @@ a.store-badge:hover { filter: brightness(0.96); }
 :root[data-mode="geek"] .switcher { border-radius: 0; }
 :root[data-mode="geek"] .switcher button.on { background: #ffe97a; color: #000; }
 
+/* ============ Geek light theme: classic daytime 2000s web ============
+   The geek skin above hardcodes its dark starfield palette, so the theme
+   layer needs its own explicit light variant (explicit choice, plus
+   follow-the-system when theme=default). */
+:root[data-mode="geek"][data-theme="light"] {
+  --bg: #c9c9e8;
+  --ink: #1a1a4d;
+  --muted: #4d4d8c;
+  --card: #f2f2fb;
+  --card-edge: #8c8cc9;
+  --accent: #0000cc;
+  --accent-soft: #dadaf5;
+  --good: #0a7a2e;
+  --good-soft: #d9f0de;
+  --header-bg: #b3b3da;
+  --chip-bg: #e0e0f4;
+  --chip-on: #0000cc;
+  --input-bg: #ffffff;
+  --shadow: none;
+  --on-accent: #ffffff;
+}
+:root[data-mode="geek"][data-theme="light"] body {
+  background-color: #c9c9e8;
+  background-image: none;
+  color: #1a1a4d;
+}
+:root[data-mode="geek"][data-theme="light"] .brand-text strong,
+:root[data-mode="geek"][data-theme="light"] .hero h1 { color: #5a4a00; }
+:root[data-mode="geek"][data-theme="light"] .marquee-text { color: #0000cc; }
+:root[data-mode="geek"][data-theme="light"] .chip.on,
+:root[data-mode="geek"][data-theme="light"] .pill.on { color: #ffffff; }
+@media (prefers-color-scheme: light) {
+  :root[data-mode="geek"]:not([data-theme="dark"]) {
+    --bg: #c9c9e8;
+    --ink: #1a1a4d;
+    --muted: #4d4d8c;
+    --card: #f2f2fb;
+    --card-edge: #8c8cc9;
+    --accent: #0000cc;
+    --accent-soft: #dadaf5;
+    --good: #0a7a2e;
+    --good-soft: #d9f0de;
+    --header-bg: #b3b3da;
+    --chip-bg: #e0e0f4;
+    --chip-on: #0000cc;
+    --input-bg: #ffffff;
+    --shadow: none;
+    --on-accent: #ffffff;
+  }
+  :root[data-mode="geek"]:not([data-theme="dark"]) body {
+    background-color: #c9c9e8;
+    background-image: none;
+    color: #1a1a4d;
+  }
+  :root[data-mode="geek"]:not([data-theme="dark"]) .brand-text strong,
+  :root[data-mode="geek"]:not([data-theme="dark"]) .hero h1 { color: #5a4a00; }
+  :root[data-mode="geek"]:not([data-theme="dark"]) .marquee-text { color: #0000cc; }
+  :root[data-mode="geek"]:not([data-theme="dark"]) .chip.on,
+  :root[data-mode="geek"]:not([data-theme="dark"]) .pill.on { color: #ffffff; }
+}
+
 @media (max-width: 640px) {
-  .header-inner { gap: 10px; }
+  .header-inner { gap: 10px; flex-wrap: nowrap; }
+  .brand-text em { display: none; } /* tagline hides on phones so the header stays one row */
+  .brand-text strong { font-size: 1.05rem; }
+  .brand img { width: 44px; height: 44px; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
   .detail-card { padding: 18px; }
 }
