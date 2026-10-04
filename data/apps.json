@@ -23,7 +23,7 @@
   "name": "AdAway",
   "package": "org.adaway",
   "slug": "org-adaway",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Ad Blocker",
   "description": "System-wide ad blocker (root or local VPN).",
   "stores": {
@@ -42,7 +42,7 @@
   "name": "Aegis Authenticator",
   "package": "com.beemdevelopment.aegis",
   "slug": "com-beemdevelopment-aegis",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Authenticator",
   "description": "Two-factor authenticator (TOTP/HOTP).",
   "stores": {
@@ -346,7 +346,7 @@
   "name": "Easer",
   "package": "ryey.easer.beta",
   "slug": "ryey-easer-beta",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "System",
   "description": "FOSS automation (Tasker alternative).",
   "stores": {
@@ -384,7 +384,7 @@
   "name": "F-Droid",
   "package": "org.fdroid.fdroid",
   "slug": "org-fdroid-fdroid",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "System",
   "description": "The FOSS app store itself belongs in the directory (it's how users find more actually-free apps).",
   "stores": {
@@ -403,7 +403,7 @@
   "name": "FairEmail",
   "package": "eu.faircode.email",
   "slug": "eu-faircode-email",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Email",
   "description": "Privacy-focused email client. The F-Droid build is fully unlocked.",
   "stores": {
@@ -441,7 +441,7 @@
   "name": "Firefox",
   "package": "org.mozilla.firefox",
   "slug": "org-mozilla-firefox",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Browser",
   "description": "The independent web browser.",
   "stores": {
@@ -477,7 +477,7 @@
   "name": "FlorisBoard",
   "package": "dev.patrickgold.florisboard",
   "slug": "dev-patrickgold-florisboard",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Keyboard",
   "description": "Privacy-focused keyboard.",
   "stores": {
@@ -553,7 +553,7 @@
   "name": "Fossify Contacts",
   "package": "org.fossify.contacts",
   "slug": "org-fossify-contacts",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Dialer & Contacts",
   "description": "Contacts manager.",
   "stores": {
@@ -610,7 +610,7 @@
   "name": "Fossify Phone",
   "package": "org.fossify.phone",
   "slug": "org-fossify-phone",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Dialer & Contacts",
   "description": "Dialer and phone app.",
   "stores": {
@@ -629,7 +629,7 @@
   "name": "Fossify SMS Messenger",
   "package": "org.fossify.messages",
   "slug": "org-fossify-messages",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "SMS & Messaging",
   "description": "Text messaging, minus the noise.",
   "stores": {
@@ -687,7 +687,7 @@
   "name": "KeePassDX",
   "package": "com.kunzisoft.keepass.libre",
   "slug": "com-kunzisoft-keepass-libre",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Password Manager",
   "description": "Password manager (KeePass-compatible).",
   "stores": {
@@ -708,7 +708,7 @@
   "name": "KISS Launcher",
   "package": "fr.neamar.kiss",
   "slug": "fr-neamar-kiss",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Launcher",
   "description": "Minimal search-based launcher.",
   "stores": {
@@ -727,7 +727,7 @@
   "name": "Koler",
   "package": "com.chooloo.www.koler",
   "slug": "com-chooloo-www-koler",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Dialer & Contacts",
   "description": "Simple phone dialer.",
   "stores": {
@@ -765,7 +765,7 @@
   "name": "Lawnchair",
   "package": "app.lawnchair",
   "slug": "app-lawnchair",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Launcher",
   "description": "Customizable Pixel-style launcher.",
   "stores": {
@@ -820,7 +820,7 @@
   "name": "Material Files",
   "package": "me.zhanghai.android.files",
   "slug": "me-zhanghai-android-files",
-  "category": "Utilities / Comms & System",
+  "category": "Utilities",
   "subcategory": "File manager",
   "description": "Open source Material Design file manager",
   "stores": {
@@ -877,7 +877,7 @@
   "name": "NetGuard",
   "package": "eu.faircode.netguard",
   "slug": "eu-faircode-netguard",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Firewall",
   "description": "Firewall that blocks internet access per app. The F-Droid build is fully unlocked.",
   "stores": {
@@ -935,7 +935,7 @@
   "name": "Nextcloud",
   "package": "com.nextcloud.client",
   "slug": "com-nextcloud-client",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "File Sync",
   "description": "File sync client (connects to a Nextcloud server).",
   "stores": {
@@ -1011,7 +1011,7 @@
   "name": "OpenBoard",
   "package": "org.dslul.openboard.inputmethod.latin",
   "slug": "org-dslul-openboard-inputmethod-latin",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Keyboard",
   "description": "Open-source keyboard based on AOSP.",
   "stores": {
@@ -1088,7 +1088,7 @@
   "name": "personalDNSfilter",
   "package": "dnsfilter.android",
   "slug": "dnsfilter-android",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Ad Blocker",
   "description": "Local DNS filter, no root.",
   "stores": {
@@ -1259,7 +1259,7 @@
   "name": "Shelter",
   "package": "net.typeblog.shelter",
   "slug": "net-typeblog-shelter",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Privacy Tools",
   "description": "Isolates apps using Android's work profile.",
   "stores": {
@@ -1298,7 +1298,7 @@
   "name": "Simple Keyboard",
   "package": "rkr.simplekeyboard.inputmethod",
   "slug": "rkr-simplekeyboard-inputmethod",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Keyboard",
   "description": "Minimal LatinIME fork, fully offline.",
   "stores": {
@@ -1356,7 +1356,7 @@
   "name": "Syncthing-Fork",
   "package": "com.github.catfriend1.syncthingfork",
   "slug": "com-github-catfriend1-syncthingfork",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "File Sync",
   "description": "Decentralized file sync between your devices.",
   "stores": {
@@ -1377,7 +1377,7 @@
   "name": "Termux",
   "package": "com.termux",
   "slug": "com-termux",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "System",
   "description": "Terminal emulator and Linux environment.",
   "stores": {
@@ -1396,7 +1396,7 @@
   "name": "TrackerControl",
   "package": "net.kollnig.missioncontrol.fdroid",
   "slug": "net-kollnig-missioncontrol-fdroid",
-  "category": "Comms & System",
+  "category": "Comms",
   "subcategory": "Ad Blocker",
   "description": "Monitors and blocks per-app trackers.",
   "stores": {

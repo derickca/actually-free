@@ -147,6 +147,15 @@ def derive_attrs(rec):
     return attrs
 
 
+# Filter labels are single words with no textual overlap: "Comms & System"
+# shortens to "Comms", and the one-off "Utilities / Comms & System" record
+# (Material Files, a file manager) folds into "Utilities".
+CATEGORY_FIXUPS = {
+    "Comms & System": "Comms",
+    "Utilities / Comms & System": "Utilities",
+}
+
+
 def clean_record(rec):
     stores = rec.get("stores") or {}
     ver = rec.get("verification") or {}
@@ -161,7 +170,7 @@ def clean_record(rec):
         "name": rec["name"],
         "package": rec["package"],
         "slug": slugify(rec["package"]),
-        "category": rec.get("category") or "Utilities",
+        "category": CATEGORY_FIXUPS.get(rec.get("category"), rec.get("category") or "Utilities"),
         "subcategory": rec.get("subcategory") or "",
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
@@ -367,6 +376,17 @@ def site_header():
         '<rect x="25" y="25" width="3" height="3" fill="#0f766e"/>'
         "</svg>"
     )
+    # Theme icons borrowed from FundingSpark: half-circle = follow system,
+    # sun = light, moon = dark. Icon-only buttons keep the header to one row.
+    theme_btns = "".join(
+        f'<button data-theme="{v}"{ " class=\"on\"" if v == "default" else "" }'
+        f' title="{t}" aria-label="{t}">{s}</button>'
+        for v, (s, t) in {
+            "default": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor" stroke="none"/></svg>', "Follow system"),
+            "light": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>', "Light"),
+            "dark": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>', "Dark"),
+        }.items()
+    )
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/index.html">
@@ -381,8 +401,8 @@ def site_header():
       <div class="switcher" role="group" aria-label="Site mode">
         <button data-mode="playful" class="on" title="Playful mode">Playful</button><button data-mode="geek" title="Geek mode: full 2000s internet">Geek</button>
       </div>
-      <div class="switcher" role="group" aria-label="Color theme">
-        <button data-theme="default" class="on" title="Follow system">Default</button><button data-theme="light" title="Light">Light</button><button data-theme="dark" title="Dark">Dark</button>
+      <div class="switcher theme-switcher" role="group" aria-label="Color theme">
+        {theme_btns}
       </div>
     </div>
   </div>
