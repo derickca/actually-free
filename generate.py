@@ -7,10 +7,12 @@ fully static site deployable as-is to Cloudflare Pages.
 
 Regenerate everything with:  python3 generate.py
 """
+import base64
 import html
 import json
 import os
 import re
+import secrets
 import shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -180,13 +182,155 @@ def load_corpus():
     return kept
 
 # ---------------------------------------------------------------------------
+# ntfy feedback — browser POSTs straight to ntfy.sh, no backend, no relay.
+# The topic is a mild secret: it is NEVER written into page source as a plain
+# string. Each build XORs it with a fresh random 16-byte key, stores base64 in
+# the forms' data-t attributes, embeds the key separately in app.js, and the
+# browser decodes it only at send time. (Same pattern as FundingSpark.)
+# ---------------------------------------------------------------------------
+
+NTFY_STORE = os.path.expanduser("~/.config/actually-free/ntfy-topic")
+NTFY_UNAVAILABLE = ('<p class="feedback-off" role="note">'
+                    'Feedback is not available yet.</p>')
+
+
+def read_ntfy_topic():
+    """The ntfy topic, first hit wins. Never printed, never written to output.
+
+    Priority: AF_NTFY_TOPIC env var, then the durable local store
+    (~/.config/actually-free/ntfy-topic), then a legacy NTFY_TOPIC value in
+    assets/config.js (migrated to the store on first successful read).
+    """
+    env = os.environ.get("AF_NTFY_TOPIC", "").strip()
+    if env:
+        return env
+    # Durable local store: bare topic on one line.
+    try:
+        with open(NTFY_STORE, encoding="utf-8") as f:
+            bare = f.read().strip()
+            if bare and not bare.startswith("PASTE"):
+                return bare
+    except OSError:
+        pass
+    # Legacy: NTFY_TOPIC value in assets/config.js (migrated to the store).
+    try:
+        with open(os.path.join(HERE, "assets", "config.js"), encoding="utf-8") as f:
+            m = re.search(r'NTFY_TOPIC\s*:\s*"([^"]+)"', f.read())
+    except OSError:
+        m = None
+    if m and not m.group(1).startswith("PASTE"):
+        return m.group(1)
+    return ""
+
+
+def persist_ntfy_topic(topic):
+    """Keep the topic on the build machine so later builds don't need config.js."""
+    try:
+        os.makedirs(os.path.dirname(NTFY_STORE), exist_ok=True)
+        with open(NTFY_STORE, "w", encoding="utf-8") as f:
+            f.write(topic + "\n")
+        os.chmod(NTFY_STORE, 0o600)
+    except OSError as e:
+        print("warning: could not persist ntfy topic:", e)
+
+
+class NtfyForms:
+    """One build's worth of ntfy forms: fresh random key, XOR'd topic."""
+
+    def __init__(self, topic):
+        self.key = secrets.token_bytes(16)
+        self.encoded = ""
+        if topic:
+            raw = topic.encode("utf-8")
+            self.encoded = base64.b64encode(
+                bytes(b ^ self.key[i % 16] for i, b in enumerate(raw))
+            ).decode("ascii")
+
+    @property
+    def key_b64(self):
+        return base64.b64encode(self.key).decode("ascii")
+
+    @staticmethod
+    def _trap():
+        return ('<div class="af-trap" aria-hidden="true">'
+                '<label>Leave this field empty '
+                '<input type="text" name="website" tabindex="-1" autocomplete="off">'
+                "</label></div>")
+
+    @staticmethod
+    def _done(text):
+        return (f'<div data-af-done hidden>'
+                f'<p class="af-thanks" tabindex="-1">{esc(text)}</p></div>')
+
+    def report_form(self, app):
+        """Per-app form behind the three feedback buttons (detail pages)."""
+        if not self.encoded:
+            return NTFY_UNAVAILABLE
+        buttons = "\n".join(
+            f'      <button type="button" data-feedback="{v}" '
+            f'data-label="{lbl}">{lbl}</button>'
+            for v, lbl in (("doesnt-work", "Doesn\u2019t work"),
+                           ("broke-promise", "Broke a promise"),
+                           ("correction", "Suggest a correction")))
+        page_url = f"{SITE_URL}/app/{app['slug']}.html"
+        return f"""<div class="feedback-row">
+{buttons}
+    </div>
+    <div class="af-form-wrap">
+      <form class="af-form" data-af-form="report" data-t="{self.encoded}" hidden novalidate>
+        <input type="hidden" name="reason" value="doesnt-work">
+        <input type="hidden" name="app_name" value="{esc(app['name'])}">
+        <input type="hidden" name="page_url" value="{esc(page_url)}">
+        <p class="af-form-head">Report: <strong data-reason-label>Doesn&rsquo;t work</strong>
+          &mdash; {esc(app['name'])}</p>
+        <label class="af-field">What&rsquo;s wrong?
+          <textarea name="note" rows="4" maxlength="1000"></textarea>
+        </label>
+        {self._trap()}
+        <p class="af-error" data-error role="alert"></p>
+        <div class="af-actions">
+          <button type="submit">Send report</button>
+          <button type="button" data-af-cancel>Cancel</button>
+        </div>
+      </form>
+      {self._done("Thank you. Your report has been sent.")}
+    </div>"""
+
+    def suggest_form(self):
+        """Suggest-an-app form, toggled by the footer link."""
+        if not self.encoded:
+            return NTFY_UNAVAILABLE
+        return f"""<div class="af-form-wrap">
+      <form class="af-form" data-af-form="suggest" data-t="{self.encoded}" hidden novalidate>
+        <input type="hidden" name="page_url" value="{esc(SITE_URL)}/">
+        <p class="af-form-head"><strong>Suggest an app</strong> for the directory</p>
+        <label class="af-field">App name
+          <input type="text" name="app_name" maxlength="200" autocomplete="off">
+        </label>
+        <label class="af-field">Where to find it (Play / F-Droid / GitHub link)
+          <input type="text" name="app_link" maxlength="300" inputmode="url" autocomplete="off">
+        </label>
+        <label class="af-field">Why it&rsquo;s actually free
+          <textarea name="note" rows="3" maxlength="1000"></textarea>
+        </label>
+        {self._trap()}
+        <p class="af-error" data-error role="alert"></p>
+        <div class="af-actions">
+          <button type="submit">Send suggestion</button>
+          <button type="button" data-af-cancel>Cancel</button>
+        </div>
+      </form>
+      {self._done("Thank you. Your suggestion has been sent.")}
+    </div>"""
+
+# ---------------------------------------------------------------------------
 # Shared HTML fragments
 # ---------------------------------------------------------------------------
 
 def head(title, description, og_path="", og_image=""):
     """<head> with SEO/OG basics. og_path like 'app/foo-bar.html' or ''."""
     url = SITE_URL + ("/" + og_path if og_path else "/")
-    img = (SITE_URL + "/assets/" + og_image) if og_image else SITE_URL + "/assets/mascot-cartoon.webp"
+    img = (SITE_URL + "/assets/" + og_image) if og_image else SITE_URL + "/assets/mascot-playful.webp"
     return f"""<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -198,25 +342,41 @@ def head(title, description, og_path="", og_image=""):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Actually Free">
 <meta property="og:image" content="{esc(img)}">
-<link rel="icon" href="/assets/mascot-cartoon.webp">
+<link rel="icon" href="/assets/mascot-playful.webp">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>"""
 
 
-def site_header(active="directory"):
-    """Header shared by index + detail pages. Mode/theme switchers included."""
-    dir_cls = ' class="active"' if active == "directory" else ""
-    qr_cls = ' class="active"' if active == "qrcards" else ""
+def site_header():
+    """Header shared by index + detail pages. Mode/theme switchers included.
+
+    No Directory/QR-Cards tab pair: QR Cards lives in the header as an
+    Android-style app icon, and its detail page links back to the directory.
+    """
+    qr_svg = (
+        '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">'
+        '<rect x="4" y="4" width="10" height="10" rx="2" fill="#0f766e"/>'
+        '<rect x="18" y="4" width="10" height="10" rx="2" fill="#0f766e"/>'
+        '<rect x="4" y="18" width="10" height="10" rx="2" fill="#0f766e"/>'
+        '<rect x="7" y="7" width="4" height="4" rx="1" fill="#ffffff"/>'
+        '<rect x="21" y="7" width="4" height="4" rx="1" fill="#ffffff"/>'
+        '<rect x="7" y="21" width="4" height="4" rx="1" fill="#ffffff"/>'
+        '<rect x="18" y="18" width="3" height="3" fill="#0f766e"/>'
+        '<rect x="23" y="18" width="3" height="3" fill="#0f766e"/>'
+        '<rect x="18" y="23" width="3" height="3" fill="#0f766e"/>'
+        '<rect x="25" y="25" width="3" height="3" fill="#0f766e"/>'
+        "</svg>"
+    )
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/index.html">
-      <img id="mascot" src="/assets/mascot-cartoon.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
+      <img id="mascot" src="/assets/mascot-playful.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
       <span class="brand-text"><strong>Actually Free</strong><em>{esc(TAGLINE)}</em></span>
     </a>
-    <nav class="tabs" aria-label="Site sections">
-      <a href="/index.html"{dir_cls}>Directory</a>
-      <a href="/app/derickca-qr-cards.html"{qr_cls}>QR Cards</a>
-    </nav>
+    <a class="qr-appicon" href="/app/derickca-qr-cards.html" title="QR Cards — a free app we made">
+      <span class="qr-appicon-glyph" aria-hidden="true">{qr_svg}</span>
+      <span class="qr-appicon-label">QR Cards</span>
+    </a>
     <div class="switchers">
       <div class="switcher" role="group" aria-label="Site mode">
         <button data-mode="playful" class="on" title="Playful mode">Playful</button><button data-mode="geek" title="Geek mode: full 2000s internet">Geek</button>
@@ -237,17 +397,20 @@ def promise_strip():
 </section>"""
 
 
-def site_footer():
+def site_footer(forms):
+    suggest_link = ('<a id="suggest-link" href="#">Suggest an app</a>'
+                    if forms.encoded else 'Suggest an app')
     return f"""<footer class="site-footer">
   <div class="footer-inner">
     <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android apps that are
     actually free. Every app is checked before listing: no ads, no in-app purchases, no subscriptions.
     If an app breaks the promise, report it and we'll take a look.</p>
     <p class="footer-links">
-      <a id="suggest-link" href="#">Suggest an app</a> &middot;
+      {suggest_link} &middot;
       <a href="/index.html">Directory</a> &middot;
       <a href="/app/derickca-qr-cards.html">QR Cards</a>
     </p>
+{forms.suggest_form()}
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
     <p class="count-line">We count clicks, not people.</p>
@@ -261,7 +424,7 @@ def site_footer():
 # index.html — the directory shell (tiles render client-side from apps.json)
 # ---------------------------------------------------------------------------
 
-def build_index(apps, categories):
+def build_index(apps, categories, forms):
     chips = "\n".join(
         f'      <button class="chip" data-cat="{esc(c)}">{esc(c)}</button>'
         for c in categories)
@@ -270,7 +433,7 @@ def build_index(apps, categories):
 {head("Actually Free \u2014 " + TAGLINE,
       "A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. " + TAGLINE)}
 <body>
-{site_header("directory")}
+{site_header()}
 <main class="directory">
   <section class="hero">
     <h1>Actually free Android apps.</h1>
@@ -303,7 +466,7 @@ def build_index(apps, categories):
   <section id="grid" class="grid" aria-label="Apps"></section>
   <p id="empty-state" class="empty-state" hidden></p>
 </main>
-{site_footer()}
+{site_footer(forms)}
 </body>
 </html>
 """
@@ -346,7 +509,7 @@ def transparency_pills(app):
     return "\n".join(pills)
 
 
-def build_detail(app):
+def build_detail(app, forms):
     title = f'{app["name"]} \u2014 actually free, no ads | Actually Free'
     desc = tidy(app["description"], 160)
     rating = (f'<p class="rating">\u2605 {esc(app["rating"])} on Google Play</p>'
@@ -365,7 +528,7 @@ def build_detail(app):
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
 <body>
-{site_header("qrcards" if app["made_by_us"] else "directory")}
+{site_header()}
 <main class="detail">
   <p><a class="back" href="/index.html">&larr; Back to the directory</a></p>
   <article class="detail-card">
@@ -395,14 +558,10 @@ def build_detail(app):
     <h2>Something wrong?</h2>
     <p class="feedback-note">Reports go to a human review queue. No timeline promised
     \u2014 this is a small pilot, but every report gets read.</p>
-    <div class="feedback-row">
-      <button data-feedback="doesnt-work" data-app="{esc(app['slug'])}">Doesn't work</button>
-      <button data-feedback="broke-promise" data-app="{esc(app['slug'])}">Broke a promise</button>
-      <button data-feedback="correction" data-app="{esc(app['slug'])}">Suggest a correction</button>
-    </div>
+{forms.report_form(app)}
   </article>
 </main>
-{site_footer()}
+{site_footer(forms)}
 </body>
 </html>
 """
@@ -426,56 +585,59 @@ CSS_CONTENT = r"""
    Default/Light/Dark theme layer. Mode = skin, theme = palette. */
 
 :root, :root[data-theme="light"] {
-  --bg: #f2f6fb;
-  --ink: #1d2836;
-  --muted: #5d6f83;
+  --bg: #fdf4e7;
+  --ink: #33241a;
+  --muted: #8a6f5c;
   --card: #ffffff;
-  --card-edge: #dbe5f1;
-  --accent: #2f7fe0;
-  --accent-soft: #e3eefc;
-  --good: #189a52;
-  --good-soft: #e2f5e9;
-  --header-bg: #ffffff;
-  --chip-bg: #e7eef7;
-  --chip-on: #1d2836;
+  --card-edge: #eed7b8;
+  --accent: #c2570b;
+  --accent-soft: #fce8d2;
+  --on-accent: #ffffff;
+  --good: #1f9d55;
+  --good-soft: #e0f4e8;
+  --header-bg: #fff9f0;
+  --chip-bg: #f8e6cc;
+  --chip-on: #33241a;
   --input-bg: #ffffff;
-  --shadow: 0 2px 12px rgba(29, 40, 54, 0.09);
+  --shadow: 0 2px 12px rgba(194, 87, 11, 0.14);
   --radius: 16px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #10161f;
-    --ink: #e8eef5;
-    --muted: #93a3b8;
-    --card: #1a2330;
-    --card-edge: #2c3a4e;
-    --accent: #5ea0f0;
-    --accent-soft: #22344d;
-    --good: #4cc47c;
-    --good-soft: #173a26;
-    --header-bg: #161e2a;
-    --chip-bg: #243042;
-    --chip-on: #e8eef5;
-    --input-bg: #1a2330;
-    --shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    --bg: #1a1109;
+    --ink: #f7ecda;
+    --muted: #caa77f;
+    --card: #251810;
+    --card-edge: #4d3823;
+    --accent: #f0a04b;
+    --accent-soft: #3a2413;
+    --on-accent: #241708;
+    --good: #55c47e;
+    --good-soft: #143a24;
+    --header-bg: #201309;
+    --chip-bg: #33200f;
+    --chip-on: #f7ecda;
+    --input-bg: #251810;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
   }
 }
 :root[data-theme="dark"] {
-  --bg: #10161f;
-  --ink: #e8eef5;
-  --muted: #93a3b8;
-  --card: #1a2330;
-  --card-edge: #2c3a4e;
-  --accent: #5ea0f0;
-  --accent-soft: #22344d;
-  --good: #4cc47c;
-  --good-soft: #173a26;
-  --header-bg: #161e2a;
-  --chip-bg: #243042;
-  --chip-on: #e8eef5;
-  --input-bg: #1a2330;
-  --shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --bg: #1a1109;
+  --ink: #f7ecda;
+  --muted: #caa77f;
+  --card: #251810;
+  --card-edge: #4d3823;
+  --accent: #f0a04b;
+  --accent-soft: #3a2413;
+  --on-accent: #241708;
+  --good: #55c47e;
+  --good-soft: #143a24;
+  --header-bg: #201309;
+  --chip-bg: #33200f;
+  --chip-on: #f7ecda;
+  --input-bg: #251810;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
 }
 
 * { box-sizing: border-box; }
@@ -509,17 +671,24 @@ a { color: var(--accent); }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
 .brand img { border-radius: 12px; box-shadow: var(--shadow); }
 .brand-text { display: flex; flex-direction: column; }
-.brand-text strong { font-size: 1.25rem; letter-spacing: 0.2px; }
+.brand-text strong { font-size: 1.25rem; letter-spacing: 0.2px; color: var(--accent); }
 .brand-text em { font-style: normal; font-size: 0.8rem; color: var(--muted); }
-.tabs { display: flex; gap: 4px; margin-left: auto; }
-.tabs a {
-  padding: 8px 14px;
-  border-radius: 999px;
-  text-decoration: none;
-  color: var(--muted);
-  font-weight: 600;
+/* QR Cards as an Android-style home-screen app icon, next to the switchers */
+.qr-appicon {
+  margin-left: auto;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  text-decoration: none; color: var(--ink);
+  padding: 4px 8px; border-radius: 12px;
 }
-.tabs a.active, .tabs a:hover { background: var(--accent-soft); color: var(--ink); }
+.qr-appicon:hover { background: var(--accent-soft); }
+.qr-appicon-glyph {
+  width: 46px; height: 46px; border-radius: 12px;
+  background: #ffffff; border: 1px solid var(--card-edge);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow); overflow: hidden;
+}
+.qr-appicon-glyph svg { width: 36px; height: 36px; display: block; }
+.qr-appicon-label { font-size: 0.68rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
 .switchers { display: flex; gap: 8px; }
 .switcher { display: flex; border: 1px solid var(--card-edge); border-radius: 999px; overflow: hidden; }
 .switcher button {
@@ -571,7 +740,10 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   color: var(--ink);
   margin-bottom: 12px;
 }
-.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: center; }
+#search:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+/* Filter rows never wrap: one row on desktop, horizontal scroll on narrow screens */
+.filter-row { display: flex; flex-wrap: nowrap; gap: 8px; margin-bottom: 10px; align-items: center; overflow-x: auto; padding-bottom: 4px; }
+.filter-row .chip, .filter-row .pill { flex: 0 0 auto; }
 .chip, .pill {
   border: 1px solid var(--card-edge);
   background: var(--chip-bg);
@@ -583,7 +755,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-radius: 999px;
   cursor: pointer;
 }
-.chip.on, .pill.on { background: var(--chip-on); color: var(--bg); border-color: var(--chip-on); }
+.chip.on, .pill.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .sort-row { justify-content: space-between; }
 .sort-row select {
   font: inherit;
@@ -598,13 +770,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 /* ---------- tile grid ---------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 14px;
 }
 .tile {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
   background:
     linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0) 42%),
     var(--card);
@@ -619,6 +792,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 }
 .tile:hover { transform: translateY(-2px); }
 .tile-top { display: flex; align-items: center; gap: 10px; }
+.tile-top > span { min-width: 0; }
 .icon-wrap {
   width: 52px; height: 52px; flex: 0 0 52px;
   border-radius: 14px;
@@ -635,7 +809,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 1.7rem; font-weight: 800;
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
-.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; }
+.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; overflow-wrap: break-word; }
 .tile .sub { color: var(--muted); font-size: 0.8rem; margin: 0; }
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -655,12 +829,15 @@ a.store-badge:hover { filter: brightness(0.96); }
   font-size: 0.75rem; font-weight: 700; color: var(--good);
   display: inline-flex; align-items: center; gap: 4px;
 }
+/* "Made by us" sits as a small pill at the top of the tile, clear of the name */
 .made-by-us {
-  position: absolute; top: 10px; right: -6px;
-  background: var(--accent); color: #fff;
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--accent); color: var(--on-accent);
   font-size: 0.68rem; font-weight: 800;
-  padding: 3px 10px; border-radius: 999px 0 0 999px;
+  padding: 3px 10px; border-radius: 999px;
   box-shadow: var(--shadow);
+  white-space: nowrap;
 }
 .empty-state {
   text-align: center; font-size: 1.15rem; color: var(--muted);
@@ -711,6 +888,40 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 .feedback-row button:hover { border-color: var(--accent); }
 
+/* ---------- ntfy feedback forms ---------- */
+.af-form-wrap { margin-top: 12px; }
+.af-form {
+  background: var(--accent-soft);
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  max-width: 560px;
+}
+.af-form[hidden] { display: none; }
+.af-form-head { margin: 0; font-size: 0.95rem; }
+.af-field { display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; font-weight: 600; }
+.af-field input, .af-field textarea {
+  font: inherit; font-weight: 400;
+  padding: 9px 12px; border-radius: 10px;
+  border: 1px solid var(--card-edge);
+  background: var(--input-bg); color: var(--ink);
+  width: 100%;
+}
+.af-field textarea { resize: vertical; }
+.af-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.af-error { color: #c0392b; font-size: 0.88rem; margin: 0; }
+.af-error:empty { display: none; }
+.af-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.af-actions button {
+  font: inherit; font-size: 0.88rem; font-weight: 700;
+  padding: 9px 16px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--on-accent);
+}
+.af-actions button[data-af-cancel] { background: transparent; color: var(--ink); border-color: var(--card-edge); }
+.af-thanks { font-weight: 600; color: var(--good); }
+.feedback-off { color: var(--muted); font-style: italic; }
+
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--card-edge); background: var(--header-bg); }
 .footer-inner { max-width: 1100px; margin: 0 auto; padding: 24px 16px 32px; }
@@ -753,6 +964,7 @@ a.store-badge:hover { filter: brightness(0.96); }
   --chip-on: #7df9ff;
   --input-bg: #0a0a2e;
   --shadow: none;
+  --on-accent: #00001a;
 }
 :root[data-mode="geek"] .site-header { border-bottom: 3px ridge #7df9ff; }
 :root[data-mode="geek"] .brand-text strong { font-family: "Times New Roman", serif; color: #ffe97a; }
@@ -797,13 +1009,20 @@ a.store-badge:hover { filter: brightness(0.96); }
   -webkit-text-stroke: 0;
 }
 :root[data-mode="geek"] .feedback-row button { border-radius: 0; border: 2px outset #5a5ac8; }
+:root[data-mode="geek"] .af-form { border-radius: 0; border: 2px outset #5a5ac8; }
+:root[data-mode="geek"] .af-field input, :root[data-mode="geek"] .af-field textarea { border-radius: 0; }
+:root[data-mode="geek"] .af-actions button { border-radius: 0; }
+:root[data-mode="geek"] .chip.on, :root[data-mode="geek"] .pill.on {
+  background: var(--chip-on); color: #00001a; border: 2px inset #5a5ac8;
+}
+:root[data-mode="geek"] .qr-appicon-glyph { border-radius: 0; }
+:root[data-mode="geek"] .qr-appicon:hover { background: var(--accent-soft); }
 :root[data-mode="geek"] .switcher { border-radius: 0; }
 :root[data-mode="geek"] .switcher button.on { background: #ffe97a; color: #000; }
 
 @media (max-width: 640px) {
   .header-inner { gap: 10px; }
-  .tabs { margin-left: 0; }
-  .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
   .detail-card { padding: 18px; }
 }
 """
@@ -832,7 +1051,7 @@ JS_CONTENT = r"""
 
   /* ---------- mode + theme (persisted, orthogonal) ------------------------- */
   var root = document.documentElement;
-  var MASCOTS = { playful: "/assets/mascot-cartoon.webp", geek: "/assets/mascot-geek.webp" };
+  var MASCOTS = { playful: "/assets/mascot-playful.webp", geek: "/assets/mascot-geek.webp" };
   function applyMode(mode) {
     root.setAttribute("data-mode", mode);
     try { localStorage.setItem("af-mode", mode); } catch (e) {}
@@ -865,38 +1084,213 @@ JS_CONTENT = r"""
     b.addEventListener("click", function () { applyTheme(b.getAttribute("data-theme")); });
   });
 
-  /* ---------- feedback buttons (detail pages) ------------------------------- */
-  var FEEDBACK_SUBJECTS = {
-    "doesnt-work": "App doesn't work",
-    "broke-promise": "App broke a promise",
-    "correction": "Listing correction"
-  };
-  document.querySelectorAll("[data-feedback]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      var kind = b.getAttribute("data-feedback"), slug = b.getAttribute("data-app");
-      gcEvent("feedback/" + kind + "/" + slug);
-      var email = (cfg.FEEDBACK_EMAIL || "").indexOf("PASTE") === 0 ? "" : cfg.FEEDBACK_EMAIL;
-      if (!email) { alert("Feedback email isn't configured yet \u2014 check back soon."); return; }
-      var body = "App: " + location.href + "\n\nWhat happened:\n";
-      location.href = "mailto:" + email +
-        "?subject=" + encodeURIComponent("[Actually Free] " + (FEEDBACK_SUBJECTS[kind] || "Feedback")) +
-        "&body=" + encodeURIComponent(body);
-    });
-  });
+  /* ---------- ntfy feedback ------------------------------------------------
+     The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
+     The topic is XOR-obfuscated per build: base64 in each form's data-t,
+     the key (__NTFY_KEY__, replaced at build time) embedded separately,
+     decoded only at send time. Anti-spam, all client-side: honeypot trap,
+     3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
+     Same pattern as FundingSpark. */
+  (function () {
+    "use strict";
+    var K = "__NTFY_KEY__";
+    var API = "https://ntfy.sh/", STORE = "af.sends";
+    var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
+        DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
+    var memory = [];
+    var REASONS = {
+      "doesnt-work": "Doesn't work",
+      "broke-promise": "Broke a promise",
+      "correction": "Suggest a correction"
+    };
+    function unb64(s) {
+      var t = atob(s), a = [];
+      for (var i = 0; i < t.length; i++) a.push(t.charCodeAt(i));
+      return a;
+    }
+    function topic(form) {
+      var t = form.getAttribute("data-t");
+      if (!t || !K) return "";
+      var d = unb64(t), k = unb64(K), o = [];
+      for (var i = 0; i < d.length; i++) o.push(d[i] ^ k[i % k.length]);
+      return new TextDecoder().decode(new Uint8Array(o));
+    }
+    // Plain text only: strip control characters, cut at max characters.
+    function clean(s, max, multi) {
+      s = String(s || "").replace(/\r\n?/g, "\n");
+      s = multi ? s.replace(/[\u0000-\u0008\u000b-\u001f\u007f-\u009f\u2028\u2029]/g, "")
+                : s.replace(/[\u0000-\u001f\u007f-\u009f\u2028\u2029]/g, " ");
+      return Array.from(s.trim()).slice(0, max).join("");
+    }
+    function cutBytes(s, n) {
+      var enc = new TextEncoder();
+      if (enc.encode(s).length <= n) return s;
+      var chars = Array.from(s);
+      while (chars.length && enc.encode(chars.join("")).length > n - 20)
+        chars.length = Math.max(0, chars.length - 20);
+      return chars.join("") + "\n[note shortened]";
+    }
+    function header(s) {   // header values must be Latin-1: the rest goes as RFC 2047 UTF-8
+      return /^[\x20-\x7e]*$/.test(s) ? s
+        : "=?UTF-8?B?" + btoa(unescape(encodeURIComponent(s))) + "?=";
+    }
+    function sends() {
+      try {
+        var v = JSON.parse(localStorage.getItem(STORE) || "[]");
+        if (Array.isArray(v)) memory = v.filter(isFinite);
+      } catch (e) { /* storage blocked */ }
+      return memory;
+    }
+    function record(now) {
+      memory = sends().filter(function (t) { return now - t < DAY_MS; });
+      memory.push(now);
+      try { localStorage.setItem(STORE, JSON.stringify(memory)); } catch (e) {}
+    }
+    function limited(now) {
+      var l = sends();
+      if (l.filter(function (t) { return now - t < DAY_MS; }).length >= DAY)
+        return "You've reached today's limit for sending reports from this browser. Try again tomorrow.";
+      if (l.filter(function (t) { return now - t < BURST_MS; }).length >= BURST)
+        return "You've sent a few reports just now. Wait a few minutes and try again.";
+      return "";
+    }
+    function val(form, name, max, multi) {
+      var f = form.elements[name];
+      return f ? clean(f.value, max, multi) : "";
+    }
+    function build(form) {
+      var sent = new Date().toISOString().replace(/\.\d+Z$/, "Z"), m = {};
+      if (form.getAttribute("data-af-form") === "suggest") {
+        m.title = "App suggestion";
+        m.tags = ["actually-free", "suggestion"];
+        m.priority = "3";
+        m.lines = ["App: " + val(form, "app_name", 200),
+                   "Link: " + (val(form, "app_link", 300) || "(not given)"),
+                   "Why free: " + (val(form, "note", 1000, true) || "(none)"),
+                   "Page: " + val(form, "page_url", 300),
+                   "Sent: " + sent];
+      } else {
+        var reason = val(form, "reason", 40);
+        var label = REASONS[reason] || REASONS["doesnt-work"];
+        var tag = reason === "broke-promise" ? "broke-promise"
+                : reason === "correction" ? "correction" : "doesnt-work";
+        var appName = val(form, "app_name", 200);
+        m.title = label + ": " + appName;
+        m.tags = ["actually-free", "feedback", tag];
+        m.priority = tag === "broke-promise" ? "4" : "3";
+        m.lines = ["App: " + appName,
+                   "Page URL: " + val(form, "page_url", 300),
+                   "Note: " + (val(form, "note", 1000, true) || "(none)"),
+                   "Sent: " + sent];
+      }
+      m.title = clean(m.title, 200);
+      m.body = cutBytes(m.lines.join("\n"), BODY_BYTES);
+      return m;
+    }
+    function bind(form) {
+      var wrap = form.parentNode,
+          done = wrap.querySelector("[data-af-done]"),
+          err = form.querySelector("[data-error]"),
+          btn = form.querySelector("button[type=submit]"),
+          opened = Date.now();
+      function finish() {
+        form.reset(); form.hidden = true;
+        if (done) {
+          done.hidden = false;
+          var t = done.querySelector(".af-thanks");
+          if (t) t.focus();
+        }
+      }
+      form.addEventListener("af-open", function () {
+        form.reset();
+        if (done) done.hidden = true;
+        err.textContent = "";
+        opened = Date.now();
+        form.hidden = false;
+      });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (btn.disabled) return;
+        err.textContent = "";
+        var kind = form.getAttribute("data-af-form");
+        if (kind === "suggest" && !val(form, "app_name", 200)) {
+          err.textContent = "Give the app a name so we know what to look at.";
+          return;
+        }
+        if (kind === "report" && !val(form, "note", 1000, true)) {
+          err.textContent = "Write a short note so we know what to check.";
+          return;
+        }
+        if (form.elements.website && form.elements.website.value) { finish(); return; }  // a bot: fake success, send nothing
+        var now = Date.now();
+        if (now - opened < MIN_OPEN_MS) {
+          err.textContent = "Take a moment to check your note, then press Send again.";
+          return;
+        }
+        var limit = limited(now);
+        if (limit) { err.textContent = limit; return; }
+        var t = topic(form);
+        if (!t) { err.textContent = "Feedback is not available yet."; return; }
+        var m = build(form);
+        btn.disabled = true;
+        record(now);
+        fetch(API + encodeURIComponent(t), {
+          method: "POST", body: m.body,
+          headers: { "Title": header(m.title), "Tags": m.tags.join(","), "Priority": m.priority }
+        })
+          .then(function (r) {
+            if (!r.ok) throw new Error("status " + r.status);
+            gcEvent("feedback-sent/" + kind);
+            finish();
+          })
+          .catch(function () {
+            err.textContent = "That didn't go through. Try again in a minute.";
+          })
+          .then(function () { btn.disabled = false; });
+      });
+      var cancels = form.querySelectorAll("[data-af-cancel]");
+      for (var i = 0; i < cancels.length; i++) {
+        cancels[i].addEventListener("click", function () {
+          form.reset(); form.hidden = true;
+        });
+      }
+    }
+    var forms = document.querySelectorAll("form[data-af-form]");
+    for (var n = 0; n < forms.length; n++) bind(forms[n]);
 
-  /* ---------- suggest-an-app link ------------------------------------------- */
-  var suggest = document.getElementById("suggest-link");
-  if (suggest) {
-    suggest.addEventListener("click", function (ev) {
-      ev.preventDefault();
-      gcEvent("suggest-app");
-      var email = (cfg.FEEDBACK_EMAIL || "").indexOf("PASTE") === 0 ? "" : cfg.FEEDBACK_EMAIL;
-      if (!email) { alert("Feedback email isn't configured yet \u2014 check back soon."); return; }
-      location.href = "mailto:" + email +
-        "?subject=" + encodeURIComponent("[Actually Free] App suggestion") +
-        "&body=" + encodeURIComponent("App name:\nWhere to find it (Play/F-Droid/GitHub link):\nWhy it's actually free:\n");
-    });
-  }
+    /* report buttons on detail pages: pick the reason, reveal the form */
+    var rbtns = document.querySelectorAll("[data-feedback]");
+    for (var b = 0; b < rbtns.length; b++) {
+      rbtns[b].addEventListener("click", function () {
+        var scope = this.closest("main") || document;
+        var form = scope.querySelector("form[data-af-form=report]");
+        if (!form) return;
+        form.dispatchEvent(new CustomEvent("af-open"));  // resets + reveals; set reason after
+        form.elements.reason.value = this.getAttribute("data-feedback");
+        var lbl = form.querySelector("[data-reason-label]");
+        if (lbl) lbl.textContent = this.getAttribute("data-label");
+        if (form.elements.note) form.elements.note.focus();
+      });
+    }
+
+    /* suggest-an-app link in the footer */
+    var suggest = document.getElementById("suggest-link");
+    if (suggest) {
+      suggest.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        gcEvent("suggest-app");
+        var scope = suggest.closest("footer") || document;
+        var form = scope.querySelector("form[data-af-form=suggest]");
+        if (!form) return;
+        if (form.hidden) {
+          form.dispatchEvent(new CustomEvent("af-open"));
+          if (form.elements.app_name) form.elements.app_name.focus();
+        } else {
+          form.hidden = true;
+        }
+      });
+    }
+  })();
 
   /* ---------- random app (geek webring) -------------------------------------- */
   var randomBtn = document.getElementById("random-app");
@@ -1076,20 +1470,36 @@ JS_CONTENT = r"""
 })();
 """
 
-CONFIG_JS = """/* Actually Free — site configuration.
-   Derick: fill in the two values below, then redeploy. Nothing else needed. */
-window.AF_CONFIG = {
-  // Goatcounter site code: the subdomain part of your Goatcounter URL.
-  // e.g. if your dashboard is at actuallyfree.goatcounter.com, put "actuallyfree".
-  // Free signup at https://www.goatcounter.com — no API key needed.
-  // Until this is set, analytics are skipped silently.
-  GOATCOUNTER_CODE: "PASTE-YOUR-CODE-HERE",
+CONFIG_JS_TEMPLATE = """/* Actually Free — site configuration.
+   GOATCOUNTER_CODE: your Goatcounter site code (the subdomain part of your
+   Goatcounter URL). Free signup at https://www.goatcounter.com — no API key
+   needed. Until this is set, analytics are skipped silently.
 
-  // Email address that receives "broke a promise" reports, corrections,
-  // and app suggestions (plain mailto links — no backend, no accounts).
-  FEEDBACK_EMAIL: "PASTE-FEEDBACK-EMAIL-HERE"
-};
+   Feedback reports ("doesn't work" / "broke a promise" / corrections /
+   app suggestions) go to ntfy.sh — free tier, no account, no backend. The
+   topic is NOT stored here: generate.py reads it from the AF_NTFY_TOPIC
+   environment variable or ~/.config/actually-free/ntfy-topic, XOR-obfuscates
+   it with a fresh random key on every build, and embeds only base64 blobs in
+   the pages. Subscribe to the topic in the ntfy app (Android) or at ntfy.sh
+   to receive reports; the free tier keeps messages ~12 hours. */
+window.AF_CONFIG = {{
+  GOATCOUNTER_CODE: "{gc}"
+}};
 """
+
+
+def build_config_js():
+    """config.js for the deployed site: Goatcounter code preserved, and the
+    ntfy topic deliberately NOT stored here (see the ntfy section above)."""
+    gc = ""
+    try:
+        with open(os.path.join(HERE, "assets", "config.js"), encoding="utf-8") as f:
+            m = re.search(r'GOATCOUNTER_CODE\s*:\s*"([^"]*)"', f.read())
+            if m:
+                gc = m.group(1)
+    except OSError:
+        pass
+    return CONFIG_JS_TEMPLATE.format(gc=gc or "PASTE-YOUR-CODE-HERE")
 
 README_MD = """# Actually Free — free.certifiable.media
 
@@ -1120,9 +1530,16 @@ verified listings (`include` + `per-badge`), adds QR Cards, and emits:
    the transparency brand) and push this folder.
 2. **Cloudflare Pages**: connect the repo, then add the custom domain
    `free.certifiable.media` (free SSL included).
-3. **Paste two values** into `assets/config.js` and redeploy:
-   - `GOATCOUNTER_CODE` — your Goatcounter site code (free signup, no API key)
-   - `FEEDBACK_EMAIL` — where "broke a promise" reports and suggestions go
+3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
+   and redeploy.
+4. **Feedback via ntfy** (free tier, no account, no backend): save the secret
+   topic to `~/.config/actually-free/ntfy-topic` on the build machine (one
+   line, no quotes), or set the `AF_NTFY_TOPIC` env var, then regenerate.
+   `generate.py` XOR-obfuscates the topic with a fresh random key on every
+   build — it never appears in page source as plaintext. Subscribe to the
+   topic in the ntfy app (Android) or at ntfy.sh to receive the reports;
+   the free tier keeps messages ~12 hours. Without a topic, the feedback
+   forms are replaced by a "not available yet" notice.
 
 ## Corpus rules (baked into generate.py)
 
@@ -1169,15 +1586,26 @@ def main():
           f"({sum(1 for a in apps if a['made_by_us'])} made by us, "
           f"{sum(1 for a in apps if a['per_badge'])} per-badge)")
 
+    topic = read_ntfy_topic()
+    if topic:
+        persist_ntfy_topic(topic)
+        print("ntfy feedback: topic configured (XOR-obfuscated per build)")
+    else:
+        print("ntfy feedback: NO TOPIC SET — forms show 'not available yet'")
+    forms = NtfyForms(topic)
+
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
-    write("index.html", build_index(apps, categories))
+    write("index.html", build_index(apps, categories, forms))
     for app in apps:
-        write(f"app/{app['slug']}.html", build_detail(app))
+        write(f"app/{app['slug']}.html", build_detail(app, forms))
     write("sitemap.xml", build_sitemap(apps))
     write("robots.txt", ROBOTS)
     write("assets/styles.css", CSS_CONTENT.strip() + "\n")
-    write("assets/app.js", JS_CONTENT.strip() + "\n")
-    write("assets/config.js", CONFIG_JS)
+    app_js = JS_CONTENT.replace("__NTFY_KEY__", forms.key_b64)
+    if "__NTFY_KEY__" in app_js:
+        print("warning: ntfy key placeholder survived replacement")
+    write("assets/app.js", app_js.strip() + "\n")
+    write("assets/config.js", build_config_js())
     write("README.md", build_readme())
     print("done: index, %d detail pages, sitemap, robots, assets, README"
           % len(apps))

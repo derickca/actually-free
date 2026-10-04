@@ -10,21 +10,21 @@
 <meta property="og:url" content="https://free.certifiable.media/app/org-koreader-launcher-fdroid.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Actually Free">
-<meta property="og:image" content="https://free.certifiable.media/assets/mascot-cartoon.webp">
-<link rel="icon" href="/assets/mascot-cartoon.webp">
+<meta property="og:image" content="https://free.certifiable.media/assets/mascot-playful.webp">
+<link rel="icon" href="/assets/mascot-playful.webp">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/index.html">
-      <img id="mascot" src="/assets/mascot-cartoon.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
+      <img id="mascot" src="/assets/mascot-playful.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
       <span class="brand-text"><strong>Actually Free</strong><em>Find the free apps they don&#x27;t want you to see.</em></span>
     </a>
-    <nav class="tabs" aria-label="Site sections">
-      <a href="/index.html" class="active">Directory</a>
-      <a href="/app/derickca-qr-cards.html">QR Cards</a>
-    </nav>
+    <a class="qr-appicon" href="/app/derickca-qr-cards.html" title="QR Cards — a free app we made">
+      <span class="qr-appicon-glyph" aria-hidden="true"><svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><rect x="4" y="4" width="10" height="10" rx="2" fill="#0f766e"/><rect x="18" y="4" width="10" height="10" rx="2" fill="#0f766e"/><rect x="4" y="18" width="10" height="10" rx="2" fill="#0f766e"/><rect x="7" y="7" width="4" height="4" rx="1" fill="#ffffff"/><rect x="21" y="7" width="4" height="4" rx="1" fill="#ffffff"/><rect x="7" y="21" width="4" height="4" rx="1" fill="#ffffff"/><rect x="18" y="18" width="3" height="3" fill="#0f766e"/><rect x="23" y="18" width="3" height="3" fill="#0f766e"/><rect x="18" y="23" width="3" height="3" fill="#0f766e"/><rect x="25" y="25" width="3" height="3" fill="#0f766e"/></svg></span>
+      <span class="qr-appicon-label">QR Cards</span>
+    </a>
     <div class="switchers">
       <div class="switcher" role="group" aria-label="Site mode">
         <button data-mode="playful" class="on" title="Playful mode">Playful</button><button data-mode="geek" title="Geek mode: full 2000s internet">Geek</button>
@@ -70,10 +70,29 @@
     <h2>Something wrong?</h2>
     <p class="feedback-note">Reports go to a human review queue. No timeline promised
     — this is a small pilot, but every report gets read.</p>
-    <div class="feedback-row">
-      <button data-feedback="doesnt-work" data-app="org-koreader-launcher-fdroid">Doesn't work</button>
-      <button data-feedback="broke-promise" data-app="org-koreader-launcher-fdroid">Broke a promise</button>
-      <button data-feedback="correction" data-app="org-koreader-launcher-fdroid">Suggest a correction</button>
+<div class="feedback-row">
+      <button type="button" data-feedback="doesnt-work" data-label="Doesn’t work">Doesn’t work</button>
+      <button type="button" data-feedback="broke-promise" data-label="Broke a promise">Broke a promise</button>
+      <button type="button" data-feedback="correction" data-label="Suggest a correction">Suggest a correction</button>
+    </div>
+    <div class="af-form-wrap">
+      <form class="af-form" data-af-form="report" data-t="3SemYRKCf5AIPHrALiBhQZF16iJC3iveEmJqwXI1NUCI" hidden novalidate>
+        <input type="hidden" name="reason" value="doesnt-work">
+        <input type="hidden" name="app_name" value="KOReader">
+        <input type="hidden" name="page_url" value="https://free.certifiable.media/app/org-koreader-launcher-fdroid.html">
+        <p class="af-form-head">Report: <strong data-reason-label>Doesn&rsquo;t work</strong>
+          &mdash; KOReader</p>
+        <label class="af-field">What&rsquo;s wrong?
+          <textarea name="note" rows="4" maxlength="1000"></textarea>
+        </label>
+        <div class="af-trap" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <p class="af-error" data-error role="alert"></p>
+        <div class="af-actions">
+          <button type="submit">Send report</button>
+          <button type="button" data-af-cancel>Cancel</button>
+        </div>
+      </form>
+      <div data-af-done hidden><p class="af-thanks" tabindex="-1">Thank you. Your report has been sent.</p></div>
     </div>
   </article>
 </main>
@@ -87,6 +106,28 @@
       <a href="/index.html">Directory</a> &middot;
       <a href="/app/derickca-qr-cards.html">QR Cards</a>
     </p>
+<div class="af-form-wrap">
+      <form class="af-form" data-af-form="suggest" data-t="3SemYRKCf5AIPHrALiBhQZF16iJC3iveEmJqwXI1NUCI" hidden novalidate>
+        <input type="hidden" name="page_url" value="https://free.certifiable.media/">
+        <p class="af-form-head"><strong>Suggest an app</strong> for the directory</p>
+        <label class="af-field">App name
+          <input type="text" name="app_name" maxlength="200" autocomplete="off">
+        </label>
+        <label class="af-field">Where to find it (Play / F-Droid / GitHub link)
+          <input type="text" name="app_link" maxlength="300" inputmode="url" autocomplete="off">
+        </label>
+        <label class="af-field">Why it&rsquo;s actually free
+          <textarea name="note" rows="3" maxlength="1000"></textarea>
+        </label>
+        <div class="af-trap" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <p class="af-error" data-error role="alert"></p>
+        <div class="af-actions">
+          <button type="submit">Send suggestion</button>
+          <button type="button" data-af-cancel>Cancel</button>
+        </div>
+      </form>
+      <div data-af-done hidden><p class="af-thanks" tabindex="-1">Thank you. Your suggestion has been sent.</p></div>
+    </div>
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
     <p class="count-line">We count clicks, not people.</p>

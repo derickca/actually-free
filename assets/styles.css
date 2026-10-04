@@ -3,56 +3,59 @@
    Default/Light/Dark theme layer. Mode = skin, theme = palette. */
 
 :root, :root[data-theme="light"] {
-  --bg: #f2f6fb;
-  --ink: #1d2836;
-  --muted: #5d6f83;
+  --bg: #fdf4e7;
+  --ink: #33241a;
+  --muted: #8a6f5c;
   --card: #ffffff;
-  --card-edge: #dbe5f1;
-  --accent: #2f7fe0;
-  --accent-soft: #e3eefc;
-  --good: #189a52;
-  --good-soft: #e2f5e9;
-  --header-bg: #ffffff;
-  --chip-bg: #e7eef7;
-  --chip-on: #1d2836;
+  --card-edge: #eed7b8;
+  --accent: #c2570b;
+  --accent-soft: #fce8d2;
+  --on-accent: #ffffff;
+  --good: #1f9d55;
+  --good-soft: #e0f4e8;
+  --header-bg: #fff9f0;
+  --chip-bg: #f8e6cc;
+  --chip-on: #33241a;
   --input-bg: #ffffff;
-  --shadow: 0 2px 12px rgba(29, 40, 54, 0.09);
+  --shadow: 0 2px 12px rgba(194, 87, 11, 0.14);
   --radius: 16px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #10161f;
-    --ink: #e8eef5;
-    --muted: #93a3b8;
-    --card: #1a2330;
-    --card-edge: #2c3a4e;
-    --accent: #5ea0f0;
-    --accent-soft: #22344d;
-    --good: #4cc47c;
-    --good-soft: #173a26;
-    --header-bg: #161e2a;
-    --chip-bg: #243042;
-    --chip-on: #e8eef5;
-    --input-bg: #1a2330;
-    --shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    --bg: #1a1109;
+    --ink: #f7ecda;
+    --muted: #caa77f;
+    --card: #251810;
+    --card-edge: #4d3823;
+    --accent: #f0a04b;
+    --accent-soft: #3a2413;
+    --on-accent: #241708;
+    --good: #55c47e;
+    --good-soft: #143a24;
+    --header-bg: #201309;
+    --chip-bg: #33200f;
+    --chip-on: #f7ecda;
+    --input-bg: #251810;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
   }
 }
 :root[data-theme="dark"] {
-  --bg: #10161f;
-  --ink: #e8eef5;
-  --muted: #93a3b8;
-  --card: #1a2330;
-  --card-edge: #2c3a4e;
-  --accent: #5ea0f0;
-  --accent-soft: #22344d;
-  --good: #4cc47c;
-  --good-soft: #173a26;
-  --header-bg: #161e2a;
-  --chip-bg: #243042;
-  --chip-on: #e8eef5;
-  --input-bg: #1a2330;
-  --shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --bg: #1a1109;
+  --ink: #f7ecda;
+  --muted: #caa77f;
+  --card: #251810;
+  --card-edge: #4d3823;
+  --accent: #f0a04b;
+  --accent-soft: #3a2413;
+  --on-accent: #241708;
+  --good: #55c47e;
+  --good-soft: #143a24;
+  --header-bg: #201309;
+  --chip-bg: #33200f;
+  --chip-on: #f7ecda;
+  --input-bg: #251810;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
 }
 
 * { box-sizing: border-box; }
@@ -86,17 +89,24 @@ a { color: var(--accent); }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
 .brand img { border-radius: 12px; box-shadow: var(--shadow); }
 .brand-text { display: flex; flex-direction: column; }
-.brand-text strong { font-size: 1.25rem; letter-spacing: 0.2px; }
+.brand-text strong { font-size: 1.25rem; letter-spacing: 0.2px; color: var(--accent); }
 .brand-text em { font-style: normal; font-size: 0.8rem; color: var(--muted); }
-.tabs { display: flex; gap: 4px; margin-left: auto; }
-.tabs a {
-  padding: 8px 14px;
-  border-radius: 999px;
-  text-decoration: none;
-  color: var(--muted);
-  font-weight: 600;
+/* QR Cards as an Android-style home-screen app icon, next to the switchers */
+.qr-appicon {
+  margin-left: auto;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  text-decoration: none; color: var(--ink);
+  padding: 4px 8px; border-radius: 12px;
 }
-.tabs a.active, .tabs a:hover { background: var(--accent-soft); color: var(--ink); }
+.qr-appicon:hover { background: var(--accent-soft); }
+.qr-appicon-glyph {
+  width: 46px; height: 46px; border-radius: 12px;
+  background: #ffffff; border: 1px solid var(--card-edge);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow); overflow: hidden;
+}
+.qr-appicon-glyph svg { width: 36px; height: 36px; display: block; }
+.qr-appicon-label { font-size: 0.68rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
 .switchers { display: flex; gap: 8px; }
 .switcher { display: flex; border: 1px solid var(--card-edge); border-radius: 999px; overflow: hidden; }
 .switcher button {
@@ -148,7 +158,10 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   color: var(--ink);
   margin-bottom: 12px;
 }
-.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: center; }
+#search:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+/* Filter rows never wrap: one row on desktop, horizontal scroll on narrow screens */
+.filter-row { display: flex; flex-wrap: nowrap; gap: 8px; margin-bottom: 10px; align-items: center; overflow-x: auto; padding-bottom: 4px; }
+.filter-row .chip, .filter-row .pill { flex: 0 0 auto; }
 .chip, .pill {
   border: 1px solid var(--card-edge);
   background: var(--chip-bg);
@@ -160,7 +173,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-radius: 999px;
   cursor: pointer;
 }
-.chip.on, .pill.on { background: var(--chip-on); color: var(--bg); border-color: var(--chip-on); }
+.chip.on, .pill.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .sort-row { justify-content: space-between; }
 .sort-row select {
   font: inherit;
@@ -175,13 +188,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 /* ---------- tile grid ---------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 14px;
 }
 .tile {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
   background:
     linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0) 42%),
     var(--card);
@@ -196,6 +210,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 }
 .tile:hover { transform: translateY(-2px); }
 .tile-top { display: flex; align-items: center; gap: 10px; }
+.tile-top > span { min-width: 0; }
 .icon-wrap {
   width: 52px; height: 52px; flex: 0 0 52px;
   border-radius: 14px;
@@ -212,7 +227,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 1.7rem; font-weight: 800;
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
-.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; }
+.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; overflow-wrap: break-word; }
 .tile .sub { color: var(--muted); font-size: 0.8rem; margin: 0; }
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -232,12 +247,15 @@ a.store-badge:hover { filter: brightness(0.96); }
   font-size: 0.75rem; font-weight: 700; color: var(--good);
   display: inline-flex; align-items: center; gap: 4px;
 }
+/* "Made by us" sits as a small pill at the top of the tile, clear of the name */
 .made-by-us {
-  position: absolute; top: 10px; right: -6px;
-  background: var(--accent); color: #fff;
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--accent); color: var(--on-accent);
   font-size: 0.68rem; font-weight: 800;
-  padding: 3px 10px; border-radius: 999px 0 0 999px;
+  padding: 3px 10px; border-radius: 999px;
   box-shadow: var(--shadow);
+  white-space: nowrap;
 }
 .empty-state {
   text-align: center; font-size: 1.15rem; color: var(--muted);
@@ -288,6 +306,40 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 .feedback-row button:hover { border-color: var(--accent); }
 
+/* ---------- ntfy feedback forms ---------- */
+.af-form-wrap { margin-top: 12px; }
+.af-form {
+  background: var(--accent-soft);
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  max-width: 560px;
+}
+.af-form[hidden] { display: none; }
+.af-form-head { margin: 0; font-size: 0.95rem; }
+.af-field { display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; font-weight: 600; }
+.af-field input, .af-field textarea {
+  font: inherit; font-weight: 400;
+  padding: 9px 12px; border-radius: 10px;
+  border: 1px solid var(--card-edge);
+  background: var(--input-bg); color: var(--ink);
+  width: 100%;
+}
+.af-field textarea { resize: vertical; }
+.af-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.af-error { color: #c0392b; font-size: 0.88rem; margin: 0; }
+.af-error:empty { display: none; }
+.af-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.af-actions button {
+  font: inherit; font-size: 0.88rem; font-weight: 700;
+  padding: 9px 16px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--on-accent);
+}
+.af-actions button[data-af-cancel] { background: transparent; color: var(--ink); border-color: var(--card-edge); }
+.af-thanks { font-weight: 600; color: var(--good); }
+.feedback-off { color: var(--muted); font-style: italic; }
+
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--card-edge); background: var(--header-bg); }
 .footer-inner { max-width: 1100px; margin: 0 auto; padding: 24px 16px 32px; }
@@ -330,6 +382,7 @@ a.store-badge:hover { filter: brightness(0.96); }
   --chip-on: #7df9ff;
   --input-bg: #0a0a2e;
   --shadow: none;
+  --on-accent: #00001a;
 }
 :root[data-mode="geek"] .site-header { border-bottom: 3px ridge #7df9ff; }
 :root[data-mode="geek"] .brand-text strong { font-family: "Times New Roman", serif; color: #ffe97a; }
@@ -374,12 +427,19 @@ a.store-badge:hover { filter: brightness(0.96); }
   -webkit-text-stroke: 0;
 }
 :root[data-mode="geek"] .feedback-row button { border-radius: 0; border: 2px outset #5a5ac8; }
+:root[data-mode="geek"] .af-form { border-radius: 0; border: 2px outset #5a5ac8; }
+:root[data-mode="geek"] .af-field input, :root[data-mode="geek"] .af-field textarea { border-radius: 0; }
+:root[data-mode="geek"] .af-actions button { border-radius: 0; }
+:root[data-mode="geek"] .chip.on, :root[data-mode="geek"] .pill.on {
+  background: var(--chip-on); color: #00001a; border: 2px inset #5a5ac8;
+}
+:root[data-mode="geek"] .qr-appicon-glyph { border-radius: 0; }
+:root[data-mode="geek"] .qr-appicon:hover { background: var(--accent-soft); }
 :root[data-mode="geek"] .switcher { border-radius: 0; }
 :root[data-mode="geek"] .switcher button.on { background: #ffe97a; color: #000; }
 
 @media (max-width: 640px) {
   .header-inner { gap: 10px; }
-  .tabs { margin-left: 0; }
-  .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
   .detail-card { padding: 18px; }
 }

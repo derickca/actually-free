@@ -27,9 +27,16 @@ verified listings (`include` + `per-badge`), adds QR Cards, and emits:
    the transparency brand) and push this folder.
 2. **Cloudflare Pages**: connect the repo, then add the custom domain
    `free.certifiable.media` (free SSL included).
-3. **Paste two values** into `assets/config.js` and redeploy:
-   - `GOATCOUNTER_CODE` — your Goatcounter site code (free signup, no API key)
-   - `FEEDBACK_EMAIL` — where "broke a promise" reports and suggestions go
+3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
+   and redeploy.
+4. **Feedback via ntfy** (free tier, no account, no backend): save the secret
+   topic to `~/.config/actually-free/ntfy-topic` on the build machine (one
+   line, no quotes), or set the `AF_NTFY_TOPIC` env var, then regenerate.
+   `generate.py` XOR-obfuscates the topic with a fresh random key on every
+   build — it never appears in page source as plaintext. Subscribe to the
+   topic in the ntfy app (Android) or at ntfy.sh to receive the reports;
+   the free tier keeps messages ~12 hours. Without a topic, the feedback
+   forms are replaced by a "not available yet" notice.
 
 ## Corpus rules (baked into generate.py)
 

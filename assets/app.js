@@ -21,7 +21,7 @@
 
   /* ---------- mode + theme (persisted, orthogonal) ------------------------- */
   var root = document.documentElement;
-  var MASCOTS = { playful: "/assets/mascot-cartoon.webp", geek: "/assets/mascot-geek.webp" };
+  var MASCOTS = { playful: "/assets/mascot-playful.webp", geek: "/assets/mascot-geek.webp" };
   function applyMode(mode) {
     root.setAttribute("data-mode", mode);
     try { localStorage.setItem("af-mode", mode); } catch (e) {}
@@ -54,38 +54,213 @@
     b.addEventListener("click", function () { applyTheme(b.getAttribute("data-theme")); });
   });
 
-  /* ---------- feedback buttons (detail pages) ------------------------------- */
-  var FEEDBACK_SUBJECTS = {
-    "doesnt-work": "App doesn't work",
-    "broke-promise": "App broke a promise",
-    "correction": "Listing correction"
-  };
-  document.querySelectorAll("[data-feedback]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      var kind = b.getAttribute("data-feedback"), slug = b.getAttribute("data-app");
-      gcEvent("feedback/" + kind + "/" + slug);
-      var email = (cfg.FEEDBACK_EMAIL || "").indexOf("PASTE") === 0 ? "" : cfg.FEEDBACK_EMAIL;
-      if (!email) { alert("Feedback email isn't configured yet \u2014 check back soon."); return; }
-      var body = "App: " + location.href + "\n\nWhat happened:\n";
-      location.href = "mailto:" + email +
-        "?subject=" + encodeURIComponent("[Actually Free] " + (FEEDBACK_SUBJECTS[kind] || "Feedback")) +
-        "&body=" + encodeURIComponent(body);
-    });
-  });
+  /* ---------- ntfy feedback ------------------------------------------------
+     The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
+     The topic is XOR-obfuscated per build: base64 in each form's data-t,
+     the key (vETSFHPuE+klWgilSw0HIw==, replaced at build time) embedded separately,
+     decoded only at send time. Anti-spam, all client-side: honeypot trap,
+     3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
+     Same pattern as FundingSpark. */
+  (function () {
+    "use strict";
+    var K = "vETSFHPuE+klWgilSw0HIw==";
+    var API = "https://ntfy.sh/", STORE = "af.sends";
+    var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
+        DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
+    var memory = [];
+    var REASONS = {
+      "doesnt-work": "Doesn't work",
+      "broke-promise": "Broke a promise",
+      "correction": "Suggest a correction"
+    };
+    function unb64(s) {
+      var t = atob(s), a = [];
+      for (var i = 0; i < t.length; i++) a.push(t.charCodeAt(i));
+      return a;
+    }
+    function topic(form) {
+      var t = form.getAttribute("data-t");
+      if (!t || !K) return "";
+      var d = unb64(t), k = unb64(K), o = [];
+      for (var i = 0; i < d.length; i++) o.push(d[i] ^ k[i % k.length]);
+      return new TextDecoder().decode(new Uint8Array(o));
+    }
+    // Plain text only: strip control characters, cut at max characters.
+    function clean(s, max, multi) {
+      s = String(s || "").replace(/\r\n?/g, "\n");
+      s = multi ? s.replace(/[\u0000-\u0008\u000b-\u001f\u007f-\u009f\u2028\u2029]/g, "")
+                : s.replace(/[\u0000-\u001f\u007f-\u009f\u2028\u2029]/g, " ");
+      return Array.from(s.trim()).slice(0, max).join("");
+    }
+    function cutBytes(s, n) {
+      var enc = new TextEncoder();
+      if (enc.encode(s).length <= n) return s;
+      var chars = Array.from(s);
+      while (chars.length && enc.encode(chars.join("")).length > n - 20)
+        chars.length = Math.max(0, chars.length - 20);
+      return chars.join("") + "\n[note shortened]";
+    }
+    function header(s) {   // header values must be Latin-1: the rest goes as RFC 2047 UTF-8
+      return /^[\x20-\x7e]*$/.test(s) ? s
+        : "=?UTF-8?B?" + btoa(unescape(encodeURIComponent(s))) + "?=";
+    }
+    function sends() {
+      try {
+        var v = JSON.parse(localStorage.getItem(STORE) || "[]");
+        if (Array.isArray(v)) memory = v.filter(isFinite);
+      } catch (e) { /* storage blocked */ }
+      return memory;
+    }
+    function record(now) {
+      memory = sends().filter(function (t) { return now - t < DAY_MS; });
+      memory.push(now);
+      try { localStorage.setItem(STORE, JSON.stringify(memory)); } catch (e) {}
+    }
+    function limited(now) {
+      var l = sends();
+      if (l.filter(function (t) { return now - t < DAY_MS; }).length >= DAY)
+        return "You've reached today's limit for sending reports from this browser. Try again tomorrow.";
+      if (l.filter(function (t) { return now - t < BURST_MS; }).length >= BURST)
+        return "You've sent a few reports just now. Wait a few minutes and try again.";
+      return "";
+    }
+    function val(form, name, max, multi) {
+      var f = form.elements[name];
+      return f ? clean(f.value, max, multi) : "";
+    }
+    function build(form) {
+      var sent = new Date().toISOString().replace(/\.\d+Z$/, "Z"), m = {};
+      if (form.getAttribute("data-af-form") === "suggest") {
+        m.title = "App suggestion";
+        m.tags = ["actually-free", "suggestion"];
+        m.priority = "3";
+        m.lines = ["App: " + val(form, "app_name", 200),
+                   "Link: " + (val(form, "app_link", 300) || "(not given)"),
+                   "Why free: " + (val(form, "note", 1000, true) || "(none)"),
+                   "Page: " + val(form, "page_url", 300),
+                   "Sent: " + sent];
+      } else {
+        var reason = val(form, "reason", 40);
+        var label = REASONS[reason] || REASONS["doesnt-work"];
+        var tag = reason === "broke-promise" ? "broke-promise"
+                : reason === "correction" ? "correction" : "doesnt-work";
+        var appName = val(form, "app_name", 200);
+        m.title = label + ": " + appName;
+        m.tags = ["actually-free", "feedback", tag];
+        m.priority = tag === "broke-promise" ? "4" : "3";
+        m.lines = ["App: " + appName,
+                   "Page URL: " + val(form, "page_url", 300),
+                   "Note: " + (val(form, "note", 1000, true) || "(none)"),
+                   "Sent: " + sent];
+      }
+      m.title = clean(m.title, 200);
+      m.body = cutBytes(m.lines.join("\n"), BODY_BYTES);
+      return m;
+    }
+    function bind(form) {
+      var wrap = form.parentNode,
+          done = wrap.querySelector("[data-af-done]"),
+          err = form.querySelector("[data-error]"),
+          btn = form.querySelector("button[type=submit]"),
+          opened = Date.now();
+      function finish() {
+        form.reset(); form.hidden = true;
+        if (done) {
+          done.hidden = false;
+          var t = done.querySelector(".af-thanks");
+          if (t) t.focus();
+        }
+      }
+      form.addEventListener("af-open", function () {
+        form.reset();
+        if (done) done.hidden = true;
+        err.textContent = "";
+        opened = Date.now();
+        form.hidden = false;
+      });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (btn.disabled) return;
+        err.textContent = "";
+        var kind = form.getAttribute("data-af-form");
+        if (kind === "suggest" && !val(form, "app_name", 200)) {
+          err.textContent = "Give the app a name so we know what to look at.";
+          return;
+        }
+        if (kind === "report" && !val(form, "note", 1000, true)) {
+          err.textContent = "Write a short note so we know what to check.";
+          return;
+        }
+        if (form.elements.website && form.elements.website.value) { finish(); return; }  // a bot: fake success, send nothing
+        var now = Date.now();
+        if (now - opened < MIN_OPEN_MS) {
+          err.textContent = "Take a moment to check your note, then press Send again.";
+          return;
+        }
+        var limit = limited(now);
+        if (limit) { err.textContent = limit; return; }
+        var t = topic(form);
+        if (!t) { err.textContent = "Feedback is not available yet."; return; }
+        var m = build(form);
+        btn.disabled = true;
+        record(now);
+        fetch(API + encodeURIComponent(t), {
+          method: "POST", body: m.body,
+          headers: { "Title": header(m.title), "Tags": m.tags.join(","), "Priority": m.priority }
+        })
+          .then(function (r) {
+            if (!r.ok) throw new Error("status " + r.status);
+            gcEvent("feedback-sent/" + kind);
+            finish();
+          })
+          .catch(function () {
+            err.textContent = "That didn't go through. Try again in a minute.";
+          })
+          .then(function () { btn.disabled = false; });
+      });
+      var cancels = form.querySelectorAll("[data-af-cancel]");
+      for (var i = 0; i < cancels.length; i++) {
+        cancels[i].addEventListener("click", function () {
+          form.reset(); form.hidden = true;
+        });
+      }
+    }
+    var forms = document.querySelectorAll("form[data-af-form]");
+    for (var n = 0; n < forms.length; n++) bind(forms[n]);
 
-  /* ---------- suggest-an-app link ------------------------------------------- */
-  var suggest = document.getElementById("suggest-link");
-  if (suggest) {
-    suggest.addEventListener("click", function (ev) {
-      ev.preventDefault();
-      gcEvent("suggest-app");
-      var email = (cfg.FEEDBACK_EMAIL || "").indexOf("PASTE") === 0 ? "" : cfg.FEEDBACK_EMAIL;
-      if (!email) { alert("Feedback email isn't configured yet \u2014 check back soon."); return; }
-      location.href = "mailto:" + email +
-        "?subject=" + encodeURIComponent("[Actually Free] App suggestion") +
-        "&body=" + encodeURIComponent("App name:\nWhere to find it (Play/F-Droid/GitHub link):\nWhy it's actually free:\n");
-    });
-  }
+    /* report buttons on detail pages: pick the reason, reveal the form */
+    var rbtns = document.querySelectorAll("[data-feedback]");
+    for (var b = 0; b < rbtns.length; b++) {
+      rbtns[b].addEventListener("click", function () {
+        var scope = this.closest("main") || document;
+        var form = scope.querySelector("form[data-af-form=report]");
+        if (!form) return;
+        form.dispatchEvent(new CustomEvent("af-open"));  // resets + reveals; set reason after
+        form.elements.reason.value = this.getAttribute("data-feedback");
+        var lbl = form.querySelector("[data-reason-label]");
+        if (lbl) lbl.textContent = this.getAttribute("data-label");
+        if (form.elements.note) form.elements.note.focus();
+      });
+    }
+
+    /* suggest-an-app link in the footer */
+    var suggest = document.getElementById("suggest-link");
+    if (suggest) {
+      suggest.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        gcEvent("suggest-app");
+        var scope = suggest.closest("footer") || document;
+        var form = scope.querySelector("form[data-af-form=suggest]");
+        if (!form) return;
+        if (form.hidden) {
+          form.dispatchEvent(new CustomEvent("af-open"));
+          if (form.elements.app_name) form.elements.app_name.focus();
+        } else {
+          form.hidden = true;
+        }
+      });
+    }
+  })();
 
   /* ---------- random app (geek webring) -------------------------------------- */
   var randomBtn = document.getElementById("random-app");
