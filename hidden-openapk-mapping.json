@@ -1,398 +1,470 @@
 [
- {
-  "slug": "ws-xsoh-etar",
-  "openapk_url": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
- },
- {
-  "slug": "org-fossify-calendar",
-  "openapk_url": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
- },
- {
-  "slug": "com-omgodse-notally",
-  "openapk_url": "https://www.openapk.net/notally-minimalist-notes/com.omgodse.notally/"
- },
- {
-  "slug": "net-gsantner-markor",
-  "openapk_url": "https://www.openapk.net/markor/net.gsantner.markor/"
- },
- {
-  "slug": "org-dmfs-tasks",
-  "openapk_url": "https://www.openapk.net/opentasks/org.dmfs.tasks/"
- },
- {
-  "slug": "me-zhanghai-android-files",
-  "openapk_url": "https://www.openapk.net/material-files/me.zhanghai.android.files/"
- },
- {
-  "slug": "org-fossify-filemanager",
-  "openapk_url": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
- },
- {
-  "slug": "com-amaze-filemanager",
-  "openapk_url": "https://www.openapk.net/amaze/com.amaze.filemanager/"
- },
- {
-  "slug": "org-breezyweather",
-  "openapk_url": "https://www.openapk.net/breezy-weather/org.breezyweather/"
- },
- {
-  "slug": "co-prestosole-clima",
-  "openapk_url": "https://www.openapk.net/clima/co.prestosole.clima/"
- },
- {
-  "slug": "co-garmax-materialflashlight",
-  "openapk_url": "https://www.openapk.net/material-flashlight/co.garmax.materialflashlight/"
- },
- {
-  "slug": "com-pdb82-flashlighttiramisu",
-  "openapk_url": "https://www.openapk.net/flashlight-tiramisu/com.pdb82.flashlighttiramisu/"
- },
- {
-  "slug": "de-markusfisch-android-binaryeye",
-  "openapk_url": "https://www.openapk.net/binary-eye/de.markusfisch.android.binaryeye/"
- },
- {
-  "slug": "com-atharok-barcodescanner",
-  "openapk_url": "https://www.openapk.net/barcode-scanner/com.atharok.barcodescanner/"
- },
- {
-  "slug": "com-darkempire78-opencalculator",
-  "openapk_url": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
- },
- {
-  "slug": "com-physphil-android-unitconverterultimate",
-  "openapk_url": "https://www.openapk.net/unit-converter-ultimate/com.physphil.android.unitconverterultimate/"
- },
- {
-  "slug": "com-ferrarid-converterpro",
-  "openapk_url": "https://www.openapk.net/converter-now-unit-converter/com.ferrarid.converterpro/"
- },
- {
-  "slug": "com-bobek-compass",
-  "openapk_url": "https://www.openapk.net/compass/com.bobek.compass/"
- },
- {
-  "slug": "org-woheller69-level",
-  "openapk_url": "https://www.openapk.net/bubble/org.woheller69.level/"
- },
- {
-  "slug": "org-secuso-privacyfriendlyactivitytracker",
-  "openapk_url": "https://www.openapk.net/pedometer-pfa/org.secuso.privacyfriendlyactivitytracker/"
- },
- {
-  "slug": "com-nvllz-stepsy",
-  "openapk_url": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
- },
- {
-  "slug": "com-vicolo-chrono",
-  "openapk_url": "https://www.openapk.net/chrono/com.vicolo.chrono/"
- },
- {
-  "slug": "com-better-alarm",
-  "openapk_url": "https://www.openapk.net/simple-alarm-clock/com.better.alarm/"
- },
- {
-  "slug": "com-angrydoughnuts-android-alarmclock",
-  "openapk_url": "https://www.openapk.net/alarm-klock/com.angrydoughnuts.android.alarmclock/"
- },
- {
-  "slug": "org-fossify-clock",
-  "openapk_url": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
- },
- {
-  "slug": "itkach-aard2",
-  "openapk_url": "https://www.openapk.net/aard-2/itkach.aard2/"
- },
- {
-  "slug": "com-annie-dictionary-fork",
-  "openapk_url": "https://www.openapk.net/qdict/com.annie.dictionary.fork/"
- },
- {
-  "slug": "org-videolan-vlc",
-  "openapk_url": "https://www.openapk.net/vlc/org.videolan.vlc/"
- },
- {
-  "slug": "is-xyz-mpv",
-  "openapk_url": "https://www.openapk.net/mpv-android/is.xyz.mpv/"
- },
- {
-  "slug": "org-courville-nova",
-  "openapk_url": "https://www.openapk.net/nova-video-player/org.courville.nova/"
- },
- {
-  "slug": "dev-anilbeesetti-nextplayer",
-  "openapk_url": "https://www.openapk.net/next-player/dev.anilbeesetti.nextplayer/"
- },
- {
-  "slug": "org-oxycblt-auxio",
-  "openapk_url": "https://www.openapk.net/auxio/org.oxycblt.auxio/"
- },
- {
-  "slug": "com-poupa-vinylmusicplayer",
-  "openapk_url": "https://www.openapk.net/vinyl-music-player/com.poupa.vinylmusicplayer/"
- },
- {
-  "slug": "code-name-monkey-retromusic",
-  "openapk_url": "https://www.openapk.net/retro-music/code.name.monkey.retromusic/"
- },
- {
-  "slug": "ch-blinkenlights-android-vanilla",
-  "openapk_url": "https://www.openapk.net/vanilla-music/ch.blinkenlights.android.vanilla/"
- },
- {
-  "slug": "player-phonograph-plus",
-  "openapk_url": "https://www.openapk.net/phonograph-plus/player.phonograph.plus/"
- },
- {
-  "slug": "de-danoeh-antennapod",
-  "openapk_url": "https://www.openapk.net/antennapod/de.danoeh.antennapod/"
- },
- {
-  "slug": "ac-mdiq-podcini-a",
-  "openapk_url": "https://www.openapk.net/podcini-a-extensible-media-instrument/ac.mdiq.Podcini.A/"
- },
- {
-  "slug": "com-podverse-fdroid",
-  "openapk_url": "https://www.openapk.net/podverse/com.podverse.fdroid/"
- },
- {
-  "slug": "de-ph1b-audiobook",
-  "openapk_url": "https://www.openapk.net/voice-audiobook-player/de.ph1b.audiobook/"
- },
- {
-  "slug": "org-schabi-newpipe",
-  "openapk_url": "https://www.openapk.net/newpipe/org.schabi.newpipe/"
- },
- {
-  "slug": "net-sourceforge-opencamera",
-  "openapk_url": "https://www.openapk.net/open-camera/net.sourceforge.opencamera/"
- },
- {
-  "slug": "deckers-thibault-aves-libre",
-  "openapk_url": "https://www.openapk.net/aves-libre/deckers.thibault.aves.libre/"
- },
- {
-  "slug": "org-fossify-gallery",
-  "openapk_url": "https://www.openapk.net/fossify-gallery/org.fossify.gallery/"
- },
- {
-  "slug": "com-nononsenseapps-feeder-play",
-  "openapk_url": "https://www.openapk.net/feeder-play-version/com.nononsenseapps.feeder.play/"
- },
- {
-  "slug": "com-capyreader-app",
-  "openapk_url": "https://www.openapk.net/capy-reader/com.capyreader.app/"
- },
- {
-  "slug": "org-decsync-flym",
-  "openapk_url": "https://www.openapk.net/flym-decsync/org.decsync.flym/"
- },
- {
-  "slug": "org-koreader-launcher-fdroid",
-  "openapk_url": "https://www.openapk.net/koreader/org.koreader.launcher.fdroid/"
- },
- {
-  "slug": "io-gitlab-coolreader-ng-lxreader-fdroid",
-  "openapk_url": "https://www.openapk.net/lxreader/io.gitlab.coolreader_ng.lxreader.fdroid/"
- },
- {
-  "slug": "org-catrobat-paintroid",
-  "openapk_url": "https://www.openapk.net/pocket-paint/org.catrobat.paintroid/"
- },
- {
-  "slug": "org-fossify-voicerecorder",
-  "openapk_url": "https://www.openapk.net/fossify-voice-recorder/org.fossify.voicerecorder/"
- },
- {
-  "slug": "com-dimowner-audiorecorder",
-  "openapk_url": "https://www.openapk.net/audio-recorder/com.dimowner.audiorecorder/"
- },
- {
-  "slug": "org-thoughtcrime-securesms",
-  "openapk_url": "https://www.openapk.net/signal/org.thoughtcrime.securesms/"
- },
- {
-  "slug": "com-moez-qksms",
-  "openapk_url": "https://www.openapk.net/qksms/com.moez.QKSMS/"
- },
- {
-  "slug": "org-fossify-messages",
-  "openapk_url": "https://www.openapk.net/fossify-sms-messenger/org.fossify.messages/"
- },
- {
-  "slug": "org-fossify-phone",
-  "openapk_url": "https://www.openapk.net/fossify-phone/org.fossify.phone/"
- },
- {
-  "slug": "org-fossify-contacts",
-  "openapk_url": "https://www.openapk.net/fossify-contacts/org.fossify.contacts/"
- },
- {
-  "slug": "com-chooloo-www-koler",
-  "openapk_url": "https://www.openapk.net/koler/com.chooloo.www.koler/"
- },
- {
-  "slug": "eu-faircode-email",
-  "openapk_url": "https://www.openapk.net/fairemail/eu.faircode.email/"
- },
- {
-  "slug": "com-beemdevelopment-aegis",
-  "openapk_url": "https://www.openapk.net/aegis-authenticator/com.beemdevelopment.aegis/"
- },
- {
-  "slug": "com-x8bit-bitwarden",
-  "openapk_url": "https://www.openapk.net/bitwarden/com.x8bit.bitwarden/"
- },
- {
-  "slug": "rkr-simplekeyboard-inputmethod",
-  "openapk_url": "https://www.openapk.net/simple-keyboard/rkr.simplekeyboard.inputmethod/"
- },
- {
-  "slug": "dev-patrickgold-florisboard",
-  "openapk_url": "https://www.openapk.net/florisboard/dev.patrickgold.florisboard/"
- },
- {
-  "slug": "org-dslul-openboard-inputmethod-latin",
-  "openapk_url": "https://www.openapk.net/openboard/org.dslul.openboard.inputmethod.latin/"
- },
- {
-  "slug": "fr-neamar-kiss",
-  "openapk_url": "https://www.openapk.net/kiss-launcher/fr.neamar.kiss/"
- },
- {
-  "slug": "app-lawnchair",
-  "openapk_url": "https://www.openapk.net/lawnchair/app.lawnchair/"
- },
- {
-  "slug": "org-adaway",
-  "openapk_url": "https://www.openapk.net/adaway/org.adaway/"
- },
- {
-  "slug": "dnsfilter-android",
-  "openapk_url": "https://www.openapk.net/personaldnsfilter/dnsfilter.android/"
- },
- {
-  "slug": "eu-faircode-netguard",
-  "openapk_url": "https://www.openapk.net/netguard/eu.faircode.netguard/"
- },
- {
-  "slug": "com-celzero-bravedns",
-  "openapk_url": "https://www.openapk.net/rethink-dns-firewall/com.celzero.bravedns/"
- },
- {
-  "slug": "net-typeblog-shelter",
-  "openapk_url": "https://www.openapk.net/shelter/net.typeblog.shelter/"
- },
- {
-  "slug": "com-github-catfriend1-syncthingfork",
-  "openapk_url": "https://www.openapk.net/syncthing-fork/com.github.catfriend1.syncthingfork/"
- },
- {
-  "slug": "com-nextcloud-client",
-  "openapk_url": "https://www.openapk.net/nextcloud/com.nextcloud.client/"
- },
- {
-  "slug": "com-termux",
-  "openapk_url": "https://www.openapk.net/termux/com.termux/"
- },
- {
-  "slug": "ryey-easer-beta",
-  "openapk_url": "https://www.openapk.net/easer-beta/ryey.easer.beta/"
- },
- {
-  "slug": "org-fdroid-fdroid",
-  "openapk_url": "https://www.openapk.net/f-droid/org.fdroid.fdroid/"
- },
- {
-  "slug": "com-gpl-rpg-andorstrail",
-  "openapk_url": "https://www.openapk.net/andors-trail/com.gpl.rpg.AndorsTrail/"
- },
- {
-  "slug": "net-nullsum-freedoom",
-  "openapk_url": "https://www.openapk.net/freedoom/net.nullsum.freedoom/"
- },
- {
-  "slug": "com-shatteredpixel-shatteredpixeldungeon",
-  "openapk_url": "https://www.openapk.net/shattered-pixel-dungeon/com.shatteredpixel.shatteredpixeldungeon/"
- },
- {
-  "slug": "com-roguetemple-hyperroid",
-  "openapk_url": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
- },
- {
-  "slug": "com-github-thewierdnut-endless-mobile",
-  "openapk_url": "https://www.openapk.net/endless-sky/com.github.thewierdnut.endless_mobile/"
- },
- {
-  "slug": "com-unciv-app",
-  "openapk_url": "https://www.openapk.net/unciv/com.unciv.app/"
- },
- {
-  "slug": "de-mwvb-blockpuzzle",
-  "openapk_url": "https://www.openapk.net/block-puzzle-stone-wars/de.mwvb.blockpuzzle/"
- },
- {
-  "slug": "de-saschahlusiak-freebloks",
-  "openapk_url": "https://www.openapk.net/freebloks/de.saschahlusiak.freebloks/"
- },
- {
-  "slug": "io-github-choganhq-chogan",
-  "openapk_url": "https://www.openapk.net/chogan/io.github.choganhq.chogan/"
- },
- {
-  "slug": "org-eehouse-android-xw4",
-  "openapk_url": "https://www.openapk.net/crosswords/org.eehouse.android.xw4/"
- },
- {
-  "slug": "org-develz-crawl",
-  "openapk_url": "https://www.openapk.net/dungeon-crawl-stone-soup/org.develz.crawl/"
- },
- {
-  "slug": "io-anuke-mindustry",
-  "openapk_url": "https://www.openapk.net/mindustry/io.anuke.mindustry/"
- },
- {
-  "slug": "org-lichess-mobilev2",
-  "openapk_url": "https://www.openapk.net/lichess/org.lichess.mobileV2/"
- },
- {
-  "slug": "org-supertuxkart-stk",
-  "openapk_url": "https://www.openapk.net/supertuxkart/org.supertuxkart.stk/"
- },
- {
-  "slug": "net-minetest-minetest",
-  "openapk_url": "https://www.openapk.net/minetest/net.minetest.minetest/"
- },
- {
-  "slug": "io-github-johnathan-minesweeper",
-  "openapk_url": "https://www.openapk.net/minesweeper/io.github.johnathan.minesweeper/"
- },
- {
-  "slug": "name-boyle-chris-sgtpuzzles",
-  "openapk_url": "https://www.openapk.net/puzzles/name.boyle.chris.sgtpuzzles/"
- },
- {
-  "slug": "com-kaajjo-libresudoku",
-  "openapk_url": "https://www.openapk.net/libresudoku/com.kaajjo.libresudoku/"
- },
- {
-  "slug": "org-andstatus-game2048",
-  "openapk_url": "https://www.openapk.net/2048-open-fun-game/org.andstatus.game2048/"
- },
- {
-  "slug": "org-wesnoth-wesnoth",
-  "openapk_url": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
- },
- {
-  "slug": "com-agateau-tinywheels-android",
-  "openapk_url": "https://www.openapk.net/pixel-wheels/com.agateau.tinywheels.android/"
- },
- {
-  "slug": "ch-logixisland-anuto",
-  "openapk_url": "https://www.openapk.net/anuto-td/ch.logixisland.anuto/"
- },
- {
-  "slug": "org-openttd-fdroid",
-  "openapk_url": "https://www.openapk.net/openttd/org.openttd.fdroid/"
- }
+  {
+    "slug": "ws-xsoh-etar",
+    "openapk_url": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
+  },
+  {
+    "slug": "org-fossify-calendar",
+    "openapk_url": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
+  },
+  {
+    "slug": "com-omgodse-notally",
+    "openapk_url": "https://www.openapk.net/notally-minimalist-notes/com.omgodse.notally/"
+  },
+  {
+    "slug": "net-gsantner-markor",
+    "openapk_url": "https://www.openapk.net/markor/net.gsantner.markor/"
+  },
+  {
+    "slug": "org-dmfs-tasks",
+    "openapk_url": "https://www.openapk.net/opentasks/org.dmfs.tasks/"
+  },
+  {
+    "slug": "me-zhanghai-android-files",
+    "openapk_url": "https://www.openapk.net/material-files/me.zhanghai.android.files/"
+  },
+  {
+    "slug": "org-fossify-filemanager",
+    "openapk_url": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
+  },
+  {
+    "slug": "com-amaze-filemanager",
+    "openapk_url": "https://www.openapk.net/amaze/com.amaze.filemanager/"
+  },
+  {
+    "slug": "org-breezyweather",
+    "openapk_url": "https://www.openapk.net/breezy-weather/org.breezyweather/"
+  },
+  {
+    "slug": "co-prestosole-clima",
+    "openapk_url": "https://www.openapk.net/clima/co.prestosole.clima/"
+  },
+  {
+    "slug": "co-garmax-materialflashlight",
+    "openapk_url": "https://www.openapk.net/material-flashlight/co.garmax.materialflashlight/"
+  },
+  {
+    "slug": "com-pdb82-flashlighttiramisu",
+    "openapk_url": "https://www.openapk.net/flashlight-tiramisu/com.pdb82.flashlighttiramisu/"
+  },
+  {
+    "slug": "de-markusfisch-android-binaryeye",
+    "openapk_url": "https://www.openapk.net/binary-eye/de.markusfisch.android.binaryeye/"
+  },
+  {
+    "slug": "com-atharok-barcodescanner",
+    "openapk_url": "https://www.openapk.net/barcode-scanner/com.atharok.barcodescanner/"
+  },
+  {
+    "slug": "com-darkempire78-opencalculator",
+    "openapk_url": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
+  },
+  {
+    "slug": "com-physphil-android-unitconverterultimate",
+    "openapk_url": "https://www.openapk.net/unit-converter-ultimate/com.physphil.android.unitconverterultimate/"
+  },
+  {
+    "slug": "com-ferrarid-converterpro",
+    "openapk_url": "https://www.openapk.net/converter-now-unit-converter/com.ferrarid.converterpro/"
+  },
+  {
+    "slug": "com-bobek-compass",
+    "openapk_url": "https://www.openapk.net/compass/com.bobek.compass/"
+  },
+  {
+    "slug": "org-woheller69-level",
+    "openapk_url": "https://www.openapk.net/bubble/org.woheller69.level/"
+  },
+  {
+    "slug": "org-secuso-privacyfriendlyactivitytracker",
+    "openapk_url": "https://www.openapk.net/pedometer-pfa/org.secuso.privacyfriendlyactivitytracker/"
+  },
+  {
+    "slug": "com-nvllz-stepsy",
+    "openapk_url": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
+  },
+  {
+    "slug": "com-vicolo-chrono",
+    "openapk_url": "https://www.openapk.net/chrono/com.vicolo.chrono/"
+  },
+  {
+    "slug": "com-better-alarm",
+    "openapk_url": "https://www.openapk.net/simple-alarm-clock/com.better.alarm/"
+  },
+  {
+    "slug": "com-angrydoughnuts-android-alarmclock",
+    "openapk_url": "https://www.openapk.net/alarm-klock/com.angrydoughnuts.android.alarmclock/"
+  },
+  {
+    "slug": "org-fossify-clock",
+    "openapk_url": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
+  },
+  {
+    "slug": "itkach-aard2",
+    "openapk_url": "https://www.openapk.net/aard-2/itkach.aard2/"
+  },
+  {
+    "slug": "com-annie-dictionary-fork",
+    "openapk_url": "https://www.openapk.net/qdict/com.annie.dictionary.fork/"
+  },
+  {
+    "slug": "org-videolan-vlc",
+    "openapk_url": "https://www.openapk.net/vlc/org.videolan.vlc/"
+  },
+  {
+    "slug": "is-xyz-mpv",
+    "openapk_url": "https://www.openapk.net/mpv-android/is.xyz.mpv/"
+  },
+  {
+    "slug": "org-courville-nova",
+    "openapk_url": "https://www.openapk.net/nova-video-player/org.courville.nova/"
+  },
+  {
+    "slug": "dev-anilbeesetti-nextplayer",
+    "openapk_url": "https://www.openapk.net/next-player/dev.anilbeesetti.nextplayer/"
+  },
+  {
+    "slug": "org-oxycblt-auxio",
+    "openapk_url": "https://www.openapk.net/auxio/org.oxycblt.auxio/"
+  },
+  {
+    "slug": "com-poupa-vinylmusicplayer",
+    "openapk_url": "https://www.openapk.net/vinyl-music-player/com.poupa.vinylmusicplayer/"
+  },
+  {
+    "slug": "code-name-monkey-retromusic",
+    "openapk_url": "https://www.openapk.net/retro-music/code.name.monkey.retromusic/"
+  },
+  {
+    "slug": "ch-blinkenlights-android-vanilla",
+    "openapk_url": "https://www.openapk.net/vanilla-music/ch.blinkenlights.android.vanilla/"
+  },
+  {
+    "slug": "player-phonograph-plus",
+    "openapk_url": "https://www.openapk.net/phonograph-plus/player.phonograph.plus/"
+  },
+  {
+    "slug": "de-danoeh-antennapod",
+    "openapk_url": "https://www.openapk.net/antennapod/de.danoeh.antennapod/"
+  },
+  {
+    "slug": "ac-mdiq-podcini-a",
+    "openapk_url": "https://www.openapk.net/podcini-a-extensible-media-instrument/ac.mdiq.Podcini.A/"
+  },
+  {
+    "slug": "com-podverse-fdroid",
+    "openapk_url": "https://www.openapk.net/podverse/com.podverse.fdroid/"
+  },
+  {
+    "slug": "de-ph1b-audiobook",
+    "openapk_url": "https://www.openapk.net/voice-audiobook-player/de.ph1b.audiobook/"
+  },
+  {
+    "slug": "org-schabi-newpipe",
+    "openapk_url": "https://www.openapk.net/newpipe/org.schabi.newpipe/"
+  },
+  {
+    "slug": "net-sourceforge-opencamera",
+    "openapk_url": "https://www.openapk.net/open-camera/net.sourceforge.opencamera/"
+  },
+  {
+    "slug": "deckers-thibault-aves-libre",
+    "openapk_url": "https://www.openapk.net/aves-libre/deckers.thibault.aves.libre/"
+  },
+  {
+    "slug": "org-fossify-gallery",
+    "openapk_url": "https://www.openapk.net/fossify-gallery/org.fossify.gallery/"
+  },
+  {
+    "slug": "com-nononsenseapps-feeder-play",
+    "openapk_url": "https://www.openapk.net/feeder-play-version/com.nononsenseapps.feeder.play/"
+  },
+  {
+    "slug": "com-capyreader-app",
+    "openapk_url": "https://www.openapk.net/capy-reader/com.capyreader.app/"
+  },
+  {
+    "slug": "org-decsync-flym",
+    "openapk_url": "https://www.openapk.net/flym-decsync/org.decsync.flym/"
+  },
+  {
+    "slug": "org-koreader-launcher-fdroid",
+    "openapk_url": "https://www.openapk.net/koreader/org.koreader.launcher.fdroid/"
+  },
+  {
+    "slug": "io-gitlab-coolreader-ng-lxreader-fdroid",
+    "openapk_url": "https://www.openapk.net/lxreader/io.gitlab.coolreader_ng.lxreader.fdroid/"
+  },
+  {
+    "slug": "org-catrobat-paintroid",
+    "openapk_url": "https://www.openapk.net/pocket-paint/org.catrobat.paintroid/"
+  },
+  {
+    "slug": "org-fossify-voicerecorder",
+    "openapk_url": "https://www.openapk.net/fossify-voice-recorder/org.fossify.voicerecorder/"
+  },
+  {
+    "slug": "com-dimowner-audiorecorder",
+    "openapk_url": "https://www.openapk.net/audio-recorder/com.dimowner.audiorecorder/"
+  },
+  {
+    "slug": "org-thoughtcrime-securesms",
+    "openapk_url": "https://www.openapk.net/signal/org.thoughtcrime.securesms/"
+  },
+  {
+    "slug": "com-moez-qksms",
+    "openapk_url": "https://www.openapk.net/qksms/com.moez.QKSMS/"
+  },
+  {
+    "slug": "org-fossify-messages",
+    "openapk_url": "https://www.openapk.net/fossify-sms-messenger/org.fossify.messages/"
+  },
+  {
+    "slug": "org-fossify-phone",
+    "openapk_url": "https://www.openapk.net/fossify-phone/org.fossify.phone/"
+  },
+  {
+    "slug": "org-fossify-contacts",
+    "openapk_url": "https://www.openapk.net/fossify-contacts/org.fossify.contacts/"
+  },
+  {
+    "slug": "com-chooloo-www-koler",
+    "openapk_url": "https://www.openapk.net/koler/com.chooloo.www.koler/"
+  },
+  {
+    "slug": "eu-faircode-email",
+    "openapk_url": "https://www.openapk.net/fairemail/eu.faircode.email/"
+  },
+  {
+    "slug": "com-beemdevelopment-aegis",
+    "openapk_url": "https://www.openapk.net/aegis-authenticator/com.beemdevelopment.aegis/"
+  },
+  {
+    "slug": "com-x8bit-bitwarden",
+    "openapk_url": "https://www.openapk.net/bitwarden/com.x8bit.bitwarden/"
+  },
+  {
+    "slug": "rkr-simplekeyboard-inputmethod",
+    "openapk_url": "https://www.openapk.net/simple-keyboard/rkr.simplekeyboard.inputmethod/"
+  },
+  {
+    "slug": "dev-patrickgold-florisboard",
+    "openapk_url": "https://www.openapk.net/florisboard/dev.patrickgold.florisboard/"
+  },
+  {
+    "slug": "org-dslul-openboard-inputmethod-latin",
+    "openapk_url": "https://www.openapk.net/openboard/org.dslul.openboard.inputmethod.latin/"
+  },
+  {
+    "slug": "fr-neamar-kiss",
+    "openapk_url": "https://www.openapk.net/kiss-launcher/fr.neamar.kiss/"
+  },
+  {
+    "slug": "app-lawnchair",
+    "openapk_url": "https://www.openapk.net/lawnchair/app.lawnchair/"
+  },
+  {
+    "slug": "org-adaway",
+    "openapk_url": "https://www.openapk.net/adaway/org.adaway/"
+  },
+  {
+    "slug": "dnsfilter-android",
+    "openapk_url": "https://www.openapk.net/personaldnsfilter/dnsfilter.android/"
+  },
+  {
+    "slug": "eu-faircode-netguard",
+    "openapk_url": "https://www.openapk.net/netguard/eu.faircode.netguard/"
+  },
+  {
+    "slug": "com-celzero-bravedns",
+    "openapk_url": "https://www.openapk.net/rethink-dns-firewall/com.celzero.bravedns/"
+  },
+  {
+    "slug": "net-typeblog-shelter",
+    "openapk_url": "https://www.openapk.net/shelter/net.typeblog.shelter/"
+  },
+  {
+    "slug": "com-github-catfriend1-syncthingfork",
+    "openapk_url": "https://www.openapk.net/syncthing-fork/com.github.catfriend1.syncthingfork/"
+  },
+  {
+    "slug": "com-nextcloud-client",
+    "openapk_url": "https://www.openapk.net/nextcloud/com.nextcloud.client/"
+  },
+  {
+    "slug": "com-termux",
+    "openapk_url": "https://www.openapk.net/termux/com.termux/"
+  },
+  {
+    "slug": "ryey-easer-beta",
+    "openapk_url": "https://www.openapk.net/easer-beta/ryey.easer.beta/"
+  },
+  {
+    "slug": "org-fdroid-fdroid",
+    "openapk_url": "https://www.openapk.net/f-droid/org.fdroid.fdroid/"
+  },
+  {
+    "slug": "com-gpl-rpg-andorstrail",
+    "openapk_url": "https://www.openapk.net/andors-trail/com.gpl.rpg.AndorsTrail/"
+  },
+  {
+    "slug": "net-nullsum-freedoom",
+    "openapk_url": "https://www.openapk.net/freedoom/net.nullsum.freedoom/"
+  },
+  {
+    "slug": "com-shatteredpixel-shatteredpixeldungeon",
+    "openapk_url": "https://www.openapk.net/shattered-pixel-dungeon/com.shatteredpixel.shatteredpixeldungeon/"
+  },
+  {
+    "slug": "com-roguetemple-hyperroid",
+    "openapk_url": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
+  },
+  {
+    "slug": "com-github-thewierdnut-endless-mobile",
+    "openapk_url": "https://www.openapk.net/endless-sky/com.github.thewierdnut.endless_mobile/"
+  },
+  {
+    "slug": "com-unciv-app",
+    "openapk_url": "https://www.openapk.net/unciv/com.unciv.app/"
+  },
+  {
+    "slug": "de-mwvb-blockpuzzle",
+    "openapk_url": "https://www.openapk.net/block-puzzle-stone-wars/de.mwvb.blockpuzzle/"
+  },
+  {
+    "slug": "de-saschahlusiak-freebloks",
+    "openapk_url": "https://www.openapk.net/freebloks/de.saschahlusiak.freebloks/"
+  },
+  {
+    "slug": "io-github-choganhq-chogan",
+    "openapk_url": "https://www.openapk.net/chogan/io.github.choganhq.chogan/"
+  },
+  {
+    "slug": "org-eehouse-android-xw4",
+    "openapk_url": "https://www.openapk.net/crosswords/org.eehouse.android.xw4/"
+  },
+  {
+    "slug": "org-develz-crawl",
+    "openapk_url": "https://www.openapk.net/dungeon-crawl-stone-soup/org.develz.crawl/"
+  },
+  {
+    "slug": "io-anuke-mindustry",
+    "openapk_url": "https://www.openapk.net/mindustry/io.anuke.mindustry/"
+  },
+  {
+    "slug": "org-lichess-mobilev2",
+    "openapk_url": "https://www.openapk.net/lichess/org.lichess.mobileV2/"
+  },
+  {
+    "slug": "org-supertuxkart-stk",
+    "openapk_url": "https://www.openapk.net/supertuxkart/org.supertuxkart.stk/"
+  },
+  {
+    "slug": "net-minetest-minetest",
+    "openapk_url": "https://www.openapk.net/minetest/net.minetest.minetest/"
+  },
+  {
+    "slug": "io-github-johnathan-minesweeper",
+    "openapk_url": "https://www.openapk.net/minesweeper/io.github.johnathan.minesweeper/"
+  },
+  {
+    "slug": "name-boyle-chris-sgtpuzzles",
+    "openapk_url": "https://www.openapk.net/puzzles/name.boyle.chris.sgtpuzzles/"
+  },
+  {
+    "slug": "com-kaajjo-libresudoku",
+    "openapk_url": "https://www.openapk.net/libresudoku/com.kaajjo.libresudoku/"
+  },
+  {
+    "slug": "org-andstatus-game2048",
+    "openapk_url": "https://www.openapk.net/2048-open-fun-game/org.andstatus.game2048/"
+  },
+  {
+    "slug": "org-wesnoth-wesnoth",
+    "openapk_url": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
+  },
+  {
+    "slug": "com-agateau-tinywheels-android",
+    "openapk_url": "https://www.openapk.net/pixel-wheels/com.agateau.tinywheels.android/"
+  },
+  {
+    "slug": "ch-logixisland-anuto",
+    "openapk_url": "https://www.openapk.net/anuto-td/ch.logixisland.anuto/"
+  },
+  {
+    "slug": "org-openttd-fdroid",
+    "openapk_url": "https://www.openapk.net/openttd/org.openttd.fdroid/"
+  },
+  {
+    "slug": "com-dot-gallery",
+    "openapk_url": "https://www.openapk.net/gallery/com.dot.gallery/"
+  },
+  {
+    "slug": "me-ash-reader",
+    "openapk_url": "https://www.openapk.net/read-you/me.ash.reader/"
+  },
+  {
+    "slug": "com-dmi3dmi3-saywhen",
+    "openapk_url": "https://www.openapk.net/saywhen/com.dmi3dmi3.saywhen/"
+  },
+  {
+    "slug": "org-piepmeyer-gauguin",
+    "openapk_url": "https://www.openapk.net/gauguin/org.piepmeyer.gauguin/"
+  },
+  {
+    "slug": "io-github-yamin8000-dooz",
+    "openapk_url": "https://www.openapk.net/dooz/io.github.yamin8000.dooz/"
+  },
+  {
+    "slug": "org-billthefarmer-gridle",
+    "openapk_url": "https://www.openapk.net/gridle/org.billthefarmer.gridle/"
+  },
+  {
+    "slug": "org-grakovne-lissen",
+    "openapk_url": "https://www.openapk.net/lissen-audiobookshelf-client/org.grakovne.lissen/"
+  },
+  {
+    "slug": "com-demonlab-lune",
+    "openapk_url": "https://www.openapk.net/lune/com.demonlab.lune/"
+  },
+  {
+    "slug": "com-adeeteya-classipod",
+    "openapk_url": "https://www.openapk.net/classipod/com.adeeteya.classipod/"
+  },
+  {
+    "slug": "com-nkls-nekovideo",
+    "openapk_url": "https://www.openapk.net/nekovideo/com.nkls.nekovideo/"
+  },
+  {
+    "slug": "com-ismartcoding-plain",
+    "openapk_url": "https://www.openapk.net/plainapp-file-web-access/com.ismartcoding.plain/"
+  },
+  {
+    "slug": "helium314-keyboard",
+    "openapk_url": "https://www.openapk.net/heliboard/helium314.keyboard/"
+  },
+  {
+    "slug": "com-aicodix-rattlegram",
+    "openapk_url": "https://www.openapk.net/rattlegram-sms-via-audio/com.aicodix.rattlegram/"
+  },
+  {
+    "slug": "com-danemadsen-maid",
+    "openapk_url": "https://www.openapk.net/maid/com.danemadsen.maid/"
+  },
+  {
+    "slug": "cz-mod42-diktafon",
+    "openapk_url": "https://www.openapk.net/diktafon-voice-memos-on-tape/cz.mod42.diktafon/"
+  },
+  {
+    "slug": "free-rm-skytube-oss",
+    "openapk_url": "https://www.openapk.net/skytube/free.rm.skytube.oss/"
+  },
+  {
+    "slug": "org-quantumbadger-redreader",
+    "openapk_url": "https://www.openapk.net/redreader/org.quantumbadger.redreader/"
+  },
+  {
+    "slug": "neth-iecal-curbox",
+    "openapk_url": "https://www.openapk.net/curbox-app-website-blocker/neth.iecal.curbox/"
+  }
 ]

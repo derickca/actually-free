@@ -15,7 +15,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.andstatus.game2048",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/andstatus/game2048",
    "openapk": "https://www.openapk.net/2048-open-fun-game/org.andstatus.game2048/"
   },
   "rating": null,
@@ -41,7 +41,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=itkach.aard2",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/itkach/aard2-android",
    "openapk": "https://www.openapk.net/aard-2/itkach.aard2/"
   },
   "rating": "4.26",
@@ -120,7 +120,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/kraigs-android/kraigsandroid",
    "openapk": "https://www.openapk.net/alarm-klock/com.angrydoughnuts.android.alarmclock/"
   },
   "rating": null,
@@ -146,7 +146,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/TeamAmaze/AmazeFileManager",
    "openapk": "https://www.openapk.net/amaze/com.amaze.filemanager/"
   },
   "rating": "3.58",
@@ -248,7 +248,7 @@
   "subcategory": "Messaging",
   "description": "PASS 2026-10-05.",
   "stores": {
-   "play": "https://play.google.com/store/apps/details?id=chat.delta.lite",
+   "play": null,
    "fdroid": true,
    "github": "https://github.com/ArcaneChat/android",
    "openapk": null
@@ -511,7 +511,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/woheller69/level",
    "openapk": "https://www.openapk.net/bubble/org.woheller69.level/"
   },
   "rating": null,
@@ -535,12 +535,12 @@
   "subcategory": "RSS reader",
   "description": "Modern RSS reader.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.capyreader.app",
    "fdroid": true,
    "github": "https://github.com/jocmp/capyreader",
    "openapk": "https://www.openapk.net/capy-reader/com.capyreader.app/"
   },
-  "rating": null,
+  "rating": "4.77",
   "attrs": {
    "open_source": true
   },
@@ -589,7 +589,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/vicolo-dev/chrono",
    "openapk": "https://www.openapk.net/chrono/com.vicolo.chrono/"
   },
   "rating": null,
@@ -616,7 +616,7 @@
    "play": "https://play.google.com/store/apps/details?id=com.adeeteya.classipod",
    "fdroid": true,
    "github": "https://github.com/adeeteya/Classipod",
-   "openapk": null
+   "openapk": "https://www.openapk.net/classipod/com.adeeteya.classipod/"
   },
   "rating": null,
   "attrs": {
@@ -668,7 +668,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bobek.compass",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/Kr0oked/Compass",
    "openapk": "https://www.openapk.net/compass/com.bobek.compass/"
   },
   "rating": "4.61",
@@ -694,7 +694,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ferrarid.converterpro",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/ferraridamiano/ConverterNOW",
    "openapk": "https://www.openapk.net/converter-now-unit-converter/com.ferrarid.converterpro/"
   },
   "rating": "4.51",
@@ -731,6 +731,59 @@
   "per_badge": false
  },
  {
+  "name": "Curbox",
+  "package": "neth.iecal.curbox",
+  "slug": "neth-iecal-curbox",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "App blocker",
+  "description": "App blocker and screen time tracker. Block apps, websites, reels and shorts.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/curbox-app/curbox-android",
+   "openapk": "https://www.openapk.net/curbox-app-website-blocker/neth.iecal.curbox/"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Diktafon",
+  "package": "cz.mod42.diktafon",
+  "slug": "cz-mod42-diktafon",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Audio recorder",
+  "description": "Voice memos on cassette tapes — transcribed & summarised offline, on device.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=cz.mod42.diktafon",
+   "fdroid": true,
+   "github": "https://github.com/jaromiru/diktafon",
+   "openapk": "https://www.openapk.net/diktafon-voice-memos-on-tape/cz.mod42.diktafon/"
+  },
+  "rating": "4.5",
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Dooz",
   "package": "io.github.yamin8000.dooz",
   "slug": "io-github-yamin8000-dooz",
@@ -747,7 +800,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/yamin8000/dooz",
-   "openapk": null
+   "openapk": "https://www.openapk.net/dooz/io.github.yamin8000.dooz/"
   },
   "rating": null,
   "attrs": {
@@ -773,7 +826,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/IacobIonut01/Gallery",
-   "openapk": null
+   "openapk": "https://www.openapk.net/gallery/com.dot.gallery/"
   },
   "rating": null,
   "attrs": {
@@ -798,7 +851,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.develz.crawl",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/crawl/crawl",
    "openapk": "https://www.openapk.net/dungeon-crawl-stone-soup/org.develz.crawl/"
   },
   "rating": null,
@@ -876,7 +929,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/thewierdnut/endless-mobile",
    "openapk": "https://www.openapk.net/endless-sky/com.github.thewierdnut.endless_mobile/"
   },
   "rating": null,
@@ -902,7 +955,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/Etar-Group/Etar-Calendar",
    "openapk": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
   },
   "rating": null,
@@ -1056,7 +1109,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/polodarb/Flashlight-Tiramisu",
    "openapk": "https://www.openapk.net/flashlight-tiramisu/com.pdb82.flashlighttiramisu/"
   },
   "rating": null,
@@ -1134,7 +1187,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/FossifyOrg/Calendar",
    "openapk": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
   },
   "rating": "4.30",
@@ -1160,7 +1213,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.clock",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/FossifyOrg/Clock",
    "openapk": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
   },
   "rating": null,
@@ -1212,7 +1265,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.filemanager",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/FossifyOrg/File-Manager",
    "openapk": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
   },
   "rating": "4.36",
@@ -1369,7 +1422,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/emileb/Freedoom-for-Android",
    "openapk": "https://www.openapk.net/freedoom/net.nullsum.freedoom/"
   },
   "rating": null,
@@ -1396,7 +1449,7 @@
    "play": "https://play.google.com/store/apps/details?id=org.piepmeyer.gauguin",
    "fdroid": true,
    "github": "https://github.com/meikpiep/gauguin",
-   "openapk": null
+   "openapk": "https://www.openapk.net/gauguin/org.piepmeyer.gauguin/"
   },
   "rating": null,
   "attrs": {
@@ -1422,7 +1475,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/billthefarmer/gridle",
-   "openapk": null
+   "openapk": "https://www.openapk.net/gridle/org.billthefarmer.gridle/"
   },
   "rating": null,
   "attrs": {
@@ -1448,7 +1501,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/HeliBorg/HeliBoard",
-   "openapk": null
+   "openapk": "https://www.openapk.net/heliboard/helium314.keyboard/"
   },
   "rating": null,
   "attrs": {
@@ -1471,7 +1524,7 @@
   "subcategory": "Audiobook player",
   "description": "Audiobook player designed for seniors — ultra-simple UI.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.studio4plus.homerplayer2",
    "fdroid": true,
    "github": "https://github.com/msimonides/homerplayer2",
    "openapk": null
@@ -1499,7 +1552,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/zenorogue/hyperrogue",
    "openapk": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
   },
   "rating": null,
@@ -1734,7 +1787,7 @@
    "play": "https://play.google.com/store/apps/details?id=org.grakovne.lissen",
    "fdroid": true,
    "github": "https://github.com/GrakovNe/lissen-android",
-   "openapk": null
+   "openapk": "https://www.openapk.net/lissen-audiobookshelf-client/org.grakovne.lissen/"
   },
   "rating": null,
   "attrs": {
@@ -1758,12 +1811,12 @@
   "subcategory": "Sandbox",
   "description": "Luanti: open-source voxel sandbox (Minecraft-like), endless mods.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=net.minetest.minetest",
    "fdroid": true,
    "github": "https://github.com/luanti-org/luanti",
    "openapk": "https://www.openapk.net/minetest/net.minetest.minetest/"
   },
-  "rating": null,
+  "rating": "4.16",
   "attrs": {
    "open_source": true
   },
@@ -1787,7 +1840,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/mrdemonc/lune",
-   "openapk": null
+   "openapk": "https://www.openapk.net/lune/com.demonlab.lune/"
   },
   "rating": null,
   "attrs": {
@@ -1824,6 +1877,33 @@
   "per_badge": false
  },
  {
+  "name": "Maid",
+  "package": "com.danemadsen.maid",
+  "slug": "com-danemadsen-maid",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "AI Assistant",
+  "description": "Maid is an open source app for interacting with artificial intelligence models.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.danemadsen.maid",
+   "fdroid": true,
+   "github": "https://github.com/Mobile-Artificial-Intelligence/maid",
+   "openapk": "https://www.openapk.net/maid/com.danemadsen.maid/"
+  },
+  "rating": "2.72",
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Markor",
   "package": "net.gsantner.markor",
   "slug": "net-gsantner-markor",
@@ -1839,7 +1919,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.gsantner.markor",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/gsantner/markor",
    "openapk": "https://www.openapk.net/markor/net.gsantner.markor/"
   },
   "rating": "4.78",
@@ -1891,7 +1971,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=co.garmax.materialflashlight",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/garmax1/material-flashlight",
    "openapk": "https://www.openapk.net/material-flashlight/co.garmax.materialflashlight/"
   },
   "rating": null,
@@ -1943,7 +2023,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/john-athan/minesweeper",
    "openapk": "https://www.openapk.net/minesweeper/io.github.johnathan.minesweeper/"
   },
   "rating": null,
@@ -1967,12 +2047,12 @@
   "subcategory": "Mastodon",
   "description": "PASS 2026-10-05.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=org.joinmastodon.android.moshinda",
    "fdroid": true,
    "github": "https://github.com/LucasGGamerM/moshidon",
    "openapk": null
   },
-  "rating": null,
+  "rating": "4.31",
   "attrs": {
    "open_source": true
   },
@@ -2022,7 +2102,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/fellipitopv/nekovideo",
-   "openapk": null
+   "openapk": "https://www.openapk.net/nekovideo/com.nkls.nekovideo/"
   },
   "rating": null,
   "attrs": {
@@ -2189,6 +2269,32 @@
   "per_badge": false
  },
  {
+  "name": "OfflineLLM",
+  "package": "com.jegly.offlineLLM",
+  "slug": "com-jegly-offlinellm",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "AI Assistant",
+  "description": "Private on-device AI chat (llama.cpp GGUF) with zero network permissions, encrypted settings and biometric lock.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "github": "https://github.com/jegly/OfflineLLM",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Open Camera",
   "package": "net.sourceforge.opencamera",
   "slug": "net-sourceforge-opencamera",
@@ -2230,7 +2336,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/d-rk/open-patience",
    "openapk": null
   },
   "rating": null,
@@ -2283,7 +2389,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.darkempire78.opencalculator",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/clementwzk/OpenCalc",
    "openapk": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
   },
   "rating": "4.16",
@@ -2309,7 +2415,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/dmfs/opentasks",
    "openapk": "https://www.openapk.net/opentasks/org.dmfs.tasks/"
   },
   "rating": null,
@@ -2335,7 +2441,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/n-ice-community/commandergenius",
    "openapk": "https://www.openapk.net/openttd/org.openttd.fdroid/"
   },
   "rating": null,
@@ -2361,7 +2467,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/SecUSo/privacy-friendly-pedometer",
    "openapk": "https://www.openapk.net/pedometer-pfa/org.secuso.privacyfriendlyactivitytracker/"
   },
   "rating": null,
@@ -2439,7 +2545,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.agateau.tinywheels.android",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/agateau/pixelwheels",
    "openapk": "https://www.openapk.net/pixel-wheels/com.agateau.tinywheels.android/"
   },
   "rating": null,
@@ -2466,7 +2572,7 @@
    "play": "https://play.google.com/store/apps/details?id=com.ismartcoding.plain",
    "fdroid": true,
    "github": "https://github.com/plainhub/plain-app",
-   "openapk": null
+   "openapk": "https://www.openapk.net/plainapp-file-web-access/com.ismartcoding.plain/"
   },
   "rating": null,
   "attrs": {
@@ -2569,7 +2675,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/marmistrz/QDict",
    "openapk": "https://www.openapk.net/qdict/com.annie.dictionary.fork/"
   },
   "rating": null,
@@ -2651,7 +2757,7 @@
    "play": "https://play.google.com/store/apps/details?id=com.aicodix.rattlegram",
    "fdroid": false,
    "github": "https://github.com/aicodix/rattlegram",
-   "openapk": null
+   "openapk": "https://www.openapk.net/rattlegram-sms-via-audio/com.aicodix.rattlegram/"
   },
   "rating": null,
   "attrs": {},
@@ -2699,11 +2805,64 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/Ashinch/ReadYou",
-   "openapk": null
+   "openapk": "https://www.openapk.net/read-you/me.ash.reader/"
   },
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "RedReader",
+  "package": "org.quantumbadger.redreader",
+  "slug": "org-quantumbadger-redreader",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Reddit",
+  "description": "Client for reddit.com.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.quantumbadger.redreader",
+   "fdroid": true,
+   "github": "https://github.com/QuantumBadger/RedReader",
+   "openapk": "https://www.openapk.net/redreader/org.quantumbadger.redreader/"
+  },
+  "rating": "4.09",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "RTranslator",
+  "package": "nie.translator.rtranslator",
+  "slug": "nie-translator-rtranslator",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Translation",
+  "description": "Fully offline real-time translation (Whisper + Meta NLLB run on-device); no account, no network needed.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "github": "https://github.com/niedev/RTranslator",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "offline": true,
+   "no_account": true
   },
   "made_by_us": false,
   "per_badge": false
@@ -2725,7 +2884,7 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/dmi3dmi3/saywhen",
-   "openapk": null
+   "openapk": "https://www.openapk.net/saywhen/com.dmi3dmi3.saywhen/"
   },
   "rating": null,
   "attrs": {
@@ -2758,7 +2917,7 @@
    "open_source": true
   },
   "made_by_us": false,
-  "per_badge": false
+  "per_badge": true
  },
  {
   "name": "Shelter",
@@ -2829,7 +2988,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.better.alarm",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/yuriykulikov/AlarmClock",
    "openapk": "https://www.openapk.net/simple-alarm-clock/com.better.alarm/"
   },
   "rating": "4.36",
@@ -2862,6 +3021,32 @@
   "attrs": {
    "open_source": true,
    "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "SkyTube",
+  "package": "free.rm.skytube.oss",
+  "slug": "free-rm-skytube-oss",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Video player",
+  "description": "An ad-free and open-source YouTube client.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/SkyTubeTeam/SkyTube",
+   "openapk": "https://www.openapk.net/skytube/free.rm.skytube.oss/"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
   },
   "made_by_us": false,
   "per_badge": false
@@ -2934,7 +3119,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/nvllz/stepsy",
    "openapk": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
   },
   "rating": null,
@@ -3067,7 +3252,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/wesnoth/wesnoth",
    "openapk": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
   },
   "rating": null,
@@ -3145,7 +3330,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.unciv.app",
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/yairm210/Unciv",
    "openapk": "https://www.openapk.net/unciv/com.unciv.app/"
   },
   "rating": null,
@@ -3171,7 +3356,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null,
+   "github": "https://github.com/physphil/UnitConverterUltimate",
    "openapk": "https://www.openapk.net/unit-converter-ultimate/com.physphil.android.unitconverterultimate/"
   },
   "rating": null,
