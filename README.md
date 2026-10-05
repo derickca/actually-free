@@ -66,3 +66,4 @@ verified listings (`include` + `per-badge`), adds QR Cards, and emits:
 - **DuckDuckGo Browser** — VERDICT: EXCLUDE — DuckDuckGo Privacy Pro ($9.99/mo VPN) is sold in-app; Play shows In-App Purchases label. Paid tier in-app → fails the promise.
 - **Automate** — VERDICT: EXCLUDE — Premium unlock via IAP (Play shows In-App Purchases label). Easer is the actually-free automation alternative.
 - **Fennec F-Droid** — VERDICT: EXCLUDE — F-Droid flags it with the Tracking anti-feature (Mozilla telemetry).
+- **Yubico Authenticator** — Generate OATH codes with a YubiKey over NFC. OpenAPK desc: Free download of Yubico Authenticator APK file and source code repo under Apache-2.0 license - Latest Version …

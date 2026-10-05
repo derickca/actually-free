@@ -1109,14 +1109,14 @@
   "name": "BetterCounter",
   "package": "org.kde.bettercounter",
   "slug": "org-kde-bettercounter",
-  "category": "Lifestyle",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "General",
+  "subcategory": "Counter",
   "description": "- Track good and bad habits (eg: exercising, smoking, drinking...) - Track when's the last time you did something (eg: water your plants, change your",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.kde.bettercounter",
@@ -2042,14 +2042,14 @@
   "name": "Cuppa - Tea Timer",
   "package": "com.nathanatos.Cuppa",
   "slug": "com-nathanatos-cuppa",
-  "category": "Lifestyle",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Food & drink",
+  "subcategory": "Timer",
   "description": "Cuppa is a small application to time your cup of tea as it steeps",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nathanatos.Cuppa",
@@ -3311,14 +3311,14 @@
   "name": "FeurStagram",
   "package": "github.jean-voila.feurstagram",
   "slug": "github-jean-voila-feurstagram",
-  "category": "Communication",
+  "category": "Social",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Social",
+  "subcategory": "Instagram",
   "description": "Instagram w/o Reels/feed/ads (DMs+stories kept)",
   "stores": {
    "play": null,
@@ -5110,14 +5110,14 @@
   "name": "Jerboa",
   "package": "com.jerboa",
   "slug": "com-jerboa",
-  "category": "Communication",
+  "category": "Social",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Social",
+  "subcategory": "Lemmy",
   "description": "An app for Lemmy, a federated reddit alternative.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jerboa",
@@ -11161,7 +11161,7 @@
   "name": "Transportr",
   "package": "de.grobox.liberario",
   "slug": "de-grobox-liberario",
-  "category": "Travel",
+  "category": "Navigation",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11705,14 +11705,14 @@
   "name": "Voyager",
   "package": "app.vger.voyager",
   "slug": "app-vger-voyager",
-  "category": "Communication",
+  "category": "Social",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Social",
+  "subcategory": "Lemmy",
   "description": "Join the discussion",
   "stores": {
    "play": null,
@@ -11789,14 +11789,14 @@
   "name": "WebLibre: Private Browser",
   "package": "eu.weblibre.gecko",
   "slug": "eu-weblibre-gecko",
-  "category": "Communication",
+  "category": "Comms",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Messaging",
+  "subcategory": "Browser",
   "description": "Browse privately, search locally",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.weblibre.gecko",
@@ -12004,32 +12004,6 @@
   "per_badge": false,
   "needs_review": false,
   "review_notes": ""
- },
- {
-  "name": "Yubico Authenticator",
-  "package": "com.yubico.yubioath",
-  "slug": "com-yubico-yubioath",
-  "category": "Security",
-  "promises": {
-   "no_ads": true,
-   "no_iap": true,
-   "no_subs": true
-  },
-  "icon_svg": null,
-  "subcategory": "2FA",
-  "description": "Generate OATH codes with a YubiKey over NFC",
-  "stores": {
-   "play": null,
-   "fdroid": false,
-   "github": "https://github.com/Yubico/yubioath-flutter",
-   "openapk": "https://www.openapk.net/yubico-authenticator/com.yubico.yubioath/"
-  },
-  "rating": null,
-  "attrs": {},
-  "made_by_us": false,
-  "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
  },
  {
   "name": "ZerotierFix",
