@@ -56,6 +56,33 @@
   "review_notes": ""
  },
  {
+  "name": "2FA",
+  "package": "app.ninesevennine.twofactorauthenticator",
+  "slug": "app-ninesevennine-twofactorauthenticator",
+  "category": "Security",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "The modern privacy and security focused two factor authenticator",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.ninesevennine.twofactorauthenticator",
+   "github": "https://codeberg.org/979/2fa",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "< polycule >",
   "package": "business.braid.polycule",
   "slug": "business-braid-polycule",
@@ -169,8 +196,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "AdAway",
@@ -548,6 +575,33 @@
   "review_notes": ""
  },
  {
+  "name": "APKUpdater",
+  "package": "com.apkupdater.ci",
+  "slug": "com-apkupdater-ci",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Get updates from multiple sources",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.apkupdater.ci",
+   "github": "https://github.com/rumboalla/apkupdater",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": true,
+  "review_notes": "Its README claims no ads or tracking, but IzzyOnDroid flags the Tracking anti-feature on this build — please check in use whether anything phones home."
+ },
+ {
   "name": "APlayer",
   "package": "remix.myplayer",
   "slug": "remix-myplayer",
@@ -600,8 +654,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "ArcaneChat",
@@ -656,8 +710,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Arcticons - Line Icon Pack",
@@ -885,8 +939,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Authenticator Pro",
@@ -912,8 +966,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Auxio",
@@ -1316,6 +1370,33 @@
   "review_notes": ""
  },
  {
+  "name": "Bloomee",
+  "package": "ls.bloomee.musicplayer",
+  "slug": "ls-bloomee-musicplayer",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Experience music without limits.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/ls.bloomee.musicplayer",
+   "github": "https://github.com/HemantKArya/BloomeeTunes",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Blorp",
   "package": "xyz.blorpblorp.app",
   "slug": "xyz-blorpblorp-app",
@@ -1339,8 +1420,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "BlueSound Controller",
@@ -1451,8 +1532,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Bubble",
@@ -1478,6 +1559,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Budget My Life",
+  "package": "rsquared226.budget_my_life",
+  "slug": "rsquared226-budget-my-life",
+  "category": "Finance",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Budget your life with ease",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/rsquared226.budget_my_life",
+   "github": "https://github.com/rsquared226/budget_my_life",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -1856,6 +1964,33 @@
   "review_notes": ""
  },
  {
+  "name": "CoMaps",
+  "package": "app.comaps",
+  "slug": "app-comaps",
+  "category": "Navigation",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Easy map navigation - Discover more of your journey - Powered by the community",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.comaps",
+   "github": "https://codeberg.org/comaps/comaps",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Compass",
   "package": "com.bobek.compass",
   "slug": "com-bobek-compass",
@@ -2024,8 +2159,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Cosmic IDE",
@@ -2759,8 +2894,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Element X",
@@ -3481,7 +3616,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Finamp",
@@ -3507,8 +3642,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Firefox",
@@ -3617,8 +3752,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "FlashDim - Dim your flashlight",
@@ -3766,6 +3901,33 @@
   "review_notes": ""
  },
  {
+  "name": "Flow",
+  "package": "io.github.aedev.flow",
+  "slug": "io-github-aedev-flow",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Privacy-respecting YouTube and Music client with local recommendations.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/io.github.aedev.flow",
+   "github": "https://github.com/A-EDev/Flow",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Flowit — Block Puzzle",
   "package": "com.bytehamster.flowitgame",
   "slug": "com-bytehamster-flowitgame",
@@ -3845,8 +4007,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Flux News",
@@ -3907,6 +4069,33 @@
   "review_notes": ""
  },
  {
+  "name": "Food Expirations",
+  "package": "com.lorenzovainigli.foodexpirationdates.foss",
+  "slug": "com-lorenzovainigli-foodexpirationdates-foss",
+  "category": "Food",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Remember all the expiration dates of your food stocks.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.lorenzovainigli.foodexpirationdates.foss",
+   "github": "https://github.com/lorenzovngl/FoodExpirationDates",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Forkyz",
   "package": "app.crossword.yourealwaysbe.forkyz",
   "slug": "app-crossword-yourealwaysbe-forkyz",
@@ -3930,8 +4119,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Formulus",
@@ -4108,6 +4297,33 @@
   "review_notes": ""
  },
  {
+  "name": "Fossify Launcher",
+  "package": "org.fossify.home",
+  "slug": "org-fossify-home",
+  "category": "Customization",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Customize your home screen with a fast, ad-free, open-source launcher",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.home",
+   "github": "https://github.com/FossifyOrg/Launcher",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Fossify Phone",
   "package": "org.fossify.phone",
   "slug": "org-fossify-phone",
@@ -4277,8 +4493,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Freedoom",
@@ -4509,6 +4725,33 @@
   "review_notes": ""
  },
  {
+  "name": "GitNex",
+  "package": "org.mian.gitnex",
+  "slug": "org-mian-gitnex",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Native client for Forgejo and Gitea",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.mian.gitnex",
+   "github": "https://codeberg.org/gitnex/GitNex",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Global Send",
   "package": "com.peer.topeer.global_send",
   "slug": "com-peer-topeer-global-send",
@@ -4620,7 +4863,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Google Docs",
@@ -4647,7 +4890,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Google Keep - Notes and lists",
@@ -4674,7 +4917,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Google Lens",
@@ -4701,7 +4944,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Google Tasks",
@@ -4728,7 +4971,61 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+ },
+ {
+  "name": "GPS Logger",
+  "package": "eu.basicairdata.graziano.gpslogger",
+  "slug": "eu-basicairdata-graziano-gpslogger",
+  "category": "Navigation",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A simple and lightweight app for recording your position and your path",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/eu.basicairdata.graziano.gpslogger",
+   "github": "https://github.com/BasicAirData/GPSLogger",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "GPSTest",
+  "package": "com.android.gpstest.osmdroid",
+  "slug": "com-android-gpstest-osmdroid",
+  "category": "Navigation",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "The #1 open-source GNSS/GPS app on Android. No ads, no trackers, just data.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.android.gpstest.osmdroid",
+   "github": "https://github.com/barbeau/gpstest",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Gramophone",
@@ -4754,8 +5051,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Gridle",
@@ -4926,8 +5223,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Harmony Music",
@@ -4953,8 +5250,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "HeliBoard",
@@ -5152,8 +5449,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "InviZible",
@@ -5183,6 +5480,33 @@
   "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean"
  },
  {
+  "name": "IYPS",
+  "package": "com.iyps",
+  "slug": "com-iyps",
+  "category": "Security",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Evaluate passwords, predict crack times, and get tips for stronger passwords.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.iyps",
+   "github": "https://github.com/StellarSand/IYPS",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "J2ME Loader",
   "package": "ru.playsoftware.j2meloader",
   "slug": "ru-playsoftware-j2meloader",
@@ -5206,8 +5530,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Jami",
@@ -5233,8 +5557,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "JekyllEx",
@@ -5289,8 +5613,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Jerboa",
@@ -5374,8 +5698,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Jitsi Meet",
@@ -5459,8 +5783,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "jtx Board",
@@ -5486,8 +5810,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Just (Video) Player",
@@ -5519,6 +5843,33 @@
   "review_notes": ""
  },
  {
+  "name": "KashCal",
+  "package": "org.onekash.kashcal",
+  "slug": "org-onekash-kashcal",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "All your calendars in one app. iCloud, CalDAV, device, ICS. Private.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.onekash.kashcal",
+   "github": "https://github.com/KashCal/KashCal",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Keepass2Android Offline",
   "package": "keepass2android.keepass2android_nonet",
   "slug": "keepass2android-keepass2android-nonet",
@@ -5544,8 +5895,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "KeePassDX",
@@ -5602,6 +5953,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Khushu",
+  "package": "com.kaizen.khushu",
+  "slug": "com-kaizen-khushu",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Private Muslim app for prayer, tasbih, study, and gentle reminders",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kaizen.khushu",
+   "github": "https://github.com/greykaizen/khushu",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -5691,8 +6069,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Kodi",
@@ -5718,8 +6096,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Koler",
@@ -5803,6 +6181,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Kvaesitso",
+  "package": "de.mm20.launcher2.release",
+  "slug": "de-mm20-launcher2-release",
+  "category": "Customization",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A search-focused, free and open source launcher for Android",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/de.mm20.launcher2.release",
+   "github": "https://github.com/MM2-0/Kvaesitso",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -6060,8 +6465,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Lichess",
@@ -6202,8 +6607,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Logcat Reader",
@@ -6260,8 +6665,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Loop Habit Tracker",
@@ -6664,8 +7069,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Material Files",
@@ -6755,6 +7160,33 @@
   "review_notes": ""
  },
  {
+  "name": "Materialious",
+  "package": "us.materialio.app",
+  "slug": "us-materialio-app",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Modern material design for YouTube and Invidious.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/us.materialio.app",
+   "github": "https://github.com/Materialious/Materialious",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Mattermost Beta",
   "package": "com.mattermost.rnbeta",
   "slug": "com-mattermost-rnbeta",
@@ -6809,8 +7241,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Meditation",
@@ -6919,8 +7351,35 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Mensinator",
+  "package": "com.mensinator.app",
+  "slug": "com-mensinator-app",
+  "category": "Health",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Tailored Period Tracking, Total Privacy—Your Period, Your Control.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.mensinator.app",
+   "github": "https://github.com/EmmaTellblom/Mensinator",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Mental Math",
@@ -6943,6 +7402,33 @@
    "openapk": null
   },
   "rating": 5.0,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Metrolist",
+  "package": "com.metrolist.music",
+  "slug": "com-metrolist-music",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Material 3 YouTube Music client for Android",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.metrolist.music",
+   "github": "https://github.com/MetrolistGroup/Metrolist",
+   "openapk": null
+  },
+  "rating": null,
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
@@ -7001,7 +7487,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Microsoft OneNote: Save Notes",
@@ -7028,7 +7514,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Microsoft To Do: Lists & Tasks",
@@ -7055,7 +7541,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Mihon",
@@ -7081,8 +7567,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Mill",
@@ -7134,6 +7620,35 @@
   "rating": 4.5,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Mindwtr",
+  "package": "tech.dongdongbh.mindwtr",
+  "slug": "tech-dongdongbh-mindwtr",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Clear your head: capture tasks fast, see your next step. Offline, free, GTD.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/tech.dongdongbh.mindwtr",
+   "github": "https://github.com/dongdongbh/Mindwtr",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "offline": true
   },
   "made_by_us": false,
   "per_badge": false,
@@ -7193,6 +7708,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "MJ PDF",
+  "package": "com.gitlab.mudlej.MjPdfReader",
+  "slug": "com-gitlab-mudlej-mjpdfreader",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A simple PDF viewer",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.gitlab.mudlej.MjPdfReader",
+   "github": "https://gitlab.com/mudlej_android/mj_pdf_reader",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -7280,8 +7822,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "monocles chat",
@@ -7429,6 +7971,33 @@
   "review_notes": ""
  },
  {
+  "name": "mpvExtended",
+  "package": "app.marlboroadvance.mpvex",
+  "slug": "app-marlboroadvance-mpvex",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A powerful media player built on mpv with an improved user interface",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.marlboroadvance.mpvex",
+   "github": "https://github.com/marlboro-advance/mpvEx",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "MuPDF viewer",
   "package": "com.artifex.mupdf.viewer.app",
   "slug": "com-artifex-mupdf-viewer-app",
@@ -7452,8 +8021,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Murine Launcher",
@@ -7508,8 +8077,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Musify",
@@ -7535,8 +8104,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "MyMoney—Track Expense & Budget",
@@ -7618,8 +8187,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "NClientV2",
@@ -7645,8 +8214,35 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Nearby Glasses",
+  "package": "ch.pocketpc.nearbyglasses",
+  "slug": "ch-pocketpc-nearbyglasses",
+  "category": "Security",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Smart Glasses are often hard to spot. This app scans for their Bluetooth ID.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/ch.pocketpc.nearbyglasses",
+   "github": "https://github.com/yjeanrenaud/yj_nearbyglasses",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "NekoVideo",
@@ -7701,8 +8297,35 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Neo Store",
+  "package": "com.machiav3lli.fdroid",
+  "slug": "com-machiav3lli-fdroid",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A modern feature-rich F-Droid client.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.machiav3lli.fdroid",
+   "github": "https://codeberg.org/NeoApplications/Neo-Store",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "NetGuard",
@@ -7730,6 +8353,33 @@
   },
   "made_by_us": false,
   "per_badge": true,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "NewPass",
+  "package": "com.gero.newpass",
+  "slug": "com-gero-newpass",
+  "category": "Security",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Securely store and manage passwords of your digital realm with NewPass.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.gero.newpass",
+   "github": "https://github.com/6eero/NewPass",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
   "needs_review": false,
   "review_notes": ""
  },
@@ -8046,8 +8696,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "OfflineLLM",
@@ -8389,8 +9039,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Openreads",
@@ -8499,8 +9149,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "OpenTTD",
@@ -8586,8 +9236,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Orgzly: Notes & To-Do Lists",
@@ -8698,8 +9348,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "ownCloud",
@@ -8722,6 +9372,33 @@
    "openapk": null
   },
   "rating": 4.5,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "PaperKnife",
+  "package": "com.paperknife.app",
+  "slug": "com-paperknife-app",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Privacy-first PDF utility: Merge, Split, Compress & Protect PDFs 100% locally.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.paperknife.app",
+   "github": "https://github.com/potatameister/PaperKnife",
+   "openapk": null
+  },
+  "rating": null,
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
@@ -8752,8 +9429,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Pedometer (PFA)",
@@ -8872,6 +9549,33 @@
   "review_notes": ""
  },
  {
+  "name": "Photok",
+  "package": "dev.leonlatsch.photok",
+  "slug": "dev-leonlatsch-photok",
+  "category": "Security",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Private Photo Vault, Hide Photos & Videos.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.leonlatsch.photok",
+   "github": "https://github.com/leonlatsch/Photok",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "phyphox",
   "package": "de.rwth_aachen.phyphox",
   "slug": "de-rwth-aachen-phyphox",
@@ -8922,8 +9626,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Pixel Wheels",
@@ -9007,8 +9711,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Pixiv Shaft",
@@ -9206,8 +9910,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Podroid",
@@ -9233,8 +9937,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Podverse",
@@ -9322,6 +10026,33 @@
   "review_notes": "Open question: a paid 'PPSSPP Gold' app exists on Play, but it is donation-identical (same features) Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
  },
  {
+  "name": "Privacium",
+  "package": "com.kaleedtc.privacium",
+  "slug": "com-kaleedtc-privacium",
+  "category": "Privacy",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A simple app for discovering tools that respects your privacy.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kaleedtc.privacium",
+   "github": "https://github.com/kaleedtc/Privacium",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Productivity System: timeto.me",
   "package": "me.timeto.app",
   "slug": "me-timeto-app",
@@ -9399,6 +10130,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "qBitController",
+  "package": "dev.bartuzen.qbitcontroller",
+  "slug": "dev-bartuzen-qbitcontroller",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Remotely control qBittorrent from any device",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.bartuzen.qbitcontroller",
+   "github": "https://github.com/Bartuzen/qBitController",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -9682,8 +10440,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "ReadYou",
@@ -9773,6 +10531,33 @@
   "review_notes": ""
  },
  {
+  "name": "Reef",
+  "package": "dev.pranav.reef",
+  "slug": "dev-pranav-reef",
+  "category": "Health",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Boost focus by pausing apps, setting limits, and managing distractions.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.pranav.reef",
+   "github": "https://github.com/aload0/Reef",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "RepoStore",
   "package": "com.samyak.repostore",
   "slug": "com-samyak-repostore",
@@ -9825,8 +10610,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Ricochlime",
@@ -10027,8 +10812,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Saber",
@@ -10084,7 +10869,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Samsung Notes",
@@ -10111,7 +10896,7 @@
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "Big-tech app: store labels are clean; help verify there are no strings attached"
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
  },
  {
   "name": "Sayboard",
@@ -10230,6 +11015,33 @@
   "review_notes": ""
  },
  {
+  "name": "SD Maid 2/SE",
+  "package": "eu.darken.sdmse",
+  "slug": "eu-darken-sdmse",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A trusted assistant for your Android, to keep it clean and tidy.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/eu.darken.sdmse",
+   "github": "https://github.com/d4rken-org/sdmaid-se",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": true,
+  "review_notes": "The Play Store build has a separate paid Pro unlocker app. This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell or unlocker prompt."
+ },
+ {
   "name": "Seal",
   "package": "com.junkfood.seal",
   "slug": "com-junkfood-seal",
@@ -10253,8 +11065,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Secure Camera",
@@ -10280,8 +11092,35 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Seeker",
+  "package": "com.companyname.andriodapp1",
+  "slug": "com-companyname-andriodapp1",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "An unofficial Soulseek client.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.companyname.andriodapp1",
+   "github": "https://github.com/jackBonadies/SeekerAndroid",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "SeriesGuide",
@@ -10309,8 +11148,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Shattered Pixel Dungeon",
@@ -10395,8 +11234,35 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Showly",
+  "package": "com.michaldrabik.showly2",
+  "slug": "com-michaldrabik-showly2",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "An open source TV Shows & Movies tracker app that works with Trakt",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.michaldrabik.showly2",
+   "github": "https://github.com/trakt/showly",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Sift",
@@ -10422,8 +11288,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "SilverDict",
@@ -10593,8 +11459,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Simply Scored",
@@ -10649,8 +11515,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "SkyTube",
@@ -10933,8 +11799,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Sudoku",
@@ -11198,6 +12064,60 @@
   "review_notes": ""
  },
  {
+  "name": "Table Habit",
+  "package": "io.github.friesi23.mhabit",
+  "slug": "io-github-friesi23-mhabit",
+  "category": "Health",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Boost your own habit growth with charts.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/io.github.friesi23.mhabit",
+   "github": "https://github.com/FriesI23/mhabit",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "TagSpaces",
+  "package": "org.tagspaces.mobileapp",
+  "slug": "org-tagspaces-mobileapp",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Organize, tag and browse your files, photos and documents",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.tagspaces.mobileapp",
+   "github": "https://github.com/tagspaces/tagspaces",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": true,
+  "review_notes": "TagSpaces Pro exists as a paid desktop product. This listing uses the free mobile build — please confirm the installed app has no Pro upsell."
+ },
+ {
   "name": "Taler Wallet",
   "package": "net.taler.wallet.fdroid",
   "slug": "net-taler-wallet-fdroid",
@@ -11277,8 +12197,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Termux",
@@ -11420,8 +12340,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Todo",
@@ -11561,8 +12481,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Transportr",
@@ -11671,8 +12591,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Tux Math",
@@ -11756,8 +12676,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "The automated store checks came back clean, but no human has reviewed this listing yet. If you try it and spot ads, in-app purchases, or locked features, please report it."
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Unit Converter Ultimate",
@@ -11986,6 +12906,33 @@
   "review_notes": ""
  },
  {
+  "name": "Velune",
+  "package": "com.nikhil.yt",
+  "slug": "com-nikhil-yt",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Premium ad-free YouTube Music client for Android",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.nikhil.yt",
+   "github": "https://github.com/nikhilvishwakarma00/Velune",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
   "name": "Venera",
   "package": "com.github.wgh136.venera",
   "slug": "com-github-wgh136-venera",
@@ -12009,8 +12956,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "Victoria Launcher",
@@ -12065,6 +13012,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "vivi",
+  "package": "com.vivi.vivimusic",
+  "slug": "com-vivi-vivimusic",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "A Material 3 YouTube Music client for Android",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.vivi.vivimusic",
+   "github": "https://github.com/vivizzz007/vivi-music",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12210,6 +13184,33 @@
   "attrs": {
    "open_source": true
   },
+  "made_by_us": false,
+  "per_badge": false,
+  "needs_review": false,
+  "review_notes": ""
+ },
+ {
+  "name": "Watomatic",
+  "package": "com.parishod.watomatic",
+  "slug": "com-parishod-watomatic",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "",
+  "description": "Auto reply bot for WhatsApp, FB Messenger and more soon",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.parishod.watomatic",
+   "github": "https://github.com/adeekshith/watomatic",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12467,8 +13468,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": true,
-  "review_notes": "Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "needs_review": false,
+  "review_notes": ""
  },
  {
   "name": "µLauncher",
