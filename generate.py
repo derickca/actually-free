@@ -1168,6 +1168,7 @@ a.store-badge:hover { filter: brightness(0.96); }
   /* Toggles take their own row, stacked and right-aligned: the header grows
      vertically instead of scrolling horizontally. */
   .switchers { flex: 0 0 100%; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .qr-appicon { display: none; } /* the QR Cards icon lives in the desktop header only */
   .brand-text em { display: none; } /* tagline hides on phones to save vertical room */
   .brand-text strong { font-size: 1.05rem; }
   .brand img { width: 44px; height: 44px; }
@@ -1564,8 +1565,10 @@ JS_CONTENT = r"""
       count.textContent = "0 of " + total;
     } else {
       empty.hidden = true;
-      count.textContent = (r.q || state.cat || Object.keys(state.attrs).length)
-        ? r.list.length + " of " + total
+      var filtering = r.q || state.cat || Object.keys(state.attrs).length ||
+                      Object.keys(state.stores).length;
+      count.textContent = filtering
+        ? r.list.length + " of " + total + " actually-free apps"
         : total + " actually-free apps";
     }
     grid.querySelectorAll(".tile").forEach(function (t) {
