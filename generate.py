@@ -440,7 +440,7 @@ def site_header():
     )
     return f"""<header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="/index.html">
+    <a class="brand" href="/">
       <img id="mascot" src="/assets/mascot-friendly.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
       <span class="brand-text"><strong>Actually Free</strong><em>{esc(TAGLINE)}</em></span>
     </a>
@@ -462,7 +462,7 @@ def site_header():
 
 
 def site_footer(forms):
-    suggest_link = ('<a href="/suggest.html">Suggest an app</a>'
+    suggest_link = ('<a href="/suggest">Suggest an app</a>'
                     if forms.encoded else 'Suggest an app')
     return f"""<footer class="site-footer">
   <div class="footer-inner">
@@ -473,7 +473,7 @@ def site_footer(forms):
     Not every store is equally trustworthy &mdash; download with judgment, use at your own risk.</p>
     <p class="footer-links">
       {suggest_link} &middot;
-      <a href="/index.html">Directory</a> &middot;
+      <a href="/">Directory</a> &middot;
       <a href="/app/derickca-qr-cards.html">QR Cards</a>
     </p>
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
@@ -610,7 +610,7 @@ def build_detail(app, forms):
 <body>
 {site_header()}
 <main class="detail">
-  <p><a class="back" href="/index.html">&larr; Back to the directory</a></p>
+  <p><a class="back" href="/">&larr; Back to the directory</a></p>
   <article class="detail-card">
     <div class="detail-head">
       {icon_block}
@@ -649,11 +649,11 @@ def build_suggest(forms):
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Suggest an app \u2014 Actually Free",
       "Suggest an Android app for the Actually Free directory: no ads, no in-app purchases, no subscriptions.",
-      og_path="suggest.html")}
+      og_path="suggest")}
 <body>
 {site_header()}
 <main class="detail">
-  <p><a class="back" href="/index.html">&larr; Back to the directory</a></p>
+  <p><a class="back" href="/">&larr; Back to the directory</a></p>
   <article class="detail-card">
     <div class="detail-head">
       <div>
@@ -672,7 +672,7 @@ def build_suggest(forms):
 
 def build_sitemap(apps):
     urls = [f"  <url><loc>{SITE_URL}/</loc></url>",
-            f"  <url><loc>{SITE_URL}/suggest.html</loc></url>"]
+            f"  <url><loc>{SITE_URL}/suggest</loc></url>"]
     for app in apps:
         urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}.html</loc></url>")
     return ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -1825,7 +1825,7 @@ def build_sw(build_id):
     return f"""// Actually Free service worker — build {build_id}
 const CACHE = "actually-free-{build_id}";
 const PRECACHE = [
-  "/", "/index.html", "/suggest.html", "/manifest.webmanifest",
+  "/", "/suggest", "/manifest.webmanifest",
   "/assets/styles.css", "/assets/app.js", "/assets/config.js",
   "/assets/icon-192.png", "/assets/icon-512.png"
 ];
@@ -1849,7 +1849,7 @@ self.addEventListener("fetch", (e) => {{
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
         return res;
-      }}).catch(() => caches.match("/index.html"));
+      }}).catch(() => caches.match("/"));
     }})
   );
 }});

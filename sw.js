@@ -1,7 +1,7 @@
-// Actually Free service worker — build 202610050710
-const CACHE = "actually-free-202610050710";
+// Actually Free service worker — build 202610051254
+const CACHE = "actually-free-202610051254";
 const PRECACHE = [
-  "/", "/index.html", "/suggest.html", "/manifest.webmanifest",
+  "/", "/suggest", "/manifest.webmanifest",
   "/assets/styles.css", "/assets/app.js", "/assets/config.js",
   "/assets/icon-192.png", "/assets/icon-512.png"
 ];
@@ -25,7 +25,7 @@ self.addEventListener("fetch", (e) => {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
         return res;
-      }).catch(() => caches.match("/index.html"));
+      }).catch(() => caches.match("/"));
     })
   );
 });
