@@ -1084,10 +1084,13 @@ a.store-badge:hover { filter: brightness(0.96); }
 :root[data-mode="geek"] .switcher button.on { background: #ffe97a; color: #000; }
 
 /* ============ Geek light theme: classic daytime 2000s web ============
-   The geek skin above hardcodes its dark starfield palette, so the theme
-   layer needs its own explicit light variant (explicit choice, plus
-   follow-the-system when theme=default). */
-:root[data-mode="geek"][data-theme="light"] {
+   NOTE: the geek skin declares its palette variables on `body`, so the
+   light overrides must live on `body` too — :root-level vars lose to the
+   nearer body scope for every card and field. */
+:root[data-mode="geek"][data-theme="light"] body {
+  background-color: #c9c9e8;
+  background-image: none;
+  color: #1a1a4d;
   --bg: #c9c9e8;
   --ink: #1a1a4d;
   --muted: #4d4d8c;
@@ -1104,18 +1107,17 @@ a.store-badge:hover { filter: brightness(0.96); }
   --shadow: none;
   --on-accent: #ffffff;
 }
-:root[data-mode="geek"][data-theme="light"] body {
-  background-color: #c9c9e8;
-  background-image: none;
-  color: #1a1a4d;
-}
 :root[data-mode="geek"][data-theme="light"] .brand-text strong,
 :root[data-mode="geek"][data-theme="light"] .hero h1 { color: #5a4a00; }
 :root[data-mode="geek"][data-theme="light"] .marquee-text { color: #0000cc; }
 :root[data-mode="geek"][data-theme="light"] .chip.on,
 :root[data-mode="geek"][data-theme="light"] .pill.on { color: #ffffff; }
+/* theme=default follows the system in geek mode too */
 @media (prefers-color-scheme: light) {
-  :root[data-mode="geek"]:not([data-theme="dark"]) {
+  :root[data-mode="geek"]:not([data-theme="dark"]) body {
+    background-color: #c9c9e8;
+    background-image: none;
+    color: #1a1a4d;
     --bg: #c9c9e8;
     --ink: #1a1a4d;
     --muted: #4d4d8c;
@@ -1131,11 +1133,6 @@ a.store-badge:hover { filter: brightness(0.96); }
     --input-bg: #ffffff;
     --shadow: none;
     --on-accent: #ffffff;
-  }
-  :root[data-mode="geek"]:not([data-theme="dark"]) body {
-    background-color: #c9c9e8;
-    background-image: none;
-    color: #1a1a4d;
   }
   :root[data-mode="geek"]:not([data-theme="dark"]) .brand-text strong,
   :root[data-mode="geek"]:not([data-theme="dark"]) .hero h1 { color: #5a4a00; }
