@@ -961,7 +961,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/com.aurora.store.png",
   "subcategory": "App store",
   "description": "Open-source alternative to Google Play Store, privacy-focused",
   "stores": {
@@ -1579,7 +1579,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/org.briarproject.briar.android.png",
   "subcategory": "Messaging",
   "description": "Decentralized P2P secure messaging over Bluetooth, Wi-Fi or Tor",
   "stores": {
@@ -3889,7 +3889,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/org.flare.app.png",
   "subcategory": "RPG",
   "description": "Action RPG in the Diablo vein",
   "stores": {
@@ -4269,7 +4269,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/app.crossword.yourealwaysbe.forkyz.png",
   "subcategory": "Crossword",
   "description": "Crossword puzzle app",
   "stores": {
@@ -5772,7 +5772,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/cx.ring.png",
   "subcategory": "Calling",
   "description": "P2P audio/video calls and chat",
   "stores": {
@@ -9091,7 +9091,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/com.jegly.offlineLLM.png",
   "subcategory": "AI Assistant",
   "description": "Private on-device AI chat (llama.cpp GGUF) with zero network permissions, encrypted settings and biometric lock.",
   "stores": {
@@ -9743,7 +9743,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "icon": null,
+  "icon": "assets/icons/com.gameocr.app.png",
   "subcategory": "Translation",
   "description": "Real-time screen OCR translation",
   "stores": {
