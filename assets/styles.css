@@ -124,14 +124,6 @@ a { color: var(--accent); }
 /* Icon-only theme buttons (FundingSpark's half-circle / sun / moon) */
 .switcher.theme-switcher button { padding: 6px 9px; line-height: 0; }
 .switcher.theme-switcher button svg { width: 17px; height: 17px; display: block; }
-.geek-badge {
-  display: none;
-  text-align: center;
-  font-size: 0.72rem;
-  color: var(--muted);
-  padding: 2px 0 6px;
-}
-
 /* ---------- layout ---------- */
 main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0.4em 0 0.1em; }
@@ -392,7 +384,6 @@ a.store-badge:hover { filter: brightness(0.96); }
   color: #7df9ff;
 }
 @keyframes geek-marquee { to { transform: translateX(-100%); } }
-:root[data-mode="geek"] .geek-badge { display: block; }
 :root[data-mode="geek"] .hero h1 { font-family: "Times New Roman", serif; color: #ffe97a; }
 :root[data-mode="geek"] .promise-strip { border: 3px outset #39ff6a; }
 :root[data-mode="geek"] .tile {
