@@ -19,6 +19,9 @@
 <meta name="twitter:description" content="A dictionary application for dictionaries in StarDict format.">
 <meta name="twitter:image" content="https://free.certifiable.media/assets/og-share.png">
 <link rel="icon" href="/assets/mascot-friendly.webp">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#fdf4e7">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -78,7 +81,7 @@
       <button type="button" data-feedback="correction" data-label="Suggest a correction">Suggest a correction</button>
     </div>
     <div class="af-form-wrap">
-      <form class="af-form" data-af-form="report" data-t="j3goeU/6405sJJN4pOeTPcMqZDofprcAdnqDefjyxzza" hidden novalidate>
+      <form class="af-form" data-af-form="report" data-t="Vrx0Ytm2Du7KuJhiOaEyUhruOCGJ6lqg0OaIY2W0ZlMD" hidden novalidate>
         <input type="hidden" name="reason" value="doesnt-work">
         <input type="hidden" name="app_name" value="QDict">
         <input type="hidden" name="page_url" value="https://free.certifiable.media/app/com-annie-dictionary-fork.html">
@@ -117,5 +120,6 @@
 </footer>
 <script src="/assets/config.js"></script>
 <script src="/assets/app.js"></script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js").catch(function(){});}</script>
 </body>
 </html>

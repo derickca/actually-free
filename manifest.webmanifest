@@ -1,0 +1,16 @@
+{
+  "name": "Actually Free",
+  "short_name": "Actually Free",
+  "description": "A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdf4e7",
+  "theme_color": "#fdf4e7",
+  "icons": [
+    {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

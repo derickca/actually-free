@@ -19,6 +19,9 @@
 <meta name="twitter:description" content="A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. Find the free apps they don&#x27;t want you to see.">
 <meta name="twitter:image" content="https://free.certifiable.media/assets/og-share.png">
 <link rel="icon" href="/assets/mascot-friendly.webp">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#fdf4e7">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -102,5 +105,6 @@
 </footer>
 <script src="/assets/config.js"></script>
 <script src="/assets/app.js"></script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js").catch(function(){});}</script>
 </body>
 </html>

@@ -8,6 +8,7 @@ fully static site deployable as-is to Cloudflare Pages.
 Regenerate everything with:  python3 generate.py
 """
 import base64
+import datetime
 import html
 import json
 import os
@@ -412,6 +413,9 @@ def head(title, description, og_path="", og_image="og-share.png"):
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{esc(img)}">
 <link rel="icon" href="/assets/mascot-friendly.webp">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#fdf4e7">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>"""
 
@@ -478,7 +482,8 @@ def site_footer(forms):
   </div>
 </footer>
 <script src="/assets/config.js"></script>
-<script src="/assets/app.js"></script>"""
+<script src="/assets/app.js"></script>
+<script>if("serviceWorker" in navigator){{navigator.serviceWorker.register("/sw.js").catch(function(){{}});}}</script>"""
 
 
 # ---------------------------------------------------------------------------
@@ -1802,6 +1807,76 @@ def write(path, content):
         f.write(content)
 
 
+def build_pwa_icons():
+    """192/512 PNG icons + a padded maskable 512, from the friendly mascot."""
+    from PIL import Image
+    src = Image.open(os.path.join(HERE, "assets", "mascot-friendly.webp")).convert("RGBA")
+    icon192 = src.resize((192, 192), Image.LANCZOS)
+    icon192.save(os.path.join(HERE, "assets", "icon-192.png"))
+    icon512 = src.resize((512, 512), Image.LANCZOS)
+    icon512.save(os.path.join(HERE, "assets", "icon-512.png"))
+    # maskable: mascot at 72% on the site's light background so edges survive the mask
+    canvas = Image.new("RGBA", (512, 512), "#fdf4e7")
+    inner = src.resize((368, 368), Image.LANCZOS)
+    canvas.alpha_composite(inner, (72, 72))
+    canvas.save(os.path.join(HERE, "assets", "icon-maskable-512.png"))
+
+
+MANIFEST = """{
+  "name": "Actually Free",
+  "short_name": "Actually Free",
+  "description": "A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdf4e7",
+  "theme_color": "#fdf4e7",
+  "icons": [
+    {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
+"""
+
+
+def build_sw(build_id):
+    """Cache-first service worker: installed pages work offline."""
+    return f"""// Actually Free service worker — build {build_id}
+const CACHE = "actually-free-{build_id}";
+const PRECACHE = [
+  "/", "/index.html", "/suggest.html", "/manifest.webmanifest",
+  "/assets/styles.css", "/assets/app.js", "/assets/config.js",
+  "/assets/icon-192.png", "/assets/icon-512.png"
+];
+self.addEventListener("install", (e) => {{
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
+}});
+self.addEventListener("activate", (e) => {{
+  e.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+}});
+self.addEventListener("fetch", (e) => {{
+  const u = new URL(e.request.url);
+  if (e.request.method !== "GET" || u.origin !== self.location.origin) return;
+  e.respondWith(
+    caches.match(e.request).then((hit) => {{
+      if (hit) return hit;
+      return fetch(e.request).then((res) => {{
+        const copy = res.clone();
+        caches.open(CACHE).then((c) => c.put(e.request, copy));
+        return res;
+      }}).catch(() => caches.match("/index.html"));
+    }})
+  );
+}});
+"""
+
+
 def main():
     apps = load_corpus()
     categories = sorted({a["category"] for a in apps})
@@ -1830,6 +1905,11 @@ def main():
         print("warning: ntfy key placeholder survived replacement")
     write("assets/app.js", app_js.strip() + "\n")
     write("assets/config.js", build_config_js())
+    build_pwa_icons()
+    build_id = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M")
+    write("manifest.webmanifest", MANIFEST)
+    write("sw.js", build_sw(build_id))
+    print("pwa: manifest, sw.js (%s), icons" % build_id)
     write("README.md", build_readme())
     print("done: index, %d detail pages, sitemap, robots, assets, README"
           % len(apps))
