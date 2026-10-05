@@ -208,6 +208,7 @@ def clean_record(rec):
         "play": None if per_badge else (stores.get("play") or None),
         "fdroid": bool(stores.get("fdroid")),
         "github": stores.get("github") or None,
+        "openapk": stores.get("openapk") or None,
     }
     return {
         "name": rec["name"],
@@ -522,6 +523,7 @@ def build_index(apps, categories, forms):
       <button class="pill" data-store="play">Google Play</button>
       <button class="pill" data-store="fdroid">F-Droid</button>
       <button class="pill" data-store="github">GitHub</button>
+      <button class="pill" data-store="openapk">OpenAPK</button>
     </div>
     <div class="filter-row sort-row">
       <label>Sort:
@@ -545,7 +547,7 @@ def build_index(apps, categories, forms):
 # Detail pages — one real static HTML page per app (SEO)
 # ---------------------------------------------------------------------------
 
-STORE_LABELS = [("play", "Play"), ("fdroid", "F-Droid"), ("github", "GitHub")]
+STORE_LABELS = [("play", "Play"), ("fdroid", "F-Droid"), ("github", "GitHub"), ("openapk", "OpenAPK")]
 
 
 def fdroid_url(package):
@@ -1508,7 +1510,8 @@ JS_CONTENT = r"""
     var out = [];
     var defs = [["play", "Play", app.stores.play],
                 ["fdroid", "F-Droid", app.stores.fdroid ? "https://f-droid.org/en/packages/" + app.package + "/" : null],
-                ["github", "GitHub", app.stores.github]];
+                ["github", "GitHub", app.stores.github],
+                ["openapk", "OpenAPK", app.stores.openapk]];
     defs.forEach(function (d) {
       if (d[2]) out.push('<span class="store-badge">' + d[1] + "</span>");
     });
@@ -1578,6 +1581,7 @@ JS_CONTENT = r"""
         if (s === "play" && !app.stores.play) return false;
         else if (s === "fdroid" && !app.stores.fdroid) return false;
         else if (s === "github" && !app.stores.github) return false;
+        else if (s === "openapk" && !app.stores.openapk) return false;
       }
       return matches(app, q);
     });
@@ -1852,6 +1856,24 @@ self.addEventListener("fetch", (e) => {{
 """
 
 
+def apply_openapk(apps):
+    """Attach OpenAPK listing URLs (from the cross-reference mapping) to apps."""
+    path = os.path.join(HERE, "hidden-openapk-mapping.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            mapping = {e["slug"]: e["openapk_url"] for e in json.load(f)}
+    except (OSError, ValueError, KeyError):
+        print("openapk: no mapping file, skipping")
+        return
+    n = 0
+    for app in apps:
+        url = mapping.get(app["slug"])
+        if url:
+            app["stores"]["openapk"] = url
+            n += 1
+    print(f"openapk: {n} apps linked")
+
+
 def main():
     apps = load_corpus()
     categories = sorted({a["category"] for a in apps})
@@ -1867,6 +1889,7 @@ def main():
         print("ntfy feedback: NO TOPIC SET — forms show 'not available yet'")
     forms = NtfyForms(topic)
 
+    apply_openapk(apps)
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
     write("index.html", build_index(apps, categories, forms))
     write("suggest.html", build_suggest(forms))

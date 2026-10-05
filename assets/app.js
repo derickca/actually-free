@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (Z22e9Sl4cFO4O3H7OjiUcg==, replaced at build time) embedded separately,
+     the key (dONQoy6x73rYe56YN+tGfQ==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "Z22e9Sl4cFO4O3H7OjiUcg==";
+    var K = "dONQoy6x73rYe56YN+tGfQ==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -314,7 +314,8 @@
     var out = [];
     var defs = [["play", "Play", app.stores.play],
                 ["fdroid", "F-Droid", app.stores.fdroid ? "https://f-droid.org/en/packages/" + app.package + "/" : null],
-                ["github", "GitHub", app.stores.github]];
+                ["github", "GitHub", app.stores.github],
+                ["openapk", "OpenAPK", app.stores.openapk]];
     defs.forEach(function (d) {
       if (d[2]) out.push('<span class="store-badge">' + d[1] + "</span>");
     });
@@ -384,6 +385,7 @@
         if (s === "play" && !app.stores.play) return false;
         else if (s === "fdroid" && !app.stores.fdroid) return false;
         else if (s === "github" && !app.stores.github) return false;
+        else if (s === "openapk" && !app.stores.openapk) return false;
       }
       return matches(app, q);
     });

@@ -15,7 +15,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.andstatus.game2048",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/2048-open-fun-game/org.andstatus.game2048/"
   },
   "rating": null,
   "attrs": {
@@ -40,7 +41,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=itkach.aard2",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/aard-2/itkach.aard2/"
   },
   "rating": "4.26",
   "attrs": {
@@ -66,7 +68,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/AdAway/AdAway"
+   "github": "https://github.com/AdAway/AdAway",
+   "openapk": "https://www.openapk.net/adaway/org.adaway/"
   },
   "rating": null,
   "attrs": {
@@ -91,7 +94,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
    "fdroid": true,
-   "github": "https://github.com/beemdevelopment/Aegis"
+   "github": "https://github.com/beemdevelopment/Aegis",
+   "openapk": "https://www.openapk.net/aegis-authenticator/com.beemdevelopment.aegis/"
   },
   "rating": "4.69",
   "attrs": {
@@ -116,7 +120,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/alarm-klock/com.angrydoughnuts.android.alarmclock/"
   },
   "rating": null,
   "attrs": {
@@ -141,7 +146,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/amaze/com.amaze.filemanager/"
   },
   "rating": "3.58",
   "attrs": {
@@ -166,7 +172,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gpl.rpg.AndorsTrail",
    "fdroid": true,
-   "github": "https://github.com/AndorsTrailRelease/andors-trail"
+   "github": "https://github.com/AndorsTrailRelease/andors-trail",
+   "openapk": "https://www.openapk.net/andors-trail/com.gpl.rpg.AndorsTrail/"
   },
   "rating": 4.5,
   "attrs": {
@@ -191,7 +198,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.danoeh.antennapod",
    "fdroid": true,
-   "github": "https://github.com/AntennaPod/AntennaPod"
+   "github": "https://github.com/AntennaPod/AntennaPod",
+   "openapk": "https://www.openapk.net/antennapod/de.danoeh.antennapod/"
   },
   "rating": "4.84",
   "attrs": {
@@ -216,7 +224,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ch.logixisland.anuto",
    "fdroid": true,
-   "github": "https://github.com/mjaun/android-anuto"
+   "github": "https://github.com/mjaun/android-anuto",
+   "openapk": "https://www.openapk.net/anuto-td/ch.logixisland.anuto/"
   },
   "rating": 4.1,
   "attrs": {
@@ -241,7 +250,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/Dimowner/AudioRecorder"
+   "github": "https://github.com/Dimowner/AudioRecorder",
+   "openapk": "https://www.openapk.net/audio-recorder/com.dimowner.audiorecorder/"
   },
   "rating": "4.09",
   "attrs": {
@@ -266,7 +276,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/OxygenCobalt/Auxio"
+   "github": "https://github.com/OxygenCobalt/Auxio",
+   "openapk": "https://www.openapk.net/auxio/org.oxycblt.auxio/"
   },
   "rating": null,
   "attrs": {
@@ -291,7 +302,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.atharok.barcodescanner",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/barcode-scanner/com.atharok.barcodescanner/"
   },
   "rating": "4.09",
   "attrs": {
@@ -316,7 +328,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye",
    "fdroid": true,
-   "github": "https://github.com/markusfisch/BinaryEye"
+   "github": "https://github.com/markusfisch/BinaryEye",
+   "openapk": "https://www.openapk.net/binary-eye/de.markusfisch.android.binaryeye/"
   },
   "rating": "4.84",
   "attrs": {
@@ -341,7 +354,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/SoltauFintel/blockpuzzle"
+   "github": "https://github.com/SoltauFintel/blockpuzzle",
+   "openapk": "https://www.openapk.net/block-puzzle-stone-wars/de.mwvb.blockpuzzle/"
   },
   "rating": null,
   "attrs": {
@@ -366,7 +380,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/breezy-weather/breezy-weather"
+   "github": "https://github.com/breezy-weather/breezy-weather",
+   "openapk": "https://www.openapk.net/breezy-weather/org.breezyweather/"
   },
   "rating": null,
   "attrs": {
@@ -391,7 +406,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/bubble/org.woheller69.level/"
   },
   "rating": null,
   "attrs": {
@@ -416,7 +432,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/jocmp/capyreader"
+   "github": "https://github.com/jocmp/capyreader",
+   "openapk": "https://www.openapk.net/capy-reader/com.capyreader.app/"
   },
   "rating": null,
   "attrs": {
@@ -441,7 +458,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/choganhq/chogan"
+   "github": "https://github.com/choganhq/chogan",
+   "openapk": "https://www.openapk.net/chogan/io.github.choganhq.chogan/"
   },
   "rating": null,
   "attrs": {
@@ -466,7 +484,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/chrono/com.vicolo.chrono/"
   },
   "rating": null,
   "attrs": {
@@ -491,7 +510,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/clima/co.prestosole.clima/"
   },
   "rating": null,
   "attrs": {
@@ -516,7 +536,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bobek.compass",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/compass/com.bobek.compass/"
   },
   "rating": "4.61",
   "attrs": {
@@ -541,7 +562,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ferrarid.converterpro",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/converter-now-unit-converter/com.ferrarid.converterpro/"
   },
   "rating": "4.51",
   "attrs": {
@@ -566,7 +588,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/crosswords/org.eehouse.android.xw4/"
   },
   "rating": null,
   "attrs": {
@@ -591,7 +614,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/IacobIonut01/Gallery"
+   "github": "https://github.com/IacobIonut01/Gallery",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -616,7 +640,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.develz.crawl",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/dungeon-crawl-stone-soup/org.develz.crawl/"
   },
   "rating": null,
   "attrs": {
@@ -641,7 +666,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/renyuneyun/Easer"
+   "github": "https://github.com/renyuneyun/Easer",
+   "openapk": "https://www.openapk.net/easer-beta/ryey.easer.beta/"
   },
   "rating": null,
   "attrs": {
@@ -666,7 +692,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/endless-sky/com.github.thewierdnut.endless_mobile/"
   },
   "rating": null,
   "attrs": {
@@ -691,7 +718,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
   },
   "rating": null,
   "attrs": {
@@ -716,7 +744,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/f-droid/org.fdroid.fdroid/"
   },
   "rating": null,
   "attrs": {
@@ -741,7 +770,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/M66B/FairEmail"
+   "github": "https://github.com/M66B/FairEmail",
+   "openapk": "https://www.openapk.net/fairemail/eu.faircode.email/"
   },
   "rating": "4.69",
   "attrs": {
@@ -766,7 +796,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play",
    "fdroid": true,
-   "github": "https://github.com/spacecowboy/Feeder"
+   "github": "https://github.com/spacecowboy/Feeder",
+   "openapk": "https://www.openapk.net/feeder-play-version/com.nononsenseapps.feeder.play/"
   },
   "rating": "3.81",
   "attrs": {
@@ -791,7 +822,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
    "fdroid": false,
-   "github": "https://github.com/mozilla-mobile/firefox-android"
+   "github": "https://github.com/mozilla-mobile/firefox-android",
+   "openapk": null
   },
   "rating": "4.61",
   "attrs": {},
@@ -814,7 +846,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/flashlight-tiramisu/com.pdb82.flashlighttiramisu/"
   },
   "rating": null,
   "attrs": {
@@ -839,7 +872,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/florisboard/florisboard"
+   "github": "https://github.com/florisboard/florisboard",
+   "openapk": "https://www.openapk.net/florisboard/dev.patrickgold.florisboard/"
   },
   "rating": null,
   "attrs": {
@@ -864,7 +898,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/39aldo39/Flym-DecSync"
+   "github": "https://github.com/39aldo39/Flym-DecSync",
+   "openapk": "https://www.openapk.net/flym-decsync/org.decsync.flym/"
   },
   "rating": null,
   "attrs": {
@@ -889,7 +924,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
   },
   "rating": "4.30",
   "attrs": {
@@ -914,7 +950,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.clock",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
   },
   "rating": null,
   "attrs": {
@@ -939,7 +976,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.contacts",
    "fdroid": true,
-   "github": "https://github.com/FossifyOrg/Contacts"
+   "github": "https://github.com/FossifyOrg/Contacts",
+   "openapk": "https://www.openapk.net/fossify-contacts/org.fossify.contacts/"
   },
   "rating": "4.24",
   "attrs": {
@@ -964,7 +1002,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.filemanager",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
   },
   "rating": "4.36",
   "attrs": {
@@ -989,7 +1028,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
    "fdroid": true,
-   "github": "https://github.com/FossifyOrg/Gallery"
+   "github": "https://github.com/FossifyOrg/Gallery",
+   "openapk": "https://www.openapk.net/fossify-gallery/org.fossify.gallery/"
   },
   "rating": "3.98",
   "attrs": {
@@ -1014,7 +1054,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.phone",
    "fdroid": true,
-   "github": "https://github.com/FossifyOrg/Phone"
+   "github": "https://github.com/FossifyOrg/Phone",
+   "openapk": "https://www.openapk.net/fossify-phone/org.fossify.phone/"
   },
   "rating": "4.20",
   "attrs": {
@@ -1039,7 +1080,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.messages",
    "fdroid": true,
-   "github": "https://github.com/FossifyOrg/Messages"
+   "github": "https://github.com/FossifyOrg/Messages",
+   "openapk": "https://www.openapk.net/fossify-sms-messenger/org.fossify.messages/"
   },
   "rating": "3.16",
   "attrs": {
@@ -1064,7 +1106,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.voicerecorder",
    "fdroid": true,
-   "github": "https://github.com/FossifyOrg/Voice-Recorder"
+   "github": "https://github.com/FossifyOrg/Voice-Recorder",
+   "openapk": "https://www.openapk.net/fossify-voice-recorder/org.fossify.voicerecorder/"
   },
   "rating": "4.48",
   "attrs": {
@@ -1090,7 +1133,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.saschahlusiak.freebloks",
    "fdroid": true,
-   "github": "https://github.com/shlusiak/Freebloks-Android"
+   "github": "https://github.com/shlusiak/Freebloks-Android",
+   "openapk": "https://www.openapk.net/freebloks/de.saschahlusiak.freebloks/"
   },
   "rating": 4.8,
   "attrs": {
@@ -1115,7 +1159,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/freedoom/net.nullsum.freedoom/"
   },
   "rating": null,
   "attrs": {
@@ -1140,7 +1185,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/msimonides/homerplayer2"
+   "github": "https://github.com/msimonides/homerplayer2",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -1165,7 +1211,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
   },
   "rating": null,
   "attrs": {
@@ -1190,7 +1237,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/Kunzisoft/KeePassDX"
+   "github": "https://github.com/Kunzisoft/KeePassDX",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -1217,7 +1265,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=fr.neamar.kiss",
    "fdroid": true,
-   "github": "https://github.com/Neamar/KISS"
+   "github": "https://github.com/Neamar/KISS",
+   "openapk": "https://www.openapk.net/kiss-launcher/fr.neamar.kiss/"
   },
   "rating": "4.19",
   "attrs": {
@@ -1242,7 +1291,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/Chooloo/koler"
+   "github": "https://github.com/Chooloo/koler",
+   "openapk": "https://www.openapk.net/koler/com.chooloo.www.koler/"
   },
   "rating": null,
   "attrs": {
@@ -1267,7 +1317,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/koreader/koreader"
+   "github": "https://github.com/koreader/koreader",
+   "openapk": "https://www.openapk.net/koreader/org.koreader.launcher.fdroid/"
   },
   "rating": null,
   "attrs": {
@@ -1292,7 +1343,8 @@
   "stores": {
    "play": null,
    "fdroid": false,
-   "github": "https://github.com/LawnchairLauncher/lawnchair"
+   "github": "https://github.com/LawnchairLauncher/lawnchair",
+   "openapk": "https://www.openapk.net/lawnchair/app.lawnchair/"
   },
   "rating": null,
   "attrs": {},
@@ -1315,7 +1367,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/kaajjo/LibreSudoku"
+   "github": "https://github.com/kaajjo/LibreSudoku",
+   "openapk": "https://www.openapk.net/libresudoku/com.kaajjo.libresudoku/"
   },
   "rating": null,
   "attrs": {
@@ -1340,7 +1393,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.lichess.mobileV2",
    "fdroid": true,
-   "github": "https://github.com/lichess-org/mobile"
+   "github": "https://github.com/lichess-org/mobile",
+   "openapk": "https://www.openapk.net/lichess/org.lichess.mobileV2/"
   },
   "rating": null,
   "attrs": {
@@ -1365,7 +1419,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/luanti-org/luanti"
+   "github": "https://github.com/luanti-org/luanti",
+   "openapk": "https://www.openapk.net/minetest/net.minetest.minetest/"
   },
   "rating": null,
   "attrs": {
@@ -1390,7 +1445,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/lxreader/io.gitlab.coolreader_ng.lxreader.fdroid/"
   },
   "rating": null,
   "attrs": {
@@ -1415,7 +1471,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.gsantner.markor",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/markor/net.gsantner.markor/"
   },
   "rating": "4.78",
   "attrs": {
@@ -1440,7 +1497,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files",
    "fdroid": true,
-   "github": "https://github.com/zhanghai/MaterialFiles"
+   "github": "https://github.com/zhanghai/MaterialFiles",
+   "openapk": "https://www.openapk.net/material-files/me.zhanghai.android.files/"
   },
   "rating": "4.31",
   "attrs": {
@@ -1465,7 +1523,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=co.garmax.materialflashlight",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/material-flashlight/co.garmax.materialflashlight/"
   },
   "rating": null,
   "attrs": {
@@ -1490,7 +1549,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.anuke.mindustry",
    "fdroid": true,
-   "github": "https://github.com/Anuken/Mindustry"
+   "github": "https://github.com/Anuken/Mindustry",
+   "openapk": "https://www.openapk.net/mindustry/io.anuke.mindustry/"
   },
   "rating": 4.5,
   "attrs": {
@@ -1515,7 +1575,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/minesweeper/io.github.johnathan.minesweeper/"
   },
   "rating": null,
   "attrs": {
@@ -1540,7 +1601,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=is.xyz.mpv",
    "fdroid": true,
-   "github": "https://github.com/mpv-android/mpv-android"
+   "github": "https://github.com/mpv-android/mpv-android",
+   "openapk": "https://www.openapk.net/mpv-android/is.xyz.mpv/"
   },
   "rating": "4.2",
   "attrs": {
@@ -1565,7 +1627,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/M66B/NetGuard"
+   "github": "https://github.com/M66B/NetGuard",
+   "openapk": "https://www.openapk.net/netguard/eu.faircode.netguard/"
   },
   "rating": "4.25",
   "attrs": {
@@ -1590,7 +1653,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/TeamNewPipe/NewPipe"
+   "github": "https://github.com/TeamNewPipe/NewPipe",
+   "openapk": "https://www.openapk.net/newpipe/org.schabi.newpipe/"
   },
   "rating": null,
   "attrs": {
@@ -1616,7 +1680,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer",
    "fdroid": true,
-   "github": "https://github.com/anilbeesetti/nextplayer"
+   "github": "https://github.com/anilbeesetti/nextplayer",
+   "openapk": "https://www.openapk.net/next-player/dev.anilbeesetti.nextplayer/"
   },
   "rating": "4.31",
   "attrs": {
@@ -1641,7 +1706,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
    "fdroid": true,
-   "github": "https://github.com/nextcloud/android"
+   "github": "https://github.com/nextcloud/android",
+   "openapk": "https://www.openapk.net/nextcloud/com.nextcloud.client/"
   },
   "rating": "4.71",
   "attrs": {
@@ -1666,7 +1732,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.omgodse.notally",
    "fdroid": true,
-   "github": "https://github.com/omgodse/notally"
+   "github": "https://github.com/omgodse/notally",
+   "openapk": "https://www.openapk.net/notally-minimalist-notes/com.omgodse.notally/"
   },
   "rating": "4.39",
   "attrs": {
@@ -1691,7 +1758,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.courville.nova",
    "fdroid": true,
-   "github": "https://github.com/nova-video-player/aos-AVP"
+   "github": "https://github.com/nova-video-player/aos-AVP",
+   "openapk": "https://www.openapk.net/nova-video-player/org.courville.nova/"
   },
   "rating": "4.12",
   "attrs": {
@@ -1716,7 +1784,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/open-camera/net.sourceforge.opencamera/"
   },
   "rating": "4.0",
   "attrs": {
@@ -1741,7 +1810,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -1766,7 +1836,8 @@
   "stores": {
    "play": null,
    "fdroid": false,
-   "github": "https://github.com/OpenBoard-team/OpenBoard"
+   "github": "https://github.com/OpenBoard-team/OpenBoard",
+   "openapk": "https://www.openapk.net/openboard/org.dslul.openboard.inputmethod.latin/"
   },
   "rating": null,
   "attrs": {
@@ -1792,7 +1863,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.darkempire78.opencalculator",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
   },
   "rating": "4.16",
   "attrs": {
@@ -1817,7 +1889,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/opentasks/org.dmfs.tasks/"
   },
   "rating": null,
   "attrs": {
@@ -1842,7 +1915,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/openttd/org.openttd.fdroid/"
   },
   "rating": null,
   "attrs": {
@@ -1867,7 +1941,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/pedometer-pfa/org.secuso.privacyfriendlyactivitytracker/"
   },
   "rating": null,
   "attrs": {
@@ -1892,7 +1967,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dnsfilter.android",
    "fdroid": true,
-   "github": "https://github.com/IngoZenz/personaldnsfilter"
+   "github": "https://github.com/IngoZenz/personaldnsfilter",
+   "openapk": "https://www.openapk.net/personaldnsfilter/dnsfilter.android/"
   },
   "rating": "4.40",
   "attrs": {
@@ -1917,7 +1993,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/chr56/Phonograph_Plus"
+   "github": "https://github.com/chr56/Phonograph_Plus",
+   "openapk": "https://www.openapk.net/phonograph-plus/player.phonograph.plus/"
   },
   "rating": null,
   "attrs": {
@@ -1942,7 +2019,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.agateau.tinywheels.android",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/pixel-wheels/com.agateau.tinywheels.android/"
   },
   "rating": null,
   "attrs": {
@@ -1967,7 +2045,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.catrobat.paintroid",
    "fdroid": true,
-   "github": "https://github.com/Catrobat/Paintroid"
+   "github": "https://github.com/Catrobat/Paintroid",
+   "openapk": "https://www.openapk.net/pocket-paint/org.catrobat.paintroid/"
   },
   "rating": "4.38",
   "attrs": {
@@ -1992,7 +2071,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/XilinJia/Podcini.A"
+   "github": "https://github.com/XilinJia/Podcini.A",
+   "openapk": "https://www.openapk.net/podcini-a-extensible-media-instrument/ac.mdiq.Podcini.A/"
   },
   "rating": null,
   "attrs": {
@@ -2017,7 +2097,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/podverse/podverse-fdroid"
+   "github": "https://github.com/podverse/podverse-fdroid",
+   "openapk": "https://www.openapk.net/podverse/com.podverse.fdroid/"
   },
   "rating": null,
   "attrs": {
@@ -2042,7 +2123,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/qdict/com.annie.dictionary.fork/"
   },
   "rating": null,
   "attrs": {
@@ -2067,7 +2149,8 @@
   "stores": {
    "play": null,
    "fdroid": false,
-   "github": "https://github.com/derickca/qr-cards"
+   "github": "https://github.com/derickca/qr-cards",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -2094,7 +2177,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.readera",
    "fdroid": false,
-   "github": null
+   "github": null,
+   "openapk": null
   },
   "rating": "4.86",
   "attrs": {},
@@ -2117,7 +2201,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/Ashinch/ReadYou"
+   "github": "https://github.com/Ashinch/ReadYou",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -2142,7 +2227,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/00-Evan/shattered-pixel-dungeon"
+   "github": "https://github.com/00-Evan/shattered-pixel-dungeon",
+   "openapk": "https://www.openapk.net/shattered-pixel-dungeon/com.shatteredpixel.shatteredpixeldungeon/"
   },
   "rating": 4.8,
   "attrs": {
@@ -2167,7 +2253,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/PeterCxy/Shelter"
+   "github": "https://github.com/PeterCxy/Shelter",
+   "openapk": "https://www.openapk.net/shelter/net.typeblog.shelter/"
   },
   "rating": null,
   "attrs": {
@@ -2193,7 +2280,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=name.boyle.chris.sgtpuzzles",
    "fdroid": true,
-   "github": "https://github.com/chrisboyle/sgtpuzzles"
+   "github": "https://github.com/chrisboyle/sgtpuzzles",
+   "openapk": "https://www.openapk.net/puzzles/name.boyle.chris.sgtpuzzles/"
   },
   "rating": 4.9,
   "attrs": {
@@ -2218,7 +2306,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.better.alarm",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/simple-alarm-clock/com.better.alarm/"
   },
   "rating": "4.36",
   "attrs": {
@@ -2243,7 +2332,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod",
    "fdroid": true,
-   "github": "https://github.com/rkkr/simple-keyboard"
+   "github": "https://github.com/rkkr/simple-keyboard",
+   "openapk": "https://www.openapk.net/simple-keyboard/rkr.simplekeyboard.inputmethod/"
   },
   "rating": "3.92",
   "attrs": {
@@ -2269,7 +2359,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.niksoftware.snapseed",
    "fdroid": false,
-   "github": null
+   "github": null,
+   "openapk": null
   },
   "rating": "4.8",
   "attrs": {
@@ -2294,7 +2385,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
   },
   "rating": null,
   "attrs": {
@@ -2319,7 +2411,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.supertuxkart.stk",
    "fdroid": true,
-   "github": "https://github.com/supertuxkart/stk-code"
+   "github": "https://github.com/supertuxkart/stk-code",
+   "openapk": "https://www.openapk.net/supertuxkart/org.supertuxkart.stk/"
   },
   "rating": null,
   "attrs": {
@@ -2344,7 +2437,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/Catfriend1/syncthing-android"
+   "github": "https://github.com/Catfriend1/syncthing-android",
+   "openapk": "https://www.openapk.net/syncthing-fork/com.github.catfriend1.syncthingfork/"
   },
   "rating": null,
   "attrs": {
@@ -2371,7 +2465,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.termux",
    "fdroid": true,
-   "github": "https://github.com/termux/termux-app"
+   "github": "https://github.com/termux/termux-app",
+   "openapk": "https://www.openapk.net/termux/com.termux/"
   },
   "rating": "4.52",
   "attrs": {
@@ -2396,7 +2491,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
   },
   "rating": null,
   "attrs": {
@@ -2421,7 +2517,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/TrackerControl/tracker-control-android"
+   "github": "https://github.com/TrackerControl/tracker-control-android",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -2446,7 +2543,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.unciv.app",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/unciv/com.unciv.app/"
   },
   "rating": null,
   "attrs": {
@@ -2471,7 +2569,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/unit-converter-ultimate/com.physphil.android.unitconverterultimate/"
   },
   "rating": null,
   "attrs": {
@@ -2496,7 +2595,8 @@
   "stores": {
    "play": null,
    "fdroid": true,
-   "github": "https://github.com/vanilla-music/vanilla"
+   "github": "https://github.com/vanilla-music/vanilla",
+   "openapk": "https://www.openapk.net/vanilla-music/ch.blinkenlights.android.vanilla/"
   },
   "rating": null,
   "attrs": {
@@ -2521,7 +2621,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.poupa.vinylmusicplayer",
    "fdroid": true,
-   "github": "https://github.com/VinylMusicPlayer/VinylMusicPlayer"
+   "github": "https://github.com/VinylMusicPlayer/VinylMusicPlayer",
+   "openapk": "https://www.openapk.net/vinyl-music-player/com.poupa.vinylmusicplayer/"
   },
   "rating": "3.89",
   "attrs": {
@@ -2546,7 +2647,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.videolan.vlc",
    "fdroid": true,
-   "github": null
+   "github": null,
+   "openapk": "https://www.openapk.net/vlc/org.videolan.vlc/"
   },
   "rating": "4.05",
   "attrs": {
@@ -2571,7 +2673,8 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.ph1b.audiobook",
    "fdroid": true,
-   "github": "https://github.com/PaulWoitaschek/Voice"
+   "github": "https://github.com/PaulWoitaschek/Voice",
+   "openapk": "https://www.openapk.net/voice-audiobook-player/de.ph1b.audiobook/"
   },
   "rating": "4.6",
   "attrs": {
