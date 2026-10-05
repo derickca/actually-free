@@ -1165,9 +1165,9 @@ a.store-badge:hover { filter: brightness(0.96); }
   /* The toggle column stacks so the header grows vertically instead of
      scrolling horizontally — horizontal scroll is never acceptable. */
   .header-inner { gap: 10px; flex-wrap: wrap; }
-  /* Toggles take their own row, stacked and right-aligned: the header grows
-     vertically instead of scrolling horizontally. */
-  .switchers { flex: 0 0 100%; flex-direction: column; align-items: flex-end; gap: 6px; }
+  /* Toggles share the row with the brand, stacked: mode toggle above, theme
+     toggle below. (The QR icon is desktop-only now, so it all fits.) */
+  .switchers { flex-direction: column; align-items: flex-end; gap: 6px; margin-left: auto; }
   .qr-appicon { display: none; } /* the QR Cards icon lives in the desktop header only */
   .brand-text em { display: none; } /* tagline hides on phones to save vertical room */
   .brand-text strong { font-size: 1.05rem; }
