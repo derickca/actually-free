@@ -704,7 +704,8 @@ def build_free_bar(forms):
       <li><strong>No paid server.</strong> A free client that depends on a paid or subscription service is not free.</li>
     </ul>
     <p>Requesting donations is fine &mdash; as long as everything works whether you donate or not.</p>
-    <p>We check app details before listing &mdash; some by hand, some with automated checks &mdash; but we have not installed or tested them all. Anything marked <span class="needs-review">needs &#128064;</span> is still waiting on a human review, so use caution when installing.</p>
+    <p>We check app details before listing &mdash; some by hand, some with automated checks &mdash; but we have not installed or tested them all; use caution when installing.</p>
+    <p>Anything marked <span class="needs-review">needs &#128064;</span> is still waiting on a human review.</p>
     <p><strong>Why the list is short:</strong> most &ldquo;free&rdquo; apps aren't actually free. They show you ads or sell you things. We'd rather list a few hundred apps we trust than thousands we don't.</p>
     <p>Know an app that belongs here? <a href="/suggest">Suggest it</a>. Spot one that broke the rules? Tell us and we'll pull it.</p>
   </article>
