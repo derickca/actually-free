@@ -41,12 +41,7 @@
     <h1>Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">Find the free apps they don&#x27;t want you to see.</span></p>
   </section>
-  <section class="promise-strip" aria-label="Find apps with">
-  <span class="promise-label">Find apps with:</span>
-    <button class="promise-chip on" data-promise="no_ads">No ads</button>
-    <button class="promise-chip on" data-promise="no_iap">No in-app purchases</button>
-    <button class="promise-chip on" data-promise="no_subs">No subscriptions</button>
-</section>
+  <p class="find-label">Find apps with:</p>
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;…"
            aria-label="Search apps" autocomplete="off">
@@ -61,6 +56,11 @@
       <button class="pill" data-attr="offline">Works offline</button>
       <button class="pill" data-attr="no_account">No account needed</button>
       <button class="pill" data-attr="made_by_us">Made by us</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Filter by store">
+      <button class="pill" data-store="play">Google Play</button>
+      <button class="pill" data-store="fdroid">F-Droid</button>
+      <button class="pill" data-store="github">GitHub</button>
     </div>
     <div class="filter-row sort-row">
       <label>Sort:
@@ -81,32 +81,10 @@
     actually free. Every app is checked before listing: no ads, no in-app purchases, no subscriptions.
     If an app breaks the promise, report it and we'll take a look.</p>
     <p class="footer-links">
-      <a id="suggest-link" href="#">Suggest an app</a> &middot;
+      <a href="/suggest.html">Suggest an app</a> &middot;
       <a href="/index.html">Directory</a> &middot;
       <a href="/app/derickca-qr-cards.html">QR Cards</a>
     </p>
-<div class="af-form-wrap">
-      <form class="af-form" data-af-form="suggest" data-t="hkn49JXUv5LSSl6iF1RI78obtLfFiOvcyBROo0tBHO7T" hidden novalidate>
-        <input type="hidden" name="page_url" value="https://free.certifiable.media/">
-        <p class="af-form-head"><strong>Suggest an app</strong> for the directory</p>
-        <label class="af-field">App name
-          <input type="text" name="app_name" maxlength="200" autocomplete="off">
-        </label>
-        <label class="af-field">Where to find it (Play / F-Droid / GitHub link)
-          <input type="text" name="app_link" maxlength="300" inputmode="url" autocomplete="off">
-        </label>
-        <label class="af-field">Why it&rsquo;s actually free
-          <textarea name="note" rows="3" maxlength="1000"></textarea>
-        </label>
-        <div class="af-trap" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-        <p class="af-error" data-error role="alert"></p>
-        <div class="af-actions">
-          <button type="submit">Send suggestion</button>
-          <button type="button" data-af-cancel>Cancel</button>
-        </div>
-      </form>
-      <div data-af-done hidden><p class="af-thanks" tabindex="-1">Thank you. Your suggestion has been sent.</p></div>
-    </div>
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
     <p class="count-line">We count clicks, not people.</p>

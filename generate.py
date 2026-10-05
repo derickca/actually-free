@@ -328,14 +328,21 @@ class NtfyForms:
       {self._done("Thank you. Your report has been sent.")}
     </div>"""
 
-    def suggest_form(self):
-        """Suggest-an-app form, toggled by the footer link."""
+    def suggest_form(self, visible=False):
+        """Suggest-an-app form. On its own page it's shown immediately, the
+        redundant heading line is dropped, and Cancel is omitted (the back
+        link above handles that)."""
         if not self.encoded:
             return NTFY_UNAVAILABLE
+        hidden = "" if visible else " hidden"
+        head = ("" if visible
+                else '        <p class="af-form-head"><strong>Suggest an app</strong> for the directory</p>\n')
+        cancel = ("" if visible
+                  else '          <button type="button" data-af-cancel>Cancel</button>\n')
         return f"""<div class="af-form-wrap">
-      <form class="af-form" data-af-form="suggest" data-t="{self.encoded}" hidden novalidate>
+      <form class="af-form" data-af-form="suggest" data-t="{self.encoded}"{hidden} novalidate>
         <input type="hidden" name="page_url" value="{esc(SITE_URL)}/">
-        <p class="af-form-head"><strong>Suggest an app</strong> for the directory</p>
+{head}
         <label class="af-field">App name
           <input type="text" name="app_name" maxlength="200" autocomplete="off">
         </label>
@@ -349,8 +356,7 @@ class NtfyForms:
         <p class="af-error" data-error role="alert"></p>
         <div class="af-actions">
           <button type="submit">Send suggestion</button>
-          <button type="button" data-af-cancel>Cancel</button>
-        </div>
+{cancel}        </div>
       </form>
       {self._done("Thank you. Your suggestion has been sent.")}
     </div>"""
@@ -419,23 +425,9 @@ def site_header():
 </header>"""
 
 
-def promise_strip():
-    # "Find apps with:" — the money promises as toggleable filters, ON by
-    # default. Framed as filters (not a universal guarantee) so a great app
-    # that breaks a single promise can still be listed one day.
-    chips = "\n".join(
-        f'    <button class="promise-chip on" data-promise="{v}">{t}</button>'
-        for v, t in [("no_ads", "No ads"),
-                     ("no_iap", "No in-app purchases"),
-                     ("no_subs", "No subscriptions")])
-    return f"""<section class="promise-strip" aria-label="Find apps with">
-  <span class="promise-label">Find apps with:</span>
-{chips}
-</section>"""
-
 
 def site_footer(forms):
-    suggest_link = ('<a id="suggest-link" href="#">Suggest an app</a>'
+    suggest_link = ('<a href="/suggest.html">Suggest an app</a>'
                     if forms.encoded else 'Suggest an app')
     return f"""<footer class="site-footer">
   <div class="footer-inner">
@@ -447,7 +439,6 @@ def site_footer(forms):
       <a href="/index.html">Directory</a> &middot;
       <a href="/app/derickca-qr-cards.html">QR Cards</a>
     </p>
-{forms.suggest_form()}
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
     <p class="count-line">We count clicks, not people.</p>
@@ -476,7 +467,7 @@ def build_index(apps, categories, forms):
     <h1>Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">{esc(TAGLINE)}</span></p>
   </section>
-  {promise_strip()}
+  <p class="find-label">Find apps with:</p>
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;\u2026"
            aria-label="Search apps" autocomplete="off">
@@ -489,6 +480,11 @@ def build_index(apps, categories, forms):
       <button class="pill" data-attr="offline">Works offline</button>
       <button class="pill" data-attr="no_account">No account needed</button>
       <button class="pill" data-attr="made_by_us">Made by us</button>
+    </div>
+    <div class="filter-row" role="group" aria-label="Filter by store">
+      <button class="pill" data-store="play">Google Play</button>
+      <button class="pill" data-store="fdroid">F-Droid</button>
+      <button class="pill" data-store="github">GitHub</button>
     </div>
     <div class="filter-row sort-row">
       <label>Sort:
@@ -608,8 +604,36 @@ def build_detail(app, forms):
 """
 
 
+def build_suggest(forms):
+    # Suggest-an-app as its own page, styled like an app detail page.
+    return f"""<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+{head("Suggest an app \u2014 Actually Free",
+      "Suggest an Android app for the Actually Free directory: no ads, no in-app purchases, no subscriptions.",
+      og_path="suggest.html")}
+<body>
+{site_header()}
+<main class="detail">
+  <p><a class="back" href="/index.html">&larr; Back to the directory</a></p>
+  <article class="detail-card">
+    <div class="detail-head">
+      <div>
+        <h1>Suggest an app</h1>
+        <p class="cat">Know an Android app that's actually free? Tell us where to find it and why.</p>
+      </div>
+    </div>
+{forms.suggest_form(visible=True)}
+  </article>
+</main>
+{site_footer(forms)}
+</body>
+</html>
+"""
+
+
 def build_sitemap(apps):
-    urls = [f"  <url><loc>{SITE_URL}/</loc></url>"]
+    urls = [f"  <url><loc>{SITE_URL}/</loc></url>",
+            f"  <url><loc>{SITE_URL}/suggest.html</loc></url>"]
     for app in apps:
         urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}.html</loc></url>")
     return ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -682,6 +706,7 @@ CSS_CONTENT = r"""
 }
 
 * { box-sizing: border-box; }
+html, body { overflow-x: clip; } /* no horizontal scrolling, ever */
 body {
   margin: 0;
   font-family: var(--font);
@@ -759,34 +784,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0.4em 0 0.1em; }
 .tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 1em; overflow: hidden; }
 
-/* ---------- promise strip ---------- */
-.promise-strip {
-  background: var(--good-soft);
-  border: 1px solid var(--card-edge);
-  border-radius: var(--radius);
-  padding: 10px 16px;
-  margin: 0 0 18px;
-  font-size: 0.95rem;
-}
-.promise-label { font-weight: 700; margin-right: 8px; }
-.promise-chip {
-  border: 1px solid var(--good);
-  background: transparent;
-  color: var(--ink);
-  border-radius: 999px;
-  font: inherit;
-  font-size: 0.82rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  margin: 2px 4px 2px 0;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.promise-chip.on { background: var(--good); border-color: var(--good); color: #fff; }
-:root[data-theme="dark"] .promise-chip.on { color: #0c2214; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .promise-chip.on { color: #0c2214; }
-}
+/* ---------- "Find apps with:" label heads the filter controls ---------- */
+.find-label { font-weight: 700; margin: 20px 0 8px; font-size: 1rem; }
 .lock { color: var(--good); font-weight: 700; white-space: nowrap; }
 
 /* ---------- controls ---------- */
@@ -872,7 +871,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 1.7rem; font-weight: 800;
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
-.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; overflow-wrap: break-word; }
+.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* words stay whole; a long word may bleed into the tile padding rather than snap mid-word */
 .tile .sub { color: var(--muted); font-size: 0.8rem; margin: 0; }
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -919,7 +918,7 @@ a.store-badge:hover { filter: brightness(0.96); }
   margin-top: 12px;
 }
 .detail-head { display: flex; gap: 18px; align-items: center; margin-bottom: 8px; }
-.detail-head h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.detail-head h1 { margin: 0 0 4px; font-size: 1.6rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .detail-head .cat { color: var(--muted); margin: 0; }
 .detail-head .rating { margin: 4px 0 0; color: var(--muted); }
 .desc { font-size: 1.02rem; }
@@ -1141,9 +1140,22 @@ a.store-badge:hover { filter: brightness(0.96); }
   :root[data-mode="geek"]:not([data-theme="dark"]) .pill.on { color: #ffffff; }
 }
 
+/* ---------- desktop refinements ---------- */
+@media (min-width: 641px) {
+  /* Playful desktop: the tagline repeats the hero heading, so it goes. Geek keeps it — classic. */
+  :root[data-mode="playful"] .hero .tagline { display: none; }
+  /* Geek desktop: the "best viewed" line joins the top heading row. */
+  :root[data-mode="geek"] .site-header { display: flex; align-items: center; justify-content: center; gap: 12px; }
+  :root[data-mode="geek"] .header-inner { flex: 0 1 1100px; margin: 0; }
+  :root[data-mode="geek"] .geek-badge { white-space: nowrap; padding: 0 4px 0 0; }
+}
+
 @media (max-width: 640px) {
-  .header-inner { gap: 10px; flex-wrap: nowrap; }
-  .brand-text em { display: none; } /* tagline hides on phones so the header stays one row */
+  /* The toggle column stacks so the header grows vertically instead of
+     scrolling horizontally — horizontal scroll is never acceptable. */
+  .header-inner { gap: 10px; flex-wrap: wrap; }
+  .switchers { flex-direction: column; gap: 6px; }
+  .brand-text em { display: none; } /* tagline hides on phones to save vertical room */
   .brand-text strong { font-size: 1.05rem; }
   .brand img { width: 44px; height: 44px; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
@@ -1397,33 +1409,24 @@ JS_CONTENT = r"""
       });
     }
 
-    /* suggest-an-app link in the footer */
-    var suggest = document.getElementById("suggest-link");
-    if (suggest) {
-      suggest.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        gcEvent("suggest-app");
-        var scope = suggest.closest("footer") || document;
-        var form = scope.querySelector("form[data-af-form=suggest]");
-        if (!form) return;
-        if (form.hidden) {
-          form.dispatchEvent(new CustomEvent("af-open"));
-          if (form.elements.app_name) form.elements.app_name.focus();
-        } else {
-          form.hidden = true;
-        }
-      });
-    }
   })();
 
   /* ---------- random app (geek webring) -------------------------------------- */
   var randomBtn = document.getElementById("random-app");
   if (randomBtn) {
+    /* Random always lands on an app detail page — never the directory. On
+       detail pages the app list isn't loaded yet, so fetch it on demand. */
     randomBtn.addEventListener("click", function () {
-      if (state && state.apps.length) {
-        var a = state.apps[Math.floor(Math.random() * state.apps.length)];
+      function go(apps) {
+        if (!apps || !apps.length) return;
+        var a = apps[Math.floor(Math.random() * apps.length)];
         location.href = "/app/" + a.slug + ".html";
-      } else { location.href = "/index.html"; }
+      }
+      if (state && state.apps.length) { go(state.apps); }
+      else {
+        fetch("/data/apps.json").then(function (r) { return r.json(); })
+          .then(go).catch(function () {});
+      }
     });
   }
 
@@ -1431,8 +1434,7 @@ JS_CONTENT = r"""
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", attrs: {}, sort: "name",
-                promises: { no_ads: true, no_iap: true, no_subs: true } };
+  var state = { apps: [], query: "", cat: "", attrs: {}, stores: {}, sort: "name" };
   var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160 };
 
   function norm(s) {
@@ -1514,8 +1516,10 @@ JS_CONTENT = r"""
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (!app.attrs[k]) return false;
       }
-      for (var pk in state.promises) {
-        if (!app.promises || !app.promises[pk]) return false;
+      for (var s in state.stores) {
+        if (s === "play" && !app.stores.play) return false;
+        else if (s === "fdroid" && !app.stores.fdroid) return false;
+        else if (s === "github" && !app.stores.github) return false;
       }
       return matches(app, q);
     });
@@ -1586,12 +1590,12 @@ JS_CONTENT = r"""
       render();
     });
   });
-  document.querySelectorAll(".promise-chip").forEach(function (p) {
+  document.querySelectorAll("[data-store]").forEach(function (p) {
     p.addEventListener("click", function () {
-      var k = p.getAttribute("data-promise");
-      if (state.promises[k]) delete state.promises[k]; else state.promises[k] = true;
-      p.classList.toggle("on", !!state.promises[k]);
-      gcEvent("promise/" + k);
+      var k = p.getAttribute("data-store");
+      if (state.stores[k]) delete state.stores[k]; else state.stores[k] = true;
+      p.classList.toggle("on", !!state.stores[k]);
+      gcEvent("store/" + k);
       render();
     });
   });
@@ -1735,6 +1739,7 @@ def main():
 
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
     write("index.html", build_index(apps, categories, forms))
+    write("suggest.html", build_suggest(forms))
     for app in apps:
         write(f"app/{app['slug']}.html", build_detail(app, forms))
     write("sitemap.xml", build_sitemap(apps))

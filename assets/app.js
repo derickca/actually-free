@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (5yqMgfS40+v/LCzHcnkujQ==, replaced at build time) embedded separately,
+     the key (9opn3m0QK/6AGHWUVPTEjA==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "5yqMgfS40+v/LCzHcnkujQ==";
+    var K = "9opn3m0QK/6AGHWUVPTEjA==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -243,33 +243,24 @@
       });
     }
 
-    /* suggest-an-app link in the footer */
-    var suggest = document.getElementById("suggest-link");
-    if (suggest) {
-      suggest.addEventListener("click", function (ev) {
-        ev.preventDefault();
-        gcEvent("suggest-app");
-        var scope = suggest.closest("footer") || document;
-        var form = scope.querySelector("form[data-af-form=suggest]");
-        if (!form) return;
-        if (form.hidden) {
-          form.dispatchEvent(new CustomEvent("af-open"));
-          if (form.elements.app_name) form.elements.app_name.focus();
-        } else {
-          form.hidden = true;
-        }
-      });
-    }
   })();
 
   /* ---------- random app (geek webring) -------------------------------------- */
   var randomBtn = document.getElementById("random-app");
   if (randomBtn) {
+    /* Random always lands on an app detail page — never the directory. On
+       detail pages the app list isn't loaded yet, so fetch it on demand. */
     randomBtn.addEventListener("click", function () {
-      if (state && state.apps.length) {
-        var a = state.apps[Math.floor(Math.random() * state.apps.length)];
+      function go(apps) {
+        if (!apps || !apps.length) return;
+        var a = apps[Math.floor(Math.random() * apps.length)];
         location.href = "/app/" + a.slug + ".html";
-      } else { location.href = "/index.html"; }
+      }
+      if (state && state.apps.length) { go(state.apps); }
+      else {
+        fetch("/data/apps.json").then(function (r) { return r.json(); })
+          .then(go).catch(function () {});
+      }
     });
   }
 
@@ -277,8 +268,7 @@
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", attrs: {}, sort: "name",
-                promises: { no_ads: true, no_iap: true, no_subs: true } };
+  var state = { apps: [], query: "", cat: "", attrs: {}, stores: {}, sort: "name" };
   var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160 };
 
   function norm(s) {
@@ -360,8 +350,10 @@
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (!app.attrs[k]) return false;
       }
-      for (var pk in state.promises) {
-        if (!app.promises || !app.promises[pk]) return false;
+      for (var s in state.stores) {
+        if (s === "play" && !app.stores.play) return false;
+        else if (s === "fdroid" && !app.stores.fdroid) return false;
+        else if (s === "github" && !app.stores.github) return false;
       }
       return matches(app, q);
     });
@@ -432,12 +424,12 @@
       render();
     });
   });
-  document.querySelectorAll(".promise-chip").forEach(function (p) {
+  document.querySelectorAll("[data-store]").forEach(function (p) {
     p.addEventListener("click", function () {
-      var k = p.getAttribute("data-promise");
-      if (state.promises[k]) delete state.promises[k]; else state.promises[k] = true;
-      p.classList.toggle("on", !!state.promises[k]);
-      gcEvent("promise/" + k);
+      var k = p.getAttribute("data-store");
+      if (state.stores[k]) delete state.stores[k]; else state.stores[k] = true;
+      p.classList.toggle("on", !!state.stores[k]);
+      gcEvent("store/" + k);
       render();
     });
   });
