@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (WMq2TCaUdGC+YBtCKX3/Ag==, replaced at build time) embedded separately,
+     the key (KBztVwhNma5cBIVQtXH/ag==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "WMq2TCaUdGC+YBtCKX3/Ag==";
+    var K = "KBztVwhNma5cBIVQtXH/ag==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -269,7 +269,7 @@
   if (!grid) return; // not the directory page
 
   var state = { apps: [], query: "", cat: "", attrs: {}, stores: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160 };
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160, "Games": 0 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();

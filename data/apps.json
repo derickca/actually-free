@@ -1,5 +1,30 @@
 [
  {
+  "name": "2048 Open Fun Game",
+  "package": "org.andstatus.game2048",
+  "slug": "org-andstatus-game2048",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzle",
+  "description": "The 2048 sliding tile puzzle, clean and open source.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.andstatus.game2048",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Aard 2",
   "package": "itkach.aard2",
   "slug": "itkach-aard2",
@@ -126,6 +151,31 @@
   "per_badge": true
  },
  {
+  "name": "Andor's Trail",
+  "package": "com.gpl.rpg.AndorsTrail",
+  "slug": "com-gpl-rpg-andorstrail",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "RPG",
+  "description": "A classic-style offline RPG: quests, dungeons, no paywalls.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.gpl.rpg.AndorsTrail",
+   "fdroid": true,
+   "github": "https://github.com/AndorsTrailRelease/andors-trail"
+  },
+  "rating": 4.5,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "AntennaPod",
   "package": "de.danoeh.antennapod",
   "slug": "de-danoeh-antennapod",
@@ -144,6 +194,31 @@
    "github": "https://github.com/AntennaPod/AntennaPod"
   },
   "rating": "4.84",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Anuto TD",
+  "package": "ch.logixisland.anuto",
+  "slug": "ch-logixisland-anuto",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Strategy",
+  "description": "Tower defense with deep mechanics and custom maps.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=ch.logixisland.anuto",
+   "fdroid": true,
+   "github": "https://github.com/mjaun/android-anuto"
+  },
+  "rating": 4.1,
   "attrs": {
    "open_source": true
   },
@@ -251,6 +326,31 @@
   "per_badge": false
  },
  {
+  "name": "Block Puzzle Stone Wars",
+  "package": "de.mwvb.blockpuzzle",
+  "slug": "de-mwvb-blockpuzzle",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzle",
+  "description": "Block puzzle: fit the pieces, clear the board.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/SoltauFintel/blockpuzzle"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Breezy Weather",
   "package": "org.breezyweather",
   "slug": "org-breezyweather",
@@ -317,6 +417,31 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/jocmp/capyreader"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Chogan",
+  "package": "io.github.choganhq.chogan",
+  "slug": "io-github-choganhq-chogan",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Board",
+  "description": "Chogan: a modern abstract board game.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/choganhq/chogan"
   },
   "rating": null,
   "attrs": {
@@ -426,6 +551,31 @@
   "per_badge": false
  },
  {
+  "name": "CrossWords",
+  "package": "org.eehouse.android.xw4",
+  "slug": "org-eehouse-android-xw4",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Word",
+  "description": "Crossword / Scrabble-style word game, solo or online.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "dotGallery (ReFra)",
   "package": "com.dot.gallery",
   "slug": "com-dot-gallery",
@@ -451,6 +601,31 @@
   "per_badge": false
  },
  {
+  "name": "Dungeon Crawl Stone Soup",
+  "package": "org.develz.crawl",
+  "slug": "org-develz-crawl",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Roguelike",
+  "description": "Dungeon Crawl Stone Soup: the deep, unforgiving roguelike classic.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.develz.crawl",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Easer",
   "package": "ryey.easer.beta",
   "slug": "ryey-easer-beta",
@@ -467,6 +642,31 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/renyuneyun/Easer"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Endless Sky",
+  "package": "com.github.thewierdnut.endless_mobile",
+  "slug": "com-github-thewierdnut-endless-mobile",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "RPG",
+  "description": "A space trading and combat epic across the galaxy.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
   },
   "rating": null,
   "attrs": {
@@ -875,6 +1075,56 @@
   "per_badge": false
  },
  {
+  "name": "Freebloks",
+  "package": "de.saschahlusiak.freebloks",
+  "slug": "de-saschahlusiak-freebloks",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Board",
+  "description": "Blokus-style tile placement against the AI.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=de.saschahlusiak.freebloks",
+   "fdroid": true,
+   "github": "https://github.com/shlusiak/Freebloks-Android"
+  },
+  "rating": 4.8,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Freedoom",
+  "package": "net.nullsum.freedoom",
+  "slug": "net-nullsum-freedoom",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Shooter",
+  "description": "A complete free Doom-engine game: demons, shotguns, no ads.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "HomerPlayer2",
   "package": "com.studio4plus.homerplayer2",
   "slug": "com-studio4plus-homerplayer2",
@@ -891,6 +1141,31 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/msimonides/homerplayer2"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "HyperRogue",
+  "package": "com.roguetemple.hyperroid",
+  "slug": "com-roguetemple-hyperroid",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Roguelike",
+  "description": "A roguelike on impossible non-Euclidean geometry.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
   },
   "rating": null,
   "attrs": {
@@ -1025,6 +1300,81 @@
   "per_badge": false
  },
  {
+  "name": "LibreSudoku",
+  "package": "com.kaajjo.libresudoku",
+  "slug": "com-kaajjo-libresudoku",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzle",
+  "description": "Sudoku with puzzle packs and clean design.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/kaajjo/LibreSudoku"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Lichess",
+  "package": "org.lichess.mobileV2",
+  "slug": "org-lichess-mobilev2",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Board",
+  "description": "Free online chess: play, solve puzzles, no account needed to play.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.lichess.mobileV2",
+   "fdroid": true,
+   "github": "https://github.com/lichess-org/mobile"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Luanti",
+  "package": "net.minetest.minetest",
+  "slug": "net-minetest-minetest",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Sandbox",
+  "description": "Luanti: open-source voxel sandbox (Minecraft-like), endless mods.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/luanti-org/luanti"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "LxReader (CoolReader NG)",
   "package": "io.gitlab.coolreader_ng.lxreader.fdroid",
   "slug": "io-gitlab-coolreader-ng-lxreader-fdroid",
@@ -1114,6 +1464,56 @@
   "description": "Flashlight with some cool features",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=co.garmax.materialflashlight",
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Mindustry",
+  "package": "io.anuke.mindustry",
+  "slug": "io-anuke-mindustry",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Strategy",
+  "description": "Factory-building tower defense: mine, automate, defend.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=io.anuke.mindustry",
+   "fdroid": true,
+   "github": "https://github.com/Anuken/Mindustry"
+  },
+  "rating": 4.5,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Minesweeper",
+  "package": "io.github.johnathan.minesweeper",
+  "slug": "io-github-johnathan-minesweeper",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzle",
+  "description": "Minesweeper done right, no ads, no nonsense.",
+  "stores": {
+   "play": null,
    "fdroid": true,
    "github": null
   },
@@ -1326,6 +1726,31 @@
   "per_badge": true
  },
  {
+  "name": "Open Patience",
+  "package": "io.github.d_rk.openpatience",
+  "slug": "io-github-d-rk-openpatience",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Card",
+  "description": "A collection of solitaire card games.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "OpenBoard",
   "package": "org.dslul.openboard.inputmethod.latin",
   "slug": "org-dslul-openboard-inputmethod-latin",
@@ -1389,6 +1814,31 @@
   "icon_svg": null,
   "subcategory": "To-do lists",
   "description": "Keep track of your list of goals",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "OpenTTD",
+  "package": "org.openttd.fdroid",
+  "slug": "org-openttd-fdroid",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Strategy",
+  "description": "Transport Tycoon: build a transport empire from 1950 onward.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -1468,6 +1918,31 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/chr56/Phonograph_Plus"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Pixel Wheels",
+  "package": "com.agateau.tinywheels.android",
+  "slug": "com-agateau-tinywheels-android",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Racing",
+  "description": "Top-down arcade racer, quick races.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.agateau.tinywheels.android",
+   "fdroid": true,
+   "github": null
   },
   "rating": null,
   "attrs": {
@@ -1652,6 +2127,31 @@
   "per_badge": false
  },
  {
+  "name": "Shattered Pixel Dungeon",
+  "package": "com.shatteredpixel.shatteredpixeldungeon",
+  "slug": "com-shatteredpixel-shatteredpixeldungeon",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Roguelike",
+  "description": "A polished turn-based roguelike: descend, loot, die, try again.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/00-Evan/shattered-pixel-dungeon"
+  },
+  "rating": 4.8,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Shelter",
   "package": "net.typeblog.shelter",
   "slug": "net-typeblog-shelter",
@@ -1673,6 +2173,31 @@
   "attrs": {
    "open_source": true,
    "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Simon Tatham's Puzzles",
+  "package": "name.boyle.chris.sgtpuzzles",
+  "slug": "name-boyle-chris-sgtpuzzles",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzle",
+  "description": "Over 40 of Simon Tatham's logic puzzles in one app.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=name.boyle.chris.sgtpuzzles",
+   "fdroid": true,
+   "github": "https://github.com/chrisboyle/sgtpuzzles"
+  },
+  "rating": 4.9,
+  "attrs": {
+   "open_source": true
   },
   "made_by_us": false,
   "per_badge": false
@@ -1779,6 +2304,31 @@
   "per_badge": false
  },
  {
+  "name": "SuperTuxKart",
+  "package": "org.supertuxkart.stk",
+  "slug": "org-supertuxkart-stk",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Racing",
+  "description": "Kart racing with Tux and friends, single and multiplayer.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.supertuxkart.stk",
+   "fdroid": true,
+   "github": "https://github.com/supertuxkart/stk-code"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Syncthing-Fork",
   "package": "com.github.catfriend1.syncthingfork",
   "slug": "com-github-catfriend1-syncthingfork",
@@ -1831,6 +2381,31 @@
   "per_badge": false
  },
  {
+  "name": "The Battle for Wesnoth",
+  "package": "org.wesnoth.Wesnoth",
+  "slug": "org-wesnoth-wesnoth",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Strategy",
+  "description": "The classic turn-based fantasy strategy, full campaigns.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "TrackerControl",
   "package": "net.kollnig.missioncontrol.fdroid",
   "slug": "net-kollnig-missioncontrol-fdroid",
@@ -1847,6 +2422,31 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/TrackerControl/tracker-control-android"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Unciv",
+  "package": "com.unciv.app",
+  "slug": "com-unciv-app",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Strategy",
+  "description": "An open-source remake of Civilization V for your phone.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.unciv.app",
+   "fdroid": true,
+   "github": null
   },
   "rating": null,
   "attrs": {

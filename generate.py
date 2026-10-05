@@ -110,6 +110,30 @@ DESC_OVERRIDES = {
     "Flashlight Tiramisu": "Flashlight with smoothly adjustable brightness.",
     "TrackerControl": "Monitors and blocks per-app trackers.",
     "Amaze File Manager": "An open-source file manager following the Material Design guidelines.",
+    "2048 Open Fun Game": "The 2048 sliding tile puzzle, clean and open source.",
+    "Andor's Trail": "A classic-style offline RPG: quests, dungeons, no paywalls.",
+    "Anuto TD": "Tower defense with deep mechanics and custom maps.",
+    "Block Puzzle Stone Wars": "Block puzzle: fit the pieces, clear the board.",
+    "Chogan": "Chogan: a modern abstract board game.",
+    "CrossWords": "Crossword / Scrabble-style word game, solo or online.",
+    "Dungeon Crawl Stone Soup": "Dungeon Crawl Stone Soup: the deep, unforgiving roguelike classic.",
+    "Endless Sky": "A space trading and combat epic across the galaxy.",
+    "Freebloks": "Blokus-style tile placement against the AI.",
+    "Freedoom": "A complete free Doom-engine game: demons, shotguns, no ads.",
+    "HyperRogue": "A roguelike on impossible non-Euclidean geometry.",
+    "LibreSudoku": "Sudoku with puzzle packs and clean design.",
+    "Lichess": "Free online chess: play, solve puzzles, no account needed to play.",
+    "Luanti": "Luanti: open-source voxel sandbox (Minecraft-like), endless mods.",
+    "Mindustry": "Factory-building tower defense: mine, automate, defend.",
+    "Minesweeper": "Minesweeper done right, no ads, no nonsense.",
+    "Open Patience": "A collection of solitaire card games.",
+    "OpenTTD": "Transport Tycoon: build a transport empire from 1950 onward.",
+    "Pixel Wheels": "Top-down arcade racer, quick races.",
+    "Shattered Pixel Dungeon": "A polished turn-based roguelike: descend, loot, die, try again.",
+    "Simon Tatham's Puzzles": "Over 40 of Simon Tatham's logic puzzles in one app.",
+    "SuperTuxKart": "Kart racing with Tux and friends, single and multiplayer.",
+    "The Battle for Wesnoth": "The classic turn-based fantasy strategy, full campaigns.",
+    "Unciv": "An open-source remake of Civilization V for your phone.",
 }
 
 
@@ -1449,7 +1473,7 @@ JS_CONTENT = r"""
   if (!grid) return; // not the directory page
 
   var state = { apps: [], query: "", cat: "", attrs: {}, stores: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160 };
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160, "Games": 0 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
