@@ -235,6 +235,85 @@
   "per_badge": false
  },
  {
+  "name": "ArcaneChat",
+  "package": "chat.delta.lite",
+  "slug": "chat-delta-lite",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Messaging",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=chat.delta.lite",
+   "fdroid": true,
+   "github": "https://github.com/ArcaneChat/android",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Arrow Escape",
+  "package": "com.sidhant.arrowescape",
+  "slug": "com-sidhant-arrowescape",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzles",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/sidhant947/arrowescape",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Astro Loop",
+  "package": "com.astroloop.game",
+  "slug": "com-astroloop-game",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Arcade",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/PubDeer/astro-loop",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Audio Recorder",
   "package": "com.dimowner.audiorecorder",
   "slug": "com-dimowner-audiorecorder",
@@ -334,6 +413,32 @@
   "rating": "4.84",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "bitchat",
+  "package": "com.bitchat.droid",
+  "slug": "com-bitchat-droid",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Messaging",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.bitchat.droid",
+   "fdroid": false,
+   "github": "https://github.com/permissionlesstech/bitchat-android",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "no_account": true
   },
   "made_by_us": false,
   "per_badge": false
@@ -495,6 +600,33 @@
   "per_badge": false
  },
  {
+  "name": "ClassiPod",
+  "package": "com.adeeteya.classipod",
+  "slug": "com-adeeteya-classipod",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Music player",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.adeeteya.classipod",
+   "fdroid": true,
+   "github": "https://github.com/adeeteya/Classipod",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Clima",
   "package": "co.prestosole.clima",
   "slug": "co-prestosole-clima",
@@ -599,6 +731,32 @@
   "per_badge": false
  },
  {
+  "name": "Dooz",
+  "package": "io.github.yamin8000.dooz",
+  "slug": "io-github-yamin8000-dooz",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Board",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/yamin8000/dooz",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "dotGallery (ReFra)",
   "package": "com.dot.gallery",
   "slug": "com-dot-gallery",
@@ -677,6 +835,32 @@
   "per_badge": false
  },
  {
+  "name": "Element X",
+  "package": "io.element.android.x",
+  "slug": "io-element-android-x",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Messaging",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=io.element.android.x",
+   "fdroid": true,
+   "github": "https://github.com/element-hq/element-x-android",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Endless Sky",
   "package": "com.github.thewierdnut.endless_mobile",
   "slug": "com-github-thewierdnut-endless-mobile",
@@ -720,6 +904,32 @@
    "fdroid": true,
    "github": null,
    "openapk": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Exodus",
+  "package": "org.eu.exodus_privacy.exodusprivacy",
+  "slug": "org-eu-exodus-privacy-exodusprivacy",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Privacy",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.eu.exodus_privacy.exodusprivacy",
+   "fdroid": true,
+   "github": "https://github.com/Exodus-Privacy/exodus-android-app",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -1170,6 +1380,84 @@
   "per_badge": false
  },
  {
+  "name": "Gauguin",
+  "package": "org.piepmeyer.gauguin",
+  "slug": "org-piepmeyer-gauguin",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Logic puzzles",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.piepmeyer.gauguin",
+   "fdroid": true,
+   "github": "https://github.com/meikpiep/gauguin",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Gridle",
+  "package": "org.billthefarmer.gridle",
+  "slug": "org-billthefarmer-gridle",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Word",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/billthefarmer/gridle",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "HeliBoard",
+  "package": "helium314.keyboard",
+  "slug": "helium314-keyboard",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Keyboard",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/HeliBorg/HeliBoard",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "HomerPlayer2",
   "package": "com.studio4plus.homerplayer2",
   "slug": "com-studio4plus-homerplayer2",
@@ -1213,6 +1501,32 @@
    "fdroid": true,
    "github": null,
    "openapk": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Image Toolbox",
+  "package": "ru.tech.imageresizershrinker",
+  "slug": "ru-tech-imageresizershrinker",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Image editing",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker",
+   "fdroid": true,
+   "github": "https://github.com/T8RIN/ImageToolbox",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -1404,6 +1718,33 @@
   "per_badge": false
  },
  {
+  "name": "Lissen",
+  "package": "org.grakovne.lissen",
+  "slug": "org-grakovne-lissen",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Audiobooks",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=org.grakovne.lissen",
+   "fdroid": true,
+   "github": "https://github.com/GrakovNe/lissen-android",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Luanti",
   "package": "net.minetest.minetest",
   "slug": "net-minetest-minetest",
@@ -1425,6 +1766,33 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Lune",
+  "package": "com.demonlab.lune",
+  "slug": "com-demonlab-lune",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Music player",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/mrdemonc/lune",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true
   },
   "made_by_us": false,
   "per_badge": false
@@ -1586,6 +1954,32 @@
   "per_badge": false
  },
  {
+  "name": "Moshidon",
+  "package": "org.joinmastodon.android.moshinda",
+  "slug": "org-joinmastodon-android-moshinda",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Mastodon",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/LucasGGamerM/moshidon",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "mpv-android",
   "package": "is.xyz.mpv",
   "slug": "is-xyz-mpv",
@@ -1605,6 +1999,32 @@
    "openapk": "https://www.openapk.net/mpv-android/is.xyz.mpv/"
   },
   "rating": "4.2",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "NekoVideo",
+  "package": "com.nkls.nekovideo",
+  "slug": "com-nkls-nekovideo",
+  "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Video player",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/fellipitopv/nekovideo",
+   "openapk": null
+  },
+  "rating": null,
   "attrs": {
    "open_source": true
   },
@@ -2030,6 +2450,32 @@
   "per_badge": false
  },
  {
+  "name": "PlainApp",
+  "package": "com.ismartcoding.plain",
+  "slug": "com-ismartcoding-plain",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Device management",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.ismartcoding.plain",
+   "fdroid": true,
+   "github": "https://github.com/plainhub/plain-app",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Pocket Paint",
   "package": "org.catrobat.paintroid",
   "slug": "org-catrobat-paintroid",
@@ -2162,6 +2608,57 @@
   "per_badge": false
  },
  {
+  "name": "Quiet Grid",
+  "package": "com.quietgrid.app",
+  "slug": "com-quietgrid-app",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Logic puzzles",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.quietgrid.app",
+   "fdroid": true,
+   "github": "https://github.com/lendl/quiet-grid",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Rattlegram",
+  "package": "com.aicodix.rattlegram",
+  "slug": "com-aicodix-rattlegram",
+  "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Messaging",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.aicodix.rattlegram",
+   "fdroid": false,
+   "github": "https://github.com/aicodix/rattlegram",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {},
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "ReadEra",
   "package": "org.readera",
   "slug": "org-readera",
@@ -2202,6 +2699,32 @@
    "play": null,
    "fdroid": true,
    "github": "https://github.com/Ashinch/ReadYou",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "SayWhen",
+  "package": "com.dmi3dmi3.saywhen",
+  "slug": "com-dmi3dmi3-saywhen",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Calendar",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/dmi3dmi3/saywhen",
    "openapk": null
   },
   "rating": null,
@@ -2344,6 +2867,32 @@
   "per_badge": false
  },
  {
+  "name": "SMS Import/Export",
+  "package": "com.github.tmo1.sms_ie",
+  "slug": "com-github-tmo1-sms-ie",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "SMS",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/tmo1/sms-ie",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Snapseed",
   "package": "com.niksoftware.snapseed",
   "slug": "com-niksoftware-snapseed",
@@ -2391,6 +2940,33 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Sudoku You",
+  "package": "com.galaxyrio.sudokusolver",
+  "slug": "com-galaxyrio-sudokusolver",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Sudoku",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/Galaxy-rio/SudokuYou",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true
   },
   "made_by_us": false,
   "per_badge": false
@@ -2493,6 +3069,32 @@
    "fdroid": true,
    "github": null,
    "openapk": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Thumb-Key",
+  "package": "com.dessalines.thumbkey",
+  "slug": "com-dessalines-thumbkey",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Keyboard",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/dessalines/thumb-key",
+   "openapk": null
   },
   "rating": null,
   "attrs": {
@@ -2606,6 +3208,32 @@
   "per_badge": false
  },
  {
+  "name": "Victoria Launcher",
+  "package": "dev.victorialauncher",
+  "slug": "dev-victorialauncher",
+  "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Launcher",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": null,
+   "fdroid": true,
+   "github": "https://github.com/adelmonte/victoria-launcher",
+   "openapk": null
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
   "name": "Vinyl Music Player",
   "package": "com.poupa.vinylmusicplayer",
   "slug": "com-poupa-vinylmusicplayer",
@@ -2677,6 +3305,32 @@
    "openapk": "https://www.openapk.net/voice-audiobook-player/de.ph1b.audiobook/"
   },
   "rating": "4.6",
+  "attrs": {
+   "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false
+ },
+ {
+  "name": "Water Sort",
+  "package": "com.sidhant.watersort",
+  "slug": "com-sidhant-watersort",
+  "category": "Games",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "subcategory": "Puzzles",
+  "description": "PASS 2026-10-05.",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.sidhant.watersort",
+   "fdroid": true,
+   "github": "https://github.com/sidhant947/water-sort",
+   "openapk": null
+  },
+  "rating": null,
   "attrs": {
    "open_source": true
   },
