@@ -15,6 +15,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.lolo.io.onelist",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -41,6 +42,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.andstatus.game2048",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/andstatus/game2048",
    "openapk": "https://www.openapk.net/2048-open-fun-game/org.andstatus.game2048/"
   },
@@ -69,6 +71,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -97,6 +100,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/divVerent/aaaaxy",
    "openapk": null
   },
@@ -125,6 +129,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=itkach.aard2",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/itkach/aard2-android",
    "openapk": "https://www.openapk.net/aard-2/itkach.aard2/"
   },
@@ -154,6 +159,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/sdex/ActivityManager",
    "openapk": null
   },
@@ -182,6 +188,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/AdAway/AdAway",
    "openapk": "https://www.openapk.net/adaway/org.adaway/"
   },
@@ -210,6 +217,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/beemdevelopment/Aegis",
    "openapk": "https://www.openapk.net/aegis-authenticator/com.beemdevelopment.aegis/"
   },
@@ -238,6 +246,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/meypod/al-quran",
    "openapk": null
   },
@@ -266,6 +275,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/kraigs-android/kraigsandroid",
    "openapk": "https://www.openapk.net/alarm-klock/com.angrydoughnuts.android.alarmclock/"
   },
@@ -294,6 +304,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -322,6 +333,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/TeamAmaze/AmazeFileManager",
    "openapk": "https://www.openapk.net/amaze/com.amaze.filemanager/"
   },
@@ -350,6 +362,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.bible.android.activity",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/AndBible/and-bible",
    "openapk": null
   },
@@ -378,6 +391,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gpl.rpg.AndorsTrail",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/AndorsTrailRelease/andors-trail",
    "openapk": "https://www.openapk.net/andors-trail/com.gpl.rpg.AndorsTrail/"
   },
@@ -406,6 +420,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ichi2.anki",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/ankidroid/Anki-Android",
    "openapk": "https://www.openapk.net/ankidroid/com.ichi2.anki/"
   },
@@ -432,6 +447,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -460,6 +476,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.danoeh.antennapod",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/AntennaPod/AntennaPod",
    "openapk": "https://www.openapk.net/antennapod/de.danoeh.antennapod/"
   },
@@ -488,6 +505,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/RisorseArtificiali/anti-vocale",
    "openapk": null
   },
@@ -516,6 +534,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ch.logixisland.anuto",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mjaun/android-anuto",
    "openapk": "https://www.openapk.net/anuto-td/ch.logixisland.anuto/"
   },
@@ -544,6 +563,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/remix.myplayer",
    "github": "https://github.com/rRemix/APlayer",
    "openapk": null
   },
@@ -572,6 +592,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/MuntashirAkon/AppManager",
    "openapk": "https://www.openapk.net/app-manager-android-package-manager/io.github.muntashirakon.AppManager/"
   },
@@ -598,6 +619,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ArcaneChat/android",
    "openapk": null
   },
@@ -626,6 +648,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/rukamori/ArchiveTune",
    "openapk": null
   },
@@ -652,6 +675,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.donnnno.arcticons",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -678,6 +702,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/poppingmoon/aria",
    "openapk": null
   },
@@ -706,6 +731,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/sidhant947/arrowescape",
    "openapk": null
   },
@@ -735,6 +761,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/asteroids-revenge",
    "openapk": null
   },
@@ -763,6 +790,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/PubDeer/astro-loop",
    "openapk": null
   },
@@ -791,6 +819,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/retransmit/Atrium",
    "openapk": null
   },
@@ -819,6 +848,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Dimowner/AudioRecorder",
    "openapk": "https://www.openapk.net/audio-recorder/com.dimowner.audiorecorder/"
   },
@@ -847,6 +877,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/aurora-store/com.aurora.store/"
   },
@@ -873,6 +904,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/stratumauth/app",
    "openapk": "https://www.openapk.net/authenticator-pro/me.jmh.authenticatorpro/"
   },
@@ -899,6 +931,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/OxygenCobalt/Auxio",
    "openapk": "https://www.openapk.net/auxio/org.oxycblt.auxio/"
   },
@@ -927,6 +960,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gaurav.avnc",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/gujjwal00/avnc",
    "openapk": null
   },
@@ -955,6 +989,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.lecaro.breakout",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -981,6 +1016,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/rw-account/baly_groceries_tracker",
    "openapk": null
   },
@@ -1009,6 +1045,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/czy0729/Bangumi",
    "openapk": null
   },
@@ -1037,6 +1074,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.atharok.barcodescanner",
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/barcode-scanner/com.atharok.barcodescanner/"
   },
@@ -1065,6 +1103,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/chenxiaolong/BasicSync",
    "openapk": null
   },
@@ -1093,6 +1132,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/brandonp2412/BeatBridge",
    "openapk": null
   },
@@ -1121,6 +1161,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.kde.bettercounter",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/albertvaka/bettercounter",
    "openapk": null
   },
@@ -1147,6 +1188,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/markusfisch/BinaryEye",
    "openapk": "https://www.openapk.net/binary-eye/de.markusfisch.android.binaryeye/"
   },
@@ -1175,6 +1217,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.minar.birday",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1201,6 +1244,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bitchat.droid",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/permissionlesstech/bitchat-android",
    "openapk": null
   },
@@ -1229,6 +1273,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SoltauFintel/blockpuzzle",
    "openapk": "https://www.openapk.net/block-puzzle-stone-wars/de.mwvb.blockpuzzle/"
   },
@@ -1257,6 +1302,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/brandonp2412/BlockDrop",
    "openapk": "https://www.openapk.net/blockdrop/com.blockdrop.game/"
   },
@@ -1285,6 +1331,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/christianjuth/blorp",
    "openapk": "https://www.openapk.net/blorp/xyz.blorpblorp.app/"
   },
@@ -1311,6 +1358,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/rdOxalis/bluesoundplayer",
    "openapk": null
   },
@@ -1339,6 +1387,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.coreproduction.bowltimer",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1365,6 +1414,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/breezy-weather/breezy-weather",
    "openapk": "https://www.openapk.net/breezy-weather/org.breezyweather/"
   },
@@ -1393,6 +1443,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/briar/org.briarproject.briar.android/"
   },
@@ -1419,6 +1470,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/woheller69/level",
    "openapk": "https://www.openapk.net/bubble/org.woheller69.level/"
   },
@@ -1447,6 +1499,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1475,6 +1528,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.math.bmi.scientific.calculator.converter.android",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1501,6 +1555,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.capyreader.app",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/jocmp/capyreader",
    "openapk": "https://www.openapk.net/capy-reader/com.capyreader.app/"
   },
@@ -1529,6 +1584,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/GeorgeYT9769/cardabase-app",
    "openapk": null
   },
@@ -1557,6 +1613,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.hackerchick.catima",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/CatimaLoyalty/Android",
    "openapk": "https://www.openapk.net/catima-loyalty-card-wallet/me.hackerchick.catima/"
   },
@@ -1583,6 +1640,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/cclauncher",
    "openapk": null
   },
@@ -1611,6 +1669,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/elementdavv/chaka",
    "openapk": null
   },
@@ -1639,6 +1698,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1667,6 +1727,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.chess.clock",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1693,6 +1754,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/choganhq/chogan",
    "openapk": "https://www.openapk.net/chogan/io.github.choganhq.chogan/"
   },
@@ -1721,6 +1783,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/vicolo-dev/chrono",
    "openapk": "https://www.openapk.net/chrono/com.vicolo.chrono/"
   },
@@ -1749,6 +1812,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.adeeteya.classipod",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/adeeteya/Classipod",
    "openapk": "https://www.openapk.net/classipod/com.adeeteya.classipod/"
   },
@@ -1778,6 +1842,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/clima/co.prestosole.clima/"
   },
@@ -1806,6 +1871,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bobek.compass",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Kr0oked/Compass",
    "openapk": "https://www.openapk.net/compass/com.bobek.compass/"
   },
@@ -1834,6 +1900,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/gwitko/Conduit",
    "openapk": null
   },
@@ -1862,6 +1929,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -1890,6 +1958,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ferrarid.converterpro",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ferraridamiano/ConverterNOW",
    "openapk": "https://www.openapk.net/converter-now-unit-converter/com.ferrarid.converterpro/"
   },
@@ -1918,6 +1987,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/j6k4m8/coppelia",
    "openapk": null
   },
@@ -1946,6 +2016,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/fumiama/copymanga",
    "openapk": null
   },
@@ -1972,6 +2043,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Cosmic-Ide/Cosmic-IDE",
    "openapk": null
   },
@@ -2000,6 +2072,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kgurgul.cpuinfo",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/kamgurgul/cpu-info",
    "openapk": null
   },
@@ -2026,6 +2099,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/crosswords/org.eehouse.android.xw4/"
   },
@@ -2054,6 +2128,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nathanatos.Cuppa",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2080,6 +2155,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/curbox-app/curbox-android",
    "openapk": "https://www.openapk.net/curbox-app-website-blocker/neth.iecal.curbox/"
   },
@@ -2108,6 +2184,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.salomax.currencies",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2134,6 +2211,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2160,6 +2238,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Demizo/Daily_You",
    "openapk": null
   },
@@ -2188,6 +2267,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/XayahSuSuSu/Android-DataBackup",
    "openapk": null
   },
@@ -2216,6 +2296,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/balzack/databag",
    "openapk": null
   },
@@ -2244,6 +2325,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/bitfireAT/davx5-ose",
    "openapk": "https://www.openapk.net/davx/at.bitfire.davdroid/"
   },
@@ -2270,6 +2352,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.codedead.deadhash",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2296,6 +2379,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/deku-messaging/DekuSMS-Android",
    "openapk": "https://www.openapk.net/deku-sms/com.afkanerd.deku/"
   },
@@ -2324,6 +2408,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/deltachat/deltachat-android",
    "openapk": null
   },
@@ -2352,6 +2437,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.shub39.dharmik.online",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2378,6 +2464,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=cz.mod42.diktafon",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/jaromiru/diktafon",
    "openapk": "https://www.openapk.net/diktafon-voice-memos-on-tape/cz.mod42.diktafon/"
   },
@@ -2407,6 +2494,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.clombardo.dnsnet",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/t895/DNSNet",
    "openapk": null
   },
@@ -2433,6 +2521,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=xyz.zedler.patrick.doodle",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2459,6 +2548,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/yamin8000/dooz",
    "openapk": "https://www.openapk.net/dooz/io.github.yamin8000.dooz/"
   },
@@ -2487,6 +2577,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/IacobIonut01/Gallery",
    "openapk": "https://www.openapk.net/gallery/com.dot.gallery/"
   },
@@ -2515,6 +2606,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/drawpile/Drawpile",
    "openapk": null
   },
@@ -2543,6 +2635,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Droid-ify/client",
    "openapk": "https://www.openapk.net/droid-ify/com.looker.droidify/"
   },
@@ -2571,6 +2664,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.develz.crawl",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/crawl/crawl",
    "openapk": "https://www.openapk.net/dungeon-crawl-stone-soup/org.develz.crawl/"
   },
@@ -2599,6 +2693,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/renyuneyun/Easer",
    "openapk": "https://www.openapk.net/easer-beta/ryey.easer.beta/"
   },
@@ -2627,6 +2722,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/bilec/econverter",
    "openapk": null
   },
@@ -2655,6 +2751,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/element-hq/element-android",
    "openapk": "https://www.openapk.net/element-secure-messenger/im.vector.app/"
   },
@@ -2681,6 +2778,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.element.android.x",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/element-hq/element-x-android",
    "openapk": null
   },
@@ -2709,6 +2807,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2737,6 +2836,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/thewierdnut/endless-mobile",
    "openapk": "https://www.openapk.net/endless-sky/com.github.thewierdnut.endless_mobile/"
   },
@@ -2765,6 +2865,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -2793,6 +2894,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ya27hw/equran_app",
    "openapk": null
   },
@@ -2821,6 +2923,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Etar-Group/Etar-Calendar",
    "openapk": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
   },
@@ -2849,6 +2952,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.depau.etchdroid",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/EtchDroid/EtchDroid",
    "openapk": null
   },
@@ -2875,6 +2979,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ExclaveNetwork/Exclave",
    "openapk": null
   },
@@ -2903,6 +3008,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.eu.exodus_privacy.exodusprivacy",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Exodus-Privacy/exodus-android-app",
    "openapk": null
   },
@@ -2931,6 +3037,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/f-droid/org.fdroid.fdroid/"
   },
@@ -2959,6 +3066,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/anonfaded/FadCam",
    "openapk": null
   },
@@ -2987,6 +3095,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/M66B/FairEmail",
    "openapk": "https://www.openapk.net/fairemail/eu.faircode.email/"
   },
@@ -3015,6 +3124,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fairscan.app",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/pynicolas/FairScan",
    "openapk": null
   },
@@ -3043,6 +3153,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3071,6 +3182,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3099,6 +3211,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3127,6 +3240,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3155,6 +3269,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3183,6 +3298,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3211,6 +3327,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3239,6 +3356,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3267,6 +3385,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
@@ -3295,6 +3414,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/spacecowboy/Feeder",
    "openapk": "https://www.openapk.net/feeder-play-version/com.nononsenseapps.feeder.play/"
   },
@@ -3323,6 +3443,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/jean-voila/FeurStagram",
    "openapk": null
   },
@@ -3349,6 +3470,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -3377,6 +3499,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/jmshrv/finamp",
    "openapk": "https://www.openapk.net/finamp/com.unicornsonlsd.finamp/"
   },
@@ -3403,6 +3526,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/mozilla-mobile/firefox-android",
    "openapk": null
   },
@@ -3429,6 +3553,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/brandonp2412/FitBook",
    "openapk": null
   },
@@ -3457,6 +3582,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.tadris.fitness",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -3483,6 +3609,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/flareteam/flare-engine",
    "openapk": "https://www.openapk.net/flare/org.flare.app/"
   },
@@ -3509,6 +3636,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.cyb3rko.flashdim",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/cyb3rko/flashdim",
    "openapk": null
   },
@@ -3537,6 +3665,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/polodarb/Flashlight-Tiramisu",
    "openapk": "https://www.openapk.net/flashlight-tiramisu/com.pdb82.flashlighttiramisu/"
   },
@@ -3565,6 +3694,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/brandonp2412/Flexify",
    "openapk": null
   },
@@ -3593,6 +3723,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/flicky",
    "openapk": null
   },
@@ -3621,6 +3752,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/florisboard/florisboard",
    "openapk": "https://www.openapk.net/florisboard/dev.patrickgold.florisboard/"
   },
@@ -3649,6 +3781,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bytehamster.flowitgame",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -3675,6 +3808,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/fluffy",
    "openapk": null
   },
@@ -3703,6 +3837,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/boyan01/flutter-tetris",
    "openapk": null
   },
@@ -3729,6 +3864,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/KevinCFechtel/FluxNews/tree/main",
    "openapk": null
   },
@@ -3757,6 +3893,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/39aldo39/Flym-DecSync",
    "openapk": "https://www.openapk.net/flym-decsync/org.decsync.flym/"
   },
@@ -3785,6 +3922,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/forkyz/app.crossword.yourealwaysbe.forkyz/"
   },
@@ -3811,6 +3949,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/OpenDataEnsemble/ode",
    "openapk": null
   },
@@ -3839,6 +3978,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Calendar",
    "openapk": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
   },
@@ -3867,6 +4007,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.clock",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Clock",
    "openapk": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
   },
@@ -3895,6 +4036,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.contacts",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Contacts",
    "openapk": "https://www.openapk.net/fossify-contacts/org.fossify.contacts/"
   },
@@ -3923,6 +4065,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.filemanager",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/File-Manager",
    "openapk": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
   },
@@ -3951,6 +4094,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Gallery",
    "openapk": "https://www.openapk.net/fossify-gallery/org.fossify.gallery/"
   },
@@ -3979,6 +4123,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.phone",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Phone",
    "openapk": "https://www.openapk.net/fossify-phone/org.fossify.phone/"
   },
@@ -4007,6 +4152,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.messages",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Messages",
    "openapk": "https://www.openapk.net/fossify-sms-messenger/org.fossify.messages/"
   },
@@ -4035,6 +4181,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.voicerecorder",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/FossifyOrg/Voice-Recorder",
    "openapk": "https://www.openapk.net/fossify-voice-recorder/org.fossify.voicerecorder/"
   },
@@ -4064,6 +4211,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/free-the-bugs",
    "openapk": null
   },
@@ -4092,6 +4240,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.saschahlusiak.freebloks",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/shlusiak/Freebloks-Android",
    "openapk": "https://www.openapk.net/freebloks/de.saschahlusiak.freebloks/"
   },
@@ -4120,6 +4269,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/KillerInk/FreeDcam",
    "openapk": "https://www.openapk.net/freedcam/troop.com.freedcam/"
   },
@@ -4146,6 +4296,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/emileb/Freedoom-for-Android",
    "openapk": "https://www.openapk.net/freedoom/net.nullsum.freedoom/"
   },
@@ -4174,6 +4325,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Freeyourgadget/Gadgetbridge",
    "openapk": null
   },
@@ -4202,6 +4354,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.arjun.gander",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/mokshablr/gander",
    "openapk": null
   },
@@ -4230,6 +4383,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.piepmeyer.gauguin",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/meikpiep/gauguin",
    "openapk": "https://www.openapk.net/gauguin/org.piepmeyer.gauguin/"
   },
@@ -4258,6 +4412,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.gcompris.full",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4284,6 +4439,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/kstepanovdev/gdf_hema_timer",
    "openapk": null
   },
@@ -4312,6 +4468,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.labs.language.tailwind",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4338,6 +4495,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4366,6 +4524,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4394,6 +4553,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/godotengine/godot/",
    "openapk": null
   },
@@ -4422,6 +4582,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/godotengine/godot/",
    "openapk": null
   },
@@ -4450,6 +4611,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.calendar",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4476,6 +4638,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4502,6 +4665,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.keep",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4528,6 +4692,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.ar.lens",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4554,6 +4719,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.tasks",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4580,6 +4746,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/AkaneTan/Gramophone",
    "openapk": "https://www.openapk.net/gramophone/org.akanework.gramophone/"
   },
@@ -4606,6 +4773,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/billthefarmer/gridle",
    "openapk": "https://www.openapk.net/gridle/org.billthefarmer.gridle/"
   },
@@ -4634,6 +4802,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/shub39/Grit",
    "openapk": null
   },
@@ -4662,6 +4831,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/InlitX/GymMane",
    "openapk": null
   },
@@ -4690,6 +4860,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jiaqifeng.hacki",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Livinglist/Hacki",
    "openapk": null
   },
@@ -4718,6 +4889,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/aistra0528/Hail",
    "openapk": null
   },
@@ -4746,6 +4918,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/SimonHalvdansson/Harmonic-HN",
    "openapk": "https://www.openapk.net/harmonic/com.simon.harmonichackernews/"
   },
@@ -4772,6 +4945,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/anandnet/Harmony-Music",
    "openapk": null
   },
@@ -4798,6 +4972,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/HeliBorg/HeliBoard",
    "openapk": "https://www.openapk.net/heliboard/helium314.keyboard/"
   },
@@ -4826,6 +5001,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.studio4plus.homerplayer2",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/msimonides/homerplayer2",
    "openapk": null
   },
@@ -4854,6 +5030,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/zenorogue/hyperrogue",
    "openapk": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
   },
@@ -4882,6 +5059,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4910,6 +5088,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/T8RIN/ImageToolbox",
    "openapk": null
   },
@@ -4938,6 +5117,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.alextran.immich",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -4964,6 +5144,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/z-huang/InnerTune",
    "openapk": "https://www.openapk.net/innertune/com.zionhuang.music/"
   },
@@ -4990,6 +5171,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/Gedsh/InviZible",
    "openapk": null
   },
@@ -5016,6 +5198,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/nikita36078/J2ME-Loader",
    "openapk": "https://www.openapk.net/j2me-loader/ru.playsoftware.j2meloader/"
   },
@@ -5042,6 +5225,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/jami/cx.ring/"
   },
@@ -5068,6 +5252,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/jekyllex/jekyllex-android",
    "openapk": null
   },
@@ -5096,6 +5281,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/jellyfin/jellyfin-android",
    "openapk": "https://www.openapk.net/jellyfin-your-media-in-your-hands/org.jellyfin.mobile/"
   },
@@ -5122,6 +5308,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jerboa",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/LemmyNet/jerboa",
    "openapk": null
   },
@@ -5150,6 +5337,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -5178,6 +5366,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/arianneorpilla/jidoujisho",
    "openapk": null
   },
@@ -5204,6 +5393,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/jitsi/jitsi-meet",
    "openapk": "https://www.openapk.net/jitsi-meet/org.jitsi.meet/"
   },
@@ -5232,6 +5422,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/xiaoshihou514/jiyi",
    "openapk": null
   },
@@ -5260,6 +5451,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/laurent22/joplin",
    "openapk": "https://www.openapk.net/joplin/net.cozic.joplin/"
   },
@@ -5286,6 +5478,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/TechbeeAT/jtxBoard",
    "openapk": "https://www.openapk.net/jtx-board-journalsnotestasks/at.techbee.jtx/"
   },
@@ -5312,6 +5505,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/moneytoo/Player",
    "openapk": null
   },
@@ -5340,6 +5534,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/PhilippC/keepass2android",
    "openapk": "https://www.openapk.net/keepass2android-offline/keepass2android.keepass2android_nonet/"
   },
@@ -5368,6 +5563,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Kunzisoft/KeePassDX",
    "openapk": null
   },
@@ -5398,6 +5594,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.yogeshpaliyal.keypass",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/yogeshpaliyal/KeyPass",
    "openapk": null
   },
@@ -5426,6 +5623,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=fr.neamar.kiss",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Neamar/KISS",
    "openapk": "https://www.openapk.net/kiss-launcher/fr.neamar.kiss/"
   },
@@ -5454,6 +5652,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Nain57/Smart-AutoClicker",
    "openapk": null
   },
@@ -5482,6 +5681,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.getknit.knit",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/getknit/knit",
    "openapk": null
   },
@@ -5510,6 +5710,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/xbmc/xbmc",
    "openapk": "https://www.openapk.net/kodi/org.xbmc.kodi/"
   },
@@ -5536,6 +5737,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Chooloo/koler",
    "openapk": "https://www.openapk.net/koler/com.chooloo.www.koler/"
   },
@@ -5564,6 +5766,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/koreader/koreader",
    "openapk": "https://www.openapk.net/koreader/org.koreader.launcher.fdroid/"
   },
@@ -5592,6 +5795,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -5620,6 +5824,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.lawnchair",
    "github": "https://github.com/LawnchairLauncher/lawnchair",
    "openapk": "https://www.openapk.net/lawnchair/app.lawnchair/"
   },
@@ -5646,6 +5851,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Swordfish90/Lemuroid",
    "openapk": "https://www.openapk.net/lemuroid/com.swordfish.lemuroid/"
   },
@@ -5674,6 +5880,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.absinthe.libchecker",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/LibChecker/LibChecker",
    "openapk": null
   },
@@ -5700,6 +5907,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/iakdis/librecamera",
    "openapk": null
   },
@@ -5728,6 +5936,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/jksalcedo/librefind",
    "openapk": null
   },
@@ -5756,6 +5965,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -5784,6 +5994,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/kaajjo/LibreSudoku",
    "openapk": "https://www.openapk.net/libresudoku/com.kaajjo.libresudoku/"
   },
@@ -5812,6 +6023,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -5840,6 +6052,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/libre-tube/LibreTube",
    "openapk": "https://www.openapk.net/libretube/com.github.libretube/"
   },
@@ -5866,6 +6079,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.lichess.mobileV2",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/lichess-org/mobile",
    "openapk": "https://www.openapk.net/lichess/org.lichess.mobileV2/"
   },
@@ -5894,6 +6108,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sakethh.linkora",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/LinkoraApp/Linkora",
    "openapk": null
   },
@@ -5922,6 +6137,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.inspiredandroid.linuxcommandbibliotheca",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/SimonSchubert/Betabase",
    "openapk": null
   },
@@ -5948,6 +6164,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.grakovne.lissen",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/GrakovNe/lissen-android",
    "openapk": "https://www.openapk.net/lissen-audiobookshelf-client/org.grakovne.lissen/"
   },
@@ -5977,6 +6194,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/localsend/localsend",
    "openapk": "https://www.openapk.net/localsend/org.localsend.localsend_app/"
   },
@@ -6003,6 +6221,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.dp.logcatapp",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/darshanparajuli/LogcatReader",
    "openapk": null
   },
@@ -6031,6 +6250,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/logseq/logseq",
    "openapk": null
   },
@@ -6059,6 +6279,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.isoron.uhabits",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/iSoron/uhabits",
    "openapk": "https://www.openapk.net/loop-habit-tracker/org.isoron.uhabits/"
   },
@@ -6085,6 +6306,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.minetest.minetest",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/luanti-org/luanti",
    "openapk": "https://www.openapk.net/minetest/net.minetest.minetest/"
   },
@@ -6113,6 +6335,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SniShaper/lumine-for-android",
    "openapk": null
   },
@@ -6141,6 +6364,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mrdemonc/lune",
    "openapk": "https://www.openapk.net/lune/com.demonlab.lune/"
   },
@@ -6170,6 +6394,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/lxreader/io.gitlab.coolreader_ng.lxreader.fdroid/"
   },
@@ -6198,6 +6423,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/illusionman1212/lyrics-grabbr",
    "openapk": null
   },
@@ -6226,6 +6452,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Leadaxe/LxBox",
    "openapk": null
   },
@@ -6254,6 +6481,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.svenjacobs.app.leon",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/svenjacobs/leon",
    "openapk": null
   },
@@ -6280,6 +6508,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/mages",
    "openapk": null
   },
@@ -6308,6 +6537,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6336,6 +6566,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.danemadsen.maid",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Mobile-Artificial-Intelligence/maid",
    "openapk": "https://www.openapk.net/maid/com.danemadsen.maid/"
   },
@@ -6365,6 +6596,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/egdels/makeacopy",
    "openapk": null
   },
@@ -6393,6 +6625,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.gsantner.markor",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/gsantner/markor",
    "openapk": "https://www.openapk.net/markor/net.gsantner.markor/"
   },
@@ -6421,6 +6654,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/maxwhipw/marmalade-tts-android",
    "openapk": null
   },
@@ -6449,6 +6683,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/zhanghai/MaterialFiles",
    "openapk": "https://www.openapk.net/material-files/me.zhanghai.android.files/"
   },
@@ -6477,6 +6712,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=co.garmax.materialflashlight",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/garmax1/material-flashlight",
    "openapk": "https://www.openapk.net/material-flashlight/co.garmax.materialflashlight/"
   },
@@ -6505,6 +6741,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.maelchiotti.localmaterialnotes",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/maelchiotti/LocalMaterialNotes",
    "openapk": null
   },
@@ -6533,6 +6770,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mattermost/mattermost-mobile",
    "openapk": null
   },
@@ -6561,6 +6799,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/janekbt/MeditationApp",
    "openapk": null
   },
@@ -6589,6 +6828,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/nyxkn/meditation",
    "openapk": null
   },
@@ -6617,6 +6857,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=uk.co.telesense.tm.free",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6643,6 +6884,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sohamgreens.MeditationTimer",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6669,6 +6911,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/meditohq/medito-app",
    "openapk": "https://www.openapk.net/medito/meditofoundation.medito/"
   },
@@ -6695,6 +6938,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.helddertierwelt.mentalmath",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6721,6 +6965,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.moekadu.metronome",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/thetwom/toc2",
    "openapk": null
   },
@@ -6747,6 +6992,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.launcher",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6773,6 +7019,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.office.onenote",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6799,6 +7046,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.todos",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6825,6 +7073,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/mihonapp/mihon",
    "openapk": "https://www.openapk.net/mihon/app.mihon/"
   },
@@ -6851,6 +7100,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.calcitem.sanmill",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -6877,6 +7127,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.anuke.mindustry",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Anuken/Mindustry",
    "openapk": "https://www.openapk.net/mindustry/io.anuke.mindustry/"
   },
@@ -6905,6 +7156,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/john-athan/minesweeper",
    "openapk": "https://www.openapk.net/minesweeper/io.github.johnathan.minesweeper/"
   },
@@ -6933,6 +7185,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/miniter",
    "openapk": null
   },
@@ -6961,6 +7214,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.mudkip.moememos",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mudkipme/MoeMemosAndroid",
    "openapk": null
   },
@@ -6989,6 +7243,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/shub39/Momentum",
    "openapk": null
   },
@@ -7017,6 +7272,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/moneymanagerex/android-money-manager-ex",
    "openapk": "https://www.openapk.net/money-manager-ex/com.money.manager.ex/"
   },
@@ -7043,6 +7299,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -7071,6 +7328,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -7099,6 +7357,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.limelight",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/moonlight-stream/moonlight-android",
    "openapk": "https://www.openapk.net/moonlight-game-streaming/com.limelight/"
   },
@@ -7127,6 +7386,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.joinmastodon.android.moshinda",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/LucasGGamerM/moshidon",
    "openapk": null
   },
@@ -7155,6 +7415,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=is.xyz.mpv",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mpv-android/mpv-android",
    "openapk": "https://www.openapk.net/mpv-android/is.xyz.mpv/"
   },
@@ -7183,6 +7444,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/ArtifexSoftware/mupdf",
    "openapk": "https://www.openapk.net/mupdf-viewer/com.artifex.mupdf.viewer.app/"
   },
@@ -7209,6 +7471,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.murinelauncher",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/alesimula/Murine-launcher",
    "openapk": null
   },
@@ -7235,6 +7498,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/enricocid/Music-Player-GO",
    "openapk": null
   },
@@ -7263,6 +7527,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.gokadzev.musify",
    "github": "https://github.com/gokadzev/Musify",
    "openapk": null
   },
@@ -7289,6 +7554,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.raha.app.mymoney.free",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -7315,6 +7581,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Pool-Of-Tears/Myne",
    "openapk": null
   },
@@ -7343,6 +7610,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/namidaco/namida",
    "openapk": null
   },
@@ -7369,6 +7637,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/Dar9586/NClientV2",
    "openapk": null
   },
@@ -7395,6 +7664,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/fellipitopv/nekovideo",
    "openapk": "https://www.openapk.net/nekovideo/com.nkls.nekovideo/"
   },
@@ -7423,6 +7693,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/NeoApplications/Neo-Backup",
    "openapk": "https://www.openapk.net/neo-backup/com.machiav3lli.backup/"
   },
@@ -7449,6 +7720,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/M66B/NetGuard",
    "openapk": "https://www.openapk.net/netguard/eu.faircode.netguard/"
   },
@@ -7477,6 +7749,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/TeamNewPipe/NewPipe",
    "openapk": "https://www.openapk.net/newpipe/org.schabi.newpipe/"
   },
@@ -7506,6 +7779,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/anilbeesetti/nextplayer",
    "openapk": "https://www.openapk.net/next-player/dev.anilbeesetti.nextplayer/"
   },
@@ -7534,6 +7808,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/nextcloud/android",
    "openapk": "https://www.openapk.net/nextcloud/com.nextcloud.client/"
   },
@@ -7562,6 +7837,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/nightdropapp/nightdrop",
    "openapk": null
   },
@@ -7590,6 +7866,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/adil192/no_more_background",
    "openapk": null
   },
@@ -7618,6 +7895,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.omgodse.notally",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/omgodse/notally",
    "openapk": "https://www.openapk.net/notally-minimalist-notes/com.omgodse.notally/"
   },
@@ -7646,6 +7924,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/streetwriters/notesnook",
    "openapk": null
   },
@@ -7674,6 +7953,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.xtreak.notificationdictionary",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/tirkarthi/NotificationDictionary",
    "openapk": null
   },
@@ -7700,6 +7980,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/nonbili/NouTube",
    "openapk": null
   },
@@ -7728,6 +8009,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.courville.nova",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/nova-video-player/aos-AVP",
    "openapk": "https://www.openapk.net/nova-video-player/org.courville.nova/"
   },
@@ -7756,6 +8038,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/ImranR98/Obtainium",
    "openapk": "https://www.openapk.net/obtainium/dev.imranr.obtainium/"
   },
@@ -7782,6 +8065,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/jegly/OfflineLLM",
    "openapk": null
   },
@@ -7810,6 +8094,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/emavgl/oinkoin",
    "openapk": null
   },
@@ -7838,6 +8123,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/OksigeniaSL/oksigenia-sos",
    "openapk": null
   },
@@ -7866,6 +8152,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.olauncher",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/tanujnotes/Olauncher",
    "openapk": null
   },
@@ -7892,6 +8179,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mvbasov/OMN-Go",
    "openapk": null
   },
@@ -7920,6 +8208,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/onionshare/onionshare-android",
    "openapk": null
   },
@@ -7948,6 +8237,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/open-camera/net.sourceforge.opencamera/"
   },
@@ -7976,6 +8266,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/d-rk/open-patience",
    "openapk": null
   },
@@ -8004,6 +8295,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.moire.opensudoku",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/open-sudoku/org.moire.opensudoku/"
   },
@@ -8030,6 +8322,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/OpenBoard-team/OpenBoard",
    "openapk": "https://www.openapk.net/openboard/org.dslul.openboard.inputmethod.latin/"
   },
@@ -8059,6 +8352,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.darkempire78.opencalculator",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/clementwzk/OpenCalc",
    "openapk": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
   },
@@ -8087,6 +8381,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/OpenListTeam/OpenList-Mobile",
    "openapk": null
   },
@@ -8113,6 +8408,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=software.mdev.bookstracker",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/mateusz-bak/openreads",
    "openapk": null
   },
@@ -8139,6 +8435,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ethereal.openscan",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/ethereal-developers/OpenScan",
    "openapk": null
   },
@@ -8165,6 +8462,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/dmfs/opentasks",
    "openapk": "https://www.openapk.net/opentasks/org.dmfs.tasks/"
   },
@@ -8193,6 +8491,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/OpenTracksApp/OpenTracks",
    "openapk": "https://www.openapk.net/opentracks/de.dennisguse.opentracks/"
   },
@@ -8219,6 +8518,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/n-ice-community/commandergenius",
    "openapk": "https://www.openapk.net/openttd/org.openttd.fdroid/"
   },
@@ -8247,6 +8547,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Etregin/OPNsense_Manager",
    "openapk": null
   },
@@ -8275,6 +8576,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/organicmaps/organicmaps",
    "openapk": "https://www.openapk.net/organic-maps-offline-hike-bike-gps-navigation/app.organicmaps/"
   },
@@ -8303,6 +8605,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.orgzly",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -8329,6 +8632,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/max-kammerer/orion-viewer",
    "openapk": null
   },
@@ -8357,6 +8661,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Jigsaw-Code/outline-apps",
    "openapk": null
   },
@@ -8385,6 +8690,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/ciddwd/overlay-translator",
    "openapk": null
   },
@@ -8411,6 +8717,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.owncloud.android",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/owncloud/android",
    "openapk": null
   },
@@ -8437,6 +8744,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/emanuele-f/PCAPdroid",
    "openapk": "https://www.openapk.net/pcapdroid/com.emanuelef.remote_capture/"
   },
@@ -8463,6 +8771,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SecUSo/privacy-friendly-pedometer",
    "openapk": "https://www.openapk.net/pedometer-pfa/org.secuso.privacyfriendlyactivitytracker/"
   },
@@ -8491,6 +8800,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.byagowi.persiancalendar",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/persian-calendar/persian-calendar",
    "openapk": null
   },
@@ -8519,6 +8829,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dnsfilter.android",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/IngoZenz/personaldnsfilter",
    "openapk": "https://www.openapk.net/personaldnsfilter/dnsfilter.android/"
   },
@@ -8547,6 +8858,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/chr56/Phonograph_Plus",
    "openapk": "https://www.openapk.net/phonograph-plus/player.phonograph.plus/"
   },
@@ -8575,6 +8887,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -8601,6 +8914,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/wgh136/PicaComic",
    "openapk": null
   },
@@ -8627,6 +8941,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.agateau.tinywheels.android",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/agateau/pixelwheels",
    "openapk": "https://www.openapk.net/pixel-wheels/com.agateau.tinywheels.android/"
   },
@@ -8655,6 +8970,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -8683,6 +8999,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/PixelPlayerHQ/PixelPlayer",
    "openapk": null
   },
@@ -8709,6 +9026,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ceui.pixiv.pshaft",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/CeuiLiSA/Pixiv-Shaft",
    "openapk": null
   },
@@ -8735,6 +9053,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ismartcoding.plain",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/plainhub/plain-app",
    "openapk": "https://www.openapk.net/plainapp-file-web-access/com.ismartcoding.plain/"
   },
@@ -8763,6 +9082,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.planes.android",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -8789,6 +9109,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/plutonic",
    "openapk": null
   },
@@ -8817,6 +9138,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.catrobat.paintroid",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Catrobat/Paintroid",
    "openapk": "https://www.openapk.net/pocket-paint/org.catrobat.paintroid/"
   },
@@ -8845,6 +9167,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/XilinJia/Podcini.A",
    "openapk": "https://www.openapk.net/podcini-a-extensible-media-instrument/ac.mdiq.Podcini.A/"
   },
@@ -8873,6 +9196,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.podiumpodcasts.podium",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/aimok04/podium",
    "openapk": null
   },
@@ -8901,6 +9225,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/ExTV/Podroid",
    "openapk": null
   },
@@ -8927,6 +9252,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/podverse/podverse-fdroid",
    "openapk": "https://www.openapk.net/podverse/com.podverse.fdroid/"
   },
@@ -8955,6 +9281,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mlm-games/pomodorot",
    "openapk": null
   },
@@ -8983,6 +9310,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/hrydgard/ppsspp",
    "openapk": "https://www.openapk.net/ppsspp/org.ppsspp.ppsspp/"
   },
@@ -9009,6 +9337,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.timeto.app",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/Medvedev91/timeto.me",
    "openapk": null
   },
@@ -9035,6 +9364,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.pslab",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9061,6 +9391,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/jherkenhoff/qalculate-android",
    "openapk": null
   },
@@ -9089,6 +9420,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/marmistrz/QDict",
    "openapk": "https://www.openapk.net/qdict/com.annie.dictionary.fork/"
   },
@@ -9117,6 +9449,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/derickca/qr-cards",
    "openapk": null
   },
@@ -9147,6 +9480,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.qrcode.barcode.scanner.reader",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9173,6 +9507,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.code.scanner.qr.code.reader",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9199,6 +9534,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.quietgrid.app",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/lendl/quiet-grid",
    "openapk": null
   },
@@ -9228,6 +9564,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.github.quillpad",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9254,6 +9591,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.aicodix.rattlegram",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/aicodix/rattlegram",
    "openapk": "https://www.openapk.net/rattlegram-sms-via-audio/com.aicodix.rattlegram/"
   },
@@ -9280,6 +9618,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/x0b/rcx",
    "openapk": null
   },
@@ -9308,6 +9647,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.readera",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9334,6 +9674,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/readest/readest",
    "openapk": "https://www.openapk.net/readest/com.bilingify.readest/"
   },
@@ -9360,6 +9701,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Ashinch/ReadYou",
    "openapk": "https://www.openapk.net/read-you/me.ash.reader/"
   },
@@ -9388,6 +9730,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/LibreShift/red-moon",
    "openapk": null
   },
@@ -9416,6 +9759,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.quantumbadger.redreader",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/QuantumBadger/RedReader",
    "openapk": "https://www.openapk.net/redreader/org.quantumbadger.redreader/"
   },
@@ -9444,6 +9788,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/samyak2403/RepoStore",
    "openapk": null
   },
@@ -9472,6 +9817,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/libretro/RetroArch",
    "openapk": "https://www.openapk.net/retroarch/com.retroarch/"
   },
@@ -9498,6 +9844,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/adil192/ricochlime",
    "openapk": null
   },
@@ -9526,6 +9873,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/mgdx/RoueLibre",
    "openapk": null
   },
@@ -9554,6 +9902,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/chenxiaolong/RSAF",
    "openapk": null
   },
@@ -9582,6 +9931,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/niedev/RTranslator",
    "openapk": null
   },
@@ -9611,6 +9961,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ruffle-rs/ruffle-android",
    "openapk": null
   },
@@ -9639,6 +9990,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ruslin-note/ruslin-android",
    "openapk": null
   },
@@ -9667,6 +10019,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/rustdesk/rustdesk",
    "openapk": "https://www.openapk.net/rustdesk/com.carriez.flutter_hbb/"
   },
@@ -9693,6 +10046,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/saber-notes/saber",
    "openapk": null
   },
@@ -9721,6 +10075,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9747,6 +10102,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.samsung.android.app.notes",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -9773,6 +10129,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ElishaAz/Sayboard",
    "openapk": null
   },
@@ -9801,6 +10158,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/dmi3dmi3/saywhen",
    "openapk": "https://www.openapk.net/saywhen/com.dmi3dmi3.saywhen/"
   },
@@ -9829,6 +10187,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SchildiChat/SchildiChat-android",
    "openapk": null
   },
@@ -9857,6 +10216,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SchildiChat/schildichat-android-next",
    "openapk": null
   },
@@ -9885,6 +10245,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/JunkFood02/Seal",
    "openapk": "https://www.openapk.net/seal/com.junkfood.seal/"
   },
@@ -9911,6 +10272,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/GrapheneOS/Camera",
    "openapk": "https://www.openapk.net/secure-camera/app.grapheneos.camera/"
   },
@@ -9937,6 +10299,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/UweTrottmann/SeriesGuide",
    "openapk": null
   },
@@ -9965,6 +10328,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/00-Evan/shattered-pixel-dungeon",
    "openapk": "https://www.openapk.net/shattered-pixel-dungeon/com.shatteredpixel.shatteredpixeldungeon/"
   },
@@ -9993,6 +10357,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/PeterCxy/Shelter",
    "openapk": "https://www.openapk.net/shelter/net.typeblog.shelter/"
   },
@@ -10022,6 +10387,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/RikkaApps/Shizuku",
    "openapk": "https://www.openapk.net/shizuku/moe.shizuku.privileged.api/"
   },
@@ -10048,6 +10414,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/matscornegoor/sift-recipe-keeper",
    "openapk": "https://www.openapk.net/sift/app.siftrecipes/"
   },
@@ -10074,6 +10441,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Crissium/SilverDict-mobile",
    "openapk": null
   },
@@ -10102,6 +10470,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=name.boyle.chris.sgtpuzzles",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/chrisboyle/sgtpuzzles",
    "openapk": "https://www.openapk.net/puzzles/name.boyle.chris.sgtpuzzles/"
   },
@@ -10130,6 +10499,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.better.alarm",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/yuriykulikov/AlarmClock",
    "openapk": "https://www.openapk.net/simple-alarm-clock/com.better.alarm/"
   },
@@ -10158,6 +10528,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/rkkr/simple-keyboard",
    "openapk": "https://www.openapk.net/simple-keyboard/rkr.simplekeyboard.inputmethod/"
   },
@@ -10187,6 +10558,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.razeeman.util.simpletimetracker",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10213,6 +10585,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/simplex-chat/simplex-chat",
    "openapk": "https://www.openapk.net/simplex-chat/chat.simplex.app/"
   },
@@ -10239,6 +10612,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10267,6 +10641,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/maxrave-dev/SimpMusic",
    "openapk": null
   },
@@ -10293,6 +10668,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SkyTubeTeam/SkyTube",
    "openapk": "https://www.openapk.net/skytube/free.rm.skytube.oss/"
   },
@@ -10321,6 +10697,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/tmo1/sms-ie",
    "openapk": null
   },
@@ -10349,6 +10726,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.niksoftware.snapseed",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10377,6 +10755,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/snikket-im/snikket-android",
    "openapk": null
   },
@@ -10405,6 +10784,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/KRTirtho/spotube",
    "openapk": "https://www.openapk.net/spotube/oss.krtirtho.spotube/"
   },
@@ -10431,6 +10811,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.standardnotes",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10457,6 +10838,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/nvllz/stepsy",
    "openapk": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
   },
@@ -10485,6 +10867,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10513,6 +10896,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/likhithpraveenk/storii",
    "openapk": null
   },
@@ -10541,6 +10925,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/streetcomplete/StreetComplete",
    "openapk": "https://www.openapk.net/streetcomplete/de.westnordost.streetcomplete/"
   },
@@ -10567,6 +10952,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/likhithpraveenk/sudoku",
    "openapk": null
   },
@@ -10595,6 +10981,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Galaxy-rio/SudokuYou",
    "openapk": null
   },
@@ -10624,6 +11011,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.superproductivity.superproductivity",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/johannesjo/super-productivity-android",
    "openapk": "https://www.openapk.net/super-productivity/com.superproductivity.superproductivity/"
   },
@@ -10650,6 +11038,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.serwylo.retrowars",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/retrowars/retrowars",
    "openapk": null
   },
@@ -10676,6 +11065,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.supertuxkart.stk",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/supertuxkart/stk-code",
    "openapk": "https://www.openapk.net/supertuxkart/org.supertuxkart.stk/"
   },
@@ -10704,6 +11094,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/alexch33/super-video-downloader",
    "openapk": null
   },
@@ -10732,6 +11123,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ligi/SurvivalManual",
    "openapk": null
   },
@@ -10761,6 +11153,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/pec0ra/suspension_setup",
    "openapk": null
   },
@@ -10789,6 +11182,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Catfriend1/syncthing-android",
    "openapk": "https://www.openapk.net/syncthing-fork/com.github.catfriend1.syncthingfork/"
   },
@@ -10819,6 +11213,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10847,6 +11242,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=cn.ac.lz233.tarnhelm",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/singleNeuron/LockNotification",
    "openapk": null
   },
@@ -10873,6 +11269,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/tasks/tasks",
    "openapk": "https://www.openapk.net/tasks-org-open-source-to-do-lists-reminders/org.tasks/"
   },
@@ -10899,6 +11296,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.termux",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/termux/termux-app",
    "openapk": "https://www.openapk.net/termux/com.termux/"
   },
@@ -10927,6 +11325,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/wesnoth/wesnoth",
    "openapk": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
   },
@@ -10955,6 +11354,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -10983,6 +11383,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/dessalines/thumb-key",
    "openapk": null
   },
@@ -11011,6 +11412,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/chrisbanes/tivi",
    "openapk": null
   },
@@ -11037,6 +11439,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/KerlosGirgis/Todo",
    "openapk": null
   },
@@ -11065,6 +11468,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -11093,6 +11497,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/TrackerControl/tracker-control-android",
    "openapk": null
   },
@@ -11121,6 +11526,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/kylecorry31/Trail-Sense",
    "openapk": null
   },
@@ -11147,6 +11553,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/you-apps/TranslateYou",
    "openapk": "https://www.openapk.net/translate-you/com.bnyro.translate/"
   },
@@ -11173,6 +11580,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/grote/Transportr",
    "openapk": null
   },
@@ -11201,6 +11609,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.danefinlay.ttsutil",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -11227,6 +11636,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.moekadu.tuner",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/thetwom/Tuner",
    "openapk": null
   },
@@ -11253,6 +11663,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/tuskyapp/Tusky",
    "openapk": "https://www.openapk.net/tusky/com.keylesspalace.tusky/"
   },
@@ -11279,6 +11690,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.afrikalan.tuxmath",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -11305,6 +11717,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.unciv.app",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/yairm210/Unciv",
    "openapk": "https://www.openapk.net/unciv/com.unciv.app/"
   },
@@ -11333,6 +11746,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=juloo.keyboard2",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Julow/Unexpected-Keyboard",
    "openapk": null
   },
@@ -11361,6 +11775,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/physphil/UnitConverterUltimate",
    "openapk": "https://www.openapk.net/unit-converter-ultimate/com.physphil.android.unitconverterultimate/"
   },
@@ -11389,6 +11804,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sadellie.unitto",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/sadellie/unitto",
    "openapk": null
   },
@@ -11415,6 +11831,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.pwhs.universalinstaller",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -11441,6 +11858,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -11469,6 +11887,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.untracker",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/zhanghai/Untracker",
    "openapk": null
   },
@@ -11495,6 +11914,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.trianguloy.urlchecker",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/TrianguloY/URLCheck",
    "openapk": null
   },
@@ -11523,6 +11943,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/vanilla-music/vanilla",
    "openapk": "https://www.openapk.net/vanilla-music/ch.blinkenlights.android.vanilla/"
   },
@@ -11551,6 +11972,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/R0b0To/VaultExplorer",
    "openapk": null
   },
@@ -11579,6 +12001,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/venera-app/venera",
    "openapk": null
   },
@@ -11605,6 +12028,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/adelmonte/victoria-launcher",
    "openapk": null
   },
@@ -11633,6 +12057,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.poupa.vinylmusicplayer",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/VinylMusicPlayer/VinylMusicPlayer",
    "openapk": "https://www.openapk.net/vinyl-music-player/com.poupa.vinylmusicplayer/"
   },
@@ -11661,6 +12086,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.videolan.vlc",
    "fdroid": true,
+   "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/vlc/org.videolan.vlc/"
   },
@@ -11689,6 +12115,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.ph1b.audiobook",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/PaulWoitaschek/Voice",
    "openapk": "https://www.openapk.net/voice-audiobook-player/de.ph1b.audiobook/"
   },
@@ -11717,6 +12144,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/aeharding/voyager",
    "openapk": null
   },
@@ -11745,6 +12173,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sidhant.watersort",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/sidhant947/water-sort",
    "openapk": null
   },
@@ -11773,6 +12202,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/dreautall/waterfly-iii",
    "openapk": null
   },
@@ -11801,6 +12231,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.weblibre.gecko",
    "fdroid": false,
+   "izzy": null,
    "github": null,
    "openapk": null
   },
@@ -11827,6 +12258,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/woheller69/whoBIRD",
    "openapk": null
   },
@@ -11855,6 +12287,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.wikipedia",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/wikimedia/apps-android-wikipedia",
    "openapk": "https://www.openapk.net/wikipedia/org.wikipedia/"
   },
@@ -11881,6 +12314,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.rk.axion",
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Xed-Editor/Xed-Editor",
    "openapk": null
   },
@@ -11909,6 +12343,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/ximeiorg/Xime",
    "openapk": null
   },
@@ -11937,6 +12372,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/SaeedDev94/Xray",
    "openapk": null
   },
@@ -11965,6 +12401,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/Q7DF1/XrayFA",
    "openapk": null
   },
@@ -11993,6 +12430,7 @@
   "stores": {
    "play": null,
    "fdroid": true,
+   "izzy": null,
    "github": "https://github.com/turtton/YtAlarm",
    "openapk": null
   },
@@ -12021,6 +12459,7 @@
   "stores": {
    "play": null,
    "fdroid": false,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/net.kaaass.zerotierfix",
    "github": "https://github.com/kaaass/ZerotierFix",
    "openapk": null
   },
@@ -12047,6 +12486,7 @@
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.jrpie.android.launcher",
    "fdroid": false,
+   "izzy": null,
    "github": "https://github.com/jrpie/Launcher",
    "openapk": null
   },

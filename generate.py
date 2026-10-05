@@ -208,6 +208,7 @@ def clean_record(rec):
         # Per-badge rule: strip the Play URL entirely for disqualified builds.
         "play": None if per_badge else (stores.get("play") or None),
         "fdroid": bool(stores.get("fdroid")),
+        "izzy": stores.get("izzy") or None,
         "github": stores.get("github") or None,
         "openapk": stores.get("openapk") or None,
     }
@@ -522,13 +523,14 @@ def build_index(apps, categories, forms):
       <button class="pill" data-attr="offline">Works offline</button>
       <button class="pill" data-attr="no_account">No account needed</button>
       <button class="pill" data-attr="made_by_us">Made by us</button>
+      <button class="pill" data-attr="reviewed">Reviewed</button>
     </div>
     <div class="filter-row" role="group" aria-label="Filter by store">
       <button class="pill" data-store="fdroid">F-Droid</button>
+      <button class="pill" data-store="izzy">IzzyOnDroid</button>
       <button class="pill" data-store="openapk">OpenAPK</button>
       <button class="pill" data-store="play">Google Play</button>
       <button class="pill" data-store="github">GitHub</button>
-      <button class="pill" data-attr="reviewed">Reviewed</button>
     </div>
     <div class="filter-row sort-row">
       <label>Sort:
@@ -552,7 +554,7 @@ def build_index(apps, categories, forms):
 # Detail pages — one real static HTML page per app (SEO)
 # ---------------------------------------------------------------------------
 
-STORE_LABELS = [("fdroid", "F-Droid"), ("openapk", "OpenAPK"), ("play", "Play"), ("github", "GitHub")]
+STORE_LABELS = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"), ("openapk", "OpenAPK"), ("play", "Play"), ("github", "GitHub")]
 
 
 def fdroid_url(package):
@@ -1576,6 +1578,7 @@ JS_CONTENT = r"""
   function storeBadges(app) {
     var out = [];
     var defs = [["fdroid", "F-Droid", app.stores.fdroid ? "https://f-droid.org/en/packages/" + app.package + "/" : null],
+                ["izzy", "IzzyOnDroid", app.stores.izzy],
                 ["openapk", "OpenAPK", app.stores.openapk],
                 ["play", "Play", app.stores.play],
                 ["github", "GitHub", app.stores.github]];
@@ -1649,6 +1652,7 @@ JS_CONTENT = r"""
       for (var s in state.stores) {
         if (s === "play" && !app.stores.play) return false;
         else if (s === "fdroid" && !app.stores.fdroid) return false;
+        else if (s === "izzy" && !app.stores.izzy) return false;
         else if (s === "github" && !app.stores.github) return false;
         else if (s === "openapk" && !app.stores.openapk) return false;
       }
