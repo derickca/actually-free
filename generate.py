@@ -465,6 +465,8 @@ def site_footer(forms):
     <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android apps that are
     actually free. Every app is checked before listing: no ads, no in-app purchases, no subscriptions.
     If an app breaks the promise, report it and we'll take a look.</p>
+    <p class="fine-print"><strong>The fine print:</strong> We don't own these apps (except QR Cards).
+    Not every store is equally trustworthy &mdash; download with judgment, use at your own risk.</p>
     <p class="footer-links">
       {suggest_link} &middot;
       <a href="/index.html">Directory</a> &middot;
@@ -1019,6 +1021,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 .site-footer { border-top: 1px solid var(--card-edge); background: var(--header-bg); }
 .footer-inner { max-width: 1100px; margin: 0 auto; padding: 24px 16px 32px; }
 .about { max-width: 640px; color: var(--muted); font-size: 0.92rem; }
+.fine-print { max-width: 640px; color: var(--muted); font-size: 0.85rem; }
 .footer-links { font-size: 0.92rem; }
 .count-line { color: var(--muted); font-size: 0.85rem; font-style: italic; }
 .geek-webring, .construction { display: none; }
