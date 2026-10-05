@@ -4310,14 +4310,16 @@
   "subcategory": "",
   "description": "Customize your home screen with a fast, ad-free, open-source launcher",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=org.fossify.home",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.home",
    "github": "https://github.com/FossifyOrg/Launcher",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -4739,13 +4741,15 @@
   "description": "Native client for Forgejo and Gitea",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.mian.gitnex",
    "github": "https://codeberg.org/gitnex/GitNex",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -4987,7 +4991,7 @@
   "subcategory": "",
   "description": "A simple and lightweight app for recording your position and your path",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=eu.basicairdata.graziano.gpslogger",
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/eu.basicairdata.graziano.gpslogger",
    "github": "https://github.com/BasicAirData/GPSLogger",
@@ -5015,13 +5019,15 @@
   "description": "The #1 open-source GNSS/GPS app on Android. No ads, no trackers, just data.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.android.gpstest.osmdroid",
    "github": "https://github.com/barbeau/gpstest",
-   "openapk": null
+   "openapk": "https://www.openapk.net/gpstest/com.android.gpstest.osmdroid/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -5494,13 +5500,15 @@
   "description": "Evaluate passwords, predict crack times, and get tips for stronger passwords.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.iyps",
    "github": "https://github.com/StellarSand/IYPS",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -5856,14 +5864,16 @@
   "subcategory": "",
   "description": "All your calendars in one app. iCloud, CalDAV, device, ICS. Private.",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=org.onekash.kashcal",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.onekash.kashcal",
    "github": "https://github.com/KashCal/KashCal",
-   "openapk": null
+   "openapk": "https://www.openapk.net/kashcal/org.onekash.kashcal/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -5973,13 +5983,15 @@
   "description": "Private Muslim app for prayer, tasbih, study, and gentle reminders",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kaizen.khushu",
    "github": "https://github.com/greykaizen/khushu",
-   "openapk": null
+   "openapk": "https://www.openapk.net/khushu/com.kaizen.khushu/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -6201,13 +6213,15 @@
   "description": "A search-focused, free and open source launcher for Android",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/de.mm20.launcher2.release",
    "github": "https://github.com/MM2-0/Kvaesitso",
-   "openapk": null
+   "openapk": "https://www.openapk.net/kvaesitso/de.mm20.launcher2.release/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -7174,13 +7188,15 @@
   "description": "Modern material design for YouTube and Invidious.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/us.materialio.app",
    "github": "https://github.com/Materialious/Materialious",
-   "openapk": null
+   "openapk": "https://www.openapk.net/materialious/us.materialio.app/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -7368,14 +7384,16 @@
   "subcategory": "",
   "description": "Tailored Period Tracking, Total Privacy—Your Period, Your Control.",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=com.mensinator.app",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.mensinator.app",
    "github": "https://github.com/EmmaTellblom/Mensinator",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -7426,7 +7444,7 @@
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.metrolist.music",
    "github": "https://github.com/MetrolistGroup/Metrolist",
-   "openapk": null
+   "openapk": "https://www.openapk.net/metrolist/com.metrolist.music/"
   },
   "rating": null,
   "attrs": {},
@@ -7640,14 +7658,15 @@
   "subcategory": "",
   "description": "Clear your head: capture tasks fast, see your next step. Offline, free, GTD.",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=tech.dongdongbh.mindwtr",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/tech.dongdongbh.mindwtr",
    "github": "https://github.com/dongdongbh/Mindwtr",
-   "openapk": null
+   "openapk": "https://www.openapk.net/mindwtr/tech.dongdongbh.mindwtr/"
   },
   "rating": null,
   "attrs": {
+   "open_source": true,
    "offline": true
   },
   "made_by_us": false,
@@ -7727,14 +7746,16 @@
   "subcategory": "",
   "description": "A simple PDF viewer",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=com.gitlab.mudlej.MjPdfReader",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.gitlab.mudlej.MjPdfReader",
    "github": "https://gitlab.com/mudlej_android/mj_pdf_reader",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8098,7 +8119,7 @@
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.gokadzev.musify",
    "github": "https://github.com/gokadzev/Musify",
-   "openapk": null
+   "openapk": "https://www.openapk.net/musify/com.gokadzev.musify/"
   },
   "rating": null,
   "attrs": {},
@@ -8231,7 +8252,7 @@
   "subcategory": "",
   "description": "Smart Glasses are often hard to spot. This app scans for their Bluetooth ID.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=ch.pocketpc.nearbyglasses",
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/ch.pocketpc.nearbyglasses",
    "github": "https://github.com/yjeanrenaud/yj_nearbyglasses",
@@ -8315,13 +8336,15 @@
   "description": "A modern feature-rich F-Droid client.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.machiav3lli.fdroid",
    "github": "https://codeberg.org/NeoApplications/Neo-Store",
-   "openapk": null
+   "openapk": "https://www.openapk.net/neo-store/com.machiav3lli.fdroid/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8371,13 +8394,15 @@
   "description": "Securely store and manage passwords of your digital realm with NewPass.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.gero.newpass",
    "github": "https://github.com/6eero/NewPass",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -9396,14 +9421,14 @@
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.paperknife.app",
    "github": "https://github.com/potatameister/PaperKnife",
-   "openapk": null
+   "openapk": "https://www.openapk.net/paperknife-privacy-first-pdf-utility/com.paperknife.app/"
   },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither."
  },
  {
   "name": "PCAPdroid",
@@ -9563,17 +9588,19 @@
   "description": "Private Photo Vault, Hide Photos & Videos.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.leonlatsch.photok",
    "github": "https://github.com/leonlatsch/Photok",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has none."
  },
  {
   "name": "phyphox",
@@ -10043,7 +10070,7 @@
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kaleedtc.privacium",
    "github": "https://github.com/kaleedtc/Privacium",
-   "openapk": null
+   "openapk": "https://www.openapk.net/privacium/com.kaleedtc.privacium/"
   },
   "rating": null,
   "attrs": {},
@@ -10149,14 +10176,16 @@
   "subcategory": "",
   "description": "Remotely control qBittorrent from any device",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=dev.bartuzen.qbitcontroller",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.bartuzen.qbitcontroller",
    "github": "https://github.com/Bartuzen/qBitController",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -10548,7 +10577,7 @@
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.pranav.reef",
    "github": "https://github.com/aload0/Reef",
-   "openapk": null
+   "openapk": "https://www.openapk.net/reef/dev.pranav.reef/"
   },
   "rating": null,
   "attrs": {},
@@ -11029,13 +11058,15 @@
   "description": "A trusted assistant for your Android, to keep it clean and tidy.",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/eu.darken.sdmse",
    "github": "https://github.com/d4rken-org/sdmaid-se",
-   "openapk": null
+   "openapk": "https://www.openapk.net/sd-maid-se/eu.darken.sdmse/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
@@ -11109,7 +11140,7 @@
   "subcategory": "",
   "description": "An unofficial Soulseek client.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.companyname.andriodapp1",
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.companyname.andriodapp1",
    "github": "https://github.com/jackBonadies/SeekerAndroid",
@@ -11261,8 +11292,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither."
  },
  {
   "name": "Sift",
@@ -12077,14 +12108,16 @@
   "subcategory": "",
   "description": "Boost your own habit growth with charts.",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=io.github.friesi23.mhabit",
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/io.github.friesi23.mhabit",
    "github": "https://github.com/FriesI23/mhabit",
-   "openapk": null
+   "openapk": "https://www.openapk.net/table-habit/io.github.friesi23.mhabit/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12108,14 +12141,14 @@
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.tagspaces.mobileapp",
    "github": "https://github.com/tagspaces/tagspaces",
-   "openapk": null
+   "openapk": "https://www.openapk.net/tagspaces/org.tagspaces.mobileapp/"
   },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
-  "review_notes": "TagSpaces Pro exists as a paid desktop product. This listing uses the free mobile build — please confirm the installed app has no Pro upsell."
+  "review_notes": "The Play Store build of this same app shows in-app purchases (TagSpaces Pro). This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell."
  },
  {
   "name": "Taler Wallet",
@@ -13204,13 +13237,15 @@
   "description": "Auto reply bot for WhatsApp, FB Messenger and more soon",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.parishod.watomatic",
    "github": "https://github.com/adeekshith/watomatic",
    "openapk": null
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
