@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (p4X0Bb9eedLycmbUwzxACg==, replaced at build time) embedded separately,
+     the key (yuIVv2cRFdkxy3dRDeJZhg==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "p4X0Bb9eedLycmbUwzxACg==";
+    var K = "yuIVv2cRFdkxy3dRDeJZhg==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -320,6 +320,36 @@
     });
     return out.join("");
   }
+  /* Word-boundary wrap opportunities for tile titles: <wbr> at camelCase /
+     PascalCase / acronym seams ("AntennaPod" -> "Antenna|<wbr>Pod"), plus
+     explicit seams for compound words with no case boundary ("Minesweeper"
+     -> "Mine|<wbr>sweeper"). Applied after HTML-escaping (escaping never
+     touches ASCII letters, so positions are stable). */
+  var WBR_WORDS = {
+    "minesweeper": "Mine<wbr>sweeper",
+    "lawnchair": "Lawn<wbr>chair",
+    "nextcloud": "Next<wbr>cloud",
+    "personaldnsfilter": "personal<wbr>DNS<wbr>filter",
+    "authenticator": "Authen<wbr>ticator",
+    "messenger": "Messen<wbr>ger",
+    "minimalist": "Mini<wbr>malist",
+    "phonograph": "Phono<wbr>graph",
+    "audiobook": "Audio<wbr>book",
+    "pedometer": "Pedo<wbr>meter",
+    "syncthing": "Sync<wbr>thing"
+  };
+  function wbrify(rawName) {
+    /* Per word: explicit seams win, else camelCase/PascalCase/acronym seams.
+       Escaping per word keeps positions stable (escHtml never touches the
+       ASCII letters the patterns match). */
+    return rawName.split(/([\s\-]+)/).map(function (word) {
+      if (!/\S/.test(word)) return word;
+      var low = word.toLowerCase();
+      if (WBR_WORDS[low]) return WBR_WORDS[low];
+      return escHtml(word).replace(/(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])/g, "<wbr>");
+    }).join("");
+  }
+
   function tile(app) {
     var accent = ACCENTS[app.category] != null ? ACCENTS[app.category] : 210;
     var icon = "https://f-droid.org/repo/" + encodeURIComponent(app.package) + "/en-US/icon.png";
@@ -334,7 +364,7 @@
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
-      "<span><h3>" + escHtml(app.name) + "</h3>" +
+      "<span><h3>" + wbrify(app.name) + "</h3>" +
       '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +

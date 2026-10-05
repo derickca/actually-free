@@ -224,7 +224,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 1.7rem; font-weight: 800;
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
-.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* words stay whole; a long word may bleed into the tile padding rather than snap mid-word */
+.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* <wbr> word seams only; never an arbitrary mid-word snap */
 .tile .sub { color: var(--muted); font-size: 0.8rem; margin: 0; }
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }

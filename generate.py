@@ -902,7 +902,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 1.7rem; font-weight: 800;
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
-.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* words stay whole; a long word may bleed into the tile padding rather than snap mid-word */
+.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* <wbr> word seams only; never an arbitrary mid-word snap */
 .tile .sub { color: var(--muted); font-size: 0.8rem; margin: 0; }
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -1531,6 +1531,36 @@ JS_CONTENT = r"""
     });
     return out.join("");
   }
+  /* Word-boundary wrap opportunities for tile titles: <wbr> at camelCase /
+     PascalCase / acronym seams ("AntennaPod" -> "Antenna|<wbr>Pod"), plus
+     explicit seams for compound words with no case boundary ("Minesweeper"
+     -> "Mine|<wbr>sweeper"). Applied after HTML-escaping (escaping never
+     touches ASCII letters, so positions are stable). */
+  var WBR_WORDS = {
+    "minesweeper": "Mine<wbr>sweeper",
+    "lawnchair": "Lawn<wbr>chair",
+    "nextcloud": "Next<wbr>cloud",
+    "personaldnsfilter": "personal<wbr>DNS<wbr>filter",
+    "authenticator": "Authen<wbr>ticator",
+    "messenger": "Messen<wbr>ger",
+    "minimalist": "Mini<wbr>malist",
+    "phonograph": "Phono<wbr>graph",
+    "audiobook": "Audio<wbr>book",
+    "pedometer": "Pedo<wbr>meter",
+    "syncthing": "Sync<wbr>thing"
+  };
+  function wbrify(rawName) {
+    /* Per word: explicit seams win, else camelCase/PascalCase/acronym seams.
+       Escaping per word keeps positions stable (escHtml never touches the
+       ASCII letters the patterns match). */
+    return rawName.split(/([\s\-]+)/).map(function (word) {
+      if (!/\S/.test(word)) return word;
+      var low = word.toLowerCase();
+      if (WBR_WORDS[low]) return WBR_WORDS[low];
+      return escHtml(word).replace(/(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])/g, "<wbr>");
+    }).join("");
+  }
+
   function tile(app) {
     var accent = ACCENTS[app.category] != null ? ACCENTS[app.category] : 210;
     var icon = "https://f-droid.org/repo/" + encodeURIComponent(app.package) + "/en-US/icon.png";
@@ -1545,7 +1575,7 @@ JS_CONTENT = r"""
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
-      "<span><h3>" + escHtml(app.name) + "</h3>" +
+      "<span><h3>" + wbrify(app.name) + "</h3>" +
       '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
