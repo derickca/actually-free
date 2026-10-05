@@ -1576,13 +1576,17 @@ JS_CONTENT = r"""
     var hay = norm([app.name, app.description, app.category, app.subcategory].join(" "));
     if (hay.indexOf(q) !== -1) return true;
     var nameNorm = norm(app.name);
-    if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return true;
+    var sq = q.replace(/\s+/g, "");
+    /* Initials-style subsequence matching ("mngr" -> "manager") is noise
+       below 3 chars: "qr" matched "Al-Quran" and "Quiet Grid". */
+    if (sq.length >= 3 && isSubsequence(sq, nameNorm.replace(/\s+/g, ""))) return true;
     var hayTokens = tokens(hay);
     return tokens(q).some(function (qt) {
-      /* Typo budget scales with token length: a flat distance of 2 lets a
-         4-letter query like "food" match "for" (91 apps!), "from", "fork",
-         "foss"... Short tokens get 1, longer ones keep 2. */
-      var budget = qt.length <= 4 ? 1 : 2;
+      /* Typo budget scales with token length. A flat distance of 2 lets a
+         4-letter query like "food" match "for" (91 apps!), and even distance
+         1 lets 2-letter "qr" match "or". So: 2-char tokens match exactly,
+         3-4 chars get 1 typo, longer ones keep 2. */
+      var budget = qt.length <= 2 ? 0 : qt.length <= 4 ? 1 : 2;
       return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= budget; });
     });
   }
