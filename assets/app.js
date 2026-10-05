@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (pLGY1gpk1mubpuHNxMYHJQ==, replaced at build time) embedded separately,
+     the key (nhbntE+ZUVtj4cvE0QMeSA==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "pLGY1gpk1mubpuHNxMYHJQ==";
+    var K = "nhbntE+ZUVtj4cvE0QMeSA==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -301,7 +301,11 @@
     if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return true;
     var hayTokens = tokens(hay);
     return tokens(q).some(function (qt) {
-      return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= 2; });
+      /* Typo budget scales with token length: a flat distance of 2 lets a
+         4-letter query like "food" match "for" (91 apps!), "from", "fork",
+         "foss"... Short tokens get 1, longer ones keep 2. */
+      var budget = qt.length <= 4 ? 1 : 2;
+      return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= budget; });
     });
   }
 

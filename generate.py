@@ -1579,7 +1579,11 @@ JS_CONTENT = r"""
     if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return true;
     var hayTokens = tokens(hay);
     return tokens(q).some(function (qt) {
-      return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= 2; });
+      /* Typo budget scales with token length: a flat distance of 2 lets a
+         4-letter query like "food" match "for" (91 apps!), "from", "fork",
+         "foss"... Short tokens get 1, longer ones keep 2. */
+      var budget = qt.length <= 4 ? 1 : 2;
+      return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= budget; });
     });
   }
 
