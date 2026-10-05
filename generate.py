@@ -420,8 +420,8 @@ def site_header():
         {theme_btns}
       </div>
     </div>
+    <div class="geek-badge" aria-hidden="true">best viewed at 800&times;600</div>
   </div>
-  <div class="geek-badge" aria-hidden="true">best viewed at 800&times;600</div>
 </header>"""
 
 
@@ -467,7 +467,7 @@ def build_index(apps, categories, forms):
     <h1>Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">{esc(TAGLINE)}</span></p>
   </section>
-  <p class="find-label">Find apps with:</p>
+  <p class="promise-line"><span class="lock">\u2713 No ads</span> \u00b7 <span class="lock">\u2713 No in-app purchases</span> \u00b7 <span class="lock">\u2713 No subscriptions</span></p>
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;\u2026"
            aria-label="Search apps" autocomplete="off">
@@ -784,8 +784,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0.4em 0 0.1em; }
 .tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 1em; overflow: hidden; }
 
-/* ---------- "Find apps with:" label heads the filter controls ---------- */
-.find-label { font-weight: 700; margin: 20px 0 8px; font-size: 1rem; }
+/* ---------- promise line: checkmarks, no box, breathing room below ---------- */
+.promise-line { margin: 20px 0 26px; font-size: 1rem; }
 .lock { color: var(--good); font-weight: 700; white-space: nowrap; }
 
 /* ---------- controls ---------- */
@@ -1144,17 +1144,30 @@ a.store-badge:hover { filter: brightness(0.96); }
 @media (min-width: 641px) {
   /* Playful desktop: the tagline repeats the hero heading, so it goes. Geek keeps it — classic. */
   :root[data-mode="playful"] .hero .tagline { display: none; }
-  /* Geek desktop: the "best viewed" line joins the top heading row. */
-  :root[data-mode="geek"] .site-header { display: flex; align-items: center; justify-content: center; gap: 12px; }
-  :root[data-mode="geek"] .header-inner { flex: 0 1 1100px; margin: 0; }
-  :root[data-mode="geek"] .geek-badge { white-space: nowrap; padding: 0 4px 0 0; }
+}
+
+/* Geek "best viewed" line: truly centered in the top heading row where it fits
+   (out of flow, so header margins stay glued to the page); on narrower screens
+   it sits on its own centered line under the row instead of overlapping. */
+@media (min-width: 900px) {
+  :root[data-mode="geek"] .header-inner { position: relative; }
+  :root[data-mode="geek"] .geek-badge {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; padding: 0; margin: 0;
+  }
+}
+@media (max-width: 899px) {
+  :root[data-mode="geek"] .geek-badge { flex: 0 0 100%; text-align: center; margin: 4px 0 0; padding: 0; }
 }
 
 @media (max-width: 640px) {
   /* The toggle column stacks so the header grows vertically instead of
      scrolling horizontally — horizontal scroll is never acceptable. */
   .header-inner { gap: 10px; flex-wrap: wrap; }
-  .switchers { flex-direction: column; gap: 6px; }
+  /* Toggles take their own row, stacked and right-aligned: the header grows
+     vertically instead of scrolling horizontally. */
+  .switchers { flex: 0 0 100%; flex-direction: column; align-items: flex-end; gap: 6px; }
   .brand-text em { display: none; } /* tagline hides on phones to save vertical room */
   .brand-text strong { font-size: 1.05rem; }
   .brand img { width: 44px; height: 44px; }
@@ -1581,7 +1594,7 @@ JS_CONTENT = r"""
       render();
     });
   });
-  document.querySelectorAll(".pill").forEach(function (p) {
+  document.querySelectorAll("[data-attr]").forEach(function (p) {
     p.addEventListener("click", function () {
       var k = p.getAttribute("data-attr");
       if (state.attrs[k]) delete state.attrs[k]; else state.attrs[k] = true;
