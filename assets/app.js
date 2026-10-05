@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (xCeQPUFUolLeWifsz9V2jQ==, replaced at build time) embedded separately,
+     the key (8Fo37gT4inArQ4UBf9oqKQ==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "xCeQPUFUolLeWifsz9V2jQ==";
+    var K = "8Fo37gT4inArQ4UBf9oqKQ==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -354,13 +354,18 @@
 
   function tile(app) {
     var accent = ACCENTS[app.category] != null ? ACCENTS[app.category] : 210;
-    var icon = "https://f-droid.org/repo/" + encodeURIComponent(app.package) + "/en-US/icon.png";
     var letter = escHtml(app.name.charAt(0).toUpperCase());
-    var iconHtml = app.icon_svg
-      ? '<span class="icon-wrap">' + app.icon_svg + "</span>"
-      : '<span class="icon-wrap">' +
-        '<img src="' + icon + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+    var iconHtml;
+    if (app.icon_svg) {
+      iconHtml = '<span class="icon-wrap">' + app.icon_svg + "</span>";
+    } else if (app.icon) {
+      iconHtml = '<span class="icon-wrap">' +
+        '<img src="/' + escHtml(app.icon) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
         '<span class="letter-tile" style="display:none">' + letter + "</span></span>";
+    } else {
+      iconHtml = '<span class="icon-wrap">' +
+        '<span class="letter-tile" style="display:flex">' + letter + "</span></span>";
+    }
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";

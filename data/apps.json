@@ -10,6 +10,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.lolo.io.onelist.png",
   "subcategory": "Tasks",
   "description": "Simple app to manage several lists from only one screen",
   "stores": {
@@ -37,6 +38,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.andstatus.game2048.png",
   "subcategory": "Puzzle",
   "description": "The 2048 sliding tile puzzle, clean and open source.",
   "stores": {
@@ -66,10 +68,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.ninesevennine.twofactorauthenticator.png",
   "subcategory": "",
   "description": "The modern privacy and security focused two factor authenticator",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=app.ninesevennine.twofactorauthenticator.play",
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.ninesevennine.twofactorauthenticator",
    "github": "https://codeberg.org/979/2fa",
@@ -93,6 +96,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/business.braid.polycule.png",
   "subcategory": "Messaging",
   "description": "A geeky and efficient [matrix] client for power users",
   "stores": {
@@ -122,10 +126,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.divverent.aaaaxy.png",
   "subcategory": "Puzzle",
   "description": "A nonlinear 2D puzzle platformer taking place in impossible spaces.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=io.github.divverent.aaaaxy",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/divVerent/aaaaxy",
@@ -151,6 +156,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/itkach.aard2.png",
   "subcategory": "Dictionary",
   "description": "Offline dictionary",
   "stores": {
@@ -181,6 +187,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.activitymanager.png",
   "subcategory": "System",
   "description": "Advanced activities and shortcuts launcher.",
   "stores": {
@@ -210,6 +217,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.adaway.png",
   "subcategory": "Ad Blocker",
   "description": "System-wide ad blocker (root or local VPN).",
   "stores": {
@@ -239,6 +247,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.beemdevelopment.aegis.png",
   "subcategory": "Authenticator",
   "description": "Two-factor authenticator (TOTP/HOTP).",
   "stores": {
@@ -268,10 +277,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.meypod.al_quran.png",
   "subcategory": "Ebook reader",
   "description": "A simple open-source Quran reader",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.github.meypod.al_quran",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/meypod/al-quran",
@@ -297,6 +307,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.angrydoughnuts.android.alarmclock.png",
   "subcategory": "Alarm clock",
   "description": "An alarm clock",
   "stores": {
@@ -326,6 +337,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ai.privatebydesign.albi.png",
   "subcategory": "Health tracking",
   "description": "A health tracking app that respects your privacy",
   "stores": {
@@ -355,12 +367,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.amaze.filemanager.png",
   "subcategory": "File manager",
   "description": "An open-source file manager following the Material Design guidelines.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.amaze.filemanager",
    "github": "https://github.com/TeamAmaze/AmazeFileManager",
    "openapk": "https://www.openapk.net/amaze/com.amaze.filemanager/"
   },
@@ -384,17 +397,19 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.bible.android.activity.png",
   "subcategory": "Reference",
   "description": "Read the Bible, study commentaries or dictionaries, or read books offline",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.bible.android.activity",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/AndBible/and-bible",
    "openapk": null
   },
   "rating": 4.7,
   "attrs": {
+   "open_source": true,
    "offline": true
   },
   "made_by_us": false,
@@ -413,6 +428,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gpl.rpg.AndorsTrail.png",
   "subcategory": "RPG",
   "description": "A classic-style offline RPG: quests, dungeons, no paywalls.",
   "stores": {
@@ -442,6 +458,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.ichi2.anki.png",
   "subcategory": "Flashcards",
   "description": "Flashcard-based study aid (AnkiDroid)",
   "stores": {
@@ -469,6 +486,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/im.narayana.another.png",
   "subcategory": "Video player",
   "description": "Yet Another Conversations fork but...",
   "stores": {
@@ -498,6 +516,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.danoeh.antennapod.png",
   "subcategory": "Podcast player",
   "description": "Full-featured podcast player.",
   "stores": {
@@ -527,10 +546,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.antivocale.app.png",
   "subcategory": "Transcription",
   "description": "Offline transcription of voice messages and recorded calls, on-device",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.antivocale.app",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/RisorseArtificiali/anti-vocale",
@@ -556,6 +576,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ch.logixisland.anuto.png",
   "subcategory": "Strategy",
   "description": "Tower defense with deep mechanics and custom maps.",
   "stores": {
@@ -585,6 +606,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.apkupdater.ci.png",
   "subcategory": "",
   "description": "Get updates from multiple sources",
   "stores": {
@@ -612,6 +634,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/remix.myplayer.png",
   "subcategory": "Music player",
   "description": "Offline music player",
   "stores": {
@@ -641,17 +664,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.muntashirakon.AppManager.png",
   "subcategory": "System",
   "description": "Full-featured open source package manager for Android",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/MuntashirAkon/AppManager",
    "openapk": "https://www.openapk.net/app-manager-android-package-manager/io.github.muntashirakon.AppManager/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -668,10 +694,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/chat.delta.lite.png",
   "subcategory": "Messaging",
   "description": "PASS 2026-10-05.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.github.arcanechat",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/ArcaneChat/android",
@@ -697,6 +724,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/moe.rukamori.archivetune.png",
   "subcategory": "Music player",
   "description": "Cute music player w/ local files + YouTube Music (sign-in optional)",
   "stores": {
@@ -724,6 +752,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.donnnno.arcticons.png",
   "subcategory": "Personalization",
   "description": "A monotone line-based icon pack for dark themed home screens",
   "stores": {
@@ -751,10 +780,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.poppingmoon.aria.png",
   "subcategory": "Misskey",
   "description": "Dive into the interplanetary microblogging platform 🚀",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.poppingmoon.aria",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/poppingmoon/aria",
@@ -780,6 +810,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.sidhant.arrowescape.png",
   "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -810,6 +841,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.game.asteroids_revenge.png",
   "subcategory": "Action",
   "description": "Endless survival bulletHell (highscore based).",
   "stores": {
@@ -839,6 +871,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.astroloop.game.png",
   "subcategory": "Arcade",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -868,6 +901,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.atrium.png",
   "subcategory": "Media center",
   "description": "Control your self-hosted media stack from one app",
   "stores": {
@@ -897,6 +931,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dimowner.audiorecorder.png",
   "subcategory": "Audio recorder",
   "description": "Straightforward audio recorder.",
   "stores": {
@@ -912,8 +947,8 @@
   },
   "made_by_us": false,
   "per_badge": true,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Audio Recorder ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Aurora Store",
@@ -926,6 +961,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "App store",
   "description": "Open-source alternative to Google Play Store, privacy-focused",
   "stores": {
@@ -953,6 +989,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.jmh.authenticatorpro.png",
   "subcategory": "2FA",
   "description": "Free and open-source 2FA app with encrypted backups",
   "stores": {
@@ -980,6 +1017,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.oxycblt.auxio.png",
   "subcategory": "Music player",
   "description": "Local music player with a clean interface.",
   "stores": {
@@ -1009,6 +1047,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gaurav.avnc.png",
   "subcategory": "Remote desktop",
   "description": "Fast & Secure VNC client for Android",
   "stores": {
@@ -1038,6 +1077,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.lecaro.breakout.png",
   "subcategory": "Arcade",
   "description": "Combine powerful upgrades to swim in gold coins",
   "stores": {
@@ -1065,6 +1105,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.baly_groceries_tracker.app.png",
   "subcategory": "Shopping list",
   "description": "Track your groceries, without worrying about running out.",
   "stores": {
@@ -1094,6 +1135,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.czy0729.bangumi.png",
   "subcategory": "Anime tracker",
   "description": "A third-party client for Bangumi",
   "stores": {
@@ -1123,6 +1165,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.atharok.barcodescanner.png",
   "subcategory": "QR/barcode scanner",
   "description": "An open-source app that allows you to read and generate barcodes.",
   "stores": {
@@ -1152,6 +1195,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.chiller3.basicsync.png",
   "subcategory": "Files",
   "description": "A simple app for running Syncthing on Android",
   "stores": {
@@ -1181,6 +1225,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.beatbridge.png",
   "subcategory": "Music streaming",
   "description": "Auto-play music when your Bluetooth car, headphones, or speakers connect.",
   "stores": {
@@ -1210,17 +1255,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.kde.bettercounter.png",
   "subcategory": "Counter",
   "description": "- Track good and bad habits (eg: exercising, smoking, drinking...) - Track when's the last time you did something (eg: water your plants, change your",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.kde.bettercounter",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/albertvaka/bettercounter",
    "openapk": null
   },
   "rating": 5.0,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -1237,6 +1285,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.markusfisch.android.binaryeye.png",
   "subcategory": "QR/barcode scanner",
   "description": "QR code and barcode scanner with no ads",
   "stores": {
@@ -1266,6 +1315,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.minar.birday.png",
   "subcategory": "Calendar",
   "description": "A simple yet useful birthday / event calendar",
   "stores": {
@@ -1293,6 +1343,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.bitchat.droid.png",
   "subcategory": "Messaging",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -1322,6 +1373,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.mwvb.blockpuzzle.png",
   "subcategory": "Puzzle",
   "description": "Block puzzle: fit the pieces, clear the board.",
   "stores": {
@@ -1351,6 +1403,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.blockdrop.game.png",
   "subcategory": "Puzzle",
   "description": "Free and open source block-stacking puzzle game. Arrange falling shapes to clear",
   "stores": {
@@ -1380,6 +1433,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ls.bloomee.musicplayer.png",
   "subcategory": "",
   "description": "Experience music without limits.",
   "stores": {
@@ -1407,17 +1461,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/xyz.blorpblorp.app.png",
   "subcategory": "Lemmy",
   "description": "Threadiverse client for Lemmy and PieFed",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/christianjuth/blorp",
    "openapk": "https://www.openapk.net/blorp/xyz.blorpblorp.app/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -1434,6 +1491,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.bluesound.bluesoundplayer.png",
   "subcategory": "Remote control",
   "description": "Control BluOS and Sonos multi-room audio players on your network",
   "stores": {
@@ -1463,6 +1521,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.coreproduction.bowltimer.png",
   "subcategory": "Fitness",
   "description": "An elegant, distraction-free meditation timer",
   "stores": {
@@ -1490,12 +1549,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.breezyweather.png",
   "subcategory": "Weather",
   "description": "A feature-rich weather app with good visualizations and many sources.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.breezyweather",
    "github": "https://github.com/breezy-weather/breezy-weather",
    "openapk": "https://www.openapk.net/breezy-weather/org.breezyweather/"
   },
@@ -1519,6 +1579,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "Messaging",
   "description": "Decentralized P2P secure messaging over Bluetooth, Wi-Fi or Tor",
   "stores": {
@@ -1546,6 +1607,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.woheller69.level.png",
   "subcategory": "Bubble level",
   "description": "Spirit level and ruler",
   "stores": {
@@ -1575,6 +1637,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/rsquared226.budget_my_life.png",
   "subcategory": "",
   "description": "Budget your life with ease",
   "stores": {
@@ -1602,6 +1665,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.artectrex.bunny.png",
   "subcategory": "Image editor",
   "description": "Media editor: edit images and videos on your phone",
   "stores": {
@@ -1631,6 +1695,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.math.bmi.scientific.calculator.converter.android.png",
   "subcategory": "Calculator",
   "description": "The only calculator you'll ever need",
   "stores": {
@@ -1658,12 +1723,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.capyreader.app.png",
   "subcategory": "RSS reader",
   "description": "Modern RSS reader.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.capyreader.app",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.capyreader.app",
    "github": "https://github.com/jocmp/capyreader",
    "openapk": "https://www.openapk.net/capy-reader/com.capyreader.app/"
   },
@@ -1687,6 +1753,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.georgeyt9769.cardabase.png",
   "subcategory": "Loyalty cards",
   "description": "Lightweight digital wallet to securely scan, store, and manage loyalty cards off",
   "stores": {
@@ -1716,17 +1783,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.hackerchick.catima.png",
   "subcategory": "Loyalty cards",
   "description": "Loyalty/membership cards, barcodes, coupons and tickets",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.hackerchick.catima",
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/me.hackerchick.catima",
    "github": "https://github.com/CatimaLoyalty/Android",
    "openapk": "https://www.openapk.net/catima-loyalty-card-wallet/me.hackerchick.catima/"
   },
   "rating": 4.8,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -1743,12 +1813,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.cclauncher.png",
   "subcategory": "Launcher",
   "description": "Minimal home launcher that hides apps by default to reduce distractions",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.cclauncher",
    "github": "https://github.com/mlm-games/cclauncher",
    "openapk": null
   },
@@ -1772,6 +1843,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.timelegend.chaka.viewer.app.png",
   "subcategory": "Ebook reader",
   "description": "Committed to improving reading experience",
   "stores": {
@@ -1801,6 +1873,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.cheogram.android.png",
   "subcategory": "Video player",
   "description": "Chat on the Jabber network (XMPP protocol); focus on features for gateway users",
   "stores": {
@@ -1830,6 +1903,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.chess.clock.png",
   "subcategory": "Puzzle",
   "description": "Adjust your favorite timer to play chess online with friends!",
   "stores": {
@@ -1857,6 +1931,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.choganhq.chogan.png",
   "subcategory": "Board",
   "description": "Chogan: a modern abstract board game.",
   "stores": {
@@ -1886,12 +1961,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.vicolo.chrono.png",
   "subcategory": "Timer/stopwatch",
   "description": "Modern and powerful clock, alarms, timer and stopwatch.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.vicolo.chrono",
    "github": "https://github.com/vicolo-dev/chrono",
    "openapk": "https://www.openapk.net/chrono/com.vicolo.chrono/"
   },
@@ -1915,6 +1991,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.adeeteya.classipod.png",
   "subcategory": "Music player",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -1945,6 +2022,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/co.prestosole.clima.png",
   "subcategory": "Weather",
   "description": "Beautiful, minimal, and fast weather app",
   "stores": {
@@ -1974,10 +2052,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.comaps.png",
   "subcategory": "",
   "description": "Easy map navigation - Discover more of your journey - Powered by the community",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=app.comaps.google",
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.comaps",
    "github": "https://codeberg.org/comaps/comaps",
@@ -2001,6 +2080,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.bobek.compass.png",
   "subcategory": "Compass",
   "description": "A simple and clean compass",
   "stores": {
@@ -2030,10 +2110,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gwitko.conduit.png",
   "subcategory": "Terminal",
   "description": "SSH, Mosh, SFTP & local Linux terminal",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.gwitko.conduit",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/gwitko/Conduit",
@@ -2059,6 +2140,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.siacs.conversations.png",
   "subcategory": "Video player",
   "description": "Encrypted, easy-to-use XMPP instant messenger for your mobile device",
   "stores": {
@@ -2088,6 +2170,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.ferrarid.converterpro.png",
   "subcategory": "Unit converter",
   "description": "A simple, immediate and fast unit converter!",
   "stores": {
@@ -2117,6 +2200,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.matelsky.coppelia.png",
   "subcategory": "Music player",
   "description": "Beautiful, native Jellyfin music player",
   "stores": {
@@ -2146,6 +2230,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/top.fumiama.copymanga.png",
   "subcategory": "Comic reader",
   "description": "CopyManga comic client",
   "stores": {
@@ -2173,6 +2258,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.cosmicide.png",
   "subcategory": "IDE",
   "description": "A full fledged Java and Kotlin IDE for Android devices.",
   "stores": {
@@ -2202,17 +2288,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kgurgul.cpuinfo.png",
   "subcategory": "System",
   "description": "CPU Info provides information about device hardware and software",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kgurgul.cpuinfo",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/kamgurgul/cpu-info",
    "openapk": null
   },
   "rating": 4.5,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -2229,6 +2318,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.eehouse.android.xw4.png",
   "subcategory": "Word",
   "description": "Crossword / Scrabble-style word game, solo or online.",
   "stores": {
@@ -2258,6 +2348,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nathanatos.Cuppa.png",
   "subcategory": "Timer",
   "description": "Cuppa is a small application to time your cup of tea as it steeps",
   "stores": {
@@ -2285,6 +2376,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/neth.iecal.curbox.png",
   "subcategory": "App blocker",
   "description": "App blocker and screen time tracker. Block apps, websites, reels and shorts.",
   "stores": {
@@ -2314,6 +2406,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.salomax.currencies.png",
   "subcategory": "Money",
   "description": "Currencies is a simple and straightforward currency converter.It is not intended to be used for realtime financial business, rather to be a handy companion e.g",
   "stores": {
@@ -2341,6 +2434,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.cxinventor.file.explorer.png",
   "subcategory": "File manager",
   "description": "File manager & storage cleaner app to provide easier management of files",
   "stores": {
@@ -2368,12 +2462,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.demizo.daily_you.png",
   "subcategory": "Notes",
   "description": "Every day is worth remembering…",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.demizo.daily_you",
    "github": "https://github.com/Demizo/Daily_You",
    "openapk": null
   },
@@ -2397,12 +2492,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.xayah.databackup.foss.png",
   "subcategory": "Backup",
   "description": "Back up/Restore your data.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.xayah.databackup.foss",
    "github": "https://github.com/XayahSuSuSu/Android-DataBackup",
    "openapk": null
   },
@@ -2426,10 +2522,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.databag.png",
   "subcategory": "Video player",
   "description": "A federated chat client designed for privacy and selfhosting.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.databag",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/balzack/databag",
@@ -2455,17 +2552,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/at.bitfire.davdroid.png",
   "subcategory": "Calendar sync",
   "description": "CalDAV/CardDAV sync (DAVx5). DOUBT: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/bitfireAT/davx5-ose",
    "openapk": "https://www.openapk.net/davx/at.bitfire.davdroid/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
@@ -2482,6 +2582,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.codedead.deadhash.png",
   "subcategory": "Dev tools",
   "description": "Generate MD5, SHA and CRC32 hashes for files and text!",
   "stores": {
@@ -2509,10 +2610,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.afkanerd.deku.png",
   "subcategory": "Phone",
   "description": "Deku is an SMS app that supports end to end encryption and photo sharing",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.afkanerd.deku",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/deku-messaging/DekuSMS-Android",
@@ -2538,10 +2640,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.b44t.messenger.png",
   "subcategory": "Messaging",
   "description": "Decentralized private messenger with chat-shared tools and games.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=chat.delta",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/deltachat/deltachat-android",
@@ -2567,6 +2670,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.shub39.dharmik.online.png",
   "subcategory": "Reference",
   "description": "Dharmik is a simple app to browse the Bhagavad Gita",
   "stores": {
@@ -2594,6 +2698,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/cz.mod42.diktafon.png",
   "subcategory": "Audio recorder",
   "description": "Voice memos on cassette tapes — transcribed & summarised offline, on device.",
   "stores": {
@@ -2624,17 +2729,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.clombardo.dnsnet.png",
   "subcategory": "Firewall",
   "description": "DNSNet allows you to take more control over what internet traffic goes in and out of your device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.clombardo.dnsnet",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/t895/DNSNet",
    "openapk": null
   },
   "rating": 4.5,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -2651,6 +2759,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/xyz.zedler.patrick.doodle.png",
   "subcategory": "Personalization",
   "description": "Colorful live wallpapers with auto dark mode and power-efficient animations",
   "stores": {
@@ -2678,6 +2787,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.yamin8000.dooz.png",
   "subcategory": "Board",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -2707,6 +2817,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dot.gallery.png",
   "subcategory": "Photos",
   "description": "Simple photo gallery.",
   "stores": {
@@ -2736,6 +2847,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.drawpile.png",
   "subcategory": "Graphics",
   "description": "A collaborative drawing program",
   "stores": {
@@ -2765,12 +2877,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.looker.droidify.png",
   "subcategory": "App store",
   "description": "Clutterfree F-Droid client",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.looker.droidify",
    "github": "https://github.com/Droid-ify/client",
    "openapk": "https://www.openapk.net/droid-ify/com.looker.droidify/"
   },
@@ -2794,6 +2907,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.develz.crawl.png",
   "subcategory": "Roguelike",
   "description": "Dungeon Crawl Stone Soup: the deep, unforgiving roguelike classic.",
   "stores": {
@@ -2823,6 +2937,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ryey.easer.beta.png",
   "subcategory": "Automation",
   "description": "FOSS automation (Tasker alternative).",
   "stores": {
@@ -2852,6 +2967,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.econverter.app.png",
   "subcategory": "Ebook reader",
   "description": "Android ebook converter — epub, mobi, azw3, docx and more. No Calibre needed.",
   "stores": {
@@ -2881,10 +2997,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/im.vector.app.png",
   "subcategory": "Messaging",
   "description": "Flagship Matrix client: E2E encrypted messaging, group chat, video calls",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=im.vector.app",
    "fdroid": false,
    "izzy": null,
    "github": "https://github.com/element-hq/element-android",
@@ -2908,6 +3025,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.element.android.x.png",
   "subcategory": "Messaging",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -2937,6 +3055,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.gnu.emacs.png",
   "subcategory": "Documents",
   "description": "The extensible self-documenting text editor",
   "stores": {
@@ -2966,6 +3085,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.thewierdnut.endless_mobile.png",
   "subcategory": "RPG",
   "description": "A space trading and combat epic across the galaxy.",
   "stores": {
@@ -2995,6 +3115,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.flasskamp.energize.png",
   "subcategory": "Nutrition",
   "description": "Track your nutrition easily and fast.",
   "stores": {
@@ -3024,6 +3145,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.app.equran.png",
   "subcategory": "Ebook reader",
   "description": "Read, listen, choose from 5 reciters, and track your Quran journey.",
   "stores": {
@@ -3053,6 +3175,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ws.xsoh.etar.png",
   "subcategory": "Calendar",
   "description": "Etar is a material designed open source calendar, for everyone!",
   "stores": {
@@ -3082,17 +3205,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.depau.etchdroid.png",
   "subcategory": "System",
   "description": "Write operating system ISO images to USB drives, no root required",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.depau.etchdroid",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/EtchDroid/EtchDroid",
    "openapk": null
   },
   "rating": 4.7,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -3109,6 +3235,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.dyhkwong.sagernet.png",
   "subcategory": "VPN & Proxy",
   "description": "Proxy client",
   "stores": {
@@ -3138,6 +3265,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.eu.exodus_privacy.exodusprivacy.png",
   "subcategory": "Trackers",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -3167,6 +3295,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fdroid.fdroid.png",
   "subcategory": "App store",
   "description": "The FOSS app store itself belongs in the directory (it's how users find more actually-free apps).",
   "stores": {
@@ -3196,12 +3325,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.fadcam.png",
   "subcategory": "Camera",
   "description": "Background video recorder, screen recorder and remote camera control.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.fadcam",
    "github": "https://github.com/anonfaded/FadCam",
    "openapk": null
   },
@@ -3225,12 +3355,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.faircode.email.png",
   "subcategory": "Email",
   "description": "Privacy-focused email client. The F-Droid build is fully unlocked.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/eu.faircode.email",
    "github": "https://github.com/M66B/FairEmail",
    "openapk": "https://www.openapk.net/fairemail/eu.faircode.email/"
   },
@@ -3240,8 +3371,8 @@
   },
   "made_by_us": false,
   "per_badge": true,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (FairEmail, privacy aware email ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "FairScan – PDF Scanner & OCR",
@@ -3254,6 +3385,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fairscan.app.png",
   "subcategory": "Scanner",
   "description": "Scan a document and get a clean PDF you can save or share instantly",
   "stores": {
@@ -3283,10 +3415,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.png",
   "subcategory": "Keyboard",
   "description": "Fcitx5 input method framework and engines ported to Android",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=org.fcitx.fcitx5.android",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
@@ -3312,6 +3445,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.anthy.png",
   "subcategory": "Keyboard",
   "description": "Anthy (Japanese input method) engine support for Fcitx5",
   "stores": {
@@ -3341,6 +3475,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.chewing.png",
   "subcategory": "Keyboard",
   "description": "Chewing (Zhuyin/Bopomofo input method) engine support for Fcitx5",
   "stores": {
@@ -3370,6 +3505,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.hangul.png",
   "subcategory": "Keyboard",
   "description": "Hangul (Korean input method) engine support for Fcitx5",
   "stores": {
@@ -3399,6 +3535,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.jyutping.png",
   "subcategory": "Keyboard",
   "description": "Jyutping (Cantonese input method) engine support for Fcitx5",
   "stores": {
@@ -3428,6 +3565,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.rime.png",
   "subcategory": "Keyboard",
   "description": "RIME (Rime Input Method Engine) support for Fcitx5",
   "stores": {
@@ -3457,6 +3595,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.sayura.png",
   "subcategory": "Keyboard",
   "description": "Sayura (Sinhala input method) engine support for Fcitx5",
   "stores": {
@@ -3486,6 +3625,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.thai.png",
   "subcategory": "Keyboard",
   "description": "Thai input method for Fcitx5",
   "stores": {
@@ -3515,6 +3655,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fcitx.fcitx5.android.plugin.unikey.png",
   "subcategory": "Keyboard",
   "description": "Unikey (Vietnamese input method) engine support for Fcitx5",
   "stores": {
@@ -3544,6 +3685,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nononsenseapps.feeder.play.png",
   "subcategory": "RSS reader",
   "description": "RSS feed reader.",
   "stores": {
@@ -3573,6 +3715,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/github.jean-voila.feurstagram.png",
   "subcategory": "Instagram",
   "description": "Instagram w/o Reels/feed/ads (DMs+stories kept)",
   "stores": {
@@ -3600,6 +3743,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.android.apps.nbu.files.png",
   "subcategory": "File manager",
   "description": "Clean up your phone, find files, play media, and share files offline",
   "stores": {
@@ -3629,21 +3773,24 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.unicornsonlsd.finamp.png",
   "subcategory": "Music player",
   "description": "Music player for Jellyfin servers",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/jmshrv/finamp",
    "openapk": "https://www.openapk.net/finamp/com.unicornsonlsd.finamp/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Finamp ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Firefox",
@@ -3656,6 +3803,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.mozilla.firefox.png",
   "subcategory": "Browser",
   "description": "The independent web browser.",
   "stores": {
@@ -3683,10 +3831,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.presley.fit_book.png",
   "subcategory": "Nutrition",
   "description": "Track your calorie intake - Completely offline!",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.presley.fit_book",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/brandonp2412/FitBook",
@@ -3712,6 +3861,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.tadris.fitness.png",
   "subcategory": "Fitness",
   "description": "A privacy oriented fitness tracker for Android",
   "stores": {
@@ -3739,6 +3889,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "RPG",
   "description": "Action RPG in the Diablo vein",
   "stores": {
@@ -3766,6 +3917,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.cyb3rko.flashdim.png",
   "subcategory": "Flashlight",
   "description": "Modern flashlight app with dim functionality on Android 13+",
   "stores": {
@@ -3795,6 +3947,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.pdb82.flashlighttiramisu.png",
   "subcategory": "Flashlight",
   "description": "Flashlight with smoothly adjustable brightness.",
   "stores": {
@@ -3824,10 +3977,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.presley.flexify.png",
   "subcategory": "Fitness",
   "description": "Log workouts, reps, cardio, and rest timers. Track strength offline.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.presley.flexify",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/brandonp2412/Flexify",
@@ -3853,12 +4007,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.flicky.png",
   "subcategory": "App store",
   "description": "Unofficial Fdroid client (for Android TV)",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.flicky",
    "github": "https://github.com/mlm-games/flicky",
    "openapk": null
   },
@@ -3882,12 +4037,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.patrickgold.florisboard.png",
   "subcategory": "Keyboard",
   "description": "Privacy-focused keyboard.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.patrickgold.florisboard.beta",
    "github": "https://github.com/florisboard/florisboard",
    "openapk": "https://www.openapk.net/florisboard/dev.patrickgold.florisboard/"
   },
@@ -3911,6 +4067,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.aedev.flow.png",
   "subcategory": "",
   "description": "Privacy-respecting YouTube and Music client with local recommendations.",
   "stores": {
@@ -3938,6 +4095,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.bytehamster.flowitgame.png",
   "subcategory": "Puzzle",
   "description": "Fill all boxes with the color of their border",
   "stores": {
@@ -3965,12 +4123,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.fluffy.png",
   "subcategory": "Files",
   "description": "A TV friendly file manager and archive viewer",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=app.fluffy",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.fluffy",
    "github": "https://github.com/mlm-games/fluffy",
    "openapk": null
   },
@@ -3994,6 +4153,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/github.boyan01.flutter-tetris.png",
   "subcategory": "Puzzle",
   "description": "Playable Tetris clone",
   "stores": {
@@ -4021,6 +4181,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.circle_dev.flux_news.png",
   "subcategory": "Ebook reader",
   "description": "Newsreader for miniflux backend",
   "stores": {
@@ -4050,6 +4211,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.decsync.flym.png",
   "subcategory": "RSS reader",
   "description": "DecSync fork of the Flym RSS reader.",
   "stores": {
@@ -4079,6 +4241,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.lorenzovainigli.foodexpirationdates.foss.png",
   "subcategory": "",
   "description": "Remember all the expiration dates of your food stocks.",
   "stores": {
@@ -4092,8 +4255,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Food Expiration Dates ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Forkyz",
@@ -4106,6 +4269,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "Crossword",
   "description": "Crossword puzzle app",
   "stores": {
@@ -4133,6 +4297,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.opendataensemble.formulus.png",
   "subcategory": "Data collection",
   "description": "Offline-first bespoke data collection apps from Open Data Ensemble",
   "stores": {
@@ -4162,12 +4327,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.calendar.png",
   "subcategory": "Calendar",
   "description": "Securely plan, schedule, and set reminders with our private calendar app.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.calendar",
    "github": "https://github.com/FossifyOrg/Calendar",
    "openapk": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
   },
@@ -4191,12 +4357,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.clock.png",
   "subcategory": "Alarm clock",
   "description": "Handy, lightweight, open-source clock app with essential features.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.clock",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.clock",
    "github": "https://github.com/FossifyOrg/Clock",
    "openapk": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
   },
@@ -4220,12 +4387,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.contacts.png",
   "subcategory": "Dialer & Contacts",
   "description": "Contacts manager.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.contacts",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.contacts",
    "github": "https://github.com/FossifyOrg/Contacts",
    "openapk": "https://www.openapk.net/fossify-contacts/org.fossify.contacts/"
   },
@@ -4249,12 +4417,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.filemanager.png",
   "subcategory": "File manager",
   "description": "Handy, lightweight, open-source file explorer with essential features.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.filemanager",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.filemanager",
    "github": "https://github.com/FossifyOrg/File-Manager",
    "openapk": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
   },
@@ -4278,12 +4447,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.gallery.png",
   "subcategory": "Photos",
   "description": "Successor to Simple Gallery, privacy-focused.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.gallery",
    "github": "https://github.com/FossifyOrg/Gallery",
    "openapk": "https://www.openapk.net/fossify-gallery/org.fossify.gallery/"
   },
@@ -4307,6 +4477,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.home.png",
   "subcategory": "",
   "description": "Customize your home screen with a fast, ad-free, open-source launcher",
   "stores": {
@@ -4336,12 +4507,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.phone.png",
   "subcategory": "Dialer & Contacts",
   "description": "Dialer and phone app.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.phone",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.phone",
    "github": "https://github.com/FossifyOrg/Phone",
    "openapk": "https://www.openapk.net/fossify-phone/org.fossify.phone/"
   },
@@ -4365,12 +4537,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.messages.png",
   "subcategory": "SMS",
   "description": "Text messaging, minus the noise.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.messages",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.messages",
    "github": "https://github.com/FossifyOrg/Messages",
    "openapk": "https://www.openapk.net/fossify-sms-messenger/org.fossify.messages/"
   },
@@ -4394,12 +4567,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.fossify.voicerecorder.png",
   "subcategory": "Audio recorder",
   "description": "Voice recorder — offline, local storage.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.voicerecorder",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.voicerecorder",
    "github": "https://github.com/FossifyOrg/Voice-Recorder",
    "openapk": "https://www.openapk.net/fossify-voice-recorder/org.fossify.voicerecorder/"
   },
@@ -4424,6 +4598,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.game.freethebugs.png",
   "subcategory": "Puzzle",
   "description": "A small puzzle game where you fix simple code bugs",
   "stores": {
@@ -4453,6 +4628,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.saschahlusiak.freebloks.png",
   "subcategory": "Board",
   "description": "Blokus-style tile placement against the AI.",
   "stores": {
@@ -4482,17 +4658,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/troop.com.freedcam.png",
   "subcategory": "Camera",
   "description": "Open source camera app unlocking advanced camera features. OpenAPK desc: Free download of FreeDcam APK file and source code repo under GPL-2.0-or-later license - Latest Version 4.3.82 - Fre…",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/KillerInk/FreeDcam",
    "openapk": "https://www.openapk.net/freedcam/troop.com.freedcam/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -4509,6 +4688,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.nullsum.freedoom.png",
   "subcategory": "Shooter",
   "description": "A complete free Doom-engine game: demons, shotguns, no ads.",
   "stores": {
@@ -4538,6 +4718,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/nodomain.freeyourgadget.gadgetbridge.png",
   "subcategory": "Fitness devices",
   "description": "Use your smart watch and other bluetooth devices and keep your data private!",
   "stores": {
@@ -4567,6 +4748,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.arjun.gander.png",
   "subcategory": "File viewer",
   "description": "Offline zero-permission viewer: PDF/DOCX/XLSX/PPTX/media/markdown",
   "stores": {
@@ -4596,6 +4778,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.piepmeyer.gauguin.png",
   "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -4625,6 +4808,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.gcompris.full.png",
   "subcategory": "Casual",
   "description": "Educational software GCompris for children 2 to 10",
   "stores": {
@@ -4652,6 +4836,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gdf.hema_timer.png",
   "subcategory": "Alarm clock",
   "description": "A precise and minimal timer for HEMA training and sparring.",
   "stores": {
@@ -4681,6 +4866,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.android.apps.labs.language.tailwind.png",
   "subcategory": "Notes",
   "description": "Understand anything with a personalized AI research assistant",
   "stores": {
@@ -4708,6 +4894,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.thomas.pedot.gitlalchemy.png",
   "subcategory": "Dev tools",
   "description": "Open-source native GitLab client for Android and desktop",
   "stores": {
@@ -4737,6 +4924,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.mian.gitnex.png",
   "subcategory": "",
   "description": "Native client for Forgejo and Gitea",
   "stores": {
@@ -4766,6 +4954,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.peer.topeer.global_send.png",
   "subcategory": "Messaging",
   "description": "Anonymous messaging with encryption & direct connection",
   "stores": {
@@ -4795,6 +4984,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.godotengine.editor.v3.png",
   "subcategory": "Dev tools",
   "description": "All-in-one, cross-platform game engine",
   "stores": {
@@ -4824,6 +5014,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.godotengine.editor.v4.png",
   "subcategory": "Dev tools",
   "description": "All-in-one, cross-platform game engine",
   "stores": {
@@ -4853,6 +5044,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.android.calendar.png",
   "subcategory": "Calendar",
   "description": "Make the most of your day with Google Calendar, part of Google Workspace",
   "stores": {
@@ -4880,6 +5072,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.android.apps.docs.editors.docs.png",
   "subcategory": "Documents",
   "description": "Create, edit, and collaborate online with Google Docs, part of Google Workspace",
   "stores": {
@@ -4907,6 +5100,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.android.keep.png",
   "subcategory": "Notes",
   "description": "Quickly capture and share your thoughts, manage your to-dos, and stay organized",
   "stores": {
@@ -4934,6 +5128,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.ar.lens.png",
   "subcategory": "Visual search",
   "description": "Translate words, identify plants, find products, & more—using just your camera",
   "stores": {
@@ -4961,6 +5156,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.google.android.apps.tasks.png",
   "subcategory": "Tasks",
   "description": "Stay on top of your to-dos with Google Tasks, part of Google Workspace",
   "stores": {
@@ -4988,6 +5184,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.basicairdata.graziano.gpslogger.png",
   "subcategory": "",
   "description": "A simple and lightweight app for recording your position and your path",
   "stores": {
@@ -5015,10 +5212,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.android.gpstest.osmdroid.png",
   "subcategory": "",
   "description": "The #1 open-source GNSS/GPS app on Android. No ads, no trackers, just data.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.android.gpstest",
    "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.android.gpstest.osmdroid",
    "github": "https://github.com/barbeau/gpstest",
@@ -5044,21 +5242,24 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.akanework.gramophone.png",
   "subcategory": "Music player",
   "description": "Material You local MP3 music player",
   "stores": {
    "play": null,
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.akanework.gramophone",
    "github": "https://github.com/AkaneTan/Gramophone",
    "openapk": "https://www.openapk.net/gramophone/org.akanework.gramophone/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Gramophone ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Gridle",
@@ -5071,6 +5272,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.billthefarmer.gridle.png",
   "subcategory": "Word",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -5100,12 +5302,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.shub39.grit.png",
   "subcategory": "Tasks",
   "description": "A Simple ToDo List and Habit Tracker",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.shub39.grit",
    "github": "https://github.com/shub39/Grit",
    "openapk": null
   },
@@ -5115,8 +5318,8 @@
   },
   "made_by_us": false,
   "per_badge": true,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Grit - Productivity App ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "GymMane",
@@ -5129,6 +5332,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gymmane.app.png",
   "subcategory": "Fitness",
   "description": "Dark, offline gym log. Tap the muscle, log your sets, watch your numbers move.",
   "stores": {
@@ -5158,6 +5362,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.jiaqifeng.hacki.png",
   "subcategory": "News",
   "description": "An open-source Hacker News client.",
   "stores": {
@@ -5187,6 +5392,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.aistra.hail.png",
   "subcategory": "App manager",
   "description": "Freeze Android apps",
   "stores": {
@@ -5216,10 +5422,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.simon.harmonichackernews.png",
   "subcategory": "News",
   "description": "Hacker News client with modern Material design",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.simon.harmonichackernews",
    "fdroid": false,
    "izzy": null,
    "github": "https://github.com/SimonHalvdansson/Harmonic-HN",
@@ -5243,6 +5450,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.anandnet.harmonymusic.png",
   "subcategory": "Music player",
   "description": "YouTube music streaming client",
   "stores": {
@@ -5270,12 +5478,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/helium314.keyboard.png",
   "subcategory": "Keyboard",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/helium314.keyboard",
    "github": "https://github.com/HeliBorg/HeliBoard",
    "openapk": "https://www.openapk.net/heliboard/helium314.keyboard/"
   },
@@ -5299,6 +5508,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.studio4plus.homerplayer2.png",
   "subcategory": "Audiobook player",
   "description": "Audiobook player designed for seniors — ultra-simple UI.",
   "stores": {
@@ -5328,6 +5538,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.roguetemple.hyperroid.png",
   "subcategory": "Roguelike",
   "description": "A roguelike on impossible non-Euclidean geometry.",
   "stores": {
@@ -5357,6 +5568,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.ahxxm.ic.png",
   "subcategory": "Graphics",
   "description": "Compress JPEG/PNG images using mozjpeg or jpegli offline",
   "stores": {
@@ -5386,6 +5598,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ru.tech.imageresizershrinker.png",
   "subcategory": "Image editor",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -5415,6 +5628,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.alextran.immich.png",
   "subcategory": "Photos",
   "description": "This is a client app for the self-hostable Immich Server",
   "stores": {
@@ -5442,17 +5656,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.zionhuang.music.png",
   "subcategory": "Music streaming",
   "description": "Material design YouTube Music client",
   "stores": {
    "play": null,
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.zionhuang.music",
    "github": "https://github.com/z-huang/InnerTune",
    "openapk": "https://www.openapk.net/innertune/com.zionhuang.music/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -5469,6 +5686,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/pan.alexander.tordnscrypt.gp.png",
   "subcategory": "Firewall",
   "description": "DNSCrypt + Tor + I2P firewall",
   "stores": {
@@ -5496,6 +5714,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.iyps.png",
   "subcategory": "",
   "description": "Evaluate passwords, predict crack times, and get tips for stronger passwords.",
   "stores": {
@@ -5525,6 +5744,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ru.playsoftware.j2meloader.png",
   "subcategory": "Emulator",
   "description": "J2ME emulator for Android",
   "stores": {
@@ -5538,8 +5758,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (J2ME Loader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Jami",
@@ -5552,6 +5772,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "Calling",
   "description": "P2P audio/video calls and chat",
   "stores": {
@@ -5579,6 +5800,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/xyz.jekyllex.png",
   "subcategory": "Documents",
   "description": "The mobile IDE to create, build, edit, preview, and publish Jekyll sites.",
   "stores": {
@@ -5608,17 +5830,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.jellyfin.mobile.png",
   "subcategory": "Media center",
   "description": "Mobile client for Jellyfin, the free software media system",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=org.jellyfin.mobile",
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/jellyfin/jellyfin-android",
    "openapk": "https://www.openapk.net/jellyfin-your-media-in-your-hands/org.jellyfin.mobile/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -5635,12 +5860,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.jerboa.png",
   "subcategory": "Lemmy",
   "description": "An app for Lemmy, a federated reddit alternative.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jerboa",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.jerboa",
    "github": "https://github.com/LemmyNet/jerboa",
    "openapk": null
   },
@@ -5664,6 +5890,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.bg.jetbird.png",
   "subcategory": "VPN & Proxy",
   "description": "An unofficial, FLOSS, native Android NetBird client built with privacy in mind",
   "stores": {
@@ -5693,6 +5920,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/github.arianneorpilla.jidoujisho.png",
   "subcategory": "Language",
   "description": "Japanese dictionary + reader for language learners",
   "stores": {
@@ -5720,10 +5948,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.jitsi.meet.png",
   "subcategory": "Video player",
   "description": "Instant video conferences efficiently adapting to your scale",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=org.jitsi.meet",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/jitsi/jitsi-meet",
@@ -5749,6 +5978,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.xiaoshihou.jiyi.png",
   "subcategory": "Audio recorder",
   "description": "Encrypted audio logging app",
   "stores": {
@@ -5778,6 +6008,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.cozic.joplin.png",
   "subcategory": "Notes",
   "description": "Note taking and to-do app with sync across desktop and mobile",
   "stores": {
@@ -5805,21 +6036,24 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/at.techbee.jtx.png",
   "subcategory": "Journal",
   "description": "Journals, notes and tasks",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/TechbeeAT/jtxBoard",
    "openapk": "https://www.openapk.net/jtx-board-journalsnotestasks/at.techbee.jtx/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (jtx Board | journals \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Just (Video) Player",
@@ -5832,10 +6066,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.brouken.player.png",
   "subcategory": "Music player",
   "description": "Simple video player based on ExoPlayer library",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.brouken.player",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/moneytoo/Player",
@@ -5861,6 +6096,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.onekash.kashcal.png",
   "subcategory": "",
   "description": "All your calendars in one app. iCloud, CalDAV, device, ICS. Private.",
   "stores": {
@@ -5890,10 +6126,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/keepass2android.keepass2android_nonet.png",
   "subcategory": "Passwords",
   "description": "Offline KeePass password manager",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=keepass2android.keepass2android_nonet",
    "fdroid": false,
    "izzy": null,
    "github": "https://github.com/PhilippC/keepass2android",
@@ -5919,12 +6156,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kunzisoft.keepass.libre.png",
   "subcategory": "Password Manager",
   "description": "Password manager (KeePass-compatible).",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kunzisoft.keepass.free",
    "github": "https://github.com/Kunzisoft/KeePassDX",
    "openapk": null
   },
@@ -5950,6 +6188,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.yogeshpaliyal.keypass.png",
   "subcategory": "Password manager",
   "description": "Offline, Secure, Private",
   "stores": {
@@ -5979,6 +6218,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kaizen.khushu.png",
   "subcategory": "",
   "description": "Private Muslim app for prayer, tasbih, study, and gentle reminders",
   "stores": {
@@ -6008,6 +6248,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/fr.neamar.kiss.png",
   "subcategory": "Launcher",
   "description": "Minimal search-based launcher.",
   "stores": {
@@ -6037,6 +6278,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.buzbuz.smartautoclicker.png",
   "subcategory": "Alarm clock",
   "description": "Automating clicks based on what is displayed",
   "stores": {
@@ -6052,8 +6294,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Klick\\u0027r - Smart AutoClicker ads=True iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Knit",
@@ -6066,6 +6308,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.getknit.knit.png",
   "subcategory": "Mesh chat",
   "description": "Encrypted mesh chat over Wi-Fi Aware and Bluetooth — no internet, no servers.",
   "stores": {
@@ -6095,10 +6338,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.xbmc.kodi.png",
   "subcategory": "Media center",
   "description": "Media center",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=org.xbmc.kodi",
    "fdroid": false,
    "izzy": null,
    "github": "https://github.com/xbmc/xbmc",
@@ -6122,6 +6366,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.chooloo.www.koler.png",
   "subcategory": "Dialer & Contacts",
   "description": "Simple phone dialer.",
   "stores": {
@@ -6151,6 +6396,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.koreader.launcher.fdroid.png",
   "subcategory": "Ebook reader",
   "description": "Document reader for e-books and PDFs.",
   "stores": {
@@ -6180,6 +6426,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.krita.png",
   "subcategory": "Graphics",
   "description": "Professional painting program",
   "stores": {
@@ -6209,6 +6456,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.mm20.launcher2.release.png",
   "subcategory": "",
   "description": "A search-focused, free and open source launcher for Android",
   "stores": {
@@ -6238,10 +6486,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.lawnchair.png",
   "subcategory": "Launcher",
   "description": "Customizable Pixel-style launcher.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=app.lawnchair.play",
    "fdroid": false,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.lawnchair",
    "github": "https://github.com/LawnchairLauncher/lawnchair",
@@ -6265,6 +6514,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.swordfish.lemuroid.png",
   "subcategory": "Emulator",
   "description": "All in one emulator on Android",
   "stores": {
@@ -6294,17 +6544,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.absinthe.libchecker.png",
   "subcategory": "Dev tools",
   "description": "This is an application to view and analyze the third-party libraries used by the app",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.absinthe.libchecker",
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.absinthe.libchecker",
    "github": "https://github.com/LibChecker/LibChecker",
    "openapk": null
   },
   "rating": 4.9,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -6321,6 +6574,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.iakmds.librecamera.png",
   "subcategory": "Camera",
   "description": "Modern camera app to take pictures and record videos",
   "stores": {
@@ -6350,12 +6604,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.jksalcedo.librefind.png",
   "subcategory": "App discovery",
   "description": "Discover and replace proprietary apps with FOSS alternatives",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.jksalcedo.librefind",
    "github": "https://github.com/jksalcedo/librefind",
    "openapk": null
   },
@@ -6379,6 +6634,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.documentfoundation.libreoffice.png",
   "subcategory": "Ebook reader",
   "description": "Document Viewer",
   "stores": {
@@ -6408,6 +6664,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kaajjo.libresudoku.png",
   "subcategory": "Puzzle",
   "description": "Sudoku with puzzle packs and clean design.",
   "stores": {
@@ -6437,6 +6694,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.proninyaroslav.libretorrent.png",
   "subcategory": "Downloads",
   "description": "Copylefted libre software torrent client.",
   "stores": {
@@ -6466,17 +6724,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.libretube.png",
   "subcategory": "Video player",
   "description": "Alternative YouTube frontend built on Piped",
   "stores": {
    "play": null,
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.github.libretube",
    "github": "https://github.com/libre-tube/LibreTube",
    "openapk": "https://www.openapk.net/libretube/com.github.libretube/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -6493,6 +6754,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.lichess.mobileV2.png",
   "subcategory": "Board",
   "description": "Free online chess: play, solve puzzles, no account needed to play.",
   "stores": {
@@ -6522,6 +6784,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.sakethh.linkora.png",
   "subcategory": "Bookmarks",
   "description": "Local-first multiplatform link organizer with optional self-hosted sync.",
   "stores": {
@@ -6551,6 +6814,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.inspiredandroid.linuxcommandbibliotheca.png",
   "subcategory": "Reference",
   "description": "8966 manual pages, 30 basic categories and a bunch of general terminal tips",
   "stores": {
@@ -6578,6 +6842,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.grakovne.lissen.png",
   "subcategory": "Audiobook player",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -6608,21 +6873,24 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.localsend.localsend_app.png",
   "subcategory": "File sharing",
   "description": "Cross-platform file sharing over WiFi",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/localsend/localsend",
    "openapk": "https://www.openapk.net/localsend/org.localsend.localsend_app/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (LocalSend: Transfer Files ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Logcat Reader",
@@ -6635,6 +6903,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dp.logcatapp.png",
   "subcategory": "Debugging",
   "description": "A simple app to view logs",
   "stores": {
@@ -6664,6 +6933,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.logseq.app.png",
   "subcategory": "Notes",
   "description": "A privacy-first, open-source platform for knowledge management.",
   "stores": {
@@ -6693,6 +6963,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.isoron.uhabits.png",
   "subcategory": "Habits",
   "description": "Track habits and long-term goals (Loop Habit Tracker)",
   "stores": {
@@ -6720,6 +6991,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.minetest.minetest.png",
   "subcategory": "Sandbox",
   "description": "Luanti: open-source voxel sandbox (Minecraft-like), endless mods.",
   "stores": {
@@ -6749,6 +7021,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.moi.lumine.png",
   "subcategory": "VPN & Proxy",
   "description": "A lightweight local HTTP/SOCKS5 proxy server protects TLS connections over TCP.",
   "stores": {
@@ -6778,6 +7051,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.demonlab.lune.png",
   "subcategory": "Music player",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -6808,6 +7082,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.gitlab.coolreader_ng.lxreader.fdroid.png",
   "subcategory": "Ebook reader",
   "description": "E-book reader (a CoolReader NG fork).",
   "stores": {
@@ -6837,6 +7112,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.illusionman1212.lyricsgrabbr.png",
   "subcategory": "Ebook reader",
   "description": "Lyrics grabbr provides lyrics for the currently playing song",
   "stores": {
@@ -6866,10 +7142,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.leadaxe.lxbox.png",
   "subcategory": "VPN & Proxy",
   "description": "VPN client: 12+ protocols, subscriptions, app routing, balancing, traffic stats",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.leadaxe.lxbox",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/Leadaxe/LxBox",
@@ -6895,17 +7172,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.svenjacobs.app.leon.png",
   "subcategory": "URL tools",
   "description": "Removes tracking & other redundant parameters from web links for sharing",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.svenjacobs.app.leon",
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.svenjacobs.app.leon",
    "github": "https://github.com/svenjacobs/leon",
    "openapk": null
   },
   "rating": 4.6,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -6922,6 +7202,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.mlm.mages.png",
   "subcategory": "Messaging",
   "description": "Experimental Matrix client made using Compose Multiplatform (and Rust).",
   "stores": {
@@ -6951,6 +7232,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kylefreed.mahjongscore.png",
   "subcategory": "Scorekeeper",
   "description": "Automatic scoring compass for Riichi Mahjong",
   "stores": {
@@ -6980,6 +7262,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.danemadsen.maid.png",
   "subcategory": "AI Assistant",
   "description": "Maid is an open source app for interacting with artificial intelligence models.",
   "stores": {
@@ -7010,10 +7293,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.schliweb.makeacopy.png",
   "subcategory": "Graphics",
   "description": "Privacy-focused document scanner with OCR and PDF export",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=de.schliweb.makeacopy",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/egdels/makeacopy",
@@ -7039,6 +7323,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.gsantner.markor.png",
   "subcategory": "Notes",
   "description": "Text editor - Notes & ToDo. Lightweight. Markdown and todo.txt support.",
   "stores": {
@@ -7068,6 +7353,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.marmalade.tts.png",
   "subcategory": "Text to speech",
   "description": "Fast, natural, private text-to-speech for your whole phone. Works offline.",
   "stores": {
@@ -7097,6 +7383,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.zhanghai.android.files.png",
   "subcategory": "File manager",
   "description": "Open source Material Design file manager",
   "stores": {
@@ -7126,6 +7413,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/co.garmax.materialflashlight.png",
   "subcategory": "Flashlight",
   "description": "Flashlight with some cool features",
   "stores": {
@@ -7155,12 +7443,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.maelchiotti.localmaterialnotes.png",
   "subcategory": "Notes",
   "description": "Simple, local, material design notes",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.maelchiotti.localmaterialnotes",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.maelchiotti.localmaterialnotes",
    "github": "https://github.com/maelchiotti/LocalMaterialNotes",
    "openapk": null
   },
@@ -7184,6 +7473,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/us.materialio.app.png",
   "subcategory": "",
   "description": "Modern material design for YouTube and Invidious.",
   "stores": {
@@ -7213,6 +7503,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.mattermost.rnbeta.png",
   "subcategory": "Messaging",
   "description": "Secure, self-hosted workplace messaging",
   "stores": {
@@ -7242,6 +7533,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.janekbt.Meditate.png",
   "subcategory": "Meditation",
   "description": "Meditation timer with session log, stats, and Nextcloud sync.",
   "stores": {
@@ -7271,6 +7563,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nyxkn.meditation.png",
   "subcategory": "Alarm clock",
   "description": "An essential meditation timer",
   "stores": {
@@ -7300,6 +7593,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/uk.co.telesense.tm.free.png",
   "subcategory": "Fitness",
   "description": "This is a simple and attractive meditation timer which can completely silence your device while you meditate. [Note: package name suggests a paid version exists elsewhere",
   "stores": {
@@ -7327,6 +7621,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.sohamgreens.MeditationTimer.png",
   "subcategory": "Fitness",
   "description": "Another app to use as a meditation timer",
   "stores": {
@@ -7354,10 +7649,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/meditofoundation.medito.png",
   "subcategory": "Meditation",
   "description": "Free meditation: relax, de-stress, sleep, breathing exercises",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=meditofoundation.medito",
    "fdroid": false,
    "izzy": null,
    "github": "https://github.com/meditohq/medito-app",
@@ -7381,6 +7677,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.mensinator.app.png",
   "subcategory": "",
   "description": "Tailored Period Tracking, Total Privacy—Your Period, Your Control.",
   "stores": {
@@ -7410,6 +7707,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.helddertierwelt.mentalmath.png",
   "subcategory": "Educational",
   "description": "Practice mental math solo or with friends - open source, ad-free and private",
   "stores": {
@@ -7437,6 +7735,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.metrolist.music.png",
   "subcategory": "",
   "description": "Material 3 YouTube Music client for Android",
   "stores": {
@@ -7464,17 +7763,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.moekadu.metronome.png",
   "subcategory": "Music player",
   "description": "Simple metronome which helps you to keep time when practicing music",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.moekadu.metronome",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/thetwom/toc2",
    "openapk": null
   },
   "rating": 4.9,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -7491,6 +7793,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.microsoft.launcher.png",
   "subcategory": "Personalization",
   "description": "Personalize your phone and stay organized on the go",
   "stores": {
@@ -7518,6 +7821,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.microsoft.office.onenote.png",
   "subcategory": "Notes",
   "description": "Make sense of your files with AI, searching across your notes for what you need",
   "stores": {
@@ -7545,6 +7849,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.microsoft.todos.png",
   "subcategory": "Tasks",
   "description": "Increase productivity! Make a daily to do list, create a reminder & share notes!",
   "stores": {
@@ -7572,6 +7877,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.mihon.png",
   "subcategory": "Manga",
   "description": "Read manga, webtoons, comics",
   "stores": {
@@ -7599,6 +7905,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.calcitem.sanmill.png",
   "subcategory": "Board",
   "description": "Mill Game program which supports rule variants",
   "stores": {
@@ -7626,6 +7933,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.anuke.mindustry.png",
   "subcategory": "Strategy",
   "description": "Factory-building tower defense: mine, automate, defend.",
   "stores": {
@@ -7655,6 +7963,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/tech.dongdongbh.mindwtr.png",
   "subcategory": "",
   "description": "Clear your head: capture tasks fast, see your next step. Offline, free, GTD.",
   "stores": {
@@ -7685,6 +7994,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.johnathan.minesweeper.png",
   "subcategory": "Puzzle",
   "description": "Minesweeper done right, no ads, no nonsense.",
   "stores": {
@@ -7714,6 +8024,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.mlm.miniter.png",
   "subcategory": "Video editor",
   "description": "Video editor built for simple tasks",
   "stores": {
@@ -7743,6 +8054,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gitlab.mudlej.MjPdfReader.png",
   "subcategory": "",
   "description": "A simple PDF viewer",
   "stores": {
@@ -7772,6 +8084,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.mudkip.moememos.png",
   "subcategory": "Notes",
   "description": "An app to help you capture thoughts & ideas",
   "stores": {
@@ -7801,12 +8114,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/shub39.momentum.png",
   "subcategory": "Video editor",
   "description": "App to make Montages easily",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/shub39.momentum",
    "github": "https://github.com/shub39/Momentum",
    "openapk": null
   },
@@ -7816,8 +8130,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Momentum - Make a Montage ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Money Manager Ex",
@@ -7830,17 +8144,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.money.manager.ex.png",
   "subcategory": "Expense",
   "description": "Personal finance manager",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=com.money.manager.ex.android",
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/moneymanagerex/android-money-manager-ex",
    "openapk": "https://www.openapk.net/money-manager-ex/com.money.manager.ex/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -7857,6 +8174,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.monocles.chat.png",
   "subcategory": "Video player",
   "description": "is a full-featured XMPP chat client",
   "stores": {
@@ -7886,6 +8204,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.monocles.translator.png",
   "subcategory": "Ebook reader",
   "description": "monocles translation a safe and private translator",
   "stores": {
@@ -7915,6 +8234,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.limelight.png",
   "subcategory": "Streaming",
   "description": "Play games from your PC on Android",
   "stores": {
@@ -7944,12 +8264,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.joinmastodon.android.moshinda.png",
   "subcategory": "Mastodon",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.joinmastodon.android.moshinda",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.joinmastodon.android.moshinda",
    "github": "https://github.com/LucasGGamerM/moshidon",
    "openapk": null
   },
@@ -7973,6 +8294,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/is.xyz.mpv.png",
   "subcategory": "Video player",
   "description": "Minimalist, powerful player.",
   "stores": {
@@ -8002,6 +8324,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.marlboroadvance.mpvex.png",
   "subcategory": "",
   "description": "A powerful media player built on mpv with an improved user interface",
   "stores": {
@@ -8029,6 +8352,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.artifex.mupdf.viewer.app.png",
   "subcategory": "PDF",
   "description": "Lightweight official MuPDF PDF viewer",
   "stores": {
@@ -8056,17 +8380,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.murinelauncher.png",
   "subcategory": "Personalization",
   "description": "A modern, lightweight Launcher3 fork for an enhanced stock++ Android experience",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.murinelauncher",
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.murinelauncher",
    "github": "https://github.com/alesimula/Murine-launcher",
    "openapk": null
   },
   "rating": 5.0,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8083,6 +8410,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.iven.musicplayergo.png",
   "subcategory": "Music player",
   "description": "Lightweight offline music player",
   "stores": {
@@ -8112,6 +8440,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gokadzev.musify.png",
   "subcategory": "Music player",
   "description": "YouTube streaming music",
   "stores": {
@@ -8139,6 +8468,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.raha.app.mymoney.free.png",
   "subcategory": "Money",
   "description": "Daily Expense Tracker, Personal Finance Manager & Budgeting App - simple & easy. [Note: package name suggests a separate Pro edition exists",
   "stores": {
@@ -8166,12 +8496,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.starry.myne.png",
   "subcategory": "Book tracker",
   "description": "Android application to download & read ebooks from the Project GutenBerg.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.starry.myne",
    "github": "https://github.com/Pool-Of-Tears/Myne",
    "openapk": null
   },
@@ -8195,6 +8526,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/github.namidaco.namida.png",
   "subcategory": "Music player",
   "description": "Feature-rich music & video player w/ YouTube support",
   "stores": {
@@ -8222,6 +8554,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dar.nclientv2.png",
   "subcategory": "Music player",
   "description": "Navidrome/Subsonic client",
   "stores": {
@@ -8249,6 +8582,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ch.pocketpc.nearbyglasses.png",
   "subcategory": "",
   "description": "Smart Glasses are often hard to spot. This app scans for their Bluetooth ID.",
   "stores": {
@@ -8276,6 +8610,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nkls.nekovideo.png",
   "subcategory": "Video player",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -8305,17 +8640,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.machiav3lli.backup.png",
   "subcategory": "Backup",
   "description": "Open-source tool to backup apps and data (Neo Backup)",
   "stores": {
    "play": null,
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.machiav3lli.backup",
    "github": "https://github.com/NeoApplications/Neo-Backup",
    "openapk": "https://www.openapk.net/neo-backup/com.machiav3lli.backup/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8332,6 +8670,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.machiav3lli.fdroid.png",
   "subcategory": "",
   "description": "A modern feature-rich F-Droid client.",
   "stores": {
@@ -8361,6 +8700,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.faircode.netguard.png",
   "subcategory": "Firewall",
   "description": "Firewall that blocks internet access per app. The F-Droid build is fully unlocked.",
   "stores": {
@@ -8376,8 +8716,8 @@
   },
   "made_by_us": false,
   "per_badge": true,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (NetGuard - no-root firewall ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "NewPass",
@@ -8390,6 +8730,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gero.newpass.png",
   "subcategory": "",
   "description": "Securely store and manage passwords of your digital realm with NewPass.",
   "stores": {
@@ -8419,6 +8760,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.schabi.newpipe.png",
   "subcategory": "Video player",
   "description": "Lightweight YouTube app — no account, no ads.",
   "stores": {
@@ -8449,12 +8791,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.anilbeesetti.nextplayer.png",
   "subcategory": "Video player",
   "description": "A clean, simple video player.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.anilbeesetti.nextplayer",
    "github": "https://github.com/anilbeesetti/nextplayer",
    "openapk": "https://www.openapk.net/next-player/dev.anilbeesetti.nextplayer/"
   },
@@ -8478,6 +8821,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nextcloud.client.png",
   "subcategory": "File Sync",
   "description": "File sync client (connects to a Nextcloud server).",
   "stores": {
@@ -8507,6 +8851,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.nightdrop.png",
   "subcategory": "Messaging",
   "description": "Anonymous, end-to-end encrypted 1:1 chat over Tor",
   "stores": {
@@ -8536,6 +8881,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.adilhanney.no_more_background.png",
   "subcategory": "App manager",
   "description": "Control your Android™ apps",
   "stores": {
@@ -8565,12 +8911,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.omgodse.notally.png",
   "subcategory": "Notes",
   "description": "A simple and elegant open source notes app",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.omgodse.notally",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.omgodse.notally",
    "github": "https://github.com/omgodse/notally",
    "openapk": "https://www.openapk.net/notally-minimalist-notes/com.omgodse.notally/"
   },
@@ -8594,6 +8941,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.streetwriters.notesnook.png",
   "subcategory": "Tasks",
   "description": "A fully open source & end-to-end encrypted note taking app",
   "stores": {
@@ -8623,17 +8971,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.xtreak.notificationdictionary.png",
   "subcategory": "Dictionary",
   "description": "An app to access meaning of selected word as a notification",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.xtreak.notificationdictionary",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/tirkarthi/NotificationDictionary",
    "openapk": null
   },
   "rating": 4.6,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8650,6 +9001,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/jp.nonbili.noutube.png",
   "subcategory": "Video player",
   "description": "YouTube and YouTube Music in a single app. No ads, plays in the background.",
   "stores": {
@@ -8679,12 +9031,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.courville.nova.png",
   "subcategory": "Video player",
   "description": "Video player with network streaming support.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.courville.nova",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.courville.nova",
    "github": "https://github.com/nova-video-player/aos-AVP",
    "openapk": "https://www.openapk.net/nova-video-player/org.courville.nova/"
   },
@@ -8708,17 +9061,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.imranr.obtainium.png",
   "subcategory": "App updates",
   "description": "Get Android app updates directly from the source (GitHub etc.)",
   "stores": {
    "play": null,
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.imranr.obtainium",
    "github": "https://github.com/ImranR98/Obtainium",
    "openapk": "https://www.openapk.net/obtainium/dev.imranr.obtainium/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8735,6 +9091,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "AI Assistant",
   "description": "Private on-device AI chat (llama.cpp GGUF) with zero network permissions, encrypted settings and biometric lock.",
   "stores": {
@@ -8764,6 +9121,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.emavgl.piggybankpro.png",
   "subcategory": "Money",
   "description": "Oinkoin Money Manager makes managing personal finances easy and secure.",
   "stores": {
@@ -8793,12 +9151,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.oksigenia.oksigenia_sos.png",
   "subcategory": "Safety",
   "description": "Smart safety and distress alerts with fall and inactivity detection.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.oksigenia.oksigenia_sos",
    "github": "https://github.com/OksigeniaSL/oksigenia-sos",
    "openapk": null
   },
@@ -8822,17 +9181,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.olauncher.png",
   "subcategory": "Personalization",
   "description": "Minimalist launcher to reduce your screen time",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.olauncher",
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.olauncher",
    "github": "https://github.com/tanujnotes/Olauncher",
    "openapk": null
   },
   "rating": 4.8,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -8849,6 +9211,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.basov.omngo.fdroid.png",
   "subcategory": "Notes",
   "description": "Self-hosted Markdown notes with git sync, LAN sharing, and SQL scripting",
   "stores": {
@@ -8878,6 +9241,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.onionshare.android.fdroid.png",
   "subcategory": "Anonymous sharing",
   "description": "Securely and anonymously share files using the Tor network",
   "stores": {
@@ -8907,6 +9271,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.sourceforge.opencamera.png",
   "subcategory": "Camera",
   "description": "Open-source camera app with manual controls.",
   "stores": {
@@ -8936,6 +9301,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.d_rk.openpatience.png",
   "subcategory": "Card",
   "description": "A collection of solitaire card games.",
   "stores": {
@@ -8965,6 +9331,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.moire.opensudoku.png",
   "subcategory": "Puzzle",
   "description": "Open source sudoku",
   "stores": {
@@ -8992,6 +9359,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.dslul.openboard.inputmethod.latin.png",
   "subcategory": "Keyboard",
   "description": "Open-source keyboard based on AOSP.",
   "stores": {
@@ -9022,12 +9390,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.darkempire78.opencalculator.png",
   "subcategory": "Calculator",
   "description": "Simple and beautiful calculator for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.darkempire78.opencalculator",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.darkempire78.opencalculator",
    "github": "https://github.com/clementwzk/OpenCalc",
    "openapk": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
   },
@@ -9051,6 +9420,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.openlist.mobile.png",
   "subcategory": "File Sync",
   "description": "OpenList/Alist file-list client",
   "stores": {
@@ -9078,17 +9448,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/software.mdev.bookstracker.png",
   "subcategory": "Book tracker",
   "description": "Your private and open source books tracker, organizer and reading list",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=software.mdev.bookstracker",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/mateusz-bak/openreads",
    "openapk": null
   },
   "rating": 4.7,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -9105,12 +9478,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.ethereal.openscan.png",
   "subcategory": "Scanner",
   "description": "Document scanner",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ethereal.openscan",
    "fdroid": false,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.ethereal.openscan",
    "github": "https://github.com/ethereal-developers/OpenScan",
    "openapk": null
   },
@@ -9132,6 +9506,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.dmfs.tasks.png",
   "subcategory": "Tasks",
   "description": "Keep track of your list of goals",
   "stores": {
@@ -9161,6 +9536,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.dennisguse.opentracks.png",
   "subcategory": "Fitness",
   "description": "Privacy-respecting sport tracker",
   "stores": {
@@ -9188,6 +9564,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.openttd.fdroid.png",
   "subcategory": "Strategy",
   "description": "Transport Tycoon: build a transport empire from 1950 onward.",
   "stores": {
@@ -9217,6 +9594,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dt.opnsense_manager.png",
   "subcategory": "Firewall",
   "description": "Manage OPNsense firewall: monitor, configure rules, view logs & services",
   "stores": {
@@ -9232,8 +9610,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (OPNsense Manager ads=True iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Organic Maps",
@@ -9246,17 +9624,19 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.organicmaps.png",
   "subcategory": "Maps",
   "description": "Offline hike, bike and GPS navigation on OpenStreetMap",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=app.organicmaps",
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/organicmaps/organicmaps",
    "openapk": "https://www.openapk.net/organic-maps-offline-hike-bike-gps-navigation/app.organicmaps/"
   },
   "rating": null,
   "attrs": {
+   "open_source": true,
    "offline": true
   },
   "made_by_us": false,
@@ -9275,6 +9655,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.orgzly.png",
   "subcategory": "Notes",
   "description": "Outliner for notes, tasks and to-do lists",
   "stores": {
@@ -9302,10 +9683,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/universe.constellation.orion.viewer.png",
   "subcategory": "Ebook reader",
   "description": "Orion Viewer is pdf, djvu, xps, tiff and comic books (cbr, cbz, cbt) file viewer",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=universe.constellation.orion.viewer",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/max-kammerer/orion-viewer",
@@ -9331,6 +9713,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.outline.android.client.png",
   "subcategory": "VPN & Proxy",
   "description": "A VPN or proxy client",
   "stores": {
@@ -9360,6 +9743,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": null,
   "subcategory": "Translation",
   "description": "Real-time screen OCR translation",
   "stores": {
@@ -9387,17 +9771,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.owncloud.android.png",
   "subcategory": "File Sync",
   "description": "Add an ownCloud server now and get your Cloud, your Data, your Way!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.owncloud.android",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/owncloud/android",
    "openapk": null
   },
   "rating": 4.5,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -9414,6 +9801,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.paperknife.app.png",
   "subcategory": "",
   "description": "Privacy-first PDF utility: Merge, Split, Compress & Protect PDFs 100% locally.",
   "stores": {
@@ -9441,21 +9829,24 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.emanuelef.remote_capture.png",
   "subcategory": "Network",
   "description": "No-root network monitor and traffic dump tool (PCAPdroid)",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/emanuele-f/PCAPdroid",
    "openapk": "https://www.openapk.net/pcapdroid/com.emanuelef.remote_capture/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (PCAPdroid - network monitor ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Pedometer (PFA)",
@@ -9468,6 +9859,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.secuso.privacyfriendlyactivitytracker.png",
   "subcategory": "Pedometer",
   "description": "Counts your steps in the background. Customize daily goals.",
   "stores": {
@@ -9497,6 +9889,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.byagowi.persiancalendar.png",
   "subcategory": "Calendar",
   "description": "Android Persian Calendar",
   "stores": {
@@ -9526,6 +9919,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dnsfilter.android.png",
   "subcategory": "Ad Blocker",
   "description": "Local DNS filter, no root.",
   "stores": {
@@ -9555,6 +9949,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/player.phonograph.plus.png",
   "subcategory": "Music player",
   "description": "Material-design local music player (a Phonograph fork).",
   "stores": {
@@ -9584,6 +9979,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.leonlatsch.photok.png",
   "subcategory": "",
   "description": "Private Photo Vault, Hide Photos & Videos.",
   "stores": {
@@ -9613,6 +10009,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.rwth_aachen.phyphox.png",
   "subcategory": "Learning",
   "description": "Perform physics experiments with your phone",
   "stores": {
@@ -9640,6 +10037,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.wgh136.pica_comic.png",
   "subcategory": "Comic reader",
   "description": "Comic reader",
   "stores": {
@@ -9667,6 +10065,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.agateau.tinywheels.android.png",
   "subcategory": "Racing",
   "description": "Top-down arcade racer, quick races.",
   "stores": {
@@ -9696,6 +10095,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.pixeldroid.app.png",
   "subcategory": "Pixelfed",
   "description": "Client for Pixelfed, the federated image sharing platform",
   "stores": {
@@ -9725,6 +10125,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.theveloper.pixelplay.png",
   "subcategory": "Music player",
   "description": "Privacy-first music player, Material 3 Expressive",
   "stores": {
@@ -9752,6 +10153,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ceui.pixiv.png",
   "subcategory": "Art client",
   "description": "Third-party Pixiv client",
   "stores": {
@@ -9779,6 +10181,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.ismartcoding.plain.png",
   "subcategory": "System",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -9808,6 +10211,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.planes.android.png",
   "subcategory": "Board",
   "description": "Planes Android is a variant of the Battleships game for Android",
   "stores": {
@@ -9835,6 +10239,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.game.plutonic.png",
   "subcategory": "Shooter",
   "description": "Suika physics-based planet shooter",
   "stores": {
@@ -9864,6 +10269,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.catrobat.paintroid.png",
   "subcategory": "Image editor",
   "description": "Draw and edit images.",
   "stores": {
@@ -9893,12 +10299,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ac.mdiq.Podcini.A.png",
   "subcategory": "Podcast player",
   "description": "AntennaPod fork with a different UI philosophy.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/ac.mdiq.podcini.A",
    "github": "https://github.com/XilinJia/Podcini.A",
    "openapk": "https://www.openapk.net/podcini-a-extensible-media-instrument/ac.mdiq.Podcini.A/"
   },
@@ -9922,6 +10329,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.podiumpodcasts.podium.png",
   "subcategory": "Podcast player",
   "description": "A modern, open-source podcast app for Android.",
   "stores": {
@@ -9951,6 +10359,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.excp.podroid.png",
   "subcategory": "Podcast player",
   "description": "Podcast player",
   "stores": {
@@ -9978,6 +10387,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.podverse.fdroid.png",
   "subcategory": "Podcast player",
   "description": "Podcast app with value4value / Podcasting 2.0 support.",
   "stores": {
@@ -9993,8 +10403,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Podverse - Podcast Player ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Pomodorot",
@@ -10007,6 +10417,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.pomodorot.png",
   "subcategory": "Alarm clock",
   "description": "A simple timer which pauses when not in view",
   "stores": {
@@ -10036,6 +10447,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.ppsspp.ppsspp.png",
   "subcategory": "Emulator",
   "description": "PSP emulator. DOUBT: a paid 'PPSSPP Gold' app exists on Play, but it is donation-identical (same features)",
   "stores": {
@@ -10063,6 +10475,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kaleedtc.privacium.png",
   "subcategory": "",
   "description": "A simple app for discovering tools that respects your privacy.",
   "stores": {
@@ -10090,17 +10503,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.timeto.app.png",
   "subcategory": "Tasks",
   "description": "I built this app to manage my productivity",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.timeto.app",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/Medvedev91/timeto.me",
    "openapk": null
   },
   "rating": 5.0,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -10117,6 +10533,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.pslab.png",
   "subcategory": "Learning",
   "description": "Science Experiments with your Phone and PSLab: Oscilloscope, Multimeter + more",
   "stores": {
@@ -10144,6 +10561,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.jherkenhoff.qalculate.png",
   "subcategory": "Calculator",
   "description": "Powerful and versatile multi-purpose calculator",
   "stores": {
@@ -10173,6 +10591,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.bartuzen.qbitcontroller.png",
   "subcategory": "",
   "description": "Remotely control qBittorrent from any device",
   "stores": {
@@ -10202,6 +10621,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.annie.dictionary.fork.png",
   "subcategory": "Dictionary",
   "description": "A dictionary application for dictionaries in StarDict format.",
   "stores": {
@@ -10231,6 +10651,7 @@
    "no_subs": true
   },
   "icon_svg": "<svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect x=\"4\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"18\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"4\" y=\"18\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"7\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"21\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"7\" y=\"21\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"18\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"23\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"18\" y=\"23\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"25\" y=\"25\" width=\"3\" height=\"3\" fill=\"#0f766e\"/></svg>",
+  "icon": null,
   "subcategory": "QR codes",
   "description": "A free offline Android app that keeps QR codes for the people, places, and things you actually need: vCards, guest Wi-Fi, saved addresses. Searchable library with color labels, present mode (full-screen QR at max brightness), a dynamic editor for 9 card types, per-card launcher shortcuts, and PNG/SVG export. No ads, no accounts, fully offline.",
   "stores": {
@@ -10262,6 +10683,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/qr.qrcode.barcode.scanner.reader.png",
   "subcategory": "QR/barcode scanner",
   "description": "QR code & barcode scanner, reader, all code generator, fast scan",
   "stores": {
@@ -10289,6 +10711,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/qr.code.scanner.qr.code.reader.png",
   "subcategory": "QR/barcode scanner",
   "description": "Extremely easy to use QR Code Scanner and Barcode Scanner",
   "stores": {
@@ -10316,6 +10739,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.quietgrid.app.png",
   "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -10346,6 +10770,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.quillpad.png",
   "subcategory": "Notes",
   "description": "Markdown notes, task lists, Nextcloud sync and more",
   "stores": {
@@ -10373,6 +10798,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.aicodix.rattlegram.png",
   "subcategory": "Messaging",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -10400,6 +10826,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.x0b.rcx.png",
   "subcategory": "File Sync",
   "description": "A file manager for Android, using rclone for the heavy lifting.",
   "stores": {
@@ -10429,6 +10856,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.readera.png",
   "subcategory": "Ebook reader",
   "description": "E-book and document reader.",
   "stores": {
@@ -10456,6 +10884,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.bilingify.readest.png",
   "subcategory": "Ebook reader",
   "description": "Ebook reader with powerful features, intuitive UI",
   "stores": {
@@ -10469,8 +10898,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Readest: EPUB \\u0026 PDF Reader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "ReadYou",
@@ -10483,6 +10912,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.ash.reader.png",
   "subcategory": "RSS reader",
   "description": "RSS reader with a modern interface.",
   "stores": {
@@ -10512,6 +10942,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.jmstudios.redmoon.png",
   "subcategory": "Screen filter",
   "description": "Screen filter for night time phone use",
   "stores": {
@@ -10541,6 +10972,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.quantumbadger.redreader.png",
   "subcategory": "Reddit",
   "description": "Client for reddit.com.",
   "stores": {
@@ -10570,6 +11002,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.pranav.reef.png",
   "subcategory": "",
   "description": "Boost focus by pausing apps, setting limits, and managing distractions.",
   "stores": {
@@ -10597,12 +11030,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.samyak.repostore.png",
   "subcategory": "App store",
   "description": "Discover, install, and update Android apps directly from GitHub releases.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.samyak.repostore",
    "github": "https://github.com/samyak2403/RepoStore",
    "openapk": null
   },
@@ -10626,6 +11060,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.retroarch.png",
   "subcategory": "Emulator",
   "description": "Retro games and emulators frontend",
   "stores": {
@@ -10653,6 +11088,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.adilhanney.ricochlime.png",
   "subcategory": "Shooter",
   "description": "Satisfying monster shooter",
   "stores": {
@@ -10668,8 +11104,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Ricochlime ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Roue Libre",
@@ -10682,6 +11118,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.mgdx.rouelibre.png",
   "subcategory": "Maps",
   "description": "Bike sharing: offline map and journeys, with no tracker.",
   "stores": {
@@ -10711,6 +11148,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.chiller3.rsaf.png",
   "subcategory": "Files",
   "description": "An Android Storage Access Framework document provider for rclone",
   "stores": {
@@ -10740,6 +11178,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/nie.translator.rtranslator.png",
   "subcategory": "Translation",
   "description": "Fully offline real-time translation (Whisper + Meta NLLB run on-device); no account, no network needed.",
   "stores": {
@@ -10770,6 +11209,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/rs.ruffle.png",
   "subcategory": "Emulator",
   "description": "An Android application for ruffle.rs",
   "stores": {
@@ -10799,6 +11239,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.dianqk.ruslin.png",
   "subcategory": "Notes",
   "description": "A note application that supports syncing using a self-hosted Joplin server.",
   "stores": {
@@ -10828,17 +11269,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.carriez.flutter_hbb.png",
   "subcategory": "Remote desktop",
   "description": "Open-source remote desktop (RustDesk), the open TeamViewer alternative",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/rustdesk/rustdesk",
    "openapk": "https://www.openapk.net/rustdesk/com.carriez.flutter_hbb/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -10855,10 +11299,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.adilhanney.saber.png",
   "subcategory": "Notes",
   "description": "The notes app built for handwriting",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.adilhanney.saber",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/saber-notes/saber",
@@ -10884,6 +11329,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.sec.android.app.popupcalculator.png",
   "subcategory": "Calculator",
   "description": "This app provides the four fundamental operations and engineering calculations",
   "stores": {
@@ -10911,6 +11357,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.samsung.android.app.notes.png",
   "subcategory": "Notes",
   "description": "Samsung Notes can create and edit documents and collaborate with others",
   "stores": {
@@ -10938,6 +11385,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.elishaazaria.sayboard.png",
   "subcategory": "Keyboard",
   "description": "An open-source on-device voice IME (keyboard) for Android using the Vosk library",
   "stores": {
@@ -10967,6 +11415,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dmi3dmi3.saywhen.png",
   "subcategory": "Calendar",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -10996,10 +11445,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.spiritcroc.riotx.png",
   "subcategory": "Messaging",
   "description": "Secure messenger for Matrix with a traditional instant messaging experience",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=de.spiritcroc.riotx",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/SchildiChat/SchildiChat-android",
@@ -11025,10 +11475,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/chat.schildi.android.png",
   "subcategory": "Messaging",
   "description": "Next-generation SchildiChat Matrix messenger based on Element X",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=chat.schildi.android",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/SchildiChat/schildichat-android-next",
@@ -11054,6 +11505,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.darken.sdmse.png",
   "subcategory": "",
   "description": "A trusted assistant for your Android, to keep it clean and tidy.",
   "stores": {
@@ -11083,17 +11535,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.junkfood.seal.png",
   "subcategory": "Downloader",
   "description": "Video/audio downloader (yt-dlp) with Material You design",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/JunkFood02/Seal",
    "openapk": "https://www.openapk.net/seal/com.junkfood.seal/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -11110,6 +11565,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.grapheneos.camera.png",
   "subcategory": "Camera",
   "description": "GrapheneOS camera focused on privacy and security, with QR scanning",
   "stores": {
@@ -11137,6 +11593,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.companyname.andriodapp1.png",
   "subcategory": "",
   "description": "An unofficial Soulseek client.",
   "stores": {
@@ -11164,6 +11621,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.battlelancer.seriesguide.png",
   "subcategory": "TV tracker",
   "description": "TV show tracker, fully offline-capable",
   "stores": {
@@ -11193,6 +11651,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.shatteredpixel.shatteredpixeldungeon.png",
   "subcategory": "Roguelike",
   "description": "A polished turn-based roguelike: descend, loot, die, try again.",
   "stores": {
@@ -11208,8 +11667,8 @@
   },
   "made_by_us": false,
   "per_badge": true,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Shattered Pixel Dungeon ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Shelter",
@@ -11222,6 +11681,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.typeblog.shelter.png",
   "subcategory": "Isolation",
   "description": "Isolates apps using Android's work profile.",
   "stores": {
@@ -11252,6 +11712,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/moe.shizuku.privileged.api.png",
   "subcategory": "System",
   "description": "Lets apps use system APIs via adb/root privileges",
   "stores": {
@@ -11279,6 +11740,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.michaldrabik.showly2.png",
   "subcategory": "",
   "description": "An open source TV Shows & Movies tracker app that works with Trakt",
   "stores": {
@@ -11306,6 +11768,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.siftrecipes.png",
   "subcategory": "Recipes",
   "description": "Minimalist open-source recipe keeper",
   "stores": {
@@ -11333,6 +11796,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.gmail.blandilyte.silverdict.png",
   "subcategory": "Ebook reader",
   "description": "Android client of the SilverDict dictionary server",
   "stores": {
@@ -11362,6 +11826,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/name.boyle.chris.sgtpuzzles.png",
   "subcategory": "Puzzle",
   "description": "Over 40 of Simon Tatham's logic puzzles in one app.",
   "stores": {
@@ -11391,6 +11856,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.better.alarm.png",
   "subcategory": "Alarm clock",
   "description": "Improved alarm clock",
   "stores": {
@@ -11420,6 +11886,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/rkr.simplekeyboard.inputmethod.png",
   "subcategory": "Keyboard",
   "description": "Minimal LatinIME fork, fully offline.",
   "stores": {
@@ -11450,6 +11917,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.razeeman.util.simpletimetracker.png",
   "subcategory": "Time tracker",
   "description": "Time tracker for work, study, and building better daily habits",
   "stores": {
@@ -11477,6 +11945,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/chat.simplex.app.png",
   "subcategory": "Messaging",
   "description": "E2E messenger with no user IDs at all",
   "stores": {
@@ -11490,8 +11959,8 @@
   "attrs": {},
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (SimpleX Chat ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Simply Scored",
@@ -11504,6 +11973,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.fpuellen.simplyscored.png",
   "subcategory": "Scorekeeper",
   "description": "Track your game scores easily.",
   "stores": {
@@ -11533,6 +12003,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/github.maxrave-dev.simpmusic.png",
   "subcategory": "Music player",
   "description": "YouTube-Music-backed music streaming",
   "stores": {
@@ -11560,6 +12031,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/free.rm.skytube.oss.png",
   "subcategory": "Video player",
   "description": "An ad-free and open-source YouTube client.",
   "stores": {
@@ -11589,12 +12061,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.tmo1.sms_ie.png",
   "subcategory": "SMS",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.github.tmo1.sms_ie",
    "github": "https://github.com/tmo1/sms-ie",
    "openapk": null
   },
@@ -11618,6 +12091,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.niksoftware.snapseed.png",
   "subcategory": "Image editor",
   "description": "Google's free photo editor, no account needed.",
   "stores": {
@@ -11647,6 +12121,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.snikket.android.png",
   "subcategory": "Video player",
   "description": "Personal messaging app for groups, with a self-hostable open-source server",
   "stores": {
@@ -11676,17 +12151,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/oss.krtirtho.spotube.png",
   "subcategory": "Music streaming",
   "description": "Lightweight Spotify client that needs no Spotify Premium. DOUBT: grey-area use of Spotify streams",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/KRTirtho/spotube",
    "openapk": "https://www.openapk.net/spotube/oss.krtirtho.spotube/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": true,
@@ -11703,6 +12181,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.standardnotes.png",
   "subcategory": "Notes",
   "description": "Standard Notes is a secure and private notes app",
   "stores": {
@@ -11730,12 +12209,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nvllz.stepsy.png",
   "subcategory": "Pedometer",
   "description": "Your lightweight step counting buddy",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.nvllz.stepsy",
    "github": "https://github.com/nvllz/stepsy",
    "openapk": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
   },
@@ -11759,6 +12239,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.cweb.messenger.png",
   "subcategory": "Video player",
   "description": "A self-hosted P2P messenger - you will need an S3 bucket to use it",
   "stores": {
@@ -11788,12 +12269,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.likhithpraveenk.storii.png",
   "subcategory": "Music player",
   "description": "Audiobookshelf client with downloads, accurate playback sync, and Android Auto",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.likhithpraveenk.storii",
    "github": "https://github.com/likhithpraveenk/storii",
    "openapk": null
   },
@@ -11817,17 +12299,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.westnordost.streetcomplete.png",
   "subcategory": "OSM",
   "description": "Easy OpenStreetMap surveyor/editor for Android",
   "stores": {
-   "play": null,
-   "fdroid": false,
+   "play": "https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete",
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/streetcomplete/StreetComplete",
    "openapk": "https://www.openapk.net/streetcomplete/de.westnordost.streetcomplete/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -11844,6 +12329,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.likhithpraveenk.sudoku.png",
   "subcategory": "Puzzle",
   "description": "A clean Sudoku app with logic-based difficulty and helpful assists",
   "stores": {
@@ -11873,6 +12359,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.galaxyrio.sudokusolver.png",
   "subcategory": "Sudoku",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -11903,6 +12390,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.superproductivity.superproductivity.png",
   "subcategory": "Tasks",
   "description": "To-do list and time tracker aimed at programmers and designers",
   "stores": {
@@ -11930,17 +12418,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.serwylo.retrowars.png",
   "subcategory": "Arcade",
   "description": "Play retro games against each other online in any combination",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.serwylo.retrowars",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/retrowars/retrowars",
    "openapk": null
   },
   "rating": 4.5,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -11957,6 +12448,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.supertuxkart.stk.png",
   "subcategory": "Racing",
   "description": "Kart racing with Tux and friends, single and multiplayer.",
   "stores": {
@@ -11986,10 +12478,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.myAllVideoBrowser.png",
   "subcategory": "Downloads",
   "description": "Video downloader with browser for downloading videos from everywhere",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.myAllVideoBrowser",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/alexch33/super-video-downloader",
@@ -12015,6 +12508,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.ligi.survivalmanual.png",
   "subcategory": "Reference",
   "description": "Learn how to survive",
   "stores": {
@@ -12045,10 +12539,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ch.pec0ra.suspension_setup.png",
   "subcategory": "Notes",
   "description": "Track and manage your mountain bike suspension settings and their change history",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=ch.pec0ra.suspension_setup",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/pec0ra/suspension_setup",
@@ -12074,6 +12569,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.catfriend1.syncthingfork.png",
   "subcategory": "File Sync",
   "description": "Decentralized file sync between your devices.",
   "stores": {
@@ -12105,6 +12601,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.friesi23.mhabit.png",
   "subcategory": "",
   "description": "Boost your own habit growth with charts.",
   "stores": {
@@ -12134,6 +12631,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.tagspaces.mobileapp.png",
   "subcategory": "",
   "description": "Organize, tag and browse your files, photos and documents",
   "stores": {
@@ -12161,6 +12659,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.taler.wallet.fdroid.png",
   "subcategory": "Wallet",
   "description": "GNU Taler makes privacy-friendly online transactions fast and easy.",
   "stores": {
@@ -12190,6 +12689,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/cn.ac.lz233.tarnhelm.png",
   "subcategory": "URL tools",
   "description": "The magic to clean sharing links up",
   "stores": {
@@ -12217,21 +12717,24 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.tasks.png",
   "subcategory": "Tasks",
   "description": "Powerful to-do list/task manager (Astrid fork)",
   "stores": {
    "play": null,
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/tasks/tasks",
    "openapk": "https://www.openapk.net/tasks-org-open-source-to-do-lists-reminders/org.tasks/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Tasks.org: to-do list \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Termux",
@@ -12244,6 +12747,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.termux.png",
   "subcategory": "Terminal",
   "description": "Terminal emulator and Linux environment.",
   "stores": {
@@ -12273,6 +12777,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.wesnoth.Wesnoth.png",
   "subcategory": "Strategy",
   "description": "The classic turn-based fantasy strategy, full campaigns.",
   "stores": {
@@ -12302,6 +12807,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.theoneapp.png",
   "subcategory": "RPG",
   "description": "Application for managing a player's characters in the RPG The One Ring.",
   "stores": {
@@ -12331,12 +12837,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dessalines.thumbkey.png",
   "subcategory": "Keyboard",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.dessalines.thumbkey",
    "github": "https://github.com/dessalines/thumb-key",
    "openapk": null
   },
@@ -12360,6 +12867,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.tivi.png",
   "subcategory": "TV tracker",
   "description": "TV show tracking via Trakt",
   "stores": {
@@ -12387,6 +12895,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.k.todo.png",
   "subcategory": "Tasks",
   "description": "Secure offline To-Do & Notes with biometric lock.",
   "stores": {
@@ -12416,6 +12925,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.torproject.torservices.png",
   "subcategory": "VPN & Proxy",
   "description": "The simplest, fastest, smallest Tor proxy app (early test release)",
   "stores": {
@@ -12445,12 +12955,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.kollnig.missioncontrol.fdroid.png",
   "subcategory": "Ad Blocker",
   "description": "Monitors and blocks per-app trackers.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=net.kollnig.missioncontrol.play",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/net.kollnig.missioncontrol",
    "github": "https://github.com/TrackerControl/tracker-control-android",
    "openapk": null
   },
@@ -12474,17 +12985,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kylecorry.trail_sense.png",
   "subcategory": "Hiking",
   "description": "Use your phone's sensors to assist with wilderness treks",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/kylecorry31/Trail-Sense",
    "openapk": null
   },
   "rating": 4.6,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12501,17 +13015,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.bnyro.translate.png",
   "subcategory": "Translation",
   "description": "Material Design 3 translator supporting multiple engines",
   "stores": {
    "play": null,
-   "fdroid": false,
-   "izzy": null,
+   "fdroid": true,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.bnyro.translate",
    "github": "https://github.com/you-apps/TranslateYou",
    "openapk": "https://www.openapk.net/translate-you/com.bnyro.translate/"
   },
   "rating": null,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12528,6 +13045,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.grobox.liberario.png",
   "subcategory": "Transit",
   "description": "Free Public Transport Assistant without Ads or Tracking",
   "stores": {
@@ -12557,6 +13075,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.danefinlay.ttsutil.png",
   "subcategory": "Text to speech",
   "description": "Text-to-speech utility app for synthesising text into audible speech",
   "stores": {
@@ -12584,17 +13103,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.moekadu.tuner.png",
   "subcategory": "Music player",
   "description": "Tuner app for tuning musical instruments with features like: * Detect pitch based on autocorrelation and FFT spectrum",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.moekadu.tuner",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/thetwom/Tuner",
    "openapk": null
   },
   "rating": 4.7,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12611,10 +13133,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.keylesspalace.tusky.png",
   "subcategory": "Mastodon",
   "description": "Multi-account Mastodon client",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.keylesspalace.tusky",
    "fdroid": false,
    "izzy": null,
    "github": "https://github.com/tuskyapp/Tusky",
@@ -12638,6 +13161,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.afrikalan.tuxmath.png",
   "subcategory": "Educational",
   "description": "A very fun game to learn tables and practice calculation",
   "stores": {
@@ -12665,6 +13189,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.unciv.app.png",
   "subcategory": "Strategy",
   "description": "An open-source remake of Civilization V for your phone.",
   "stores": {
@@ -12694,6 +13219,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/juloo.keyboard2.png",
   "subcategory": "Keyboard",
   "description": "Lightweight and privacy-conscious virtual keyboard for Android.",
   "stores": {
@@ -12723,6 +13249,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.physphil.android.unitconverterultimate.png",
   "subcategory": "Unit converter",
   "description": "Convert between units with ease",
   "stores": {
@@ -12752,17 +13279,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.sadellie.unitto.png",
   "subcategory": "Calculator",
   "description": "Calculator, converter and more",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sadellie.unitto",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/sadellie/unitto",
    "openapk": null
   },
   "rating": 4.5,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12779,6 +13309,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.pwhs.universalinstaller.png",
   "subcategory": "App manager",
   "description": "Advanced APK & XAPK installer",
   "stores": {
@@ -12806,6 +13337,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.checkmk.unofficial_checkmk_monitoring.png",
   "subcategory": "Monitoring",
   "description": "Monitor CheckMK hosts and services on the go",
   "stores": {
@@ -12835,17 +13367,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/me.zhanghai.android.untracker.png",
   "subcategory": "URL tools",
   "description": "Remove tracking information before sharing links",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.untracker",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/zhanghai/Untracker",
    "openapk": null
   },
   "rating": 4.5,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,
@@ -12862,12 +13397,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.trianguloy.urlchecker.png",
   "subcategory": "URL tools",
   "description": "Allows analyzing (or sharing) URLs before opening them.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.trianguloy.urlchecker",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.trianguloy.urlchecker",
    "github": "https://github.com/TrianguloY/URLCheck",
    "openapk": null
   },
@@ -12891,6 +13427,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/ch.blinkenlights.android.vanilla.png",
   "subcategory": "Music player",
   "description": "Simple local music player.",
   "stores": {
@@ -12920,6 +13457,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.aeidolon.vaultexplorer.png",
   "subcategory": "Files",
   "description": "Encrypted container explorer: VeraCrypt, LUKS, BitLocker, Cryptomator, gocryptfs",
   "stores": {
@@ -12949,6 +13487,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.nikhil.yt.png",
   "subcategory": "",
   "description": "Premium ad-free YouTube Music client for Android",
   "stores": {
@@ -12976,6 +13515,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.github.wgh136.venera.png",
   "subcategory": "Comic reader",
   "description": "Comic reader w/ multiple sources",
   "stores": {
@@ -13003,6 +13543,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/dev.victorialauncher.png",
   "subcategory": "Launcher",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -13032,6 +13573,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.poupa.vinylmusicplayer.png",
   "subcategory": "Music player",
   "description": "Local music player.",
   "stores": {
@@ -13061,6 +13603,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.vivi.vivimusic.png",
   "subcategory": "",
   "description": "A Material 3 YouTube Music client for Android",
   "stores": {
@@ -13088,6 +13631,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.videolan.vlc.png",
   "subcategory": "Video player",
   "description": "The classic free media player — plays just about everything.",
   "stores": {
@@ -13117,6 +13661,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.ph1b.audiobook.png",
   "subcategory": "Audiobook player",
   "description": "Audiobook player with bookmarks and a sleep timer.",
   "stores": {
@@ -13146,6 +13691,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/app.vger.voyager.png",
   "subcategory": "Lemmy",
   "description": "Join the discussion",
   "stores": {
@@ -13161,8 +13707,8 @@
   },
   "made_by_us": false,
   "per_badge": true,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Voyager for Lemmy ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "Water Sort",
@@ -13175,6 +13721,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.sidhant.watersort.png",
   "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
@@ -13204,10 +13751,11 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.dreautall.waterflyiii.png",
   "subcategory": "Money",
   "description": "Unofficial App for Firefly III, an open source personal finance manager.",
   "stores": {
-   "play": null,
+   "play": "https://play.google.com/store/apps/details?id=com.dreautall.waterflyiii",
    "fdroid": true,
    "izzy": null,
    "github": "https://github.com/dreautall/waterfly-iii",
@@ -13233,6 +13781,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.parishod.watomatic.png",
   "subcategory": "",
   "description": "Auto reply bot for WhatsApp, FB Messenger and more soon",
   "stores": {
@@ -13248,8 +13797,8 @@
   },
   "made_by_us": false,
   "per_badge": false,
-  "needs_review": false,
-  "review_notes": ""
+  "needs_review": true,
+  "review_notes": "The Play Store build shows ads/in-app purchases (Atomatic ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
  },
  {
   "name": "WebLibre: Private Browser",
@@ -13262,6 +13811,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/eu.weblibre.gecko.png",
   "subcategory": "Browser",
   "description": "Browse privately, search locally",
   "stores": {
@@ -13289,6 +13839,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.woheller69.whobird.png",
   "subcategory": "Nature",
   "description": "Recognize birds by their sounds, anywhere in the world!",
   "stores": {
@@ -13318,6 +13869,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/org.wikipedia.png",
   "subcategory": "Reference",
   "description": "The official app for Wikipedia, the world’s largest source of information.",
   "stores": {
@@ -13345,12 +13897,13 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.rk.xededitor.png",
   "subcategory": "Code editor",
   "description": "Advanced Text Editor for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.rk.axion",
    "fdroid": true,
-   "izzy": null,
+   "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.rk.xededitor",
    "github": "https://github.com/Xed-Editor/Xed-Editor",
    "openapk": null
   },
@@ -13374,6 +13927,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.kingzcheung.xime.png",
   "subcategory": "Keyboard",
   "description": "A Rime-based Chinese IME for Wubi and Pinyin input",
   "stores": {
@@ -13403,6 +13957,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/io.github.saeeddev94.xray.png",
   "subcategory": "VPN & Proxy",
   "description": "Xray GUI Client For Android",
   "stores": {
@@ -13432,6 +13987,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/com.android.xrayfa.png",
   "subcategory": "VPN & Proxy",
   "description": "XrayFA is a fast, secure, and user-friendly Android client for Xray-core.",
   "stores": {
@@ -13461,6 +14017,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.turtton.ytalarm.png",
   "subcategory": "Alarm clock",
   "description": "A simple alarm application using ytdl-android.",
   "stores": {
@@ -13490,6 +14047,7 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/net.kaaass.zerotierfix.png",
   "subcategory": "VPN & Proxy",
   "description": "ZeroTier client",
   "stores": {
@@ -13517,17 +14075,20 @@
    "no_subs": true
   },
   "icon_svg": null,
+  "icon": "assets/icons/de.jrpie.android.launcher.png",
   "subcategory": "Personalization",
   "description": "Launch apps by swiping or pressing buttons",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.jrpie.android.launcher",
-   "fdroid": false,
+   "fdroid": true,
    "izzy": null,
    "github": "https://github.com/jrpie/Launcher",
    "openapk": null
   },
   "rating": 5.0,
-  "attrs": {},
+  "attrs": {
+   "open_source": true
+  },
   "made_by_us": false,
   "per_badge": false,
   "needs_review": false,

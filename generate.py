@@ -212,6 +212,11 @@ def clean_record(rec):
         "github": stores.get("github") or None,
         "openapk": stores.get("openapk") or None,
     }
+    # Self-hosted real icon when the icon hunt found one; otherwise the
+    # tile/detail page falls back to the letter tile.
+    icon_file = os.path.join(HERE, "assets", "icons", rec["package"] + ".png")
+    icon = ("assets/icons/" + rec["package"] + ".png"
+            if os.path.exists(icon_file) else None)
     return {
         "name": rec["name"],
         "package": rec["package"],
@@ -222,6 +227,7 @@ def clean_record(rec):
         # "Find apps with:" filters have real data if that ever changes.
         "promises": {"no_ads": True, "no_iap": True, "no_subs": True},
         "icon_svg": rec.get("icon_svg"),
+        "icon": icon,
         "subcategory": rec.get("subcategory") or "",
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
@@ -601,16 +607,23 @@ def build_detail(app, forms):
     pills = transparency_pills(app)
     pills_block = (f'<div class="transparency"><h2>Transparency</h2><div class="t-pills">\n{pills}\n</div></div>'
                    if pills else "")
-    icon = f"https://f-droid.org/repo/{esc(app['package'])}/en-US/icon.png"
+    # Real self-hosted icon when the icon hunt found one; otherwise the
+    # letter tile. (The old f-droid.org hotlink guessed a URL pattern that
+    # doesn't exist, so almost every app fell back to the letter.)
+    icon_src = ("/" + app["icon"]) if app.get("icon") else None
     letter = esc(app["name"][0].upper())
     if app.get("icon_svg"):
         icon_block = f'<span class="icon-wrap large">{app["icon_svg"]}</span>'
+    elif icon_src:
+        icon_block = (
+            '<span class="icon-wrap large">'
+            f'<img src="{icon_src}" alt="" loading="lazy" '
+            'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+            f'<span class="letter-tile" style="display:none">{letter}</span></span>')
     else:
         icon_block = (
             '<span class="icon-wrap large">'
-            f'<img src="{icon}" alt="" loading="lazy" '
-            'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
-            f'<span class="letter-tile" style="display:none">{letter}</span></span>')
+            f'<span class="letter-tile" style="display:flex">{letter}</span></span>')
     review = (f'<div class="review-note"><h2>Needs further review</h2>'
               f'<p>{esc(app["review_notes"] or "This listing hasn\u2019t been fully verified yet \u2014 help us check it.")}</p></div>'
               if app.get("needs_review") else "")
@@ -1619,13 +1632,18 @@ JS_CONTENT = r"""
 
   function tile(app) {
     var accent = ACCENTS[app.category] != null ? ACCENTS[app.category] : 210;
-    var icon = "https://f-droid.org/repo/" + encodeURIComponent(app.package) + "/en-US/icon.png";
     var letter = escHtml(app.name.charAt(0).toUpperCase());
-    var iconHtml = app.icon_svg
-      ? '<span class="icon-wrap">' + app.icon_svg + "</span>"
-      : '<span class="icon-wrap">' +
-        '<img src="' + icon + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+    var iconHtml;
+    if (app.icon_svg) {
+      iconHtml = '<span class="icon-wrap">' + app.icon_svg + "</span>";
+    } else if (app.icon) {
+      iconHtml = '<span class="icon-wrap">' +
+        '<img src="/' + escHtml(app.icon) + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
         '<span class="letter-tile" style="display:none">' + letter + "</span></span>";
+    } else {
+      iconHtml = '<span class="icon-wrap">' +
+        '<span class="letter-tile" style="display:flex">' + letter + "</span></span>";
+    }
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
