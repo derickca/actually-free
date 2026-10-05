@@ -21,7 +21,7 @@
 
   /* ---------- mode + theme (persisted, orthogonal) ------------------------- */
   var root = document.documentElement;
-  var MASCOTS = { playful: "/assets/mascot-playful.webp", geek: "/assets/mascot-geek.webp" };
+  var MASCOTS = { playful: "/assets/mascot-friendly.webp", geek: "/assets/mascot-geek.webp" };
   function applyMode(mode) {
     root.setAttribute("data-mode", mode);
     try { localStorage.setItem("af-mode", mode); } catch (e) {}
@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (6Pqc3k2QifKsSG961fHRcg==, replaced at build time) embedded separately,
+     the key (iHbZF4GDgWhJroHRhZGXgw==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "6Pqc3k2QifKsSG961fHRcg==";
+    var K = "iHbZF4GDgWhJroHRhZGXgw==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -277,9 +277,9 @@
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", attrs: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms & System": 160,
-                  "Utilities / Comms & System": 190 };
+  var state = { apps: [], query: "", cat: "", attrs: {}, sort: "name",
+                promises: { no_ads: true, no_iap: true, no_subs: true } };
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -334,13 +334,16 @@
     var accent = ACCENTS[app.category] != null ? ACCENTS[app.category] : 210;
     var icon = "https://f-droid.org/repo/" + encodeURIComponent(app.package) + "/en-US/icon.png";
     var letter = escHtml(app.name.charAt(0).toUpperCase());
+    var iconHtml = app.icon_svg
+      ? '<span class="icon-wrap">' + app.icon_svg + "</span>"
+      : '<span class="icon-wrap">' +
+        '<img src="' + icon + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+        '<span class="letter-tile" style="display:none">' + letter + "</span></span>";
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
-      '<span class="tile-top"><span class="icon-wrap">' +
-      '<img src="' + icon + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
-      '<span class="letter-tile" style="display:none">' + letter + "</span></span>" +
+      '<span class="tile-top">' + iconHtml +
       "<span><h3>" + escHtml(app.name) + "</h3>" +
       '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
       rating +
@@ -356,6 +359,9 @@
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (!app.attrs[k]) return false;
+      }
+      for (var pk in state.promises) {
+        if (!app.promises || !app.promises[pk]) return false;
       }
       return matches(app, q);
     });
@@ -423,6 +429,15 @@
       if (state.attrs[k]) delete state.attrs[k]; else state.attrs[k] = true;
       p.classList.toggle("on", !!state.attrs[k]);
       gcEvent("filter/" + k);
+      render();
+    });
+  });
+  document.querySelectorAll(".promise-chip").forEach(function (p) {
+    p.addEventListener("click", function () {
+      var k = p.getAttribute("data-promise");
+      if (state.promises[k]) delete state.promises[k]; else state.promises[k] = true;
+      p.classList.toggle("on", !!state.promises[k]);
+      gcEvent("promise/" + k);
       render();
     });
   });

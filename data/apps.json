@@ -4,6 +4,12 @@
   "package": "itkach.aard2",
   "slug": "itkach-aard2",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Dictionary",
   "description": "Offline dictionary",
   "stores": {
@@ -24,6 +30,12 @@
   "package": "org.adaway",
   "slug": "org-adaway",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Ad Blocker",
   "description": "System-wide ad blocker (root or local VPN).",
   "stores": {
@@ -43,6 +55,12 @@
   "package": "com.beemdevelopment.aegis",
   "slug": "com-beemdevelopment-aegis",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Authenticator",
   "description": "Two-factor authenticator (TOTP/HOTP).",
   "stores": {
@@ -62,6 +80,12 @@
   "package": "com.angrydoughnuts.android.alarmclock",
   "slug": "com-angrydoughnuts-android-alarmclock",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Alarm clock",
   "description": "An alarm clock",
   "stores": {
@@ -81,6 +105,12 @@
   "package": "com.amaze.filemanager",
   "slug": "com-amaze-filemanager",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "File manager",
   "description": "An open-source file manager following the Material Design guidelines.",
   "stores": {
@@ -100,6 +130,12 @@
   "package": "de.danoeh.antennapod",
   "slug": "de-danoeh-antennapod",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Podcast player",
   "description": "Full-featured podcast player.",
   "stores": {
@@ -119,6 +155,12 @@
   "package": "com.dimowner.audiorecorder",
   "slug": "com-dimowner-audiorecorder",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Audio recorder",
   "description": "Straightforward audio recorder.",
   "stores": {
@@ -138,6 +180,12 @@
   "package": "org.oxycblt.auxio",
   "slug": "org-oxycblt-auxio",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Music player",
   "description": "Local music player with a clean interface.",
   "stores": {
@@ -157,6 +205,12 @@
   "package": "com.atharok.barcodescanner",
   "slug": "com-atharok-barcodescanner",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "QR/barcode scanner",
   "description": "An open-source app that allows you to read and generate barcodes.",
   "stores": {
@@ -176,6 +230,12 @@
   "package": "de.markusfisch.android.binaryeye",
   "slug": "de-markusfisch-android-binaryeye",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "QR/barcode scanner",
   "description": "QR code and barcode scanner with no ads",
   "stores": {
@@ -195,6 +255,12 @@
   "package": "org.breezyweather",
   "slug": "org-breezyweather",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Weather",
   "description": "A feature-rich weather app with good visualizations and many sources.",
   "stores": {
@@ -214,6 +280,12 @@
   "package": "org.woheller69.level",
   "slug": "org-woheller69-level",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Bubble level",
   "description": "Spirit level and ruler",
   "stores": {
@@ -233,6 +305,12 @@
   "package": "com.capyreader.app",
   "slug": "com-capyreader-app",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "RSS reader",
   "description": "Modern RSS reader.",
   "stores": {
@@ -252,6 +330,12 @@
   "package": "com.vicolo.chrono",
   "slug": "com-vicolo-chrono",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Timer/stopwatch",
   "description": "Modern and powerful clock, alarms, timer and stopwatch.",
   "stores": {
@@ -271,6 +355,12 @@
   "package": "co.prestosole.clima",
   "slug": "co-prestosole-clima",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Weather",
   "description": "Beautiful, minimal, and fast weather app",
   "stores": {
@@ -290,6 +380,12 @@
   "package": "com.bobek.compass",
   "slug": "com-bobek-compass",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Compass",
   "description": "A simple and clean compass",
   "stores": {
@@ -309,6 +405,12 @@
   "package": "com.ferrarid.converterpro",
   "slug": "com-ferrarid-converterpro",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Unit converter",
   "description": "A simple, immediate and fast unit converter!",
   "stores": {
@@ -328,6 +430,12 @@
   "package": "com.dot.gallery",
   "slug": "com-dot-gallery",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Gallery",
   "description": "Simple photo gallery.",
   "stores": {
@@ -347,6 +455,12 @@
   "package": "ryey.easer.beta",
   "slug": "ryey-easer-beta",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "System",
   "description": "FOSS automation (Tasker alternative).",
   "stores": {
@@ -366,6 +480,12 @@
   "package": "ws.xsoh.etar",
   "slug": "ws-xsoh-etar",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Calendar",
   "description": "Etar is a material designed open source calendar, for everyone!",
   "stores": {
@@ -385,6 +505,12 @@
   "package": "org.fdroid.fdroid",
   "slug": "org-fdroid-fdroid",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "System",
   "description": "The FOSS app store itself belongs in the directory (it's how users find more actually-free apps).",
   "stores": {
@@ -404,6 +530,12 @@
   "package": "eu.faircode.email",
   "slug": "eu-faircode-email",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Email",
   "description": "Privacy-focused email client. The F-Droid build is fully unlocked.",
   "stores": {
@@ -423,6 +555,12 @@
   "package": "com.nononsenseapps.feeder.play",
   "slug": "com-nononsenseapps-feeder-play",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "RSS reader",
   "description": "RSS feed reader.",
   "stores": {
@@ -442,6 +580,12 @@
   "package": "org.mozilla.firefox",
   "slug": "org-mozilla-firefox",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Browser",
   "description": "The independent web browser.",
   "stores": {
@@ -459,6 +603,12 @@
   "package": "com.pdb82.flashlighttiramisu",
   "slug": "com-pdb82-flashlighttiramisu",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Flashlight",
   "description": "Flashlight with smoothly adjustable brightness.",
   "stores": {
@@ -478,6 +628,12 @@
   "package": "dev.patrickgold.florisboard",
   "slug": "dev-patrickgold-florisboard",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Keyboard",
   "description": "Privacy-focused keyboard.",
   "stores": {
@@ -497,6 +653,12 @@
   "package": "org.decsync.flym",
   "slug": "org-decsync-flym",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "RSS reader",
   "description": "DecSync fork of the Flym RSS reader.",
   "stores": {
@@ -516,6 +678,12 @@
   "package": "org.fossify.calendar",
   "slug": "org-fossify-calendar",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Calendar",
   "description": "Securely plan, schedule, and set reminders with our private calendar app.",
   "stores": {
@@ -535,6 +703,12 @@
   "package": "org.fossify.clock",
   "slug": "org-fossify-clock",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Alarm clock",
   "description": "Handy, lightweight, open-source clock app with essential features.",
   "stores": {
@@ -554,6 +728,12 @@
   "package": "org.fossify.contacts",
   "slug": "org-fossify-contacts",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Dialer & Contacts",
   "description": "Contacts manager.",
   "stores": {
@@ -573,6 +753,12 @@
   "package": "org.fossify.filemanager",
   "slug": "org-fossify-filemanager",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "File manager",
   "description": "Handy, lightweight, open-source file explorer with essential features.",
   "stores": {
@@ -592,6 +778,12 @@
   "package": "org.fossify.gallery",
   "slug": "org-fossify-gallery",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Gallery",
   "description": "Successor to Simple Gallery, privacy-focused.",
   "stores": {
@@ -611,6 +803,12 @@
   "package": "org.fossify.phone",
   "slug": "org-fossify-phone",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Dialer & Contacts",
   "description": "Dialer and phone app.",
   "stores": {
@@ -630,6 +828,12 @@
   "package": "org.fossify.messages",
   "slug": "org-fossify-messages",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "SMS & Messaging",
   "description": "Text messaging, minus the noise.",
   "stores": {
@@ -649,6 +853,12 @@
   "package": "org.fossify.voicerecorder",
   "slug": "org-fossify-voicerecorder",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Audio recorder",
   "description": "Voice recorder — offline, local storage.",
   "stores": {
@@ -669,6 +879,12 @@
   "package": "com.studio4plus.homerplayer2",
   "slug": "com-studio4plus-homerplayer2",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Audiobook player",
   "description": "Audiobook player designed for seniors — ultra-simple UI.",
   "stores": {
@@ -688,6 +904,12 @@
   "package": "com.kunzisoft.keepass.libre",
   "slug": "com-kunzisoft-keepass-libre",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Password Manager",
   "description": "Password manager (KeePass-compatible).",
   "stores": {
@@ -709,6 +931,12 @@
   "package": "fr.neamar.kiss",
   "slug": "fr-neamar-kiss",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Launcher",
   "description": "Minimal search-based launcher.",
   "stores": {
@@ -728,6 +956,12 @@
   "package": "com.chooloo.www.koler",
   "slug": "com-chooloo-www-koler",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Dialer & Contacts",
   "description": "Simple phone dialer.",
   "stores": {
@@ -747,6 +981,12 @@
   "package": "org.koreader.launcher.fdroid",
   "slug": "org-koreader-launcher-fdroid",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Ebook reader",
   "description": "Document reader for e-books and PDFs.",
   "stores": {
@@ -766,6 +1006,12 @@
   "package": "app.lawnchair",
   "slug": "app-lawnchair",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Launcher",
   "description": "Customizable Pixel-style launcher.",
   "stores": {
@@ -783,6 +1029,12 @@
   "package": "io.gitlab.coolreader_ng.lxreader.fdroid",
   "slug": "io-gitlab-coolreader-ng-lxreader-fdroid",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Ebook reader",
   "description": "E-book reader (a CoolReader NG fork).",
   "stores": {
@@ -802,6 +1054,12 @@
   "package": "net.gsantner.markor",
   "slug": "net-gsantner-markor",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Notes",
   "description": "Text editor - Notes & ToDo. Lightweight. Markdown and todo.txt support.",
   "stores": {
@@ -821,6 +1079,12 @@
   "package": "me.zhanghai.android.files",
   "slug": "me-zhanghai-android-files",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "File manager",
   "description": "Open source Material Design file manager",
   "stores": {
@@ -840,6 +1104,12 @@
   "package": "co.garmax.materialflashlight",
   "slug": "co-garmax-materialflashlight",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Flashlight",
   "description": "Flashlight with some cool features",
   "stores": {
@@ -859,6 +1129,12 @@
   "package": "is.xyz.mpv",
   "slug": "is-xyz-mpv",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Video player",
   "description": "Minimalist, powerful player.",
   "stores": {
@@ -878,6 +1154,12 @@
   "package": "eu.faircode.netguard",
   "slug": "eu-faircode-netguard",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Firewall",
   "description": "Firewall that blocks internet access per app. The F-Droid build is fully unlocked.",
   "stores": {
@@ -897,6 +1179,12 @@
   "package": "org.schabi.newpipe",
   "slug": "org-schabi-newpipe",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Video player",
   "description": "Lightweight YouTube app — no account, no ads.",
   "stores": {
@@ -917,6 +1205,12 @@
   "package": "dev.anilbeesetti.nextplayer",
   "slug": "dev-anilbeesetti-nextplayer",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Video player",
   "description": "A clean, simple video player.",
   "stores": {
@@ -936,6 +1230,12 @@
   "package": "com.nextcloud.client",
   "slug": "com-nextcloud-client",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "File Sync",
   "description": "File sync client (connects to a Nextcloud server).",
   "stores": {
@@ -955,6 +1255,12 @@
   "package": "com.omgodse.notally",
   "slug": "com-omgodse-notally",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Notes",
   "description": "A simple and elegant open source notes app",
   "stores": {
@@ -974,6 +1280,12 @@
   "package": "org.courville.nova",
   "slug": "org-courville-nova",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Video player",
   "description": "Video player with network streaming support.",
   "stores": {
@@ -993,6 +1305,12 @@
   "package": "net.sourceforge.opencamera",
   "slug": "net-sourceforge-opencamera",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Camera",
   "description": "Open-source camera app with manual controls.",
   "stores": {
@@ -1012,6 +1330,12 @@
   "package": "org.dslul.openboard.inputmethod.latin",
   "slug": "org-dslul-openboard-inputmethod-latin",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Keyboard",
   "description": "Open-source keyboard based on AOSP.",
   "stores": {
@@ -1032,6 +1356,12 @@
   "package": "com.darkempire78.opencalculator",
   "slug": "com-darkempire78-opencalculator",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Calculator",
   "description": "Simple and beautiful calculator for Android",
   "stores": {
@@ -1051,6 +1381,12 @@
   "package": "org.dmfs.tasks",
   "slug": "org-dmfs-tasks",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "To-do lists",
   "description": "Keep track of your list of goals",
   "stores": {
@@ -1070,6 +1406,12 @@
   "package": "org.secuso.privacyfriendlyactivitytracker",
   "slug": "org-secuso-privacyfriendlyactivitytracker",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Pedometer",
   "description": "Counts your steps in the background. Customize daily goals.",
   "stores": {
@@ -1089,6 +1431,12 @@
   "package": "dnsfilter.android",
   "slug": "dnsfilter-android",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Ad Blocker",
   "description": "Local DNS filter, no root.",
   "stores": {
@@ -1108,6 +1456,12 @@
   "package": "player.phonograph.plus",
   "slug": "player-phonograph-plus",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Music player",
   "description": "Material-design local music player (a Phonograph fork).",
   "stores": {
@@ -1127,6 +1481,12 @@
   "package": "org.catrobat.paintroid",
   "slug": "org-catrobat-paintroid",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Image editor",
   "description": "Draw and edit images.",
   "stores": {
@@ -1146,6 +1506,12 @@
   "package": "ac.mdiq.Podcini.A",
   "slug": "ac-mdiq-podcini-a",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Podcast player",
   "description": "AntennaPod fork with a different UI philosophy.",
   "stores": {
@@ -1165,6 +1531,12 @@
   "package": "com.podverse.fdroid",
   "slug": "com-podverse-fdroid",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Podcast player",
   "description": "Podcast app with value4value / Podcasting 2.0 support.",
   "stores": {
@@ -1184,6 +1556,12 @@
   "package": "com.annie.dictionary.fork",
   "slug": "com-annie-dictionary-fork",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Dictionary",
   "description": "A dictionary application for dictionaries in StarDict format.",
   "stores": {
@@ -1203,6 +1581,12 @@
   "package": "derickca/qr-cards",
   "slug": "derickca-qr-cards",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": "<svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect x=\"4\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"18\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"4\" y=\"18\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"7\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"21\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"7\" y=\"21\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"18\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"23\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"18\" y=\"23\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"25\" y=\"25\" width=\"3\" height=\"3\" fill=\"#0f766e\"/></svg>",
   "subcategory": "QR codes",
   "description": "A free offline Android app that keeps QR codes for the people, places, and things you actually need: vCards, guest Wi-Fi, saved addresses. Searchable library with color labels, present mode (full-screen QR at max brightness), a dynamic editor for 9 card types, per-card launcher shortcuts, and PNG/SVG export. No ads, no accounts, fully offline.",
   "stores": {
@@ -1224,6 +1608,12 @@
   "package": "org.readera",
   "slug": "org-readera",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Ebook reader",
   "description": "E-book and document reader.",
   "stores": {
@@ -1241,6 +1631,12 @@
   "package": "me.ash.reader",
   "slug": "me-ash-reader",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "RSS reader",
   "description": "RSS reader with a modern interface.",
   "stores": {
@@ -1260,6 +1656,12 @@
   "package": "net.typeblog.shelter",
   "slug": "net-typeblog-shelter",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Privacy Tools",
   "description": "Isolates apps using Android's work profile.",
   "stores": {
@@ -1280,6 +1682,12 @@
   "package": "com.better.alarm",
   "slug": "com-better-alarm",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Alarm clock",
   "description": "Improved alarm clock",
   "stores": {
@@ -1299,6 +1707,12 @@
   "package": "rkr.simplekeyboard.inputmethod",
   "slug": "rkr-simplekeyboard-inputmethod",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Keyboard",
   "description": "Minimal LatinIME fork, fully offline.",
   "stores": {
@@ -1319,6 +1733,12 @@
   "package": "com.niksoftware.snapseed",
   "slug": "com-niksoftware-snapseed",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Image editor",
   "description": "Google's free photo editor, no account needed.",
   "stores": {
@@ -1338,6 +1758,12 @@
   "package": "com.nvllz.stepsy",
   "slug": "com-nvllz-stepsy",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Pedometer",
   "description": "Your lightweight step counting buddy",
   "stores": {
@@ -1357,6 +1783,12 @@
   "package": "com.github.catfriend1.syncthingfork",
   "slug": "com-github-catfriend1-syncthingfork",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "File Sync",
   "description": "Decentralized file sync between your devices.",
   "stores": {
@@ -1378,6 +1810,12 @@
   "package": "com.termux",
   "slug": "com-termux",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "System",
   "description": "Terminal emulator and Linux environment.",
   "stores": {
@@ -1397,6 +1835,12 @@
   "package": "net.kollnig.missioncontrol.fdroid",
   "slug": "net-kollnig-missioncontrol-fdroid",
   "category": "Comms",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Ad Blocker",
   "description": "Monitors and blocks per-app trackers.",
   "stores": {
@@ -1416,6 +1860,12 @@
   "package": "com.physphil.android.unitconverterultimate",
   "slug": "com-physphil-android-unitconverterultimate",
   "category": "Utilities",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Unit converter",
   "description": "Convert between units with ease",
   "stores": {
@@ -1435,6 +1885,12 @@
   "package": "ch.blinkenlights.android.vanilla",
   "slug": "ch-blinkenlights-android-vanilla",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Music player",
   "description": "Simple local music player.",
   "stores": {
@@ -1454,6 +1910,12 @@
   "package": "com.poupa.vinylmusicplayer",
   "slug": "com-poupa-vinylmusicplayer",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Music player",
   "description": "Local music player.",
   "stores": {
@@ -1473,6 +1935,12 @@
   "package": "org.videolan.vlc",
   "slug": "org-videolan-vlc",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Video player",
   "description": "The classic free media player — plays just about everything.",
   "stores": {
@@ -1492,6 +1960,12 @@
   "package": "de.ph1b.audiobook",
   "slug": "de-ph1b-audiobook",
   "category": "Media",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
   "subcategory": "Audiobook player",
   "description": "Audiobook player with bookmarks and a sleep timer.",
   "stores": {

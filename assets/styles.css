@@ -146,6 +146,24 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 0.95rem;
 }
 .promise-label { font-weight: 700; margin-right: 8px; }
+.promise-chip {
+  border: 1px solid var(--good);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  margin: 2px 4px 2px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.promise-chip.on { background: var(--good); border-color: var(--good); color: #fff; }
+:root[data-theme="dark"] .promise-chip.on { color: #0c2214; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .promise-chip.on { color: #0c2214; }
+}
 .lock { color: var(--good); font-weight: 700; white-space: nowrap; }
 
 /* ---------- controls ---------- */
@@ -223,6 +241,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   display: flex; align-items: center; justify-content: center;
 }
 .icon-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.icon-wrap svg { width: 100%; height: 100%; display: block; }
 .icon-wrap.large { width: 84px; height: 84px; flex-basis: 84px; border-radius: 20px; }
 .letter-tile {
   width: 100%; height: 100%;

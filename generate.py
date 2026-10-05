@@ -26,6 +26,23 @@ PROMISES = ["No ads", "No in-app purchases", "No subscriptions"]
 PER_BADGE_NOTE = ("The Play Store version of this app carries ads or in-app "
                   "purchases, so we only list the clean build.")
 
+# The QR Cards glyph: same logo in the site header app-icon, the directory
+# tile, and the detail page heading.
+QR_GLYPH_SVG = (
+    '<svg viewBox="0 0 32 32" aria-hidden="true">'
+    '<rect x="4" y="4" width="10" height="10" rx="2" fill="#0f766e"/>'
+    '<rect x="18" y="4" width="10" height="10" rx="2" fill="#0f766e"/>'
+    '<rect x="4" y="18" width="10" height="10" rx="2" fill="#0f766e"/>'
+    '<rect x="7" y="7" width="4" height="4" rx="1" fill="#ffffff"/>'
+    '<rect x="21" y="7" width="4" height="4" rx="1" fill="#ffffff"/>'
+    '<rect x="7" y="21" width="4" height="4" rx="1" fill="#ffffff"/>'
+    '<rect x="18" y="18" width="3" height="3" fill="#0f766e"/>'
+    '<rect x="23" y="18" width="3" height="3" fill="#0f766e"/>'
+    '<rect x="18" y="23" width="3" height="3" fill="#0f766e"/>'
+    '<rect x="25" y="25" width="3" height="3" fill="#0f766e"/>'
+    "</svg>"
+)
+
 QR_CARDS = {
     "name": "QR Cards",
     "package": "derickca/qr-cards",
@@ -38,6 +55,7 @@ QR_CARDS = {
     "notes": "",
     "status": "include",
     "made_by_us": True,
+    "icon_svg": QR_GLYPH_SVG,
     "description": ("A free offline Android app that keeps QR codes for the "
                     "people, places, and things you actually need: vCards, "
                     "guest Wi-Fi, saved addresses. Searchable library with "
@@ -171,6 +189,11 @@ def clean_record(rec):
         "package": rec["package"],
         "slug": slugify(rec["package"]),
         "category": CATEGORY_FIXUPS.get(rec.get("category"), rec.get("category") or "Utilities"),
+        # Money promises the listed build keeps. Every v1 listing satisfies
+        # all three (it's the inclusion bar); stored explicitly so the
+        # "Find apps with:" filters have real data if that ever changes.
+        "promises": {"no_ads": True, "no_iap": True, "no_subs": True},
+        "icon_svg": rec.get("icon_svg"),
         "subcategory": rec.get("subcategory") or "",
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
@@ -339,7 +362,7 @@ class NtfyForms:
 def head(title, description, og_path="", og_image=""):
     """<head> with SEO/OG basics. og_path like 'app/foo-bar.html' or ''."""
     url = SITE_URL + ("/" + og_path if og_path else "/")
-    img = (SITE_URL + "/assets/" + og_image) if og_image else SITE_URL + "/assets/mascot-playful.webp"
+    img = (SITE_URL + "/assets/" + og_image) if og_image else SITE_URL + "/assets/mascot-friendly.webp"
     return f"""<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -351,7 +374,7 @@ def head(title, description, og_path="", og_image=""):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Actually Free">
 <meta property="og:image" content="{esc(img)}">
-<link rel="icon" href="/assets/mascot-playful.webp">
+<link rel="icon" href="/assets/mascot-friendly.webp">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>"""
 
@@ -362,20 +385,6 @@ def site_header():
     No Directory/QR-Cards tab pair: QR Cards lives in the header as an
     Android-style app icon, and its detail page links back to the directory.
     """
-    qr_svg = (
-        '<svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">'
-        '<rect x="4" y="4" width="10" height="10" rx="2" fill="#0f766e"/>'
-        '<rect x="18" y="4" width="10" height="10" rx="2" fill="#0f766e"/>'
-        '<rect x="4" y="18" width="10" height="10" rx="2" fill="#0f766e"/>'
-        '<rect x="7" y="7" width="4" height="4" rx="1" fill="#ffffff"/>'
-        '<rect x="21" y="7" width="4" height="4" rx="1" fill="#ffffff"/>'
-        '<rect x="7" y="21" width="4" height="4" rx="1" fill="#ffffff"/>'
-        '<rect x="18" y="18" width="3" height="3" fill="#0f766e"/>'
-        '<rect x="23" y="18" width="3" height="3" fill="#0f766e"/>'
-        '<rect x="18" y="23" width="3" height="3" fill="#0f766e"/>'
-        '<rect x="25" y="25" width="3" height="3" fill="#0f766e"/>'
-        "</svg>"
-    )
     # Theme icons borrowed from FundingSpark: half-circle = follow system,
     # sun = light, moon = dark. Icon-only buttons keep the header to one row.
     theme_btns = "".join(
@@ -390,11 +399,11 @@ def site_header():
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/index.html">
-      <img id="mascot" src="/assets/mascot-playful.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
+      <img id="mascot" src="/assets/mascot-friendly.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
       <span class="brand-text"><strong>Actually Free</strong><em>{esc(TAGLINE)}</em></span>
     </a>
     <a class="qr-appicon" href="/app/derickca-qr-cards.html" title="QR Cards — a free app we made">
-      <span class="qr-appicon-glyph" aria-hidden="true">{qr_svg}</span>
+      <span class="qr-appicon-glyph" aria-hidden="true">{QR_GLYPH_SVG}</span>
       <span class="qr-appicon-label">QR Cards</span>
     </a>
     <div class="switchers">
@@ -411,9 +420,17 @@ def site_header():
 
 
 def promise_strip():
-    items = " &middot; ".join(f"<span class='lock'>\u2713 {esc(p)}</span>" for p in PROMISES)
-    return f"""<section class="promise-strip" aria-label="Our promise">
-  <span class="promise-label">Every app here:</span> {items}
+    # "Find apps with:" — the money promises as toggleable filters, ON by
+    # default. Framed as filters (not a universal guarantee) so a great app
+    # that breaks a single promise can still be listed one day.
+    chips = "\n".join(
+        f'    <button class="promise-chip on" data-promise="{v}">{t}</button>'
+        for v, t in [("no_ads", "No ads"),
+                     ("no_iap", "No in-app purchases"),
+                     ("no_subs", "No subscriptions")])
+    return f"""<section class="promise-strip" aria-label="Find apps with">
+  <span class="promise-label">Find apps with:</span>
+{chips}
 </section>"""
 
 
@@ -544,6 +561,14 @@ def build_detail(app, forms):
                    if pills else "")
     icon = f"https://f-droid.org/repo/{esc(app['package'])}/en-US/icon.png"
     letter = esc(app["name"][0].upper())
+    if app.get("icon_svg"):
+        icon_block = f'<span class="icon-wrap large">{app["icon_svg"]}</span>'
+    else:
+        icon_block = (
+            '<span class="icon-wrap large">'
+            f'<img src="{icon}" alt="" loading="lazy" '
+            'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+            f'<span class="letter-tile" style="display:none">{letter}</span></span>')
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -553,11 +578,7 @@ def build_detail(app, forms):
   <p><a class="back" href="/index.html">&larr; Back to the directory</a></p>
   <article class="detail-card">
     <div class="detail-head">
-      <span class="icon-wrap large">
-        <img src="{icon}" alt="" loading="lazy"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span class="letter-tile" style="display:none">{letter}</span>
-      </span>
+      {icon_block}
       <div>
         <h1>{esc(app["name"])} {ribbon}</h1>
         <p class="cat">{esc(app["category"])}{" \u00b7 " + esc(app["subcategory"]) if app["subcategory"] else ""}</p>
@@ -748,6 +769,24 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 0.95rem;
 }
 .promise-label { font-weight: 700; margin-right: 8px; }
+.promise-chip {
+  border: 1px solid var(--good);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  margin: 2px 4px 2px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.promise-chip.on { background: var(--good); border-color: var(--good); color: #fff; }
+:root[data-theme="dark"] .promise-chip.on { color: #0c2214; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .promise-chip.on { color: #0c2214; }
+}
 .lock { color: var(--good); font-weight: 700; white-space: nowrap; }
 
 /* ---------- controls ---------- */
@@ -825,6 +864,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   display: flex; align-items: center; justify-content: center;
 }
 .icon-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.icon-wrap svg { width: 100%; height: 100%; display: block; }
 .icon-wrap.large { width: 84px; height: 84px; flex-basis: 84px; border-radius: 20px; }
 .letter-tile {
   width: 100%; height: 100%;
@@ -1138,7 +1178,7 @@ JS_CONTENT = r"""
 
   /* ---------- mode + theme (persisted, orthogonal) ------------------------- */
   var root = document.documentElement;
-  var MASCOTS = { playful: "/assets/mascot-playful.webp", geek: "/assets/mascot-geek.webp" };
+  var MASCOTS = { playful: "/assets/mascot-friendly.webp", geek: "/assets/mascot-geek.webp" };
   function applyMode(mode) {
     root.setAttribute("data-mode", mode);
     try { localStorage.setItem("af-mode", mode); } catch (e) {}
@@ -1394,9 +1434,9 @@ JS_CONTENT = r"""
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", attrs: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms & System": 160,
-                  "Utilities / Comms & System": 190 };
+  var state = { apps: [], query: "", cat: "", attrs: {}, sort: "name",
+                promises: { no_ads: true, no_iap: true, no_subs: true } };
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -1451,13 +1491,16 @@ JS_CONTENT = r"""
     var accent = ACCENTS[app.category] != null ? ACCENTS[app.category] : 210;
     var icon = "https://f-droid.org/repo/" + encodeURIComponent(app.package) + "/en-US/icon.png";
     var letter = escHtml(app.name.charAt(0).toUpperCase());
+    var iconHtml = app.icon_svg
+      ? '<span class="icon-wrap">' + app.icon_svg + "</span>"
+      : '<span class="icon-wrap">' +
+        '<img src="' + icon + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+        '<span class="letter-tile" style="display:none">' + letter + "</span></span>";
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
-      '<span class="tile-top"><span class="icon-wrap">' +
-      '<img src="' + icon + '" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
-      '<span class="letter-tile" style="display:none">' + letter + "</span></span>" +
+      '<span class="tile-top">' + iconHtml +
       "<span><h3>" + escHtml(app.name) + "</h3>" +
       '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
       rating +
@@ -1473,6 +1516,9 @@ JS_CONTENT = r"""
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (!app.attrs[k]) return false;
+      }
+      for (var pk in state.promises) {
+        if (!app.promises || !app.promises[pk]) return false;
       }
       return matches(app, q);
     });
@@ -1540,6 +1586,15 @@ JS_CONTENT = r"""
       if (state.attrs[k]) delete state.attrs[k]; else state.attrs[k] = true;
       p.classList.toggle("on", !!state.attrs[k]);
       gcEvent("filter/" + k);
+      render();
+    });
+  });
+  document.querySelectorAll(".promise-chip").forEach(function (p) {
+    p.addEventListener("click", function () {
+      var k = p.getAttribute("data-promise");
+      if (state.promises[k]) delete state.promises[k]; else state.promises[k] = true;
+      p.classList.toggle("on", !!state.promises[k]);
+      gcEvent("promise/" + k);
       render();
     });
   });
