@@ -389,10 +389,10 @@ class NtfyForms:
 # Shared HTML fragments
 # ---------------------------------------------------------------------------
 
-def head(title, description, og_path="", og_image=""):
+def head(title, description, og_path="", og_image="og-share.png"):
     """<head> with SEO/OG basics. og_path like 'app/foo-bar.html' or ''."""
     url = SITE_URL + ("/" + og_path if og_path else "/")
-    img = (SITE_URL + "/assets/" + og_image) if og_image else SITE_URL + "/assets/mascot-friendly.webp"
+    img = SITE_URL + "/assets/" + og_image
     return f"""<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -404,6 +404,13 @@ def head(title, description, og_path="", og_image=""):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Actually Free">
 <meta property="og:image" content="{esc(img)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Actually Free — find the free apps they don't want you to see.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(description)}">
+<meta name="twitter:image" content="{esc(img)}">
 <link rel="icon" href="/assets/mascot-friendly.webp">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>"""
