@@ -475,6 +475,7 @@ def site_footer(forms):
     Not every store is equally trustworthy &mdash; download with judgment, use at your own risk.</p>
     <p class="footer-links">
       {suggest_link} &middot;
+      <a href="/what-is-free">What Is Free?</a> &middot;
       <a href="/">Directory</a> &middot;
       <a href="/app/derickca-qr-cards.html">QR Cards</a>
     </p>
@@ -677,9 +678,47 @@ def build_suggest(forms):
 """
 
 
+def build_free_bar(forms):
+    # "What Is Free?" — the quality bar, in plain words. Derick's copy.
+    return f"""<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+{head("What Is Free? \\u2014 Actually Free",
+      "What \\u201cactually free\\u201d means: no ads, nothing to buy inside the app, no subscriptions, no paid versions.",
+      og_path="what-is-free")}
+<body>
+{site_header()}
+<main class="detail">
+  <p><a class="back" href="/">&larr; Back to the directory</a></p>
+  <article class="detail-card">
+    <div class="detail-head">
+      <div>
+        <h1>What Do We Mean By Free?</h1>
+        <p class="cat">Every app listed here has to clear the same bar:</p>
+      </div>
+    </div>
+    <ul>
+      <li><strong>No ads.</strong> None. Not a banner, not a pop-up, not a &ldquo;sponsored&rdquo; anything.</li>
+      <li><strong>Nothing to buy inside the app.</strong> No extra levels, no coins, no unlocks.</li>
+      <li><strong>No subscriptions.</strong> No monthly charges, no free trials that turn into charges.</li>
+      <li><strong>No paid versions.</strong> No &ldquo;pro&rdquo; edition with the good features locked away.</li>
+      <li><strong>No paid server.</strong> A free client that depends on a paid or subscription service is not free.</li>
+    </ul>
+    <p>Requesting donations is fine &mdash; as long as everything works whether you donate or not.</p>
+    <p>We check app details before listing, but we have not installed or tested them all &mdash; use caution when installing.</p>
+    <p><strong>Why the list is short:</strong> most &ldquo;free&rdquo; apps aren't actually free. They show you ads or sell you things. We'd rather list a few hundred apps we trust than thousands we don't.</p>
+    <p>Know an app that belongs here? <a href="/suggest">Suggest it</a>. Spot one that broke the rules? Tell us and we'll pull it.</p>
+  </article>
+</main>
+{site_footer(forms)}
+</body>
+</html>
+"""
+
+
 def build_sitemap(apps):
     urls = [f"  <url><loc>{SITE_URL}/</loc></url>",
-            f"  <url><loc>{SITE_URL}/suggest</loc></url>"]
+            f"  <url><loc>{SITE_URL}/suggest</loc></url>",
+            f"  <url><loc>{SITE_URL}/what-is-free</loc></url>"]
     for app in apps:
         urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}.html</loc></url>")
     return ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
@@ -1853,7 +1892,7 @@ def build_sw(build_id):
     return f"""// Actually Free service worker — build {build_id}
 const CACHE = "actually-free-{build_id}";
 const PRECACHE = [
-  "/", "/suggest", "/manifest.webmanifest",
+  "/", "/suggest", "/what-is-free", "/manifest.webmanifest",
   "/assets/styles.css", "/assets/app.js", "/assets/config.js",
   "/assets/icon-192.png", "/assets/icon-512.png"
 ];
@@ -1921,6 +1960,7 @@ def main():
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
     write("index.html", build_index(apps, categories, forms))
     write("suggest.html", build_suggest(forms))
+    write("what-is-free.html", build_free_bar(forms))
     for app in apps:
         write(f"app/{app['slug']}.html", build_detail(app, forms))
     write("sitemap.xml", build_sitemap(apps))
