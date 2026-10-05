@@ -10,7 +10,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Tasks",
   "description": "Simple app to manage several lists from only one screen",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.lolo.io.onelist",
@@ -282,14 +282,14 @@
   "name": "Albi",
   "package": "ai.privatebydesign.albi",
   "slug": "ai-privatebydesign-albi",
-  "category": "Utilities",
+  "category": "Health",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Health",
+  "subcategory": "Health tracking",
   "description": "A health tracking app that respects your privacy",
   "stores": {
    "play": null,
@@ -338,7 +338,7 @@
   "name": "AndBible: Bible Study",
   "package": "net.bible.android.activity",
   "slug": "net-bible-android-activity",
-  "category": "Media",
+  "category": "Education",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -483,7 +483,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Transcription",
   "description": "Offline transcription of voice messages and recorded calls, on-device",
   "stores": {
    "play": null,
@@ -666,14 +666,14 @@
   "name": "Aria for Misskey",
   "package": "com.poppingmoon.aria",
   "slug": "com-poppingmoon-aria",
-  "category": "Comms",
+  "category": "Social",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Misskey",
   "description": "Dive into the interplanetary microblogging platform 🚀",
   "stores": {
    "play": null,
@@ -701,7 +701,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Puzzles",
+  "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
@@ -779,14 +779,14 @@
   "name": "Atrium",
   "package": "app.atrium",
   "slug": "app-atrium",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Media center",
   "description": "Control your self-hosted media stack from one app",
   "stores": {
    "play": null,
@@ -922,7 +922,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Remote desktop",
   "description": "Fast & Secure VNC client for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gaurav.avnc",
@@ -969,14 +969,14 @@
   "name": "Baly Groceries Tracker",
   "package": "com.baly_groceries_tracker.app",
   "slug": "com-baly-groceries-tracker-app",
-  "category": "Utilities",
+  "category": "Food",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Shopping list",
   "description": "Track your groceries, without worrying about running out.",
   "stores": {
    "play": null,
@@ -1081,14 +1081,14 @@
   "name": "BeatBridge: Bluetooth Music",
   "package": "com.beatbridge",
   "slug": "com-beatbridge",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Music streaming",
   "description": "Auto-play music when your Bluetooth car, headphones, or speakers connect.",
   "stores": {
    "play": null,
@@ -1170,7 +1170,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Calendar",
   "description": "A simple yet useful birthday / event calendar",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.minar.birday",
@@ -1299,14 +1299,14 @@
   "name": "BlueSound Controller",
   "package": "com.bluesound.bluesoundplayer",
   "slug": "com-bluesound-bluesoundplayer",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Remote control",
   "description": "Control BluOS and Sonos multi-room audio players on your network",
   "stores": {
    "play": null,
@@ -1435,14 +1435,14 @@
   "name": "Bunny Media Editor",
   "package": "eu.artectrex.bunny",
   "slug": "eu-artectrex-bunny",
-  "category": "Comms",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Image editor",
   "description": "Media editor: edit images and videos on your phone",
   "stores": {
    "play": null,
@@ -1470,7 +1470,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Calculator",
   "description": "The only calculator you'll ever need",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.math.bmi.scientific.calculator.converter.android",
@@ -1517,14 +1517,14 @@
   "name": "Cardabase",
   "package": "com.georgeyt9769.cardabase",
   "slug": "com-georgeyt9769-cardabase",
-  "category": "Utilities",
+  "category": "Finance",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Loyalty cards",
   "description": "Lightweight digital wallet to securely scan, store, and manage loyalty cards off",
   "stores": {
    "play": null,
@@ -1571,14 +1571,14 @@
   "name": "CClauncher",
   "package": "app.cclauncher",
   "slug": "app-cclauncher",
-  "category": "Comms",
+  "category": "Customization",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "System",
+  "subcategory": "Launcher",
   "description": "Minimal home launcher that hides apps by default to reduce distractions",
   "stores": {
    "play": null,
@@ -1829,7 +1829,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Terminal",
   "description": "SSH, Mosh, SFTP & local Linux terminal",
   "stores": {
    "play": null,
@@ -1906,14 +1906,14 @@
   "name": "Coppelia",
   "package": "com.matelsky.coppelia",
   "slug": "com-matelsky-coppelia",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Music player",
   "description": "Beautiful, native Jellyfin music player",
   "stores": {
    "play": null,
@@ -1995,7 +1995,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "System",
   "description": "CPU Info provides information about device hardware and software",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kgurgul.cpuinfo",
@@ -2129,7 +2129,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "File manager",
   "description": "File manager & storage cleaner app to provide easier management of files",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer",
@@ -2176,14 +2176,14 @@
   "name": "DataBackup",
   "package": "com.xayah.databackup.foss",
   "slug": "com-xayah-databackup-foss",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "System",
+  "subcategory": "Backup",
   "description": "Back up/Restore your data.",
   "stores": {
    "play": null,
@@ -2265,7 +2265,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Dev tools",
   "description": "Generate MD5, SHA and CRC32 hashes for files and text!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.codedead.deadhash",
@@ -2340,7 +2340,7 @@
   "name": "Dharmik - Browse Bhagavad Gita",
   "package": "com.shub39.dharmik.online",
   "slug": "com-shub39-dharmik-online",
-  "category": "Media",
+  "category": "Education",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2395,14 +2395,14 @@
   "name": "DNSNet",
   "package": "dev.clombardo.dnsnet",
   "slug": "dev-clombardo-dnsnet",
-  "category": "Utilities",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Firewall",
   "description": "DNSNet allows you to take more control over what internet traffic goes in and out of your device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.clombardo.dnsnet",
@@ -2482,7 +2482,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Gallery",
+  "subcategory": "Photos",
   "description": "Simple photo gallery.",
   "stores": {
    "play": null,
@@ -2503,14 +2503,14 @@
   "name": "Drawpile",
   "package": "net.drawpile",
   "slug": "net-drawpile",
-  "category": "Comms",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Graphics",
   "description": "A collaborative drawing program",
   "stores": {
    "play": null,
@@ -2587,14 +2587,14 @@
   "name": "Easer",
   "package": "ryey.easer.beta",
   "slug": "ryey-easer-beta",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "System",
+  "subcategory": "Automation",
   "description": "FOSS automation (Tasker alternative).",
   "stores": {
    "play": null,
@@ -2753,14 +2753,14 @@
   "name": "Energize",
   "package": "com.flasskamp.energize",
   "slug": "com-flasskamp-energize",
-  "category": "Comms",
+  "category": "Health",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Nutrition",
   "description": "Track your nutrition easily and fast.",
   "stores": {
    "play": null,
@@ -2844,7 +2844,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "System",
   "description": "Write operating system ISO images to USB drives, no root required",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.depau.etchdroid",
@@ -2863,14 +2863,14 @@
   "name": "Exclave",
   "package": "com.github.dyhkwong.sagernet",
   "slug": "com-github-dyhkwong-sagernet",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "Proxy client",
   "stores": {
    "play": null,
@@ -2891,14 +2891,14 @@
   "name": "Exodus",
   "package": "org.eu.exodus_privacy.exodusprivacy",
   "slug": "org-eu-exodus-privacy-exodusprivacy",
-  "category": "Utilities",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Privacy",
+  "subcategory": "Trackers",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.eu.exodus_privacy.exodusprivacy",
@@ -2919,14 +2919,14 @@
   "name": "F-Droid",
   "package": "org.fdroid.fdroid",
   "slug": "org-fdroid-fdroid",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "System",
+  "subcategory": "App store",
   "description": "The FOSS app store itself belongs in the directory (it's how users find more actually-free apps).",
   "stores": {
    "play": null,
@@ -3010,7 +3010,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Scanner",
   "description": "Scan a document and get a clean PDF you can save or share instantly",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fairscan.app",
@@ -3344,7 +3344,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "File manager",
   "description": "Clean up your phone, find files, play media, and share files offline",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files",
@@ -3417,14 +3417,14 @@
   "name": "FitBook",
   "package": "com.presley.fit_book",
   "slug": "com-presley-fit-book",
-  "category": "Utilities",
+  "category": "Health",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Health",
+  "subcategory": "Nutrition",
   "description": "Track your calorie intake - Completely offline!",
   "stores": {
    "play": null,
@@ -3504,7 +3504,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Flashlight",
   "description": "Modern flashlight app with dim functionality on Android 13+",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.cyb3rko.flashdim",
@@ -3553,14 +3553,14 @@
   "name": "Flexify: Gym Workout Log",
   "package": "com.presley.flexify",
   "slug": "com-presley-flexify",
-  "category": "Utilities",
+  "category": "Health",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Health",
+  "subcategory": "Fitness",
   "description": "Log workouts, reps, cardio, and rest timers. Track strength offline.",
   "stores": {
    "play": null,
@@ -3581,14 +3581,14 @@
   "name": "Flicky",
   "package": "app.flicky",
   "slug": "app-flicky",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "System",
+  "subcategory": "App store",
   "description": "Unofficial Fdroid client (for Android TV)",
   "stores": {
    "play": null,
@@ -3609,7 +3609,7 @@
   "name": "FlorisBoard",
   "package": "dev.patrickgold.florisboard",
   "slug": "dev-patrickgold-florisboard",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3799,14 +3799,14 @@
   "name": "Formulus",
   "package": "org.opendataensemble.formulus",
   "slug": "org-opendataensemble-formulus",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Data collection",
   "description": "Offline-first bespoke data collection apps from Open Data Ensemble",
   "stores": {
    "play": null,
@@ -3946,7 +3946,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Gallery",
+  "subcategory": "Photos",
   "description": "Successor to Simple Gallery, privacy-focused.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
@@ -4002,7 +4002,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "SMS & Messaging",
+  "subcategory": "SMS",
   "description": "Text messaging, minus the noise.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.messages",
@@ -4225,7 +4225,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Logic puzzles",
+  "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.piepmeyer.gauguin",
@@ -4307,7 +4307,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Understand anything with a personalized AI research assistant",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.labs.language.tailwind",
@@ -4333,7 +4333,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Dev tools",
   "description": "Open-source native GitLab client for Android and desktop",
   "stores": {
    "play": null,
@@ -4445,7 +4445,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Calendar",
   "description": "Make the most of your day with Google Calendar, part of Google Workspace",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.calendar",
@@ -4471,7 +4471,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Documents",
   "description": "Create, edit, and collaborate online with Google Docs, part of Google Workspace",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs",
@@ -4497,7 +4497,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Quickly capture and share your thoughts, manage your to-dos, and stay organized",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.keep",
@@ -4523,7 +4523,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Visual search",
   "description": "Translate words, identify plants, find products, & more—using just your camera",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.ar.lens",
@@ -4549,7 +4549,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Tasks",
   "description": "Stay on top of your to-dos with Google Tasks, part of Google Workspace",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.tasks",
@@ -4629,7 +4629,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Todo",
+  "subcategory": "Tasks",
   "description": "A Simple ToDo List and Habit Tracker",
   "stores": {
    "play": null,
@@ -4650,14 +4650,14 @@
   "name": "GymMane",
   "package": "com.gymmane.app",
   "slug": "com-gymmane-app",
-  "category": "Utilities",
+  "category": "Health",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Fitness",
   "description": "Dark, offline gym log. Tap the muscle, log your sets, watch your numbers move.",
   "stores": {
    "play": null,
@@ -4685,7 +4685,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Reference",
+  "subcategory": "News",
   "description": "An open-source Hacker News client.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jiaqifeng.hacki",
@@ -4898,14 +4898,14 @@
   "name": "Image Toolbox",
   "package": "ru.tech.imageresizershrinker",
   "slug": "ru-tech-imageresizershrinker",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Image editing",
+  "subcategory": "Image editor",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker",
@@ -4926,14 +4926,14 @@
   "name": "Immich",
   "package": "app.alextran.immich",
   "slug": "app-alextran-immich",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Photos",
   "description": "This is a client app for the self-hostable Immich Server",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.alextran.immich",
@@ -4978,14 +4978,14 @@
   "name": "InviZible",
   "package": "pan.alexander.tordnscrypt.gp",
   "slug": "pan-alexander-tordnscrypt-gp",
-  "category": "Utilities",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Privacy",
+  "subcategory": "Firewall",
   "description": "DNSCrypt + Tor + I2P firewall",
   "stores": {
    "play": null,
@@ -5138,14 +5138,14 @@
   "name": "JetBird",
   "package": "dev.bg.jetbird",
   "slug": "dev-bg-jetbird",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "An unofficial, FLOSS, native Android NetBird client built with privacy in mind",
   "stores": {
    "play": null,
@@ -5220,14 +5220,14 @@
   "name": "Jiyi",
   "package": "com.github.xiaoshihou.jiyi",
   "slug": "com-github-xiaoshihou-jiyi",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Audio recorder",
   "description": "Encrypted audio logging app",
   "stores": {
    "play": null,
@@ -5414,7 +5414,7 @@
   "name": "KISS Launcher",
   "package": "fr.neamar.kiss",
   "slug": "fr-neamar-kiss",
-  "category": "Comms",
+  "category": "Customization",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5608,7 +5608,7 @@
   "name": "Lawnchair",
   "package": "app.lawnchair",
   "slug": "app-lawnchair",
-  "category": "Comms",
+  "category": "Customization",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5669,7 +5669,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Dev tools",
   "description": "This is an application to view and analyze the third-party libraries used by the app",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.absinthe.libchecker",
@@ -5688,14 +5688,14 @@
   "name": "Libre Camera",
   "package": "com.iakmds.librecamera",
   "slug": "com-iakmds-librecamera",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Camera",
   "description": "Modern camera app to take pictures and record videos",
   "stores": {
    "play": null,
@@ -5807,7 +5807,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Downloads",
   "description": "Copylefted libre software torrent client.",
   "stores": {
    "play": null,
@@ -5835,7 +5835,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Video",
+  "subcategory": "Video player",
   "description": "Alternative YouTube frontend built on Piped",
   "stores": {
    "play": null,
@@ -5910,7 +5910,7 @@
   "name": "Linux Command Library",
   "package": "com.inspiredandroid.linuxcommandbibliotheca",
   "slug": "com-inspiredandroid-linuxcommandbibliotheca",
-  "category": "Media",
+  "category": "Education",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5943,7 +5943,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Audiobooks",
+  "subcategory": "Audiobook player",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.grakovne.lissen",
@@ -6101,14 +6101,14 @@
   "name": "Lumine",
   "package": "com.moi.lumine",
   "slug": "com-moi-lumine",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "A lightweight local HTTP/SOCKS5 proxy server protects TLS connections over TCP.",
   "stores": {
    "play": null,
@@ -6214,14 +6214,14 @@
   "name": "L×Box: VPN & Proxy Client",
   "package": "com.leadaxe.lxbox",
   "slug": "com-leadaxe-lxbox",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "VPN client: 12+ protocols, subscriptions, app routing, balancing, traffic stats",
   "stores": {
    "play": null,
@@ -6249,7 +6249,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "URL tools",
   "description": "Removes tracking & other redundant parameters from web links for sharing",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.svenjacobs.app.leon",
@@ -6303,7 +6303,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Scorekeeper",
   "description": "Automatic scoring compass for Riichi Mahjong",
   "stores": {
    "play": null,
@@ -6768,7 +6768,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Make sense of your files with AI, searching across your notes for what you need",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.office.onenote",
@@ -6794,7 +6794,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Tasks",
   "description": "Increase productivity! Make a daily to do list, create a reminder & share notes!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.todos",
@@ -6921,14 +6921,14 @@
   "name": "Miniter",
   "package": "org.mlm.miniter",
   "slug": "org-mlm-miniter",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Video editor",
   "description": "Video editor built for simple tasks",
   "stores": {
    "play": null,
@@ -6977,14 +6977,14 @@
   "name": "Momentum",
   "package": "shub39.momentum",
   "slug": "shub39-momentum",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Video editor",
   "description": "App to make Montages easily",
   "stores": {
    "play": null,
@@ -7585,7 +7585,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "App manager",
   "description": "Control your Android™ apps",
   "stores": {
    "play": null,
@@ -7662,14 +7662,14 @@
   "name": "Notification Dictionary",
   "package": "com.xtreak.notificationdictionary",
   "slug": "com-xtreak-notificationdictionary",
-  "category": "Media",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Reference",
+  "subcategory": "Dictionary",
   "description": "An app to access meaning of selected word as a notification",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.xtreak.notificationdictionary",
@@ -7798,14 +7798,14 @@
   "name": "Oinkoin",
   "package": "com.github.emavgl.piggybankpro",
   "slug": "com-github-emavgl-piggybankpro",
-  "category": "Utilities",
+  "category": "Finance",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Finance",
+  "subcategory": "Money",
   "description": "Oinkoin Money Manager makes managing personal finances easy and secure.",
   "stores": {
    "play": null,
@@ -7826,14 +7826,14 @@
   "name": "Oksigenia SOS",
   "package": "com.oksigenia.oksigenia_sos",
   "slug": "com-oksigenia-oksigenia-sos",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Safety",
   "description": "Smart safety and distress alerts with fall and inactivity detection.",
   "stores": {
    "play": null,
@@ -7908,14 +7908,14 @@
   "name": "OnionShare",
   "package": "org.onionshare.android.fdroid",
   "slug": "org-onionshare-android-fdroid",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "Anonymous sharing",
   "description": "Securely and anonymously share files using the Tor network",
   "stores": {
    "play": null,
@@ -8018,7 +8018,7 @@
   "name": "OpenBoard",
   "package": "org.dslul.openboard.inputmethod.latin",
   "slug": "org-dslul-openboard-inputmethod-latin",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8075,14 +8075,14 @@
   "name": "OpenList Mobile",
   "package": "com.openlist.mobile",
   "slug": "com-openlist-mobile",
-  "category": "Utilities",
+  "category": "Comms",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Cloud storage",
+  "subcategory": "File Sync",
   "description": "OpenList/Alist file-list client",
   "stores": {
    "play": null,
@@ -8108,7 +8108,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Reference",
+  "subcategory": "Book tracker",
   "description": "Your private and open source books tracker, organizer and reading list",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=software.mdev.bookstracker",
@@ -8160,7 +8160,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "To-do lists",
+  "subcategory": "Tasks",
   "description": "Keep track of your list of goals",
   "stores": {
    "play": null,
@@ -8235,14 +8235,14 @@
   "name": "OPNsense Manager",
   "package": "com.dt.opnsense_manager",
   "slug": "com-dt-opnsense-manager",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "Firewall",
   "description": "Manage OPNsense firewall: monitor, configure rules, view logs & services",
   "stores": {
    "play": null,
@@ -8298,7 +8298,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Outliner for notes, tasks and to-do lists",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.orgzly",
@@ -8345,14 +8345,14 @@
   "name": "Outline",
   "package": "org.outline.android.client",
   "slug": "org-outline-android-client",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "A VPN or proxy client",
   "stores": {
    "play": null,
@@ -8380,7 +8380,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Translator",
+  "subcategory": "Translation",
   "description": "Real-time screen OCR translation",
   "stores": {
    "play": null,
@@ -8399,14 +8399,14 @@
   "name": "ownCloud",
   "package": "com.owncloud.android",
   "slug": "com-owncloud-android",
-  "category": "Utilities",
+  "category": "Comms",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "File Sync",
   "description": "Add an ownCloud server now and get your Cloud, your Data, your Way!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.owncloud.android",
@@ -8643,14 +8643,14 @@
   "name": "PixelDroid",
   "package": "org.pixeldroid.app",
   "slug": "org-pixeldroid-app",
-  "category": "Comms",
+  "category": "Social",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Pixelfed",
   "description": "Client for Pixelfed, the federated image sharing platform",
   "stores": {
    "play": null,
@@ -8730,7 +8730,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Device management",
+  "subcategory": "System",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ismartcoding.plain",
@@ -8784,7 +8784,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Shooter",
   "description": "Suika physics-based planet shooter",
   "stores": {
    "play": null,
@@ -8868,7 +8868,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Podcasts",
+  "subcategory": "Podcast player",
   "description": "A modern, open-source podcast app for Android.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.podiumpodcasts.podium",
@@ -9004,7 +9004,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Tasks",
   "description": "I built this app to manage my productivity",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.timeto.app",
@@ -9142,7 +9142,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "QR/barcode scanner",
   "description": "QR code & barcode scanner, reader, all code generator, fast scan",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.qrcode.barcode.scanner.reader",
@@ -9168,7 +9168,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "QR/barcode scanner",
   "description": "Extremely easy to use QR Code Scanner and Barcode Scanner",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.code.scanner.qr.code.reader",
@@ -9194,7 +9194,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Logic puzzles",
+  "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.quietgrid.app",
@@ -9223,7 +9223,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Markdown notes, task lists, Nextcloud sync and more",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.github.quillpad",
@@ -9268,14 +9268,14 @@
   "name": "RCX",
   "package": "io.github.x0b.rcx",
   "slug": "io-github-x0b-rcx",
-  "category": "Utilities",
+  "category": "Comms",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Cloud storage",
+  "subcategory": "File Sync",
   "description": "A file manager for Android, using rclone for the heavy lifting.",
   "stores": {
    "play": null,
@@ -9329,7 +9329,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Ebooks",
+  "subcategory": "Ebook reader",
   "description": "Ebook reader with powerful features, intuitive UI",
   "stores": {
    "play": null,
@@ -9493,7 +9493,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Shooter",
   "description": "Satisfying monster shooter",
   "stores": {
    "play": null,
@@ -9514,7 +9514,7 @@
   "name": "Roue Libre",
   "package": "io.github.mgdx.rouelibre",
   "slug": "io-github-mgdx-rouelibre",
-  "category": "Utilities",
+  "category": "Navigation",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9599,14 +9599,14 @@
   "name": "Ruffle",
   "package": "rs.ruffle",
   "slug": "rs-ruffle",
-  "category": "Utilities",
+  "category": "Games",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Emulator",
   "description": "An Android application for ruffle.rs",
   "stores": {
    "play": null,
@@ -9716,7 +9716,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Calculator",
   "description": "This app provides the four fundamental operations and engineering calculations",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator",
@@ -9742,7 +9742,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Samsung Notes can create and edit documents and collaborate with others",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.samsung.android.app.notes",
@@ -9981,14 +9981,14 @@
   "name": "Shelter",
   "package": "net.typeblog.shelter",
   "slug": "net-typeblog-shelter",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Privacy Tools",
+  "subcategory": "Isolation",
   "description": "Isolates apps using Android's work profile.",
   "stores": {
    "play": null,
@@ -10146,7 +10146,7 @@
   "name": "Simple Keyboard",
   "package": "rkr.simplekeyboard.inputmethod",
   "slug": "rkr-simplekeyboard-inputmethod",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10182,7 +10182,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Time tracker",
   "description": "Time tracker for work, study, and building better daily habits",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.razeeman.util.simpletimetracker",
@@ -10234,7 +10234,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Scorekeeper",
   "description": "Track your game scores easily.",
   "stores": {
    "play": null,
@@ -10309,7 +10309,7 @@
   "name": "SMS Import/Export",
   "package": "com.github.tmo1.sms_ie",
   "slug": "com-github-tmo1-sms-ie",
-  "category": "Utilities",
+  "category": "Comms",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10426,7 +10426,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Notes",
   "description": "Standard Notes is a secure and private notes app",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.standardnotes",
@@ -10619,7 +10619,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Todo",
+  "subcategory": "Tasks",
   "description": "To-do list and time tracker aimed at programmers and designers",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.superproductivity.superproductivity",
@@ -10692,14 +10692,14 @@
   "name": "SuperX Video Downloader",
   "package": "com.myAllVideoBrowser",
   "slug": "com-myallvideobrowser",
-  "category": "Utilities",
+  "category": "Media",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Downloads",
   "description": "Video downloader with browser for downloading videos from everywhere",
   "stores": {
    "play": null,
@@ -10807,14 +10807,14 @@
   "name": "Taler Wallet",
   "package": "net.taler.wallet.fdroid",
   "slug": "net-taler-wallet-fdroid",
-  "category": "Utilities",
+  "category": "Finance",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "Wallet",
   "description": "GNU Taler makes privacy-friendly online transactions fast and easy.",
   "stores": {
    "play": null,
@@ -10842,7 +10842,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "URL tools",
   "description": "The magic to clean sharing links up",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=cn.ac.lz233.tarnhelm",
@@ -10868,7 +10868,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Todo",
+  "subcategory": "Tasks",
   "description": "Powerful to-do list/task manager (Astrid fork)",
   "stores": {
    "play": null,
@@ -10887,14 +10887,14 @@
   "name": "Termux",
   "package": "com.termux",
   "slug": "com-termux",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "System",
+  "subcategory": "Terminal",
   "description": "Terminal emulator and Linux environment.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.termux",
@@ -10950,7 +10950,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Other",
+  "subcategory": "RPG",
   "description": "Application for managing a player's characters in the RPG The One Ring.",
   "stores": {
    "play": null,
@@ -11053,14 +11053,14 @@
   "name": "TorServices (alpha)",
   "package": "org.torproject.torservices",
   "slug": "org-torproject-torservices",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "The simplest, fastest, smallest Tor proxy app (early test release)",
   "stores": {
    "play": null,
@@ -11109,14 +11109,14 @@
   "name": "Trail Sense",
   "package": "com.kylecorry.trail_sense",
   "slug": "com-kylecorry-trail-sense",
-  "category": "Utilities",
+  "category": "Navigation",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Hiking",
   "description": "Use your phone's sensors to assist with wilderness treks",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense",
@@ -11142,7 +11142,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Translate",
+  "subcategory": "Translation",
   "description": "Material Design 3 translator supporting multiple engines",
   "stores": {
    "play": null,
@@ -11196,7 +11196,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Text to speech",
   "description": "Text-to-speech utility app for synthesising text into audible speech",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.danefinlay.ttsutil",
@@ -11384,7 +11384,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "Calculator",
   "description": "Calculator, converter and more",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sadellie.unitto",
@@ -11410,7 +11410,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "App manager",
   "description": "Advanced APK & XAPK installer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.pwhs.universalinstaller",
@@ -11429,14 +11429,14 @@
   "name": "Unofficial CheckMK Monitoring",
   "package": "com.checkmk.unofficial_checkmk_monitoring",
   "slug": "com-checkmk-unofficial-checkmk-monitoring",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Internet",
+  "subcategory": "Monitoring",
   "description": "Monitor CheckMK hosts and services on the go",
   "stores": {
    "play": null,
@@ -11464,7 +11464,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Tools",
+  "subcategory": "URL tools",
   "description": "Remove tracking information before sharing links",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.untracker",
@@ -11593,7 +11593,7 @@
   "name": "Victoria Launcher",
   "package": "dev.victorialauncher",
   "slug": "dev-victorialauncher",
-  "category": "Utilities",
+  "category": "Customization",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11740,7 +11740,7 @@
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Puzzles",
+  "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sidhant.watersort",
@@ -11761,14 +11761,14 @@
   "name": "Waterfly III",
   "package": "com.dreautall.waterflyiii",
   "slug": "com-dreautall-waterflyiii",
-  "category": "Utilities",
+  "category": "Finance",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Finance",
+  "subcategory": "Money",
   "description": "Unofficial App for Firefly III, an open source personal finance manager.",
   "stores": {
    "play": null,
@@ -11843,7 +11843,7 @@
   "name": "Wikipedia",
   "package": "org.wikipedia",
   "slug": "org-wikipedia",
-  "category": "Media",
+  "category": "Education",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11925,14 +11925,14 @@
   "name": "Xray",
   "package": "io.github.saeeddev94.xray",
   "slug": "io-github-saeeddev94-xray",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "Xray GUI Client For Android",
   "stores": {
    "play": null,
@@ -11953,14 +11953,14 @@
   "name": "XrayFA",
   "package": "com.android.xrayfa",
   "slug": "com-android-xrayfa",
-  "category": "Comms",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "Security",
+  "subcategory": "VPN & Proxy",
   "description": "XrayFA is a fast, secure, and user-friendly Android client for Xray-core.",
   "stores": {
    "play": null,
@@ -12009,14 +12009,14 @@
   "name": "ZerotierFix",
   "package": "net.kaaass.zerotierfix",
   "slug": "net-kaaass-zerotierfix",
-  "category": "Utilities",
+  "category": "Privacy",
   "promises": {
    "no_ads": true,
    "no_iap": true,
    "no_subs": true
   },
   "icon_svg": null,
-  "subcategory": "VPN",
+  "subcategory": "VPN & Proxy",
   "description": "ZeroTier client",
   "stores": {
    "play": null,

@@ -15,6 +15,7 @@ import os
 import re
 import secrets
 import shutil
+from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
@@ -1942,6 +1943,26 @@ def apply_openapk(apps):
     print(f"openapk: {n} apps linked")
 
 
+GENERIC_SUBCATS = {"Tools", "Other", "General", "Misc", "Miscellaneous"}
+
+
+def taxonomy_report(apps):
+    """Build-time taxonomy health: per-category counts, plus loud (non-failing)
+    warnings when a top-level category gets bloated or an app lands in a
+    generic bucket. Keeps category bloat visible on every build."""
+    counts = Counter(a["category"] for a in apps)
+    print("taxonomy:")
+    for cat, n in counts.most_common():
+        print(f"  {cat}: {n}")
+    for cat, n in counts.most_common():
+        if n > 80:
+            print(f"  WARNING: '{cat}' has {n} apps (over 80) - consider splitting it")
+    for a in apps:
+        if a.get("subcategory") in GENERIC_SUBCATS or "/" in a.get("category", ""):
+            print(f"  WARNING: '{a['name']}' sits in a generic bucket "
+                  f"({a['category']} / {a['subcategory']})")
+
+
 def main():
     apps = load_corpus()
     categories = sorted({a["category"] for a in apps})
@@ -1980,6 +2001,7 @@ def main():
     write("README.md", build_readme())
     print("done: index, %d detail pages, sitemap, robots, assets, README"
           % len(apps))
+    taxonomy_report(apps)
 
 
 if __name__ == "__main__":
