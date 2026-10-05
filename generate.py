@@ -520,10 +520,10 @@ def build_index(apps, categories, forms):
       <button class="pill" data-attr="made_by_us">Made by us</button>
     </div>
     <div class="filter-row" role="group" aria-label="Filter by store">
-      <button class="pill" data-store="play">Google Play</button>
       <button class="pill" data-store="fdroid">F-Droid</button>
-      <button class="pill" data-store="github">GitHub</button>
       <button class="pill" data-store="openapk">OpenAPK</button>
+      <button class="pill" data-store="play">Google Play</button>
+      <button class="pill" data-store="github">GitHub</button>
     </div>
     <div class="filter-row sort-row">
       <label>Sort:
@@ -547,7 +547,7 @@ def build_index(apps, categories, forms):
 # Detail pages — one real static HTML page per app (SEO)
 # ---------------------------------------------------------------------------
 
-STORE_LABELS = [("play", "Play"), ("fdroid", "F-Droid"), ("github", "GitHub"), ("openapk", "OpenAPK")]
+STORE_LABELS = [("fdroid", "F-Droid"), ("openapk", "OpenAPK"), ("play", "Play"), ("github", "GitHub")]
 
 
 def fdroid_url(package):
@@ -1508,10 +1508,10 @@ JS_CONTENT = r"""
   }
   function storeBadges(app) {
     var out = [];
-    var defs = [["play", "Play", app.stores.play],
-                ["fdroid", "F-Droid", app.stores.fdroid ? "https://f-droid.org/en/packages/" + app.package + "/" : null],
-                ["github", "GitHub", app.stores.github],
-                ["openapk", "OpenAPK", app.stores.openapk]];
+    var defs = [["fdroid", "F-Droid", app.stores.fdroid ? "https://f-droid.org/en/packages/" + app.package + "/" : null],
+                ["openapk", "OpenAPK", app.stores.openapk],
+                ["play", "Play", app.stores.play],
+                ["github", "GitHub", app.stores.github]];
     defs.forEach(function (d) {
       if (d[2]) out.push('<span class="store-badge">' + d[1] + "</span>");
     });
