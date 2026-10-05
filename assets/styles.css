@@ -500,21 +500,6 @@ a.store-badge:hover { filter: brightness(0.96); }
   :root[data-mode="playful"] .hero .tagline { display: none; }
 }
 
-/* Geek "best viewed" line: truly centered in the top heading row where it fits
-   (out of flow, so header margins stay glued to the page); on narrower screens
-   it sits on its own centered line under the row instead of overlapping. */
-@media (min-width: 900px) {
-  :root[data-mode="geek"] .header-inner { position: relative; }
-  :root[data-mode="geek"] .geek-badge {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap; padding: 0; margin: 0;
-  }
-}
-@media (max-width: 899px) {
-  :root[data-mode="geek"] .geek-badge { flex: 0 0 100%; text-align: center; margin: 4px 0 0; padding: 0; }
-}
-
 @media (max-width: 640px) {
   /* The toggle column stacks so the header grows vertically instead of
      scrolling horizontally — horizontal scroll is never acceptable. */

@@ -455,7 +455,6 @@ def site_header():
         {theme_btns}
       </div>
     </div>
-    <div class="geek-badge" aria-hidden="true">best viewed at 800&times;600</div>
   </div>
 </header>"""
 
@@ -1183,21 +1182,6 @@ a.store-badge:hover { filter: brightness(0.96); }
 @media (min-width: 641px) {
   /* Playful desktop: the tagline repeats the hero heading, so it goes. Geek keeps it — classic. */
   :root[data-mode="playful"] .hero .tagline { display: none; }
-}
-
-/* Geek "best viewed" line: truly centered in the top heading row where it fits
-   (out of flow, so header margins stay glued to the page); on narrower screens
-   it sits on its own centered line under the row instead of overlapping. */
-@media (min-width: 900px) {
-  :root[data-mode="geek"] .header-inner { position: relative; }
-  :root[data-mode="geek"] .geek-badge {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap; padding: 0; margin: 0;
-  }
-}
-@media (max-width: 899px) {
-  :root[data-mode="geek"] .geek-badge { flex: 0 0 100%; text-align: center; margin: 4px 0 0; padding: 0; }
 }
 
 @media (max-width: 640px) {
