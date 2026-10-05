@@ -236,6 +236,24 @@ a.store-badge:hover { filter: brightness(0.96); }
   font-size: 0.75rem; font-weight: 700; color: var(--good);
   display: inline-flex; align-items: center; gap: 4px;
 }
+/* "needs review" — same pill shape as store badges, dashed = provisional */
+.needs-review {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px dashed var(--accent);
+}
+.review-note {
+  background: var(--accent-soft);
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-top: 18px;
+}
+.review-note h2 { margin: 0 0 6px; }
+.review-note p { margin: 0; }
 /* "Made by us" sits as a small pill at the top of the tile, clear of the name */
 .made-by-us {
   display: inline-block;
@@ -401,6 +419,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 :root[data-mode="geek"] .chip.on, :root[data-mode="geek"] .pill.on { border-style: inset; }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
+:root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
 :root[data-mode="geek"] .site-footer { border-top: 3px ridge #7df9ff; }
 :root[data-mode="geek"] .geek-webring { display: block; text-align: center; color: var(--muted); }

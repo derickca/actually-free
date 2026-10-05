@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (P+OTd2/Mk0mpkFVo5aGW0Q==, replaced at build time) embedded separately,
+     the key (d3npY3IcmV+WWt4JyzfalA==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "P+OTd2/Mk0mpkFVo5aGW0Q==";
+    var K = "d3npY3IcmV+WWt4JyzfalA==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -362,6 +362,7 @@
         '<span class="letter-tile" style="display:none">' + letter + "</span></span>";
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
+    var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
@@ -369,7 +370,7 @@
       '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
-      '<span class="badges">' + storeBadges(app) + "</span>" +
+      '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
       '<span class="verified">\u2713 Verified actually-free</span></a>';
   }
 
@@ -379,6 +380,7 @@
       if (state.cat && app.category !== state.cat) return false;
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
+        else if (k === "reviewed") { if (app.needs_review) return false; }
         else if (!app.attrs[k]) return false;
       }
       for (var s in state.stores) {

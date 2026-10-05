@@ -227,6 +227,8 @@ def clean_record(rec):
         "attrs": rec.get("attrs") or derive_attrs(rec),
         "made_by_us": bool(rec.get("made_by_us")),
         "per_badge": per_badge,
+        "needs_review": bool(rec.get("needs_review")),
+        "review_notes": rec.get("review_notes") or "",
     }
 
 
@@ -524,6 +526,7 @@ def build_index(apps, categories, forms):
       <button class="pill" data-store="openapk">OpenAPK</button>
       <button class="pill" data-store="play">Google Play</button>
       <button class="pill" data-store="github">GitHub</button>
+      <button class="pill" data-attr="reviewed">Reviewed</button>
     </div>
     <div class="filter-row sort-row">
       <label>Sort:
@@ -604,6 +607,9 @@ def build_detail(app, forms):
             f'<img src="{icon}" alt="" loading="lazy" '
             'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
             f'<span class="letter-tile" style="display:none">{letter}</span></span>')
+    review = (f'<div class="review-note"><h2>Needs further review</h2>'
+              f'<p>{esc(app["review_notes"] or "This listing hasn\u2019t been fully verified yet \u2014 help us check it.")}</p></div>'
+              if app.get("needs_review") else "")
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -621,6 +627,7 @@ def build_detail(app, forms):
       </div>
     </div>
     <p class="desc">{esc(app["description"])}</p>
+    {review}
     <h2>Get it</h2>
     <div class="get-it">
 {store_badges(app, big=True)}
@@ -922,6 +929,24 @@ a.store-badge:hover { filter: brightness(0.96); }
   font-size: 0.75rem; font-weight: 700; color: var(--good);
   display: inline-flex; align-items: center; gap: 4px;
 }
+/* "needs review" — same pill shape as store badges, dashed = provisional */
+.needs-review {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px dashed var(--accent);
+}
+.review-note {
+  background: var(--accent-soft);
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-top: 18px;
+}
+.review-note h2 { margin: 0 0 6px; }
+.review-note p { margin: 0; }
 /* "Made by us" sits as a small pill at the top of the tile, clear of the name */
 .made-by-us {
   display: inline-block;
@@ -1087,6 +1112,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 :root[data-mode="geek"] .chip.on, :root[data-mode="geek"] .pill.on { border-style: inset; }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
+:root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
 :root[data-mode="geek"] .site-footer { border-top: 3px ridge #7df9ff; }
 :root[data-mode="geek"] .geek-webring { display: block; text-align: center; color: var(--muted); }
@@ -1558,6 +1584,7 @@ JS_CONTENT = r"""
         '<span class="letter-tile" style="display:none">' + letter + "</span></span>";
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
+    var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
@@ -1565,7 +1592,7 @@ JS_CONTENT = r"""
       '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
-      '<span class="badges">' + storeBadges(app) + "</span>" +
+      '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
       '<span class="verified">\u2713 Verified actually-free</span></a>';
   }
 
@@ -1575,6 +1602,7 @@ JS_CONTENT = r"""
       if (state.cat && app.category !== state.cat) return false;
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
+        else if (k === "reviewed") { if (app.needs_review) return false; }
         else if (!app.attrs[k]) return false;
       }
       for (var s in state.stores) {
