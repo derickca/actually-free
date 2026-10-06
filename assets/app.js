@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (Xpn5PFNogO6jD78DQ28JSQ==, replaced at build time) embedded separately,
+     the key (jl1GCobJe7e7Ilzyv7Qe1g==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "Xpn5PFNogO6jD78DQ28JSQ==";
+    var K = "jl1GCobJe7e7Ilzyv7Qe1g==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -378,6 +378,9 @@
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
+    var trustLine = app.free_enough
+      ? '<span class="free-enough">Free Enough</span>'
+      : '<span class="verified">\u2713 Verified actually-free</span>';
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
@@ -386,7 +389,7 @@
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
       '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
-      '<span class="verified">\u2713 Verified actually-free</span></a>';
+      trustLine + '</a>';
   }
 
   function filtered() {

@@ -2,7 +2,7 @@
 """Actually Free — static site generator.
 
 Reads ~/workspace/certifiable-apps/apps-seed.json, keeps the verified
-listings (status=include + status=per-badge), adds QR Cards, and emits a
+listings (status=include + status=per-badge + status=free-enough), adds QR Cards, and emits a
 fully static site deployable as-is to Cloudflare Pages.
 
 Regenerate everything with:  python3 generate.py
@@ -27,6 +27,11 @@ EMPTY_STATE_GEEK = ("Well, actually\u2026 your query returned 0 rows. "
 PROMISES = ["No ads", "No in-app purchases", "No subscriptions"]
 PER_BADGE_NOTE = ("The Play Store version of this app carries ads or in-app "
                   "purchases, so we only list the clean build.")
+# "Free Enough" — apps with paid upgrades whose free tier is the complete
+# product. The blurb is the category promise; each app also carries its own
+# free_enough_reason explaining exactly why.
+FREE_ENOUGH_BLURB = ("This app has paid upgrades \u2014 but its free tier is the complete "
+                     "product. Most people who use it never feel the need to pay.")
 
 # The QR Cards glyph: same logo in the site header app-icon, the directory
 # tile, and the detail page heading.
@@ -204,6 +209,7 @@ def clean_record(rec):
     stores = rec.get("stores") or {}
     ver = rec.get("verification") or {}
     per_badge = rec.get("status") == "per-badge"
+    free_enough = rec.get("status") == "free-enough"
     out_stores = {
         # Per-badge rule: strip the Play URL entirely for disqualified builds.
         "play": None if per_badge else (stores.get("play") or None),
@@ -212,6 +218,16 @@ def clean_record(rec):
         "github": stores.get("github") or None,
         "openapk": stores.get("openapk") or None,
     }
+    # Money promises the listed build keeps. Every strict listing satisfies
+    # all three (it's the inclusion bar). Free Enough apps are ad-free by
+    # rule, but honestly report their IAP/subscription labels instead of
+    # claiming promises they don't keep.
+    if free_enough:
+        has_iap = bool(rec.get("has_iap"))
+        promises = {"no_ads": True, "no_iap": not has_iap,
+                    "no_subs": not has_iap}
+    else:
+        promises = {"no_ads": True, "no_iap": True, "no_subs": True}
     # Self-hosted real icon when the icon hunt found one; otherwise the
     # tile/detail page falls back to the letter tile.
     icon_file = os.path.join(HERE, "assets", "icons", rec["package"] + ".png")
@@ -225,7 +241,9 @@ def clean_record(rec):
         # Money promises the listed build keeps. Every v1 listing satisfies
         # all three (it's the inclusion bar); stored explicitly so the
         # "Find apps with:" filters have real data if that ever changes.
-        "promises": {"no_ads": True, "no_iap": True, "no_subs": True},
+        # Free Enough apps report honestly: ad-free, but IAP/subscription
+        # labels kept as the Play listing shows them.
+        "promises": promises,
         "icon_svg": rec.get("icon_svg"),
         "icon": icon,
         "subcategory": rec.get("subcategory") or "",
@@ -235,6 +253,8 @@ def clean_record(rec):
         "attrs": rec.get("attrs") or derive_attrs(rec),
         "made_by_us": bool(rec.get("made_by_us")),
         "per_badge": per_badge,
+        "free_enough": free_enough,
+        "free_enough_reason": rec.get("free_enough_reason") or "",
         "needs_review": bool(rec.get("needs_review")),
         "review_notes": rec.get("review_notes") or "",
     }
@@ -244,7 +264,7 @@ def load_corpus():
     with open(SEED, encoding="utf-8") as f:
         seed = json.load(f)
     kept = [clean_record(r) for r in seed
-            if r.get("status") in ("include", "per-badge")]
+            if r.get("status") in ("include", "per-badge", "free-enough")]
     kept.append(clean_record(QR_CARDS))
     kept.sort(key=lambda a: a["name"].lower())
     return kept
@@ -606,15 +626,27 @@ def transparency_pills(app):
 
 
 def build_detail(app, forms):
-    title = f'{app["name"]} \u2014 actually free, no ads | Actually Free'
+    if app["free_enough"]:
+        title = f'{app["name"]} \u2014 free enough | Actually Free'
+    else:
+        title = f'{app["name"]} \u2014 actually free, no ads | Actually Free'
     desc = tidy(app["description"], 160)
     rating = (f'<p class="rating">\u2605 {esc(app["rating"])} on Google Play</p>'
               if app.get("rating") else "")
     ribbon = '<span class="made-by-us">Made by us</span>' if app["made_by_us"] else ""
     per_badge = (f'<p class="per-badge-note">{esc(PER_BADGE_NOTE)}</p>'
                  if app["per_badge"] else "")
-    checks = "\n".join(
-        f'<li><span class="lock">\u2713</span> {esc(p)}</li>' for p in PROMISES)
+    if app["free_enough"]:
+        promise_block = (
+            f'<h2>Free Enough</h2>\n'
+            f'<p class="free-enough-blurb">{esc(FREE_ENOUGH_BLURB)}</p>\n'
+            f'<p>{esc(app["free_enough_reason"])}</p>')
+    else:
+        checks = "\n".join(
+            f'<li><span class="lock">\u2713</span> {esc(p)}</li>' for p in PROMISES)
+        promise_block = (
+            f'<h2>The promise</h2>\n'
+            f'<ul class="promise-checks">\n{checks}\n    </ul>')
     pills = transparency_pills(app)
     pills_block = (f'<div class="transparency"><h2>Transparency</h2><div class="t-pills">\n{pills}\n</div></div>'
                    if pills else "")
@@ -661,10 +693,7 @@ def build_detail(app, forms):
 {store_badges(app, big=True)}
     </div>
     {per_badge}
-    <h2>The promise</h2>
-    <ul class="promise-checks">
-{checks}
-    </ul>
+    {promise_block}
     {pills_block}
     <h2>Something wrong?</h2>
     <p class="feedback-note">Reports go to a human review queue. No timeline promised
@@ -734,6 +763,7 @@ def build_free_bar(forms):
     <p>We check app details before listing &mdash; some by hand, some with automated checks &mdash; but we have not installed or tested them all; use caution when installing.</p>
     <p>Anything marked <span class="needs-review">needs &#128064;</span> is still waiting on a human review.</p>
     <p><strong>Why the list is short:</strong> most &ldquo;free&rdquo; apps aren't actually free. They show you ads or sell you things. We'd rather list a few hundred apps we trust than thousands we don't.</p>
+    <p><strong>Free Enough:</strong> some apps have paid upgrades, but their free tier is the complete product &mdash; most people who use them never feel the need to pay. They're tagged <span class="free-enough">Free Enough</span>, and each one's page explains exactly why the free version is enough. The bar above still applies to everything else.</p>
     <p>Know an app that belongs here? <a href="/suggest">Suggest it</a>. Spot one that broke the rules? Tell us and we'll pull it.</p>
   </article>
 </main>
@@ -999,6 +1029,15 @@ a.store-badge:hover { filter: brightness(0.96); }
 .verified {
   font-size: 0.75rem; font-weight: 700; color: var(--good);
   display: inline-flex; align-items: center; gap: 4px;
+}
+/* "Free Enough" — same spot as the verified line, but a distinct warm tag:
+   paid upgrades exist, the free tier is the complete product. */
+.free-enough {
+  font-size: 0.75rem; font-weight: 700; color: #b45309;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.free-enough-blurb {
+  font-weight: 600;
 }
 /* "needs review" — same pill shape as store badges, dashed = provisional */
 .needs-review {
@@ -1671,6 +1710,9 @@ JS_CONTENT = r"""
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
+    var trustLine = app.free_enough
+      ? '<span class="free-enough">Free Enough</span>'
+      : '<span class="verified">\u2713 Verified actually-free</span>';
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
@@ -1679,7 +1721,7 @@ JS_CONTENT = r"""
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
       '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
-      '<span class="verified">\u2713 Verified actually-free</span></a>';
+      trustLine + '</a>';
   }
 
   function filtered() {
@@ -1862,7 +1904,7 @@ python3 generate.py
 ```
 
 This reads `~/workspace/certifiable-apps/apps-seed.json`, keeps the
-verified listings (`include` + `per-badge`), adds QR Cards, and emits:
+verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 
 - `data/apps.json` — the 79 listings as JSON
 - `index.html` — the directory (tiles render client-side)
@@ -1891,11 +1933,18 @@ verified listings (`include` + `per-badge`), adds QR Cards, and emits:
 
 - `per-badge` listings show F-Droid/GitHub badges only — the Play URL is
   stripped, with an explainer on the detail page.
+- `free-enough` listings are apps with paid upgrades whose free tier is the
+  complete product (tagged "Free Enough", never "Verified actually-free").
+  They are ad-free by rule; their Play IAP/subscription labels are reported
+  honestly in `data/apps.json` instead of claiming the locked promises.
+  Each carries a `free_enough_reason` explaining why the free version is enough.
 - Transparency attributes (open source / offline / no account) are derived
   **conservatively**: open source iff on F-Droid; offline / no-account only
   when the research notes say so explicitly. Missing attribute = pill absent.
 - The three locked promises (no ads, no IAP, no subscriptions) hold for
-  every listed app by construction.
+  every `include`/`per-badge` listing by construction. `free-enough`
+  listings are the deliberate exception: ad-free, but their Play
+  IAP/subscription labels are reported honestly instead of promised away.
 
 ## Awaiting Derick's call (7 — not listed)
 
@@ -2045,7 +2094,8 @@ def main():
     categories = sorted({a["category"] for a in apps})
     print(f"{len(apps)} apps "
           f"({sum(1 for a in apps if a['made_by_us'])} made by us, "
-          f"{sum(1 for a in apps if a['per_badge'])} per-badge)")
+          f"{sum(1 for a in apps if a['per_badge'])} per-badge, "
+          f"{sum(1 for a in apps if a['free_enough'])} free-enough)")
 
     topic = read_ntfy_topic()
     if topic:

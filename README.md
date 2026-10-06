@@ -13,7 +13,7 @@ python3 generate.py
 ```
 
 This reads `~/workspace/certifiable-apps/apps-seed.json`, keeps the
-verified listings (`include` + `per-badge`), adds QR Cards, and emits:
+verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 
 - `data/apps.json` — the 79 listings as JSON
 - `index.html` — the directory (tiles render client-side)
@@ -42,11 +42,18 @@ verified listings (`include` + `per-badge`), adds QR Cards, and emits:
 
 - `per-badge` listings show F-Droid/GitHub badges only — the Play URL is
   stripped, with an explainer on the detail page.
+- `free-enough` listings are apps with paid upgrades whose free tier is the
+  complete product (tagged "Free Enough", never "Verified actually-free").
+  They are ad-free by rule; their Play IAP/subscription labels are reported
+  honestly in `data/apps.json` instead of claiming the locked promises.
+  Each carries a `free_enough_reason` explaining why the free version is enough.
 - Transparency attributes (open source / offline / no account) are derived
   **conservatively**: open source iff on F-Droid; offline / no-account only
   when the research notes say so explicitly. Missing attribute = pill absent.
 - The three locked promises (no ads, no IAP, no subscriptions) hold for
-  every listed app by construction.
+  every `include`/`per-badge` listing by construction. `free-enough`
+  listings are the deliberate exception: ad-free, but their Play
+  IAP/subscription labels are reported honestly instead of promised away.
 
 ## Awaiting Derick's call (7 — not listed)
 
@@ -55,7 +62,6 @@ verified listings (`include` + `per-badge`), adds QR Cards, and emits:
 - **Signal** — VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label.
 - **QKSMS** — VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label; purpose unverified (likely donation option; QKSMS is FOSS). Not on F-Droid.
 - **Thunderbird (K-9 Mail)** — VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label, almost certainly the Thunderbird donation option (non-blocking). F-Droid build clean, no anti-features.
-- **Bitwarden** — VERDICT: NEEDS HUMAN CALL — Play labels clean (no ads, no IAP chips) because Premium is sold via bitwarden.com, NOT Play billing.
 - **RethinkDNS** — VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label: the app sells its Rethink Proxy Network VPN subscription in-app (from $1.75/mo).
 
 ## Documented exclusions (6 — not listed, users will ask)

@@ -240,6 +240,15 @@ a.store-badge:hover { filter: brightness(0.96); }
   font-size: 0.75rem; font-weight: 700; color: var(--good);
   display: inline-flex; align-items: center; gap: 4px;
 }
+/* "Free Enough" — same spot as the verified line, but a distinct warm tag:
+   paid upgrades exist, the free tier is the complete product. */
+.free-enough {
+  font-size: 0.75rem; font-weight: 700; color: #b45309;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.free-enough-blurb {
+  font-weight: 600;
+}
 /* "needs review" — same pill shape as store badges, dashed = provisional */
 .needs-review {
   font-size: 0.72rem; font-weight: 700;
