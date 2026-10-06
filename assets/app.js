@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (yLeI01XugoQ5BJYoxbIO/w==, replaced at build time) embedded separately,
+     the key (HY4ZWdqUsjxGlfXu1vd2nQ==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "yLeI01XugoQ5BJYoxbIO/w==";
+    var K = "HY4ZWdqUsjxGlfXu1vd2nQ==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -464,10 +464,12 @@
     }, 220);
   });
   /* Subcategory drill-down: a second chip row appears once a top-level
-     category is selected. SUBCATS is emitted inline by generate.py. */
+     category is selected. The row is derived from the same apps.json payload
+     as the tiles, so the chips can never disagree with the data — no empty
+     subcategories after a taxonomy change, even with a stale page. */
   var subRow = document.getElementById("subcategory-chips");
   function renderSubcats() {
-    var subs = (typeof SUBCATS !== "undefined" && state.cat && SUBCATS[state.cat]) || [];
+    var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
     if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
     subRow.hidden = false;
     subRow.innerHTML = subs.map(function (s) {
@@ -520,7 +522,33 @@
 
   fetch("/data/apps.json")
     .then(function (r) { return r.json(); })
-    .then(function (apps) { state.apps = apps; render(); })
+    .then(function (apps) {
+      state.apps = apps;
+      /* Build the subcategory chip map from the fetched data itself:
+         count per (category, subcategory), most apps first, then A-Z.
+         One payload drives both chips and tiles, so they cannot disagree. */
+      var counts = {};
+      apps.forEach(function (a) {
+        var sub = a.subcategory || "";
+        if (!sub) return;
+        var k = a.category + "\u0000" + sub;
+        counts[k] = (counts[k] || 0) + 1;
+      });
+      state.subcats = {};
+      Object.keys(counts).forEach(function (k) {
+        var i = k.indexOf("\u0000");
+        var c = k.slice(0, i), s = k.slice(i + 1);
+        (state.subcats[c] = state.subcats[c] || []).push([s, counts[k]]);
+      });
+      Object.keys(state.subcats).forEach(function (c) {
+        state.subcats[c].sort(function (x, y) {
+          return (y[1] - x[1]) || (x[0].toLowerCase() < y[0].toLowerCase() ? -1 : 1);
+        });
+        state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
+      });
+      renderSubcats();
+      render();
+    })
     .catch(function () {
       grid.innerHTML = "<p>Couldn't load the app list. Check back in a bit.</p>";
     });

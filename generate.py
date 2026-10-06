@@ -524,19 +524,10 @@ def site_footer(forms):
 # index.html — the directory shell (tiles render client-side from apps.json)
 # ---------------------------------------------------------------------------
 
-def build_index(apps, categories, forms):
+def build_index(categories, forms):
     chips = "\n".join(
         f'      <button class="chip" data-cat="{esc(c)}">{esc(c)}</button>'
         for c in categories)
-    subcat_counts = Counter((a["category"], a["subcategory"]) for a in apps)
-    subcats = {}
-    for (cat, sub), n in subcat_counts.items():
-        subcats.setdefault(cat, []).append((sub, n))
-    for cat in subcats:
-        subcats[cat].sort(key=lambda x: (-x[1], x[0].lower()))
-    subcats_js = json.dumps(
-        {c: [s for s, _ in subs] for c, subs in subcats.items()},
-        ensure_ascii=False).replace("</", "<\\/")
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Actually Free \u2014 " + TAGLINE,
@@ -557,7 +548,6 @@ def build_index(apps, categories, forms):
 {chips}
     </div>
     <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
-    <script>var SUBCATS = {subcats_js};</script>
     <div class="filter-row" role="group" aria-label="Narrow it down">
       <button class="pill" data-attr="open_source">Open source</button>
       <button class="pill" data-attr="offline">Works offline</button>
@@ -1800,10 +1790,12 @@ JS_CONTENT = r"""
     }, 220);
   });
   /* Subcategory drill-down: a second chip row appears once a top-level
-     category is selected. SUBCATS is emitted inline by generate.py. */
+     category is selected. The row is derived from the same apps.json payload
+     as the tiles, so the chips can never disagree with the data — no empty
+     subcategories after a taxonomy change, even with a stale page. */
   var subRow = document.getElementById("subcategory-chips");
   function renderSubcats() {
-    var subs = (typeof SUBCATS !== "undefined" && state.cat && SUBCATS[state.cat]) || [];
+    var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
     if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
     subRow.hidden = false;
     subRow.innerHTML = subs.map(function (s) {
@@ -1856,7 +1848,33 @@ JS_CONTENT = r"""
 
   fetch("/data/apps.json")
     .then(function (r) { return r.json(); })
-    .then(function (apps) { state.apps = apps; render(); })
+    .then(function (apps) {
+      state.apps = apps;
+      /* Build the subcategory chip map from the fetched data itself:
+         count per (category, subcategory), most apps first, then A-Z.
+         One payload drives both chips and tiles, so they cannot disagree. */
+      var counts = {};
+      apps.forEach(function (a) {
+        var sub = a.subcategory || "";
+        if (!sub) return;
+        var k = a.category + "\u0000" + sub;
+        counts[k] = (counts[k] || 0) + 1;
+      });
+      state.subcats = {};
+      Object.keys(counts).forEach(function (k) {
+        var i = k.indexOf("\u0000");
+        var c = k.slice(0, i), s = k.slice(i + 1);
+        (state.subcats[c] = state.subcats[c] || []).push([s, counts[k]]);
+      });
+      Object.keys(state.subcats).forEach(function (c) {
+        state.subcats[c].sort(function (x, y) {
+          return (y[1] - x[1]) || (x[0].toLowerCase() < y[0].toLowerCase() ? -1 : 1);
+        });
+        state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
+      });
+      renderSubcats();
+      render();
+    })
     .catch(function () {
       grid.innerHTML = "<p>Couldn't load the app list. Check back in a bit.</p>";
     });
@@ -2116,7 +2134,7 @@ def main():
 
     apply_openapk(apps)
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
-    write("index.html", build_index(apps, categories, forms))
+    write("index.html", build_index(categories, forms))
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
     for app in apps:
