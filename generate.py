@@ -21,9 +21,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
 SITE_URL = "https://free.certifiable.media"
 TAGLINE = "Find the free apps they don't want you to see."
-EMPTY_STATE = "Well, actually\u2026 we don't list anything matching that."
-EMPTY_STATE_GEEK = ("Well, actually\u2026 your query returned 0 rows. "
-                    "Have you tried turning it off and on again?")
 PROMISES = ["No ads", "No in-app purchases", "No subscriptions"]
 PER_BADGE_NOTE = ("The Play Store version of this app carries ads or in-app "
                   "purchases, so we only list the clean build.")
@@ -150,6 +147,11 @@ def esc(s):
 
 def slugify(package):
     return re.sub(r"[^a-z0-9]+", "-", package.lower()).strip("-")
+
+
+# Slug computed from the package, never hardcoded: header/footer links to the
+# QR Cards detail page use this so a package rename can't leave them 404ing.
+QR_CARDS_SLUG = slugify(QR_CARDS["package"])
 
 
 def tidy(s, cap=190):
@@ -477,7 +479,7 @@ def site_header():
       <img id="mascot" src="/assets/mascot-friendly.webp" alt="Actually Guy, the Actually Free mascot" width="56" height="56">
       <span class="brand-text"><strong>Actually Free</strong><em>{esc(TAGLINE)}</em></span>
     </a>
-    <a class="qr-appicon" href="/app/derickca-qr-cards.html" title="QR Cards — a free app we made">
+    <a class="qr-appicon" href="/app/{QR_CARDS_SLUG}.html" title="QR Cards — a free app we made">
       <span class="qr-appicon-glyph" aria-hidden="true">{QR_GLYPH_SVG}</span>
       <span class="qr-appicon-label">QR Cards</span>
     </a>
@@ -508,7 +510,7 @@ def site_footer(forms):
       {suggest_link} &middot;
       <a href="/what-is-free">What Is Free?</a> &middot;
       <a href="/">Directory</a> &middot;
-      <a href="/app/derickca-qr-cards.html">QR Cards</a>
+      <a href="/app/{QR_CARDS_SLUG}.html">QR Cards</a>
     </p>
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
@@ -524,10 +526,16 @@ def site_footer(forms):
 # index.html — the directory shell (tiles render client-side from apps.json)
 # ---------------------------------------------------------------------------
 
-def build_index(categories, forms):
-    chips = "\n".join(
-        f'      <button class="chip" data-cat="{esc(c)}">{esc(c)}</button>'
-        for c in categories)
+def build_index(forms):
+    # Filter controls are rendered client-side from the apps.json payload (see
+    # renderFilters in JS_CONTENT): the shell carries no filterable values, so
+    # a stale page can never disagree with fresh data. The promise line is the
+    # single PROMISES list, not a second hardcoded copy.
+    promise_line = " \u00b7 ".join(
+        f'<span class="lock">\u2713 {esc(p)}</span>' for p in PROMISES)
+    filter_defs = json.dumps(
+        {"stores": FILTER_STORES, "attrs": FILTER_ATTRS},
+        ensure_ascii=False).replace("</", "<\\/")
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Actually Free \u2014 " + TAGLINE,
@@ -539,30 +547,17 @@ def build_index(categories, forms):
     <h1>Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">{esc(TAGLINE)}</span></p>
   </section>
-  <p class="promise-line"><span class="lock">\u2713 No ads</span> \u00b7 <span class="lock">\u2713 No in-app purchases</span> \u00b7 <span class="lock">\u2713 No subscriptions</span></p>
+  <p class="promise-line">{promise_line}</p>
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;\u2026"
            aria-label="Search apps" autocomplete="off">
     <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
       <button class="chip on" data-cat="">All</button>
-{chips}
     </div>
     <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
-    <div class="filter-row" role="group" aria-label="Narrow it down">
-      <button class="pill" data-attr="open_source">Open source</button>
-      <button class="pill" data-attr="offline">Works offline</button>
-      <button class="pill" data-attr="no_account">No account needed</button>
-      <button class="pill" data-attr="made_by_us">Made by us</button>
-      <button class="pill" data-attr="reviewed">Reviewed</button>
-      <button class="pill" data-attr="free_enough">Free Enough</button>
-    </div>
-    <div class="filter-row" role="group" aria-label="Filter by store">
-      <button class="pill" data-store="fdroid">F-Droid</button>
-      <button class="pill" data-store="izzy">IzzyOnDroid</button>
-      <button class="pill" data-store="openapk">OpenAPK</button>
-      <button class="pill" data-store="play">Google Play</button>
-      <button class="pill" data-store="github">GitHub</button>
-    </div>
+    <script>var FILTER_DEFS = {filter_defs};</script>
+    <div class="filter-row" id="attr-pills" role="group" aria-label="Narrow it down"></div>
+    <div class="filter-row" id="store-pills" role="group" aria-label="Filter by store"></div>
     <div class="filter-row sort-row">
       <label>Sort:
         <select id="sort">
@@ -586,6 +581,18 @@ def build_index(categories, forms):
 # ---------------------------------------------------------------------------
 
 STORE_LABELS = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"), ("openapk", "OpenAPK"), ("play", "Play"), ("github", "GitHub")]
+
+# Filter pills on the directory page. These tables fix labels and ordering only;
+# whether a pill appears is decided by the apps.json payload at runtime (a pill
+# with no matching apps is dropped, so a stale page can never show a pill that
+# empties the grid). The client renders them; nothing filterable is baked into
+# the HTML shell. STORE order is Derick's preferred filter order.
+FILTER_STORES = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"),
+                 ("openapk", "OpenAPK"), ("play", "Google Play"),
+                 ("github", "GitHub")]
+FILTER_ATTRS = [("open_source", "Open source"), ("offline", "Works offline"),
+                ("no_account", "No account needed"), ("made_by_us", "Made by us"),
+                ("reviewed", "Reviewed"), ("free_enough", "Free Enough")]
 
 
 def fdroid_url(package):
@@ -1724,17 +1731,12 @@ JS_CONTENT = r"""
       if (state.cat && app.category !== state.cat) return false;
       if (state.subcat && app.subcategory !== state.subcat) return false;
       for (var k in state.attrs) {
-        if (k === "made_by_us") { if (!app.made_by_us) return false; }
-        else if (k === "reviewed") { if (app.needs_review) return false; }
-        else if (k === "free_enough") { if (!app.free_enough) return false; }
-        else if (!app.attrs[k]) return false;
+        if (!(k in ATTR_KEYS)) continue; /* unknown key: ignore, never empty the grid */
+        if (!attrMatches(app, k)) return false;
       }
       for (var s in state.stores) {
-        if (s === "play" && !app.stores.play) return false;
-        else if (s === "fdroid" && !app.stores.fdroid) return false;
-        else if (s === "izzy" && !app.stores.izzy) return false;
-        else if (s === "github" && !app.stores.github) return false;
-        else if (s === "openapk" && !app.stores.openapk) return false;
+        if (!(s in STORE_KEYS)) continue;
+        if (!(app.stores && app.stores[s])) return false;
       }
       return matches(app, q);
     });
@@ -1812,35 +1814,90 @@ JS_CONTENT = r"""
       });
     });
   }
-  document.querySelectorAll("#category-chips .chip").forEach(function (c) {
-    c.addEventListener("click", function () {
-      document.querySelectorAll("#category-chips .chip").forEach(function (x) { x.classList.remove("on"); });
-      c.classList.add("on");
-      state.cat = c.getAttribute("data-cat");
-      state.subcat = "";
-      gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
-      renderSubcats();
-      render();
+  /* Filter controls render from the fetched payload (single source of truth):
+     category chips, attr pills, and store pills are built after apps.json
+     loads, so a stale page can never show a filter that matches nothing.
+     FILTER_DEFS (labels + ordering) is emitted by generate.py; whether a
+     control appears is decided by the data. */
+  var DEFS = window.FILTER_DEFS || { stores: [], attrs: [] };
+  var STORE_KEYS = {}, ATTR_KEYS = {};
+  DEFS.stores.forEach(function (d) { STORE_KEYS[d[0]] = d[1]; });
+  DEFS.attrs.forEach(function (d) { ATTR_KEYS[d[0]] = d[1]; });
+
+  function attrMatches(app, k) {
+    if (k === "made_by_us") return !!app.made_by_us;
+    if (k === "reviewed") return !app.needs_review;
+    if (k === "free_enough") return !!app.free_enough;
+    return !!(app.attrs && app.attrs[k]);
+  }
+
+  function selectCat(btn) {
+    document.querySelectorAll("#category-chips .chip").forEach(function (x) { x.classList.remove("on"); });
+    btn.classList.add("on");
+    state.cat = btn.getAttribute("data-cat");
+    state.subcat = "";
+    gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
+    renderSubcats();
+    render();
+  }
+
+  function togglePill(p, store, kind) {
+    var k = p.getAttribute(kind === "store" ? "data-store" : "data-attr");
+    if (store[k]) delete store[k]; else store[k] = true;
+    p.classList.toggle("on", !!store[k]);
+    gcEvent((kind === "store" ? "store/" : "filter/") + k);
+    render();
+  }
+
+  function renderPills(rowId, defs, attrName, present, store, kind) {
+    var row = document.getElementById(rowId);
+    if (!row) return;
+    row.innerHTML = "";
+    var any = false;
+    defs.forEach(function (d) {
+      if (!present(d[0])) return; /* no matching apps: the pill stays out */
+      any = true;
+      var b = document.createElement("button");
+      b.className = "pill";
+      b.setAttribute(attrName, d[0]);
+      b.textContent = d[1];
+      b.addEventListener("click", function () { togglePill(b, store, kind); });
+      row.appendChild(b);
     });
-  });
-  document.querySelectorAll("[data-attr]").forEach(function (p) {
-    p.addEventListener("click", function () {
-      var k = p.getAttribute("data-attr");
-      if (state.attrs[k]) delete state.attrs[k]; else state.attrs[k] = true;
-      p.classList.toggle("on", !!state.attrs[k]);
-      gcEvent("filter/" + k);
-      render();
+    if (!any) row.style.display = "none";
+  }
+
+  function renderCategories() {
+    var seen = {};
+    state.apps.forEach(function (a) { seen[a.category] = true; });
+    var cats = Object.keys(seen).sort(function (x, y) {
+      return x.toLowerCase().localeCompare(y.toLowerCase());
     });
-  });
-  document.querySelectorAll("[data-store]").forEach(function (p) {
-    p.addEventListener("click", function () {
-      var k = p.getAttribute("data-store");
-      if (state.stores[k]) delete state.stores[k]; else state.stores[k] = true;
-      p.classList.toggle("on", !!state.stores[k]);
-      gcEvent("store/" + k);
-      render();
+    var row = document.getElementById("category-chips");
+    row.querySelectorAll('.chip[data-cat]:not([data-cat=""])').forEach(function (x) { x.remove(); });
+    cats.forEach(function (name) {
+      var b = document.createElement("button");
+      b.className = "chip";
+      b.setAttribute("data-cat", name);
+      b.textContent = name;
+      b.addEventListener("click", function () { selectCat(b); });
+      row.appendChild(b);
     });
-  });
+  }
+
+  function renderFilters() {
+    renderCategories();
+    renderPills("attr-pills", DEFS.attrs, "data-attr", function (k) {
+      return state.apps.some(function (a) { return attrMatches(a, k); });
+    }, state.attrs, "attr");
+    renderPills("store-pills", DEFS.stores, "data-store", function (k) {
+      return state.apps.some(function (a) { return a.stores && a.stores[k]; });
+    }, state.stores, "store");
+  }
+
+  /* The static "All" category button lives in the shell; the rest render. */
+  var allCat = document.querySelector('#category-chips [data-cat=""]');
+  if (allCat) allCat.addEventListener("click", function () { selectCat(allCat); });
   document.getElementById("sort").addEventListener("change", function (e) {
     state.sort = e.target.value;
     render();
@@ -1872,6 +1929,7 @@ JS_CONTENT = r"""
         });
         state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
       });
+      renderFilters();
       renderSubcats();
       render();
     })
@@ -2116,9 +2174,60 @@ def taxonomy_report(apps):
                   f"({a['category']} / {a['subcategory']})")
 
 
+def _attr_matches_py(app, k):
+    """Python mirror of attrMatches() in JS_CONTENT, used by the build check.
+    Keep in sync with the JS version by hand if the semantics ever change."""
+    if k == "made_by_us":
+        return bool(app.get("made_by_us"))
+    if k == "reviewed":
+        return not app.get("needs_review")
+    if k == "free_enough":
+        return bool(app.get("free_enough"))
+    return bool((app.get("attrs") or {}).get(k))
+
+
+def check_filter_consistency(apps, index_html, app_js):
+    """Tripwire for the duplicate-source-of-truth bug class: no filterable
+    value may be hardcoded into the page shell. Every data-cat / data-subcat /
+    data-attr / data-store value in the generated HTML/JS must match at least
+    one app in the payload (or be a known filter def with matches); anything
+    else fails the build loudly instead of shipping a chip that empties the
+    grid for users on stale tabs."""
+    problems = []
+    for label, text in (("index.html", index_html), ("assets/app.js", app_js)):
+        for m in re.finditer(
+                r'data-(?:cat|subcat|attr|store)="([^"]*)"', text):
+            v = m.group(0)
+            val = m.group(1)
+            if not val:
+                continue  # the static "All" button (data-cat="")
+            if "+" in val or "'" in val:
+                continue  # a JS template (e.g. renderSubcats), not a value
+            attr = v.split("=")[0]
+            if attr == "data-cat":
+                ok = any(a["category"] == val for a in apps)
+            elif attr == "data-subcat":
+                ok = any(a.get("subcategory") == val for a in apps)
+            elif attr == "data-store":
+                ok = (val in dict(FILTER_STORES) and
+                      any((a.get("stores") or {}).get(val) for a in apps))
+            else:  # data-attr: known def AND at least one matching app
+                ok = (val in dict(FILTER_ATTRS) and
+                      any(_attr_matches_py(a, val) for a in apps))
+            if not ok:
+                problems.append(f"{label}: {v} matches no app in the payload")
+    # Canonical filter defs that would render zero pills: warn, the pill is
+    # dropped gracefully, but it usually means the data model drifted.
+    for key, _label in FILTER_STORES:
+        if not any((a.get("stores") or {}).get(key) for a in apps):
+            print(f"  WARNING: store filter '{key}' has no apps; pill dropped")
+    if problems:
+        raise SystemExit(
+            "filter consistency check FAILED:\n  " + "\n  ".join(problems))
+
+
 def main():
     apps = load_corpus()
-    categories = sorted({a["category"] for a in apps})
     print(f"{len(apps)} apps "
           f"({sum(1 for a in apps if a['made_by_us'])} made by us, "
           f"{sum(1 for a in apps if a['per_badge'])} per-badge, "
@@ -2133,8 +2242,14 @@ def main():
     forms = NtfyForms(topic)
 
     apply_openapk(apps)
+    index_html = build_index(forms)
+    app_js = JS_CONTENT.replace("__NTFY_KEY__", forms.key_b64)
+    if "__NTFY_KEY__" in app_js:
+        print("warning: ntfy key placeholder survived replacement")
+    app_js = app_js.strip() + "\n"
+    check_filter_consistency(apps, index_html, app_js)
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
-    write("index.html", build_index(categories, forms))
+    write("index.html", index_html)
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
     for app in apps:
@@ -2142,10 +2257,7 @@ def main():
     write("sitemap.xml", build_sitemap(apps))
     write("robots.txt", ROBOTS)
     write("assets/styles.css", CSS_CONTENT.strip() + "\n")
-    app_js = JS_CONTENT.replace("__NTFY_KEY__", forms.key_b64)
-    if "__NTFY_KEY__" in app_js:
-        print("warning: ntfy key placeholder survived replacement")
-    write("assets/app.js", app_js.strip() + "\n")
+    write("assets/app.js", app_js)
     write("assets/config.js", build_config_js())
     build_pwa_icons()
     build_id = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M")

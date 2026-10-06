@@ -56,29 +56,11 @@
            aria-label="Search apps" autocomplete="off">
     <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
       <button class="chip on" data-cat="">All</button>
-      <button class="chip" data-cat="Communications">Communications</button>
-      <button class="chip" data-cat="Games">Games</button>
-      <button class="chip" data-cat="Lifestyle">Lifestyle</button>
-      <button class="chip" data-cat="Media">Media</button>
-      <button class="chip" data-cat="System">System</button>
-      <button class="chip" data-cat="Utilities">Utilities</button>
     </div>
     <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
-    <div class="filter-row" role="group" aria-label="Narrow it down">
-      <button class="pill" data-attr="open_source">Open source</button>
-      <button class="pill" data-attr="offline">Works offline</button>
-      <button class="pill" data-attr="no_account">No account needed</button>
-      <button class="pill" data-attr="made_by_us">Made by us</button>
-      <button class="pill" data-attr="reviewed">Reviewed</button>
-      <button class="pill" data-attr="free_enough">Free Enough</button>
-    </div>
-    <div class="filter-row" role="group" aria-label="Filter by store">
-      <button class="pill" data-store="fdroid">F-Droid</button>
-      <button class="pill" data-store="izzy">IzzyOnDroid</button>
-      <button class="pill" data-store="openapk">OpenAPK</button>
-      <button class="pill" data-store="play">Google Play</button>
-      <button class="pill" data-store="github">GitHub</button>
-    </div>
+    <script>var FILTER_DEFS = {"stores": [["fdroid", "F-Droid"], ["izzy", "IzzyOnDroid"], ["openapk", "OpenAPK"], ["play", "Google Play"], ["github", "GitHub"]], "attrs": [["open_source", "Open source"], ["offline", "Works offline"], ["no_account", "No account needed"], ["made_by_us", "Made by us"], ["reviewed", "Reviewed"], ["free_enough", "Free Enough"]]};</script>
+    <div class="filter-row" id="attr-pills" role="group" aria-label="Narrow it down"></div>
+    <div class="filter-row" id="store-pills" role="group" aria-label="Filter by store"></div>
     <div class="filter-row sort-row">
       <label>Sort:
         <select id="sort">

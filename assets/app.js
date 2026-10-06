@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (HY4ZWdqUsjxGlfXu1vd2nQ==, replaced at build time) embedded separately,
+     the key (DIRJHikJ9BGiBA2y++Pfbw==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "HY4ZWdqUsjxGlfXu1vd2nQ==";
+    var K = "DIRJHikJ9BGiBA2y++Pfbw==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -398,17 +398,12 @@
       if (state.cat && app.category !== state.cat) return false;
       if (state.subcat && app.subcategory !== state.subcat) return false;
       for (var k in state.attrs) {
-        if (k === "made_by_us") { if (!app.made_by_us) return false; }
-        else if (k === "reviewed") { if (app.needs_review) return false; }
-        else if (k === "free_enough") { if (!app.free_enough) return false; }
-        else if (!app.attrs[k]) return false;
+        if (!(k in ATTR_KEYS)) continue; /* unknown key: ignore, never empty the grid */
+        if (!attrMatches(app, k)) return false;
       }
       for (var s in state.stores) {
-        if (s === "play" && !app.stores.play) return false;
-        else if (s === "fdroid" && !app.stores.fdroid) return false;
-        else if (s === "izzy" && !app.stores.izzy) return false;
-        else if (s === "github" && !app.stores.github) return false;
-        else if (s === "openapk" && !app.stores.openapk) return false;
+        if (!(s in STORE_KEYS)) continue;
+        if (!(app.stores && app.stores[s])) return false;
       }
       return matches(app, q);
     });
@@ -486,35 +481,90 @@
       });
     });
   }
-  document.querySelectorAll("#category-chips .chip").forEach(function (c) {
-    c.addEventListener("click", function () {
-      document.querySelectorAll("#category-chips .chip").forEach(function (x) { x.classList.remove("on"); });
-      c.classList.add("on");
-      state.cat = c.getAttribute("data-cat");
-      state.subcat = "";
-      gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
-      renderSubcats();
-      render();
+  /* Filter controls render from the fetched payload (single source of truth):
+     category chips, attr pills, and store pills are built after apps.json
+     loads, so a stale page can never show a filter that matches nothing.
+     FILTER_DEFS (labels + ordering) is emitted by generate.py; whether a
+     control appears is decided by the data. */
+  var DEFS = window.FILTER_DEFS || { stores: [], attrs: [] };
+  var STORE_KEYS = {}, ATTR_KEYS = {};
+  DEFS.stores.forEach(function (d) { STORE_KEYS[d[0]] = d[1]; });
+  DEFS.attrs.forEach(function (d) { ATTR_KEYS[d[0]] = d[1]; });
+
+  function attrMatches(app, k) {
+    if (k === "made_by_us") return !!app.made_by_us;
+    if (k === "reviewed") return !app.needs_review;
+    if (k === "free_enough") return !!app.free_enough;
+    return !!(app.attrs && app.attrs[k]);
+  }
+
+  function selectCat(btn) {
+    document.querySelectorAll("#category-chips .chip").forEach(function (x) { x.classList.remove("on"); });
+    btn.classList.add("on");
+    state.cat = btn.getAttribute("data-cat");
+    state.subcat = "";
+    gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
+    renderSubcats();
+    render();
+  }
+
+  function togglePill(p, store, kind) {
+    var k = p.getAttribute(kind === "store" ? "data-store" : "data-attr");
+    if (store[k]) delete store[k]; else store[k] = true;
+    p.classList.toggle("on", !!store[k]);
+    gcEvent((kind === "store" ? "store/" : "filter/") + k);
+    render();
+  }
+
+  function renderPills(rowId, defs, attrName, present, store, kind) {
+    var row = document.getElementById(rowId);
+    if (!row) return;
+    row.innerHTML = "";
+    var any = false;
+    defs.forEach(function (d) {
+      if (!present(d[0])) return; /* no matching apps: the pill stays out */
+      any = true;
+      var b = document.createElement("button");
+      b.className = "pill";
+      b.setAttribute(attrName, d[0]);
+      b.textContent = d[1];
+      b.addEventListener("click", function () { togglePill(b, store, kind); });
+      row.appendChild(b);
     });
-  });
-  document.querySelectorAll("[data-attr]").forEach(function (p) {
-    p.addEventListener("click", function () {
-      var k = p.getAttribute("data-attr");
-      if (state.attrs[k]) delete state.attrs[k]; else state.attrs[k] = true;
-      p.classList.toggle("on", !!state.attrs[k]);
-      gcEvent("filter/" + k);
-      render();
+    if (!any) row.style.display = "none";
+  }
+
+  function renderCategories() {
+    var seen = {};
+    state.apps.forEach(function (a) { seen[a.category] = true; });
+    var cats = Object.keys(seen).sort(function (x, y) {
+      return x.toLowerCase().localeCompare(y.toLowerCase());
     });
-  });
-  document.querySelectorAll("[data-store]").forEach(function (p) {
-    p.addEventListener("click", function () {
-      var k = p.getAttribute("data-store");
-      if (state.stores[k]) delete state.stores[k]; else state.stores[k] = true;
-      p.classList.toggle("on", !!state.stores[k]);
-      gcEvent("store/" + k);
-      render();
+    var row = document.getElementById("category-chips");
+    row.querySelectorAll('.chip[data-cat]:not([data-cat=""])').forEach(function (x) { x.remove(); });
+    cats.forEach(function (name) {
+      var b = document.createElement("button");
+      b.className = "chip";
+      b.setAttribute("data-cat", name);
+      b.textContent = name;
+      b.addEventListener("click", function () { selectCat(b); });
+      row.appendChild(b);
     });
-  });
+  }
+
+  function renderFilters() {
+    renderCategories();
+    renderPills("attr-pills", DEFS.attrs, "data-attr", function (k) {
+      return state.apps.some(function (a) { return attrMatches(a, k); });
+    }, state.attrs, "attr");
+    renderPills("store-pills", DEFS.stores, "data-store", function (k) {
+      return state.apps.some(function (a) { return a.stores && a.stores[k]; });
+    }, state.stores, "store");
+  }
+
+  /* The static "All" category button lives in the shell; the rest render. */
+  var allCat = document.querySelector('#category-chips [data-cat=""]');
+  if (allCat) allCat.addEventListener("click", function () { selectCat(allCat); });
   document.getElementById("sort").addEventListener("change", function (e) {
     state.sort = e.target.value;
     render();
@@ -546,6 +596,7 @@
         });
         state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
       });
+      renderFilters();
       renderSubcats();
       render();
     })
