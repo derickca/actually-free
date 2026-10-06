@@ -3,7 +3,7 @@
   "name": "1List - Simple TODO Lists",
   "package": "com.lolo.io.onelist",
   "slug": "com-lolo-io-onelist",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -61,7 +61,7 @@
   "name": "2FA",
   "package": "app.ninesevennine.twofactorauthenticator",
   "slug": "app-ninesevennine-twofactorauthenticator",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -69,7 +69,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.ninesevennine.twofactorauthenticator.png",
-  "subcategory": "",
+  "subcategory": "Security",
   "description": "The modern privacy and security focused two factor authenticator",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.ninesevennine.twofactorauthenticator.play",
@@ -89,7 +89,7 @@
   "name": "< polycule >",
   "package": "business.braid.polycule",
   "slug": "business-braid-polycule",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -180,7 +180,7 @@
   "name": "Activity Manager",
   "package": "com.activitymanager",
   "slug": "com-activitymanager",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -188,7 +188,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.activitymanager.png",
-  "subcategory": "System",
+  "subcategory": "Device",
   "description": "Advanced activities and shortcuts launcher.",
   "stores": {
    "play": null,
@@ -210,7 +210,7 @@
   "name": "AdAway",
   "package": "org.adaway",
   "slug": "org-adaway",
-  "category": "Comms",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -218,7 +218,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.adaway.png",
-  "subcategory": "Ad Blocker",
+  "subcategory": "Privacy",
   "description": "System-wide ad blocker (root or local VPN).",
   "stores": {
    "play": null,
@@ -240,7 +240,7 @@
   "name": "Aegis Authenticator",
   "package": "com.beemdevelopment.aegis",
   "slug": "com-beemdevelopment-aegis",
-  "category": "Comms",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -248,7 +248,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.beemdevelopment.aegis.png",
-  "subcategory": "Authenticator",
+  "subcategory": "Security",
   "description": "Two-factor authenticator (TOTP/HOTP).",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
@@ -330,7 +330,7 @@
   "name": "Albi",
   "package": "ai.privatebydesign.albi",
   "slug": "ai-privatebydesign-albi",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -338,7 +338,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ai.privatebydesign.albi.png",
-  "subcategory": "Health tracking",
+  "subcategory": "Health",
   "description": "A health tracking app that respects your privacy",
   "stores": {
    "play": null,
@@ -390,7 +390,7 @@
   "name": "AndBible: Bible Study",
   "package": "net.bible.android.activity",
   "slug": "net-bible-android-activity",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -398,7 +398,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.bible.android.activity.png",
-  "subcategory": "Reference",
+  "subcategory": "Education",
   "description": "Read the Bible, study commentaries or dictionaries, or read books offline",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.bible.android.activity",
@@ -451,7 +451,7 @@
   "name": "AnkiDroid",
   "package": "com.ichi2.anki",
   "slug": "com-ichi2-anki",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -459,7 +459,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.ichi2.anki.png",
-  "subcategory": "Flashcards",
+  "subcategory": "Education",
   "description": "Flashcard-based study aid (AnkiDroid)",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ichi2.anki",
@@ -607,7 +607,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.apkupdater.ci.png",
-  "subcategory": "",
+  "subcategory": "App updates",
   "description": "Get updates from multiple sources",
   "stores": {
    "play": null,
@@ -657,7 +657,7 @@
   "name": "App Manager",
   "package": "io.github.muntashirakon.AppManager",
   "slug": "io-github-muntashirakon-appmanager",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -665,7 +665,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.muntashirakon.AppManager.png",
-  "subcategory": "System",
+  "subcategory": "Device",
   "description": "Full-featured open source package manager for Android",
   "stores": {
    "play": null,
@@ -687,7 +687,7 @@
   "name": "ArcaneChat",
   "package": "chat.delta.lite",
   "slug": "chat-delta-lite",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -745,7 +745,7 @@
   "name": "Arcticons - Line Icon Pack",
   "package": "com.donnnno.arcticons",
   "slug": "com-donnnno-arcticons",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -753,7 +753,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.donnnno.arcticons.png",
-  "subcategory": "Personalization",
+  "subcategory": "Customization",
   "description": "A monotone line-based icon pack for dark themed home screens",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.donnnno.arcticons",
@@ -773,7 +773,7 @@
   "name": "Aria for Misskey",
   "package": "com.poppingmoon.aria",
   "slug": "com-poppingmoon-aria",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -781,7 +781,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.poppingmoon.aria.png",
-  "subcategory": "Misskey",
+  "subcategory": "Social",
   "description": "Dive into the interplanetary microblogging platform 🚀",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.poppingmoon.aria",
@@ -982,7 +982,7 @@
   "name": "Authenticator Pro",
   "package": "me.jmh.authenticatorpro",
   "slug": "me-jmh-authenticatorpro",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -990,7 +990,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/me.jmh.authenticatorpro.png",
-  "subcategory": "2FA",
+  "subcategory": "Security",
   "description": "Free and open-source 2FA app with encrypted backups",
   "stores": {
    "play": null,
@@ -1098,7 +1098,7 @@
   "name": "Baly Groceries Tracker",
   "package": "com.baly_groceries_tracker.app",
   "slug": "com-baly-groceries-tracker-app",
-  "category": "Food",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1106,7 +1106,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.baly_groceries_tracker.app.png",
-  "subcategory": "Shopping list",
+  "subcategory": "Food",
   "description": "Track your groceries, without worrying about running out.",
   "stores": {
    "play": null,
@@ -1336,7 +1336,7 @@
   "name": "bitchat",
   "package": "com.bitchat.droid",
   "slug": "com-bitchat-droid",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1434,7 +1434,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ls.bloomee.musicplayer.png",
-  "subcategory": "",
+  "subcategory": "Music streaming",
   "description": "Experience music without limits.",
   "stores": {
    "play": null,
@@ -1454,7 +1454,7 @@
   "name": "Blorp",
   "package": "xyz.blorpblorp.app",
   "slug": "xyz-blorpblorp-app",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1462,7 +1462,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/xyz.blorpblorp.app.png",
-  "subcategory": "Lemmy",
+  "subcategory": "Social",
   "description": "Threadiverse client for Lemmy and PieFed",
   "stores": {
    "play": null,
@@ -1514,7 +1514,7 @@
   "name": "Bowl Timer",
   "package": "de.coreproduction.bowltimer",
   "slug": "de-coreproduction-bowltimer",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1522,7 +1522,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.coreproduction.bowltimer.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "An elegant, distraction-free meditation timer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.coreproduction.bowltimer",
@@ -1542,7 +1542,7 @@
   "name": "Breezy Weather",
   "package": "org.breezyweather",
   "slug": "org-breezyweather",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1572,7 +1572,7 @@
   "name": "Briar",
   "package": "org.briarproject.briar.android",
   "slug": "org-briarproject-briar-android",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1630,7 +1630,7 @@
   "name": "Budget My Life",
   "package": "rsquared226.budget_my_life",
   "slug": "rsquared226-budget-my-life",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1638,7 +1638,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/rsquared226.budget_my_life.png",
-  "subcategory": "",
+  "subcategory": "Finance",
   "description": "Budget your life with ease",
   "stores": {
    "play": null,
@@ -1746,7 +1746,7 @@
   "name": "Cardabase",
   "package": "com.georgeyt9769.cardabase",
   "slug": "com-georgeyt9769-cardabase",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1754,7 +1754,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.georgeyt9769.cardabase.png",
-  "subcategory": "Loyalty cards",
+  "subcategory": "Finance",
   "description": "Lightweight digital wallet to securely scan, store, and manage loyalty cards off",
   "stores": {
    "play": null,
@@ -1776,7 +1776,7 @@
   "name": "Catima",
   "package": "me.hackerchick.catima",
   "slug": "me-hackerchick-catima",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1784,7 +1784,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/me.hackerchick.catima.png",
-  "subcategory": "Loyalty cards",
+  "subcategory": "Finance",
   "description": "Loyalty/membership cards, barcodes, coupons and tickets",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.hackerchick.catima",
@@ -1806,7 +1806,7 @@
   "name": "CClauncher",
   "package": "app.cclauncher",
   "slug": "app-cclauncher",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1814,7 +1814,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.cclauncher.png",
-  "subcategory": "Launcher",
+  "subcategory": "Customization",
   "description": "Minimal home launcher that hides apps by default to reduce distractions",
   "stores": {
    "play": null,
@@ -2015,7 +2015,7 @@
   "name": "Clima",
   "package": "co.prestosole.clima",
   "slug": "co-prestosole-clima",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2045,7 +2045,7 @@
   "name": "CoMaps",
   "package": "app.comaps",
   "slug": "app-comaps",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2053,7 +2053,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.comaps.png",
-  "subcategory": "",
+  "subcategory": "Navigation",
   "description": "Easy map navigation - Discover more of your journey - Powered by the community",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.comaps.google",
@@ -2281,7 +2281,7 @@
   "name": "CPU Info (open-source)",
   "package": "com.kgurgul.cpuinfo",
   "slug": "com-kgurgul-cpuinfo",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2289,7 +2289,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.kgurgul.cpuinfo.png",
-  "subcategory": "System",
+  "subcategory": "Device",
   "description": "CPU Info provides information about device hardware and software",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kgurgul.cpuinfo",
@@ -2399,7 +2399,7 @@
   "name": "Currencies: Exchange Rate Calc",
   "package": "de.salomax.currencies",
   "slug": "de-salomax-currencies",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2407,7 +2407,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.salomax.currencies.png",
-  "subcategory": "Money",
+  "subcategory": "Finance",
   "description": "Currencies is a simple and straightforward currency converter.It is not intended to be used for realtime financial business, rather to be a handy companion e.g",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.salomax.currencies",
@@ -2455,7 +2455,7 @@
   "name": "Daily You",
   "package": "com.demizo.daily_you",
   "slug": "com-demizo-daily-you",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2463,7 +2463,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.demizo.daily_you.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Every day is worth remembering…",
   "stores": {
    "play": null,
@@ -2603,7 +2603,7 @@
   "name": "Deku SMS",
   "package": "com.afkanerd.deku",
   "slug": "com-afkanerd-deku",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2633,7 +2633,7 @@
   "name": "Delta Chat",
   "package": "com.b44t.messenger",
   "slug": "com-b44t-messenger",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2663,7 +2663,7 @@
   "name": "Dharmik - Browse Bhagavad Gita",
   "package": "com.shub39.dharmik.online",
   "slug": "com-shub39-dharmik-online",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2671,7 +2671,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.shub39.dharmik.online.png",
-  "subcategory": "Reference",
+  "subcategory": "Education",
   "description": "Dharmik is a simple app to browse the Bhagavad Gita",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.shub39.dharmik.online",
@@ -2722,7 +2722,7 @@
   "name": "DNSNet",
   "package": "dev.clombardo.dnsnet",
   "slug": "dev-clombardo-dnsnet",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2730,7 +2730,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.clombardo.dnsnet.png",
-  "subcategory": "Firewall",
+  "subcategory": "Privacy",
   "description": "DNSNet allows you to take more control over what internet traffic goes in and out of your device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.clombardo.dnsnet",
@@ -2752,7 +2752,7 @@
   "name": "Doodle: Live Wallpapers",
   "package": "xyz.zedler.patrick.doodle",
   "slug": "xyz-zedler-patrick-doodle",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2760,7 +2760,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/xyz.zedler.patrick.doodle.png",
-  "subcategory": "Personalization",
+  "subcategory": "Customization",
   "description": "Colorful live wallpapers with auto dark mode and power-efficient animations",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=xyz.zedler.patrick.doodle",
@@ -2990,7 +2990,7 @@
   "name": "Element",
   "package": "im.vector.app",
   "slug": "im-vector-app",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3018,7 +3018,7 @@
   "name": "Element X",
   "package": "io.element.android.x",
   "slug": "io-element-android-x",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3108,7 +3108,7 @@
   "name": "Energize",
   "package": "com.flasskamp.energize",
   "slug": "com-flasskamp-energize",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3116,7 +3116,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.flasskamp.energize.png",
-  "subcategory": "Nutrition",
+  "subcategory": "Health",
   "description": "Track your nutrition easily and fast.",
   "stores": {
    "play": null,
@@ -3198,7 +3198,7 @@
   "name": "EtchDroid ISO to USB Writer",
   "package": "eu.depau.etchdroid",
   "slug": "eu-depau-etchdroid",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3206,7 +3206,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.depau.etchdroid.png",
-  "subcategory": "System",
+  "subcategory": "Device",
   "description": "Write operating system ISO images to USB drives, no root required",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.depau.etchdroid",
@@ -3228,7 +3228,7 @@
   "name": "Exclave",
   "package": "com.github.dyhkwong.sagernet",
   "slug": "com-github-dyhkwong-sagernet",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3236,7 +3236,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.dyhkwong.sagernet.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "Proxy client",
   "stores": {
    "play": null,
@@ -3258,7 +3258,7 @@
   "name": "Exodus",
   "package": "org.eu.exodus_privacy.exodusprivacy",
   "slug": "org-eu-exodus-privacy-exodusprivacy",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3266,7 +3266,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.eu.exodus_privacy.exodusprivacy.png",
-  "subcategory": "Trackers",
+  "subcategory": "Privacy",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.eu.exodus_privacy.exodusprivacy",
@@ -3348,7 +3348,7 @@
   "name": "FairEmail",
   "package": "eu.faircode.email",
   "slug": "eu-faircode-email",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3708,7 +3708,7 @@
   "name": "FeurStagram",
   "package": "github.jean-voila.feurstagram",
   "slug": "github-jean-voila-feurstagram",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3716,7 +3716,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/github.jean-voila.feurstagram.png",
-  "subcategory": "Instagram",
+  "subcategory": "Social",
   "description": "Instagram w/o Reels/feed/ads (DMs+stories kept)",
   "stores": {
    "play": null,
@@ -3796,7 +3796,7 @@
   "name": "Firefox",
   "package": "org.mozilla.firefox",
   "slug": "org-mozilla-firefox",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3824,7 +3824,7 @@
   "name": "FitBook",
   "package": "com.presley.fit_book",
   "slug": "com-presley-fit-book",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3832,7 +3832,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.presley.fit_book.png",
-  "subcategory": "Nutrition",
+  "subcategory": "Health",
   "description": "Track your calorie intake - Completely offline!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.presley.fit_book",
@@ -3854,7 +3854,7 @@
   "name": "FitoTrack",
   "package": "de.tadris.fitness",
   "slug": "de-tadris-fitness",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3862,7 +3862,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.tadris.fitness.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "A privacy oriented fitness tracker for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.tadris.fitness",
@@ -3970,7 +3970,7 @@
   "name": "Flexify: Gym Workout Log",
   "package": "com.presley.flexify",
   "slug": "com-presley-flexify",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3978,7 +3978,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.presley.flexify.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "Log workouts, reps, cardio, and rest timers. Track strength offline.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.presley.flexify",
@@ -4068,7 +4068,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.aedev.flow.png",
-  "subcategory": "",
+  "subcategory": "Music streaming",
   "description": "Privacy-respecting YouTube and Music client with local recommendations.",
   "stores": {
    "play": null,
@@ -4234,7 +4234,7 @@
   "name": "Food Expirations",
   "package": "com.lorenzovainigli.foodexpirationdates.foss",
   "slug": "com-lorenzovainigli-foodexpirationdates-foss",
-  "category": "Food",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4242,7 +4242,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.lorenzovainigli.foodexpirationdates.foss.png",
-  "subcategory": "",
+  "subcategory": "Food",
   "description": "Remember all the expiration dates of your food stocks.",
   "stores": {
    "play": null,
@@ -4380,7 +4380,7 @@
   "name": "Fossify Contacts",
   "package": "org.fossify.contacts",
   "slug": "org-fossify-contacts",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4388,7 +4388,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.contacts.png",
-  "subcategory": "Dialer & Contacts",
+  "subcategory": "Phone",
   "description": "Contacts manager.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.contacts",
@@ -4470,7 +4470,7 @@
   "name": "Fossify Launcher",
   "package": "org.fossify.home",
   "slug": "org-fossify-home",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4478,7 +4478,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.home.png",
-  "subcategory": "",
+  "subcategory": "Customization",
   "description": "Customize your home screen with a fast, ad-free, open-source launcher",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.home",
@@ -4500,7 +4500,7 @@
   "name": "Fossify Phone",
   "package": "org.fossify.phone",
   "slug": "org-fossify-phone",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4508,7 +4508,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.phone.png",
-  "subcategory": "Dialer & Contacts",
+  "subcategory": "Phone",
   "description": "Dialer and phone app.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.phone",
@@ -4530,7 +4530,7 @@
   "name": "Fossify SMS Messenger",
   "package": "org.fossify.messages",
   "slug": "org-fossify-messages",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4538,7 +4538,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.messages.png",
-  "subcategory": "SMS",
+  "subcategory": "Phone",
   "description": "Text messaging, minus the noise.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.messages",
@@ -4711,7 +4711,7 @@
   "name": "Gadgetbridge",
   "package": "nodomain.freeyourgadget.gadgetbridge",
   "slug": "nodomain-freeyourgadget-gadgetbridge",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4719,7 +4719,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/nodomain.freeyourgadget.gadgetbridge.png",
-  "subcategory": "Fitness devices",
+  "subcategory": "Health",
   "description": "Use your smart watch and other bluetooth devices and keep your data private!",
   "stores": {
    "play": null,
@@ -4859,7 +4859,7 @@
   "name": "Gemini Notebook",
   "package": "com.google.android.apps.labs.language.tailwind",
   "slug": "com-google-android-apps-labs-language-tailwind",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4867,7 +4867,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.google.android.apps.labs.language.tailwind.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Understand anything with a personalized AI research assistant",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.labs.language.tailwind",
@@ -4925,7 +4925,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.mian.gitnex.png",
-  "subcategory": "",
+  "subcategory": "Dev tools",
   "description": "Native client for Forgejo and Gitea",
   "stores": {
    "play": null,
@@ -4947,7 +4947,7 @@
   "name": "Global Send",
   "package": "com.peer.topeer.global_send",
   "slug": "com-peer-topeer-global-send",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5093,7 +5093,7 @@
   "name": "Google Keep - Notes and lists",
   "package": "com.google.android.keep",
   "slug": "com-google-android-keep",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5101,7 +5101,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.google.android.keep.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Quickly capture and share your thoughts, manage your to-dos, and stay organized",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.keep",
@@ -5149,7 +5149,7 @@
   "name": "Google Tasks",
   "package": "com.google.android.apps.tasks",
   "slug": "com-google-android-apps-tasks",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5177,7 +5177,7 @@
   "name": "GPS Logger",
   "package": "eu.basicairdata.graziano.gpslogger",
   "slug": "eu-basicairdata-graziano-gpslogger",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5185,7 +5185,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.basicairdata.graziano.gpslogger.png",
-  "subcategory": "",
+  "subcategory": "Navigation",
   "description": "A simple and lightweight app for recording your position and your path",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.basicairdata.graziano.gpslogger",
@@ -5205,7 +5205,7 @@
   "name": "GPSTest",
   "package": "com.android.gpstest.osmdroid",
   "slug": "com-android-gpstest-osmdroid",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5213,7 +5213,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.android.gpstest.osmdroid.png",
-  "subcategory": "",
+  "subcategory": "Navigation",
   "description": "The #1 open-source GNSS/GPS app on Android. No ads, no trackers, just data.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.android.gpstest",
@@ -5295,7 +5295,7 @@
   "name": "Grit",
   "package": "com.shub39.grit",
   "slug": "com-shub39-grit",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5325,7 +5325,7 @@
   "name": "GymMane",
   "package": "com.gymmane.app",
   "slug": "com-gymmane-app",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5333,7 +5333,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gymmane.app.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "Dark, offline gym log. Tap the muscle, log your sets, watch your numbers move.",
   "stores": {
    "play": null,
@@ -5679,7 +5679,7 @@
   "name": "InviZible",
   "package": "pan.alexander.tordnscrypt.gp",
   "slug": "pan-alexander-tordnscrypt-gp",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5687,7 +5687,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/pan.alexander.tordnscrypt.gp.png",
-  "subcategory": "Firewall",
+  "subcategory": "Privacy",
   "description": "DNSCrypt + Tor + I2P firewall",
   "stores": {
    "play": null,
@@ -5707,7 +5707,7 @@
   "name": "IYPS",
   "package": "com.iyps",
   "slug": "com-iyps",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5715,7 +5715,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.iyps.png",
-  "subcategory": "",
+  "subcategory": "Security",
   "description": "Evaluate passwords, predict crack times, and get tips for stronger passwords.",
   "stores": {
    "play": null,
@@ -5765,7 +5765,7 @@
   "name": "Jami",
   "package": "cx.ring",
   "slug": "cx-ring",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5773,7 +5773,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/cx.ring.png",
-  "subcategory": "Calling",
+  "subcategory": "Phone",
   "description": "P2P audio/video calls and chat",
   "stores": {
    "play": null,
@@ -5853,7 +5853,7 @@
   "name": "Jerboa",
   "package": "com.jerboa",
   "slug": "com-jerboa",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5861,7 +5861,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jerboa.png",
-  "subcategory": "Lemmy",
+  "subcategory": "Social",
   "description": "An app for Lemmy, a federated reddit alternative.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jerboa",
@@ -5883,7 +5883,7 @@
   "name": "JetBird",
   "package": "dev.bg.jetbird",
   "slug": "dev-bg-jetbird",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5891,7 +5891,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.bg.jetbird.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "An unofficial, FLOSS, native Android NetBird client built with privacy in mind",
   "stores": {
    "play": null,
@@ -5913,7 +5913,7 @@
   "name": "Jidoujisho",
   "package": "github.arianneorpilla.jidoujisho",
   "slug": "github-arianneorpilla-jidoujisho",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5921,7 +5921,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/github.arianneorpilla.jidoujisho.png",
-  "subcategory": "Language",
+  "subcategory": "Education",
   "description": "Japanese dictionary + reader for language learners",
   "stores": {
    "play": null,
@@ -6001,7 +6001,7 @@
   "name": "Joplin",
   "package": "net.cozic.joplin",
   "slug": "net-cozic-joplin",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6009,7 +6009,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.cozic.joplin.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Note taking and to-do app with sync across desktop and mobile",
   "stores": {
    "play": null,
@@ -6029,7 +6029,7 @@
   "name": "jtx Board",
   "package": "at.techbee.jtx",
   "slug": "at-techbee-jtx",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6037,7 +6037,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/at.techbee.jtx.png",
-  "subcategory": "Journal",
+  "subcategory": "Productivity",
   "description": "Journals, notes and tasks",
   "stores": {
    "play": null,
@@ -6097,7 +6097,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.onekash.kashcal.png",
-  "subcategory": "",
+  "subcategory": "Calendar",
   "description": "All your calendars in one app. iCloud, CalDAV, device, ICS. Private.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.onekash.kashcal",
@@ -6119,7 +6119,7 @@
   "name": "Keepass2Android Offline",
   "package": "keepass2android.keepass2android_nonet",
   "slug": "keepass2android-keepass2android-nonet",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6127,7 +6127,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/keepass2android.keepass2android_nonet.png",
-  "subcategory": "Passwords",
+  "subcategory": "Security",
   "description": "Offline KeePass password manager",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=keepass2android.keepass2android_nonet",
@@ -6149,7 +6149,7 @@
   "name": "KeePassDX",
   "package": "com.kunzisoft.keepass.libre",
   "slug": "com-kunzisoft-keepass-libre",
-  "category": "Comms",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6157,7 +6157,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.kunzisoft.keepass.libre.png",
-  "subcategory": "Password Manager",
+  "subcategory": "Security",
   "description": "Password manager (KeePass-compatible).",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
@@ -6211,7 +6211,7 @@
   "name": "Khushu",
   "package": "com.kaizen.khushu",
   "slug": "com-kaizen-khushu",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6219,7 +6219,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.kaizen.khushu.png",
-  "subcategory": "",
+  "subcategory": "Spirituality",
   "description": "Private Muslim app for prayer, tasbih, study, and gentle reminders",
   "stores": {
    "play": null,
@@ -6241,7 +6241,7 @@
   "name": "KISS Launcher",
   "package": "fr.neamar.kiss",
   "slug": "fr-neamar-kiss",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6249,7 +6249,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/fr.neamar.kiss.png",
-  "subcategory": "Launcher",
+  "subcategory": "Customization",
   "description": "Minimal search-based launcher.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=fr.neamar.kiss",
@@ -6301,7 +6301,7 @@
   "name": "Knit",
   "package": "app.getknit.knit",
   "slug": "app-getknit-knit",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6309,7 +6309,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.getknit.knit.png",
-  "subcategory": "Mesh chat",
+  "subcategory": "Messaging",
   "description": "Encrypted mesh chat over Wi-Fi Aware and Bluetooth — no internet, no servers.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.getknit.knit",
@@ -6359,7 +6359,7 @@
   "name": "Koler",
   "package": "com.chooloo.www.koler",
   "slug": "com-chooloo-www-koler",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6367,7 +6367,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chooloo.www.koler.png",
-  "subcategory": "Dialer & Contacts",
+  "subcategory": "Phone",
   "description": "Simple phone dialer.",
   "stores": {
    "play": null,
@@ -6449,7 +6449,7 @@
   "name": "Kvaesitso",
   "package": "de.mm20.launcher2.release",
   "slug": "de-mm20-launcher2-release",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6457,7 +6457,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.mm20.launcher2.release.png",
-  "subcategory": "",
+  "subcategory": "Customization",
   "description": "A search-focused, free and open source launcher for Android",
   "stores": {
    "play": null,
@@ -6479,7 +6479,7 @@
   "name": "Lawnchair",
   "package": "app.lawnchair",
   "slug": "app-lawnchair",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6487,7 +6487,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.lawnchair.png",
-  "subcategory": "Launcher",
+  "subcategory": "Customization",
   "description": "Customizable Pixel-style launcher.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.lawnchair.play",
@@ -6807,7 +6807,7 @@
   "name": "Linux Command Library",
   "package": "com.inspiredandroid.linuxcommandbibliotheca",
   "slug": "com-inspiredandroid-linuxcommandbibliotheca",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6815,7 +6815,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.inspiredandroid.linuxcommandbibliotheca.png",
-  "subcategory": "Reference",
+  "subcategory": "Education",
   "description": "8966 manual pages, 30 basic categories and a bunch of general terminal tips",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.inspiredandroid.linuxcommandbibliotheca",
@@ -6926,7 +6926,7 @@
   "name": "Logseq",
   "package": "com.logseq.app",
   "slug": "com-logseq-app",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6934,7 +6934,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.logseq.app.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "A privacy-first, open-source platform for knowledge management.",
   "stores": {
    "play": null,
@@ -6956,7 +6956,7 @@
   "name": "Loop Habit Tracker",
   "package": "org.isoron.uhabits",
   "slug": "org-isoron-uhabits",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6964,7 +6964,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.isoron.uhabits.png",
-  "subcategory": "Habits",
+  "subcategory": "Health",
   "description": "Track habits and long-term goals (Loop Habit Tracker)",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.isoron.uhabits",
@@ -7014,7 +7014,7 @@
   "name": "Lumine",
   "package": "com.moi.lumine",
   "slug": "com-moi-lumine",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7022,7 +7022,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.moi.lumine.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "A lightweight local HTTP/SOCKS5 proxy server protects TLS connections over TCP.",
   "stores": {
    "play": null,
@@ -7135,7 +7135,7 @@
   "name": "L×Box: VPN & Proxy Client",
   "package": "com.leadaxe.lxbox",
   "slug": "com-leadaxe-lxbox",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7143,7 +7143,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.leadaxe.lxbox.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "VPN client: 12+ protocols, subscriptions, app routing, balancing, traffic stats",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.leadaxe.lxbox",
@@ -7195,7 +7195,7 @@
   "name": "Mages",
   "package": "org.mlm.mages",
   "slug": "org-mlm-mages",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7316,7 +7316,7 @@
   "name": "Markor",
   "package": "net.gsantner.markor",
   "slug": "net-gsantner-markor",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7324,7 +7324,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.gsantner.markor.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Text editor - Notes & ToDo. Lightweight. Markdown and todo.txt support.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.gsantner.markor",
@@ -7436,7 +7436,7 @@
   "name": "Material Notes",
   "package": "com.maelchiotti.localmaterialnotes",
   "slug": "com-maelchiotti-localmaterialnotes",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7444,7 +7444,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.maelchiotti.localmaterialnotes.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Simple, local, material design notes",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.maelchiotti.localmaterialnotes",
@@ -7474,7 +7474,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/us.materialio.app.png",
-  "subcategory": "",
+  "subcategory": "Video player",
   "description": "Modern material design for YouTube and Invidious.",
   "stores": {
    "play": null,
@@ -7496,7 +7496,7 @@
   "name": "Mattermost Beta",
   "package": "com.mattermost.rnbeta",
   "slug": "com-mattermost-rnbeta",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7526,7 +7526,7 @@
   "name": "Meditate",
   "package": "io.github.janekbt.Meditate",
   "slug": "io-github-janekbt-meditate",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7534,7 +7534,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.janekbt.Meditate.png",
-  "subcategory": "Meditation",
+  "subcategory": "Health",
   "description": "Meditation timer with session log, stats, and Nextcloud sync.",
   "stores": {
    "play": null,
@@ -7586,7 +7586,7 @@
   "name": "Meditation Timer",
   "package": "uk.co.telesense.tm.free",
   "slug": "uk-co-telesense-tm-free",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7594,7 +7594,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/uk.co.telesense.tm.free.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "This is a simple and attractive meditation timer which can completely silence your device while you meditate. [Note: package name suggests a paid version exists elsewhere",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=uk.co.telesense.tm.free",
@@ -7614,7 +7614,7 @@
   "name": "Meditation Timer",
   "package": "com.sohamgreens.MeditationTimer",
   "slug": "com-sohamgreens-meditationtimer",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7622,7 +7622,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.sohamgreens.MeditationTimer.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "Another app to use as a meditation timer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sohamgreens.MeditationTimer",
@@ -7642,7 +7642,7 @@
   "name": "Medito",
   "package": "meditofoundation.medito",
   "slug": "meditofoundation-medito",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7650,7 +7650,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/meditofoundation.medito.png",
-  "subcategory": "Meditation",
+  "subcategory": "Health",
   "description": "Free meditation: relax, de-stress, sleep, breathing exercises",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=meditofoundation.medito",
@@ -7670,7 +7670,7 @@
   "name": "Mensinator",
   "package": "com.mensinator.app",
   "slug": "com-mensinator-app",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7678,7 +7678,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.mensinator.app.png",
-  "subcategory": "",
+  "subcategory": "Health",
   "description": "Tailored Period Tracking, Total Privacy—Your Period, Your Control.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.mensinator.app",
@@ -7736,7 +7736,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.metrolist.music.png",
-  "subcategory": "",
+  "subcategory": "Music streaming",
   "description": "Material 3 YouTube Music client for Android",
   "stores": {
    "play": null,
@@ -7786,7 +7786,7 @@
   "name": "Microsoft Launcher",
   "package": "com.microsoft.launcher",
   "slug": "com-microsoft-launcher",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7794,7 +7794,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.microsoft.launcher.png",
-  "subcategory": "Personalization",
+  "subcategory": "Customization",
   "description": "Personalize your phone and stay organized on the go",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.launcher",
@@ -7814,7 +7814,7 @@
   "name": "Microsoft OneNote: Save Notes",
   "package": "com.microsoft.office.onenote",
   "slug": "com-microsoft-office-onenote",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7822,7 +7822,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.microsoft.office.onenote.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Make sense of your files with AI, searching across your notes for what you need",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.office.onenote",
@@ -7842,7 +7842,7 @@
   "name": "Microsoft To Do: Lists & Tasks",
   "package": "com.microsoft.todos",
   "slug": "com-microsoft-todos",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7956,7 +7956,7 @@
   "name": "Mindwtr",
   "package": "tech.dongdongbh.mindwtr",
   "slug": "tech-dongdongbh-mindwtr",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7964,7 +7964,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/tech.dongdongbh.mindwtr.png",
-  "subcategory": "",
+  "subcategory": "Tasks",
   "description": "Clear your head: capture tasks fast, see your next step. Offline, free, GTD.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=tech.dongdongbh.mindwtr",
@@ -8055,7 +8055,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gitlab.mudlej.MjPdfReader.png",
-  "subcategory": "",
+  "subcategory": "Documents",
   "description": "A simple PDF viewer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gitlab.mudlej.MjPdfReader",
@@ -8077,7 +8077,7 @@
   "name": "MoeMemos",
   "package": "me.mudkip.moememos",
   "slug": "me-mudkip-moememos",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8085,7 +8085,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/me.mudkip.moememos.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "An app to help you capture thoughts & ideas",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.mudkip.moememos",
@@ -8137,7 +8137,7 @@
   "name": "Money Manager Ex",
   "package": "com.money.manager.ex",
   "slug": "com-money-manager-ex",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8145,7 +8145,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.money.manager.ex.png",
-  "subcategory": "Expense",
+  "subcategory": "Finance",
   "description": "Personal finance manager",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.money.manager.ex.android",
@@ -8257,7 +8257,7 @@
   "name": "Moshidon",
   "package": "org.joinmastodon.android.moshinda",
   "slug": "org-joinmastodon-android-moshinda",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8265,7 +8265,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.joinmastodon.android.moshinda.png",
-  "subcategory": "Mastodon",
+  "subcategory": "Social",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.joinmastodon.android.moshinda",
@@ -8325,7 +8325,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.marlboroadvance.mpvex.png",
-  "subcategory": "",
+  "subcategory": "Video player",
   "description": "A powerful media player built on mpv with an improved user interface",
   "stores": {
    "play": null,
@@ -8373,7 +8373,7 @@
   "name": "Murine Launcher",
   "package": "app.murinelauncher",
   "slug": "app-murinelauncher",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8381,7 +8381,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.murinelauncher.png",
-  "subcategory": "Personalization",
+  "subcategory": "Customization",
   "description": "A modern, lightweight Launcher3 fork for an enhanced stock++ Android experience",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.murinelauncher",
@@ -8461,7 +8461,7 @@
   "name": "MyMoney—Track Expense & Budget",
   "package": "com.raha.app.mymoney.free",
   "slug": "com-raha-app-mymoney-free",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8469,7 +8469,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.raha.app.mymoney.free.png",
-  "subcategory": "Money",
+  "subcategory": "Finance",
   "description": "Daily Expense Tracker, Personal Finance Manager & Budgeting App - simple & easy. [Note: package name suggests a separate Pro edition exists",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.raha.app.mymoney.free",
@@ -8575,7 +8575,7 @@
   "name": "Nearby Glasses",
   "package": "ch.pocketpc.nearbyglasses",
   "slug": "ch-pocketpc-nearbyglasses",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8583,7 +8583,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ch.pocketpc.nearbyglasses.png",
-  "subcategory": "",
+  "subcategory": "Security",
   "description": "Smart Glasses are often hard to spot. This app scans for their Bluetooth ID.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ch.pocketpc.nearbyglasses",
@@ -8671,7 +8671,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.machiav3lli.fdroid.png",
-  "subcategory": "",
+  "subcategory": "App store",
   "description": "A modern feature-rich F-Droid client.",
   "stores": {
    "play": null,
@@ -8693,7 +8693,7 @@
   "name": "NetGuard",
   "package": "eu.faircode.netguard",
   "slug": "eu-faircode-netguard",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8723,7 +8723,7 @@
   "name": "NewPass",
   "package": "com.gero.newpass",
   "slug": "com-gero-newpass",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8731,7 +8731,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gero.newpass.png",
-  "subcategory": "",
+  "subcategory": "Security",
   "description": "Securely store and manage passwords of your digital realm with NewPass.",
   "stores": {
    "play": null,
@@ -8814,7 +8814,7 @@
   "name": "Nextcloud",
   "package": "com.nextcloud.client",
   "slug": "com-nextcloud-client",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8844,7 +8844,7 @@
   "name": "Night Drop",
   "package": "app.nightdrop",
   "slug": "app-nightdrop",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8904,7 +8904,7 @@
   "name": "Notally | Minimalist Notes",
   "package": "com.omgodse.notally",
   "slug": "com-omgodse-notally",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8912,7 +8912,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.omgodse.notally.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "A simple and elegant open source notes app",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.omgodse.notally",
@@ -8934,7 +8934,7 @@
   "name": "Notesnook - Private notes app",
   "package": "com.streetwriters.notesnook",
   "slug": "com-streetwriters-notesnook",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9114,7 +9114,7 @@
   "name": "Oinkoin",
   "package": "com.github.emavgl.piggybankpro",
   "slug": "com-github-emavgl-piggybankpro",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9122,7 +9122,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.emavgl.piggybankpro.png",
-  "subcategory": "Money",
+  "subcategory": "Finance",
   "description": "Oinkoin Money Manager makes managing personal finances easy and secure.",
   "stores": {
    "play": null,
@@ -9174,7 +9174,7 @@
   "name": "Olauncher. Minimal AF Launcher",
   "package": "app.olauncher",
   "slug": "app-olauncher",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9182,7 +9182,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.olauncher.png",
-  "subcategory": "Personalization",
+  "subcategory": "Customization",
   "description": "Minimalist launcher to reduce your screen time",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.olauncher",
@@ -9204,7 +9204,7 @@
   "name": "OMN-Go",
   "package": "net.basov.omngo.fdroid",
   "slug": "net-basov-omngo-fdroid",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9212,7 +9212,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.basov.omngo.fdroid.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Self-hosted Markdown notes with git sync, LAN sharing, and SQL scripting",
   "stores": {
    "play": null,
@@ -9234,7 +9234,7 @@
   "name": "OnionShare",
   "package": "org.onionshare.android.fdroid",
   "slug": "org-onionshare-android-fdroid",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9242,7 +9242,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.onionshare.android.fdroid.png",
-  "subcategory": "Anonymous sharing",
+  "subcategory": "Privacy",
   "description": "Securely and anonymously share files using the Tor network",
   "stores": {
    "play": null,
@@ -9413,7 +9413,7 @@
   "name": "OpenList Mobile",
   "package": "com.openlist.mobile",
   "slug": "com-openlist-mobile",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9499,7 +9499,7 @@
   "name": "OpenTasks",
   "package": "org.dmfs.tasks",
   "slug": "org-dmfs-tasks",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9529,7 +9529,7 @@
   "name": "OpenTracks",
   "package": "de.dennisguse.opentracks",
   "slug": "de-dennisguse-opentracks",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9537,7 +9537,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.dennisguse.opentracks.png",
-  "subcategory": "Fitness",
+  "subcategory": "Health",
   "description": "Privacy-respecting sport tracker",
   "stores": {
    "play": null,
@@ -9587,7 +9587,7 @@
   "name": "OPNsense Manager",
   "package": "com.dt.opnsense_manager",
   "slug": "com-dt-opnsense-manager",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9595,7 +9595,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.dt.opnsense_manager.png",
-  "subcategory": "Firewall",
+  "subcategory": "Privacy",
   "description": "Manage OPNsense firewall: monitor, configure rules, view logs & services",
   "stores": {
    "play": null,
@@ -9617,7 +9617,7 @@
   "name": "Organic Maps",
   "package": "app.organicmaps",
   "slug": "app-organicmaps",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9625,7 +9625,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.organicmaps.png",
-  "subcategory": "Maps",
+  "subcategory": "Navigation",
   "description": "Offline hike, bike and GPS navigation on OpenStreetMap",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.organicmaps",
@@ -9648,7 +9648,7 @@
   "name": "Orgzly: Notes & To-Do Lists",
   "package": "com.orgzly",
   "slug": "com-orgzly",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9656,7 +9656,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.orgzly.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Outliner for notes, tasks and to-do lists",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.orgzly",
@@ -9706,7 +9706,7 @@
   "name": "Outline",
   "package": "org.outline.android.client",
   "slug": "org-outline-android-client",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9714,7 +9714,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.outline.android.client.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "A VPN or proxy client",
   "stores": {
    "play": null,
@@ -9764,7 +9764,7 @@
   "name": "ownCloud",
   "package": "com.owncloud.android",
   "slug": "com-owncloud-android",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9802,7 +9802,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.paperknife.app.png",
-  "subcategory": "",
+  "subcategory": "Documents",
   "description": "Privacy-first PDF utility: Merge, Split, Compress & Protect PDFs 100% locally.",
   "stores": {
    "play": null,
@@ -9852,7 +9852,7 @@
   "name": "Pedometer (PFA)",
   "package": "org.secuso.privacyfriendlyactivitytracker",
   "slug": "org-secuso-privacyfriendlyactivitytracker",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9912,7 +9912,7 @@
   "name": "personalDNSfilter",
   "package": "dnsfilter.android",
   "slug": "dnsfilter-android",
-  "category": "Comms",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9920,7 +9920,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dnsfilter.android.png",
-  "subcategory": "Ad Blocker",
+  "subcategory": "Privacy",
   "description": "Local DNS filter, no root.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dnsfilter.android",
@@ -9972,7 +9972,7 @@
   "name": "Photok",
   "package": "dev.leonlatsch.photok",
   "slug": "dev-leonlatsch-photok",
-  "category": "Security",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9980,7 +9980,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.leonlatsch.photok.png",
-  "subcategory": "",
+  "subcategory": "Security",
   "description": "Private Photo Vault, Hide Photos & Videos.",
   "stores": {
    "play": null,
@@ -10002,7 +10002,7 @@
   "name": "phyphox",
   "package": "de.rwth_aachen.phyphox",
   "slug": "de-rwth-aachen-phyphox",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10010,7 +10010,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.rwth_aachen.phyphox.png",
-  "subcategory": "Learning",
+  "subcategory": "Education",
   "description": "Perform physics experiments with your phone",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox",
@@ -10088,7 +10088,7 @@
   "name": "PixelDroid",
   "package": "org.pixeldroid.app",
   "slug": "org-pixeldroid-app",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10096,7 +10096,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.pixeldroid.app.png",
-  "subcategory": "Pixelfed",
+  "subcategory": "Social",
   "description": "Client for Pixelfed, the federated image sharing platform",
   "stores": {
    "play": null,
@@ -10174,7 +10174,7 @@
   "name": "PlainApp",
   "package": "com.ismartcoding.plain",
   "slug": "com-ismartcoding-plain",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10182,7 +10182,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.ismartcoding.plain.png",
-  "subcategory": "System",
+  "subcategory": "Device",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ismartcoding.plain",
@@ -10468,7 +10468,7 @@
   "name": "Privacium",
   "package": "com.kaleedtc.privacium",
   "slug": "com-kaleedtc-privacium",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10476,7 +10476,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.kaleedtc.privacium.png",
-  "subcategory": "",
+  "subcategory": "Privacy",
   "description": "A simple app for discovering tools that respects your privacy.",
   "stores": {
    "play": null,
@@ -10496,7 +10496,7 @@
   "name": "Productivity System: timeto.me",
   "package": "me.timeto.app",
   "slug": "me-timeto-app",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10526,7 +10526,7 @@
   "name": "PSLab",
   "package": "io.pslab",
   "slug": "io-pslab",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10534,7 +10534,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.pslab.png",
-  "subcategory": "Learning",
+  "subcategory": "Education",
   "description": "Science Experiments with your Phone and PSLab: Oscilloscope, Multimeter + more",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.pslab",
@@ -10592,7 +10592,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.bartuzen.qbitcontroller.png",
-  "subcategory": "",
+  "subcategory": "Downloads",
   "description": "Remotely control qBittorrent from any device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.bartuzen.qbitcontroller",
@@ -10763,7 +10763,7 @@
   "name": "Quillpad",
   "package": "io.github.quillpad",
   "slug": "io-github-quillpad",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10771,7 +10771,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.quillpad.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Markdown notes, task lists, Nextcloud sync and more",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.github.quillpad",
@@ -10791,7 +10791,7 @@
   "name": "Rattlegram",
   "package": "com.aicodix.rattlegram",
   "slug": "com-aicodix-rattlegram",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10819,7 +10819,7 @@
   "name": "RCX",
   "package": "io.github.x0b.rcx",
   "slug": "io-github-x0b-rcx",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10965,7 +10965,7 @@
   "name": "RedReader",
   "package": "org.quantumbadger.redreader",
   "slug": "org-quantumbadger-redreader",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10973,7 +10973,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.quantumbadger.redreader.png",
-  "subcategory": "Reddit",
+  "subcategory": "Social",
   "description": "Client for reddit.com.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.quantumbadger.redreader",
@@ -10995,7 +10995,7 @@
   "name": "Reef",
   "package": "dev.pranav.reef",
   "slug": "dev-pranav-reef",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11003,7 +11003,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.pranav.reef.png",
-  "subcategory": "",
+  "subcategory": "Health",
   "description": "Boost focus by pausing apps, setting limits, and managing distractions.",
   "stores": {
    "play": null,
@@ -11111,7 +11111,7 @@
   "name": "Roue Libre",
   "package": "io.github.mgdx.rouelibre",
   "slug": "io-github-mgdx-rouelibre",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11119,7 +11119,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.mgdx.rouelibre.png",
-  "subcategory": "Maps",
+  "subcategory": "Navigation",
   "description": "Bike sharing: offline map and journeys, with no tracker.",
   "stores": {
    "play": null,
@@ -11232,7 +11232,7 @@
   "name": "Ruslin",
   "package": "org.dianqk.ruslin",
   "slug": "org-dianqk-ruslin",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11240,7 +11240,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.dianqk.ruslin.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "A note application that supports syncing using a self-hosted Joplin server.",
   "stores": {
    "play": null,
@@ -11292,7 +11292,7 @@
   "name": "Saber",
   "package": "com.adilhanney.saber",
   "slug": "com-adilhanney-saber",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11300,7 +11300,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.adilhanney.saber.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "The notes app built for handwriting",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.adilhanney.saber",
@@ -11350,7 +11350,7 @@
   "name": "Samsung Notes",
   "package": "com.samsung.android.app.notes",
   "slug": "com-samsung-android-app-notes",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11358,7 +11358,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.samsung.android.app.notes.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Samsung Notes can create and edit documents and collaborate with others",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.samsung.android.app.notes",
@@ -11438,7 +11438,7 @@
   "name": "SchildiChat Legacy",
   "package": "de.spiritcroc.riotx",
   "slug": "de-spiritcroc-riotx",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11468,7 +11468,7 @@
   "name": "SchildiChat Next",
   "package": "chat.schildi.android",
   "slug": "chat-schildi-android",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11498,7 +11498,7 @@
   "name": "SD Maid 2/SE",
   "package": "eu.darken.sdmse",
   "slug": "eu-darken-sdmse",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11506,7 +11506,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.darken.sdmse.png",
-  "subcategory": "",
+  "subcategory": "Device",
   "description": "A trusted assistant for your Android, to keep it clean and tidy.",
   "stores": {
    "play": null,
@@ -11594,7 +11594,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.companyname.andriodapp1.png",
-  "subcategory": "",
+  "subcategory": "Music streaming",
   "description": "An unofficial Soulseek client.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.companyname.andriodapp1",
@@ -11674,7 +11674,7 @@
   "name": "Shelter",
   "package": "net.typeblog.shelter",
   "slug": "net-typeblog-shelter",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11682,7 +11682,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.typeblog.shelter.png",
-  "subcategory": "Isolation",
+  "subcategory": "Privacy",
   "description": "Isolates apps using Android's work profile.",
   "stores": {
    "play": null,
@@ -11705,7 +11705,7 @@
   "name": "Shizuku",
   "package": "moe.shizuku.privileged.api",
   "slug": "moe-shizuku-privileged-api",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11713,7 +11713,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/moe.shizuku.privileged.api.png",
-  "subcategory": "System",
+  "subcategory": "Device",
   "description": "Lets apps use system APIs via adb/root privileges",
   "stores": {
    "play": null,
@@ -11741,7 +11741,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.michaldrabik.showly2.png",
-  "subcategory": "",
+  "subcategory": "TV tracker",
   "description": "An open source TV Shows & Movies tracker app that works with Trakt",
   "stores": {
    "play": null,
@@ -11761,7 +11761,7 @@
   "name": "Sift",
   "package": "app.siftrecipes",
   "slug": "app-siftrecipes",
-  "category": "Food",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11769,7 +11769,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.siftrecipes.png",
-  "subcategory": "Recipes",
+  "subcategory": "Food",
   "description": "Minimalist open-source recipe keeper",
   "stores": {
    "play": null,
@@ -11938,7 +11938,7 @@
   "name": "SimpleX Chat",
   "package": "chat.simplex.app",
   "slug": "chat-simplex-app",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12054,7 +12054,7 @@
   "name": "SMS Import/Export",
   "package": "com.github.tmo1.sms_ie",
   "slug": "com-github-tmo1-sms-ie",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12062,7 +12062,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.tmo1.sms_ie.png",
-  "subcategory": "SMS",
+  "subcategory": "Phone",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
@@ -12174,7 +12174,7 @@
   "name": "Standard Notes",
   "package": "com.standardnotes",
   "slug": "com-standardnotes",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12182,7 +12182,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.standardnotes.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Standard Notes is a secure and private notes app",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.standardnotes",
@@ -12202,7 +12202,7 @@
   "name": "Stepsy: Step Counter",
   "package": "com.nvllz.stepsy",
   "slug": "com-nvllz-stepsy",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12292,7 +12292,7 @@
   "name": "Street­Complete",
   "package": "de.westnordost.streetcomplete",
   "slug": "de-westnordost-streetcomplete",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12300,7 +12300,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.westnordost.streetcomplete.png",
-  "subcategory": "OSM",
+  "subcategory": "Navigation",
   "description": "Easy OpenStreetMap surveyor/editor for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete",
@@ -12383,7 +12383,7 @@
   "name": "Super Productivity",
   "package": "com.superproductivity.superproductivity",
   "slug": "com-superproductivity-superproductivity",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12501,7 +12501,7 @@
   "name": "Survival Manual",
   "package": "org.ligi.survivalmanual",
   "slug": "org-ligi-survivalmanual",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12509,7 +12509,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.ligi.survivalmanual.png",
-  "subcategory": "Reference",
+  "subcategory": "Education",
   "description": "Learn how to survive",
   "stores": {
    "play": null,
@@ -12532,7 +12532,7 @@
   "name": "Suspension Setup",
   "package": "ch.pec0ra.suspension_setup",
   "slug": "ch-pec0ra-suspension-setup",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12540,7 +12540,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ch.pec0ra.suspension_setup.png",
-  "subcategory": "Notes",
+  "subcategory": "Productivity",
   "description": "Track and manage your mountain bike suspension settings and their change history",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ch.pec0ra.suspension_setup",
@@ -12562,7 +12562,7 @@
   "name": "Syncthing-Fork",
   "package": "com.github.catfriend1.syncthingfork",
   "slug": "com-github-catfriend1-syncthingfork",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12594,7 +12594,7 @@
   "name": "Table Habit",
   "package": "io.github.friesi23.mhabit",
   "slug": "io-github-friesi23-mhabit",
-  "category": "Health",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12602,7 +12602,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.friesi23.mhabit.png",
-  "subcategory": "",
+  "subcategory": "Health",
   "description": "Boost your own habit growth with charts.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.github.friesi23.mhabit",
@@ -12632,7 +12632,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.tagspaces.mobileapp.png",
-  "subcategory": "",
+  "subcategory": "File manager",
   "description": "Organize, tag and browse your files, photos and documents",
   "stores": {
    "play": null,
@@ -12652,7 +12652,7 @@
   "name": "Taler Wallet",
   "package": "net.taler.wallet.fdroid",
   "slug": "net-taler-wallet-fdroid",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12660,7 +12660,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.taler.wallet.fdroid.png",
-  "subcategory": "Wallet",
+  "subcategory": "Finance",
   "description": "GNU Taler makes privacy-friendly online transactions fast and easy.",
   "stores": {
    "play": null,
@@ -12710,7 +12710,7 @@
   "name": "Tasks.org",
   "package": "org.tasks",
   "slug": "org-tasks",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12888,7 +12888,7 @@
   "name": "Todo",
   "package": "com.k.todo",
   "slug": "com-k-todo",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12918,7 +12918,7 @@
   "name": "TorServices (alpha)",
   "package": "org.torproject.torservices",
   "slug": "org-torproject-torservices",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12926,7 +12926,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.torproject.torservices.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "The simplest, fastest, smallest Tor proxy app (early test release)",
   "stores": {
    "play": null,
@@ -12948,7 +12948,7 @@
   "name": "TrackerControl",
   "package": "net.kollnig.missioncontrol.fdroid",
   "slug": "net-kollnig-missioncontrol-fdroid",
-  "category": "Comms",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12956,7 +12956,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.kollnig.missioncontrol.fdroid.png",
-  "subcategory": "Ad Blocker",
+  "subcategory": "Privacy",
   "description": "Monitors and blocks per-app trackers.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.kollnig.missioncontrol.play",
@@ -12978,7 +12978,7 @@
   "name": "Trail Sense",
   "package": "com.kylecorry.trail_sense",
   "slug": "com-kylecorry-trail-sense",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12986,7 +12986,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.kylecorry.trail_sense.png",
-  "subcategory": "Hiking",
+  "subcategory": "Navigation",
   "description": "Use your phone's sensors to assist with wilderness treks",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense",
@@ -13038,7 +13038,7 @@
   "name": "Transportr",
   "package": "de.grobox.liberario",
   "slug": "de-grobox-liberario",
-  "category": "Navigation",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13046,7 +13046,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.grobox.liberario.png",
-  "subcategory": "Transit",
+  "subcategory": "Navigation",
   "description": "Free Public Transport Assistant without Ads or Tracking",
   "stores": {
    "play": null,
@@ -13126,7 +13126,7 @@
   "name": "Tusky",
   "package": "com.keylesspalace.tusky",
   "slug": "com-keylesspalace-tusky",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13134,7 +13134,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.keylesspalace.tusky.png",
-  "subcategory": "Mastodon",
+  "subcategory": "Social",
   "description": "Multi-account Mastodon client",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.keylesspalace.tusky",
@@ -13488,7 +13488,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nikhil.yt.png",
-  "subcategory": "",
+  "subcategory": "Music streaming",
   "description": "Premium ad-free YouTube Music client for Android",
   "stores": {
    "play": null,
@@ -13536,7 +13536,7 @@
   "name": "Victoria Launcher",
   "package": "dev.victorialauncher",
   "slug": "dev-victorialauncher",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13544,7 +13544,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.victorialauncher.png",
-  "subcategory": "Launcher",
+  "subcategory": "Customization",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
@@ -13604,7 +13604,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.vivi.vivimusic.png",
-  "subcategory": "",
+  "subcategory": "Music streaming",
   "description": "A Material 3 YouTube Music client for Android",
   "stores": {
    "play": null,
@@ -13684,7 +13684,7 @@
   "name": "Voyager",
   "package": "app.vger.voyager",
   "slug": "app-vger-voyager",
-  "category": "Social",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13692,7 +13692,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.vger.voyager.png",
-  "subcategory": "Lemmy",
+  "subcategory": "Social",
   "description": "Join the discussion",
   "stores": {
    "play": null,
@@ -13744,7 +13744,7 @@
   "name": "Waterfly III",
   "package": "com.dreautall.waterflyiii",
   "slug": "com-dreautall-waterflyiii",
-  "category": "Finance",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13752,7 +13752,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.dreautall.waterflyiii.png",
-  "subcategory": "Money",
+  "subcategory": "Finance",
   "description": "Unofficial App for Firefly III, an open source personal finance manager.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.dreautall.waterflyiii",
@@ -13774,7 +13774,7 @@
   "name": "Watomatic",
   "package": "com.parishod.watomatic",
   "slug": "com-parishod-watomatic",
-  "category": "Comms",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13782,7 +13782,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.parishod.watomatic.png",
-  "subcategory": "",
+  "subcategory": "Messaging",
   "description": "Auto reply bot for WhatsApp, FB Messenger and more soon",
   "stores": {
    "play": null,
@@ -13804,7 +13804,7 @@
   "name": "WebLibre: Private Browser",
   "package": "eu.weblibre.gecko",
   "slug": "eu-weblibre-gecko",
-  "category": "Comms",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13832,7 +13832,7 @@
   "name": "whoBIRD",
   "package": "org.woheller69.whobird",
   "slug": "org-woheller69-whobird",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13840,7 +13840,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.woheller69.whobird.png",
-  "subcategory": "Nature",
+  "subcategory": "Education",
   "description": "Recognize birds by their sounds, anywhere in the world!",
   "stores": {
    "play": null,
@@ -13862,7 +13862,7 @@
   "name": "Wikipedia",
   "package": "org.wikipedia",
   "slug": "org-wikipedia",
-  "category": "Education",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13870,7 +13870,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.wikipedia.png",
-  "subcategory": "Reference",
+  "subcategory": "Education",
   "description": "The official app for Wikipedia, the world’s largest source of information.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.wikipedia",
@@ -13950,7 +13950,7 @@
   "name": "Xray",
   "package": "io.github.saeeddev94.xray",
   "slug": "io-github-saeeddev94-xray",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13958,7 +13958,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.saeeddev94.xray.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "Xray GUI Client For Android",
   "stores": {
    "play": null,
@@ -13980,7 +13980,7 @@
   "name": "XrayFA",
   "package": "com.android.xrayfa",
   "slug": "com-android-xrayfa",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13988,7 +13988,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.android.xrayfa.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "XrayFA is a fast, secure, and user-friendly Android client for Xray-core.",
   "stores": {
    "play": null,
@@ -14040,7 +14040,7 @@
   "name": "ZerotierFix",
   "package": "net.kaaass.zerotierfix",
   "slug": "net-kaaass-zerotierfix",
-  "category": "Privacy",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -14048,7 +14048,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.kaaass.zerotierfix.png",
-  "subcategory": "VPN & Proxy",
+  "subcategory": "Privacy",
   "description": "ZeroTier client",
   "stores": {
    "play": null,
@@ -14068,7 +14068,7 @@
   "name": "µLauncher",
   "package": "de.jrpie.android.launcher",
   "slug": "de-jrpie-android-launcher",
-  "category": "Customization",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -14076,7 +14076,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.jrpie.android.launcher.png",
-  "subcategory": "Personalization",
+  "subcategory": "Customization",
   "description": "Launch apps by swiping or pressing buttons",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.jrpie.android.launcher",

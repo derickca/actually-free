@@ -505,6 +505,15 @@ def build_index(apps, categories, forms):
     chips = "\n".join(
         f'      <button class="chip" data-cat="{esc(c)}">{esc(c)}</button>'
         for c in categories)
+    subcat_counts = Counter((a["category"], a["subcategory"]) for a in apps)
+    subcats = {}
+    for (cat, sub), n in subcat_counts.items():
+        subcats.setdefault(cat, []).append((sub, n))
+    for cat in subcats:
+        subcats[cat].sort(key=lambda x: (-x[1], x[0].lower()))
+    subcats_js = json.dumps(
+        {c: [s for s, _ in subs] for c, subs in subcats.items()},
+        ensure_ascii=False).replace("</", "<\\/")
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Actually Free \u2014 " + TAGLINE,
@@ -524,6 +533,8 @@ def build_index(apps, categories, forms):
       <button class="chip on" data-cat="">All</button>
 {chips}
     </div>
+    <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
+    <script>var SUBCATS = {subcats_js};</script>
     <div class="filter-row" role="group" aria-label="Narrow it down">
       <button class="pill" data-attr="open_source">Open source</button>
       <button class="pill" data-attr="offline">Works offline</button>
@@ -911,6 +922,10 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   cursor: pointer;
 }
 .chip.on, .pill.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+/* Subcategory drill-down row: hidden until a top-level category is selected.
+   .filter-row sets display:flex, which overrides [hidden] — hence explicit. */
+#subcategory-chips[hidden] { display: none; }
+#subcategory-chips .chip { font-size: 0.78rem; padding: 5px 11px; font-weight: 500; }
 .sort-row { justify-content: space-between; }
 .sort-row select {
   font: inherit;
@@ -1546,8 +1561,8 @@ JS_CONTENT = r"""
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", attrs: {}, stores: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160, "Games": 0 };
+  var state = { apps: [], query: "", cat: "", subcat: "", attrs: {}, stores: {}, sort: "name" };
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -1671,6 +1686,7 @@ JS_CONTENT = r"""
     var q = norm(state.query);
     var list = state.apps.filter(function (app) {
       if (state.cat && app.category !== state.cat) return false;
+      if (state.subcat && app.subcategory !== state.subcat) return false;
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (k === "reviewed") { if (app.needs_review) return false; }
@@ -1713,7 +1729,7 @@ JS_CONTENT = r"""
       count.textContent = "0 of " + total;
     } else {
       empty.hidden = true;
-      var filtering = r.q || state.cat || Object.keys(state.attrs).length ||
+      var filtering = r.q || state.cat || state.subcat || Object.keys(state.attrs).length ||
                       Object.keys(state.stores).length;
       count.textContent = filtering
         ? r.list.length + " of " + total + " actually-free apps"
@@ -1736,12 +1752,35 @@ JS_CONTENT = r"""
       render();
     }, 220);
   });
+  /* Subcategory drill-down: a second chip row appears once a top-level
+     category is selected. SUBCATS is emitted inline by generate.py. */
+  var subRow = document.getElementById("subcategory-chips");
+  function renderSubcats() {
+    var subs = (typeof SUBCATS !== "undefined" && state.cat && SUBCATS[state.cat]) || [];
+    if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
+    subRow.hidden = false;
+    subRow.innerHTML = subs.map(function (s) {
+      return '<button class="chip' + (state.subcat === s ? " on" : "") +
+             '" data-subcat="' + escHtml(s) + '">' + escHtml(s) + "</button>";
+    }).join("");
+    subRow.querySelectorAll(".chip").forEach(function (c) {
+      c.addEventListener("click", function () {
+        var s = c.getAttribute("data-subcat");
+        state.subcat = (state.subcat === s) ? "" : s;
+        gcEvent("filter/subcategory/" + encodeURIComponent(state.subcat || "all").slice(0, 60));
+        renderSubcats();
+        render();
+      });
+    });
+  }
   document.querySelectorAll("#category-chips .chip").forEach(function (c) {
     c.addEventListener("click", function () {
       document.querySelectorAll("#category-chips .chip").forEach(function (x) { x.classList.remove("on"); });
       c.classList.add("on");
       state.cat = c.getAttribute("data-cat");
+      state.subcat = "";
       gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
+      renderSubcats();
       render();
     });
   });
@@ -1979,15 +2018,22 @@ GENERIC_SUBCATS = {"Tools", "Other", "General", "Misc", "Miscellaneous"}
 
 def taxonomy_report(apps):
     """Build-time taxonomy health: per-category counts, plus loud (non-failing)
-    warnings when a top-level category gets bloated or an app lands in a
-    generic bucket. Keeps category bloat visible on every build."""
+    warnings when a top-level category gets unwieldy, a subcategory outgrows
+    its parent, or an app lands in a generic bucket. Subcategories are the
+    drill-down layer, so balance is watched there, not just at the top."""
     counts = Counter(a["category"] for a in apps)
     print("taxonomy:")
     for cat, n in counts.most_common():
         print(f"  {cat}: {n}")
     for cat, n in counts.most_common():
-        if n > 80:
-            print(f"  WARNING: '{cat}' has {n} apps (over 80) - consider splitting it")
+        if n > 200:
+            print(f"  WARNING: '{cat}' has {n} apps (over 200) - "
+                  f"top-level chip losing meaning, consider a split")
+    subcounts = Counter((a["category"], a["subcategory"]) for a in apps)
+    for (cat, sub), n in subcounts.most_common():
+        if n > 40:
+            print(f"  WARNING: '{cat} / {sub}' has {n} apps (over 40) - "
+                  f"consider promoting it to a top-level category")
     for a in apps:
         if a.get("subcategory") in GENERIC_SUBCATS or "/" in a.get("category", ""):
             print(f"  WARNING: '{a['name']}' sits in a generic bucket "

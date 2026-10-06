@@ -56,20 +56,15 @@
            aria-label="Search apps" autocomplete="off">
     <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
       <button class="chip on" data-cat="">All</button>
-      <button class="chip" data-cat="Comms">Comms</button>
-      <button class="chip" data-cat="Customization">Customization</button>
-      <button class="chip" data-cat="Education">Education</button>
-      <button class="chip" data-cat="Finance">Finance</button>
-      <button class="chip" data-cat="Food">Food</button>
+      <button class="chip" data-cat="Communications">Communications</button>
       <button class="chip" data-cat="Games">Games</button>
-      <button class="chip" data-cat="Health">Health</button>
+      <button class="chip" data-cat="Lifestyle">Lifestyle</button>
       <button class="chip" data-cat="Media">Media</button>
-      <button class="chip" data-cat="Navigation">Navigation</button>
-      <button class="chip" data-cat="Privacy">Privacy</button>
-      <button class="chip" data-cat="Security">Security</button>
-      <button class="chip" data-cat="Social">Social</button>
+      <button class="chip" data-cat="System">System</button>
       <button class="chip" data-cat="Utilities">Utilities</button>
     </div>
+    <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
+    <script>var SUBCATS = {"Lifestyle": ["Productivity", "Health", "Tasks", "Education", "Finance", "Navigation", "Food", "Pedometer", "Weather", "Spirituality"], "Games": ["Puzzle", "Board", "Emulator", "Strategy", "RPG", "Arcade", "Roguelike", "Shooter", "Educational", "Racing", "Scorekeeper", "Word", "Action", "Card", "Casual", "Crossword", "Sandbox", "Streaming", "Sudoku"], "System": ["Privacy", "Security", "Device"], "Communications": ["Messaging", "Social", "Phone"], "Utilities": ["Keyboard", "Customization", "Alarm clock", "Calendar", "App store", "Dev tools", "File manager", "Calculator", "Documents", "File Sync", "Files", "QR/barcode scanner", "URL tools", "App manager", "Dictionary", "Flashlight", "Translation", "AI Assistant", "App updates", "Backup", "Browser", "Downloads", "Remote desktop", "Scanner", "Terminal", "Text to speech", "Unit converter", "App blocker", "App discovery", "Automation", "Bookmarks", "Bubble level", "Calendar sync", "Code editor", "Compass", "Counter", "Data collection", "Debugging", "Email", "File sharing", "File viewer", "Firewall", "IDE", "Monitoring", "Network", "Password manager", "QR codes", "Safety", "Screen filter", "Time tracker", "Timer", "Timer/stopwatch", "Transcription", "Visual search"], "Media": ["Music player", "Video player", "Ebook reader", "Music streaming", "Camera", "Podcast player", "Audio recorder", "Graphics", "Image editor", "RSS reader", "Audiobook player", "Comic reader", "Media center", "Photos", "TV tracker", "Book tracker", "News", "Video editor", "Anime tracker", "Art client", "Downloader", "Downloads", "Manga", "PDF", "Remote control"]};</script>
     <div class="filter-row" role="group" aria-label="Narrow it down">
       <button class="pill" data-attr="open_source">Open source</button>
       <button class="pill" data-attr="offline">Works offline</button>

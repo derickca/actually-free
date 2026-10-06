@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (jgQDAAdEFIltoAtuQKzNMA==, replaced at build time) embedded separately,
+     the key (Xpn5PFNogO6jD78DQ28JSQ==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "jgQDAAdEFIltoAtuQKzNMA==";
+    var K = "Xpn5PFNogO6jD78DQ28JSQ==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -268,8 +268,8 @@
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", attrs: {}, stores: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Comms": 160, "Games": 0 };
+  var state = { apps: [], query: "", cat: "", subcat: "", attrs: {}, stores: {}, sort: "name" };
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -393,6 +393,7 @@
     var q = norm(state.query);
     var list = state.apps.filter(function (app) {
       if (state.cat && app.category !== state.cat) return false;
+      if (state.subcat && app.subcategory !== state.subcat) return false;
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (k === "reviewed") { if (app.needs_review) return false; }
@@ -435,7 +436,7 @@
       count.textContent = "0 of " + total;
     } else {
       empty.hidden = true;
-      var filtering = r.q || state.cat || Object.keys(state.attrs).length ||
+      var filtering = r.q || state.cat || state.subcat || Object.keys(state.attrs).length ||
                       Object.keys(state.stores).length;
       count.textContent = filtering
         ? r.list.length + " of " + total + " actually-free apps"
@@ -458,12 +459,35 @@
       render();
     }, 220);
   });
+  /* Subcategory drill-down: a second chip row appears once a top-level
+     category is selected. SUBCATS is emitted inline by generate.py. */
+  var subRow = document.getElementById("subcategory-chips");
+  function renderSubcats() {
+    var subs = (typeof SUBCATS !== "undefined" && state.cat && SUBCATS[state.cat]) || [];
+    if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
+    subRow.hidden = false;
+    subRow.innerHTML = subs.map(function (s) {
+      return '<button class="chip' + (state.subcat === s ? " on" : "") +
+             '" data-subcat="' + escHtml(s) + '">' + escHtml(s) + "</button>";
+    }).join("");
+    subRow.querySelectorAll(".chip").forEach(function (c) {
+      c.addEventListener("click", function () {
+        var s = c.getAttribute("data-subcat");
+        state.subcat = (state.subcat === s) ? "" : s;
+        gcEvent("filter/subcategory/" + encodeURIComponent(state.subcat || "all").slice(0, 60));
+        renderSubcats();
+        render();
+      });
+    });
+  }
   document.querySelectorAll("#category-chips .chip").forEach(function (c) {
     c.addEventListener("click", function () {
       document.querySelectorAll("#category-chips .chip").forEach(function (x) { x.classList.remove("on"); });
       c.classList.add("on");
       state.cat = c.getAttribute("data-cat");
+      state.subcat = "";
       gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
+      renderSubcats();
       render();
     });
   });
