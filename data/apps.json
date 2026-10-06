@@ -305,7 +305,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.meypod.al_quran.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "A simple open-source Quran reader",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.github.meypod.al_quran",
@@ -338,7 +338,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.angrydoughnuts.android.alarmclock.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "An alarm clock",
   "stores": {
    "play": null,
@@ -568,7 +568,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.danoeh.antennapod.png",
-  "subcategory": "Podcast player",
+  "subcategory": "Audio",
   "description": "Full-featured podcast player.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.danoeh.antennapod",
@@ -601,7 +601,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.antivocale.app.png",
-  "subcategory": "Transcription",
+  "subcategory": "Speech",
   "description": "Offline transcription of voice messages and recorded calls, on-device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.antivocale.app",
@@ -667,7 +667,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.apkupdater.ci.png",
-  "subcategory": "App updates",
+  "subcategory": "App manager",
   "description": "Get updates from multiple sources",
   "stores": {
    "play": null,
@@ -698,7 +698,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/remix.myplayer.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Offline music player",
   "stores": {
    "play": null,
@@ -797,7 +797,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/moe.rukamori.archivetune.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Cute music player w/ local files + YouTube Music (sign-in optional)",
   "stores": {
    "play": null,
@@ -926,7 +926,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.game.asteroids_revenge.png",
-  "subcategory": "Action",
+  "subcategory": "Arcade",
   "description": "Endless survival bulletHell (highscore based).",
   "stores": {
    "play": null,
@@ -1120,7 +1120,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.oxycblt.auxio.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Local music player with a clean interface.",
   "stores": {
    "play": null,
@@ -1250,7 +1250,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.czy0729.bangumi.png",
-  "subcategory": "Anime tracker",
+  "subcategory": "TV tracker",
   "description": "A third-party client for Bangumi",
   "stores": {
    "play": null,
@@ -1283,7 +1283,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.atharok.barcodescanner.png",
-  "subcategory": "QR/barcode scanner",
+  "subcategory": "QR tools",
   "description": "An open-source app that allows you to read and generate barcodes.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.atharok.barcodescanner",
@@ -1316,7 +1316,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chiller3.basicsync.png",
-  "subcategory": "Files",
+  "subcategory": "File manager",
   "description": "A simple app for running Syncthing on Android",
   "stores": {
    "play": null,
@@ -1349,7 +1349,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.beatbridge.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Auto-play music when your Bluetooth car, headphones, or speakers connect.",
   "stores": {
    "play": null,
@@ -1382,7 +1382,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.kde.bettercounter.png",
-  "subcategory": "Counter",
+  "subcategory": "Measure",
   "description": "- Track good and bad habits (eg: exercising, smoking, drinking...) - Track when's the last time you did something (eg: water your plants, change your",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.kde.bettercounter",
@@ -1415,7 +1415,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.markusfisch.android.binaryeye.png",
-  "subcategory": "QR/barcode scanner",
+  "subcategory": "QR tools",
   "description": "QR code and barcode scanner with no ads",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye",
@@ -1611,7 +1611,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ls.bloomee.musicplayer.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Experience music without limits.",
   "stores": {
    "play": null,
@@ -1675,7 +1675,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bluesound.bluesoundplayer.png",
-  "subcategory": "Remote control",
+  "subcategory": "Media center",
   "description": "Control BluOS and Sonos multi-room audio players on your network",
   "stores": {
    "play": null,
@@ -1803,7 +1803,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.woheller69.level.png",
-  "subcategory": "Bubble level",
+  "subcategory": "Measure",
   "description": "Spirit level and ruler",
   "stores": {
    "play": null,
@@ -2063,7 +2063,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.timelegend.chaka.viewer.app.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Committed to improving reading experience",
   "stores": {
    "play": null,
@@ -2193,7 +2193,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.vicolo.chrono.png",
-  "subcategory": "Timer/stopwatch",
+  "subcategory": "Time",
   "description": "Modern and powerful clock, alarms, timer and stopwatch.",
   "stores": {
    "play": null,
@@ -2226,7 +2226,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.adeeteya.classipod.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.adeeteya.classipod",
@@ -2324,7 +2324,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bobek.compass.png",
-  "subcategory": "Compass",
+  "subcategory": "Measure",
   "description": "A simple and clean compass",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bobek.compass",
@@ -2357,7 +2357,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gwitko.conduit.png",
-  "subcategory": "Terminal",
+  "subcategory": "Dev tools",
   "description": "SSH, Mosh, SFTP & local Linux terminal",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gwitko.conduit",
@@ -2423,7 +2423,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.ferrarid.converterpro.png",
-  "subcategory": "Unit converter",
+  "subcategory": "Calculator",
   "description": "A simple, immediate and fast unit converter!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ferrarid.converterpro",
@@ -2456,7 +2456,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.matelsky.coppelia.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Beautiful, native Jellyfin music player",
   "stores": {
    "play": null,
@@ -2489,7 +2489,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/top.fumiama.copymanga.png",
-  "subcategory": "Comic reader",
+  "subcategory": "Comics",
   "description": "CopyManga comic client",
   "stores": {
    "play": null,
@@ -2520,7 +2520,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.cosmicide.png",
-  "subcategory": "IDE",
+  "subcategory": "Dev tools",
   "description": "A full fledged Java and Kotlin IDE for Android devices.",
   "stores": {
    "play": null,
@@ -2619,7 +2619,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nathanatos.Cuppa.png",
-  "subcategory": "Timer",
+  "subcategory": "Time",
   "description": "Cuppa is a small application to time your cup of tea as it steeps",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nathanatos.Cuppa",
@@ -2650,7 +2650,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/neth.iecal.curbox.png",
-  "subcategory": "App blocker",
+  "subcategory": "Automation",
   "description": "App blocker and screen time tracker. Block apps, websites, reels and shorts.",
   "stores": {
    "play": null,
@@ -2844,7 +2844,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/at.bitfire.davdroid.png",
-  "subcategory": "Calendar sync",
+  "subcategory": "Calendar",
   "description": "CalDAV/CardDAV sync (DAVx5). DOUBT: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free",
   "stores": {
    "play": null,
@@ -3301,7 +3301,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.econverter.app.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Android ebook converter — epub, mobi, azw3, docx and more. No Calibre needed.",
   "stores": {
    "play": null,
@@ -3497,7 +3497,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.app.equran.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Read, listen, choose from 5 reciters, and track your Quran journey.",
   "stores": {
    "play": null,
@@ -4188,7 +4188,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.unicornsonlsd.finamp.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Music player for Jellyfin servers",
   "stores": {
    "play": null,
@@ -4221,7 +4221,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.mozilla.firefox.png",
-  "subcategory": "Browser",
+  "subcategory": "Web",
   "description": "The independent web browser.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
@@ -4512,7 +4512,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.aedev.flow.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Privacy-respecting YouTube and Music client with local recommendations.",
   "stores": {
    "play": null,
@@ -4574,7 +4574,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.fluffy.png",
-  "subcategory": "Files",
+  "subcategory": "File manager",
   "description": "A TV friendly file manager and archive viewer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.fluffy",
@@ -4638,7 +4638,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.circle_dev.flux_news.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Newsreader for miniflux backend",
   "stores": {
    "play": null,
@@ -4768,7 +4768,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.crossword.yourealwaysbe.forkyz.png",
-  "subcategory": "Crossword",
+  "subcategory": "Word",
   "description": "Crossword puzzle app",
   "stores": {
    "play": null,
@@ -4865,7 +4865,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.clock.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "Handy, lightweight, open-source clock app with essential features.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.clock",
@@ -5295,7 +5295,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.arjun.gander.png",
-  "subcategory": "File viewer",
+  "subcategory": "File manager",
   "description": "Offline zero-permission viewer: PDF/DOCX/XLSX/PPTX/media/markdown",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.arjun.gander",
@@ -5361,7 +5361,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.gcompris.full.png",
-  "subcategory": "Casual",
+  "subcategory": "Educational",
   "description": "Educational software GCompris for children 2 to 10",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.gcompris.full",
@@ -5392,7 +5392,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gdf.hema_timer.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "A precise and minimal timer for HEMA training and sparring.",
   "stores": {
    "play": null,
@@ -5840,7 +5840,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.akanework.gramophone.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Material You local MP3 music player",
   "stores": {
    "play": null,
@@ -5972,7 +5972,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jiaqifeng.hacki.png",
-  "subcategory": "News",
+  "subcategory": "RSS reader",
   "description": "An open-source Hacker News client.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jiaqifeng.hacki",
@@ -6038,7 +6038,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.simon.harmonichackernews.png",
-  "subcategory": "News",
+  "subcategory": "RSS reader",
   "description": "Hacker News client with modern Material design",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.simon.harmonichackernews",
@@ -6069,7 +6069,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.anandnet.harmonymusic.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "YouTube music streaming client",
   "stores": {
    "play": null,
@@ -6166,7 +6166,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.studio4plus.homerplayer2.png",
-  "subcategory": "Audiobook player",
+  "subcategory": "Audio",
   "description": "Audiobook player designed for seniors — ultra-simple UI.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.studio4plus.homerplayer2",
@@ -6329,7 +6329,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.zionhuang.music.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Material design YouTube Music client",
   "stores": {
    "play": null,
@@ -6814,7 +6814,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.brouken.player.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Simple video player based on ExoPlayer library",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.brouken.player",
@@ -7047,7 +7047,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.buzbuz.smartautoclicker.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "Automating clicks based on what is displayed",
   "stores": {
    "play": null,
@@ -7177,7 +7177,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.koreader.launcher.fdroid.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Document reader for e-books and PDFs.",
   "stores": {
    "play": null,
@@ -7406,7 +7406,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jksalcedo.librefind.png",
-  "subcategory": "App discovery",
+  "subcategory": "App store",
   "description": "Discover and replace proprietary apps with FOSS alternatives",
   "stores": {
    "play": null,
@@ -7439,7 +7439,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.documentfoundation.libreoffice.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Document Viewer",
   "stores": {
    "play": null,
@@ -7505,7 +7505,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.proninyaroslav.libretorrent.png",
-  "subcategory": "Downloads",
+  "subcategory": "Torrents",
   "description": "Copylefted libre software torrent client.",
   "stores": {
    "play": null,
@@ -7604,7 +7604,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.sakethh.linkora.png",
-  "subcategory": "Bookmarks",
+  "subcategory": "Web",
   "description": "Local-first multiplatform link organizer with optional self-hosted sync.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sakethh.linkora",
@@ -7668,7 +7668,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.grakovne.lissen.png",
-  "subcategory": "Audiobook player",
+  "subcategory": "Audio",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.grakovne.lissen",
@@ -7702,7 +7702,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.localsend.localsend_app.png",
-  "subcategory": "File sharing",
+  "subcategory": "File Sync",
   "description": "Cross-platform file sharing over WiFi",
   "stores": {
    "play": null,
@@ -7735,7 +7735,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.dp.logcatapp.png",
-  "subcategory": "Debugging",
+  "subcategory": "Dev tools",
   "description": "A simple app to view logs",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.dp.logcatapp",
@@ -7898,7 +7898,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.demonlab.lune.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
@@ -7932,7 +7932,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.gitlab.coolreader_ng.lxreader.fdroid.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "E-book reader (a CoolReader NG fork).",
   "stores": {
    "play": null,
@@ -7965,7 +7965,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.illusionman1212.lyricsgrabbr.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Lyrics grabbr provides lyrics for the currently playing song",
   "stores": {
    "play": null,
@@ -8097,7 +8097,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.kylefreed.mahjongscore.png",
-  "subcategory": "Scorekeeper",
+  "subcategory": "Board",
   "description": "Automatic scoring compass for Riichi Mahjong",
   "stores": {
    "play": null,
@@ -8230,7 +8230,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.marmalade.tts.png",
-  "subcategory": "Text to speech",
+  "subcategory": "Speech",
   "description": "Fast, natural, private text-to-speech for your whole phone. Works offline.",
   "stores": {
    "play": null,
@@ -8461,7 +8461,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nyxkn.meditation.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "An essential meditation timer",
   "stores": {
    "play": null,
@@ -8651,7 +8651,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.metrolist.music.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Material 3 YouTube Music client for Android",
   "stores": {
    "play": null,
@@ -8682,7 +8682,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.moekadu.metronome.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Simple metronome which helps you to keep time when practicing music",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.moekadu.metronome",
@@ -8808,7 +8808,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.mihon.png",
-  "subcategory": "Manga",
+  "subcategory": "Comics",
   "description": "Read manga, webtoons, comics",
   "stores": {
    "play": null,
@@ -9168,7 +9168,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.monocles.translator.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "monocles translation a safe and private translator",
   "stores": {
    "play": null,
@@ -9331,7 +9331,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.artifex.mupdf.viewer.app.png",
-  "subcategory": "PDF",
+  "subcategory": "Books",
   "description": "Lightweight official MuPDF PDF viewer",
   "stores": {
    "play": null,
@@ -9395,7 +9395,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.iven.musicplayergo.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Lightweight offline music player",
   "stores": {
    "play": null,
@@ -9428,7 +9428,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gokadzev.musify.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "YouTube streaming music",
   "stores": {
    "play": null,
@@ -9490,7 +9490,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.starry.myne.png",
-  "subcategory": "Book tracker",
+  "subcategory": "Books",
   "description": "Android application to download & read ebooks from the Project GutenBerg.",
   "stores": {
    "play": null,
@@ -9523,7 +9523,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/github.namidaco.namida.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Feature-rich music & video player w/ YouTube support",
   "stores": {
    "play": null,
@@ -9554,7 +9554,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.dar.nclientv2.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Navidrome/Subsonic client",
   "stores": {
    "play": null,
@@ -9715,7 +9715,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.faircode.netguard.png",
-  "subcategory": "Firewall",
+  "subcategory": "Network",
   "description": "Firewall that blocks internet access per app. The F-Droid build is fully unlocked.",
   "stores": {
    "play": null,
@@ -10178,7 +10178,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.imranr.obtainium.png",
-  "subcategory": "App updates",
+  "subcategory": "App manager",
   "description": "Get Android app updates directly from the source (GitHub etc.)",
   "stores": {
    "play": null,
@@ -10442,7 +10442,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.d_rk.openpatience.png",
-  "subcategory": "Card",
+  "subcategory": "Board",
   "description": "A collection of solitaire card games.",
   "stores": {
    "play": null,
@@ -10604,7 +10604,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/software.mdev.bookstracker.png",
-  "subcategory": "Book tracker",
+  "subcategory": "Books",
   "description": "Your private and open source books tracker, organizer and reading list",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=software.mdev.bookstracker",
@@ -10863,7 +10863,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/universe.constellation.orion.viewer.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Orion Viewer is pdf, djvu, xps, tiff and comic books (cbr, cbz, cbt) file viewer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=universe.constellation.orion.viewer",
@@ -11156,7 +11156,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/player.phonograph.plus.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Material-design local music player (a Phonograph fork).",
   "stores": {
    "play": null,
@@ -11253,7 +11253,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.wgh136.pica_comic.png",
-  "subcategory": "Comic reader",
+  "subcategory": "Comics",
   "description": "Comic reader",
   "stores": {
    "play": null,
@@ -11284,7 +11284,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.agateau.tinywheels.android.png",
-  "subcategory": "Racing",
+  "subcategory": "Arcade",
   "description": "Top-down arcade racer, quick races.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.agateau.tinywheels.android",
@@ -11350,7 +11350,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.theveloper.pixelplay.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Privacy-first music player, Material 3 Expressive",
   "stores": {
    "play": null,
@@ -11381,7 +11381,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ceui.pixiv.png",
-  "subcategory": "Art client",
+  "subcategory": "Graphics",
   "description": "Third-party Pixiv client",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ceui.pixiv.pshaft",
@@ -11509,7 +11509,7 @@
   },
   "icon_svg": null,
   "icon": null,
-  "subcategory": "Podcast player",
+  "subcategory": "Audio",
   "description": "Podcast player with discovery, variable speed, and offline downloads; the web and desktop players are free too.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts",
@@ -11575,7 +11575,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ac.mdiq.Podcini.A.png",
-  "subcategory": "Podcast player",
+  "subcategory": "Audio",
   "description": "AntennaPod fork with a different UI philosophy.",
   "stores": {
    "play": null,
@@ -11608,7 +11608,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.podiumpodcasts.podium.png",
-  "subcategory": "Podcast player",
+  "subcategory": "Audio",
   "description": "A modern, open-source podcast app for Android.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.podiumpodcasts.podium",
@@ -11641,7 +11641,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.excp.podroid.png",
-  "subcategory": "Podcast player",
+  "subcategory": "Audio",
   "description": "Podcast player",
   "stores": {
    "play": null,
@@ -11672,7 +11672,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.podverse.fdroid.png",
-  "subcategory": "Podcast player",
+  "subcategory": "Audio",
   "description": "Podcast app with value4value / Podcasting 2.0 support.",
   "stores": {
    "play": null,
@@ -11705,7 +11705,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.pomodorot.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "A simple timer which pauses when not in view",
   "stores": {
    "play": null,
@@ -11963,7 +11963,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.bartuzen.qbitcontroller.png",
-  "subcategory": "Downloads",
+  "subcategory": "Torrents",
   "description": "Remotely control qBittorrent from any device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.bartuzen.qbitcontroller",
@@ -12029,7 +12029,7 @@
   },
   "icon_svg": "<svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect x=\"4\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"18\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"4\" y=\"18\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"7\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"21\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"7\" y=\"21\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"18\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"23\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"18\" y=\"23\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"25\" y=\"25\" width=\"3\" height=\"3\" fill=\"#0f766e\"/></svg>",
   "icon": null,
-  "subcategory": "QR codes",
+  "subcategory": "QR tools",
   "description": "A free offline Android app that keeps QR codes for the people, places, and things you actually need: vCards, guest Wi-Fi, saved addresses. Searchable library with color labels, present mode (full-screen QR at max brightness), a dynamic editor for 9 card types, per-card launcher shortcuts, and PNG/SVG export. No ads, no accounts, fully offline.",
   "stores": {
    "play": null,
@@ -12064,7 +12064,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/qr.qrcode.barcode.scanner.reader.png",
-  "subcategory": "QR/barcode scanner",
+  "subcategory": "QR tools",
   "description": "QR code & barcode scanner, reader, all code generator, fast scan",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.qrcode.barcode.scanner.reader",
@@ -12095,7 +12095,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/qr.code.scanner.qr.code.reader.png",
-  "subcategory": "QR/barcode scanner",
+  "subcategory": "QR tools",
   "description": "Extremely easy to use QR Code Scanner and Barcode Scanner",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.code.scanner.qr.code.reader",
@@ -12255,7 +12255,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.readera.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "E-book and document reader.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.readera",
@@ -12286,7 +12286,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bilingify.readest.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Ebook reader with powerful features, intuitive UI",
   "stores": {
    "play": null,
@@ -12350,7 +12350,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jmstudios.redmoon.png",
-  "subcategory": "Screen filter",
+  "subcategory": "Customization",
   "description": "Screen filter for night time phone use",
   "stores": {
    "play": null,
@@ -12577,7 +12577,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chiller3.rsaf.png",
-  "subcategory": "Files",
+  "subcategory": "File manager",
   "description": "An Android Storage Access Framework document provider for rclone",
   "stores": {
    "play": null,
@@ -13003,7 +13003,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.junkfood.seal.png",
-  "subcategory": "Downloader",
+  "subcategory": "Downloads",
   "description": "Video/audio downloader (yt-dlp) with Material You design",
   "stores": {
    "play": null,
@@ -13067,7 +13067,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.companyname.andriodapp1.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "An unofficial Soulseek client.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.companyname.andriodapp1",
@@ -13291,7 +13291,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gmail.blandilyte.silverdict.png",
-  "subcategory": "Ebook reader",
+  "subcategory": "Books",
   "description": "Android client of the SilverDict dictionary server",
   "stores": {
    "play": null,
@@ -13357,7 +13357,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.better.alarm.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "Improved alarm clock",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.better.alarm",
@@ -13424,7 +13424,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.razeeman.util.simpletimetracker.png",
-  "subcategory": "Time tracker",
+  "subcategory": "Time",
   "description": "Time tracker for work, study, and building better daily habits",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.razeeman.util.simpletimetracker",
@@ -13486,7 +13486,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.fpuellen.simplyscored.png",
-  "subcategory": "Scorekeeper",
+  "subcategory": "Board",
   "description": "Track your game scores easily.",
   "stores": {
    "play": null,
@@ -13519,7 +13519,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/github.maxrave-dev.simpmusic.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "YouTube-Music-backed music streaming",
   "stores": {
    "play": null,
@@ -13682,7 +13682,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/oss.krtirtho.spotube.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Lightweight Spotify client that needs no Spotify Premium. DOUBT: grey-area use of Spotify streams",
   "stores": {
    "play": null,
@@ -13812,7 +13812,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.likhithpraveenk.storii.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Audiobookshelf client with downloads, accurate playback sync, and Android Auto",
   "stores": {
    "play": null,
@@ -13911,7 +13911,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.galaxyrio.sudokusolver.png",
-  "subcategory": "Sudoku",
+  "subcategory": "Puzzle",
   "description": "PASS 2026-10-05.",
   "stores": {
    "play": null,
@@ -14009,7 +14009,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.supertuxkart.stk.png",
-  "subcategory": "Racing",
+  "subcategory": "Arcade",
   "description": "Kart racing with Tux and friends, single and multiplayer.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.supertuxkart.stk",
@@ -14338,7 +14338,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.termux.png",
-  "subcategory": "Terminal",
+  "subcategory": "Dev tools",
   "description": "Terminal emulator and Linux environment.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.termux",
@@ -14732,7 +14732,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.danefinlay.ttsutil.png",
-  "subcategory": "Text to speech",
+  "subcategory": "Speech",
   "description": "Text-to-speech utility app for synthesising text into audible speech",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.danefinlay.ttsutil",
@@ -14763,7 +14763,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.moekadu.tuner.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Tuner app for tuning musical instruments with features like: * Detect pitch based on autocorrelation and FFT spectrum",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.moekadu.tuner",
@@ -14924,7 +14924,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.physphil.android.unitconverterultimate.png",
-  "subcategory": "Unit converter",
+  "subcategory": "Calculator",
   "description": "Convert between units with ease",
   "stores": {
    "play": null,
@@ -15021,7 +15021,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.checkmk.unofficial_checkmk_monitoring.png",
-  "subcategory": "Monitoring",
+  "subcategory": "Network",
   "description": "Monitor CheckMK hosts and services on the go",
   "stores": {
    "play": null,
@@ -15120,7 +15120,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ch.blinkenlights.android.vanilla.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Simple local music player.",
   "stores": {
    "play": null,
@@ -15153,7 +15153,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.aeidolon.vaultexplorer.png",
-  "subcategory": "Files",
+  "subcategory": "File manager",
   "description": "Encrypted container explorer: VeraCrypt, LUKS, BitLocker, Cryptomator, gocryptfs",
   "stores": {
    "play": null,
@@ -15186,7 +15186,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nikhil.yt.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "Premium ad-free YouTube Music client for Android",
   "stores": {
    "play": null,
@@ -15217,7 +15217,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.wgh136.venera.png",
-  "subcategory": "Comic reader",
+  "subcategory": "Comics",
   "description": "Comic reader w/ multiple sources",
   "stores": {
    "play": null,
@@ -15281,7 +15281,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.poupa.vinylmusicplayer.png",
-  "subcategory": "Music player",
+  "subcategory": "Music",
   "description": "Local music player.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.poupa.vinylmusicplayer",
@@ -15314,7 +15314,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.vivi.vivimusic.png",
-  "subcategory": "Music streaming",
+  "subcategory": "Music",
   "description": "A Material 3 YouTube Music client for Android",
   "stores": {
    "play": null,
@@ -15378,7 +15378,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.ph1b.audiobook.png",
-  "subcategory": "Audiobook player",
+  "subcategory": "Audio",
   "description": "Audiobook player with bookmarks and a sleep timer.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.ph1b.audiobook",
@@ -15543,7 +15543,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.weblibre.gecko.png",
-  "subcategory": "Browser",
+  "subcategory": "Web",
   "description": "Browse privately, search locally",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.weblibre.gecko",
@@ -15671,7 +15671,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.rk.xededitor.png",
-  "subcategory": "Code editor",
+  "subcategory": "Dev tools",
   "description": "Advanced Text Editor for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.rk.axion",
@@ -15803,7 +15803,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.turtton.ytalarm.png",
-  "subcategory": "Alarm clock",
+  "subcategory": "Time",
   "description": "A simple alarm application using ytdl-android.",
   "stores": {
    "play": null,

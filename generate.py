@@ -54,7 +54,7 @@ QR_CARDS = {
     "name": "QR Cards",
     "package": "derickca/qr-cards",
     "category": "Utilities",
-    "subcategory": "QR codes",
+    "subcategory": "QR tools",
     "stores": {"play": None, "fdroid": False,
                "github": "https://github.com/derickca/qr-cards"},
     "verification": {"play_labels_clean": None, "play_rating": None,
@@ -2088,6 +2088,10 @@ def taxonomy_report(apps):
         if n > 40:
             print(f"  WARNING: '{cat} / {sub}' has {n} apps (over 40) - "
                   f"consider promoting it to a top-level category")
+    for (cat, sub), n in sorted(subcounts.items()):
+        if n < 3:
+            print(f"  STRAGGLER: '{cat} / {sub}' has {n} app(s) (under 3) - "
+                  f"merge into a sibling or rename the subcategory broader")
     for a in apps:
         if a.get("subcategory") in GENERIC_SUBCATS or "/" in a.get("category", ""):
             print(f"  WARNING: '{a['name']}' sits in a generic bucket "
