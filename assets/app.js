@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (jl1GCobJe7e7Ilzyv7Qe1g==, replaced at build time) embedded separately,
+     the key (meOGu4lAcsH9JQY2oZwobw==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "jl1GCobJe7e7Ilzyv7Qe1g==";
+    var K = "meOGu4lAcsH9JQY2oZwobw==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -295,7 +295,7 @@
   }
   function matches(app, q) {
     if (!q) return true;
-    var hay = norm([app.name, app.description, app.category, app.subcategory].join(" "));
+    var hay = norm([app.name, app.description, app.category, app.subcategory, (app.tags || []).join(" ")].join(" "));
     if (hay.indexOf(q) !== -1) return true;
     var hayTokens = tokens(hay);
     var qtokens = tokens(q);
@@ -400,6 +400,7 @@
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (k === "reviewed") { if (app.needs_review) return false; }
+        else if (k === "free_enough") { if (!app.free_enough) return false; }
         else if (!app.attrs[k]) return false;
       }
       for (var s in state.stores) {

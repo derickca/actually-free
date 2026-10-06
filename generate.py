@@ -255,6 +255,9 @@ def clean_record(rec):
         "per_badge": per_badge,
         "free_enough": free_enough,
         "free_enough_reason": rec.get("free_enough_reason") or "",
+        # Search tags: surfaced in the client-side search haystack so the
+        # tag itself is findable ("enough" -> the Free Enough apps).
+        "tags": ["free enough"] if free_enough else [],
         "needs_review": bool(rec.get("needs_review")),
         "review_notes": rec.get("review_notes") or "",
     }
@@ -561,6 +564,7 @@ def build_index(apps, categories, forms):
       <button class="pill" data-attr="no_account">No account needed</button>
       <button class="pill" data-attr="made_by_us">Made by us</button>
       <button class="pill" data-attr="reviewed">Reviewed</button>
+      <button class="pill" data-attr="free_enough">Free Enough</button>
     </div>
     <div class="filter-row" role="group" aria-label="Filter by store">
       <button class="pill" data-store="fdroid">F-Droid</button>
@@ -1627,7 +1631,7 @@ JS_CONTENT = r"""
   }
   function matches(app, q) {
     if (!q) return true;
-    var hay = norm([app.name, app.description, app.category, app.subcategory].join(" "));
+    var hay = norm([app.name, app.description, app.category, app.subcategory, (app.tags || []).join(" ")].join(" "));
     if (hay.indexOf(q) !== -1) return true;
     var hayTokens = tokens(hay);
     var qtokens = tokens(q);
@@ -1732,6 +1736,7 @@ JS_CONTENT = r"""
       for (var k in state.attrs) {
         if (k === "made_by_us") { if (!app.made_by_us) return false; }
         else if (k === "reviewed") { if (app.needs_review) return false; }
+        else if (k === "free_enough") { if (!app.free_enough) return false; }
         else if (!app.attrs[k]) return false;
       }
       for (var s in state.stores) {
