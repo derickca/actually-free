@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (NQtTiMswhTK1f251qUeQOg==, replaced at build time) embedded separately,
+     the key (eTq8YxL4d9WNLEYvpk7aWg==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "NQtTiMswhTK1f251qUeQOg==";
+    var K = "eTq8YxL4d9WNLEYvpk7aWg==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -475,17 +475,15 @@
      as the tiles, so the chips can never disagree with the data — no empty
      subcategories after a taxonomy change, even with a stale page. */
   var subRow = document.getElementById("subcategory-chips");
-  function renderSubcats() {
-    var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
-    /* The subcategory row inherits the active category's hue (T2 direction). */
-    subRow.style.setProperty("--accent-h",
-      (state.cat && ACCENTS[state.cat] != null) ? ACCENTS[state.cat] : 210);
-    if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
-    subRow.hidden = false;
-    subRow.innerHTML = subs.map(function (s) {
+  var lastSubCat = null;   // category the subcategory row was last rendered for
+  var subAnimToken = 0;    // cancels stale roll/slide animations
+  function subChipsHtml(subs) {
+    return subs.map(function (s) {
       return '<button class="chip' + (state.subcat === s ? " on" : "") +
              '" data-subcat="' + escHtml(s) + '">' + escHtml(s) + "</button>";
     }).join("");
+  }
+  function bindSubChips() {
     subRow.querySelectorAll(".chip").forEach(function (c) {
       c.addEventListener("click", function () {
         var s = c.getAttribute("data-subcat");
@@ -496,6 +494,76 @@
       });
     });
   }
+  function openSubRow() {
+    subRow.classList.remove("collapsed");
+    subRow.classList.add("open");
+    subRow.style.maxHeight = subRow.scrollHeight + "px";
+  }
+  function renderSubcats() {
+    var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
+    /* The subcategory row inherits the active category's hue. */
+    subRow.style.setProperty("--accent-h",
+      (state.cat && ACCENTS[state.cat] != null) ? ACCENTS[state.cat] : 210);
+    var token = ++subAnimToken;
+
+    if (!subs.length) {
+      /* Roll back up behind the category bar, then clear. */
+      if (subRow.classList.contains("open")) {
+        subRow.classList.remove("open");
+        subRow.classList.add("collapsed");
+        subRow.style.maxHeight = "0px";
+        setTimeout(function(){
+          if (token !== subAnimToken) return;
+          subRow.innerHTML = "";
+          lastSubCat = null;
+        }, 340);
+      } else {
+        subRow.innerHTML = "";
+        lastSubCat = null;
+      }
+      return;
+    }
+
+    if (!subRow.classList.contains("open")) {
+      /* First show: render, then roll down from behind the category bar. */
+      subRow.innerHTML = subChipsHtml(subs);
+      bindSubChips();
+      lastSubCat = state.cat;
+      void subRow.offsetHeight; /* reflow so the transition runs */
+      openSubRow();
+      return;
+    }
+
+    if (lastSubCat === state.cat) {
+      /* Same category (a subcategory was toggled): refresh .on states only. */
+      subRow.querySelectorAll(".chip").forEach(function (c) {
+        c.classList.toggle("on", c.getAttribute("data-subcat") === state.subcat);
+      });
+      subRow.style.maxHeight = subRow.scrollHeight + "px";
+      return;
+    }
+
+    /* Category switch: old names scroll away left, new names slide in right. */
+    lastSubCat = state.cat;
+    subRow.querySelectorAll(".chip").forEach(function (c) { c.classList.add("chip-out"); });
+    setTimeout(function(){
+      if (token !== subAnimToken) return;
+      subRow.innerHTML = subChipsHtml(subs);
+      bindSubChips();
+      var newChips = subRow.querySelectorAll(".chip");
+      newChips.forEach(function (c) { c.classList.add("chip-in"); });
+      subRow.style.maxHeight = subRow.scrollHeight + "px";
+      void subRow.offsetHeight; /* reflow so the enter transition runs */
+      newChips.forEach(function (c) { c.classList.remove("chip-in"); });
+    }, 170);
+  }
+  /* The row starts collapsed in the HTML; no JS init needed. */
+  /* Keep the open row's measured height snug across viewport changes. */
+  window.addEventListener("resize", function(){
+    if (subRow.classList.contains("open")) {
+      subRow.style.maxHeight = subRow.scrollHeight + "px";
+    }
+  });
   /* Filter controls render from the fetched payload (single source of truth):
      category chips, attr pills, and store pills are built after apps.json
      loads, so a stale page can never show a filter that matches nothing.
@@ -607,8 +675,10 @@
         (state.subcats[c] = state.subcats[c] || []).push([s, counts[k]]);
       });
       Object.keys(state.subcats).forEach(function (c) {
+        /* Subcategory filters sort alphabetically, left to right. */
         state.subcats[c].sort(function (x, y) {
-          return (y[1] - x[1]) || (x[0].toLowerCase() < y[0].toLowerCase() ? -1 : 1);
+          var a = x[0].toLowerCase(), b = y[0].toLowerCase();
+          return a < b ? -1 : (a > b ? 1 : 0);
         });
         state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
       });

@@ -267,6 +267,14 @@ SUB_REMAP = {
     ("Utilities", "Data collection"): ("Utilities", "Internet"),# Derick 2026-10-06
     # Lifestyle stragglers (Derick 2026-10-06)
     ("Lifestyle", "Pedometer"): ("Lifestyle", "Health"),
+    # Media: Graphics folds into Photos; Media center + TV tracker become Home Theater (Derick 2026-10-06)
+    ("Media", "Graphics"): ("Media", "Photos"),
+    ("Media", "Media center"): ("Media", "Home Theater"),
+    ("Media", "TV tracker"): ("Media", "Home Theater"),
+    # Utilities -> System: Files, Internet, Automate move up a level (Derick 2026-10-06)
+    ("Utilities", "Files"): ("System", "Files"),
+    ("Utilities", "Internet"): ("System", "Internet"),
+    ("Utilities", "Automate"): ("System", "Automate"),
 }
 
 # Individual misfiled apps, found by reading descriptions (taxonomy-map
@@ -338,7 +346,11 @@ def clean_record(rec):
     subcategory = rec.get("subcategory") or ""
     if rec["name"] in APP_REMAP:
         category, subcategory = APP_REMAP[rec["name"]]
-    if (category, subcategory) in SUB_REMAP:
+    # Subcategory merges, applied iteratively so chains resolve
+    # (File manager -> Files -> System/Files). Capped as a safety net.
+    for _ in range(5):
+        if (category, subcategory) not in SUB_REMAP:
+            break
         category, subcategory = SUB_REMAP[(category, subcategory)]
     return {
         "name": rec["name"],
@@ -656,10 +668,12 @@ def build_index(forms):
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;\u2026"
            aria-label="Search apps" autocomplete="off">
-    <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
-      <button class="chip on" data-cat="" style="--accent-h:210">All</button>
+    <div class="cat-stack">
+      <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
+        <button class="chip on" data-cat="" style="--accent-h:210">All</button>
+      </div>
+      <div class="filter-row collapsed" id="subcategory-chips" role="group" aria-label="Filter by subcategory"></div>
     </div>
-    <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
     <script>var FILTER_DEFS = {filter_defs};</script>
     <div class="filter-row" id="attr-pills" role="group" aria-label="Narrow it down"></div>
     <div class="filter-row" id="store-pills" role="group" aria-label="Filter by store"></div>
@@ -1084,7 +1098,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-color: hsl(var(--accent-h, 210) 70% 60%);
   color: #0d0d14;
 }
+/* Category + subcategory stack: the subcategory bar attaches directly under
+   the category bar (borders connect) and rolls down from behind it when a
+   category is selected. */
+.cat-stack { position: relative; }
+.cat-stack #category-chips { position: relative; z-index: 2; margin-bottom: 0; }
 #subcategory-chips {
+  position: relative; z-index: 1;
   background: var(--input-bg);
   border: 1px solid var(--card-edge);
   border-radius: 999px;
@@ -1092,7 +1112,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   gap: 2px;
   width: fit-content;
   max-width: 100%;
+  overflow: hidden;
+  transition: max-height .32s ease, opacity .28s ease, margin-top .32s ease,
+              margin-bottom .32s ease, padding-top .32s ease, padding-bottom .32s ease,
+              border-top-width .32s ease, border-bottom-width .32s ease,
+              transform .32s ease;
 }
+#subcategory-chips.open { margin-top: 2px; margin-bottom: 10px; opacity: 1; transform: translateY(0); }
 #subcategory-chips .chip {
   border-color: transparent; background: transparent; border-radius: 999px;
   font-size: 0.78rem; padding: 5px 11px; font-weight: 500;
@@ -1102,9 +1128,26 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-color: hsl(var(--accent-h, 210) 70% 60%);
   color: #0d0d14;
 }
-/* Subcategory drill-down row: hidden until a top-level category is selected.
-   .filter-row sets display:flex, which overrides [hidden] — hence explicit. */
-#subcategory-chips[hidden] { display: none; }
+/* Collapsed: zero box (no negative margins — those pulled following content
+   up over the category bar). The translateY tucks it behind the category
+   bar; removing .collapsed rolls it down into place. */
+#subcategory-chips.collapsed {
+  max-height: 0 !important;
+  opacity: 0;
+  margin-top: 0; margin-bottom: 0;
+  padding-top: 0; padding-bottom: 0;
+  border-top-width: 0; border-bottom-width: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+}
+/* Chip slide: old names scroll left out, new names slide in from the right
+   when the category changes. */
+#subcategory-chips .chip { transition: transform .16s ease, opacity .16s ease; }
+#subcategory-chips .chip.chip-out { transform: translateX(-26px); opacity: 0; }
+#subcategory-chips .chip.chip-in { transform: translateX(26px); opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  #subcategory-chips, #subcategory-chips .chip { transition: none; }
+}
 .sort-row { justify-content: space-between; }
 .sort-row select {
   font: inherit;
@@ -1398,6 +1441,8 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 :root[data-mode="geek"] #subcategory-chips .chip { border: 2px outset #5a5ac8; border-radius: 0; background: var(--chip-bg); }
 :root[data-mode="geek"] #subcategory-chips .chip.on { border-style: inset; background: var(--accent); color: var(--on-accent); }
+/* Geek collapsed state needs the padding zeroed too (specificity). */
+:root[data-mode="geek"] #subcategory-chips.collapsed { padding-top: 0; padding-bottom: 0; }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
 :root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
@@ -1987,17 +2032,15 @@ JS_CONTENT = r"""
      as the tiles, so the chips can never disagree with the data — no empty
      subcategories after a taxonomy change, even with a stale page. */
   var subRow = document.getElementById("subcategory-chips");
-  function renderSubcats() {
-    var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
-    /* The subcategory row inherits the active category's hue (T2 direction). */
-    subRow.style.setProperty("--accent-h",
-      (state.cat && ACCENTS[state.cat] != null) ? ACCENTS[state.cat] : 210);
-    if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
-    subRow.hidden = false;
-    subRow.innerHTML = subs.map(function (s) {
+  var lastSubCat = null;   // category the subcategory row was last rendered for
+  var subAnimToken = 0;    // cancels stale roll/slide animations
+  function subChipsHtml(subs) {
+    return subs.map(function (s) {
       return '<button class="chip' + (state.subcat === s ? " on" : "") +
              '" data-subcat="' + escHtml(s) + '">' + escHtml(s) + "</button>";
     }).join("");
+  }
+  function bindSubChips() {
     subRow.querySelectorAll(".chip").forEach(function (c) {
       c.addEventListener("click", function () {
         var s = c.getAttribute("data-subcat");
@@ -2008,6 +2051,76 @@ JS_CONTENT = r"""
       });
     });
   }
+  function openSubRow() {
+    subRow.classList.remove("collapsed");
+    subRow.classList.add("open");
+    subRow.style.maxHeight = subRow.scrollHeight + "px";
+  }
+  function renderSubcats() {
+    var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
+    /* The subcategory row inherits the active category's hue. */
+    subRow.style.setProperty("--accent-h",
+      (state.cat && ACCENTS[state.cat] != null) ? ACCENTS[state.cat] : 210);
+    var token = ++subAnimToken;
+
+    if (!subs.length) {
+      /* Roll back up behind the category bar, then clear. */
+      if (subRow.classList.contains("open")) {
+        subRow.classList.remove("open");
+        subRow.classList.add("collapsed");
+        subRow.style.maxHeight = "0px";
+        setTimeout(function(){
+          if (token !== subAnimToken) return;
+          subRow.innerHTML = "";
+          lastSubCat = null;
+        }, 340);
+      } else {
+        subRow.innerHTML = "";
+        lastSubCat = null;
+      }
+      return;
+    }
+
+    if (!subRow.classList.contains("open")) {
+      /* First show: render, then roll down from behind the category bar. */
+      subRow.innerHTML = subChipsHtml(subs);
+      bindSubChips();
+      lastSubCat = state.cat;
+      void subRow.offsetHeight; /* reflow so the transition runs */
+      openSubRow();
+      return;
+    }
+
+    if (lastSubCat === state.cat) {
+      /* Same category (a subcategory was toggled): refresh .on states only. */
+      subRow.querySelectorAll(".chip").forEach(function (c) {
+        c.classList.toggle("on", c.getAttribute("data-subcat") === state.subcat);
+      });
+      subRow.style.maxHeight = subRow.scrollHeight + "px";
+      return;
+    }
+
+    /* Category switch: old names scroll away left, new names slide in right. */
+    lastSubCat = state.cat;
+    subRow.querySelectorAll(".chip").forEach(function (c) { c.classList.add("chip-out"); });
+    setTimeout(function(){
+      if (token !== subAnimToken) return;
+      subRow.innerHTML = subChipsHtml(subs);
+      bindSubChips();
+      var newChips = subRow.querySelectorAll(".chip");
+      newChips.forEach(function (c) { c.classList.add("chip-in"); });
+      subRow.style.maxHeight = subRow.scrollHeight + "px";
+      void subRow.offsetHeight; /* reflow so the enter transition runs */
+      newChips.forEach(function (c) { c.classList.remove("chip-in"); });
+    }, 170);
+  }
+  /* The row starts collapsed in the HTML; no JS init needed. */
+  /* Keep the open row's measured height snug across viewport changes. */
+  window.addEventListener("resize", function(){
+    if (subRow.classList.contains("open")) {
+      subRow.style.maxHeight = subRow.scrollHeight + "px";
+    }
+  });
   /* Filter controls render from the fetched payload (single source of truth):
      category chips, attr pills, and store pills are built after apps.json
      loads, so a stale page can never show a filter that matches nothing.
@@ -2119,8 +2232,10 @@ JS_CONTENT = r"""
         (state.subcats[c] = state.subcats[c] || []).push([s, counts[k]]);
       });
       Object.keys(state.subcats).forEach(function (c) {
+        /* Subcategory filters sort alphabetically, left to right. */
         state.subcats[c].sort(function (x, y) {
-          return (y[1] - x[1]) || (x[0].toLowerCase() < y[0].toLowerCase() ? -1 : 1);
+          var a = x[0].toLowerCase(), b = y[0].toLowerCase();
+          return a < b ? -1 : (a > b ? 1 : 0);
         });
         state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
       });

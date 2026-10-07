@@ -396,7 +396,7 @@
   "name": "Amaze File Manager",
   "package": "com.amaze.filemanager",
   "slug": "com-amaze-filemanager",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -992,7 +992,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.atrium.png",
-  "subcategory": "Media center",
+  "subcategory": "Home Theater",
   "description": "Control your self-hosted media stack from one app",
   "stores": {
    "play": null,
@@ -1145,7 +1145,7 @@
   "name": "AVNC",
   "package": "com.gaurav.avnc",
   "slug": "com-gaurav-avnc",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1250,7 +1250,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.czy0729.bangumi.png",
-  "subcategory": "TV tracker",
+  "subcategory": "Home Theater",
   "description": "A third-party client for Bangumi",
   "stores": {
    "play": null,
@@ -1308,7 +1308,7 @@
   "name": "BasicSync",
   "package": "com.chiller3.basicsync",
   "slug": "com-chiller3-basicsync",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1675,7 +1675,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bluesound.bluesoundplayer.png",
-  "subcategory": "Media center",
+  "subcategory": "Home Theater",
   "description": "Control BluOS and Sonos multi-room audio players on your network",
   "stores": {
    "play": null,
@@ -2706,7 +2706,7 @@
   "name": "Cx File Explorer",
   "package": "com.cxinventor.file.explorer",
   "slug": "com-cxinventor-file-explorer",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3169,7 +3169,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.drawpile.png",
-  "subcategory": "Graphics",
+  "subcategory": "Photos",
   "description": "A collaborative drawing program",
   "stores": {
    "play": null,
@@ -3260,7 +3260,7 @@
   "name": "Easer",
   "package": "ryey.easer.beta",
   "slug": "ryey-easer-beta",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3753,7 +3753,7 @@
   "name": "FairScan – PDF Scanner & OCR",
   "package": "org.fairscan.app",
   "slug": "org-fairscan-app",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4147,7 +4147,7 @@
   "name": "Files by Google",
   "package": "com.google.android.apps.nbu.files",
   "slug": "com-google-android-apps-nbu-files",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4213,7 +4213,7 @@
   "name": "Firefox",
   "package": "org.mozilla.firefox",
   "slug": "org-mozilla-firefox",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4566,7 +4566,7 @@
   "name": "Fluffy",
   "package": "app.fluffy",
   "slug": "app-fluffy",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4791,7 +4791,7 @@
   "name": "Formulus",
   "package": "org.opendataensemble.formulus",
   "slug": "org-opendataensemble-formulus",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -4923,7 +4923,7 @@
   "name": "Fossify File Manager",
   "package": "org.fossify.filemanager",
   "slug": "org-fossify-filemanager",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5287,7 +5287,7 @@
   "name": "Gander",
   "package": "com.arjun.gander",
   "slug": "com-arjun-gander",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5644,7 +5644,7 @@
   "name": "Google Docs",
   "package": "com.google.android.apps.docs.editors.docs",
   "slug": "com-google-android-apps-docs-editors-docs",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -5706,7 +5706,7 @@
   "name": "Google Lens",
   "package": "com.google.ar.lens",
   "slug": "com-google-ar-lens",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6232,7 +6232,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.ahxxm.ic.png",
-  "subcategory": "Graphics",
+  "subcategory": "Photos",
   "description": "Compress JPEG/PNG images using mozjpeg or jpegli offline",
   "stores": {
    "play": null,
@@ -6554,7 +6554,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.jellyfin.mobile.png",
-  "subcategory": "Media center",
+  "subcategory": "Home Theater",
   "description": "Mobile client for Jellyfin, the free software media system",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.jellyfin.mobile",
@@ -7039,7 +7039,7 @@
   "name": "Klick'r - Smart AutoClicker",
   "package": "com.buzbuz.smartautoclicker",
   "slug": "com-buzbuz-smartautoclicker",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7113,7 +7113,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.xbmc.kodi.png",
-  "subcategory": "Media center",
+  "subcategory": "Home Theater",
   "description": "Media center",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.xbmc.kodi",
@@ -7210,7 +7210,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.krita.png",
-  "subcategory": "Graphics",
+  "subcategory": "Photos",
   "description": "Professional painting program",
   "stores": {
    "play": null,
@@ -7431,7 +7431,7 @@
   "name": "LibreOffice Viewer",
   "package": "org.documentfoundation.libreoffice",
   "slug": "org-documentfoundation-libreoffice",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7497,7 +7497,7 @@
   "name": "LibreTorrent",
   "package": "org.proninyaroslav.libretorrent",
   "slug": "org-proninyaroslav-libretorrent",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7596,7 +7596,7 @@
   "name": "Linkora",
   "package": "com.sakethh.linkora",
   "slug": "com-sakethh-linkora",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7694,7 +7694,7 @@
   "name": "LocalSend",
   "package": "org.localsend.localsend_app",
   "slug": "org-localsend-localsend-app",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8023,7 +8023,7 @@
   "name": "Léon – The URL Cleaner",
   "package": "com.svenjacobs.app.leon",
   "slug": "com-svenjacobs-app-leon",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8122,7 +8122,7 @@
   "name": "Maid",
   "package": "com.danemadsen.maid",
   "slug": "com-danemadsen-maid",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8156,7 +8156,7 @@
   "name": "MakeACopy",
   "package": "de.schliweb.makeacopy",
   "slug": "de-schliweb-makeacopy",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8255,7 +8255,7 @@
   "name": "Material Files",
   "package": "me.zhanghai.android.files",
   "slug": "me-zhanghai-android-files",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8995,7 +8995,7 @@
   "name": "MJ PDF",
   "package": "com.gitlab.mudlej.MjPdfReader",
   "slug": "com-gitlab-mudlej-mjpdfreader",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9707,7 +9707,7 @@
   "name": "NetGuard",
   "package": "eu.faircode.netguard",
   "slug": "eu-faircode-netguard",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9840,7 +9840,7 @@
   "name": "Nextcloud",
   "package": "com.nextcloud.client",
   "slug": "com-nextcloud-client",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10203,7 +10203,7 @@
   "name": "OfflineLLM",
   "package": "com.jegly.offlineLLM",
   "slug": "com-jegly-offlinellm",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10565,7 +10565,7 @@
   "name": "OpenList Mobile",
   "package": "com.openlist.mobile",
   "slug": "com-openlist-mobile",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10629,7 +10629,7 @@
   "name": "OpenScan",
   "package": "com.ethereal.openscan",
   "slug": "com-ethereal-openscan",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10952,7 +10952,7 @@
   "name": "ownCloud",
   "package": "com.owncloud.android",
   "slug": "com-owncloud-android",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10985,7 +10985,7 @@
   "name": "PaperKnife",
   "package": "com.paperknife.app",
   "slug": "com-paperknife-app",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11016,7 +11016,7 @@
   "name": "PCAPdroid",
   "package": "com.emanuelef.remote_capture",
   "slug": "com-emanuelef-remote-capture",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -11381,7 +11381,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ceui.pixiv.png",
-  "subcategory": "Graphics",
+  "subcategory": "Photos",
   "description": "Third-party Pixiv client",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ceui.pixiv.pshaft",
@@ -11955,7 +11955,7 @@
   "name": "qBitController",
   "package": "dev.bartuzen.qbitcontroller",
   "slug": "dev-bartuzen-qbitcontroller",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12214,7 +12214,7 @@
   "name": "RCX",
   "package": "io.github.x0b.rcx",
   "slug": "io-github-x0b-rcx",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12569,7 +12569,7 @@
   "name": "RSAF",
   "package": "com.chiller3.rsaf",
   "slug": "com-chiller3-rsaf",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -12702,7 +12702,7 @@
   "name": "RustDesk",
   "package": "com.carriez.flutter_hbb",
   "slug": "com-carriez-flutter-hbb",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13098,7 +13098,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.battlelancer.seriesguide.png",
-  "subcategory": "TV tracker",
+  "subcategory": "Home Theater",
   "description": "TV show tracker, fully offline-capable",
   "stores": {
    "play": null,
@@ -13229,7 +13229,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.michaldrabik.showly2.png",
-  "subcategory": "TV tracker",
+  "subcategory": "Home Theater",
   "description": "An open source TV Shows & Movies tracker app that works with Trakt",
   "stores": {
    "play": null,
@@ -14134,7 +14134,7 @@
   "name": "Syncthing-Fork",
   "package": "com.github.catfriend1.syncthingfork",
   "slug": "com-github-catfriend1-syncthingfork",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -14202,7 +14202,7 @@
   "name": "TagSpaces",
   "package": "org.tagspaces.mobileapp",
   "slug": "org-tagspaces-mobileapp",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -14266,7 +14266,7 @@
   "name": "Tarnhelm",
   "package": "cn.ac.lz233.tarnhelm",
   "slug": "cn-ac-lz233-tarnhelm",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -14503,7 +14503,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.tivi.png",
-  "subcategory": "TV tracker",
+  "subcategory": "Home Theater",
   "description": "TV show tracking via Trakt",
   "stores": {
    "play": null,
@@ -15013,7 +15013,7 @@
   "name": "Unofficial CheckMK Monitoring",
   "package": "com.checkmk.unofficial_checkmk_monitoring",
   "slug": "com-checkmk-unofficial-checkmk-monitoring",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -15046,7 +15046,7 @@
   "name": "Untracker",
   "package": "me.zhanghai.android.untracker",
   "slug": "me-zhanghai-android-untracker",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -15079,7 +15079,7 @@
   "name": "URLCheck",
   "package": "com.trianguloy.urlchecker",
   "slug": "com-trianguloy-urlchecker",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -15145,7 +15145,7 @@
   "name": "Vault Explorer",
   "package": "com.aeidolon.vaultexplorer",
   "slug": "com-aeidolon-vaultexplorer",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -15535,7 +15535,7 @@
   "name": "WebLibre: Private Browser",
   "package": "eu.weblibre.gecko",
   "slug": "eu-weblibre-gecko",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,

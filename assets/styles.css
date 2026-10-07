@@ -186,7 +186,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-color: hsl(var(--accent-h, 210) 70% 60%);
   color: #0d0d14;
 }
+/* Category + subcategory stack: the subcategory bar attaches directly under
+   the category bar (borders connect) and rolls down from behind it when a
+   category is selected. */
+.cat-stack { position: relative; }
+.cat-stack #category-chips { position: relative; z-index: 2; margin-bottom: 0; }
 #subcategory-chips {
+  position: relative; z-index: 1;
   background: var(--input-bg);
   border: 1px solid var(--card-edge);
   border-radius: 999px;
@@ -194,7 +200,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   gap: 2px;
   width: fit-content;
   max-width: 100%;
+  overflow: hidden;
+  transition: max-height .32s ease, opacity .28s ease, margin-top .32s ease,
+              margin-bottom .32s ease, padding-top .32s ease, padding-bottom .32s ease,
+              border-top-width .32s ease, border-bottom-width .32s ease,
+              transform .32s ease;
 }
+#subcategory-chips.open { margin-top: 2px; margin-bottom: 10px; opacity: 1; transform: translateY(0); }
 #subcategory-chips .chip {
   border-color: transparent; background: transparent; border-radius: 999px;
   font-size: 0.78rem; padding: 5px 11px; font-weight: 500;
@@ -204,9 +216,26 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-color: hsl(var(--accent-h, 210) 70% 60%);
   color: #0d0d14;
 }
-/* Subcategory drill-down row: hidden until a top-level category is selected.
-   .filter-row sets display:flex, which overrides [hidden] — hence explicit. */
-#subcategory-chips[hidden] { display: none; }
+/* Collapsed: zero box (no negative margins — those pulled following content
+   up over the category bar). The translateY tucks it behind the category
+   bar; removing .collapsed rolls it down into place. */
+#subcategory-chips.collapsed {
+  max-height: 0 !important;
+  opacity: 0;
+  margin-top: 0; margin-bottom: 0;
+  padding-top: 0; padding-bottom: 0;
+  border-top-width: 0; border-bottom-width: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+}
+/* Chip slide: old names scroll left out, new names slide in from the right
+   when the category changes. */
+#subcategory-chips .chip { transition: transform .16s ease, opacity .16s ease; }
+#subcategory-chips .chip.chip-out { transform: translateX(-26px); opacity: 0; }
+#subcategory-chips .chip.chip-in { transform: translateX(26px); opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  #subcategory-chips, #subcategory-chips .chip { transition: none; }
+}
 .sort-row { justify-content: space-between; }
 .sort-row select {
   font: inherit;
@@ -500,6 +529,8 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 :root[data-mode="geek"] #subcategory-chips .chip { border: 2px outset #5a5ac8; border-radius: 0; background: var(--chip-bg); }
 :root[data-mode="geek"] #subcategory-chips .chip.on { border-style: inset; background: var(--accent); color: var(--on-accent); }
+/* Geek collapsed state needs the padding zeroed too (specificity). */
+:root[data-mode="geek"] #subcategory-chips.collapsed { padding-top: 0; padding-bottom: 0; }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
 :root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
