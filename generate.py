@@ -213,6 +213,18 @@ CATEGORY_FIXUPS = {
     "Utilities / Comms & System": "Utilities",
 }
 
+# Games subcategory merges (Derick's taxonomy-map session, 2026-10-06):
+# one-off splinters fold into their natural homes; Emulator + Streaming
+# become "Players" (apps that play games, rather than games themselves).
+SUBCATEGORY_FIXUPS = {
+    "Sandbox": "Arcade",
+    "Shooter": "Arcade",
+    "Word": "Puzzle",
+    "Roguelike": "RPG",
+    "Emulator": "Players",
+    "Streaming": "Players",
+}
+
 
 def clean_record(rec):
     stores = rec.get("stores") or {}
@@ -255,7 +267,7 @@ def clean_record(rec):
         "promises": promises,
         "icon_svg": rec.get("icon_svg"),
         "icon": icon,
-        "subcategory": rec.get("subcategory") or "",
+        "subcategory": SUBCATEGORY_FIXUPS.get(rec.get("subcategory") or "", rec.get("subcategory") or ""),
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
         "rating": ver.get("play_rating"),

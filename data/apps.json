@@ -2586,7 +2586,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.eehouse.android.xw4.png",
-  "subcategory": "Word",
+  "subcategory": "Puzzle",
   "description": "Crossword / Scrabble-style word game, solo or online.",
   "stores": {
    "play": null,
@@ -3235,7 +3235,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.develz.crawl.png",
-  "subcategory": "Roguelike",
+  "subcategory": "RPG",
   "description": "Dungeon Crawl Stone Soup: the deep, unforgiving roguelike classic.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.develz.crawl",
@@ -4768,7 +4768,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.crossword.yourealwaysbe.forkyz.png",
-  "subcategory": "Word",
+  "subcategory": "Puzzle",
   "description": "Crossword puzzle app",
   "stores": {
    "play": null,
@@ -5229,7 +5229,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.nullsum.freedoom.png",
-  "subcategory": "Shooter",
+  "subcategory": "Arcade",
   "description": "A complete free Doom-engine game: demons, shotguns, no ads.",
   "stores": {
    "play": null,
@@ -5873,7 +5873,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.billthefarmer.gridle.png",
-  "subcategory": "Word",
+  "subcategory": "Puzzle",
   "description": "Word game, multiple languages and themes.",
   "stores": {
    "play": null,
@@ -6199,7 +6199,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.roguetemple.hyperroid.png",
-  "subcategory": "Roguelike",
+  "subcategory": "RPG",
   "description": "A roguelike on impossible non-Euclidean geometry.",
   "stores": {
    "play": null,
@@ -6459,7 +6459,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ru.playsoftware.j2meloader.png",
-  "subcategory": "Emulator",
+  "subcategory": "Players",
   "description": "J2ME emulator for Android",
   "stores": {
    "play": null,
@@ -7307,7 +7307,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.swordfish.lemuroid.png",
-  "subcategory": "Emulator",
+  "subcategory": "Players",
   "description": "All in one emulator on Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid",
@@ -7832,7 +7832,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.minetest.minetest.png",
-  "subcategory": "Sandbox",
+  "subcategory": "Arcade",
   "description": "Luanti: open-source voxel sandbox (Minecraft-like), endless mods.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=net.minetest.minetest",
@@ -9201,7 +9201,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.limelight.png",
-  "subcategory": "Streaming",
+  "subcategory": "Players",
   "description": "Play games from your PC on Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.limelight",
@@ -11476,7 +11476,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.game.plutonic.png",
-  "subcategory": "Shooter",
+  "subcategory": "Arcade",
   "description": "Suika physics-based planet shooter",
   "stores": {
    "play": null,
@@ -11738,7 +11738,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.ppsspp.ppsspp.png",
-  "subcategory": "Emulator",
+  "subcategory": "Players",
   "description": "PSP emulator. DOUBT: a paid 'PPSSPP Gold' app exists on Play, but it is donation-identical (same features)",
   "stores": {
    "play": null,
@@ -12480,7 +12480,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.retroarch.png",
-  "subcategory": "Emulator",
+  "subcategory": "Players",
   "description": "Retro games and emulators frontend",
   "stores": {
    "play": null,
@@ -12511,7 +12511,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.adilhanney.ricochlime.png",
-  "subcategory": "Shooter",
+  "subcategory": "Arcade",
   "description": "Satisfying monster shooter",
   "stores": {
    "play": null,
@@ -12644,7 +12644,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/rs.ruffle.png",
-  "subcategory": "Emulator",
+  "subcategory": "Players",
   "description": "An Android application for ruffle.rs",
   "stores": {
    "play": null,
@@ -13131,7 +13131,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.shatteredpixel.shatteredpixeldungeon.png",
-  "subcategory": "Roguelike",
+  "subcategory": "RPG",
   "description": "A polished turn-based roguelike: descend, loot, die, try again.",
   "stores": {
    "play": null,
