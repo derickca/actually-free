@@ -179,9 +179,16 @@ def extract_description(rec):
                                   "labels verified", "anti-features",
                                   "f-droid clean", "play listing", "play build"]):
             continue
+        # Verification markers ("PASS 2026-10-05.") are not descriptions.
+        if re.match(r"pass\s+\d{4}-\d{2}-\d{2}", low):
+            continue
         if len(sent) > 15:
             return tidy(sent)
-    return tidy(s[:200])
+    # Last resort: never let a verification marker become the public copy.
+    fallback = tidy(s[:200])
+    if re.match(r"(?i)pass\s+\d{4}-\d{2}-\d{2}", fallback):
+        return ""
+    return fallback
 
 
 def derive_attrs(rec):
@@ -671,6 +678,8 @@ def build_detail(app, forms):
     review = (f'<div class="review-note"><h2>Needs further review</h2>'
               f'<p>{esc(app["review_notes"] or "This listing hasn\u2019t been fully verified yet \u2014 help us check it.")}</p></div>'
               if app.get("needs_review") else "")
+    desc_html = (f'<p class="desc">{esc(app["description"])}</p>'
+                 if app.get("description") else "")
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -687,7 +696,7 @@ def build_detail(app, forms):
         {rating}
       </div>
     </div>
-    <p class="desc">{esc(app["description"])}</p>
+    {desc_html}
     {review}
     <h2>Get it</h2>
     <div class="get-it">
@@ -938,8 +947,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   margin-bottom: 12px;
 }
 #search:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
-/* Filter rows never wrap: one row on desktop, horizontal scroll on narrow screens */
+/* Filter rows scroll horizontally on narrow screens; on desktop each group
+   wraps into its own band instead of an endless scroll strip. */
 .filter-row { display: flex; flex-wrap: nowrap; gap: 8px; margin-bottom: 10px; align-items: center; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+@media (min-width: 900px) {
+  .filter-row { flex-wrap: wrap; overflow-x: visible; }
+  #category-chips, #subcategory-chips { border-radius: 20px; }
+}
 .filter-row::-webkit-scrollbar { display: none; }
 .filter-row .chip, .filter-row .pill { flex: 0 0 auto; }
 .chip, .pill {
@@ -954,9 +968,9 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   cursor: pointer;
 }
 .chip.on, .pill.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
-/* T2 direction: the category row reads as one segmented control (a single
-   choice); the subcategory row keeps floating pills with squarer corners.
-   Shape plus the category hue says "these are different controls". */
+/* Categories and subcategories share one visual language: a single joined
+   segmented control per group, neutral segments, the active segment filled
+   with the category hue. The hue ties the two rows (and the tiles) together. */
 #category-chips {
   background: var(--input-bg);
   border: 1px solid var(--card-edge);
@@ -972,7 +986,19 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-color: hsl(var(--accent-h, 210) 70% 60%);
   color: #0d0d14;
 }
-#subcategory-chips .chip { border-radius: 8px; }
+#subcategory-chips {
+  background: var(--input-bg);
+  border: 1px solid var(--card-edge);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+  width: fit-content;
+  max-width: 100%;
+}
+#subcategory-chips .chip {
+  border-color: transparent; background: transparent; border-radius: 999px;
+  font-size: 0.78rem; padding: 5px 11px; font-weight: 500;
+}
 #subcategory-chips .chip.on {
   background: hsl(var(--accent-h, 210) 70% 60%);
   border-color: hsl(var(--accent-h, 210) 70% 60%);
@@ -981,7 +1007,6 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 /* Subcategory drill-down row: hidden until a top-level category is selected.
    .filter-row sets display:flex, which overrides [hidden] — hence explicit. */
 #subcategory-chips[hidden] { display: none; }
-#subcategory-chips .chip { font-size: 0.78rem; padding: 5px 11px; font-weight: 500; }
 .sort-row { justify-content: space-between; }
 .sort-row select {
   font: inherit;
@@ -1037,12 +1062,17 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   font-size: 1.7rem; font-weight: 800;
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
-.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* <wbr> word seams only; never an arbitrary mid-word snap */
+.tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; overflow-wrap: break-word; } /* break-word only: whole words move, never an arbitrary mid-word snap */
+/* Subcategory (+ "Made by us") pill row: its own full-width row under the
+   title, so pills never truncate against the icon column and every tile
+   header has the same shape. Ellipsis is a backstop for very long names. */
+.tile-pills { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .tile .subpill {
   display: inline-block; font-size: 0.74rem; font-weight: 700;
-  padding: 2px 10px; border-radius: 999px; margin-top: 4px;
+  padding: 2px 10px; border-radius: 999px;
   background: hsl(var(--accent-h, 210) 60% 30%);
   color: hsl(var(--accent-h, 210) 85% 88%);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
 }
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -1065,8 +1095,14 @@ a.store-badge:hover { filter: brightness(0.96); }
 /* "Free Enough" — same spot as the verified line, but a distinct warm tag:
    paid upgrades exist, the free tier is the complete product. */
 .free-enough {
-  font-size: 0.75rem; font-weight: 700; color: #b45309;
-  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.72rem; font-weight: 700; color: #92400e;
+  background: #fde9c8; border: 1px solid #e8b96a;
+  padding: 4px 10px; border-radius: 999px;
+  display: inline-flex; align-items: center;
+}
+:root[data-theme="dark"] .free-enough { color: #fbd9a4; background: #4a2c10; border-color: #8a5a24; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .free-enough { color: #fbd9a4; background: #4a2c10; border-color: #8a5a24; }
 }
 .free-enough-blurb {
   font-weight: 600;
@@ -1089,10 +1125,10 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 .review-note h2 { margin: 0 0 6px; }
 .review-note p { margin: 0; }
-/* "Made by us" sits as a small pill at the top of the tile, clear of the name */
+/* "Made by us" sits inline with the subcategory pill, so every tile header
+   starts at the same height. */
 .made-by-us {
   display: inline-block;
-  align-self: flex-start;
   background: var(--accent); color: var(--on-accent);
   font-size: 0.68rem; font-weight: 800;
   padding: 3px 10px; border-radius: 999px;
@@ -1259,8 +1295,11 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 :root[data-mode="geek"] #category-chips .chip { border: 2px outset #5a5ac8; border-radius: 0; background: var(--chip-bg); }
 :root[data-mode="geek"] #category-chips .chip.on { border-style: inset; background: var(--accent); color: var(--on-accent); }
-:root[data-mode="geek"] #subcategory-chips .chip { border-radius: 0; }
-:root[data-mode="geek"] #subcategory-chips .chip.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+:root[data-mode="geek"] #subcategory-chips {
+  background: none; border: none; border-radius: 0; padding: 0 0 4px; gap: 8px; width: auto;
+}
+:root[data-mode="geek"] #subcategory-chips .chip { border: 2px outset #5a5ac8; border-radius: 0; background: var(--chip-bg); }
+:root[data-mode="geek"] #subcategory-chips .chip.on { border-style: inset; background: var(--accent); color: var(--on-accent); }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
 :root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
@@ -1354,16 +1393,19 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 
 @media (max-width: 640px) {
-  /* The toggle column stacks so the header grows vertically instead of
-     scrolling horizontally — horizontal scroll is never acceptable. */
-  .header-inner { gap: 10px; flex-wrap: wrap; }
-  /* Toggles share the row with the brand, stacked: mode toggle above, theme
-     toggle below. (The QR icon is desktop-only now, so it all fits.) */
-  .switchers { flex-direction: column; align-items: flex-end; gap: 6px; margin-left: auto; }
+  /* One header row on phones: brand + both toggles side by side, compact.
+     Verified at 390/360/320px viewports: no horizontal overflow, no wrap,
+     header 69px tall (was ~90px with the stacked toggles). The brand name
+     folds to two lines to make room. Horizontal scroll is never acceptable. */
+  .header-inner { gap: 8px; flex-wrap: nowrap; }
+  .switchers { flex-direction: row; align-items: center; gap: 6px; margin-left: auto; }
+  .switcher button { padding: 6px 8px; font-size: 0.72rem; }
+  .switcher.theme-switcher button { padding: 5px 7px; }
   .qr-appicon { display: none; } /* the QR Cards icon lives in the desktop header only */
+  .brand { gap: 8px; }
   .brand-text em { display: none; } /* tagline hides on phones to save vertical room */
-  .brand-text strong { font-size: 1.05rem; }
-  .brand img { width: 44px; height: 44px; }
+  .brand-text strong { font-size: 1rem; }
+  .brand img { width: 40px; height: 40px; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
   .detail-card { padding: 18px; }
 }
@@ -1716,20 +1758,16 @@ JS_CONTENT = r"""
   }
   /* Word-boundary wrap opportunities for tile titles: <wbr> at camelCase /
      PascalCase / acronym seams ("AntennaPod" -> "Antenna|<wbr>Pod"), plus
-     explicit seams for compound words with no case boundary ("Minesweeper"
-     -> "Mine|<wbr>sweeper"). Applied after HTML-escaping (escaping never
-     touches ASCII letters, so positions are stable). */
+     explicit seams for clean compounds ("Minesweeper" -> "Mine|<wbr>sweeper").
+     Applied after HTML-escaping (escaping never touches ASCII letters, so
+     positions are stable). Only seams that read cleanly — no mid-syllable
+     chops ("Authen|<wbr>ticator" looked broken, so those are gone). */
   var WBR_WORDS = {
     "minesweeper": "Mine<wbr>sweeper",
     "lawnchair": "Lawn<wbr>chair",
     "nextcloud": "Next<wbr>cloud",
     "personaldnsfilter": "personal<wbr>DNS<wbr>filter",
-    "authenticator": "Authen<wbr>ticator",
-    "messenger": "Messen<wbr>ger",
-    "minimalist": "Mini<wbr>malist",
-    "phonograph": "Phono<wbr>graph",
     "audiobook": "Audio<wbr>book",
-    "pedometer": "Pedo<wbr>meter",
     "syncthing": "Sync<wbr>thing"
   };
   function wbrify(rawName) {
@@ -1765,12 +1803,12 @@ JS_CONTENT = r"""
       ? '<span class="free-enough">Free Enough</span>'
       : '<span class="verified">\u2713 Verified actually-free</span>';
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
-      '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
+      '.html" data-slug="' + escHtml(app.slug) + '">' +
       '<span class="tile-top">' + iconHtml +
-      "<span><h3>" + wbrify(app.name) + "</h3>" +
-      '<span class="subpill">' + escHtml(app.subcategory || app.category) + "</span></span></span>" +
+      "<span><h3>" + wbrify(app.name) + "</h3></span></span>" +
+      '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + ribbon + "</span>" +
       rating +
-      '<p class="desc">' + escHtml(app.description) + "</p>" +
+      (app.description ? '<p class="desc">' + escHtml(app.description) + "</p>" : "") +
       '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
       trustLine + '</a>';
   }

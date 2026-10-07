@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (zqEdRat8DJPn9c24rAqnJA==, replaced at build time) embedded separately,
+     the key (IHxrYfk8TgTxNltbmVXz+Q==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "zqEdRat8DJPn9c24rAqnJA==";
+    var K = "IHxrYfk8TgTxNltbmVXz+Q==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -344,20 +344,16 @@
   }
   /* Word-boundary wrap opportunities for tile titles: <wbr> at camelCase /
      PascalCase / acronym seams ("AntennaPod" -> "Antenna|<wbr>Pod"), plus
-     explicit seams for compound words with no case boundary ("Minesweeper"
-     -> "Mine|<wbr>sweeper"). Applied after HTML-escaping (escaping never
-     touches ASCII letters, so positions are stable). */
+     explicit seams for clean compounds ("Minesweeper" -> "Mine|<wbr>sweeper").
+     Applied after HTML-escaping (escaping never touches ASCII letters, so
+     positions are stable). Only seams that read cleanly — no mid-syllable
+     chops ("Authen|<wbr>ticator" looked broken, so those are gone). */
   var WBR_WORDS = {
     "minesweeper": "Mine<wbr>sweeper",
     "lawnchair": "Lawn<wbr>chair",
     "nextcloud": "Next<wbr>cloud",
     "personaldnsfilter": "personal<wbr>DNS<wbr>filter",
-    "authenticator": "Authen<wbr>ticator",
-    "messenger": "Messen<wbr>ger",
-    "minimalist": "Mini<wbr>malist",
-    "phonograph": "Phono<wbr>graph",
     "audiobook": "Audio<wbr>book",
-    "pedometer": "Pedo<wbr>meter",
     "syncthing": "Sync<wbr>thing"
   };
   function wbrify(rawName) {
@@ -393,12 +389,12 @@
       ? '<span class="free-enough">Free Enough</span>'
       : '<span class="verified">\u2713 Verified actually-free</span>';
     return '<a class="tile" style="--accent-h:' + accent + '" href="/app/' + escHtml(app.slug) +
-      '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
+      '.html" data-slug="' + escHtml(app.slug) + '">' +
       '<span class="tile-top">' + iconHtml +
-      "<span><h3>" + wbrify(app.name) + "</h3>" +
-      '<span class="subpill">' + escHtml(app.subcategory || app.category) + "</span></span></span>" +
+      "<span><h3>" + wbrify(app.name) + "</h3></span></span>" +
+      '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + ribbon + "</span>" +
       rating +
-      '<p class="desc">' + escHtml(app.description) + "</p>" +
+      (app.description ? '<p class="desc">' + escHtml(app.description) + "</p>" : "") +
       '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
       trustLine + '</a>';
   }

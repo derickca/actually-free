@@ -765,7 +765,7 @@
   "icon_svg": null,
   "icon": "assets/icons/chat.delta.lite.png",
   "subcategory": "Messaging",
-  "description": "PASS 2026-10-05.",
+  "description": "Delta Chat client with WebXDC extras.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.github.arcanechat",
    "fdroid": true,
@@ -893,7 +893,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.sidhant.arrowescape.png",
   "subcategory": "Puzzle",
-  "description": "PASS 2026-10-05.",
+  "description": "Minimalist arrow-maze puzzle, infinite levels, 100% offline.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -960,7 +960,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.astroloop.game.png",
   "subcategory": "Arcade",
-  "description": "PASS 2026-10-05.",
+  "description": "Roguelike space shooter, one-finger, pure Kotlin Canvas, zero internet permission.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -1480,7 +1480,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.bitchat.droid.png",
   "subcategory": "Messaging",
-  "description": "PASS 2026-10-05.",
+  "description": "Bluetooth mesh + Nostr chat, no accounts/phone numbers.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bitchat.droid",
    "fdroid": false,
@@ -2227,7 +2227,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.adeeteya.classipod.png",
   "subcategory": "Music",
-  "description": "PASS 2026-10-05.",
+  "description": "Local music player recreating the iPod Classic: virtual click wheel, cover-art display, fully offline.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.adeeteya.classipod",
    "fdroid": true,
@@ -3104,7 +3104,7 @@
   "icon_svg": null,
   "icon": "assets/icons/io.github.yamin8000.dooz.png",
   "subcategory": "Board",
-  "description": "PASS 2026-10-05.",
+  "description": "Tic-tac-toe, variable board 3x3-7x7, AI difficulty.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -3366,7 +3366,7 @@
   "icon_svg": null,
   "icon": "assets/icons/io.element.android.x.png",
   "subcategory": "Messaging",
-  "description": "PASS 2026-10-05.",
+  "description": "Official next-gen Matrix client.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=io.element.android.x",
    "fdroid": true,
@@ -3630,7 +3630,7 @@
   "icon_svg": null,
   "icon": "assets/icons/org.eu.exodus_privacy.exodusprivacy.png",
   "subcategory": "Privacy",
-  "description": "PASS 2026-10-05.",
+  "description": "Shows the trackers and permissions in installed apps.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.eu.exodus_privacy.exodusprivacy",
    "fdroid": true,
@@ -5329,7 +5329,7 @@
   "icon_svg": null,
   "icon": "assets/icons/org.piepmeyer.gauguin.png",
   "subcategory": "Puzzle",
-  "description": "PASS 2026-10-05.",
+  "description": "Kakuro-style logic game, multilingual.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.piepmeyer.gauguin",
    "fdroid": true,
@@ -5874,7 +5874,7 @@
   "icon_svg": null,
   "icon": "assets/icons/org.billthefarmer.gridle.png",
   "subcategory": "Word",
-  "description": "PASS 2026-10-05.",
+  "description": "Word game, multiple languages and themes.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -6101,7 +6101,7 @@
   "icon_svg": null,
   "icon": "assets/icons/helium314.keyboard.png",
   "subcategory": "Keyboard",
-  "description": "PASS 2026-10-05.",
+  "description": "Privacy keyboard, OpenBoard successor.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -6266,7 +6266,7 @@
   "icon_svg": null,
   "icon": "assets/icons/ru.tech.imageresizershrinker.png",
   "subcategory": "Image editor",
-  "description": "PASS 2026-10-05.",
+  "description": "Full image editor and batch converter.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker",
    "fdroid": true,
@@ -7669,7 +7669,7 @@
   "icon_svg": null,
   "icon": "assets/icons/org.grakovne.lissen.png",
   "subcategory": "Audio",
-  "description": "PASS 2026-10-05.",
+  "description": "Minimalist Audiobookshelf client (audiobooks + podcasts): progress sync, streaming, offline downloads.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.grakovne.lissen",
    "fdroid": true,
@@ -7899,7 +7899,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.demonlab.lune.png",
   "subcategory": "Music",
-  "description": "PASS 2026-10-05.",
+  "description": "Modern local music player (Jetpack Compose, Material 3 Expressive): live lyrics, automix/crossfade, sleep timer.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -9235,7 +9235,7 @@
   "icon_svg": null,
   "icon": "assets/icons/org.joinmastodon.android.moshinda.png",
   "subcategory": "Social",
-  "description": "PASS 2026-10-05.",
+  "description": "Mastodon client, Material You.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.joinmastodon.android.moshinda",
    "fdroid": true,
@@ -9617,7 +9617,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.nkls.nekovideo.png",
   "subcategory": "Video player",
-  "description": "PASS 2026-10-05.",
+  "description": "Local video player: folder library, DLNA/UPnP casting with NO proprietary Google Cast SDK, password + biometric private folders, PiP.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -11413,7 +11413,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.ismartcoding.plain.png",
   "subcategory": "Device",
-  "description": "PASS 2026-10-05.",
+  "description": "Manage your phone from a web browser: files, SMS, calls, notifications.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ismartcoding.plain",
    "fdroid": true,
@@ -12053,7 +12053,7 @@
   "review_notes": ""
  },
  {
-  "name": "QR code & barcode scanner, rea",
+  "name": "QR code & barcode scanner, reader",
   "package": "qr.qrcode.barcode.scanner.reader",
   "slug": "qr-qrcode-barcode-scanner-reader",
   "category": "Utilities",
@@ -12127,7 +12127,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.quietgrid.app.png",
   "subcategory": "Puzzle",
-  "description": "PASS 2026-10-05.",
+  "description": "Privacy-first logic puzzles: no ads, no internet, no account required.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.quietgrid.app",
    "fdroid": true,
@@ -12192,7 +12192,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.aicodix.rattlegram.png",
   "subcategory": "Messaging",
-  "description": "PASS 2026-10-05.",
+  "description": "SMS-over-audio (COFDMTV modem).",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.aicodix.rattlegram",
    "fdroid": false,
@@ -12872,7 +12872,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.dmi3dmi3.saywhen.png",
   "subcategory": "Calendar",
-  "description": "PASS 2026-10-05.",
+  "description": "One phrase and it's on your calendar: no forms, no fields.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -13584,7 +13584,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.github.tmo1.sms_ie.png",
   "subcategory": "Phone",
-  "description": "PASS 2026-10-05.",
+  "description": "Import and export SMS & MMS.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -13912,7 +13912,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.galaxyrio.sudokusolver.png",
   "subcategory": "Puzzle",
-  "description": "PASS 2026-10-05.",
+  "description": "Offline sudoku with logical hints, advanced notes, flexible import/export.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -14438,7 +14438,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.dessalines.thumbkey.png",
   "subcategory": "Keyboard",
-  "description": "PASS 2026-10-05.",
+  "description": "Thumb-typing keyboard, 3x4 layout.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -15249,7 +15249,7 @@
   "icon_svg": null,
   "icon": "assets/icons/dev.victorialauncher.png",
   "subcategory": "Customization",
-  "description": "PASS 2026-10-05.",
+  "description": "Minimal, list-based home screen; open-source Niagara Launcher alternative.",
   "stores": {
    "play": null,
    "fdroid": true,
@@ -15445,7 +15445,7 @@
   "icon_svg": null,
   "icon": "assets/icons/com.sidhant.watersort.png",
   "subcategory": "Puzzle",
-  "description": "PASS 2026-10-05.",
+  "description": "Color-sorting puzzle, infinite levels, no ads.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sidhant.watersort",
    "fdroid": true,
