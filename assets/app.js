@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (DIRJHikJ9BGiBA2y++Pfbw==, replaced at build time) embedded separately,
+     the key (zqEdRat8DJPn9c24rAqnJA==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "DIRJHikJ9BGiBA2y++Pfbw==";
+    var K = "zqEdRat8DJPn9c24rAqnJA==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -293,25 +293,36 @@
       if (target[k] === q[i]) i++;
     return i === q.length;
   }
-  function matches(app, q) {
-    if (!q) return true;
-    var hay = norm([app.name, app.description, app.category, app.subcategory, (app.tags || []).join(" ")].join(" "));
-    if (hay.indexOf(q) !== -1) return true;
-    var hayTokens = tokens(hay);
+  /* Search relevance tiers. Returns -1 for no match, else a rank:
+       0 = query appears in the app name,
+       1 = query appears in the description / category / subcategory / tags,
+       2 = typo-tolerant match against the app NAME only.
+     Typo tolerance kicks in at 5 characters. It is deliberately name-only:
+     fuzzy-matching description words let 5-letter "easer" match "easier" in
+     56 descriptions. Short queries match literal tokens only, so 2-letter
+     "qr" cannot subsequence-match "Al-Quran". */
+  function matchRank(app, q) {
+    if (!q) return 0;
     var qtokens = tokens(q);
-    /* Typo tolerance starts at 5 characters. Shorter tokens match literally:
-       fuzzy distance let 4-letter "food" match "for" (91 apps!) and 2-letter
-       "qr" match "or", and subsequence matching caught "Al-Quran" for "qr". */
+    var nameNorm = norm(app.name);
     var longEnough = qtokens.some(function (qt) { return qt.length >= 5; });
     if (!longEnough) {
-      return qtokens.some(function (qt) { return hayTokens.indexOf(qt) !== -1; });
+      var hayTokens = tokens([app.name, app.description, app.category,
+                              app.subcategory, (app.tags || []).join(" ")].join(" "));
+      return qtokens.some(function (qt) { return hayTokens.indexOf(qt) !== -1; }) ? 1 : -1;
     }
-    var nameNorm = norm(app.name);
-    if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return true;
-    return qtokens.some(function (qt) {
-      if (qt.length < 5) return hayTokens.indexOf(qt) !== -1;
-      return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= 2; });
+    if (nameNorm.indexOf(q) !== -1) return 0;
+    var hay = norm([app.description, app.category, app.subcategory,
+                    (app.tags || []).join(" ")].join(" "));
+    if (hay.indexOf(q) !== -1) return 1;
+    var nameTokens = tokens(app.name);
+    if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return 2;
+    var fuzzy = qtokens.some(function (qt) {
+      if (qt.length < 5) return false;
+      var maxd = qt.length >= 8 ? 2 : 1;
+      return nameTokens.some(function (nt) { return levenshtein(qt, nt) <= maxd; });
     });
+    return fuzzy ? 2 : -1;
   }
 
   function escHtml(s) {
@@ -385,7 +396,7 @@
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
       "<span><h3>" + wbrify(app.name) + "</h3>" +
-      '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
+      '<span class="subpill">' + escHtml(app.subcategory || app.category) + "</span></span></span>" +
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
       '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
@@ -394,24 +405,29 @@
 
   function filtered() {
     var q = norm(state.query);
-    var list = state.apps.filter(function (app) {
-      if (state.cat && app.category !== state.cat) return false;
-      if (state.subcat && app.subcategory !== state.subcat) return false;
+    var hits = [];
+    state.apps.forEach(function (app) {
+      if (state.cat && app.category !== state.cat) return;
+      if (state.subcat && app.subcategory !== state.subcat) return;
       for (var k in state.attrs) {
         if (!(k in ATTR_KEYS)) continue; /* unknown key: ignore, never empty the grid */
-        if (!attrMatches(app, k)) return false;
+        if (!attrMatches(app, k)) return;
       }
       for (var s in state.stores) {
         if (!(s in STORE_KEYS)) continue;
-        if (!(app.stores && app.stores[s])) return false;
+        if (!(app.stores && app.stores[s])) return;
       }
-      return matches(app, q);
+      var r = matchRank(app, q);
+      if (r >= 0) hits.push({ rank: r, app: app });
     });
-    if (state.sort === "rating") {
-      list.sort(function (a, b) { return (b.rating || -1) - (a.rating || -1); });
-    } else {
-      list.sort(function (a, b) { return a.name.toLowerCase().localeCompare(b.name.toLowerCase()); });
-    }
+    /* With a query, relevance outranks the chosen sort: exact name hits
+       first, then description hits, then typo-tolerant name matches. */
+    hits.sort(function (x, y) {
+      if (x.rank !== y.rank) return x.rank - y.rank;
+      if (state.sort === "rating") return (y.app.rating || -1) - (x.app.rating || -1);
+      return x.app.name.toLowerCase().localeCompare(y.app.name.toLowerCase());
+    });
+    var list = hits.map(function (h) { return h.app; });
     return { list: list, q: q };
   }
 
@@ -465,6 +481,9 @@
   var subRow = document.getElementById("subcategory-chips");
   function renderSubcats() {
     var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
+    /* The subcategory row inherits the active category's hue (T2 direction). */
+    subRow.style.setProperty("--accent-h",
+      (state.cat && ACCENTS[state.cat] != null) ? ACCENTS[state.cat] : 210);
     if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
     subRow.hidden = false;
     subRow.innerHTML = subs.map(function (s) {
@@ -546,6 +565,7 @@
       var b = document.createElement("button");
       b.className = "chip";
       b.setAttribute("data-cat", name);
+      b.style.setProperty("--accent-h", ACCENTS[name] != null ? ACCENTS[name] : 210);
       b.textContent = name;
       b.addEventListener("click", function () { selectCat(b); });
       row.appendChild(b);

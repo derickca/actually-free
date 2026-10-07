@@ -552,7 +552,7 @@ def build_index(forms):
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;\u2026"
            aria-label="Search apps" autocomplete="off">
     <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
-      <button class="chip on" data-cat="">All</button>
+      <button class="chip on" data-cat="" style="--accent-h:210">All</button>
     </div>
     <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory" hidden></div>
     <script>var FILTER_DEFS = {filter_defs};</script>
@@ -939,7 +939,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 }
 #search:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
 /* Filter rows never wrap: one row on desktop, horizontal scroll on narrow screens */
-.filter-row { display: flex; flex-wrap: nowrap; gap: 8px; margin-bottom: 10px; align-items: center; overflow-x: auto; padding-bottom: 4px; }
+.filter-row { display: flex; flex-wrap: nowrap; gap: 8px; margin-bottom: 10px; align-items: center; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+.filter-row::-webkit-scrollbar { display: none; }
 .filter-row .chip, .filter-row .pill { flex: 0 0 auto; }
 .chip, .pill {
   border: 1px solid var(--card-edge);
@@ -953,6 +954,30 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   cursor: pointer;
 }
 .chip.on, .pill.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+/* T2 direction: the category row reads as one segmented control (a single
+   choice); the subcategory row keeps floating pills with squarer corners.
+   Shape plus the category hue says "these are different controls". */
+#category-chips {
+  background: var(--input-bg);
+  border: 1px solid var(--card-edge);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+  width: fit-content;
+  max-width: 100%;
+}
+#category-chips .chip { border-color: transparent; background: transparent; }
+#category-chips .chip.on {
+  background: hsl(var(--accent-h, 210) 70% 60%);
+  border-color: hsl(var(--accent-h, 210) 70% 60%);
+  color: #0d0d14;
+}
+#subcategory-chips .chip { border-radius: 8px; }
+#subcategory-chips .chip.on {
+  background: hsl(var(--accent-h, 210) 70% 60%);
+  border-color: hsl(var(--accent-h, 210) 70% 60%);
+  color: #0d0d14;
+}
 /* Subcategory drill-down row: hidden until a top-level category is selected.
    .filter-row sets display:flex, which overrides [hidden] — hence explicit. */
 #subcategory-chips[hidden] { display: none; }
@@ -983,6 +1008,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
     linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0) 42%),
     var(--card);
   border: 1px solid var(--card-edge);
+  border-top: 3px solid hsl(var(--accent-h, 210) 70% 60%);
   border-radius: var(--radius);
   padding: 14px;
   text-decoration: none;
@@ -1012,7 +1038,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   color: hsl(var(--accent-h, 210) 60% 30%);
 }
 .tile h3 { margin: 0; font-size: 1rem; line-height: 1.25; } /* <wbr> word seams only; never an arbitrary mid-word snap */
-.tile .sub { color: var(--muted); font-size: 0.8rem; margin: 0; }
+.tile .subpill {
+  display: inline-block; font-size: 0.74rem; font-weight: 700;
+  padding: 2px 10px; border-radius: 999px; margin-top: 4px;
+  background: hsl(var(--accent-h, 210) 60% 30%);
+  color: hsl(var(--accent-h, 210) 85% 88%);
+}
 .tile .desc { font-size: 0.83rem; color: var(--muted); margin: 0;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .tile .rating { font-size: 0.82rem; color: var(--muted); margin: 0; }
@@ -1222,6 +1253,14 @@ a.store-badge:hover { filter: brightness(0.96); }
   border: 2px outset #5a5ac8;
 }
 :root[data-mode="geek"] .chip.on, :root[data-mode="geek"] .pill.on { border-style: inset; }
+:root[data-mode="geek"] .tile .subpill { border-radius: 0; }
+:root[data-mode="geek"] #category-chips {
+  background: none; border: none; border-radius: 0; padding: 0 0 4px; gap: 8px; width: auto;
+}
+:root[data-mode="geek"] #category-chips .chip { border: 2px outset #5a5ac8; border-radius: 0; background: var(--chip-bg); }
+:root[data-mode="geek"] #category-chips .chip.on { border-style: inset; background: var(--accent); color: var(--on-accent); }
+:root[data-mode="geek"] #subcategory-chips .chip { border-radius: 0; }
+:root[data-mode="geek"] #subcategory-chips .chip.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
 :root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
@@ -1626,25 +1665,36 @@ JS_CONTENT = r"""
       if (target[k] === q[i]) i++;
     return i === q.length;
   }
-  function matches(app, q) {
-    if (!q) return true;
-    var hay = norm([app.name, app.description, app.category, app.subcategory, (app.tags || []).join(" ")].join(" "));
-    if (hay.indexOf(q) !== -1) return true;
-    var hayTokens = tokens(hay);
+  /* Search relevance tiers. Returns -1 for no match, else a rank:
+       0 = query appears in the app name,
+       1 = query appears in the description / category / subcategory / tags,
+       2 = typo-tolerant match against the app NAME only.
+     Typo tolerance kicks in at 5 characters. It is deliberately name-only:
+     fuzzy-matching description words let 5-letter "easer" match "easier" in
+     56 descriptions. Short queries match literal tokens only, so 2-letter
+     "qr" cannot subsequence-match "Al-Quran". */
+  function matchRank(app, q) {
+    if (!q) return 0;
     var qtokens = tokens(q);
-    /* Typo tolerance starts at 5 characters. Shorter tokens match literally:
-       fuzzy distance let 4-letter "food" match "for" (91 apps!) and 2-letter
-       "qr" match "or", and subsequence matching caught "Al-Quran" for "qr". */
+    var nameNorm = norm(app.name);
     var longEnough = qtokens.some(function (qt) { return qt.length >= 5; });
     if (!longEnough) {
-      return qtokens.some(function (qt) { return hayTokens.indexOf(qt) !== -1; });
+      var hayTokens = tokens([app.name, app.description, app.category,
+                              app.subcategory, (app.tags || []).join(" ")].join(" "));
+      return qtokens.some(function (qt) { return hayTokens.indexOf(qt) !== -1; }) ? 1 : -1;
     }
-    var nameNorm = norm(app.name);
-    if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return true;
-    return qtokens.some(function (qt) {
-      if (qt.length < 5) return hayTokens.indexOf(qt) !== -1;
-      return hayTokens.some(function (ht) { return levenshtein(qt, ht) <= 2; });
+    if (nameNorm.indexOf(q) !== -1) return 0;
+    var hay = norm([app.description, app.category, app.subcategory,
+                    (app.tags || []).join(" ")].join(" "));
+    if (hay.indexOf(q) !== -1) return 1;
+    var nameTokens = tokens(app.name);
+    if (isSubsequence(q.replace(/\s+/g, ""), nameNorm.replace(/\s+/g, ""))) return 2;
+    var fuzzy = qtokens.some(function (qt) {
+      if (qt.length < 5) return false;
+      var maxd = qt.length >= 8 ? 2 : 1;
+      return nameTokens.some(function (nt) { return levenshtein(qt, nt) <= maxd; });
     });
+    return fuzzy ? 2 : -1;
   }
 
   function escHtml(s) {
@@ -1718,7 +1768,7 @@ JS_CONTENT = r"""
       '.html" data-slug="' + escHtml(app.slug) + '">' + ribbon +
       '<span class="tile-top">' + iconHtml +
       "<span><h3>" + wbrify(app.name) + "</h3>" +
-      '<p class="sub">' + escHtml(app.subcategory || app.category) + "</p></span></span>" +
+      '<span class="subpill">' + escHtml(app.subcategory || app.category) + "</span></span></span>" +
       rating +
       '<p class="desc">' + escHtml(app.description) + "</p>" +
       '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
@@ -1727,24 +1777,29 @@ JS_CONTENT = r"""
 
   function filtered() {
     var q = norm(state.query);
-    var list = state.apps.filter(function (app) {
-      if (state.cat && app.category !== state.cat) return false;
-      if (state.subcat && app.subcategory !== state.subcat) return false;
+    var hits = [];
+    state.apps.forEach(function (app) {
+      if (state.cat && app.category !== state.cat) return;
+      if (state.subcat && app.subcategory !== state.subcat) return;
       for (var k in state.attrs) {
         if (!(k in ATTR_KEYS)) continue; /* unknown key: ignore, never empty the grid */
-        if (!attrMatches(app, k)) return false;
+        if (!attrMatches(app, k)) return;
       }
       for (var s in state.stores) {
         if (!(s in STORE_KEYS)) continue;
-        if (!(app.stores && app.stores[s])) return false;
+        if (!(app.stores && app.stores[s])) return;
       }
-      return matches(app, q);
+      var r = matchRank(app, q);
+      if (r >= 0) hits.push({ rank: r, app: app });
     });
-    if (state.sort === "rating") {
-      list.sort(function (a, b) { return (b.rating || -1) - (a.rating || -1); });
-    } else {
-      list.sort(function (a, b) { return a.name.toLowerCase().localeCompare(b.name.toLowerCase()); });
-    }
+    /* With a query, relevance outranks the chosen sort: exact name hits
+       first, then description hits, then typo-tolerant name matches. */
+    hits.sort(function (x, y) {
+      if (x.rank !== y.rank) return x.rank - y.rank;
+      if (state.sort === "rating") return (y.app.rating || -1) - (x.app.rating || -1);
+      return x.app.name.toLowerCase().localeCompare(y.app.name.toLowerCase());
+    });
+    var list = hits.map(function (h) { return h.app; });
     return { list: list, q: q };
   }
 
@@ -1798,6 +1853,9 @@ JS_CONTENT = r"""
   var subRow = document.getElementById("subcategory-chips");
   function renderSubcats() {
     var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
+    /* The subcategory row inherits the active category's hue (T2 direction). */
+    subRow.style.setProperty("--accent-h",
+      (state.cat && ACCENTS[state.cat] != null) ? ACCENTS[state.cat] : 210);
     if (!subs.length) { subRow.hidden = true; subRow.innerHTML = ""; return; }
     subRow.hidden = false;
     subRow.innerHTML = subs.map(function (s) {
@@ -1879,6 +1937,7 @@ JS_CONTENT = r"""
       var b = document.createElement("button");
       b.className = "chip";
       b.setAttribute("data-cat", name);
+      b.style.setProperty("--accent-h", ACCENTS[name] != null ? ACCENTS[name] : 210);
       b.textContent = name;
       b.addEventListener("click", function () { selectCat(b); });
       row.appendChild(b);
