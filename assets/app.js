@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (eTq8YxL4d9WNLEYvpk7aWg==, replaced at build time) embedded separately,
+     the key (f87iY1xozgzMz2W9up5tUA==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "eTq8YxL4d9WNLEYvpk7aWg==";
+    var K = "f87iY1xozgzMz2W9up5tUA==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -475,6 +475,7 @@
      as the tiles, so the chips can never disagree with the data — no empty
      subcategories after a taxonomy change, even with a stale page. */
   var subRow = document.getElementById("subcategory-chips");
+  var subCollapse = document.getElementById("sub-collapse");
   var lastSubCat = null;   // category the subcategory row was last rendered for
   var subAnimToken = 0;    // cancels stale roll/slide animations
   function subChipsHtml(subs) {
@@ -494,11 +495,6 @@
       });
     });
   }
-  function openSubRow() {
-    subRow.classList.remove("collapsed");
-    subRow.classList.add("open");
-    subRow.style.maxHeight = subRow.scrollHeight + "px";
-  }
   function renderSubcats() {
     var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
     /* The subcategory row inherits the active category's hue. */
@@ -508,10 +504,8 @@
 
     if (!subs.length) {
       /* Roll back up behind the category bar, then clear. */
-      if (subRow.classList.contains("open")) {
-        subRow.classList.remove("open");
-        subRow.classList.add("collapsed");
-        subRow.style.maxHeight = "0px";
+      if (subCollapse.classList.contains("open")) {
+        subCollapse.classList.remove("open");
         setTimeout(function(){
           if (token !== subAnimToken) return;
           subRow.innerHTML = "";
@@ -524,22 +518,24 @@
       return;
     }
 
-    if (!subRow.classList.contains("open")) {
-      /* First show: render, then roll down from behind the category bar. */
+    if (!subCollapse.classList.contains("open")) {
+      /* First show: render, then roll down from behind the category bar.
+         The grid 0fr->1fr transition targets the intrinsic height — no
+         measurement needed. */
       subRow.innerHTML = subChipsHtml(subs);
       bindSubChips();
       lastSubCat = state.cat;
-      void subRow.offsetHeight; /* reflow so the transition runs */
-      openSubRow();
+      void subCollapse.offsetHeight; /* reflow so the transition runs */
+      subCollapse.classList.add("open");
       return;
     }
 
     if (lastSubCat === state.cat) {
-      /* Same category (a subcategory was toggled): refresh .on states only. */
+      /* Same category (a subcategory was toggled): refresh .on states only.
+         No height fiddling — the grid tracks the intrinsic height. */
       subRow.querySelectorAll(".chip").forEach(function (c) {
         c.classList.toggle("on", c.getAttribute("data-subcat") === state.subcat);
       });
-      subRow.style.maxHeight = subRow.scrollHeight + "px";
       return;
     }
 
@@ -552,17 +548,14 @@
       bindSubChips();
       var newChips = subRow.querySelectorAll(".chip");
       newChips.forEach(function (c) { c.classList.add("chip-in"); });
-      subRow.style.maxHeight = subRow.scrollHeight + "px";
       void subRow.offsetHeight; /* reflow so the enter transition runs */
       newChips.forEach(function (c) { c.classList.remove("chip-in"); });
     }, 170);
   }
-  /* The row starts collapsed in the HTML; no JS init needed. */
-  /* Keep the open row's measured height snug across viewport changes. */
+  /* Keep the open row snug across viewport changes (grid handles it, but a
+     reflow nudge is cheap insurance). */
   window.addEventListener("resize", function(){
-    if (subRow.classList.contains("open")) {
-      subRow.style.maxHeight = subRow.scrollHeight + "px";
-    }
+    if (subCollapse.classList.contains("open")) { void subCollapse.offsetHeight; }
   });
   /* Filter controls render from the fetched payload (single source of truth):
      category chips, attr pills, and store pills are built after apps.json

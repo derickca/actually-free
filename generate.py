@@ -672,7 +672,9 @@ def build_index(forms):
       <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
         <button class="chip on" data-cat="" style="--accent-h:210">All</button>
       </div>
-      <div class="filter-row collapsed" id="subcategory-chips" role="group" aria-label="Filter by subcategory"></div>
+      <div class="sub-collapse" id="sub-collapse">
+        <div class="filter-row" id="subcategory-chips" role="group" aria-label="Filter by subcategory"></div>
+      </div>
     </div>
     <script>var FILTER_DEFS = {filter_defs};</script>
     <div class="filter-row" id="attr-pills" role="group" aria-label="Narrow it down"></div>
@@ -1100,11 +1102,34 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 }
 /* Category + subcategory stack: the subcategory bar attaches directly under
    the category bar (borders connect) and rolls down from behind it when a
-   category is selected. */
+   category is selected. The .sub-collapse wrapper uses grid 0fr->1fr so the
+   expand animation always targets the intrinsic height — no JS measurement,
+   immune to font-load or wrapping timing. */
 .cat-stack { position: relative; }
 .cat-stack #category-chips { position: relative; z-index: 2; margin-bottom: 0; }
-#subcategory-chips {
+.sub-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transform: translateY(-12px);
   position: relative; z-index: 1;
+  margin-top: 0; margin-bottom: 10px;
+  transition: grid-template-rows .32s ease, opacity .28s ease, transform .32s ease,
+              margin-top .32s ease;
+  pointer-events: none;
+}
+.sub-collapse.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 2px;
+  pointer-events: auto;
+}
+.sub-collapse > #subcategory-chips {
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-height: 0;
+  min-width: 0;
   background: var(--input-bg);
   border: 1px solid var(--card-edge);
   border-radius: 999px;
@@ -1112,13 +1137,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   gap: 2px;
   width: fit-content;
   max-width: 100%;
-  overflow: hidden;
-  transition: max-height .32s ease, opacity .28s ease, margin-top .32s ease,
-              margin-bottom .32s ease, padding-top .32s ease, padding-bottom .32s ease,
-              border-top-width .32s ease, border-bottom-width .32s ease,
-              transform .32s ease;
+  margin-bottom: 0;
+  transition: padding-top .32s ease, padding-bottom .32s ease,
+              border-top-width .32s ease, border-bottom-width .32s ease;
 }
-#subcategory-chips.open { margin-top: 2px; margin-bottom: 10px; opacity: 1; transform: translateY(0); }
+.sub-collapse:not(.open) > #subcategory-chips {
+  padding-top: 0; padding-bottom: 0;
+  border-top-width: 0; border-bottom-width: 0;
+}
 #subcategory-chips .chip {
   border-color: transparent; background: transparent; border-radius: 999px;
   font-size: 0.78rem; padding: 5px 11px; font-weight: 500;
@@ -1128,25 +1154,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
   border-color: hsl(var(--accent-h, 210) 70% 60%);
   color: #0d0d14;
 }
-/* Collapsed: zero box (no negative margins — those pulled following content
-   up over the category bar). The translateY tucks it behind the category
-   bar; removing .collapsed rolls it down into place. */
-#subcategory-chips.collapsed {
-  max-height: 0 !important;
-  opacity: 0;
-  margin-top: 0; margin-bottom: 0;
-  padding-top: 0; padding-bottom: 0;
-  border-top-width: 0; border-bottom-width: 0;
-  transform: translateY(-12px);
-  pointer-events: none;
-}
-/* Chip slide: old names scroll left out, new names slide in from the right
+/* Chip slide: old names scroll away left, new names slide in from the right
    when the category changes. */
 #subcategory-chips .chip { transition: transform .16s ease, opacity .16s ease; }
 #subcategory-chips .chip.chip-out { transform: translateX(-26px); opacity: 0; }
 #subcategory-chips .chip.chip-in { transform: translateX(26px); opacity: 0; }
 @media (prefers-reduced-motion: reduce) {
-  #subcategory-chips, #subcategory-chips .chip { transition: none; }
+  .sub-collapse, .sub-collapse > #subcategory-chips, #subcategory-chips .chip { transition: none; }
 }
 .sort-row { justify-content: space-between; }
 .sort-row select {
@@ -1442,7 +1456,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 :root[data-mode="geek"] #subcategory-chips .chip { border: 2px outset #5a5ac8; border-radius: 0; background: var(--chip-bg); }
 :root[data-mode="geek"] #subcategory-chips .chip.on { border-style: inset; background: var(--accent); color: var(--on-accent); }
 /* Geek collapsed state needs the padding zeroed too (specificity). */
-:root[data-mode="geek"] #subcategory-chips.collapsed { padding-top: 0; padding-bottom: 0; }
+:root[data-mode="geek"] .sub-collapse:not(.open) > #subcategory-chips { padding-top: 0; padding-bottom: 0; }
 :root[data-mode="geek"] .store-badge { border-radius: 0; border: 2px outset #5a5ac8; }
 :root[data-mode="geek"] .needs-review { border-radius: 0; }
 :root[data-mode="geek"] .made-by-us { border-radius: 0; }
@@ -2032,6 +2046,7 @@ JS_CONTENT = r"""
      as the tiles, so the chips can never disagree with the data — no empty
      subcategories after a taxonomy change, even with a stale page. */
   var subRow = document.getElementById("subcategory-chips");
+  var subCollapse = document.getElementById("sub-collapse");
   var lastSubCat = null;   // category the subcategory row was last rendered for
   var subAnimToken = 0;    // cancels stale roll/slide animations
   function subChipsHtml(subs) {
@@ -2051,11 +2066,6 @@ JS_CONTENT = r"""
       });
     });
   }
-  function openSubRow() {
-    subRow.classList.remove("collapsed");
-    subRow.classList.add("open");
-    subRow.style.maxHeight = subRow.scrollHeight + "px";
-  }
   function renderSubcats() {
     var subs = (state.subcats && state.cat && state.subcats[state.cat]) || [];
     /* The subcategory row inherits the active category's hue. */
@@ -2065,10 +2075,8 @@ JS_CONTENT = r"""
 
     if (!subs.length) {
       /* Roll back up behind the category bar, then clear. */
-      if (subRow.classList.contains("open")) {
-        subRow.classList.remove("open");
-        subRow.classList.add("collapsed");
-        subRow.style.maxHeight = "0px";
+      if (subCollapse.classList.contains("open")) {
+        subCollapse.classList.remove("open");
         setTimeout(function(){
           if (token !== subAnimToken) return;
           subRow.innerHTML = "";
@@ -2081,22 +2089,24 @@ JS_CONTENT = r"""
       return;
     }
 
-    if (!subRow.classList.contains("open")) {
-      /* First show: render, then roll down from behind the category bar. */
+    if (!subCollapse.classList.contains("open")) {
+      /* First show: render, then roll down from behind the category bar.
+         The grid 0fr->1fr transition targets the intrinsic height — no
+         measurement needed. */
       subRow.innerHTML = subChipsHtml(subs);
       bindSubChips();
       lastSubCat = state.cat;
-      void subRow.offsetHeight; /* reflow so the transition runs */
-      openSubRow();
+      void subCollapse.offsetHeight; /* reflow so the transition runs */
+      subCollapse.classList.add("open");
       return;
     }
 
     if (lastSubCat === state.cat) {
-      /* Same category (a subcategory was toggled): refresh .on states only. */
+      /* Same category (a subcategory was toggled): refresh .on states only.
+         No height fiddling — the grid tracks the intrinsic height. */
       subRow.querySelectorAll(".chip").forEach(function (c) {
         c.classList.toggle("on", c.getAttribute("data-subcat") === state.subcat);
       });
-      subRow.style.maxHeight = subRow.scrollHeight + "px";
       return;
     }
 
@@ -2109,17 +2119,14 @@ JS_CONTENT = r"""
       bindSubChips();
       var newChips = subRow.querySelectorAll(".chip");
       newChips.forEach(function (c) { c.classList.add("chip-in"); });
-      subRow.style.maxHeight = subRow.scrollHeight + "px";
       void subRow.offsetHeight; /* reflow so the enter transition runs */
       newChips.forEach(function (c) { c.classList.remove("chip-in"); });
     }, 170);
   }
-  /* The row starts collapsed in the HTML; no JS init needed. */
-  /* Keep the open row's measured height snug across viewport changes. */
+  /* Keep the open row snug across viewport changes (grid handles it, but a
+     reflow nudge is cheap insurance). */
   window.addEventListener("resize", function(){
-    if (subRow.classList.contains("open")) {
-      subRow.style.maxHeight = subRow.scrollHeight + "px";
-    }
+    if (subCollapse.classList.contains("open")) { void subCollapse.offsetHeight; }
   });
   /* Filter controls render from the fetched payload (single source of truth):
      category chips, attr pills, and store pills are built after apps.json
