@@ -2121,7 +2121,7 @@
   "name": "Chess Clock",
   "package": "com.chess.clock",
   "slug": "com-chess-clock",
-  "category": "Utilities",
+  "category": "Games",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2129,7 +2129,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chess.clock.png",
-  "subcategory": "Time",
+  "subcategory": "Puzzle",
   "description": "Adjust your favorite timer to play chess online with friends!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.chess.clock",
@@ -14109,7 +14109,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ch.pec0ra.suspension_setup.png",
-  "subcategory": "Productivity",
+  "subcategory": "Health",
   "description": "Track and manage your mountain bike suspension settings and their change history",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ch.pec0ra.suspension_setup",

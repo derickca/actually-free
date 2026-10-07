@@ -294,12 +294,12 @@ APP_REMAP = {
     "Emacs": ("Utilities", "Dev tools"),
     "JekyllEx": ("Utilities", "Dev tools"),
     # Audit fixes 2026-10-06 (full category/subcategory review)
-    "Chess Clock": ("Utilities", "Time"),            # chess timer, not a puzzle game
     "Notesnook - Private notes app": ("Lifestyle", "Productivity"),  # notes app, not tasks
     "Just (Video) Player": ("Media", "Video"),       # video player, was in Music
     "Storii - audiobookshelf client": ("Media", "Audio"),  # audiobooks; Lissen is in Audio
     "MakeACopy": ("Utilities", "Files"),             # document scanner
     "BetterCounter": ("Lifestyle", "Health"),        # habit tracker; Loop is in Health
+    "Suspension Setup": ("Lifestyle", "Health"),     # bike suspension tracker -> fitness
 }
 
 
