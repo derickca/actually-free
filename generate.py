@@ -213,16 +213,84 @@ CATEGORY_FIXUPS = {
     "Utilities / Comms & System": "Utilities",
 }
 
-# Games subcategory merges (Derick's taxonomy-map session, 2026-10-06):
-# one-off splinters fold into their natural homes; Emulator + Streaming
-# become "Players" (apps that play games, rather than games themselves).
-SUBCATEGORY_FIXUPS = {
-    "Sandbox": "Arcade",
-    "Shooter": "Arcade",
-    "Word": "Puzzle",
-    "Roguelike": "RPG",
-    "Emulator": "Players",
-    "Streaming": "Players",
+# (category, subcategory) -> (new category, new subcategory).
+# The max-10 taxonomy proposal, decided with Derick in the taxonomy-map
+# session 2026-10-06 (~/workspace/taxonomy-map/build_map.py). Games 12->7,
+# Media 15->8, Utilities 31->12. Applied at build time so the seed keeps
+# the raw values, same pattern as CATEGORY_FIXUPS.
+SUB_REMAP = {
+    # Games: 12 -> 7
+    ("Games", "Word"): ("Games", "Puzzle"),
+    ("Games", "Shooter"): ("Games", "Arcade"),
+    ("Games", "Roguelike"): ("Games", "RPG"),
+    ("Games", "Sandbox"): ("Games", "Arcade"),          # Derick's call
+    ("Games", "Streaming"): ("Games", "Players"),      # Derick 2026-10-06
+    ("Games", "Emulator"): ("Games", "Players"),       # Derick 2026-10-06
+    # Media: 15 -> 8
+    ("Media", "Audio recorder"): ("Media", "Audio"),
+    ("Media", "Books"): ("Media", "Read"),
+    ("Media", "Comics"): ("Media", "Read"),
+    ("Media", "RSS reader"): ("Media", "Read"),
+    ("Media", "Camera"): ("Media", "Photos"),
+    ("Media", "Image editor"): ("Media", "Photos"),    # Derick's call
+    ("Media", "Video player"): ("Media", "Video"),     # Derick's call
+    ("Media", "Video editor"): ("Media", "Video"),     # Derick's call
+    ("Media", "Downloads"): ("Media", "Video"),        # Derick's call
+    # Utilities: 31 -> 12
+    ("Utilities", "File manager"): ("Utilities", "Files"),
+    ("Utilities", "File Sync"): ("Utilities", "Files"),
+    ("Utilities", "Documents"): ("Utilities", "Files"),
+    ("Utilities", "Torrents"): ("Utilities", "Files"),
+    ("Utilities", "Scanner"): ("Utilities", "Files"),
+    ("Utilities", "Calendar"): ("Utilities", "Time"),
+    ("Utilities", "Web"): ("Utilities", "Internet"),
+    ("Utilities", "URL tools"): ("Utilities", "Internet"),
+    ("Utilities", "Network"): ("Utilities", "Internet"),
+    ("Utilities", "Remote desktop"): ("Utilities", "Internet"),
+    ("Utilities", "Dictionary"): ("Utilities", "Language"),
+    ("Utilities", "Translation"): ("Utilities", "Language"),
+    ("Utilities", "Speech"): ("Utilities", "Language"),
+    ("Utilities", "Customization"): ("Utilities", "Look"),
+    ("Utilities", "App store"): ("Utilities", "Apps"),
+    ("Utilities", "App manager"): ("Utilities", "Apps"),
+    ("Utilities", "Calculator"): ("Utilities", "Gadgets"),
+    ("Utilities", "Measure"): ("Utilities", "Gadgets"),
+    ("Utilities", "Flashlight"): ("Utilities", "Gadgets"),
+    ("Utilities", "Automation"): ("Utilities", "Automate"),
+    ("Utilities", "AI Assistant"): ("Utilities", "Automate"),
+    ("Utilities", "Password manager"): ("System", "Security"),  # Derick 2026-10-06
+    ("Utilities", "Backup"): ("System", "Security"),            # Derick 2026-10-06
+    ("Utilities", "Safety"): ("System", "Security"),            # Derick 2026-10-06
+    ("Utilities", "Email"): ("Communications", "Messaging"),
+    ("Utilities", "QR tools"): ("Utilities", "Gadgets"),        # Derick 2026-10-06
+    ("Utilities", "Visual search"): ("Utilities", "Internet"),  # Derick 2026-10-06
+    ("Utilities", "Data collection"): ("Utilities", "Internet"),# Derick 2026-10-06
+}
+
+# Individual misfiled apps, found by reading descriptions (taxonomy-map
+# session 2026-10-06). Applied BEFORE SUB_REMAP so the subcategory merges
+# don't sweep them into the wrong new home.
+APP_REMAP = {
+    # Chat apps hiding in Media/Video player -> Communications/Messaging
+    "another.im": ("Communications", "Messaging"),
+    "Cheogram": ("Communications", "Messaging"),
+    "Conversations": ("Communications", "Messaging"),
+    "Databag": ("Communications", "Messaging"),
+    "Jitsi Meet": ("Communications", "Messaging"),
+    "monocles chat": ("Communications", "Messaging"),
+    "Snikket": ("Communications", "Messaging"),
+    "StoneAge": ("Communications", "Messaging"),
+    # Strays hiding in Media/Books
+    "monocles translator": ("Utilities", "Language"),
+    "SilverDict": ("Utilities", "Language"),
+    "LibreOffice Viewer": ("Utilities", "Files"),
+    "Lyrics Grabbr": ("Media", "Music"),
+    # Wrong-subcategory utilities
+    "RCX": ("Utilities", "Files"),
+    "Curbox": ("Utilities", "Time"),
+    "Klick'r - Smart AutoClicker": ("Utilities", "Automate"),
+    "Emacs": ("Utilities", "Dev tools"),
+    "JekyllEx": ("Utilities", "Dev tools"),
 }
 
 
@@ -254,11 +322,20 @@ def clean_record(rec):
     icon_file = os.path.join(HERE, "assets", "icons", rec["package"] + ".png")
     icon = ("assets/icons/" + rec["package"] + ".png"
             if os.path.exists(icon_file) else None)
+    # Taxonomy placement: misfiled apps move first (by name), then the
+    # subcategory merges apply. Order matters — the merges must not sweep
+    # a moved app into the wrong new home.
+    category = CATEGORY_FIXUPS.get(rec.get("category"), rec.get("category") or "Utilities")
+    subcategory = rec.get("subcategory") or ""
+    if rec["name"] in APP_REMAP:
+        category, subcategory = APP_REMAP[rec["name"]]
+    if (category, subcategory) in SUB_REMAP:
+        category, subcategory = SUB_REMAP[(category, subcategory)]
     return {
         "name": rec["name"],
         "package": rec["package"],
         "slug": slugify(rec["package"]),
-        "category": CATEGORY_FIXUPS.get(rec.get("category"), rec.get("category") or "Utilities"),
+        "category": category,
         # Money promises the listed build keeps. Every v1 listing satisfies
         # all three (it's the inclusion bar); stored explicitly so the
         # "Find apps with:" filters have real data if that ever changes.
@@ -267,7 +344,7 @@ def clean_record(rec):
         "promises": promises,
         "icon_svg": rec.get("icon_svg"),
         "icon": icon,
-        "subcategory": SUBCATEGORY_FIXUPS.get(rec.get("subcategory") or "", rec.get("subcategory") or ""),
+        "subcategory": subcategory,
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
         "rating": ver.get("play_rating"),

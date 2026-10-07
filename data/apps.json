@@ -172,7 +172,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/itkach.aard2.png",
-  "subcategory": "Dictionary",
+  "subcategory": "Language",
   "description": "Offline dictionary",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=itkach.aard2",
@@ -305,7 +305,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.meypod.al_quran.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "A simple open-source Quran reader",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.github.meypod.al_quran",
@@ -404,7 +404,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.amaze.filemanager.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "An open-source file manager following the Material Design guidelines.",
   "stores": {
    "play": null,
@@ -527,7 +527,7 @@
   "name": "another.im",
   "package": "im.narayana.another",
   "slug": "im-narayana-another",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -535,7 +535,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/im.narayana.another.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "Yet Another Conversations fork but...",
   "stores": {
    "play": null,
@@ -601,7 +601,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.antivocale.app.png",
-  "subcategory": "Speech",
+  "subcategory": "Language",
   "description": "Offline transcription of voice messages and recorded calls, on-device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.antivocale.app",
@@ -667,7 +667,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.apkupdater.ci.png",
-  "subcategory": "App manager",
+  "subcategory": "Apps",
   "description": "Get updates from multiple sources",
   "stores": {
    "play": null,
@@ -828,7 +828,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.donnnno.arcticons.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "A monotone line-based icon pack for dark themed home screens",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.donnnno.arcticons",
@@ -1025,7 +1025,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.dimowner.audiorecorder.png",
-  "subcategory": "Audio recorder",
+  "subcategory": "Audio",
   "description": "Straightforward audio recorder.",
   "stores": {
    "play": null,
@@ -1058,7 +1058,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.aurora.store.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "Open-source alternative to Google Play Store, privacy-focused",
   "stores": {
    "play": null,
@@ -1153,7 +1153,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gaurav.avnc.png",
-  "subcategory": "Remote desktop",
+  "subcategory": "Internet",
   "description": "Fast & Secure VNC client for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gaurav.avnc",
@@ -1283,7 +1283,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.atharok.barcodescanner.png",
-  "subcategory": "QR tools",
+  "subcategory": "Gadgets",
   "description": "An open-source app that allows you to read and generate barcodes.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.atharok.barcodescanner",
@@ -1316,7 +1316,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chiller3.basicsync.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "A simple app for running Syncthing on Android",
   "stores": {
    "play": null,
@@ -1382,7 +1382,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.kde.bettercounter.png",
-  "subcategory": "Measure",
+  "subcategory": "Gadgets",
   "description": "- Track good and bad habits (eg: exercising, smoking, drinking...) - Track when's the last time you did something (eg: water your plants, change your",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.kde.bettercounter",
@@ -1415,7 +1415,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.markusfisch.android.binaryeye.png",
-  "subcategory": "QR tools",
+  "subcategory": "Gadgets",
   "description": "QR code and barcode scanner with no ads",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye",
@@ -1448,7 +1448,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.minar.birday.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "A simple yet useful birthday / event calendar",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.minar.birday",
@@ -1803,7 +1803,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.woheller69.level.png",
-  "subcategory": "Measure",
+  "subcategory": "Gadgets",
   "description": "Spirit level and ruler",
   "stores": {
    "play": null,
@@ -1867,7 +1867,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.artectrex.bunny.png",
-  "subcategory": "Image editor",
+  "subcategory": "Photos",
   "description": "Media editor: edit images and videos on your phone",
   "stores": {
    "play": null,
@@ -1900,7 +1900,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.math.bmi.scientific.calculator.converter.android.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "The only calculator you'll ever need",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.math.bmi.scientific.calculator.converter.android",
@@ -1931,7 +1931,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.capyreader.app.png",
-  "subcategory": "RSS reader",
+  "subcategory": "Read",
   "description": "Modern RSS reader.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.capyreader.app",
@@ -2030,7 +2030,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.cclauncher.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Minimal home launcher that hides apps by default to reduce distractions",
   "stores": {
    "play": null,
@@ -2063,7 +2063,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.timelegend.chaka.viewer.app.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Committed to improving reading experience",
   "stores": {
    "play": null,
@@ -2088,7 +2088,7 @@
   "name": "Cheogram",
   "package": "com.cheogram.android",
   "slug": "com-cheogram-android",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2096,7 +2096,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.cheogram.android.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "Chat on the Jabber network (XMPP protocol); focus on features for gateway users",
   "stores": {
    "play": null,
@@ -2324,7 +2324,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bobek.compass.png",
-  "subcategory": "Measure",
+  "subcategory": "Gadgets",
   "description": "A simple and clean compass",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.bobek.compass",
@@ -2382,7 +2382,7 @@
   "name": "Conversations",
   "package": "eu.siacs.conversations",
   "slug": "eu-siacs-conversations",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2390,7 +2390,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.siacs.conversations.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "Encrypted, easy-to-use XMPP instant messenger for your mobile device",
   "stores": {
    "play": null,
@@ -2423,7 +2423,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.ferrarid.converterpro.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "A simple, immediate and fast unit converter!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ferrarid.converterpro",
@@ -2489,7 +2489,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/top.fumiama.copymanga.png",
-  "subcategory": "Comics",
+  "subcategory": "Read",
   "description": "CopyManga comic client",
   "stores": {
    "play": null,
@@ -2650,7 +2650,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/neth.iecal.curbox.png",
-  "subcategory": "Automation",
+  "subcategory": "Time",
   "description": "App blocker and screen time tracker. Block apps, websites, reels and shorts.",
   "stores": {
    "play": null,
@@ -2714,7 +2714,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.cxinventor.file.explorer.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "File manager & storage cleaner app to provide easier management of files",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer",
@@ -2770,7 +2770,7 @@
   "name": "DataBackup",
   "package": "com.xayah.databackup.foss",
   "slug": "com-xayah-databackup-foss",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2778,7 +2778,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.xayah.databackup.foss.png",
-  "subcategory": "Backup",
+  "subcategory": "Security",
   "description": "Back up/Restore your data.",
   "stores": {
    "play": null,
@@ -2803,7 +2803,7 @@
   "name": "Databag",
   "package": "com.databag",
   "slug": "com-databag",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2811,7 +2811,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.databag.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "A federated chat client designed for privacy and selfhosting.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.databag",
@@ -2844,7 +2844,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/at.bitfire.davdroid.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "CalDAV/CardDAV sync (DAVx5). DOUBT: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free",
   "stores": {
    "play": null,
@@ -3005,7 +3005,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/cz.mod42.diktafon.png",
-  "subcategory": "Audio recorder",
+  "subcategory": "Audio",
   "description": "Voice memos on cassette tapes — transcribed & summarised offline, on device.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=cz.mod42.diktafon",
@@ -3072,7 +3072,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/xyz.zedler.patrick.doodle.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Colorful live wallpapers with auto dark mode and power-efficient animations",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=xyz.zedler.patrick.doodle",
@@ -3202,7 +3202,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.looker.droidify.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "Clutterfree F-Droid client",
   "stores": {
    "play": null,
@@ -3268,7 +3268,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ryey.easer.beta.png",
-  "subcategory": "Automation",
+  "subcategory": "Automate",
   "description": "FOSS automation (Tasker alternative).",
   "stores": {
    "play": null,
@@ -3301,7 +3301,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.econverter.app.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Android ebook converter — epub, mobi, azw3, docx and more. No Calibre needed.",
   "stores": {
    "play": null,
@@ -3398,7 +3398,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.gnu.emacs.png",
-  "subcategory": "Documents",
+  "subcategory": "Dev tools",
   "description": "The extensible self-documenting text editor",
   "stores": {
    "play": null,
@@ -3497,7 +3497,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.app.equran.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Read, listen, choose from 5 reciters, and track your Quran journey.",
   "stores": {
    "play": null,
@@ -3530,7 +3530,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ws.xsoh.etar.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "Etar is a material designed open source calendar, for everyone!",
   "stores": {
    "play": null,
@@ -3662,7 +3662,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fdroid.fdroid.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "The FOSS app store itself belongs in the directory (it's how users find more actually-free apps).",
   "stores": {
    "play": null,
@@ -3695,7 +3695,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.fadcam.png",
-  "subcategory": "Camera",
+  "subcategory": "Photos",
   "description": "Background video recorder, screen recorder and remote camera control.",
   "stores": {
    "play": null,
@@ -3720,7 +3720,7 @@
   "name": "FairEmail",
   "package": "eu.faircode.email",
   "slug": "eu-faircode-email",
-  "category": "Utilities",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -3728,7 +3728,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.faircode.email.png",
-  "subcategory": "Email",
+  "subcategory": "Messaging",
   "description": "Privacy-focused email client. The F-Droid build is fully unlocked.",
   "stores": {
    "play": null,
@@ -3761,7 +3761,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fairscan.app.png",
-  "subcategory": "Scanner",
+  "subcategory": "Files",
   "description": "Scan a document and get a clean PDF you can save or share instantly",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fairscan.app",
@@ -4091,7 +4091,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nononsenseapps.feeder.play.png",
-  "subcategory": "RSS reader",
+  "subcategory": "Read",
   "description": "RSS feed reader.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play",
@@ -4155,7 +4155,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.google.android.apps.nbu.files.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "Clean up your phone, find files, play media, and share files offline",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files",
@@ -4221,7 +4221,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.mozilla.firefox.png",
-  "subcategory": "Web",
+  "subcategory": "Internet",
   "description": "The independent web browser.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.mozilla.firefox",
@@ -4347,7 +4347,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.cyb3rko.flashdim.png",
-  "subcategory": "Flashlight",
+  "subcategory": "Gadgets",
   "description": "Modern flashlight app with dim functionality on Android 13+",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.cyb3rko.flashdim",
@@ -4380,7 +4380,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.pdb82.flashlighttiramisu.png",
-  "subcategory": "Flashlight",
+  "subcategory": "Gadgets",
   "description": "Flashlight with smoothly adjustable brightness.",
   "stores": {
    "play": null,
@@ -4446,7 +4446,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.flicky.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "Unofficial Fdroid client (for Android TV)",
   "stores": {
    "play": null,
@@ -4574,7 +4574,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.fluffy.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "A TV friendly file manager and archive viewer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.fluffy",
@@ -4638,7 +4638,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.circle_dev.flux_news.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Newsreader for miniflux backend",
   "stores": {
    "play": null,
@@ -4704,7 +4704,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.decsync.flym.png",
-  "subcategory": "RSS reader",
+  "subcategory": "Read",
   "description": "DecSync fork of the Flym RSS reader.",
   "stores": {
    "play": null,
@@ -4799,7 +4799,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.opendataensemble.formulus.png",
-  "subcategory": "Data collection",
+  "subcategory": "Internet",
   "description": "Offline-first bespoke data collection apps from Open Data Ensemble",
   "stores": {
    "play": null,
@@ -4832,7 +4832,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.calendar.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "Securely plan, schedule, and set reminders with our private calendar app.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
@@ -4931,7 +4931,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.filemanager.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "Handy, lightweight, open-source file explorer with essential features.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.filemanager",
@@ -4997,7 +4997,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.home.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Customize your home screen with a fast, ad-free, open-source launcher",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.home",
@@ -5096,7 +5096,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.fossify.voicerecorder.png",
-  "subcategory": "Audio recorder",
+  "subcategory": "Audio",
   "description": "Voice recorder — offline, local storage.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.fossify.voicerecorder",
@@ -5196,7 +5196,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/troop.com.freedcam.png",
-  "subcategory": "Camera",
+  "subcategory": "Photos",
   "description": "Open source camera app unlocking advanced camera features. OpenAPK desc: Free download of FreeDcam APK file and source code repo under GPL-2.0-or-later license - Latest Version 4.3.82 - Fre…",
   "stores": {
    "play": null,
@@ -5295,7 +5295,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.arjun.gander.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "Offline zero-permission viewer: PDF/DOCX/XLSX/PPTX/media/markdown",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.arjun.gander",
@@ -5621,7 +5621,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.google.android.calendar.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "Make the most of your day with Google Calendar, part of Google Workspace",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.calendar",
@@ -5652,7 +5652,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.google.android.apps.docs.editors.docs.png",
-  "subcategory": "Documents",
+  "subcategory": "Files",
   "description": "Create, edit, and collaborate online with Google Docs, part of Google Workspace",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs",
@@ -5714,7 +5714,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.google.ar.lens.png",
-  "subcategory": "Visual search",
+  "subcategory": "Internet",
   "description": "Translate words, identify plants, find products, & more—using just your camera",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.google.ar.lens",
@@ -5972,7 +5972,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jiaqifeng.hacki.png",
-  "subcategory": "RSS reader",
+  "subcategory": "Read",
   "description": "An open-source Hacker News client.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.jiaqifeng.hacki",
@@ -6005,7 +6005,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.aistra.hail.png",
-  "subcategory": "App manager",
+  "subcategory": "Apps",
   "description": "Freeze Android apps",
   "stores": {
    "play": null,
@@ -6038,7 +6038,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.simon.harmonichackernews.png",
-  "subcategory": "RSS reader",
+  "subcategory": "Read",
   "description": "Hacker News client with modern Material design",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.simon.harmonichackernews",
@@ -6265,7 +6265,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/ru.tech.imageresizershrinker.png",
-  "subcategory": "Image editor",
+  "subcategory": "Photos",
   "description": "Full image editor and batch converter.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker",
@@ -6521,7 +6521,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/xyz.jekyllex.png",
-  "subcategory": "Documents",
+  "subcategory": "Dev tools",
   "description": "The mobile IDE to create, build, edit, preview, and publish Jekyll sites.",
   "stores": {
    "play": null,
@@ -6676,7 +6676,7 @@
   "name": "Jitsi Meet",
   "package": "org.jitsi.meet",
   "slug": "org-jitsi-meet",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6684,7 +6684,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.jitsi.meet.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "Instant video conferences efficiently adapting to your scale",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.jitsi.meet",
@@ -6717,7 +6717,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.xiaoshihou.jiyi.png",
-  "subcategory": "Audio recorder",
+  "subcategory": "Audio",
   "description": "Encrypted audio logging app",
   "stores": {
    "play": null,
@@ -6847,7 +6847,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.onekash.kashcal.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "All your calendars in one app. iCloud, CalDAV, device, ICS. Private.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.onekash.kashcal",
@@ -6940,7 +6940,7 @@
   "name": "KeyPass",
   "package": "com.yogeshpaliyal.keypass",
   "slug": "com-yogeshpaliyal-keypass",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -6948,7 +6948,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.yogeshpaliyal.keypass.png",
-  "subcategory": "Password manager",
+  "subcategory": "Security",
   "description": "Offline, Secure, Private",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.yogeshpaliyal.keypass",
@@ -7014,7 +7014,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/fr.neamar.kiss.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Minimal search-based launcher.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=fr.neamar.kiss",
@@ -7047,7 +7047,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.buzbuz.smartautoclicker.png",
-  "subcategory": "Time",
+  "subcategory": "Automate",
   "description": "Automating clicks based on what is displayed",
   "stores": {
    "play": null,
@@ -7177,7 +7177,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.koreader.launcher.fdroid.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Document reader for e-books and PDFs.",
   "stores": {
    "play": null,
@@ -7243,7 +7243,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.mm20.launcher2.release.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "A search-focused, free and open source launcher for Android",
   "stores": {
    "play": null,
@@ -7276,7 +7276,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.lawnchair.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Customizable Pixel-style launcher.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.lawnchair.play",
@@ -7373,7 +7373,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.iakmds.librecamera.png",
-  "subcategory": "Camera",
+  "subcategory": "Photos",
   "description": "Modern camera app to take pictures and record videos",
   "stores": {
    "play": null,
@@ -7406,7 +7406,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jksalcedo.librefind.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "Discover and replace proprietary apps with FOSS alternatives",
   "stores": {
    "play": null,
@@ -7431,7 +7431,7 @@
   "name": "LibreOffice Viewer",
   "package": "org.documentfoundation.libreoffice",
   "slug": "org-documentfoundation-libreoffice",
-  "category": "Media",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -7439,7 +7439,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.documentfoundation.libreoffice.png",
-  "subcategory": "Books",
+  "subcategory": "Files",
   "description": "Document Viewer",
   "stores": {
    "play": null,
@@ -7505,7 +7505,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.proninyaroslav.libretorrent.png",
-  "subcategory": "Torrents",
+  "subcategory": "Files",
   "description": "Copylefted libre software torrent client.",
   "stores": {
    "play": null,
@@ -7538,7 +7538,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.libretube.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "Alternative YouTube frontend built on Piped",
   "stores": {
    "play": null,
@@ -7604,7 +7604,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.sakethh.linkora.png",
-  "subcategory": "Web",
+  "subcategory": "Internet",
   "description": "Local-first multiplatform link organizer with optional self-hosted sync.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sakethh.linkora",
@@ -7702,7 +7702,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.localsend.localsend_app.png",
-  "subcategory": "File Sync",
+  "subcategory": "Files",
   "description": "Cross-platform file sharing over WiFi",
   "stores": {
    "play": null,
@@ -7932,7 +7932,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.gitlab.coolreader_ng.lxreader.fdroid.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "E-book reader (a CoolReader NG fork).",
   "stores": {
    "play": null,
@@ -7965,7 +7965,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.illusionman1212.lyricsgrabbr.png",
-  "subcategory": "Books",
+  "subcategory": "Music",
   "description": "Lyrics grabbr provides lyrics for the currently playing song",
   "stores": {
    "play": null,
@@ -8031,7 +8031,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.svenjacobs.app.leon.png",
-  "subcategory": "URL tools",
+  "subcategory": "Internet",
   "description": "Removes tracking & other redundant parameters from web links for sharing",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.svenjacobs.app.leon",
@@ -8130,7 +8130,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.danemadsen.maid.png",
-  "subcategory": "AI Assistant",
+  "subcategory": "Automate",
   "description": "Maid is an open source app for interacting with artificial intelligence models.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.danemadsen.maid",
@@ -8230,7 +8230,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.marmalade.tts.png",
-  "subcategory": "Speech",
+  "subcategory": "Language",
   "description": "Fast, natural, private text-to-speech for your whole phone. Works offline.",
   "stores": {
    "play": null,
@@ -8263,7 +8263,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/me.zhanghai.android.files.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "Open source Material Design file manager",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files",
@@ -8296,7 +8296,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/co.garmax.materialflashlight.png",
-  "subcategory": "Flashlight",
+  "subcategory": "Gadgets",
   "description": "Flashlight with some cool features",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=co.garmax.materialflashlight",
@@ -8362,7 +8362,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/us.materialio.app.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "Modern material design for YouTube and Invidious.",
   "stores": {
    "play": null,
@@ -8715,7 +8715,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.microsoft.launcher.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Personalize your phone and stay organized on the go",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.microsoft.launcher",
@@ -8808,7 +8808,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.mihon.png",
-  "subcategory": "Comics",
+  "subcategory": "Read",
   "description": "Read manga, webtoons, comics",
   "stores": {
    "play": null,
@@ -8970,7 +8970,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.mlm.miniter.png",
-  "subcategory": "Video editor",
+  "subcategory": "Video",
   "description": "Video editor built for simple tasks",
   "stores": {
    "play": null,
@@ -9003,7 +9003,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gitlab.mudlej.MjPdfReader.png",
-  "subcategory": "Documents",
+  "subcategory": "Files",
   "description": "A simple PDF viewer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.gitlab.mudlej.MjPdfReader",
@@ -9069,7 +9069,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/shub39.momentum.png",
-  "subcategory": "Video editor",
+  "subcategory": "Video",
   "description": "App to make Montages easily",
   "stores": {
    "play": null,
@@ -9127,7 +9127,7 @@
   "name": "monocles chat",
   "package": "de.monocles.chat",
   "slug": "de-monocles-chat",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9135,7 +9135,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.monocles.chat.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "is a full-featured XMPP chat client",
   "stores": {
    "play": null,
@@ -9160,7 +9160,7 @@
   "name": "monocles translator",
   "package": "de.monocles.translator",
   "slug": "de-monocles-translator",
-  "category": "Media",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9168,7 +9168,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.monocles.translator.png",
-  "subcategory": "Books",
+  "subcategory": "Language",
   "description": "monocles translation a safe and private translator",
   "stores": {
    "play": null,
@@ -9267,7 +9267,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/is.xyz.mpv.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "Minimalist, powerful player.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=is.xyz.mpv",
@@ -9300,7 +9300,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.marlboroadvance.mpvex.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "A powerful media player built on mpv with an improved user interface",
   "stores": {
    "play": null,
@@ -9331,7 +9331,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.artifex.mupdf.viewer.app.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Lightweight official MuPDF PDF viewer",
   "stores": {
    "play": null,
@@ -9362,7 +9362,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.murinelauncher.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "A modern, lightweight Launcher3 fork for an enhanced stock++ Android experience",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.murinelauncher",
@@ -9490,7 +9490,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.starry.myne.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Android application to download & read ebooks from the Project GutenBerg.",
   "stores": {
    "play": null,
@@ -9616,7 +9616,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nkls.nekovideo.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "Local video player: folder library, DLNA/UPnP casting with NO proprietary Google Cast SDK, password + biometric private folders, PiP.",
   "stores": {
    "play": null,
@@ -9641,7 +9641,7 @@
   "name": "Neo Backup",
   "package": "com.machiav3lli.backup",
   "slug": "com-machiav3lli-backup",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -9649,7 +9649,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.machiav3lli.backup.png",
-  "subcategory": "Backup",
+  "subcategory": "Security",
   "description": "Open-source tool to backup apps and data (Neo Backup)",
   "stores": {
    "play": null,
@@ -9682,7 +9682,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.machiav3lli.fdroid.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "A modern feature-rich F-Droid client.",
   "stores": {
    "play": null,
@@ -9715,7 +9715,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.faircode.netguard.png",
-  "subcategory": "Network",
+  "subcategory": "Internet",
   "description": "Firewall that blocks internet access per app. The F-Droid build is fully unlocked.",
   "stores": {
    "play": null,
@@ -9781,7 +9781,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.schabi.newpipe.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "Lightweight YouTube app — no account, no ads.",
   "stores": {
    "play": null,
@@ -9815,7 +9815,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.anilbeesetti.nextplayer.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "A clean, simple video player.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer",
@@ -9848,7 +9848,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nextcloud.client.png",
-  "subcategory": "File Sync",
+  "subcategory": "Files",
   "description": "File sync client (connects to a Nextcloud server).",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.nextcloud.client",
@@ -9914,7 +9914,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.adilhanney.no_more_background.png",
-  "subcategory": "App manager",
+  "subcategory": "Apps",
   "description": "Control your Android™ apps",
   "stores": {
    "play": null,
@@ -10013,7 +10013,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.xtreak.notificationdictionary.png",
-  "subcategory": "Dictionary",
+  "subcategory": "Language",
   "description": "An app to access meaning of selected word as a notification",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.xtreak.notificationdictionary",
@@ -10079,7 +10079,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/jp.nonbili.noutube.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "YouTube and YouTube Music in a single app. No ads, plays in the background.",
   "stores": {
    "play": null,
@@ -10112,7 +10112,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.courville.nova.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "Video player with network streaming support.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.courville.nova",
@@ -10178,7 +10178,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.imranr.obtainium.png",
-  "subcategory": "App manager",
+  "subcategory": "Apps",
   "description": "Get Android app updates directly from the source (GitHub etc.)",
   "stores": {
    "play": null,
@@ -10211,7 +10211,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jegly.offlineLLM.png",
-  "subcategory": "AI Assistant",
+  "subcategory": "Automate",
   "description": "Private on-device AI chat (llama.cpp GGUF) with zero network permissions, encrypted settings and biometric lock.",
   "stores": {
    "play": null,
@@ -10269,7 +10269,7 @@
   "name": "Oksigenia SOS",
   "package": "com.oksigenia.oksigenia_sos",
   "slug": "com-oksigenia-oksigenia-sos",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -10277,7 +10277,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.oksigenia.oksigenia_sos.png",
-  "subcategory": "Safety",
+  "subcategory": "Security",
   "description": "Smart safety and distress alerts with fall and inactivity detection.",
   "stores": {
    "play": null,
@@ -10310,7 +10310,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.olauncher.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Minimalist launcher to reduce your screen time",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.olauncher",
@@ -10409,7 +10409,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/net.sourceforge.opencamera.png",
-  "subcategory": "Camera",
+  "subcategory": "Photos",
   "description": "Open-source camera app with manual controls.",
   "stores": {
    "play": null,
@@ -10540,7 +10540,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.darkempire78.opencalculator.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "Simple and beautiful calculator for Android",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.darkempire78.opencalculator",
@@ -10573,7 +10573,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.openlist.mobile.png",
-  "subcategory": "File Sync",
+  "subcategory": "Files",
   "description": "OpenList/Alist file-list client",
   "stores": {
    "play": null,
@@ -10604,7 +10604,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/software.mdev.bookstracker.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Your private and open source books tracker, organizer and reading list",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=software.mdev.bookstracker",
@@ -10637,7 +10637,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.ethereal.openscan.png",
-  "subcategory": "Scanner",
+  "subcategory": "Files",
   "description": "Document scanner",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.ethereal.openscan",
@@ -10863,7 +10863,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/universe.constellation.orion.viewer.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Orion Viewer is pdf, djvu, xps, tiff and comic books (cbr, cbz, cbt) file viewer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=universe.constellation.orion.viewer",
@@ -10929,7 +10929,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gameocr.app.png",
-  "subcategory": "Translation",
+  "subcategory": "Language",
   "description": "Real-time screen OCR translation",
   "stores": {
    "play": null,
@@ -10960,7 +10960,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.owncloud.android.png",
-  "subcategory": "File Sync",
+  "subcategory": "Files",
   "description": "Add an ownCloud server now and get your Cloud, your Data, your Way!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.owncloud.android",
@@ -10993,7 +10993,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.paperknife.app.png",
-  "subcategory": "Documents",
+  "subcategory": "Files",
   "description": "Privacy-first PDF utility: Merge, Split, Compress & Protect PDFs 100% locally.",
   "stores": {
    "play": null,
@@ -11024,7 +11024,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.emanuelef.remote_capture.png",
-  "subcategory": "Network",
+  "subcategory": "Internet",
   "description": "No-root network monitor and traffic dump tool (PCAPdroid)",
   "stores": {
    "play": null,
@@ -11090,7 +11090,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.byagowi.persiancalendar.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "Android Persian Calendar",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.byagowi.persiancalendar",
@@ -11253,7 +11253,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.wgh136.pica_comic.png",
-  "subcategory": "Comics",
+  "subcategory": "Read",
   "description": "Comic reader",
   "stores": {
    "play": null,
@@ -11542,7 +11542,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.catrobat.paintroid.png",
-  "subcategory": "Image editor",
+  "subcategory": "Photos",
   "description": "Draw and edit images.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.catrobat.paintroid",
@@ -11825,7 +11825,7 @@
   "name": "Proton Pass",
   "package": "proton.android.pass",
   "slug": "proton-android-pass",
-  "category": "Utilities",
+  "category": "System",
   "promises": {
    "no_ads": true,
    "no_iap": false,
@@ -11833,7 +11833,7 @@
   },
   "icon_svg": null,
   "icon": null,
-  "subcategory": "Password manager",
+  "subcategory": "Security",
   "description": "Password manager with unlimited logins, 2FA codes, and email aliases on the free plan.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=proton.android.pass",
@@ -11930,7 +11930,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jherkenhoff.qalculate.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "Powerful and versatile multi-purpose calculator",
   "stores": {
    "play": null,
@@ -11963,7 +11963,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.bartuzen.qbitcontroller.png",
-  "subcategory": "Torrents",
+  "subcategory": "Files",
   "description": "Remotely control qBittorrent from any device",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=dev.bartuzen.qbitcontroller",
@@ -11996,7 +11996,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.annie.dictionary.fork.png",
-  "subcategory": "Dictionary",
+  "subcategory": "Language",
   "description": "A dictionary application for dictionaries in StarDict format.",
   "stores": {
    "play": null,
@@ -12029,7 +12029,7 @@
   },
   "icon_svg": "<svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><rect x=\"4\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"18\" y=\"4\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"4\" y=\"18\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#0f766e\"/><rect x=\"7\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"21\" y=\"7\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"7\" y=\"21\" width=\"4\" height=\"4\" rx=\"1\" fill=\"#ffffff\"/><rect x=\"18\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"23\" y=\"18\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"18\" y=\"23\" width=\"3\" height=\"3\" fill=\"#0f766e\"/><rect x=\"25\" y=\"25\" width=\"3\" height=\"3\" fill=\"#0f766e\"/></svg>",
   "icon": null,
-  "subcategory": "QR tools",
+  "subcategory": "Gadgets",
   "description": "A free offline Android app that keeps QR codes for the people, places, and things you actually need: vCards, guest Wi-Fi, saved addresses. Searchable library with color labels, present mode (full-screen QR at max brightness), a dynamic editor for 9 card types, per-card launcher shortcuts, and PNG/SVG export. No ads, no accounts, fully offline.",
   "stores": {
    "play": null,
@@ -12064,7 +12064,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/qr.qrcode.barcode.scanner.reader.png",
-  "subcategory": "QR tools",
+  "subcategory": "Gadgets",
   "description": "QR code & barcode scanner, reader, all code generator, fast scan",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.qrcode.barcode.scanner.reader",
@@ -12095,7 +12095,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/qr.code.scanner.qr.code.reader.png",
-  "subcategory": "QR tools",
+  "subcategory": "Gadgets",
   "description": "Extremely easy to use QR Code Scanner and Barcode Scanner",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=qr.code.scanner.qr.code.reader",
@@ -12222,7 +12222,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/io.github.x0b.rcx.png",
-  "subcategory": "File Sync",
+  "subcategory": "Files",
   "description": "A file manager for Android, using rclone for the heavy lifting.",
   "stores": {
    "play": null,
@@ -12255,7 +12255,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.readera.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "E-book and document reader.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.readera",
@@ -12286,7 +12286,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bilingify.readest.png",
-  "subcategory": "Books",
+  "subcategory": "Read",
   "description": "Ebook reader with powerful features, intuitive UI",
   "stores": {
    "play": null,
@@ -12317,7 +12317,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/me.ash.reader.png",
-  "subcategory": "RSS reader",
+  "subcategory": "Read",
   "description": "RSS reader with a modern interface.",
   "stores": {
    "play": null,
@@ -12350,7 +12350,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.jmstudios.redmoon.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Screen filter for night time phone use",
   "stores": {
    "play": null,
@@ -12447,7 +12447,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.samyak.repostore.png",
-  "subcategory": "App store",
+  "subcategory": "Apps",
   "description": "Discover, install, and update Android apps directly from GitHub releases.",
   "stores": {
    "play": null,
@@ -12577,7 +12577,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chiller3.rsaf.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "An Android Storage Access Framework document provider for rclone",
   "stores": {
    "play": null,
@@ -12610,7 +12610,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/nie.translator.rtranslator.png",
-  "subcategory": "Translation",
+  "subcategory": "Language",
   "description": "Fully offline real-time translation (Whisper + Meta NLLB run on-device); no account, no network needed.",
   "stores": {
    "play": null,
@@ -12710,7 +12710,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.carriez.flutter_hbb.png",
-  "subcategory": "Remote desktop",
+  "subcategory": "Internet",
   "description": "Open-source remote desktop (RustDesk), the open TeamViewer alternative",
   "stores": {
    "play": null,
@@ -12776,7 +12776,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.sec.android.app.popupcalculator.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "This app provides the four fundamental operations and engineering calculations",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator",
@@ -12871,7 +12871,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.dmi3dmi3.saywhen.png",
-  "subcategory": "Calendar",
+  "subcategory": "Time",
   "description": "One phrase and it's on your calendar: no forms, no fields.",
   "stores": {
    "play": null,
@@ -13003,7 +13003,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.junkfood.seal.png",
-  "subcategory": "Downloads",
+  "subcategory": "Video",
   "description": "Video/audio downloader (yt-dlp) with Material You design",
   "stores": {
    "play": null,
@@ -13036,7 +13036,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.grapheneos.camera.png",
-  "subcategory": "Camera",
+  "subcategory": "Photos",
   "description": "GrapheneOS camera focused on privacy and security, with QR scanning",
   "stores": {
    "play": null,
@@ -13283,7 +13283,7 @@
   "name": "SilverDict",
   "package": "com.gmail.blandilyte.silverdict",
   "slug": "com-gmail-blandilyte-silverdict",
-  "category": "Media",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13291,7 +13291,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.gmail.blandilyte.silverdict.png",
-  "subcategory": "Books",
+  "subcategory": "Language",
   "description": "Android client of the SilverDict dictionary server",
   "stores": {
    "play": null,
@@ -13550,7 +13550,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/free.rm.skytube.oss.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "An ad-free and open-source YouTube client.",
   "stores": {
    "play": null,
@@ -13616,7 +13616,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.niksoftware.snapseed.png",
-  "subcategory": "Image editor",
+  "subcategory": "Photos",
   "description": "Google's free photo editor, no account needed.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.niksoftware.snapseed",
@@ -13641,7 +13641,7 @@
   "name": "Snikket",
   "package": "org.snikket.android",
   "slug": "org-snikket-android",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13649,7 +13649,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.snikket.android.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "Personal messaging app for groups, with a self-hostable open-source server",
   "stores": {
    "play": null,
@@ -13771,7 +13771,7 @@
   "name": "StoneAge",
   "package": "com.cweb.messenger",
   "slug": "com-cweb-messenger",
-  "category": "Media",
+  "category": "Communications",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -13779,7 +13779,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.cweb.messenger.png",
-  "subcategory": "Video player",
+  "subcategory": "Messaging",
   "description": "A self-hosted P2P messenger - you will need an S3 bucket to use it",
   "stores": {
    "play": null,
@@ -14042,7 +14042,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.myAllVideoBrowser.png",
-  "subcategory": "Downloads",
+  "subcategory": "Video",
   "description": "Video downloader with browser for downloading videos from everywhere",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.myAllVideoBrowser",
@@ -14142,7 +14142,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.catfriend1.syncthingfork.png",
-  "subcategory": "File Sync",
+  "subcategory": "Files",
   "description": "Decentralized file sync between your devices.",
   "stores": {
    "play": null,
@@ -14210,7 +14210,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.tagspaces.mobileapp.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "Organize, tag and browse your files, photos and documents",
   "stores": {
    "play": null,
@@ -14274,7 +14274,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/cn.ac.lz233.tarnhelm.png",
-  "subcategory": "URL tools",
+  "subcategory": "Internet",
   "description": "The magic to clean sharing links up",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=cn.ac.lz233.tarnhelm",
@@ -14666,7 +14666,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.bnyro.translate.png",
-  "subcategory": "Translation",
+  "subcategory": "Language",
   "description": "Material Design 3 translator supporting multiple engines",
   "stores": {
    "play": null,
@@ -14732,7 +14732,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.danefinlay.ttsutil.png",
-  "subcategory": "Speech",
+  "subcategory": "Language",
   "description": "Text-to-speech utility app for synthesising text into audible speech",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.danefinlay.ttsutil",
@@ -14924,7 +14924,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.physphil.android.unitconverterultimate.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "Convert between units with ease",
   "stores": {
    "play": null,
@@ -14957,7 +14957,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.sadellie.unitto.png",
-  "subcategory": "Calculator",
+  "subcategory": "Gadgets",
   "description": "Calculator, converter and more",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.sadellie.unitto",
@@ -14990,7 +14990,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/app.pwhs.universalinstaller.png",
-  "subcategory": "App manager",
+  "subcategory": "Apps",
   "description": "Advanced APK & XAPK installer",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=app.pwhs.universalinstaller",
@@ -15021,7 +15021,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.checkmk.unofficial_checkmk_monitoring.png",
-  "subcategory": "Network",
+  "subcategory": "Internet",
   "description": "Monitor CheckMK hosts and services on the go",
   "stores": {
    "play": null,
@@ -15054,7 +15054,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/me.zhanghai.android.untracker.png",
-  "subcategory": "URL tools",
+  "subcategory": "Internet",
   "description": "Remove tracking information before sharing links",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=me.zhanghai.android.untracker",
@@ -15087,7 +15087,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.trianguloy.urlchecker.png",
-  "subcategory": "URL tools",
+  "subcategory": "Internet",
   "description": "Allows analyzing (or sharing) URLs before opening them.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.trianguloy.urlchecker",
@@ -15153,7 +15153,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.aeidolon.vaultexplorer.png",
-  "subcategory": "File manager",
+  "subcategory": "Files",
   "description": "Encrypted container explorer: VeraCrypt, LUKS, BitLocker, Cryptomator, gocryptfs",
   "stores": {
    "play": null,
@@ -15217,7 +15217,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.github.wgh136.venera.png",
-  "subcategory": "Comics",
+  "subcategory": "Read",
   "description": "Comic reader w/ multiple sources",
   "stores": {
    "play": null,
@@ -15248,7 +15248,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/dev.victorialauncher.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Minimal, list-based home screen; open-source Niagara Launcher alternative.",
   "stores": {
    "play": null,
@@ -15345,7 +15345,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.videolan.vlc.png",
-  "subcategory": "Video player",
+  "subcategory": "Video",
   "description": "The classic free media player — plays just about everything.",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.videolan.vlc",
@@ -15543,7 +15543,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/eu.weblibre.gecko.png",
-  "subcategory": "Web",
+  "subcategory": "Internet",
   "description": "Browse privately, search locally",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=eu.weblibre.gecko",
@@ -15867,7 +15867,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.jrpie.android.launcher.png",
-  "subcategory": "Customization",
+  "subcategory": "Look",
   "description": "Launch apps by swiping or pressing buttons",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.jrpie.android.launcher",
