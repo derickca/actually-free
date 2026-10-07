@@ -11057,7 +11057,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.secuso.privacyfriendlyactivitytracker.png",
-  "subcategory": "Pedometer",
+  "subcategory": "Health",
   "description": "Counts your steps in the background. Customize daily goals.",
   "stores": {
    "play": null,
@@ -13746,7 +13746,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.nvllz.stepsy.png",
-  "subcategory": "Pedometer",
+  "subcategory": "Health",
   "description": "Your lightweight step counting buddy",
   "stores": {
    "play": null,

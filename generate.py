@@ -265,6 +265,8 @@ SUB_REMAP = {
     ("Utilities", "QR tools"): ("Utilities", "Gadgets"),        # Derick 2026-10-06
     ("Utilities", "Visual search"): ("Utilities", "Internet"),  # Derick 2026-10-06
     ("Utilities", "Data collection"): ("Utilities", "Internet"),# Derick 2026-10-06
+    # Lifestyle stragglers (Derick 2026-10-06)
+    ("Lifestyle", "Pedometer"): ("Lifestyle", "Health"),
 }
 
 # Individual misfiled apps, found by reading descriptions (taxonomy-map
