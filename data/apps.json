@@ -1374,7 +1374,7 @@
   "name": "BetterCounter",
   "package": "org.kde.bettercounter",
   "slug": "org-kde-bettercounter",
-  "category": "Utilities",
+  "category": "Lifestyle",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -1382,7 +1382,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/org.kde.bettercounter.png",
-  "subcategory": "Gadgets",
+  "subcategory": "Health",
   "description": "- Track good and bad habits (eg: exercising, smoking, drinking...) - Track when's the last time you did something (eg: water your plants, change your",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=org.kde.bettercounter",
@@ -2121,7 +2121,7 @@
   "name": "Chess Clock",
   "package": "com.chess.clock",
   "slug": "com-chess-clock",
-  "category": "Games",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -2129,7 +2129,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.chess.clock.png",
-  "subcategory": "Puzzle",
+  "subcategory": "Time",
   "description": "Adjust your favorite timer to play chess online with friends!",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.chess.clock",
@@ -6814,7 +6814,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.brouken.player.png",
-  "subcategory": "Music",
+  "subcategory": "Video",
   "description": "Simple video player based on ExoPlayer library",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=com.brouken.player",
@@ -8156,7 +8156,7 @@
   "name": "MakeACopy",
   "package": "de.schliweb.makeacopy",
   "slug": "de-schliweb-makeacopy",
-  "category": "Media",
+  "category": "Utilities",
   "promises": {
    "no_ads": true,
    "no_iap": true,
@@ -8164,7 +8164,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/de.schliweb.makeacopy.png",
-  "subcategory": "Graphics",
+  "subcategory": "Files",
   "description": "Privacy-focused document scanner with OCR and PDF export",
   "stores": {
    "play": "https://play.google.com/store/apps/details?id=de.schliweb.makeacopy",
@@ -9980,7 +9980,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.streetwriters.notesnook.png",
-  "subcategory": "Tasks",
+  "subcategory": "Productivity",
   "description": "A fully open source & end-to-end encrypted note taking app",
   "stores": {
    "play": null,
@@ -13812,7 +13812,7 @@
   },
   "icon_svg": null,
   "icon": "assets/icons/com.likhithpraveenk.storii.png",
-  "subcategory": "Music",
+  "subcategory": "Audio",
   "description": "Audiobookshelf client with downloads, accurate playback sync, and Android Auto",
   "stores": {
    "play": null,
