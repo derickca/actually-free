@@ -629,6 +629,7 @@ def site_footer(forms):
       <a href="/">Directory</a> &middot;
       <a href="/app/{QR_CARDS_SLUG}.html">QR Cards</a>
     </p>
+    <p class="made-by">Actually Free is made by <a href="https://certifiable.media">Certifiable Media</a>.</p>
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
     <p class="count-line">We count clicks, not people.</p>
