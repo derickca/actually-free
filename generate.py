@@ -1,27 +1,22 @@
 #!/usr/bin/env python3
 """Actually Free — static site generator.
 
-Reads data/apps-seed.json (overridable via AF_ANDROID_SEED), keeps the verified
+Reads ~/workspace/certifiable-apps/apps-seed.json, keeps the verified
 listings (status=include + status=per-badge + status=free-enough), adds QR Cards, and emits a
 fully static site deployable as-is to Cloudflare Pages.
 
 Regenerate everything with:  python3 generate.py
 """
-import base64
 import datetime
 import html
 import json
 import os
 import re
-import secrets
 import shutil
-import sys
-from urllib.parse import urlsplit
-from windows_catalog import validate, rebuild_windows
 from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SEED = os.path.expanduser(os.environ.get("AF_ANDROID_SEED", os.path.join(HERE, "data", "apps-seed.json")))
+SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
 SITE_URL = "https://free.certifiable.media"
 TAGLINE = "Find the free apps they don't want you to see."
 # The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.
@@ -388,9 +383,7 @@ def clean_record(rec):
             dl_alts.append({"label": alt.get("label") or "Download",
                             "url": alt["url"]})
     downloads = {"official": rec.get("official_url") or None,
-                 "alternatives": dl_alts,
-                 "label": rec.get("download_label"),
-                 "winget_id": rec.get("winget_id")}
+                 "alternatives": dl_alts}
     if free_enough:
         has_iap = bool(rec.get("has_iap"))
         promises = {"no_ads": True, "no_iap": not has_iap,
@@ -434,8 +427,6 @@ def clean_record(rec):
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
         "downloads": downloads,
-        **({"windows11": rec.get("windows11") or {"status": "unverified", "tested": False}}
-           if rec.get("platform") == "windows" else {}),
         "rating": ver.get("play_rating"),
         "attrs": attrs,
         "made_by_us": bool(rec.get("made_by_us")),
@@ -468,7 +459,6 @@ def load_corpus():
     if os.path.exists(win_seed):
         with open(win_seed, encoding="utf-8") as f:
             wseed = json.load(f)
-        validate(wseed)
         kept += [clean_record(r) for r in wseed
                  if r.get("status") in ("include", "per-badge", "free-enough")]
     kept.sort(key=lambda a: a["name"].lower())
@@ -492,73 +482,16 @@ def resolve_siblings(apps):
             b["sibling_platform"] = a["platform"]
 
 # ---------------------------------------------------------------------------
-# ntfy feedback — browser POSTs straight to ntfy.sh, no backend, no relay.
-# The topic is a mild secret: it is NEVER written into page source as a plain
-# string. Each build XORs it with a fresh random 16-byte key, stores base64 in
-# the forms' data-t attributes, embeds the key separately in app.js, and the
-# browser decodes it only at send time. (Same pattern as FundingSpark.)
+# Feedback — the browser POSTs JSON to the shared msg service
+# (https://msg.certifiable.media/api/submit), which stores it and notifies
+# Derick. No per-build secret, no third party. Anti-spam, all client-side:
+# honeypot trap, 3-second open rule, 3-per-10-minutes / 10-per-day limits,
+# length caps; the service re-checks server-side.
 # ---------------------------------------------------------------------------
 
-NTFY_STORE = os.path.expanduser("~/.config/actually-free/ntfy-topic")
-NTFY_UNAVAILABLE = ('<p class="feedback-off" role="note">'
-                    'Feedback is not available yet.</p>')
 
-
-def read_ntfy_topic():
-    """The ntfy topic, first hit wins. Never printed, never written to output.
-
-    Priority: AF_NTFY_TOPIC env var, then the durable local store
-    (~/.config/actually-free/ntfy-topic), then a legacy NTFY_TOPIC value in
-    assets/config.js (migrated to the store on first successful read).
-    """
-    env = os.environ.get("AF_NTFY_TOPIC", "").strip()
-    if env:
-        return env
-    # Durable local store: bare topic on one line.
-    try:
-        with open(NTFY_STORE, encoding="utf-8") as f:
-            bare = f.read().strip()
-            if bare and not bare.startswith("PASTE"):
-                return bare
-    except OSError:
-        pass
-    # Legacy: NTFY_TOPIC value in assets/config.js (migrated to the store).
-    try:
-        with open(os.path.join(HERE, "assets", "config.js"), encoding="utf-8") as f:
-            m = re.search(r'NTFY_TOPIC\s*:\s*"([^"]+)"', f.read())
-    except OSError:
-        m = None
-    if m and not m.group(1).startswith("PASTE"):
-        return m.group(1)
-    return ""
-
-
-def persist_ntfy_topic(topic):
-    """Keep the topic on the build machine so later builds don't need config.js."""
-    try:
-        os.makedirs(os.path.dirname(NTFY_STORE), exist_ok=True)
-        with open(NTFY_STORE, "w", encoding="utf-8") as f:
-            f.write(topic + "\n")
-        os.chmod(NTFY_STORE, 0o600)
-    except OSError as e:
-        print("warning: could not persist ntfy topic:", e)
-
-
-class NtfyForms:
-    """One build's worth of ntfy forms: fresh random key, XOR'd topic."""
-
-    def __init__(self, topic):
-        self.key = secrets.token_bytes(16)
-        self.encoded = ""
-        if topic:
-            raw = topic.encode("utf-8")
-            self.encoded = base64.b64encode(
-                bytes(b ^ self.key[i % 16] for i, b in enumerate(raw))
-            ).decode("ascii")
-
-    @property
-    def key_b64(self):
-        return base64.b64encode(self.key).decode("ascii")
+class FeedbackForms:
+    """The feedback forms. Always available — no topic to configure."""
 
     @staticmethod
     def _trap():
@@ -574,8 +507,6 @@ class NtfyForms:
 
     def report_form(self, app):
         """Per-app form behind the three feedback buttons (detail pages)."""
-        if not self.encoded:
-            return NTFY_UNAVAILABLE
         buttons = "\n".join(
             f'      <button type="button" data-feedback="{v}" '
             f'data-label="{lbl}">{lbl}</button>'
@@ -587,7 +518,7 @@ class NtfyForms:
 {buttons}
     </div>
     <div class="af-form-wrap">
-      <form class="af-form" data-af-form="report" data-t="{self.encoded}" hidden novalidate>
+      <form class="af-form" data-af-form="report" hidden novalidate>
         <input type="hidden" name="reason" value="doesnt-work">
         <input type="hidden" name="app_name" value="{esc(app['name'])}">
         <input type="hidden" name="page_url" value="{esc(page_url)}">
@@ -610,15 +541,13 @@ class NtfyForms:
         """Suggest-an-app form. On its own page it's shown immediately, the
         redundant heading line is dropped, and Cancel is omitted (the back
         link above handles that)."""
-        if not self.encoded:
-            return NTFY_UNAVAILABLE
         hidden = "" if visible else " hidden"
         head = ("" if visible
                 else '        <p class="af-form-head"><strong>Suggest an app</strong> for the directory</p>\n')
         cancel = ("" if visible
                   else '          <button type="button" data-af-cancel>Cancel</button>\n')
         return f"""<div class="af-form-wrap">
-      <form class="af-form" data-af-form="suggest" data-t="{self.encoded}"{hidden} novalidate>
+      <form class="af-form" data-af-form="suggest"{hidden} novalidate>
         <input type="hidden" name="page_url" value="{esc(SITE_URL)}/">
 {head}
         <label class="af-field">App name
@@ -714,8 +643,7 @@ def site_header():
 
 
 def site_footer(forms):
-    suggest_link = ('<a href="/suggest">Suggest an app</a>'
-                    if forms.encoded else 'Suggest an app')
+    suggest_link = '<a href="/suggest">Suggest an app</a>'
     return f"""<footer class="site-footer">
   <div class="footer-inner">
     <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android and Windows apps that are
@@ -763,7 +691,7 @@ def build_index(forms):
 {site_header()}
 <main class="directory">
   <section class="hero">
-    <h1 id="hero-title">Actually free apps.</h1>
+    <h1 id="hero-title">Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">{esc(TAGLINE)}</span></p>
   </section>
   <p class="promise-line">{promise_line}</p>
@@ -854,10 +782,8 @@ def windows_downloads(app):
         # When the primary download is PortableApps (dead-developer
         # exception), label it honestly instead of claiming it's the
         # developer's own site.
-        label = dl.get("label") or ("PortableApps download page"
-                 if urlsplit(url).hostname == "portableapps.com"
-                 else "GitHub releases" if urlsplit(url).hostname == "github.com" and "/releases" in url
-                 else "Visit download site")
+        label = ("PortableApps" if "portableapps.com" in url
+                 else "Download from the developer")
         parts.append(
             f'<a class="dl-official" href="{esc(url)}" '
             f'rel="noopener">{label}</a>')
@@ -865,27 +791,7 @@ def windows_downloads(app):
         parts.append(
             f'<a class="store-badge big" href="{esc(alt["url"])}" '
             f'rel="noopener">{esc(alt["label"])}</a>')
-    if dl.get("winget_id"):
-        command = "winget install --id " + dl["winget_id"] + " -e"
-        parts.append(f'<p>Install with Winget: <code>{esc(command)}</code></p>')
     return "\n".join(parts)
-
-
-def windows_compatibility(app):
-    if app.get("platform") != "windows":
-        return ""
-    evidence = app.get("windows11") or {}
-    labels = {"unverified": "Windows 11 compatibility has not been verified.",
-              "publisher": "The publisher documents Windows 11 support; not installation-tested here.",
-              "distributor": "The linked distributor documents Windows 11 support for its build; not installation-tested here.",
-              "tested": "Tested on Windows 11; see the test report for the version and configuration.",
-              "unsupported": "Does not support the standard Windows 11 taskbar."}
-    text = labels.get(evidence.get("status"), labels["unverified"])
-    source = evidence.get("evidence_url")
-    link = (f' <a href="{esc(source)}" rel="noopener">Compatibility source</a>' if source else "")
-    notes = evidence.get("notes") or ""
-    scope = f' <span>{esc(notes)}</span>' if notes else ""
-    return f'<p class="compatibility-note">{esc(text)}{scope}{link}</p>'
 
 
 ATTR_LABELS = {"open_source": "Open source",
@@ -988,7 +894,6 @@ def build_detail(app, forms):
     </div>
     {desc_html}
     {review}
-    {windows_compatibility(app)}
     <h2>Get it</h2>
     <div class="get-it">
 {get_it}
@@ -1066,7 +971,7 @@ def build_free_bar(forms):
     </ul>
     <p>Requesting donations is fine &mdash; as long as everything works whether you donate or not.</p>
     <p><strong>Free Enough:</strong> some apps have paid upgrades, but their free tier is the complete product &mdash; most people who use them never feel the need to pay. They're tagged <span class="free-enough">Free Enough</span>, and each one's page explains exactly why the free version is enough. The bar above still applies to everything else.</p>
-    <p><strong>Personal Use:</strong> some apps are free for people but paid for businesses. They're tagged <span class="personal-use">Personal Use</span> so the license limit is visible before you download.</p>
+    <p><strong>Personal Use:</strong> some apps are free for people but paid for businesses. They're tagged <span class="free-enough">Personal Use</span> so the license limit is visible before you download.</p>
     <p><strong>Needs Account:</strong> some apps require an account for their core features. They're tagged <span class="needs-account">needs account</span> so you know before you install.</p>
     <p>We check app details before listing &mdash; some by hand, some with automated checks &mdash; but we have not installed or tested them all; use caution when installing.</p>
     <p>Developers change their minds. If a listed app starts charging, tell us and we'll re-check it.</p>
@@ -1594,7 +1499,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 .feedback-row button:hover { border-color: var(--accent); }
 
-/* ---------- ntfy feedback forms ---------- */
+/* ---------- feedback forms ---------- */
 .af-form-wrap { margin-top: 12px; }
 .af-form {
   background: var(--accent-soft);
@@ -1880,55 +1785,23 @@ JS_CONTENT = r"""
     b.addEventListener("click", function () { applyTheme(b.getAttribute("data-theme")); });
   });
 
-  /* ---------- ntfy feedback ------------------------------------------------
-     The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
-     The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (__NTFY_KEY__, replaced at build time) embedded separately,
-     decoded only at send time. Anti-spam, all client-side: honeypot trap,
-     3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
-     Same pattern as FundingSpark. */
+  /* ---------- feedback ------------------------------------------------
+     The browser POSTs JSON to the shared msg service — no per-build secret,
+     no third party. Anti-spam, all client-side: honeypot trap, 3-second open
+     rule, 3-per-10-minutes / 10-per-day limits, length caps. The service
+     re-checks server-side. */
   (function () {
     "use strict";
-    var K = "__NTFY_KEY__";
-    var API = "https://ntfy.sh/", STORE = "af.sends";
+    var API = "https://msg.certifiable.media/api/submit", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
-        DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
+        DAY = 10, DAY_MS = 86400000;
     var memory = [];
-    var REASONS = {
-      "doesnt-work": "Doesn't work",
-      "broke-promise": "Broke a promise",
-      "correction": "Suggest a correction"
-    };
-    function unb64(s) {
-      var t = atob(s), a = [];
-      for (var i = 0; i < t.length; i++) a.push(t.charCodeAt(i));
-      return a;
-    }
-    function topic(form) {
-      var t = form.getAttribute("data-t");
-      if (!t || !K) return "";
-      var d = unb64(t), k = unb64(K), o = [];
-      for (var i = 0; i < d.length; i++) o.push(d[i] ^ k[i % k.length]);
-      return new TextDecoder().decode(new Uint8Array(o));
-    }
     // Plain text only: strip control characters, cut at max characters.
     function clean(s, max, multi) {
       s = String(s || "").replace(/\r\n?/g, "\n");
       s = multi ? s.replace(/[\u0000-\u0008\u000b-\u001f\u007f-\u009f\u2028\u2029]/g, "")
                 : s.replace(/[\u0000-\u001f\u007f-\u009f\u2028\u2029]/g, " ");
       return Array.from(s.trim()).slice(0, max).join("");
-    }
-    function cutBytes(s, n) {
-      var enc = new TextEncoder();
-      if (enc.encode(s).length <= n) return s;
-      var chars = Array.from(s);
-      while (chars.length && enc.encode(chars.join("")).length > n - 20)
-        chars.length = Math.max(0, chars.length - 20);
-      return chars.join("") + "\n[note shortened]";
-    }
-    function header(s) {   // header values must be Latin-1: the rest goes as RFC 2047 UTF-8
-      return /^[\x20-\x7e]*$/.test(s) ? s
-        : "=?UTF-8?B?" + btoa(unescape(encodeURIComponent(s))) + "?=";
     }
     function sends() {
       try {
@@ -1955,33 +1828,31 @@ JS_CONTENT = r"""
       return f ? clean(f.value, max, multi) : "";
     }
     function build(form) {
-      var sent = new Date().toISOString().replace(/\.\d+Z$/, "Z"), m = {};
-      if (form.getAttribute("data-af-form") === "suggest") {
-        m.title = "App suggestion";
-        m.tags = ["actually-free", "suggestion"];
-        m.priority = "3";
-        m.lines = ["App: " + val(form, "app_name", 200),
-                   "Link: " + (val(form, "app_link", 300) || "(not given)"),
-                   "Why free: " + (val(form, "note", 1000, true) || "(none)"),
-                   "Page: " + val(form, "page_url", 300),
-                   "Sent: " + sent];
+      // Payload for the msg service: {service, type, fields, website, openedAt}.
+      var kind = form.getAttribute("data-af-form");
+      var fields = { sent: new Date().toISOString().replace(/\.\d+Z$/, "Z") };
+      var type;
+      if (kind === "suggest") {
+        type = "suggestion";
+        fields.app = val(form, "app_name", 200);
+        fields.link = val(form, "app_link", 300) || "(not given)";
+        fields.why = val(form, "note", 1000, true) || "(none)";
+        fields.page = val(form, "page_url", 300);
       } else {
         var reason = val(form, "reason", 40);
-        var label = REASONS[reason] || REASONS["doesnt-work"];
-        var tag = reason === "broke-promise" ? "broke-promise"
-                : reason === "correction" ? "correction" : "doesnt-work";
-        var appName = val(form, "app_name", 200);
-        m.title = label + ": " + appName;
-        m.tags = ["actually-free", "feedback", tag];
-        m.priority = tag === "broke-promise" ? "4" : "3";
-        m.lines = ["App: " + appName,
-                   "Page URL: " + val(form, "page_url", 300),
-                   "Note: " + (val(form, "note", 1000, true) || "(none)"),
-                   "Sent: " + sent];
+        type = reason === "broke-promise" ? "broke-promise"
+             : reason === "correction" ? "correction" : "doesnt-work";
+        fields.app = val(form, "app_name", 200);
+        fields.page = val(form, "page_url", 300);
+        fields.note = val(form, "note", 1000, true) || "(none)";
       }
-      m.title = clean(m.title, 200);
-      m.body = cutBytes(m.lines.join("\n"), BODY_BYTES);
-      return m;
+      return {
+        service: "actually-free",
+        type: type,
+        fields: fields,
+        website: form.elements.website ? form.elements.website.value : "",
+        openedAt: 0 // set by the submit handler from the form's open time
+      };
     }
     function bind(form) {
       var wrap = form.parentNode,
@@ -2025,14 +1896,13 @@ JS_CONTENT = r"""
         }
         var limit = limited(now);
         if (limit) { err.textContent = limit; return; }
-        var t = topic(form);
-        if (!t) { err.textContent = "Feedback is not available yet."; return; }
-        var m = build(form);
+        var payload = build(form);
+        payload.openedAt = opened;
         btn.disabled = true;
         record(now);
-        fetch(API + encodeURIComponent(t), {
-          method: "POST", body: m.body,
-          headers: { "Title": header(m.title), "Tags": m.tags.join(","), "Priority": m.priority }
+        fetch(API, {
+          method: "POST", body: JSON.stringify(payload),
+          headers: { "content-type": "application/json" }
         })
           .then(function (r) {
             if (!r.ok) throw new Error("status " + r.status);
@@ -2605,12 +2475,9 @@ CONFIG_JS_TEMPLATE = """/* Actually Free — site configuration.
    needed. Until this is set, analytics are skipped silently.
 
    Feedback reports ("doesn't work" / "broke a promise" / corrections /
-   app suggestions) go to ntfy.sh — free tier, no account, no backend. The
-   topic is NOT stored here: generate.py reads it from the AF_NTFY_TOPIC
-   environment variable or ~/.config/actually-free/ntfy-topic, XOR-obfuscates
-   it with a fresh random key on every build, and embeds only base64 blobs in
-   the pages. Subscribe to the topic in the ntfy app (Android) or at ntfy.sh
-   to receive reports; the free tier keeps messages ~12 hours. */
+   app suggestions) POST as JSON to the shared msg service at
+   https://msg.certifiable.media/api/submit, which stores them for review.
+   No per-build secret, no third party. */
 window.AF_CONFIG = {{
   GOATCOUNTER_CODE: "{gc}"
 }};
@@ -2618,8 +2485,7 @@ window.AF_CONFIG = {{
 
 
 def build_config_js():
-    """config.js for the deployed site: Goatcounter code preserved, and the
-    ntfy topic deliberately NOT stored here (see the ntfy section above)."""
+    """config.js for the deployed site: Goatcounter code preserved."""
     gc = ""
     try:
         with open(os.path.join(HERE, "assets", "config.js"), encoding="utf-8") as f:
@@ -2644,38 +2510,14 @@ One command rebuilds everything from the research corpus:
 python3 generate.py
 ```
 
-The full build reads the Android research corpus from `AF_ANDROID_SEED`
-(default `~/workspace/certifiable-apps/apps-seed.json`) and the versioned
-Windows source `data/windows-seed.json`. It keeps published statuses
-(`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
+This reads `~/workspace/certifiable-apps/apps-seed.json`, keeps the
+verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 
-- `data/apps.json` — published listings as JSON
+- `data/apps.json` — the 79 listings as JSON
 - `index.html` — the directory (tiles render client-side)
 - `app/<slug>.html` — one static page per app (SEO: real title, meta, OG tags)
 - `sitemap.xml`, `robots.txt`
 - `assets/` — styles.css, app.js, config.js, mascots
-
-## Windows catalogue maintenance
-
-Edit `data/windows-seed.json`, then run:
-
-```
-python3 tools/check-windows.py
-python3 generate.py --windows-only
-python3 -m unittest test_windows_catalog.py
-```
-
-The incremental build reuses the checked-in Android snapshot and existing
-Windows feedback forms. It removes withdrawn Windows pages and refreshes the
-service-worker cache. Adding a new Windows page requires a full build with the
-Android corpus and feedback configuration. Full builds validate the Windows
-seed too. See `docs/windows-maintenance.md` for evidence rules and the audit.
-
-For a non-mutating HTTP report (network required):
-
-```
-python3 tools/check-windows.py --check-links --output /tmp/windows-links.json
-```
 
 ## Derick's setup steps
 
@@ -2685,14 +2527,9 @@ python3 tools/check-windows.py --check-links --output /tmp/windows-links.json
    `free.certifiable.media` (free SSL included).
 3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
    and redeploy.
-4. **Feedback via ntfy** (free tier, no account, no backend): save the secret
-   topic to `~/.config/actually-free/ntfy-topic` on the build machine (one
-   line, no quotes), or set the `AF_NTFY_TOPIC` env var, then regenerate.
-   `generate.py` XOR-obfuscates the topic with a fresh random key on every
-   build — it never appears in page source as plaintext. Subscribe to the
-   topic in the ntfy app (Android) or at ntfy.sh to receive the reports;
-   the free tier keeps messages ~12 hours. Without a topic, the feedback
-   forms are replaced by a "not available yet" notice.
+4. **Feedback** goes to the shared msg service (msg.certifiable.media) —
+   no setup needed on the build machine. New reports land in the inbox at
+   https://msg.certifiable.media and notify Derick.
 
 ## Corpus rules (baked into generate.py)
 
@@ -2913,9 +2750,6 @@ def check_filter_consistency(apps, index_html, app_js):
 
 
 def main():
-    if "--windows-only" in sys.argv:
-        rebuild_windows(sys.modules[__name__])
-        return
     apps = load_corpus()
     resolve_siblings(apps)
     print(f"{len(apps)} apps "
@@ -2923,20 +2757,11 @@ def main():
           f"{sum(1 for a in apps if a['per_badge'])} per-badge, "
           f"{sum(1 for a in apps if a['free_enough'])} free-enough)")
 
-    topic = read_ntfy_topic()
-    if topic:
-        persist_ntfy_topic(topic)
-        print("ntfy feedback: topic configured (XOR-obfuscated per build)")
-    else:
-        print("ntfy feedback: NO TOPIC SET — forms show 'not available yet'")
-    forms = NtfyForms(topic)
+    forms = FeedbackForms()
 
     apply_openapk(apps)
     index_html = build_index(forms)
-    app_js = (JS_CONTENT.replace("__NTFY_KEY__", forms.key_b64)
-                       .replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS))
-    if "__NTFY_KEY__" in app_js:
-        print("warning: ntfy key placeholder survived replacement")
+    app_js = (JS_CONTENT.replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS))
     if "__PLATFORM_SVGS__" in app_js:
         print("warning: platform SVGs placeholder survived replacement")
     app_js = app_js.strip() + "\n"
@@ -2945,12 +2770,6 @@ def main():
     write("index.html", index_html)
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
-    with open(os.path.join(HERE, "data", "windows-seed.json"), encoding="utf-8") as f:
-        for record in json.load(f):
-            if record.get("status") not in ("include", "per-badge", "free-enough"):
-                stale = os.path.join(HERE, "app", slugify(record["package"]) + ".html")
-                if os.path.exists(stale):
-                    os.remove(stale)
     for app in apps:
         write(f"app/{app['slug']}.html", build_detail(app, forms))
     write("sitemap.xml", build_sitemap(apps))

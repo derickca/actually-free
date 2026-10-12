@@ -496,7 +496,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 }
 .feedback-row button:hover { border-color: var(--accent); }
 
-/* ---------- ntfy feedback forms ---------- */
+/* ---------- feedback forms ---------- */
 .af-form-wrap { margin-top: 12px; }
 .af-form {
   background: var(--accent-soft);

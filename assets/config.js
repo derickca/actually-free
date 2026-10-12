@@ -4,12 +4,9 @@
    needed. Until this is set, analytics are skipped silently.
 
    Feedback reports ("doesn't work" / "broke a promise" / corrections /
-   app suggestions) go to ntfy.sh — free tier, no account, no backend. The
-   topic is NOT stored here: generate.py reads it from the AF_NTFY_TOPIC
-   environment variable or ~/.config/actually-free/ntfy-topic, XOR-obfuscates
-   it with a fresh random key on every build, and embeds only base64 blobs in
-   the pages. Subscribe to the topic in the ntfy app (Android) or at ntfy.sh
-   to receive reports; the free tier keeps messages ~12 hours. */
+   app suggestions) POST as JSON to the shared msg service at
+   https://msg.certifiable.media/api/submit, which stores them for review.
+   No per-build secret, no third party. */
 window.AF_CONFIG = {
   GOATCOUNTER_CODE: "actually-free"
 };

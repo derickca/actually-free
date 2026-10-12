@@ -54,55 +54,23 @@
     b.addEventListener("click", function () { applyTheme(b.getAttribute("data-theme")); });
   });
 
-  /* ---------- ntfy feedback ------------------------------------------------
-     The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
-     The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (vLTM+VdC7Nb1Sckg+zLV0Q==, replaced at build time) embedded separately,
-     decoded only at send time. Anti-spam, all client-side: honeypot trap,
-     3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
-     Same pattern as FundingSpark. */
+  /* ---------- feedback ------------------------------------------------
+     The browser POSTs JSON to the shared msg service — no per-build secret,
+     no third party. Anti-spam, all client-side: honeypot trap, 3-second open
+     rule, 3-per-10-minutes / 10-per-day limits, length caps. The service
+     re-checks server-side. */
   (function () {
     "use strict";
-    var K = "vLTM+VdC7Nb1Sckg+zLV0Q==";
-    var API = "https://ntfy.sh/", STORE = "af.sends";
+    var API = "https://msg.certifiable.media/api/submit", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
-        DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
+        DAY = 10, DAY_MS = 86400000;
     var memory = [];
-    var REASONS = {
-      "doesnt-work": "Doesn't work",
-      "broke-promise": "Broke a promise",
-      "correction": "Suggest a correction"
-    };
-    function unb64(s) {
-      var t = atob(s), a = [];
-      for (var i = 0; i < t.length; i++) a.push(t.charCodeAt(i));
-      return a;
-    }
-    function topic(form) {
-      var t = form.getAttribute("data-t");
-      if (!t || !K) return "";
-      var d = unb64(t), k = unb64(K), o = [];
-      for (var i = 0; i < d.length; i++) o.push(d[i] ^ k[i % k.length]);
-      return new TextDecoder().decode(new Uint8Array(o));
-    }
     // Plain text only: strip control characters, cut at max characters.
     function clean(s, max, multi) {
       s = String(s || "").replace(/\r\n?/g, "\n");
       s = multi ? s.replace(/[\u0000-\u0008\u000b-\u001f\u007f-\u009f\u2028\u2029]/g, "")
                 : s.replace(/[\u0000-\u001f\u007f-\u009f\u2028\u2029]/g, " ");
       return Array.from(s.trim()).slice(0, max).join("");
-    }
-    function cutBytes(s, n) {
-      var enc = new TextEncoder();
-      if (enc.encode(s).length <= n) return s;
-      var chars = Array.from(s);
-      while (chars.length && enc.encode(chars.join("")).length > n - 20)
-        chars.length = Math.max(0, chars.length - 20);
-      return chars.join("") + "\n[note shortened]";
-    }
-    function header(s) {   // header values must be Latin-1: the rest goes as RFC 2047 UTF-8
-      return /^[\x20-\x7e]*$/.test(s) ? s
-        : "=?UTF-8?B?" + btoa(unescape(encodeURIComponent(s))) + "?=";
     }
     function sends() {
       try {
@@ -129,33 +97,31 @@
       return f ? clean(f.value, max, multi) : "";
     }
     function build(form) {
-      var sent = new Date().toISOString().replace(/\.\d+Z$/, "Z"), m = {};
-      if (form.getAttribute("data-af-form") === "suggest") {
-        m.title = "App suggestion";
-        m.tags = ["actually-free", "suggestion"];
-        m.priority = "3";
-        m.lines = ["App: " + val(form, "app_name", 200),
-                   "Link: " + (val(form, "app_link", 300) || "(not given)"),
-                   "Why free: " + (val(form, "note", 1000, true) || "(none)"),
-                   "Page: " + val(form, "page_url", 300),
-                   "Sent: " + sent];
+      // Payload for the msg service: {service, type, fields, website, openedAt}.
+      var kind = form.getAttribute("data-af-form");
+      var fields = { sent: new Date().toISOString().replace(/\.\d+Z$/, "Z") };
+      var type;
+      if (kind === "suggest") {
+        type = "suggestion";
+        fields.app = val(form, "app_name", 200);
+        fields.link = val(form, "app_link", 300) || "(not given)";
+        fields.why = val(form, "note", 1000, true) || "(none)";
+        fields.page = val(form, "page_url", 300);
       } else {
         var reason = val(form, "reason", 40);
-        var label = REASONS[reason] || REASONS["doesnt-work"];
-        var tag = reason === "broke-promise" ? "broke-promise"
-                : reason === "correction" ? "correction" : "doesnt-work";
-        var appName = val(form, "app_name", 200);
-        m.title = label + ": " + appName;
-        m.tags = ["actually-free", "feedback", tag];
-        m.priority = tag === "broke-promise" ? "4" : "3";
-        m.lines = ["App: " + appName,
-                   "Page URL: " + val(form, "page_url", 300),
-                   "Note: " + (val(form, "note", 1000, true) || "(none)"),
-                   "Sent: " + sent];
+        type = reason === "broke-promise" ? "broke-promise"
+             : reason === "correction" ? "correction" : "doesnt-work";
+        fields.app = val(form, "app_name", 200);
+        fields.page = val(form, "page_url", 300);
+        fields.note = val(form, "note", 1000, true) || "(none)";
       }
-      m.title = clean(m.title, 200);
-      m.body = cutBytes(m.lines.join("\n"), BODY_BYTES);
-      return m;
+      return {
+        service: "actually-free",
+        type: type,
+        fields: fields,
+        website: form.elements.website ? form.elements.website.value : "",
+        openedAt: 0 // set by the submit handler from the form's open time
+      };
     }
     function bind(form) {
       var wrap = form.parentNode,
@@ -199,14 +165,13 @@
         }
         var limit = limited(now);
         if (limit) { err.textContent = limit; return; }
-        var t = topic(form);
-        if (!t) { err.textContent = "Feedback is not available yet."; return; }
-        var m = build(form);
+        var payload = build(form);
+        payload.openedAt = opened;
         btn.disabled = true;
         record(now);
-        fetch(API + encodeURIComponent(t), {
-          method: "POST", body: m.body,
-          headers: { "Title": header(m.title), "Tags": m.tags.join(","), "Priority": m.priority }
+        fetch(API, {
+          method: "POST", body: JSON.stringify(payload),
+          headers: { "content-type": "application/json" }
         })
           .then(function (r) {
             if (!r.ok) throw new Error("status " + r.status);

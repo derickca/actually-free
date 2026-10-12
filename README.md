@@ -12,38 +12,14 @@ One command rebuilds everything from the research corpus:
 python3 generate.py
 ```
 
-The full build reads the Android research corpus from `AF_ANDROID_SEED`
-(default `~/workspace/certifiable-apps/apps-seed.json`) and the versioned
-Windows source `data/windows-seed.json`. It keeps published statuses
-(`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
+This reads `~/workspace/certifiable-apps/apps-seed.json`, keeps the
+verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 
-- `data/apps.json` — published listings as JSON
+- `data/apps.json` — the 79 listings as JSON
 - `index.html` — the directory (tiles render client-side)
 - `app/<slug>.html` — one static page per app (SEO: real title, meta, OG tags)
 - `sitemap.xml`, `robots.txt`
 - `assets/` — styles.css, app.js, config.js, mascots
-
-## Windows catalogue maintenance
-
-Edit `data/windows-seed.json`, then run:
-
-```
-python3 tools/check-windows.py
-python3 generate.py --windows-only
-python3 -m unittest test_windows_catalog.py
-```
-
-The incremental build reuses the checked-in Android snapshot and existing
-Windows feedback forms. It removes withdrawn Windows pages and refreshes the
-service-worker cache. Adding a new Windows page requires a full build with the
-Android corpus and feedback configuration. Full builds validate the Windows
-seed too. See `docs/windows-maintenance.md` for evidence rules and the audit.
-
-For a non-mutating HTTP report (network required):
-
-```
-python3 tools/check-windows.py --check-links --output /tmp/windows-links.json
-```
 
 ## Derick's setup steps
 
@@ -53,14 +29,9 @@ python3 tools/check-windows.py --check-links --output /tmp/windows-links.json
    `free.certifiable.media` (free SSL included).
 3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
    and redeploy.
-4. **Feedback via ntfy** (free tier, no account, no backend): save the secret
-   topic to `~/.config/actually-free/ntfy-topic` on the build machine (one
-   line, no quotes), or set the `AF_NTFY_TOPIC` env var, then regenerate.
-   `generate.py` XOR-obfuscates the topic with a fresh random key on every
-   build — it never appears in page source as plaintext. Subscribe to the
-   topic in the ntfy app (Android) or at ntfy.sh to receive the reports;
-   the free tier keeps messages ~12 hours. Without a topic, the feedback
-   forms are replaced by a "not available yet" notice.
+4. **Feedback** goes to the shared msg service (msg.certifiable.media) —
+   no setup needed on the build machine. New reports land in the inbox at
+   https://msg.certifiable.media and notify Derick.
 
 ## Corpus rules (baked into generate.py)
 
