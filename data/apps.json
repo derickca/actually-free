@@ -39,6 +39,48 @@
   "sibling_package": null
  },
  {
+  "name": "2048",
+  "package": "2048.windows",
+  "slug": "2048-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Slide numbered tiles on a grid to combine them; the goal is to reach the 2048 tile.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/gabrielecirulli/2048",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "2048 Open Fun Game",
   "package": "org.andstatus.game2048",
   "slug": "org-andstatus-game2048",
@@ -107,6 +149,48 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "4st Attack",
+  "package": "4st.attack.windows",
+  "slug": "4st-attack-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Falling-block puzzle game in the Tetris style.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -438,6 +522,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "ADR",
+  "package": "adr.windows",
+  "slug": "adr-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Portable build of the text adventure A Dark Room; explore, gather and survive.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/news/2017-06-08--a-dark-room-portable-1.4-released",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -1478,6 +1604,53 @@
   "sibling_package": null
  },
  {
+  "name": "Armagetron Advanced",
+  "package": "armagetron.advanced.windows",
+  "slug": "armagetron-advanced-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Multiplayer lightcycle game where you trap opponents with the walls of your cycle.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.armagetronad.org/",
+   "alternatives": [
+    {
+     "label": "SourceForge",
+     "url": "https://sourceforge.Net/projects/armagetronad/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Arrow Escape",
   "package": "com.sidhant.arrowescape",
   "slug": "com-sidhant-arrowescape",
@@ -1562,6 +1735,48 @@
   "sibling_package": null
  },
  {
+  "name": "AssaultCube",
+  "package": "assaultcube.windows",
+  "slug": "assaultcube-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Team-based multiplayer first-person shooter built on the Cube engine.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://assault.cubers.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Asteroid's Revenge",
   "package": "com.game.asteroids_revenge",
   "slug": "com-game-asteroids-revenge",
@@ -1631,6 +1846,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Atomic Tanks",
+  "package": "atomic.tanks.windows",
+  "slug": "atomic-tanks-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "2D artillery game where you aim tanks and blast opponents across deformable terrain.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://atanks.sourceforge.net/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/games/atomic_tanks_portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -2346,6 +2608,48 @@
   "sibling_package": null
  },
  {
+  "name": "Battle for Wesnoth",
+  "package": "battle.for.wesnoth.windows",
+  "slug": "battle-for-wesnoth-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Turn-based strategy game with a high fantasy theme and a long single-player campaign.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "BeatBridge: Bluetooth Music",
   "package": "com.beatbridge",
   "slug": "com-beatbridge",
@@ -2387,6 +2691,90 @@
   "sibling_package": null
  },
  {
+  "name": "Beret",
+  "package": "beret.windows",
+  "slug": "beret-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Puzzle game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Betterbird",
+  "package": "betterbird.windows",
+  "slug": "betterbird-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Thunderbird fork with more fixes and features.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.betterbird.eu/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "BetterCounter",
   "package": "org.kde.bettercounter",
   "slug": "org-kde-bettercounter",
@@ -2415,6 +2803,53 @@
   "rating": 5.0,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Big Solitaires 3D",
+  "package": "big.solitaires.3d.windows",
+  "slug": "big-solitaires-3d-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Collection of 40 solitaire games rendered in OpenGL 3D.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/big3dsol/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2012-06-18--big-solitaires-3d-portable-1.4-rev-2-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -3125,6 +3560,53 @@
   "sibling_package": null
  },
  {
+  "name": "Brutal Chess",
+  "package": "brutal.chess.windows",
+  "slug": "brutal-chess-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "3D chess game with OpenGL graphics, particle effects and AI opponents of varying difficulty, inspired by Battle Chess.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/brutalchess/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2018-08-20--brutal-chess-portable-0.5.2.2-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Bubble",
   "package": "org.woheller69.level",
   "slug": "org-woheller69-level",
@@ -3315,6 +3797,48 @@
   },
   "rating": 4.9,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Canabalt",
+  "package": "canabalt.windows",
+  "slug": "canabalt-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "One-button endless runner where you jump across rooftops as buildings collapse.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -3849,6 +4373,48 @@
   },
   "downloads": {
    "official": "https://www.chromium.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Chromium B.S.U.",
+  "package": "chromium.b.s.u.windows",
+  "slug": "chromium-b-s-u-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Top-down scrolling space shooter; shoot waves of enemy ships.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
    "alternatives": []
   },
   "rating": null,
@@ -5058,6 +5624,48 @@
   "sibling_package": null
  },
  {
+  "name": "Cube",
+  "package": "cube.windows",
+  "slug": "cube-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Early 3D multiplayer first-person shooter that inspired Sauerbraten.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://cubeengine.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Cuppa - Tea Timer",
   "package": "com.nathanatos.Cuppa",
   "slug": "com-nathanatos-cuppa",
@@ -5423,6 +6031,53 @@
   "sibling_package": null
  },
  {
+  "name": "Dave Gnukem",
+  "package": "dave.gnukem.windows",
+  "slug": "dave-gnukem-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Retro-style 2D platform shooter inspired by Duke Nukem.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://djoffe.com/gnukem/",
+   "alternatives": [
+    {
+     "label": "winget",
+     "url": "http://winget.run/pkg/DavidJoffe/DaveGnukem"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DaVinci Resolve",
   "package": "davinci.resolve.windows",
   "slug": "davinci-resolve-windows",
@@ -5713,6 +6368,55 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Delta Chat Desktop",
+  "package": "delta.chat.desktop.windows",
+  "slug": "delta-chat-desktop-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Chat over email: messages arrive as ordinary emails.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://delta.chat",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/deltachat/deltachat-desktop"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -6265,6 +6969,90 @@
   "sibling_package": null
  },
  {
+  "name": "Dolphin",
+  "package": "dolphin.windows",
+  "slug": "dolphin-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "GameCube and Wii emulator for playing games on modern PCs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://dolphin-emu.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Domino-Chain",
+  "package": "domino.chain.windows",
+  "slug": "domino-chain-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Arrange domino tiles so that toppling one knocks over the whole chain.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Don't Panic!",
   "package": "don.t.panic.windows",
   "slug": "don-t-panic-windows",
@@ -6421,6 +7209,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "DOSBox",
+  "package": "dosbox.windows",
+  "slug": "dosbox-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "MS-DOS emulator for running classic DOS games and programs on modern systems.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.dosbox.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -7028,6 +7858,48 @@
   "sibling_package": null
  },
  {
+  "name": "Ekiga",
+  "package": "ekiga.windows",
+  "slug": "ekiga-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Phone",
+  "description": "Voice and video over IP client for SIP and H.323 calls.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.ekiga.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Element",
   "package": "im.vector.app",
   "slug": "im-vector-app",
@@ -7062,6 +7934,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Element Desktop",
+  "package": "element.desktop.windows",
+  "slug": "element-desktop-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Client for the Matrix federated chat network.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://element.io",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -10466,6 +11382,48 @@
   "sibling_package": null
  },
  {
+  "name": "Freeciv",
+  "package": "freeciv.windows",
+  "slug": "freeciv-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Civilization-style turn-based strategy game about building an empire.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "FreeCommander",
   "package": "freecommander.windows",
   "slug": "freecommander-windows",
@@ -11046,6 +12004,48 @@
   "sibling_package": null
  },
  {
+  "name": "Get Sudoku",
+  "package": "get.sudoku.windows",
+  "slug": "get-sudoku-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Sudoku puzzle game with a board generator and difficulty levels.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Gitalchemy",
   "package": "com.thomas.pedot.gitlalchemy",
   "slug": "com-thomas-pedot-gitlalchemy",
@@ -11364,6 +12364,48 @@
      "url": "https://github.com/xiaoyifang/goldendict-ng"
     }
    ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Golly",
+  "package": "golly.windows",
+  "slug": "golly-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Educational",
+  "description": "Cellular automata simulator for Conway's Game of Life and other rulesets.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12458,6 +13500,48 @@
   "sibling_package": null
  },
  {
+  "name": "Hedgewars",
+  "package": "hedgewars.windows",
+  "slug": "hedgewars-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Turn-based artillery strategy where hedgehogs battle with cartoon weapons.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://hedgewars.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "HeliBoard",
   "package": "helium314.keyboard",
   "slug": "helium314-keyboard",
@@ -12499,6 +13583,50 @@
   "sibling_package": null
  },
  {
+  "name": "Heroic Games Launcher",
+  "package": "heroic.games.launcher.windows",
+  "slug": "heroic-games-launcher-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "Open-source launcher for games from the Epic, GOG and Amazon libraries.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://heroicgameslauncher.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Hevy",
   "package": "com.hevy",
   "slug": "com-hevy",
@@ -12535,6 +13663,90 @@
   "tags": [
    "free enough"
   ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Hex-a-Hop",
+  "package": "hex.a.hop.windows",
+  "slug": "hex-a-hop-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Hop a ball across hexagonal tiles without running out of ground.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "HexChat",
+  "package": "hexchat.windows",
+  "slug": "hexchat-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "IRC chat client with tabbed channels and plugin support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/hexchat/hexchat",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -12783,6 +13995,90 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "I Have No Tomatoes",
+  "package": "i.have.no.tomatoes.windows",
+  "slug": "i-have-no-tomatoes-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Action puzzle game about blasting tomatoes and other vegetables.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://tomatoes.sourceforge.net",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "IceBreaker",
+  "package": "icebreaker.windows",
+  "slug": "icebreaker-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Catch falling penguins by drawing melting lines in the ice.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -13211,6 +14507,48 @@
   "sibling_package": null
  },
  {
+  "name": "Isotoxin",
+  "package": "isotoxin.windows",
+  "slug": "isotoxin-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Simple client for the Tox network and XMPP chat.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "IYPS",
   "package": "com.iyps",
   "slug": "com-iyps",
@@ -13602,6 +14940,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Jooleem",
+  "package": "jooleem.windows",
+  "slug": "jooleem-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Tile-based puzzle game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -14455,6 +15835,48 @@
   "sibling_package": null
  },
  {
+  "name": "Kobo Deluxe",
+  "package": "kobo.deluxe.windows",
+  "slug": "kobo-deluxe-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Top-down space shooter with fast arcade action and upgradeable ships.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://olofson.net/kobodl/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Kodi",
   "package": "org.xbmc.kodi",
   "slug": "org-xbmc-kodi",
@@ -14702,6 +16124,48 @@
   "sibling_package": null
  },
  {
+  "name": "KVIrc",
+  "package": "kvirc.windows",
+  "slug": "kvirc-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Scriptable IRC client with a skinnable interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Lagrange",
   "package": "lagrange.windows",
   "slug": "lagrange-windows",
@@ -14725,6 +16189,48 @@
   },
   "downloads": {
    "official": "https://gmi.skyjake.fi/lagrange",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "LAN Messenger",
+  "package": "lan.messenger.windows",
+  "slug": "lan-messenger-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Peer-to-peer messenger for chat on a local network without a server.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
    "alternatives": []
   },
   "rating": null,
@@ -14771,6 +16277,48 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "LBreakout2",
+  "package": "lbreakout2.windows",
+  "slug": "lbreakout2-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Breakout-style brick breaker with many levels and power-ups.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://lgames.sourceforge.net/index.php?project=LBreakout2",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -15575,6 +17123,48 @@
   "sibling_package": null
  },
  {
+  "name": "LMarbles",
+  "package": "lmarbles.windows",
+  "slug": "lmarbles-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Clear each level by removing groups of matching marbles.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "LocalSend",
   "package": "org.localsend.localsend_app",
   "slug": "org-localsend-localsend-app",
@@ -15864,6 +17454,53 @@
   "rating": "4.16",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Lucas Chess",
+  "package": "lucas.chess.windows",
+  "slug": "lucas-chess-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Chess training suite and GUI. Play and train against many built-in engines, do tactics, openings and endgame exercises, and track progress.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://lucaschess.pythonanywhere.com/",
+   "alternatives": [
+    {
+     "label": "SourceForge",
+     "url": "http://sourceforge.net/projects/lucaschessr/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -16248,6 +17885,48 @@
   "sibling_package": null
  },
  {
+  "name": "MahJongg Solitaire 3D",
+  "package": "mahjongg.solitaire.3d.windows",
+  "slug": "mahjongg-solitaire-3d-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "3D mahjong solitaire: match pairs of tiles to clear the board.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Maid",
   "package": "com.danemadsen.maid",
   "slug": "com-danemadsen-maid",
@@ -16318,6 +17997,90 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Mana Plus",
+  "package": "mana.plus.windows",
+  "slug": "mana-plus-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "RPG",
+  "description": "2D MMORPG client for The Mana World, set in a large persistent fantasy world.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://manaplus.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "ManiaDrive",
+  "package": "maniadrive.windows",
+  "slug": "maniadrive-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "TrackMania-style stunt racing game with track building.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -17108,6 +18871,48 @@
   "sibling_package": null
  },
  {
+  "name": "MicroSIP",
+  "package": "microsip.windows",
+  "slug": "microsip-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Phone",
+  "description": "Lightweight SIP softphone for voice and video calls over the internet.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.microsip.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Microsoft Launcher",
   "package": "com.microsoft.launcher",
   "slug": "com-microsoft-launcher",
@@ -17428,6 +19233,48 @@
   "sibling_package": null
  },
  {
+  "name": "Mines-Perfect",
+  "package": "mines.perfect.windows",
+  "slug": "mines-perfect-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Minesweeper-style logic game where you flag hidden mines.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Minesweeper",
   "package": "io.github.johnathan.minesweeper",
   "slug": "io-github-johnathan-minesweeper",
@@ -17497,6 +19344,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Miranda NG",
+  "package": "miranda.ng.windows",
+  "slug": "miranda-ng-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Plugin-based instant messenger supporting many protocols.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://miranda-ng.org",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/miranda-ng/miranda-ng"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -17802,6 +19696,92 @@
   "sibling_package": null
  },
  {
+  "name": "Monster 2",
+  "package": "monster.2.windows",
+  "slug": "monster-2-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "RPG",
+  "description": "Turn-based monster-battling role-playing game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The author sells prebuilt copies but the git repository stays open, so the game remains free to build and play.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Moonlight",
+  "package": "moonlight.windows",
+  "slug": "moonlight-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "Stream games from a PC to other devices.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://moonlight-stream.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Moonlight Game Streaming",
   "package": "com.limelight",
   "slug": "com-limelight",
@@ -17968,6 +19948,48 @@
   "sibling_package": null
  },
  {
+  "name": "Mozilla Thunderbird",
+  "package": "mozilla.thunderbird.windows",
+  "slug": "mozilla-thunderbird-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Email, news, calendar and chat client from the Mozilla project.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.thunderbird.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "mpv-android",
   "package": "is.xyz.mpv",
   "slug": "is-xyz-mpv",
@@ -18036,6 +20058,48 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Mumble",
+  "package": "mumble.windows",
+  "slug": "mumble-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Low-latency voice chat for groups and gaming communities.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.mumble.info/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -18692,6 +20756,137 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (NetGuard - no-root firewall ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "NetHack",
+  "package": "nethack.windows",
+  "slug": "nethack-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "RPG",
+  "description": "Classic roguelike dungeon crawler with permadeath and deep item interactions.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "netPanzer",
+  "package": "netpanzer.windows",
+  "slug": "netpanzer-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Online multiplayer real-time tactical tank combat game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Neverball",
+  "package": "neverball.windows",
+  "slug": "neverball-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Tilt the floor to roll a ball through 3D obstacle courses and collect enough coins to open the goal. Bundles the Neverputt mini golf game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://neverball.org/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/games/neverball_portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -20476,7 +22671,53 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "openttd-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "OpenTTD",
+  "package": "openttd.windows",
+  "slug": "openttd-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Open-source remake of Transport Tycoon Deluxe; build transport networks and run a company.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "org.openttd.fdroid",
+  "sibling_slug": "org-openttd-fdroid",
+  "sibling_platform": "android"
  },
  {
   "name": "Opera",
@@ -20979,6 +23220,48 @@
   "sibling_package": null
  },
  {
+  "name": "Pathological",
+  "package": "pathological.windows",
+  "slug": "pathological-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Puzzle game about guiding balls through a maze into matching holes.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "PCAPdroid",
   "package": "com.emanuelef.remote_capture",
   "slug": "com-emanuelef-remote-capture",
@@ -21017,6 +23300,53 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (PCAPdroid - network monitor ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "PChat",
+  "package": "pchat.windows",
+  "slug": "pchat-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Small portable IRC client.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "Portable Freeware",
+     "url": "https://www.portablefreeware.com/index.php?id=1731"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -21513,6 +23843,90 @@
   "sibling_package": null
  },
  {
+  "name": "Pidgin",
+  "package": "pidgin.windows",
+  "slug": "pidgin-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Multi-protocol instant messenger for chat and file transfer.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pidgin.im/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Pingus",
+  "package": "pingus.windows",
+  "slug": "pingus-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Guide penguins safely to the exit using skills in the Lemmings style.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Pixel Wheels",
   "package": "com.agateau.tinywheels.android",
   "slug": "com-agateau-tinywheels-android",
@@ -21783,6 +24197,48 @@
   },
   "rating": 4.5,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Playnite",
+  "package": "playnite.windows",
+  "slug": "playnite-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "Game library manager that unifies games from multiple launchers in one interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://playnite.link/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -22164,6 +24620,53 @@
   "sibling_package": null
  },
  {
+  "name": "PokerTH",
+  "package": "pokerth.windows",
+  "slug": "pokerth-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Free open-source Texas Hold'em. Play offline against computer opponents, on a LAN or over the internet, plus a browser-based web client. All chips are play money.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.pokerth.net",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/pokerth/pokerth"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Pomodorot",
   "package": "app.pomodorot",
   "slug": "app-pomodorot",
@@ -22192,6 +24695,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PopMan",
+  "package": "popman.windows",
+  "slug": "popman-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Small mail checker that notifies you of new mail in your POP3 inbox.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://ch-software.de/popman/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -22794,6 +25339,53 @@
   "sibling_package": null
  },
  {
+  "name": "Project Invincible",
+  "package": "project.invincible.windows",
+  "slug": "project-invincible-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "3D chess for 0, 1 or 2 players with a configurable AI and animated 3D graphics.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/project-invincible/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2013-01-06--project-invincible-portable-2.02-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Proton Pass",
   "package": "proton.android.pass",
   "slug": "proton-android-pass",
@@ -22938,6 +25530,48 @@
   },
   "downloads": {
    "official": "https://putty.software/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Puzzle Collection",
+  "package": "puzzle.collection.windows",
+  "slug": "puzzle-collection-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Collection of dozens of single-player logic puzzles by Simon Tatham.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
    "alternatives": []
   },
   "rating": null,
@@ -23445,6 +26079,263 @@
   },
   "rating": 4.9,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "qTox",
+  "package": "qtox.windows",
+  "slug": "qtox-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Desktop client for the Tox messaging network.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/qTox/qTox",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Quick Blackjack",
+  "package": "quick.blackjack.windows",
+  "slug": "quick-blackjack-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Practice blackjack against the house with on-screen chips; keeps track of your winnings.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wesleysteiner.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Quick Bridge",
+  "package": "quick.bridge.windows",
+  "slug": "quick-bridge-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Contract bridge game where you play the North and South hands while the computer plays East and West.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wesleysteiner.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Quick Cribbage",
+  "package": "quick.cribbage.windows",
+  "slug": "quick-cribbage-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "One-on-one cribbage against the computer with on-screen crib board scoring; teaches counting by displaying points.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wesleysteiner.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Quick Poker",
+  "package": "quick.poker.windows",
+  "slug": "quick-poker-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Poker game against five computer-generated players in pot-limit games with several variations.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wesleysteiner.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Quick Solitaire",
+  "package": "quick.solitaire.windows",
+  "slug": "quick-solitaire-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Solitaire collection including Klondike, Pyramid, Golf, Gaps, Spider and Yukon with drag-and-drop play.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wesleysteiner.com",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/games/quick_solitaire_portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -24496,6 +27387,99 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
+  "sibling_package": null,
+  "sibling_slug": "retroarch-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "RetroArch",
+  "package": "retroarch.windows",
+  "slug": "retroarch-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "Frontend for emulators and game engines with unified controls and shaders.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.retroarch.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "com.retroarch",
+  "sibling_slug": "com-retroarch",
+  "sibling_platform": "android"
+ },
+ {
+  "name": "RetroShare",
+  "package": "retroshare.windows",
+  "slug": "retroshare-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Friend-to-friend network for encrypted messaging, forums and file sharing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://retroshare.cc/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/node/66914"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -24569,6 +27553,48 @@
      "url": "https://github.com/katahiromz/RisohEditor"
     }
    ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Rocks'n'Diamonds",
+  "package": "rocks.n.diamonds.windows",
+  "slug": "rocks-n-diamonds-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Scrolling tile-based game combining Boulder Dash, Emerald Mine, Supaplex and Sokoban. Includes a level editor and tens of thousands of community levels.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.artsoft.org/rocksndiamonds/",
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -25172,6 +28198,48 @@
   "sibling_package": null
  },
  {
+  "name": "Sauerbraten",
+  "package": "sauerbraten.windows",
+  "slug": "sauerbraten-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Multiplayer and single-player first-person shooter with in-game level editing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.sauerbraten.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Sayboard",
   "package": "com.elishaazaria.sayboard",
   "slug": "com-elishaazaria-sayboard",
@@ -25323,6 +28391,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Scorched 3D",
+  "package": "scorched.3d.windows",
+  "slug": "scorched-3d-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "3D turn-based artillery game where tanks blast each other across destructible terrain, with single player, LAN and internet play.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.scorched3d.co.uk/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -25668,6 +28778,48 @@
   "sibling_package": null
  },
  {
+  "name": "Session",
+  "package": "session.windows",
+  "slug": "session-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Private messenger that needs no phone number; messages route through a decentralized network.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://getsession.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "ShareX",
   "package": "sharex.windows",
   "slug": "sharex-windows",
@@ -25957,6 +29109,50 @@
   "sibling_package": null
  },
  {
+  "name": "Signal Desktop",
+  "package": "signal.desktop.windows",
+  "slug": "signal-desktop-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Desktop client for the Signal encrypted messenger; pairs with your phone.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://signal.org/download/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "SilverDict",
   "package": "com.gmail.blandilyte.silverdict",
   "slug": "com-gmail-blandilyte-silverdict",
@@ -26117,6 +29313,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Simple Sudoku",
+  "package": "simple.sudoku.windows",
+  "slug": "simple-sudoku-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Sudoku puzzle game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -26872,6 +30112,48 @@
   "sibling_package": null
  },
  {
+  "name": "Stella",
+  "package": "stella.windows",
+  "slug": "stella-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "Multi-platform Atari 2600 emulator; plays Atari 2600 games and homebrew ROMs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://stella-emu.github.io",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Stepsy: Step Counter",
   "package": "com.nvllz.stepsy",
   "slug": "com-nvllz-stepsy",
@@ -27158,7 +30440,53 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "sudoku-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "Sudoku",
+  "package": "sudoku.windows",
+  "slug": "sudoku-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Classic Sudoku grid game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "com.likhithpraveenk.sudoku",
+  "sibling_slug": "com-likhithpraveenk-sudoku",
+  "sibling_platform": "android"
  },
  {
   "name": "Sudoku You",
@@ -27330,6 +30658,48 @@
   "sibling_package": null
  },
  {
+  "name": "SuperTux",
+  "package": "supertux.windows",
+  "slug": "supertux-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "2D platformer where you play Tux, the Linux mascot, rescuing Penny across multiple worlds. Includes a level editor.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://supertux.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "SuperTuxKart",
   "package": "org.supertuxkart.stk",
   "slug": "org-supertuxkart-stk",
@@ -27368,7 +30738,53 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "supertuxkart-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "SuperTuxKart",
+  "package": "supertuxkart.windows",
+  "slug": "supertuxkart-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "3D kart racing game with a story mode and multiplayer.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "org.supertuxkart.stk",
+  "sibling_slug": "org-supertuxkart-stk",
+  "sibling_platform": "android"
  },
  {
   "name": "SuperX Video Downloader",
@@ -27542,6 +30958,48 @@
   "sibling_package": null
  },
  {
+  "name": "Sylpheed",
+  "package": "sylpheed.windows",
+  "slug": "sylpheed-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Lightweight email and news client.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sylpheed.sraoss.jp",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Syncthing",
   "package": "syncthing.windows",
   "slug": "syncthing-windows",
@@ -27650,6 +31108,48 @@
   },
   "downloads": {
    "official": "https://github.com/winsiderss/systeminformer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "T^3",
+  "package": "t.3.windows",
+  "slug": "t-3-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Small tile puzzle game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://sourceforge.net/projects/t-3/",
    "alternatives": []
   },
   "rating": null,
@@ -28003,6 +31503,50 @@
   "sibling_package": null
  },
  {
+  "name": "Telegram Desktop",
+  "package": "telegram.desktop.windows",
+  "slug": "telegram-desktop-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Desktop client for the Telegram messenger.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://telegram.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Termux",
   "package": "com.termux",
   "slug": "com-termux",
@@ -28179,6 +31723,48 @@
   "sibling_package": null
  },
  {
+  "name": "The Legend of Edgar",
+  "package": "the.legend.of.edgar.windows",
+  "slug": "the-legend-of-edgar-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Retro-style platform adventure game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.parallelrealities.co.uk/games/edgar/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "The One App",
   "package": "io.theoneapp",
   "slug": "io-theoneapp",
@@ -28303,6 +31889,48 @@
   "sibling_package": null
  },
  {
+  "name": "Tick5",
+  "package": "tick5.windows",
+  "slug": "tick5-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Tic-tac-toe variant played on a 5x5 board.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "TickTick",
   "package": "com.ticktick.task",
   "slug": "com-ticktick-task",
@@ -28383,6 +32011,48 @@
   "tags": [
    "personal use"
   ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Tile World",
+  "package": "tile.world.windows",
+  "slug": "tile-world-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Tile puzzle game compatible with Chip's Challenge levels.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -29085,6 +32755,48 @@
   "sibling_package": null
  },
  {
+  "name": "Twin Distress",
+  "package": "twin.distress.windows",
+  "slug": "twin-distress-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Cooperative puzzle game for two players sharing one screen.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "TyperTask",
   "package": "typertask.windows",
   "slug": "typertask-windows",
@@ -29566,6 +33278,48 @@
   "rating": 4.4,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "USB Sudoku",
+  "package": "usb.sudoku.windows",
+  "slug": "usb-sudoku-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Portable Sudoku game that runs from a USB stick.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -30413,6 +34167,95 @@
   "sibling_package": null
  },
  {
+  "name": "WarMUX",
+  "package": "warmux.windows",
+  "slug": "warmux-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Turn-based artillery game in the Worms style where teams of open-source mascots blast each other.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "FSF Free Software Directory",
+     "url": "https://directory.fsf.org/wiki/WarMUX"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Warzone 2100",
+  "package": "warzone.2100.windows",
+  "slug": "warzone-2100-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Strategy",
+  "description": "Real-time strategy game about commanding units and designing your own vehicles.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Water Sort",
   "package": "com.sidhant.watersort",
   "slug": "com-sidhant-watersort",
@@ -30536,6 +34379,48 @@
   "sibling_package": null
  },
  {
+  "name": "WAtomic",
+  "package": "watomic.windows",
+  "slug": "watomic-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Puzzle game about building molecules from atoms on a grid.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "WebLibre: Private Browser",
   "package": "eu.weblibre.gecko",
   "slug": "eu-weblibre-gecko",
@@ -30570,6 +34455,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Whalebird",
+  "package": "whalebird.windows",
+  "slug": "whalebird-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Social",
+  "description": "Fediverse client for Mastodon and other compatible networks.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://whalebird.social",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -30809,6 +34738,48 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WinBoard Chess",
+  "package": "winboard.chess.windows",
+  "slug": "winboard-chess-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Board",
+  "description": "Chess GUI for Windows. Play against the bundled GNU Chess engine or on Internet chess servers, and load or save PGN games.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.gnu.org/software/xboard/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -31812,6 +35783,95 @@
   "sibling_package": null
  },
  {
+  "name": "Wizznic",
+  "package": "wizznic.windows",
+  "slug": "wizznic-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Match-3 style puzzle game.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "X-Moto",
+  "package": "x.moto.windows",
+  "slug": "x-moto-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Challenging 2D motocross platformer where physics matter. Collect strawberries and touch the flower to finish; thousands of user-made levels.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://xmoto.tuxfamily.org",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2023-03-23--x-moto-portable-0.6.2-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "XAMPP",
   "package": "xampp.windows",
   "slug": "xampp-windows",
@@ -31983,6 +36043,48 @@
   "sibling_package": null
  },
  {
+  "name": "Xonotic",
+  "package": "xonotic.windows",
+  "slug": "xonotic-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Arcade",
+  "description": "Fast multiplayer arena first-person shooter with a large weapon set.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://xonotic.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Xray",
   "package": "io.github.saeeddev94.xray",
   "slug": "io-github-saeeddev94-xray",
@@ -32052,6 +36154,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Xye",
+  "package": "xye.windows",
+  "slug": "xye-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Tile puzzle game where you guide a green sprite through levels using keys and objects.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -32255,6 +36399,48 @@
   },
   "downloads": {
    "official": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zaz",
+  "package": "zaz.windows",
+  "slug": "zaz-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Puzzle",
+  "description": "Zuma-style marble puzzle; remove incoming marbles by arranging same-color triplets or quartets. 23 levels.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://zaz.sourceforge.net/",
    "alternatives": []
   },
   "rating": null,
@@ -32536,6 +36722,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zulip",
+  "package": "zulip.windows",
+  "slug": "zulip-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Threaded team chat client for workplaces and communities.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://zulip.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null

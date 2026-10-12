@@ -1,5 +1,43 @@
 [
  {
+  "name": "2048",
+  "package": "2048.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Slide numbered tiles on a grid to combine them; the goal is to reach the 2048 tile.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/gabrielecirulli/2048",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License MIT (open source). Official repo URL is well documented but comes from the project record rather than the verbatim Full URLs list."
+ },
+ {
+  "name": "4st Attack",
+  "package": "4st.attack.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Falling-block puzzle game in the Tetris style.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "7+ Taskbar Tweaker",
   "package": "7.taskbar.tweaker.windows",
   "platform": "windows",
@@ -60,6 +98,25 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: the standalone project's own site could not be verified; official_url is the PortableApps entry (third party). PortableApps lists App License: Open Source (GPL) and release 4.2.4 (2013-01-05). URL note: original developer site is gone; PortableApps.com (co-publisher, GPL source linked) is the maintained distribution and serves as the primary download."
+ },
+ {
+  "name": "ADR",
+  "package": "adr.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Portable build of the text adventure A Dark Room; explore, gather and survive.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/news/2017-06-08--a-dark-room-portable-1.4-released",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Row is the PortableApps launcher for the open-source A Dark Room game. Code is MPL-2.0. No separate upstream download page found for this launcher build."
  },
  {
   "name": "AkelPad",
@@ -176,6 +233,30 @@
   "notes": "Free for personal use. Could not verify official download URL in this pass."
  },
  {
+  "name": "Armagetron Advanced",
+  "package": "armagetron.advanced.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Multiplayer lightcycle game where you trap opponents with the walls of your cycle.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.armagetronad.org/",
+  "alt_downloads": [
+   {
+    "label": "SourceForge",
+    "url": "https://sourceforge.Net/projects/armagetronad/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2+ (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "Artha",
   "package": "artha.windows",
   "platform": "windows",
@@ -193,6 +274,49 @@
    "needs_account": false
   },
   "notes": "GPL-2 open source. Development appears stalled (latest release 1.0.3), but the Windows build works offline and passes the bar."
+ },
+ {
+  "name": "AssaultCube",
+  "package": "assaultcube.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Team-based multiplayer first-person shooter built on the Cube engine.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://assault.cubers.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "License is NOT open source: the official license page describes AssaultCube as freeware under a custom source-available license with a non-commercial restriction. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Atomic Tanks",
+  "package": "atomic.tanks.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "2D artillery game where you aim tanks and blast opponents across deformable terrain.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://atanks.sourceforge.net/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/games/atomic_tanks_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "Attribute Changer",
@@ -314,6 +438,87 @@
   "notes": "Donations are accepted; the separate paid product Cross+A is unrelated to the free Balabolka."
  },
  {
+  "name": "Battle for Wesnoth",
+  "package": "battle.for.wesnoth.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Turn-based strategy game with a high fantasy theme and a long single-player campaign.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "Beret",
+  "package": "beret.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Puzzle game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License confirmed as LGPL (open source) via a PortableApps forum post and a software directory listing. UNCERTAIN: could not verify an official URL for this game."
+ },
+ {
+  "name": "Betterbird",
+  "package": "betterbird.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Thunderbird fork with more fixes and features.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.betterbird.eu/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License MPL-2.0 (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Big Solitaires 3D",
+  "package": "big.solitaires.3d.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Collection of 40 solitaire games rendered in OpenGL 3D.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/big3dsol/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2012-06-18--big-solitaires-3d-portable-1.4-rev-2-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL 2.0 (open source) per a software directory listing. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "Bitwarden Desktop",
   "package": "bitwarden.desktop.windows",
   "platform": "windows",
@@ -409,6 +614,30 @@
   "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
  },
  {
+  "name": "Brutal Chess",
+  "package": "brutal.chess.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "3D chess game with OpenGL graphics, particle effects and AI opponents of varying difficulty, inspired by Battle Chess.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/brutalchess/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2018-08-20--brutal-chess-portable-0.5.2.2-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). Discontinued; the last release was an alpha. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "BYOND",
   "package": "byond.windows",
   "platform": "windows",
@@ -426,6 +655,25 @@
    "needs_account": false
   },
   "notes": "PortableApps release notes: freeware for personal and business use. Proprietary, not open source. No trial or upsell inside the client. Games/Players basket kept: it is primarily a game client and community."
+ },
+ {
+  "name": "Canabalt",
+  "package": "canabalt.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "One-button endless runner where you jump across rooftops as buildings collapse.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Game engine is MIT but the developer states the game art and game-specific code are proprietary, so freeware is the accurate label. UNCERTAIN: could not verify an official download URL."
  },
  {
   "name": "Capture2Text",
@@ -507,6 +755,25 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: official site URL — sources cite both giuspen.net/cherrytree and giuspen.com/cherrytree; used the most recent citation (giuspen.net). GitHub repo giuspen/cherrytree confirms open source."
+ },
+ {
+  "name": "Chromium B.S.U.",
+  "package": "chromium.b.s.u.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Top-down scrolling space shooter; shoot waves of enemy ships.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License is the Clarified Artistic License (also described as MIT) per Wikipedia. UNCERTAIN: could not verify an official download URL."
  },
  {
   "name": "Chromium",
@@ -843,6 +1110,25 @@
   "notes": "Submitting scores to the optional CrystalMarkDB comparison site requires a free account; the benchmark itself needs none."
  },
  {
+  "name": "Cube",
+  "package": "cube.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Early 3D multiplayer first-person shooter that inspired Sauerbraten.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://cubeengine.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License is a modified zlib license (open source). Last upstream release was in 2005 but the game still runs. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "Daphne",
   "package": "daphne.windows",
   "platform": "windows",
@@ -879,6 +1165,30 @@
    "needs_account": false
   },
   "notes": "Freeware by Db Software Laboratory (etl-tools.com); last release around 2020. Could not verify official download URL in this pass."
+ },
+ {
+  "name": "Dave Gnukem",
+  "package": "dave.gnukem.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Retro-style 2D platform shooter inspired by Duke Nukem.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://djoffe.com/gnukem/",
+  "alt_downloads": [
+   {
+    "label": "winget",
+    "url": "http://winget.run/pkg/DavidJoffe/DaveGnukem"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Dual MIT/GPL licensed (open source) per the GitHub readme. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "DaVinci Resolve",
@@ -941,6 +1251,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Delta Chat Desktop",
+  "package": "delta.chat.desktop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Chat over email: messages arrive as ordinary emails.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://delta.chat",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/deltachat/deltachat-desktop"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "License GPL-3.0-or-later (open source). Core use requires an email account. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "DesktopSnowOK",
@@ -1138,6 +1472,44 @@
   "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
  },
  {
+  "name": "Dolphin",
+  "package": "dolphin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "GameCube and Wii emulator for playing games on modern PCs.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://dolphin-emu.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv3+ (open source). official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list."
+ },
+ {
+  "name": "Domino-Chain",
+  "package": "domino.chain.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Arrange domino tiles so that toppling one knocks over the whole chain.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL."
+ },
+ {
   "name": "Don't Panic!",
   "package": "don.t.panic.windows",
   "platform": "windows",
@@ -1179,6 +1551,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "DOSBox",
+  "package": "dosbox.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "MS-DOS emulator for running classic DOS games and programs on modern systems.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.dosbox.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). Vanilla DOSBox stalled at 0.74-3 (2019); the forks DOSBox-X and DOSBox Staging are actively maintained. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "Draw.io",
@@ -1341,6 +1732,44 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: GitHub reports NOASSERTION on the license; the LICENSE file is MIT text with entity exclusions. Treated as open source by press coverage. Also distributed via the Microsoft Store."
+ },
+ {
+  "name": "Ekiga",
+  "package": "ekiga.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Phone",
+  "description": "Voice and video over IP client for SIP and H.323 calls.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.ekiga.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). Dormant project; the last release was around 2016. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Element Desktop",
+  "package": "element.desktop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Client for the Matrix federated chat network.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://element.io",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "UNCERTAIN: Snap and openSUSE list the license as Apache-2.0 while Wikipedia says Element changed to AGPLv3/GPLv3 with a CLA; it is unclear which license current desktop builds carry. Core use requires a Matrix account. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "Emsisoft Emergency Kit",
@@ -1857,6 +2286,25 @@
   "notes": ""
  },
  {
+  "name": "Freeciv",
+  "package": "freeciv.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Civilization-style turn-based strategy game about building an empire.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "FreeCommander",
   "package": "freecommander.windows",
   "platform": "windows",
@@ -1971,6 +2419,25 @@
   "notes": ""
  },
  {
+  "name": "Get Sudoku",
+  "package": "get.sudoku.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Sudoku puzzle game with a board generator and difficulty levels.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "gMKVExtractGUI",
   "package": "gmkvextractgui.windows",
   "platform": "windows",
@@ -2031,6 +2498,25 @@
    "needs_account": false
   },
   "notes": "Original GoldenDict was GPL-3 open source but the project is inactive; active development continues in the GoldenDict-ng fork."
+ },
+ {
+  "name": "Golly",
+  "package": "golly.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Educational",
+  "description": "Cellular automata simulator for Conway's Game of Life and other rulesets.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "Google Chrome",
@@ -2257,6 +2743,82 @@
   "notes": ""
  },
  {
+  "name": "Hedgewars",
+  "package": "hedgewars.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Turn-based artillery strategy where hedgehogs battle with cartoon weapons.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://hedgewars.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Basket corrected from Games/Arcade to Games/Strategy (turn-based artillery). License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Heroic Games Launcher",
+  "package": "heroic.games.launcher.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "Open-source launcher for games from the Epic, GOG and Amazon libraries.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://heroicgameslauncher.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "License GPLv3 (open source). Core use requires your existing Epic, GOG or Amazon accounts. official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list."
+ },
+ {
+  "name": "Hex-a-Hop",
+  "package": "hex.a.hop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Hop a ball across hexagonal tiles without running out of ground.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "HexChat",
+  "package": "hexchat.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "IRC chat client with tabbed channels and plugin support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/hexchat/hexchat",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0 with an OpenSSL exception (open source). Upstream development stopped in February 2024; the client still works and a community fork (ZoiteChat) exists."
+ },
+ {
   "name": "HijackThis",
   "package": "hijackthis.windows",
   "platform": "windows",
@@ -2338,6 +2900,44 @@
   "notes": "Caution: CPUID's site suffered a watering-hole compromise on Apr 9-10 2026 that served trojanized CPU-Z 2.19 and HWMonitor installers; fixed since. Download only from cpuid.com and verify SHA256 checksums. UNCERTAIN: reported as freeware for non-commercial use by abit.ee; CPUID's own license terms were not re-verified in this pass."
  },
  {
+  "name": "I Have No Tomatoes",
+  "package": "i.have.no.tomatoes.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Action puzzle game about blasting tomatoes and other vegetables.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://tomatoes.sourceforge.net",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "The author's 2004 release announcement says the game is under the zlib/libpng license; one software directory lists MIT. official_url from page text (the author's own announcement), not the verbatim Full URLs list."
+ },
+ {
+  "name": "IceBreaker",
+  "package": "icebreaker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Catch falling penguins by drawing melting lines in the ice.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License recorded as open source (GPL) per wide distribution in distro repositories, but UNCERTAIN: could not firmly verify the exact license version or the official site in this pass."
+ },
+ {
   "name": "IniTranslator",
   "package": "initranslator.windows",
   "platform": "windows",
@@ -2417,6 +3017,44 @@
    "needs_account": false
   },
   "notes": "batch hint said oss but no source repository or OSI license statement was found, so it is recorded as freeware."
+ },
+ {
+  "name": "Isotoxin",
+  "package": "isotoxin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Simple client for the Tox network and XMPP chat.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued (last release around 2017) but the Tox and XMPP protocols still work."
+ },
+ {
+  "name": "Jooleem",
+  "package": "jooleem.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Tile-based puzzle game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Code is GPL and assets are CC-BY-NC 2.5, so the assets carry a non-commercial restriction. UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "Joplin",
@@ -2596,6 +3234,25 @@
   "notes": ""
  },
  {
+  "name": "Kobo Deluxe",
+  "package": "kobo.deluxe.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Top-down space shooter with fast arcade action and upgradeable ships.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://olofson.net/kobodl/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Code is GPLv2+ (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "Kudu",
   "package": "kudu.windows",
   "platform": "windows",
@@ -2615,6 +3272,25 @@
   "notes": "Source repo: github.com/AdventDevInc/kudu."
  },
  {
+  "name": "KVIrc",
+  "package": "kvirc.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Scriptable IRC client with a skinnable interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "Lagrange",
   "package": "lagrange.windows",
   "platform": "windows",
@@ -2632,6 +3308,44 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "LAN Messenger",
+  "package": "lan.messenger.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Peer-to-peer messenger for chat on a local network without a server.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued."
+ },
+ {
+  "name": "LBreakout2",
+  "package": "lbreakout2.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Breakout-style brick breaker with many levels and power-ups.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lgames.sourceforge.net/index.php?project=LBreakout2",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "LibreCAD",
@@ -2768,6 +3482,25 @@
   "notes": "Free plan is explicitly personal-use only per listary.com/pro: commercial use requires the $19.95 one-time Pro license. Free tier clears the bar otherwise. Basket corrected Utilities/Look to Utilities/Keyboard: it is a hotkey-driven launcher, not a look/customization tool."
  },
  {
+  "name": "LMarbles",
+  "package": "lmarbles.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Clear each level by removing groups of matching marbles.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL."
+ },
+ {
   "name": "LocalSend",
   "package": "localsend.windows",
   "platform": "windows",
@@ -2813,6 +3546,30 @@
   "sibling": "com.logseq.app"
  },
  {
+  "name": "Lucas Chess",
+  "package": "lucas.chess.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Chess training suite and GUI. Play and train against many built-in engines, do tactics, openings and endgame exercises, and track progress.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lucaschess.pythonanywhere.com/",
+  "alt_downloads": [
+   {
+    "label": "SourceForge",
+    "url": "http://sourceforge.net/projects/lucaschessr/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "The GitHub readme carries GPLv2-or-later terms while SourceForge lists GPLv3; either way open source. official_url from the GitHub readme links, not the verbatim Full URLs list."
+ },
+ {
   "name": "Lynx",
   "package": "lynx.windows",
   "platform": "windows",
@@ -2830,6 +3587,63 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "MahJongg Solitaire 3D",
+  "package": "mahjongg.solitaire.3d.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "3D mahjong solitaire: match pairs of tiles to clear the board.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "Mana Plus",
+  "package": "mana.plus.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "RPG",
+  "description": "2D MMORPG client for The Mana World, set in a large persistent fantasy world.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://manaplus.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). official_url corroborated by the SourceForge mirror README, from page text rather than the verbatim Full URLs list."
+ },
+ {
+  "name": "ManiaDrive",
+  "package": "maniadrive.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "TrackMania-style stunt racing game with track building.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Code is GPL and some media is CC-BY-SA (open source). UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "Maxthon",
@@ -2894,6 +3708,25 @@
   "notes": "License verified earlier as BSD-2 open source; could not verify official download URL in this pass."
  },
  {
+  "name": "MicroSIP",
+  "package": "microsip.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Phone",
+  "description": "Lightweight SIP softphone for voice and video calls over the internet.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.microsip.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). official_url corroborated by the GitHub mirror readme and the AUR upstream URL, from page text rather than the verbatim Full URLs list."
+ },
+ {
   "name": "Microsoft Safety Scanner",
   "package": "microsoft.safety.scanner.windows",
   "platform": "windows",
@@ -2911,6 +3744,49 @@
    "needs_account": false
   },
   "notes": "expires 10 days after download; re-download is free."
+ },
+ {
+  "name": "Mines-Perfect",
+  "package": "mines.perfect.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Minesweeper-style logic game where you flag hidden mines.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "Miranda NG",
+  "package": "miranda.ng.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Plugin-based instant messenger supporting many protocols.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://miranda-ng.org",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/miranda-ng/miranda-ng"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "Money Manager Ex",
@@ -2931,6 +3807,44 @@
   },
   "notes": "",
   "sibling": "com.money.manager.ex"
+ },
+ {
+  "name": "Monster 2",
+  "package": "monster.2.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Games",
+  "subcategory": "RPG",
+  "description": "Turn-based monster-battling role-playing game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "The author sells prebuilt copies but the git repository stays open, so the game remains free to build and play.",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source. UNCERTAIN: could not verify whether the current official binaries are still sold without a free download option, or an official URL."
+ },
+ {
+  "name": "Moonlight",
+  "package": "moonlight.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "Stream games from a PC to other devices.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://moonlight-stream.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). Requires a host PC running Sunshine or NVIDIA GameStream; it streams games you already own. official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list."
  },
  {
   "name": "Mozilla Firefox Developer Edition",
@@ -2969,6 +3883,44 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Mozilla Thunderbird",
+  "package": "mozilla.thunderbird.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Email, news, calendar and chat client from the Mozilla project.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.thunderbird.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License MPL-2.0 (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Mumble",
+  "package": "mumble.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Low-latency voice chat for groups and gaming communities.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.mumble.info/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License BSD-3-Clause (open source) per the mumble.info about page. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "MyPAL",
@@ -3031,6 +3983,68 @@
    "needs_account": false
   },
   "notes": "GPL confirmed by the project and the PortableApps request page. No ads, no paid tier, free for personal and commercial use. Basket Productivity/Office kept: there is no Scan basket and Office is the nearest fit."
+ },
+ {
+  "name": "NetHack",
+  "package": "nethack.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "RPG",
+  "description": "Classic roguelike dungeon crawler with permadeath and deep item interactions.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License is the NetHack General Public License (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "netPanzer",
+  "package": "netpanzer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Online multiplayer real-time tactical tank combat game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0 (open source). UNCERTAIN: the project sites appear defunct, so the official URL could not be verified."
+ },
+ {
+  "name": "Neverball",
+  "package": "neverball.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Tilt the floor to roll a ball through 3D obstacle courses and collect enough coins to open the goal. Bundles the Neverputt mini golf game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://neverball.org/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/games/neverball_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). official_url from the GNU Guix package page text, not the verbatim Full URLs list."
  },
  {
   "name": "Notepad++",
@@ -3267,6 +4281,26 @@
   "notes": "GPL-2.0-or-later open source."
  },
  {
+  "name": "OpenTTD",
+  "package": "openttd.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Open-source remake of Transport Tycoon Deluxe; build transport networks and run a company.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL.",
+  "sibling": "org.openttd.fdroid"
+ },
+ {
   "name": "Opera GX",
   "package": "opera.gx.windows",
   "platform": "windows",
@@ -3346,6 +4380,49 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Pathological",
+  "package": "pathological.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Puzzle game about guiding balls through a maze into matching holes.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "PChat",
+  "package": "pchat.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Small portable IRC client.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "Portable Freeware",
+    "url": "https://www.portablefreeware.com/index.php?id=1731"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). Development stalled since 2012; portablefreeware warns of possible security vulnerabilities. UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "PCI-Z",
@@ -3443,6 +4520,44 @@
   "notes": ""
  },
  {
+  "name": "Pidgin",
+  "package": "pidgin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Multi-protocol instant messenger for chat and file transfer.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pidgin.im/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Pingus",
+  "package": "pingus.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Guide penguins safely to the exit using skills in the Lemmings style.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-3.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "Pixelorama",
   "package": "pixelorama.windows",
   "platform": "windows",
@@ -3460,6 +4575,25 @@
    "needs_account": false
   },
   "notes": "MIT license confirmed on the official GitHub repo (Orama-Interactive/Pixelorama). Fully free, no paid tier. Basket corrected from Media/Photos to Productivity/Design: it is an art creation tool, not a photo manager."
+ },
+ {
+  "name": "Playnite",
+  "package": "playnite.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "Game library manager that unifies games from multiple launchers in one interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://playnite.link/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License MIT (open source). official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list."
  },
  {
   "name": "PNotes.NET",
@@ -3498,6 +4632,49 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "PokerTH",
+  "package": "pokerth.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Free open-source Texas Hold'em. Play offline against computer opponents, on a LAN or over the internet, plus a browser-based web client. All chips are play money.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.pokerth.net",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/pokerth/pokerth"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License AGPLv3 (2011 onward) per the project readme. UNCERTAIN: ranked play on the official network may require a registered nickname; local and LAN games need no account. official_url from the GitHub readme page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "PopMan",
+  "package": "popman.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Small mail checker that notifies you of new mail in your POP3 inbox.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://ch-software.de/popman/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source) per portablefreeware. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "PortableApps.com AppCompactor",
@@ -3714,6 +4891,30 @@
   "notes": ""
  },
  {
+  "name": "Project Invincible",
+  "package": "project.invincible.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "3D chess for 0, 1 or 2 players with a configurable AI and animated 3D graphics.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/project-invincible/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2013-01-06--project-invincible-portable-2.02-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: described as open source by PortableApps and OnWorks but the exact license text could not be verified in this pass. Upstream activity ended around 2013. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "PuTTY",
   "package": "putty.windows",
   "platform": "windows",
@@ -3731,6 +4932,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Puzzle Collection",
+  "package": "puzzle.collection.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Collection of dozens of single-player logic puzzles by Simon Tatham.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License MIT (open source). UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "Q-Dir",
@@ -3846,6 +5066,125 @@
    "needs_account": false
   },
   "notes": "Sync is handled externally (e.g. Nextcloud client); no account required for core features."
+ },
+ {
+  "name": "qTox",
+  "package": "qtox.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Desktop client for the Tox messaging network.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/qTox/qTox",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-3.0 (open source). The repo is archived and the project is unmaintained, but Tox protocol clients still function."
+ },
+ {
+  "name": "Quick Blackjack",
+  "package": "quick.blackjack.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Practice blackjack against the house with on-screen chips; keeps track of your winnings.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wesleysteiner.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware by Wesley Steiner. No ads, in-app purchases or accounts."
+ },
+ {
+  "name": "Quick Bridge",
+  "package": "quick.bridge.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Contract bridge game where you play the North and South hands while the computer plays East and West.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wesleysteiner.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware by Wesley Steiner. No ads, in-app purchases or accounts."
+ },
+ {
+  "name": "Quick Cribbage",
+  "package": "quick.cribbage.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "One-on-one cribbage against the computer with on-screen crib board scoring; teaches counting by displaying points.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wesleysteiner.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware by Wesley Steiner. No ads, in-app purchases or accounts."
+ },
+ {
+  "name": "Quick Poker",
+  "package": "quick.poker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Poker game against five computer-generated players in pot-limit games with several variations.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wesleysteiner.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware by Wesley Steiner. No ads, in-app purchases or accounts."
+ },
+ {
+  "name": "Quick Solitaire",
+  "package": "quick.solitaire.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Solitaire collection including Klondike, Pyramid, Golf, Gaps, Spider and Yukon with drag-and-drop play.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wesleysteiner.com",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/games/quick_solitaire_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware by Wesley Steiner; PortableApps lists it as free for personal and business use, so personal_use is false. No ads, in-app purchases or accounts."
  },
  {
   "name": "QuickMemoryTestOK",
@@ -4105,6 +5444,50 @@
   "notes": "Freeware by Angus Johnson, officially stated as 'no nags, no ads and fully functional'; PortableApps packages it for personal and business use."
  },
  {
+  "name": "RetroArch",
+  "package": "retroarch.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "Frontend for emulators and game engines with unified controls and shaders.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.retroarch.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv3 (open source). official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list.",
+  "sibling": "com.retroarch"
+ },
+ {
+  "name": "RetroShare",
+  "package": "retroshare.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Friend-to-friend network for encrypted messaging, forums and file sharing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://retroshare.cc/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/node/66914"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-3.0 (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "RisohEditor",
   "package": "risoheditor.windows",
   "platform": "windows",
@@ -4127,6 +5510,25 @@
    "needs_account": false
   },
   "notes": "GPL open source, actively maintained (v5.9.4 released December 2025)."
+ },
+ {
+  "name": "Rocks'n'Diamonds",
+  "package": "rocks.n.diamonds.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Scrolling tile-based game combining Boulder Dash, Emerald Mine, Supaplex and Sokoban. Includes a level editor and tens of thousands of community levels.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.artsoft.org/rocksndiamonds/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-only (open source). official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "RSS Guard",
@@ -4225,6 +5627,44 @@
   "notes": ""
  },
  {
+  "name": "Sauerbraten",
+  "package": "sauerbraten.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Multiplayer and single-player first-person shooter with in-game level editing.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.sauerbraten.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Engine code is zlib-licensed but the official site distributes the game as freeware with per-asset licenses and redistribution restrictions, so freeware is the accurate label. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Scorched 3D",
+  "package": "scorched.3d.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "3D turn-based artillery game where tanks blast each other across destructible terrain, with single player, LAN and internet play.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.scorched3d.co.uk/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Basket corrected from Games/Arcade to Games/Strategy (turn-based artillery). License GPL-2.0-or-later (open source). Project inactive since 2014 but the game still runs. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "ScreenToGif",
   "package": "screentogif.windows",
   "platform": "windows",
@@ -4287,6 +5727,25 @@
   "notes": ""
  },
  {
+  "name": "Session",
+  "package": "session.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Private messenger that needs no phone number; messages route through a decentralized network.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getsession.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv3 for the desktop client (open source). UNCERTAIN: the Session Technology Foundation warned of a possible shutdown in April 2026 absent $1M in funding, then announced sufficient resources to continue in June 2026, so future funding is uncertain. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "ShareX",
   "package": "sharex.windows",
   "platform": "windows",
@@ -4328,6 +5787,44 @@
    "needs_account": false
   },
   "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "Signal Desktop",
+  "package": "signal.desktop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Desktop client for the Signal encrypted messenger; pairs with your phone.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://signal.org/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "License AGPL-3.0-only (open source). Core use requires a Signal account tied to a phone number. official_url from the GitHub readme page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Simple Sudoku",
+  "package": "simple.sudoku.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Sudoku puzzle game.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware licensed for private use only, so personal_use is true. UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "SimpleWall",
@@ -4492,6 +5989,25 @@
   "notes": "KC Softwares shut down in Oct 2023 and declared all products EOL, but this local tool needs no online service and remains functional; the official site now shows the termination notice. PortableApps packages the latest 1.9.0.28 with the publisher's permission."
  },
  {
+  "name": "Stella",
+  "package": "stella.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "Multi-platform Atari 2600 emulator; plays Atari 2600 games and homebrew ROMs.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://stella-emu.github.io",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). The project describes itself as DonationWare: donations are encouraged but everything works without donating."
+ },
+ {
   "name": "Stickies",
   "package": "stickies.windows",
   "platform": "windows",
@@ -4535,6 +6051,26 @@
   "notes": ""
  },
  {
+  "name": "Sudoku",
+  "package": "sudoku.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Classic Sudoku grid game.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL.",
+  "sibling": "com.likhithpraveenk.sudoku"
+ },
+ {
   "name": "Supermium",
   "package": "supermium.windows",
   "platform": "windows",
@@ -4559,6 +6095,45 @@
   "notes": "BSD-3-Clause confirmed by Wikipedia; repo at github.com/win32ss/supermium. Active development (stable 144, July 2026). Basket System/Internet kept."
  },
  {
+  "name": "SuperTux",
+  "package": "supertux.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "2D platformer where you play Tux, the Linux mascot, rescuing Penny across multiple worlds. Includes a level editor.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://supertux.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv3 (open source). Actively developed. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "SuperTuxKart",
+  "package": "supertuxkart.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "3D kart racing game with a story mode and multiplayer.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Code is GPLv3 with mixed asset licenses (open source). UNCERTAIN: could not verify an official URL.",
+  "sibling": "org.supertuxkart.stk"
+ },
+ {
   "name": "SWI-Prolog",
   "package": "swi.prolog.windows",
   "platform": "windows",
@@ -4581,6 +6156,25 @@
    "needs_account": false
   },
   "notes": "BSD-2 open source, actively maintained."
+ },
+ {
+  "name": "Sylpheed",
+  "package": "sylpheed.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Lightweight email and news client.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sylpheed.sraoss.jp",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later for the application with LibSylph under LGPL (open source). Development is slow: stable 3.7 is from 2018 and the mailing list was discontinued in 2025."
  },
  {
   "name": "Syncthing",
@@ -4619,6 +6213,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "T^3",
+  "package": "t.3.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Small tile puzzle game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://sourceforge.net/projects/t-3/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2+ per libregamewiki. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "Task Coach",
@@ -4683,6 +6296,25 @@
   "notes": "free tier covers personal use only; TeamViewer states sessions that appear commercial get flagged."
  },
  {
+  "name": "Telegram Desktop",
+  "package": "telegram.desktop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Desktop client for the Telegram messenger.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://telegram.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "License GPLv3 with an OpenSSL exception (open source). Core use requires a phone-number account. The directory's transparency card flags Telegram data practices, but the desktop client passes the bar. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "Texter",
   "package": "texter.windows",
   "platform": "windows",
@@ -4731,6 +6363,25 @@
   "notes": "Open source and completely free per PortableApps. Could not verify the developer's own download URL in this pass."
  },
  {
+  "name": "The Legend of Edgar",
+  "package": "the.legend.of.edgar.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Retro-style platform adventure game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.parallelrealities.co.uk/games/edgar/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Code and media are GPLv2 (open source). Actively maintained (release 1.38, January 2026). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "The Powder Toy",
   "package": "the.powder.toy.windows",
   "platform": "windows",
@@ -4750,6 +6401,25 @@
   "notes": "GPL confirmed via the GitHub repo (jacob1/The-Powder-Toy) and the Google Play listing ('Source code (GPL)'). Online save-browsing needs a free account; the game itself does not. Basket corrected Games/Puzzle to Games/Educational: it is a simulation sandbox, not a puzzle game."
  },
  {
+  "name": "Tick5",
+  "package": "tick5.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Tic-tac-toe variant played on a 5x5 board.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "TidyTabs",
   "package": "tidytabs.windows",
   "platform": "windows",
@@ -4767,6 +6437,25 @@
    "needs_account": false
   },
   "notes": "Free for personal use. free_enough=false: the free version is capped at 3 tabs per group with no tab reordering, renaming or multi-monitor support. Could not verify official download URL in this pass."
+ },
+ {
+  "name": "Tile World",
+  "package": "tile.world.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Tile puzzle game compatible with Chip's Challenge levels.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "TinyTask",
@@ -4883,6 +6572,25 @@
   "notes": "could not verify the direct Stinger download page on trellix.com."
  },
  {
+  "name": "Twin Distress",
+  "package": "twin.distress.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Cooperative puzzle game for two players sharing one screen.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
   "name": "TyperTask",
   "package": "typertask.windows",
   "platform": "windows",
@@ -4957,6 +6665,25 @@
    "needs_account": false
   },
   "notes": "License verified earlier as GPL-3.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "USB Sudoku",
+  "package": "usb.sudoku.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Portable Sudoku game that runs from a USB stick.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL."
  },
  {
   "name": "UUID-GUID Generator",
@@ -5159,6 +6886,87 @@
   "notes": "original site offline; could not verify an official download page."
  },
  {
+  "name": "WarMUX",
+  "package": "warmux.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Turn-based artillery game in the Worms style where teams of open-source mascots blast each other.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "FSF Free Software Directory",
+    "url": "https://directory.fsf.org/wiki/WarMUX"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL (open source). Last release 11.04 (April 2011); the official site is dead, so UNCERTAIN: could not verify an official URL. The game still runs."
+ },
+ {
+  "name": "Warzone 2100",
+  "package": "warzone.2100.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Strategy",
+  "description": "Real-time strategy game about commanding units and designing your own vehicles.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "WAtomic",
+  "package": "watomic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Puzzle game about building molecules from atoms on a grid.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "Whalebird",
+  "package": "whalebird.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Social",
+  "description": "Fediverse client for Mastodon and other compatible networks.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://whalebird.social",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "License GPL-3.0 (open source). Core use requires a fediverse account. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
   "name": "WhatChanged",
   "package": "whatchanged.windows",
   "platform": "windows",
@@ -5233,6 +7041,25 @@
    "needs_account": false
   },
   "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+ },
+ {
+  "name": "WinBoard Chess",
+  "package": "winboard.chess.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Board",
+  "description": "Chess GUI for Windows. Play against the bundled GNU Chess engine or on Internet chess servers, and load or save PGN games.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.gnu.org/software/xboard/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Free software (GNU project). Core play is offline; online chess servers need a free account."
  },
  {
   "name": "WinCDEmu",
@@ -5671,6 +7498,49 @@
   "notes": ""
  },
  {
+  "name": "Wizznic",
+  "package": "wizznic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Match-3 style puzzle game.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "X-Moto",
+  "package": "x.moto.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Challenging 2D motocross platformer where physics matter. Collect strawberries and touch the flower to finish; thousands of user-made levels.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://xmoto.tuxfamily.org",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2023-03-23--x-moto-portable-0.6.2-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-2.0-or-later (open source). official_url from the Arch AUR upstream field, not the verbatim Full URLs list; UNCERTAIN: Wikipedia lists xmoto.org as the website instead."
+ },
+ {
   "name": "XAMPP",
   "package": "xampp.windows",
   "platform": "windows",
@@ -5712,6 +7582,44 @@
    "needs_account": false
   },
   "notes": "MPL/GPL open source. The original developer site is gone; stefansundin.github.io hosts a mirror of the last build (3.0.0.1) and source is mirrored on GitHub."
+ },
+ {
+  "name": "Xonotic",
+  "package": "xonotic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Arcade",
+  "description": "Fast multiplayer arena first-person shooter with a large weapon set.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://xonotic.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv3+ (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Xye",
+  "package": "xye.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Tile puzzle game where you guide a green sprite through levels using keys and objects.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License zlib/libpng (open source). UNCERTAIN: could not verify an official URL."
  },
  {
   "name": "Yubico Authenticator",
@@ -5788,6 +7696,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Zaz",
+  "package": "zaz.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Puzzle",
+  "description": "Zuma-style marble puzzle; remove incoming marbles by arranging same-color triplets or quartets. 23 levels.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://zaz.sourceforge.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv3 (open source) per Wikipedia. official_url from page text, not the verbatim Full URLs list."
  },
  {
   "name": "Zettlr",
@@ -5898,5 +7825,24 @@
    "needs_account": false
   },
   "notes": "Microsoft freeware with no nags, ads or paywalls. Could not verify official download URL in this pass."
+ },
+ {
+  "name": "Zulip",
+  "package": "zulip.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Threaded team chat client for workplaces and communities.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://zulip.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "License Apache-2.0 (open source). Core use requires a Zulip organization account. official_url from page text, not the verbatim Full URLs list."
  }
 ]
