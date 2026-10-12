@@ -842,9 +842,15 @@ def windows_downloads(app):
     dl = app.get("downloads") or {}
     parts = []
     if dl.get("official"):
+        url = dl["official"]
+        # When the primary download is PortableApps (dead-developer
+        # exception), label it honestly instead of claiming it's the
+        # developer's own site.
+        label = ("PortableApps" if "portableapps.com" in url
+                 else "Download from the developer")
         parts.append(
-            f'<a class="dl-official" href="{esc(dl["official"])}" '
-            f'rel="noopener">Download from the developer</a>')
+            f'<a class="dl-official" href="{esc(url)}" '
+            f'rel="noopener">{label}</a>')
     for alt in dl.get("alternatives") or []:
         parts.append(
             f'<a class="store-badge big" href="{esc(alt["url"])}" '
