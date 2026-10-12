@@ -43,6 +43,25 @@
   "notes": "UNCERTAIN: the standalone project's own site could not be verified; official_url is the PortableApps entry (third party). PortableApps lists App License: Open Source (GPL) and release 4.2.4 (2013-01-05). URL note: original developer site is gone; PortableApps.com (co-publisher, GPL source linked) is the maintained distribution and serves as the primary download."
  },
  {
+  "name": "Angry IP Scanner",
+  "package": "angry.ip.scanner.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Fast cross-platform IP address and port scanner, released under the GPLv2. Some antivirus products flag it because it performs network scans.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://angryip.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Apache OpenOffice",
   "package": "apache.openoffice.windows",
   "platform": "windows",
@@ -60,6 +79,25 @@
    "needs_account": false
   },
   "notes": "Project strongly warns users to download only from the official site. Also listed in the Microsoft Store for selected languages; could not verify a stable store URL so no alt added."
+ },
+ {
+  "name": "AutoHotkey",
+  "package": "autohotkey.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Automate",
+  "description": "Scripting language for Windows automation (GPLv2). Creates hotkeys, text expansions, macros and small utilities.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.autohotkey.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "BabelPad",
@@ -81,6 +119,44 @@
   "notes": "Author asks users to download only from babelstone.co.uk and does not support third-party distributions. Verified free for commercial use on the official page."
  },
  {
+  "name": "Bitwarden Desktop",
+  "package": "bitwarden.desktop.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Password manager with end-to-end encrypted sync across devices. Core features are free; a Bitwarden account is required.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "paid Premium adds extras such as file storage and TOTP, but the free tier covers unlimited items and sync.",
+  "official_url": "https://bitwarden.com/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": ""
+ },
+ {
+  "name": "Blank And Secure",
+  "package": "blank.and.secure.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Portable file shredder from SoftwareOK. Overwrites files with random data and can wipe free disk space. Donations are accepted but no nagging is reported.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Blender",
   "package": "blender.windows",
   "platform": "windows",
@@ -100,6 +176,25 @@
   "notes": ""
  },
  {
+  "name": "BOINC",
+  "package": "boinc.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Automate",
+  "description": "Open-source middleware for volunteer computing (LGPL). Donate idle CPU time to research projects such as disease and climate science.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://boinc.berkeley.edu/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
+ },
+ {
   "name": "Cherrytree",
   "package": "cherrytree.windows",
   "platform": "windows",
@@ -117,6 +212,63 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: official site URL — sources cite both giuspen.net/cherrytree and giuspen.com/cherrytree; used the most recent citation (giuspen.net). GitHub repo giuspen/cherrytree confirms open source."
+ },
+ {
+  "name": "Chromium",
+  "package": "chromium.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Open-source browser project maintained by Google. It is the upstream code base behind Chrome, Edge, Opera and other Chromium-based browsers.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.chromium.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "ClamWin",
+  "package": "clamwin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Windows front end for the ClamAV antivirus engine, released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.clamwin.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: bundled engine is 0.103.2.1 (stale since 2021-06); an unverified third-party claim says ClamAV blocks database updates for engines at or below 0.105, which would leave it unable to fetch current signatures. Could not verify."
+ },
+ {
+  "name": "Cryptomator",
+  "package": "cryptomator.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Client-side encryption for cloud folders. Creates encrypted vaults that sync through any cloud provider; open source under the GPLv3.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://cryptomator.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "DSynchronize",
@@ -176,6 +328,87 @@
   "notes": ""
  },
  {
+  "name": "Emsisoft Emergency Kit",
+  "package": "emsisoft.emergency.kit.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Portable on-demand malware scanner and remover. Free for personal use; no installation needed.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.emsisoft.com/en/emergency-kit/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Eraser Classic",
+  "package": "eraser.classic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Secure file erasure tool for Windows. Overwrites files, folders and free space to standards such as DoD 5220.22-M; released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://eraser.heidi.ie",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Eraser 6.x is a .NET rewrite of the Classic 5.x line; both ship from the same project and download page."
+ },
+ {
+  "name": "Eraser .Net",
+  "package": "eraser.net.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "The .NET (6.x) rewrite of the Eraser secure file erasure tool for Windows, under the same GPL license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://eraser.heidi.ie",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Eraser 6.x is a .NET rewrite of the Classic 5.x line; both ship from the same project and download page."
+ },
+ {
+  "name": "EraserDrop",
+  "package": "eraserdrop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Portable drag-and-drop secure file shredder by Erik Pilsits. Drop files on its floating icon to shred them.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/security/eraserdrop-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "last release 2.1.1 (2012); could not verify the developer's site; distributed via PortableApps.com."
+ },
+ {
   "name": "Everything",
   "package": "everything.windows",
   "platform": "windows",
@@ -214,6 +447,25 @@
   "notes": ""
  },
  {
+  "name": "Falkon",
+  "package": "falkon.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Lightweight web browser built on QtWebEngine and maintained by the KDE project. It runs on Windows, Linux and macOS.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.falkon.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "FastCopy",
   "package": "fastcopy.windows",
   "platform": "windows",
@@ -231,6 +483,30 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: the current EULA on fastcopy.jp was not verified; pendriveapps reports personal-use-free with a paid license for some commercial use."
+ },
+ {
+  "name": "FeedRoller",
+  "package": "feedroller.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "RSS feed ticker that scrolls headlines across the desktop. The original site is offline and the program is distributed via PortableApps.com.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/internet/feedroller-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "original site offline; PortableApps.com hosts a build; could not verify an official download page."
  },
  {
   "name": "File Converter",
@@ -290,6 +566,25 @@
   "notes": ""
  },
  {
+  "name": "FileZilla",
+  "package": "filezilla.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "FTP, FTPS and SFTP client released under the GPL. No ads, trials or bundled offers in the official build.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "paid FileZilla Pro adds cloud-storage protocols, but the free client is a complete FTP/SFTP product.",
+  "official_url": "https://filezilla-project.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Finance Explorer",
   "package": "finance.explorer.windows",
   "platform": "windows",
@@ -326,6 +621,44 @@
    "needs_account": false
   },
   "notes": "Sources conflict slightly on GPL version (Wikipedia says GPL-2.0-or-later, LinuxLinks says GPLv3.0); repo is github.com/gottcode/focuswriter. URL scheme (https) assumed from the cited domain; could not verify exact canonical form."
+ },
+ {
+  "name": "Folding@home",
+  "package": "folding.home.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Automate",
+  "description": "Distributed computing project that uses idle PC power for biomedical research. No account needed to start; the client is open source.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://foldingathome.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
+ },
+ {
+  "name": "Free Download Manager",
+  "package": "free.download.manager.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Download manager that splits downloads into segments and integrates with browsers. The site calls it open source but no OSI license could be found, so it is recorded as freeware.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.freedownloadmanager.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "FreeCAD",
@@ -423,6 +756,87 @@
   "notes": ""
  },
  {
+  "name": "Google Chrome",
+  "package": "google.chrome.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Google's web browser. It is free of charge but proprietary, and it sends usage and crash data to Google unless disabled; syncing needs a Google account.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.google.com/chrome/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "data-collection flag: usage and crash reporting is on by default; core browsing needs no account."
+ },
+ {
+  "name": "Gopherus",
+  "package": "gopherus.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Console client for browsing Gopherspace, maintained as open source on SourceForge.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://gopherus.sourceforge.io",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "GPG Plugin",
+  "package": "gpg.plugin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "PortableApps add-on that packages GnuPG for encrypting and signing files. Not a standalone application.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/security/gpg-plugin"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "a PortableApps add-on packaging GnuPG, not a standalone app; could not verify an official download page."
+ },
+ {
+  "name": "HijackThis",
+  "package": "hijackthis.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "System scanner that lists browser hijack and autostart changes for manual review. The original Trend Micro release ended in 2013; the maintained community fork is by dragokas.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/dragokas/hijackthis",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "point users at the dragokas fork, not the abandoned Trend Micro build."
+ },
+ {
   "name": "HomeBank",
   "package": "homebank.windows",
   "platform": "windows",
@@ -466,6 +880,25 @@
   "notes": ""
  },
  {
+  "name": "Iron",
+  "package": "iron.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Chromium-based browser from SRWare that strips out some Google tracking components.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.srware.net/en/software_srware_iron.php",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "batch hint said oss but no source repository or OSI license statement was found, so it is recorded as freeware."
+ },
+ {
   "name": "Joplin",
   "package": "joplin.windows",
   "platform": "windows",
@@ -491,6 +924,25 @@
   "sibling": "net.cozic.joplin"
  },
  {
+  "name": "K-Meleon",
+  "package": "k.meleon.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Lightweight Windows browser built on the Goanna engine, in the spirit of classic Mozilla.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://kmeleonbrowser.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Kanri",
   "package": "kanri.windows",
   "platform": "windows",
@@ -510,6 +962,82 @@
   "notes": ""
  },
  {
+  "name": "Kaspersky TDSSKiller",
+  "package": "kaspersky.tdsskiller.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Portable rootkit scanner and remover from Kaspersky.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "could not verify a direct download page; Kaspersky tools have regional availability limits in some jurisdictions."
+ },
+ {
+  "name": "KeePass Classic",
+  "package": "keepass.classic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Password manager (1.x branch) storing logins in an encrypted local database.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://keepass.info",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "KeePass Professional",
+  "package": "keepass.professional.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Password manager (2.x branch) storing logins in an encrypted local database.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://keepass.info",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "KeePassXC",
+  "package": "keepassxc.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Community fork of KeePass with a modern interface for Windows, macOS and Linux.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://keepassxc.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "KiCad",
   "package": "kicad.windows",
   "platform": "windows",
@@ -521,6 +1049,44 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://www.kicad.org/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "KiTTY",
+  "package": "kitty.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Fork of the PuTTY SSH and telnet client with extra session management features, released under the MIT license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.9bis.com/kitty/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Lagrange",
+  "package": "lagrange.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Desktop client for browsing Gopher and Gemini content with a modern interface. Open source and actively developed.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://gmi.skyjake.fi/lagrange",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -568,6 +1134,69 @@
   "sibling": "org.documentfoundation.libreoffice"
  },
  {
+  "name": "LibreWolf",
+  "package": "librewolf.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Privacy-focused fork of Firefox with telemetry removed and tracking protections hardened by default.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://librewolf.net",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Links",
+  "package": "links.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Text and graphics-mode web browser that runs in the terminal or a simple GUI on Windows, Linux and other systems.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://links.twibright.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "LocalSend",
+  "package": "localsend.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Cross-platform local file sharing (AirDrop-like) over Wi-Fi with no account and no cloud. Open source under the Apache 2.0 license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://localsend.org/download",
+  "alt_downloads": [
+   {
+    "label": "Source code (GitHub)",
+    "url": "https://github.com/localsend/localsend"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "",
+  "sibling": "org.localsend.localsend_app"
+ },
+ {
   "name": "Logseq",
   "package": "logseq.windows",
   "platform": "windows",
@@ -588,6 +1217,63 @@
   "sibling": "com.logseq.app"
  },
  {
+  "name": "Lynx",
+  "package": "lynx.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Classic text-mode web browser for the command line, maintained as open source since 1992.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lynx.invisible-island.net",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Maxthon",
+  "package": "maxthon.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Web browser from Maxthon Technology with built-in ad blocking and cloud sync. Free to use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.maxthon.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Microsoft Safety Scanner",
+  "package": "microsoft.safety.scanner.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Microsoft's on-demand portable malware scanner. Each download expires 10 days after download and can be re-downloaded free.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "expires 10 days after download; re-download is free."
+ },
+ {
   "name": "Money Manager Ex",
   "package": "money.manager.ex.windows",
   "platform": "windows",
@@ -606,6 +1292,44 @@
   },
   "notes": "",
   "sibling": "com.money.manager.ex"
+ },
+ {
+  "name": "Mozilla Firefox Developer Edition",
+  "package": "mozilla.firefox.developer.edition.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Developer edition of Firefox with experimental tools and a separate release channel, under the same MPL 2.0 license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.mozilla.org/firefox/developer/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Mozilla Firefox",
+  "package": "mozilla.firefox.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Web browser from Mozilla, released under the Mozilla Public License 2.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.mozilla.org/firefox/new/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "NanaZip",
@@ -656,6 +1380,106 @@
   "notes": "Could not verify the exact OSI license identifier (README asserts fully open source); repo is github.com/nuttyartist/notes."
  },
  {
+  "name": "O&O ShutUp10++",
+  "package": "o.o.shutup10.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Privacy",
+  "description": "Portable tool that exposes Windows 10/11 privacy and telemetry settings as toggles with safety recommendations.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "paid ShutUp10 Premium exists, but the free edition applies all privacy toggles; Premium only automates re-applying them after Windows updates.",
+  "official_url": "https://www.oo-software.com/en/shutup10",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Opera GX",
+  "package": "opera.gx.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Gaming-oriented variant of the Opera browser with CPU, RAM and network limiters.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "paid VPN Pro and AI upgrades exist, but the free browser is complete with no ads, trials or feature gating.",
+  "official_url": "https://www.opera.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "data-collection flag: sync and AI features send data to Opera; core browsing works without an account."
+ },
+ {
+  "name": "Opera",
+  "package": "opera.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Chromium-based web browser with a built-in sidebar, Flow sync and optional VPN.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "paid VPN Pro and AI upgrades exist, but the free browser is complete with no ads, trials or feature gating.",
+  "official_url": "https://www.opera.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "data-collection flag: sync and AI features send data to Opera; core browsing works without an account."
+ },
+ {
+  "name": "Otter Browser",
+  "package": "otter.browser.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Qt-based browser that recreates the classic Opera 12 interface, maintained as open source.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://otter-browser.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Password Safe",
+  "package": "password.safe.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Password manager originally designed by Bruce Schneier. Stores logins in an encrypted database file; source under the Artistic License 2.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pwsafe.org",
+  "alt_downloads": [
+   {
+    "label": "Source and releases (GitHub)",
+    "url": "https://github.com/pwsafe/pwsafe"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "PeaZip",
   "package": "peazip.windows",
   "platform": "windows",
@@ -673,6 +1497,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "PeerBlock",
+  "package": "peerblock.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "IP filter that blocks connections to and from blacklisted address ranges.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.peerblock.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: dormant since 2014; could not verify it works on Windows 10/11."
  },
  {
   "name": "Pencil2D",
@@ -751,6 +1594,44 @@
   "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used; version 3.17 released 2026-06-29 per PortableApps news."
  },
  {
+  "name": "PortExpert",
+  "package": "portexpert.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Port monitor from KC Softwares showing which applications use TCP and UDP connections, with WhoIs lookup. Freeware for personal and business use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.kcsoftwares.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: could not verify the current download page; third-party reviews note the standard installer bundles a declinable third-party offer (RelevantKnowledge) - use the Lite build, which ships without sponsors; AlternativeTo flags the project discontinued while other catalogs show a 2026 update."
+ },
+ {
+  "name": "PuTTY",
+  "package": "putty.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "SSH, telnet and serial client for Windows and Unix, released under the MIT license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://putty.software/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Q-Dir",
   "package": "q.dir.windows",
   "platform": "windows",
@@ -765,6 +1646,44 @@
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "qBittorrent Enhanced",
+  "package": "qbittorrent.enhanced.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Community fork of qBittorrent with extra anti-leech and blocking features, under the same GPLv2 license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "qBittorrent",
+  "package": "qbittorrent.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "BitTorrent client released under the GPLv2 with no ads, trials or bundled offers.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.qbittorrent.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "notes": ""
@@ -789,6 +1708,25 @@
   "notes": "Sync is handled externally (e.g. Nextcloud client); no account required for core features."
  },
  {
+  "name": "QuiteRSS",
+  "package": "quiterss.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "RSS and Atom feed reader for Windows and Linux. Development is quiet (last stable 2020) but the released build still works.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://quiterss.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: dormant since 2020; could not verify the last release works on Windows 11."
+ },
+ {
   "name": "RedNotebook",
   "package": "rednotebook.windows",
   "platform": "windows",
@@ -806,6 +1744,25 @@
    "needs_account": false
   },
   "notes": "PortableApps lists an old RedNotebook Portable (1.15.0, 2017); current releases come from the official site, so no alt added."
+ },
+ {
+  "name": "RSS Guard",
+  "package": "rss.guard.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Actively developed open-source RSS reader for Windows, Linux and macOS.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/martinrotter/rssguard",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "Run-Command",
@@ -827,6 +1784,45 @@
   "notes": ""
  },
  {
+  "name": "RustDesk",
+  "package": "rustdesk.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Open-source remote desktop tool (AGPLv3) that works out of the box or against a self-hosted server, as a TeamViewer alternative.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "a paid Pro server exists, but the free self-hosted server and the free client cover remote desktop fully.",
+  "official_url": "https://rustdesk.com/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "",
+  "sibling": "com.carriez.flutter_hbb"
+ },
+ {
+  "name": "Sandboxie Plus",
+  "package": "sandboxie.plus.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Sandboxing tool that runs applications in isolated containers so they cannot change the system. Base features are GPLv3 and free for personal use; a paid supporter certificate adds extra features.",
+  "license": "oss",
+  "personal_use": true,
+  "free_enough_reason": "a paid supporter certificate adds extra features, but the free base features sandbox applications fully.",
+  "official_url": "https://sandboxie-plus.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Scribus",
   "package": "scribus.windows",
   "platform": "windows",
@@ -841,6 +1837,63 @@
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "SeaMonkey",
+  "package": "seamonkey.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Community-maintained internet suite with a browser, email client, HTML editor and IRC chat, under the MPL license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.seamonkey-project.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "SimpleWall",
+  "package": "simplewall.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Lightweight firewall frontend configuring the Windows Filtering Platform to control network activity per application. For advanced users; free and open source.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/henrypp/simplewall",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Spybot - Search & Destroy",
+  "package": "spybot.search.destroy.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Spyware detection and removal tool. The free edition is complete; paid editions add scheduled automation.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "paid editions add scheduled automation, but the free edition detects and removes spyware without limits.",
+  "official_url": "https://www.safer-networking.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "notes": ""
@@ -927,6 +1980,87 @@
   "notes": ""
  },
  {
+  "name": "TCPView",
+  "package": "tcpview.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Sysinternals utility listing all TCP and UDP endpoints on the system with the owning process. The download includes the Tcpvcon command-line version.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview",
+  "alt_downloads": [
+   {
+    "label": "winget",
+    "url": "https://winstall.app/apps/Microsoft.Sysinternals.TCPView"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "TeamViewer",
+  "package": "teamviewer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Remote access and support tool. Free for personal, non-commercial use; commercial use needs a paid license.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.teamviewer.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "free tier covers personal use only; TeamViewer states sessions that appear commercial get flagged."
+ },
+ {
+  "name": "TinyTask",
+  "package": "tinytask.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Automate",
+  "description": "Tiny macro recorder from Vista Software. Records mouse and keyboard input and replays it; the portable executable is 36 KB.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.tinytask.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "voluntary donations only; no paid tier or feature gating reported."
+ },
+ {
+  "name": "Tor Browser",
+  "package": "tor.browser.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Web browser that routes traffic through the Tor network for anonymous browsing. Free and open source; donations fund development.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.torproject.org/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Toucan",
   "package": "toucan.windows",
   "platform": "windows",
@@ -944,6 +2078,25 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used."
+ },
+ {
+  "name": "Transmission",
+  "package": "transmission.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Lightweight BitTorrent client for Windows, macOS and Linux with a minimal interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://transmissionbt.com/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "TreeSize Free",
@@ -965,6 +2118,63 @@
   "notes": "UNCERTAIN: JAM's own FAQ allows commercial use but a JAM marketing PDF says personal non-commercial only — conflict unresolved; personal_use set to false per the FAQ."
  },
  {
+  "name": "Trelix Stinger",
+  "package": "trelix.stinger.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Portable scanner that detects and removes specific prevalent malware and fake-alert threats.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.trellix.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "could not verify the direct Stinger download page on trellix.com."
+ },
+ {
+  "name": "uGet",
+  "package": "uget.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Download manager for Windows, Linux and Android. The Windows build is ad-free; the Android version shows ads, which does not affect the Windows build.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://ugetdm.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "VeraCrypt",
+  "package": "veracrypt.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Disk and partition encryption tool forked from TrueCrypt, under the VeraCrypt license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://veracrypt.jp",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Virtual Volumes View",
   "package": "virtual.volumes.view.windows",
   "platform": "windows",
@@ -982,6 +2192,49 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "WackGet",
+  "package": "wackget.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Download manager and accelerator. The original MillWeed site is offline; builds are distributed via PortableApps.com.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/internet/wackget-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "original site offline; could not verify an official download page."
+ },
+ {
+  "name": "WhoDat",
+  "package": "whodat.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Simple WHOIS lookup utility for domain and IP registration records.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/news/2013-01-25--whodat-portable-0.9-released",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "last release 0.9 (2013); could not verify an active developer site; distributed via PortableApps.com; UNCERTAIN whether it works on Windows 11."
  },
  {
   "name": "WinDirStat",
@@ -1028,6 +2281,82 @@
     "url": "https://www.microsoft.com/store/apps/9p7vbbbc49rb?ocid=badge"
    }
   ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinMTR",
+  "package": "winmtr.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Visual Windows port of MTR combining ping and traceroute in one tool, released under the GPLv2. Barely maintained but still functional.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/WinMTR/WinMTR-Official",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinSCP",
+  "package": "winscp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "SFTP, FTP, SCP and WebDAV client for Windows, released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://winscp.net",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinWGet",
+  "package": "winwget.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Windows GUI front end for the GNU Wget downloader, released under the GPLv2.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "could not verify the developer's download page; the WinWGet+ fork is closed-source freeware and is a different project."
+ },
+ {
+  "name": "WireGuard",
+  "package": "wireguard.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Official Windows client for the WireGuard VPN protocol. The client is free and open source; you supply the VPN server configuration.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.wireguard.com/install",
+  "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -1128,6 +2457,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Yubico Authenticator",
+  "package": "yubico.authenticator.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Security",
+  "description": "Desktop app that generates one-time passcodes from a YubiKey hardware key. Open source; requires a YubiKey.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.yubico.com/products/yubico-authenticator/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "requires a YubiKey hardware key; could not verify the exact OSI license from search results."
  },
  {
   "name": "Zettlr",
