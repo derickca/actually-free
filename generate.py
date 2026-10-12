@@ -763,7 +763,7 @@ def build_index(forms):
 {site_header()}
 <main class="directory">
   <section class="hero">
-    <h1 id="hero-title">Actually free Android apps.</h1>
+    <h1 id="hero-title">Actually free apps.</h1>
     <p class="tagline"><span class="marquee-text">{esc(TAGLINE)}</span></p>
   </section>
   <p class="promise-line">{promise_line}</p>

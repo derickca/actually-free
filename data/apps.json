@@ -23,7 +23,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -62,7 +64,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -103,7 +107,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -301,7 +307,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -393,7 +401,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -434,7 +444,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.26",
   "attrs": {
@@ -476,7 +488,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -517,7 +531,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -606,7 +622,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.69",
   "attrs": {
@@ -798,7 +816,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -839,7 +859,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -880,7 +902,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -921,7 +945,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "3.58",
   "attrs": {
@@ -962,7 +988,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {
@@ -1004,7 +1032,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -1192,7 +1222,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -1231,7 +1263,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -1328,7 +1362,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.84",
   "attrs": {
@@ -1369,7 +1405,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -1410,7 +1448,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.1,
   "attrs": {
@@ -1499,7 +1539,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -1538,7 +1580,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -1579,7 +1623,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -1671,7 +1717,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -1712,7 +1760,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -1751,7 +1801,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -1790,7 +1842,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -1884,7 +1938,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -2027,7 +2083,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -2068,7 +2126,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -2165,7 +2225,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -2361,7 +2423,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.09",
   "attrs": {
@@ -2402,7 +2466,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -2441,7 +2507,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -2632,7 +2700,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -2726,7 +2796,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {
@@ -2767,7 +2839,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {},
@@ -2961,7 +3035,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3002,7 +3078,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3043,7 +3121,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.09",
   "attrs": {
@@ -3084,7 +3164,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3178,7 +3260,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3315,7 +3399,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {
@@ -3413,7 +3499,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.84",
   "attrs": {
@@ -3454,7 +3542,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -3493,7 +3583,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3534,7 +3626,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.73",
   "attrs": {},
@@ -3776,7 +3870,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3817,7 +3913,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3858,7 +3956,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -3897,7 +3997,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -3938,7 +4040,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -4027,7 +4131,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -4114,7 +4220,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -4155,7 +4263,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -4302,7 +4412,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -4343,7 +4455,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -4382,7 +4496,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -4524,7 +4640,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -4722,7 +4840,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.77",
   "attrs": {
@@ -4763,7 +4883,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -4804,7 +4926,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {
@@ -4845,7 +4969,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -4995,7 +5121,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5089,7 +5217,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5178,7 +5308,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -5217,7 +5349,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5359,7 +5493,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5448,7 +5584,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5546,7 +5684,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5640,7 +5780,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -5679,7 +5821,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.61",
   "attrs": {
@@ -5720,7 +5864,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5812,7 +5958,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -5906,7 +6054,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.51",
   "attrs": {
@@ -5998,7 +6148,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -6039,7 +6191,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -6182,7 +6336,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -6280,7 +6436,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -6420,7 +6578,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -6709,7 +6869,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -6748,7 +6910,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -6789,7 +6953,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -6828,7 +6994,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -6867,7 +7035,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -7009,7 +7179,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -7050,7 +7222,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -7247,7 +7421,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -7341,7 +7517,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -7431,7 +7609,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -7472,7 +7652,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -7667,7 +7849,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -7946,7 +8130,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.5",
   "attrs": {
@@ -8193,7 +8379,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -8442,7 +8630,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -8481,7 +8671,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -8570,7 +8762,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -8664,7 +8858,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -8705,7 +8901,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -8898,7 +9096,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9100,7 +9300,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9141,7 +9343,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9230,7 +9434,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -9319,7 +9525,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9360,7 +9568,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9451,7 +9661,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9492,7 +9704,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9533,7 +9747,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9769,7 +9985,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9810,7 +10028,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {
@@ -9899,7 +10119,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -9988,7 +10210,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10077,7 +10301,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10118,7 +10344,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10159,7 +10387,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.69",
   "attrs": {
@@ -10200,7 +10430,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {
@@ -10442,7 +10674,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10483,7 +10717,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10524,7 +10760,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10565,7 +10803,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10606,7 +10846,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10647,7 +10889,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10688,7 +10932,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10729,7 +10975,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10770,7 +11018,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -10811,7 +11061,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "3.81",
   "attrs": {
@@ -10961,7 +11213,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -11157,7 +11411,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -11296,7 +11552,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11385,7 +11643,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.61",
   "attrs": {},
@@ -11424,7 +11684,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11465,7 +11727,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -11504,7 +11768,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -11543,7 +11809,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {
@@ -11584,7 +11852,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11625,7 +11895,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11666,7 +11938,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11707,7 +11981,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11748,7 +12024,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -11840,7 +12118,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -11879,7 +12159,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -11920,7 +12202,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -11959,7 +12243,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -12000,7 +12286,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.3",
   "attrs": {},
@@ -12041,7 +12329,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -12334,7 +12624,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -12373,7 +12665,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -12412,7 +12706,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -12453,7 +12749,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.30",
   "attrs": {
@@ -12494,7 +12792,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -12535,7 +12835,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.24",
   "attrs": {
@@ -12576,7 +12878,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.36",
   "attrs": {
@@ -12617,7 +12921,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "3.98",
   "attrs": {
@@ -12658,7 +12964,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -12699,7 +13007,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.20",
   "attrs": {
@@ -12740,7 +13050,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "3.16",
   "attrs": {
@@ -12781,7 +13093,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.48",
   "attrs": {
@@ -13026,7 +13340,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13067,7 +13383,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {
@@ -13252,7 +13570,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13293,7 +13613,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13491,7 +13813,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13532,7 +13856,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 3.6,
   "attrs": {
@@ -13573,7 +13899,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13614,7 +13942,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -13653,7 +13983,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13797,7 +14129,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -13937,7 +14271,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -13978,7 +14314,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -14019,7 +14357,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -14159,7 +14499,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -14200,7 +14542,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -14350,7 +14694,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -14437,7 +14783,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -14476,7 +14824,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -14515,7 +14865,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -14554,7 +14906,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -14755,7 +15109,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -14794,7 +15150,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -14883,7 +15241,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -15126,7 +15486,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -15223,7 +15585,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {
@@ -15317,7 +15681,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -15358,7 +15724,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {
@@ -15399,7 +15767,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -15493,7 +15863,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -15532,7 +15904,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -15667,7 +16041,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -15761,7 +16137,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.9",
   "attrs": {},
@@ -16005,7 +16383,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -16148,7 +16528,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -16349,7 +16731,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -16390,7 +16774,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -16491,7 +16877,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -16634,7 +17022,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -16732,7 +17122,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.7",
   "attrs": {},
@@ -16773,7 +17165,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.3,
   "attrs": {},
@@ -16972,7 +17366,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17013,7 +17409,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -17052,7 +17450,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -17091,7 +17491,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17132,7 +17534,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17173,7 +17577,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 3.8,
   "attrs": {
@@ -17214,7 +17620,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17255,7 +17663,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -17294,7 +17704,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17335,7 +17747,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17432,7 +17846,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -17586,7 +18002,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17627,7 +18045,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -17764,7 +18184,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18008,7 +18430,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18049,7 +18473,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18143,7 +18569,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.4,
   "attrs": {
@@ -18184,7 +18612,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18276,7 +18706,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.19",
   "attrs": {
@@ -18365,7 +18797,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18406,7 +18840,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 3.7,
   "attrs": {
@@ -18495,7 +18931,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -18534,7 +18972,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18575,7 +19015,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18616,7 +19058,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -18764,7 +19208,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19019,7 +19465,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -19164,7 +19612,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 3.9,
   "attrs": {
@@ -19205,7 +19655,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {
@@ -19246,7 +19698,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19335,7 +19789,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19426,7 +19882,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19469,7 +19927,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19510,7 +19970,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19551,7 +20013,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19688,7 +20152,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19777,7 +20243,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -19866,7 +20334,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -19905,7 +20375,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20110,7 +20582,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20208,7 +20682,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.1,
   "attrs": {
@@ -20249,7 +20725,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20344,7 +20822,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -20438,7 +20918,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.16",
   "attrs": {
@@ -20532,7 +21014,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20573,7 +21057,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20615,7 +21101,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20704,7 +21192,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20745,7 +21235,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20786,7 +21278,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {
@@ -20827,7 +21321,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20868,7 +21364,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -20969,7 +21467,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "2.72",
   "attrs": {
@@ -21011,7 +21511,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21204,7 +21706,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.78",
   "attrs": {
@@ -21245,7 +21749,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21286,7 +21792,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.31",
   "attrs": {
@@ -21327,7 +21835,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21368,7 +21878,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {
@@ -21409,7 +21921,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21450,7 +21964,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21756,7 +22272,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21797,7 +22315,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21838,7 +22358,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -21877,7 +22399,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -21916,7 +22440,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -21955,7 +22481,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -21996,7 +22524,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {},
@@ -22035,7 +22565,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -22074,7 +22606,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {
@@ -22163,7 +22697,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -22202,7 +22738,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -22292,7 +22830,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -22331,7 +22871,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -22423,7 +22965,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -22462,7 +23006,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -22503,7 +23049,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -22596,7 +23144,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -22637,7 +23187,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -22784,7 +23336,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -22926,7 +23480,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -22967,7 +23523,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -23008,7 +23566,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -23101,7 +23661,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -23142,7 +23704,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -23284,7 +23848,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.4,
   "attrs": {
@@ -23325,7 +23891,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.31",
   "attrs": {
@@ -23611,7 +24179,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.2",
   "attrs": {
@@ -23652,7 +24222,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -23739,7 +24311,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -23778,7 +24352,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {
@@ -23872,7 +24448,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24017,7 +24595,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -24056,7 +24636,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -24095,7 +24677,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24237,7 +24821,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -24372,7 +24958,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -24411,7 +24999,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -24450,7 +25040,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24544,7 +25136,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24585,7 +25179,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24626,7 +25222,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.25",
   "attrs": {
@@ -24827,7 +25425,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24868,7 +25468,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -24910,7 +25512,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.31",
   "attrs": {
@@ -24951,7 +25555,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.71",
   "attrs": {
@@ -24992,7 +25598,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25033,7 +25641,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25074,7 +25684,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.39",
   "attrs": {
@@ -25324,7 +25936,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25365,7 +25979,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {
@@ -25406,7 +26022,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.6",
   "attrs": {},
@@ -25447,7 +26065,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25488,7 +26108,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.12",
   "attrs": {
@@ -25734,7 +26356,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.3",
   "attrs": {},
@@ -25829,7 +26453,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25870,7 +26496,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25911,7 +26539,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25952,7 +26582,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -25993,7 +26625,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {
@@ -26034,7 +26668,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -26177,7 +26813,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -26266,7 +26904,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.0",
   "attrs": {
@@ -26307,7 +26947,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -26348,7 +26990,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -26387,7 +27031,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -26429,7 +27075,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.16",
   "attrs": {
@@ -26470,7 +27118,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -26557,7 +27207,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {
@@ -26646,7 +27298,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 3.7,
   "attrs": {},
@@ -26738,7 +27392,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -26779,7 +27435,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -26818,7 +27476,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -27019,7 +27679,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -27060,7 +27722,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -27102,7 +27766,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -27141,7 +27807,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -27230,7 +27898,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -27271,7 +27941,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -27310,7 +27982,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -27406,7 +28080,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -27600,7 +28276,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -27981,7 +28659,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -28166,7 +28846,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {
@@ -28207,7 +28889,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.40",
   "attrs": {
@@ -28248,7 +28932,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -28444,7 +29130,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -28485,7 +29173,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -28524,7 +29214,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -28717,7 +29409,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -28758,7 +29452,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -28847,7 +29543,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -28886,7 +29584,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -28925,7 +29625,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -28966,7 +29668,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -29053,7 +29757,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -29198,7 +29904,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.8",
   "attrs": {},
@@ -29239,7 +29947,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.38",
   "attrs": {
@@ -29280,7 +29990,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -29321,7 +30033,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 3.2,
   "attrs": {
@@ -29362,7 +30076,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -29401,7 +30117,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -29495,7 +30213,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -29885,7 +30605,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -29924,7 +30646,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -30167,7 +30891,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {
@@ -30261,7 +30987,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.8",
   "attrs": {},
@@ -30302,7 +31030,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.7",
   "attrs": {},
@@ -30343,7 +31073,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -30640,7 +31372,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -30683,7 +31417,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -30823,7 +31559,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -30960,7 +31698,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -31003,7 +31743,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -31042,7 +31784,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -31428,7 +32172,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -31470,7 +32216,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -31762,7 +32510,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -31907,7 +32657,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -31948,7 +32700,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.86",
   "attrs": {},
@@ -31987,7 +32741,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -32026,7 +32782,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32118,7 +32876,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32207,7 +32967,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.09",
   "attrs": {
@@ -32248,7 +33010,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -32433,7 +33197,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32530,7 +33296,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -32677,7 +33445,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32819,7 +33589,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32860,7 +33632,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32949,7 +33723,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -32991,7 +33767,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33131,7 +33909,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33172,7 +33952,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33267,7 +34049,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33308,7 +34092,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -33347,7 +34133,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -33488,7 +34276,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33529,7 +34319,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33570,7 +34362,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33611,7 +34405,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33801,7 +34597,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33842,7 +34640,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -33931,7 +34731,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -33970,7 +34772,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -34009,7 +34813,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -34151,7 +34957,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {
@@ -34192,7 +35000,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -34234,7 +35044,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -34385,7 +35197,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -34424,7 +35238,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -34574,7 +35390,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -34615,7 +35433,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {
@@ -34656,7 +35476,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.36",
   "attrs": {
@@ -34697,7 +35519,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "3.92",
   "attrs": {
@@ -34794,7 +35618,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -34884,7 +35710,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -34923,7 +35751,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -34964,7 +35794,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -35003,7 +35835,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -35140,7 +35974,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -35181,7 +36017,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.8",
   "attrs": {
@@ -35278,7 +36116,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -35415,7 +36255,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -35612,7 +36454,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {},
@@ -35758,7 +36602,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -35897,7 +36743,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -35938,7 +36786,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36035,7 +36885,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36127,7 +36979,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36220,7 +37074,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36322,7 +37178,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -36361,7 +37219,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -36503,7 +37363,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36601,7 +37463,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36642,7 +37506,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36684,7 +37550,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -36874,7 +37742,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37021,7 +37891,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37062,7 +37934,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -37101,7 +37975,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37142,7 +38018,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {},
@@ -37229,7 +38107,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37423,7 +38303,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.52",
   "attrs": {
@@ -37568,7 +38450,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37657,7 +38541,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37746,7 +38632,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -37843,7 +38731,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.6",
   "attrs": {},
@@ -38088,7 +38978,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -38127,7 +39019,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -38216,7 +39110,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -38308,7 +39204,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -38349,7 +39247,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.6,
   "attrs": {
@@ -38390,7 +39290,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -38479,7 +39381,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -38618,7 +39522,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.9,
   "attrs": {},
@@ -38657,7 +39563,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {
@@ -38698,7 +39606,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -38737,7 +39647,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.8,
   "attrs": {},
@@ -38936,7 +39848,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -39025,7 +39939,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.3,
   "attrs": {
@@ -39126,7 +40042,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -39167,7 +40085,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -39208,7 +40128,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.7,
   "attrs": {},
@@ -39247,7 +40169,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -39288,7 +40212,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {
@@ -39329,7 +40255,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.4,
   "attrs": {
@@ -39474,7 +40402,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -39515,7 +40445,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -39556,7 +40488,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -39595,7 +40529,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -39730,7 +40666,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -39771,7 +40709,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "3.89",
   "attrs": {
@@ -39971,7 +40911,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -40010,7 +40952,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.05",
   "attrs": {
@@ -40147,7 +41091,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.6",
   "attrs": {
@@ -40188,7 +41134,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.3,
   "attrs": {
@@ -40494,7 +41442,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -40535,7 +41485,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -40576,7 +41528,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -40721,7 +41675,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.5,
   "attrs": {},
@@ -40861,7 +41817,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -40998,7 +41956,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.3,
   "attrs": {},
@@ -41387,7 +42347,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": "4.7",
   "attrs": {},
@@ -42603,7 +43565,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 4.2,
   "attrs": {
@@ -42644,7 +43608,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -42990,7 +43956,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -43031,7 +43999,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -43125,7 +44095,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {
@@ -43321,7 +44293,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": null,
   "attrs": {},
@@ -43724,7 +44698,9 @@
   },
   "downloads": {
    "official": null,
-   "alternatives": []
+   "alternatives": [],
+   "label": null,
+   "winget_id": null
   },
   "rating": 5.0,
   "attrs": {

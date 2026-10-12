@@ -347,6 +347,15 @@ def main():
     check("platform: Windows grid non-empty", d["vis"] > 0, t)
     check("platform: Windows grid has only Windows tiles", d["bad"] == 0, t)
 
+    # 9b. Static hero matches the default filter state (2026-10-12): the
+    # shipped <h1> is the first paint, and the default platform filter is
+    # All — if they disagree, every load flashes a stale headline until
+    # JS rewrites it.
+    _static_index = (HERE / "index.html").read_text()
+    check("hero: static headline matches default filter",
+          '<h1 id="hero-title">Actually free apps.</h1>' in _static_index,
+          "static h1 disagrees with the default All-platform filter")
+
     # 10. Filter survives tile -> detail -> back: set filters, reload the
     # page (what back-button navigation does), filters are restored.
     # (Derick, 2026-10-12.)
