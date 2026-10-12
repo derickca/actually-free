@@ -117,6 +117,35 @@ def main():
     # 4. Alphabetical subcategory order in the emitted JS derivation.
     #    (renderSubcats sorts; verify via the live page below.)
 
+    # 4b. Personal Use mechanism (Stage 1, 2026-10-11): a synthetic
+    # personal_use record must flow through clean_record into the data,
+    # the filter defs, and the built assets. Fails without the Stage 1 fix.
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location("gen", HERE / "generate.py")
+    _gen = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_gen)
+    _rec = {"name": "Test Personal App", "package": "test.personal.app",
+            "status": "include", "category": "Utilities",
+            "subcategory": "Gadgets", "personal_use": True,
+            "platform": "android"}
+    _out = _gen.clean_record(_rec)
+    check("personal_use: field set", _out.get("personal_use") is True,
+          str(_out.get("personal_use")))
+    check("personal_use: search tag", "personal use" in _out.get("tags", []),
+          str(_out.get("tags")))
+    check("personal_use: filter attr def",
+          ("personal_use", "Personal Use") in _gen.FILTER_ATTRS)
+    check("personal_use: attr matcher",
+          _gen._attr_matches_py(_out, "personal_use") is True)
+    _app_js = (HERE / "assets/app.js").read_text()
+    check("personal_use: tile badge in app.js",
+          'personal-use' in _app_js and 'personalBadge' in _app_js)
+    _css = (HERE / "assets/styles.css").read_text()
+    check("personal_use: badge CSS", ".personal-use {" in _css)
+    _detail_src = (HERE / "generate.py").read_text()
+    check("personal_use: detail note wired",
+          "personal-use-note" in _detail_src)
+
     # Serve + browser checks
     class H(SimpleHTTPRequestHandler):
         def log_message(self, *a):
@@ -145,25 +174,42 @@ def main():
     check("collapsed: gap to attr row >= 8px (no overlap)", d["gap"] >= 8, t)
 
     # 6. Open state: visible, gap to attr row, alphabetical chips.
+    # NOTE: transitions are disabled in this probe. Under
+    # --virtual-time-budget the CSS animation clock freezes (getAnimations
+    # showed the open transitions stuck at running@0), so the row's class
+    # gets added but computed height/opacity never leave the closed values.
+    # Real browsers animate it fine; here we assert the end state.
+    # Polls (bounded) instead of a fixed sleep so slow loads don't flake.
     t = chrome_eval("", """
+      var killAnim = document.createElement('style');
+      killAnim.textContent = '*{transition:none !important;animation:none !important}';
+      document.head.appendChild(killAnim);
       document.querySelector('#category-chips [data-cat="Utilities"]').click();
-      setTimeout(function(){
+      var tries = 0;
+      var iv = setInterval(function(){
+        tries++;
         var col = document.getElementById('sub-collapse');
-        var sub = document.getElementById('subcategory-chips');
-        var attr = document.getElementById('attr-pills');
-        var sb = sub.getBoundingClientRect(), ab = attr.getBoundingClientRect();
-        var names = [];
-        sub.querySelectorAll('.chip').forEach(function(c){ names.push(c.textContent); });
-        var sorted = names.slice().sort(function(a,b){
-          return a.toLowerCase() < b.toLowerCase() ? -1 : 1; });
-        document.title = JSON.stringify({
-          h: col.getBoundingClientRect().height,
-          op: getComputedStyle(col).opacity,
-          gap: ab.top - sb.bottom,
-          alpha: JSON.stringify(names) === JSON.stringify(sorted),
-          names: names.join(',')
-        });
-      }, 900);
+        var h = col.getBoundingClientRect().height;
+        var op = getComputedStyle(col).opacity;
+        if ((h > 20 && op === "1") || tries >= 25) {
+          clearInterval(iv);
+          var sub = document.getElementById('subcategory-chips');
+          var attr = document.getElementById('attr-pills');
+          var sb = sub.getBoundingClientRect(), ab = attr.getBoundingClientRect();
+          var names = [];
+          sub.querySelectorAll('.chip').forEach(function(c){ names.push(c.textContent); });
+          var sorted = names.slice().sort(function(a,b){
+            return a.toLowerCase() < b.toLowerCase() ? -1 : 1; });
+          document.title = JSON.stringify({
+            h: h,
+            op: op,
+            gap: ab.top - sb.bottom,
+            alpha: JSON.stringify(names) === JSON.stringify(sorted),
+            names: names.join(','),
+            polls: tries
+          });
+        }
+      }, 200);
     """)
     d = json.loads(t)
     check("open: visible with height", d["h"] > 20 and float(d["op"]) == 1, t)

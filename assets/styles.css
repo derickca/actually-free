@@ -371,6 +371,30 @@ a.store-badge:hover { filter: brightness(0.96); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .needs-account { color: #bcd0fb; background: #1c2a4d; border-color: #3f5d9e; }
 }
+.personal-use {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f0e9fc;
+  color: #6d28d9;
+  border: 1px solid #c4a8f0;
+  white-space: nowrap;
+}
+:root[data-theme="dark"] .personal-use { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .personal-use { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+}
+.personal-use-note {
+  background: #f0e9fc;
+  border: 1px solid #c4a8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #6d28d9;
+}
+:root[data-theme="dark"] .personal-use-note { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .personal-use-note { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+}
 /* Platform: segmented All/Android/Windows control + tile/detail glyphs. */
 .platform-seg {
   display: inline-flex; gap: 2px;

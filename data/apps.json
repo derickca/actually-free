@@ -28,6 +28,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -63,6 +64,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -96,6 +98,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -131,6 +134,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -166,6 +170,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -202,6 +207,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -237,6 +243,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -272,6 +279,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -307,6 +315,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -342,6 +351,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -377,6 +387,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -412,6 +423,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -447,6 +459,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -483,6 +496,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -518,6 +532,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -551,6 +566,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -586,6 +602,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -621,6 +638,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -656,6 +674,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -691,6 +710,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -724,6 +744,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Its README claims no ads or tracking, but IzzyOnDroid flags the Tracking anti-feature on this build — please check in use whether anything phones home."
@@ -759,6 +780,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean"
@@ -794,6 +816,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -829,6 +852,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -862,6 +886,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -895,6 +920,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -930,6 +956,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -966,6 +993,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1001,6 +1029,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1036,6 +1065,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1071,6 +1101,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1106,6 +1137,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Audio Recorder ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -1139,6 +1171,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1172,6 +1205,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1207,6 +1241,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1242,6 +1277,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1275,6 +1311,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1310,6 +1347,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1345,6 +1383,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1380,6 +1419,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1415,6 +1455,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1450,6 +1491,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1485,6 +1527,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1520,6 +1563,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1553,6 +1597,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1588,6 +1633,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1621,6 +1667,7 @@
   "free_enough": true,
   "free_enough_reason": "Premium (~$10/yr, sold on bitwarden.com — not in the app) adds TOTP codes, vault health reports, and file attachments — but the free plan already covers unlimited passwords on unlimited devices, and reviewers say it “already beats paid plans from other tools.” Most users never need Premium. No ads.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -1658,6 +1705,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1693,6 +1741,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1726,6 +1775,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1761,6 +1811,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1796,6 +1847,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1829,6 +1881,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1864,6 +1917,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1897,6 +1951,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1932,6 +1987,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -1965,6 +2021,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2000,6 +2057,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2033,6 +2091,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2068,6 +2127,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2103,6 +2163,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2138,6 +2199,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2173,6 +2235,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2208,6 +2271,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2243,6 +2307,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2276,6 +2341,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2311,6 +2377,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2346,6 +2413,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2382,6 +2450,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2417,6 +2486,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2450,6 +2520,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2485,6 +2556,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2520,6 +2592,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2555,6 +2628,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2590,6 +2664,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2625,6 +2700,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2658,6 +2734,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2693,6 +2770,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2728,6 +2806,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2763,6 +2842,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2796,6 +2876,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2831,6 +2912,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2864,6 +2946,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2897,6 +2980,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2932,6 +3016,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -2967,6 +3052,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3002,6 +3088,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3037,6 +3124,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Open question: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free. OpenAPK desc: Free download of DAVx⁵ APK file and source code repo under GPL-3.0-only license - Latest Version 4.5.20-ose - CalDAV/CardDAV Synchronization and Client Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
@@ -3070,6 +3158,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3105,6 +3194,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3140,6 +3230,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3173,6 +3264,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3209,6 +3301,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3244,6 +3337,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3277,6 +3371,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3312,6 +3407,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3347,6 +3443,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3382,6 +3479,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3417,6 +3515,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3452,6 +3551,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3487,6 +3587,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3522,6 +3623,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3555,6 +3657,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3590,6 +3693,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3625,6 +3729,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3660,6 +3765,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3695,6 +3801,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3730,6 +3837,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3765,6 +3873,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3800,6 +3909,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3835,6 +3945,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3870,6 +3981,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3905,6 +4017,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3940,6 +4053,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -3975,6 +4089,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (FairEmail, privacy aware email ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -4010,6 +4125,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4045,6 +4161,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4080,6 +4197,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4115,6 +4233,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4150,6 +4269,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4185,6 +4305,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4220,6 +4341,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4255,6 +4377,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4290,6 +4413,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4325,6 +4449,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4360,6 +4485,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4393,6 +4519,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Open question: patches Instagram, ToS grey area Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
@@ -4428,6 +4555,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -4463,6 +4591,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Finamp ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -4496,6 +4625,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4531,6 +4661,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4564,6 +4695,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4597,6 +4729,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4632,6 +4765,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4667,6 +4801,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4702,6 +4837,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4737,6 +4873,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4772,6 +4909,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4805,6 +4943,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4838,6 +4977,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4873,6 +5013,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4906,6 +5047,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4941,6 +5083,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -4974,6 +5117,7 @@
   "free_enough": true,
   "free_enough_reason": "The FlyLadyPlus subscription (~$5/mo, in-app purchase) unlocks custom zones and achievements — but the free tier is the complete FlyLady method: morning, afternoon, and evening routines, zone cleaning lists, daily missions, and reminders. No ads.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -5011,6 +5155,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5044,6 +5189,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Food Expiration Dates ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -5077,6 +5223,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5112,6 +5259,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5147,6 +5295,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5182,6 +5331,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5217,6 +5367,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5252,6 +5403,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5287,6 +5439,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5322,6 +5475,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5357,6 +5511,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5392,6 +5547,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5428,6 +5584,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5463,6 +5620,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5498,6 +5656,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5533,6 +5692,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5568,6 +5728,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5603,6 +5764,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5638,6 +5800,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5673,6 +5836,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5706,6 +5870,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5741,6 +5906,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5774,6 +5940,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5809,6 +5976,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5844,6 +6012,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5879,6 +6048,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5914,6 +6084,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5949,6 +6120,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -5982,6 +6154,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -6015,6 +6188,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -6048,6 +6222,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -6081,6 +6256,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -6114,6 +6290,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -6147,6 +6324,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6182,6 +6360,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6217,6 +6396,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Gramophone ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -6252,6 +6432,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6287,6 +6468,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Grit - Productivity App ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -6322,6 +6504,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6357,6 +6540,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6392,6 +6576,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6425,6 +6610,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6458,6 +6644,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6493,6 +6680,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6526,6 +6714,7 @@
   "free_enough": true,
   "free_enough_reason": "Hevy Pro (~$24/yr, in-app purchase) adds unlimited routines and advanced graphs — but free covers unlimited logging, and reviewers say the caps are high enough that most lifters “can use it indefinitely without paying a cent.” No ads.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -6563,6 +6752,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6598,6 +6788,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6633,6 +6824,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6668,6 +6860,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6701,6 +6894,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6736,6 +6930,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6769,6 +6964,7 @@
   "free_enough": true,
   "free_enough_reason": "MemberPlus (~$60/yr, in-app purchase) adds offline downloads and premium courses — but the free library of 100,000+ guided meditations, talks, and sleep tracks is, as one recommender put it, “not a trial, it’s the actual product.” No ads.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -6804,6 +7000,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean"
@@ -6839,6 +7036,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6872,6 +7070,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (J2ME Loader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -6905,6 +7104,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6940,6 +7140,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -6975,6 +7176,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7010,6 +7212,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7045,6 +7248,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7078,6 +7282,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7113,6 +7318,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7148,6 +7354,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7181,6 +7388,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7216,6 +7424,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (jtx Board | journals \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -7251,6 +7460,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7286,6 +7496,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7321,6 +7532,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7358,6 +7570,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7393,6 +7606,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7428,6 +7642,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7463,6 +7678,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7498,6 +7714,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Klick\\u0027r - Smart AutoClicker ads=True iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -7533,6 +7750,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7566,6 +7784,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7601,6 +7820,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7636,6 +7856,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7671,6 +7892,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7706,6 +7928,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7739,6 +7962,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7774,6 +7998,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "F-Droid flags NonFreeAdd (promotes non-free add-ons) — help verify nothing costs money"
@@ -7809,6 +8034,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7844,6 +8070,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7879,6 +8106,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7914,6 +8142,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7949,6 +8178,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -7984,6 +8214,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8019,6 +8250,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8054,6 +8286,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8089,6 +8322,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8122,6 +8356,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8158,6 +8393,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8193,6 +8429,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (LocalSend: Transfer Files ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -8228,6 +8465,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8263,6 +8501,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8296,6 +8535,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8331,6 +8571,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8366,6 +8607,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8402,6 +8644,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8437,6 +8680,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8472,6 +8716,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8507,6 +8752,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8542,6 +8788,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8577,6 +8824,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8612,6 +8860,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8648,6 +8897,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8683,6 +8933,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8718,6 +8969,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8753,6 +9005,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8788,6 +9041,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8823,6 +9077,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8858,6 +9113,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8893,6 +9149,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8928,6 +9185,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8963,6 +9221,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -8998,6 +9257,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9031,6 +9291,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9064,6 +9325,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9097,6 +9359,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9132,6 +9395,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9165,6 +9429,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9198,6 +9463,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9233,6 +9499,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9266,6 +9533,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -9299,6 +9567,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -9332,6 +9601,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -9365,6 +9635,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9398,6 +9669,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9433,6 +9705,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9469,6 +9742,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9504,6 +9778,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9539,6 +9814,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9574,6 +9850,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9609,6 +9886,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9644,6 +9922,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Momentum - Make a Montage ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -9679,6 +9958,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9714,6 +9994,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9749,6 +10030,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9784,6 +10066,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9819,6 +10102,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9854,6 +10138,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9887,6 +10172,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9920,6 +10206,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9955,6 +10242,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -9990,6 +10278,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10023,6 +10312,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10056,6 +10346,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10091,6 +10382,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10124,6 +10416,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10157,6 +10450,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10190,6 +10484,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10225,6 +10520,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10260,6 +10556,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10295,6 +10592,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10330,6 +10628,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (NetGuard - no-root firewall ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -10365,6 +10664,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10401,6 +10701,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10436,6 +10737,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10471,6 +10773,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10506,6 +10809,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10541,6 +10845,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10576,6 +10881,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10611,6 +10917,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10646,6 +10953,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10679,6 +10987,7 @@
   "free_enough": true,
   "free_enough_reason": "Plus and Business plans (in-app purchase) add collaboration extras — but for individuals the free plan's unlimited pages, databases, and kanban boards are, per long-term users, enough to organize notes, manage projects, and build databases without paying.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -10716,6 +11025,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10751,6 +11061,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10784,6 +11095,7 @@
   "free_enough": true,
   "free_enough_reason": "Sync (~$4/mo) and Publish (~$16/mo) are separate services sold on obsidian.md — the app itself is the full local-first notes app with plugins and themes, and nothing in it requires payment. No ads, no in-app purchases.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -10821,6 +11133,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10856,6 +11169,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10891,6 +11205,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10926,6 +11241,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10961,6 +11277,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -10996,6 +11313,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11031,6 +11349,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11066,6 +11385,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11101,6 +11421,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11134,6 +11455,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11170,6 +11492,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11205,6 +11528,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11238,6 +11562,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11273,6 +11598,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11306,6 +11632,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11341,6 +11668,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11374,6 +11702,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11409,6 +11738,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11444,6 +11774,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (OPNsense Manager ads=True iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -11480,6 +11811,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11513,6 +11845,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11548,6 +11881,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11583,6 +11917,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11616,6 +11951,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11651,6 +11987,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11684,6 +12021,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither."
@@ -11719,6 +12057,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (PCAPdroid - network monitor ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -11754,6 +12093,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11789,6 +12129,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11824,6 +12165,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11859,6 +12201,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11894,6 +12237,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has none."
@@ -11927,6 +12271,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11960,6 +12305,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -11995,6 +12341,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12030,6 +12377,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12063,6 +12411,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12096,6 +12445,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12131,6 +12481,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12164,6 +12515,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12199,6 +12551,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12232,6 +12585,7 @@
   "free_enough": true,
   "free_enough_reason": "Pocket Casts Plus (~$4/mo, in-app purchase) adds folders, bookmarks, and cloud storage — but the complete player on every platform is free, and reviewers call Plus “totally optional.”",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -12269,6 +12623,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12304,6 +12659,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12339,6 +12695,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12372,6 +12729,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12407,6 +12765,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Podverse - Podcast Player ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -12442,6 +12801,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12475,6 +12835,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Open question: a paid 'PPSSPP Gold' app exists on Play, but it is donation-identical (same features) Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
@@ -12508,6 +12869,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12543,6 +12905,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12576,6 +12939,7 @@
   "free_enough": true,
   "free_enough_reason": "Pass Plus (in-app purchase) adds dark-web monitoring and extra aliases — but free includes unlimited passwords, autofill, 2FA codes, and 10 hide-my-email aliases with, per reviewers, “zero ads and zero data collection, free forever.”",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -12611,6 +12975,7 @@
   "free_enough": true,
   "free_enough_reason": "VPN Plus (in-app purchase) adds more servers and faster speeds — but the free tier gives unlimited bandwidth with no ads, which reviewers call the best free VPN plan on the market. Most users never need Plus.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -12646,6 +13011,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12681,6 +13047,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12716,6 +13083,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12751,6 +13119,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12788,6 +13157,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12821,6 +13191,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12854,6 +13225,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12890,6 +13262,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12923,6 +13296,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12956,6 +13330,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -12991,6 +13366,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13024,6 +13400,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13057,6 +13434,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Readest: EPUB \\u0026 PDF Reader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -13092,6 +13470,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13127,6 +13506,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13162,6 +13542,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13195,6 +13576,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13230,6 +13612,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13263,6 +13646,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13298,6 +13682,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Ricochlime ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -13333,6 +13718,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13368,6 +13754,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13404,6 +13791,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13439,6 +13827,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13474,6 +13863,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13509,6 +13899,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13544,6 +13935,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13577,6 +13969,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -13610,6 +14003,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
@@ -13645,6 +14039,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13680,6 +14075,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13715,6 +14111,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13750,6 +14147,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13785,6 +14183,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build has a separate paid Pro unlocker app. This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell or unlocker prompt."
@@ -13820,6 +14219,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13853,6 +14253,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13886,6 +14287,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13921,6 +14323,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -13956,6 +14359,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Shattered Pixel Dungeon ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -13992,6 +14396,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14025,6 +14430,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14058,6 +14464,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither."
@@ -14091,6 +14498,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14126,6 +14534,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14161,6 +14570,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14196,6 +14606,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14232,6 +14643,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14265,6 +14677,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14298,6 +14711,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (SimpleX Chat ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -14333,6 +14747,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14366,6 +14781,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14401,6 +14817,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14436,6 +14853,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14471,6 +14889,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14506,6 +14925,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14541,6 +14961,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "Open question: grey-area use of Spotify streams Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
@@ -14574,6 +14995,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14609,6 +15031,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14644,6 +15067,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14679,6 +15103,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14714,6 +15139,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14749,6 +15175,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14785,6 +15212,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14818,6 +15246,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14853,6 +15282,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14888,6 +15318,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14923,6 +15354,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14959,6 +15391,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -14994,6 +15427,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15031,6 +15465,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15066,6 +15501,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15099,6 +15535,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build of this same app shows in-app purchases (TagSpaces Pro). This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell."
@@ -15134,6 +15571,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15167,6 +15605,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15202,6 +15641,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Tasks.org: to-do list \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -15237,6 +15677,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15272,6 +15713,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15307,6 +15749,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15342,6 +15785,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15375,6 +15819,7 @@
   "free_enough": true,
   "free_enough_reason": "Premium (~$36/yr, in-app purchase) adds calendar views and custom filters — but the free tier's lists, reminders, Pomodoro, and habits are “more than enough,” per reviewers; one writer downgraded from Premium because she wasn't using the paid features.",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -15410,6 +15855,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15445,6 +15891,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15480,6 +15927,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15515,6 +15963,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15550,6 +15999,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15585,6 +16035,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15620,6 +16071,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15653,6 +16105,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15688,6 +16141,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15721,6 +16175,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15754,6 +16209,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15789,6 +16245,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15824,6 +16281,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15859,6 +16317,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15894,6 +16353,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15927,6 +16387,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15962,6 +16423,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -15997,6 +16459,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16032,6 +16495,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16067,6 +16531,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16102,6 +16567,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16135,6 +16601,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16168,6 +16635,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16203,6 +16671,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16238,6 +16707,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16271,6 +16741,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16306,6 +16777,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16341,6 +16813,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16376,6 +16849,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Voyager for Lemmy ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -16411,6 +16885,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16446,6 +16921,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16481,6 +16957,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Atomatic ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
@@ -16514,6 +16991,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16549,6 +17027,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16582,6 +17061,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": true,
   "review_notes": "F-Droid flags Tracking on its build — listed via another clean build; help verify"
@@ -16615,6 +17095,7 @@
   "free_enough": true,
   "free_enough_reason": "Windy Premium (in-app purchase) adds satellite archives and extended forecasts — but the free tier's forecast models, radar, and maps are what sailors and anglers rely on daily; one premium buyer admitted he “didn't ever use any of its advanced features.”",
   "needs_account": false,
+  "personal_use": false,
   "tags": [
    "free enough"
   ],
@@ -16652,6 +17133,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16687,6 +17169,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16722,6 +17205,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16757,6 +17241,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16792,6 +17277,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16825,6 +17311,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""
@@ -16860,6 +17347,7 @@
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
+  "personal_use": false,
   "tags": [],
   "needs_review": false,
   "review_notes": ""

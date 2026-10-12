@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (DMDQHnWJ1SpOKQYO8R1tzA==, replaced at build time) embedded separately,
+     the key (hnLOqOu4auZcNW1M47jvOw==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "DMDQHnWJ1SpOKQYO8R1tzA==";
+    var K = "hnLOqOu4auZcNW1M47jvOw==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -390,6 +390,7 @@ var PLATFORM_SVGS = {
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
     var accountBadge = app.needs_account ? '<span class="needs-account">needs account</span>' : "";
+    var personalBadge = app.personal_use ? '<span class="personal-use">personal use</span>' : "";
     var platKey = app.platform || "android";
     var platName = platKey === "windows" ? "Windows" : "Android";
     var platTag = '<span class="platform-tag" title="' + platName + '" aria-label="' + platName + ' app">' +
@@ -404,7 +405,7 @@ var PLATFORM_SVGS = {
       '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + platTag + ribbon + "</span>" +
       rating +
       (app.description ? '<p class="desc">' + escHtml(app.description) + "</p>" : "") +
-      '<span class="badges">' + storeBadges(app) + needsBadge + accountBadge + "</span>" +
+      '<span class="badges">' + storeBadges(app) + needsBadge + accountBadge + personalBadge + "</span>" +
       trustLine + '</a>';
   }
 
@@ -582,6 +583,7 @@ var PLATFORM_SVGS = {
     if (k === "made_by_us") return !!app.made_by_us;
     if (k === "reviewed") return !app.needs_review;
     if (k === "free_enough") return !!app.free_enough;
+    if (k === "personal_use") return !!app.personal_use;
     return !!(app.attrs && app.attrs[k]);
   }
 

@@ -430,9 +430,12 @@ def clean_record(rec):
         "free_enough": free_enough,
         "free_enough_reason": rec.get("free_enough_reason") or "",
         "needs_account": bool(attrs.get("needs_account")),
+        "personal_use": bool(rec.get("personal_use")),
         # Search tags: surfaced in the client-side search haystack so the
         # tag itself is findable ("enough" -> the Free Enough apps).
-        "tags": (["free enough"] if free_enough else []) + (["needs account"] if attrs.get("needs_account") else []),
+        "tags": ((["free enough"] if free_enough else []) +
+                 (["needs account"] if attrs.get("needs_account") else []) +
+                 (["personal use"] if rec.get("personal_use") else [])),
         "needs_review": bool(rec.get("needs_review")),
         "review_notes": rec.get("review_notes") or "",
     }
@@ -776,7 +779,8 @@ FILTER_STORES = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"),
                  ("github", "GitHub")]
 FILTER_ATTRS = [("open_source", "Open source"), ("offline", "Works offline"),
                 ("no_account", "No account needed"), ("made_by_us", "Made by us"),
-                ("reviewed", "Reviewed"), ("free_enough", "Free Enough")]
+                ("reviewed", "Reviewed"), ("free_enough", "Free Enough"),
+                ("personal_use", "Personal Use")]
 
 
 def fdroid_url(package):
@@ -809,6 +813,8 @@ def transparency_pills(app):
              if app["attrs"].get(k)]
     if app.get("needs_account"):
         pills.append('<span class="needs-account">needs account</span>')
+    if app.get("personal_use"):
+        pills.append('<span class="personal-use">personal use</span>')
     return "\n".join(pills)
 
 
@@ -823,6 +829,9 @@ def build_detail(app, forms):
     ribbon = '<span class="made-by-us">Made by us</span>' if app["made_by_us"] else ""
     per_badge = (f'<p class="per-badge-note">{esc(PER_BADGE_NOTE)}</p>'
                  if app["per_badge"] else "")
+    personal_note = (f'<p class="personal-use-note">Free for personal use '
+                     f'&mdash; businesses need a paid license.</p>'
+                     if app["personal_use"] else "")
     if app["free_enough"]:
         promise_block = (
             f'<h2>Free Enough</h2>\n'
@@ -889,6 +898,7 @@ def build_detail(app, forms):
 {store_badges(app, big=True)}
     </div>
     {per_badge}
+    {personal_note}
     {promise_block}
     {pills_block}
     <h2>Something wrong?</h2>
@@ -1362,6 +1372,30 @@ a.store-badge:hover { filter: brightness(0.96); }
 :root[data-theme="dark"] .needs-account { color: #bcd0fb; background: #1c2a4d; border-color: #3f5d9e; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .needs-account { color: #bcd0fb; background: #1c2a4d; border-color: #3f5d9e; }
+}
+.personal-use {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f0e9fc;
+  color: #6d28d9;
+  border: 1px solid #c4a8f0;
+  white-space: nowrap;
+}
+:root[data-theme="dark"] .personal-use { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .personal-use { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+}
+.personal-use-note {
+  background: #f0e9fc;
+  border: 1px solid #c4a8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #6d28d9;
+}
+:root[data-theme="dark"] .personal-use-note { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .personal-use-note { color: #d8c8fb; background: #2c1c4d; border-color: #7a5aae; }
 }
 /* Platform: segmented All/Android/Windows control + tile/detail glyphs. */
 .platform-seg {
@@ -2071,6 +2105,7 @@ __PLATFORM_SVGS__
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
     var accountBadge = app.needs_account ? '<span class="needs-account">needs account</span>' : "";
+    var personalBadge = app.personal_use ? '<span class="personal-use">personal use</span>' : "";
     var platKey = app.platform || "android";
     var platName = platKey === "windows" ? "Windows" : "Android";
     var platTag = '<span class="platform-tag" title="' + platName + '" aria-label="' + platName + ' app">' +
@@ -2085,7 +2120,7 @@ __PLATFORM_SVGS__
       '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + platTag + ribbon + "</span>" +
       rating +
       (app.description ? '<p class="desc">' + escHtml(app.description) + "</p>" : "") +
-      '<span class="badges">' + storeBadges(app) + needsBadge + accountBadge + "</span>" +
+      '<span class="badges">' + storeBadges(app) + needsBadge + accountBadge + personalBadge + "</span>" +
       trustLine + '</a>';
   }
 
@@ -2263,6 +2298,7 @@ __PLATFORM_SVGS__
     if (k === "made_by_us") return !!app.made_by_us;
     if (k === "reviewed") return !app.needs_review;
     if (k === "free_enough") return !!app.free_enough;
+    if (k === "personal_use") return !!app.personal_use;
     return !!(app.attrs && app.attrs[k]);
   }
 
@@ -2646,6 +2682,8 @@ def _attr_matches_py(app, k):
         return not app.get("needs_review")
     if k == "free_enough":
         return bool(app.get("free_enough"))
+    if k == "personal_use":
+        return bool(app.get("personal_use"))
     return bool((app.get("attrs") or {}).get(k))
 
 
