@@ -883,7 +883,9 @@ def windows_compatibility(app):
     text = labels.get(evidence.get("status"), labels["unverified"])
     source = evidence.get("evidence_url")
     link = (f' <a href="{esc(source)}" rel="noopener">Compatibility source</a>' if source else "")
-    return f'<p class="compatibility-note">{esc(text)}{link}</p>'
+    notes = evidence.get("notes") or ""
+    scope = f' <span>{esc(notes)}</span>' if notes else ""
+    return f'<p class="compatibility-note">{esc(text)}{scope}{link}</p>'
 
 
 ATTR_LABELS = {"open_source": "Open source",
