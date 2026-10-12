@@ -52,8 +52,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Developer's original site forcedattack.sf.net is offline. PortableApps.com co-publishes the game and is the maintained distribution.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/4st-attack-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -127,8 +130,11 @@
   },
   "notes": "UNCERTAIN: the standalone project's own site could not be verified; official_url is the PortableApps entry (third party). PortableApps lists App License: Open Source (GPL) and release 4.2.4 (2013-01-05). URL note: original developer site is gone; PortableApps.com (co-publisher, GPL source linked) is the maintained distribution and serves as the primary download.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/office/a-note-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -247,8 +253,11 @@
   },
   "notes": "3.54.0 released Sep 2025; free for personal and commercial use per official site.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.andreaplanet.com/andreamosaic/download/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -325,8 +334,11 @@
   },
   "notes": "Open source: SourceForge lists GPL-2.0, AlternativeTo cites GPL-3.0. Active (v2.13.0 released December 2024). URL: Official site of the developer Antoine Potten. SourceForge project page demoted to alternatives.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://sourceforge.net/projects/ant-renamer/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -478,8 +490,11 @@
   },
   "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list. URL: Official developer project site hosted on SourceForge. Kept the existing PortableApps link.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/atomic_tanks_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -501,8 +516,11 @@
   },
   "notes": "Freeware for personal and business use; could not verify official download URL in this pass. URL: Official download page from the developer Romain Petges.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.petges.lu/download/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Current 11.50a is 64-bit only and lists Windows 11 and Windows 11 ARM; older 11.40b is explicitly unsupported. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -552,8 +570,11 @@
   },
   "notes": "GPLv3; 4.0.1 released Sep 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.audacityteam.org/download/windows",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Publisher reports Windows 10/11 testing. Windows ARM64 has separate prerequisites and caveats; use its matching build. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -580,8 +601,11 @@
   },
   "notes": "8.1 released May 2024; PortableApps describes it as 'open source and completely free'. Could not verify an official project site, so the URL is left blank. URL: OpenMIDI Project's own AutoDrum page with current Windows downloads.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "http://openmidiproject.opal.ne.jp/AutoDrum_en.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Evidence applies to the 64-bit AutoDrum 8.1/8.0 downloads; do not apply it to older builds. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -682,8 +706,11 @@
   },
   "notes": "Freeware by BabelStone: free to download and use for personal or commercial purposes, fully featured, no ads, no IAP. The developer asks users to download only from babelstone.co.uk.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.babelstone.co.uk/Software/BabelMap.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -705,8 +732,11 @@
   },
   "notes": "Author asks users to download only from babelstone.co.uk and does not support third-party distributions. Verified free for commercial use on the official page.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "http://babelstone.co.uk/Software/BabelPad.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -903,8 +933,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.bleachbit.org/download",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -926,8 +959,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.blender.org/download/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -1027,8 +1063,11 @@
   },
   "notes": "License GPL (open source). Discontinued; the last release was an alpha. official_url from page text, not the verbatim Full URLs list. URL: Original project site brutalchess.sourceforge.net is inactive since 2007. PortableApps.com is the maintained distribution. Kept the existing PortableApps link and added the PortableApps app page plus the verified winget listing.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/brutal_chess_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -1190,8 +1229,11 @@
   },
   "notes": "GPL v2 confirmed on SourceForge; current version 1.5.9.1 (Sept 2024). Basket System/Disks kept. URL: The developer's official site is hosted on SourceForge, which cannot be primary. PortableApps co-publishes cdrtfe Portable with the author Oliver Valencia.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/music_video/cdrtfe_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -1375,8 +1417,11 @@
   },
   "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: Developer Alan Howie distributes via SourceForge only. PortableApps co-publishes Clicky Gone Portable with his assistance, so that page is primary.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/clicky-gone-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -1427,8 +1472,11 @@
   },
   "notes": "Freeware by Xyntec for personal and business use; last release 2012 but the local tool still works. Could not verify the developer's own download URL in this pass. URL: Official developer (Xyntec Automation) download page, verified live.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/converber_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   },
   "audit_reference": "docs/windows-audit-2026-10-12.md"
  },
@@ -1479,8 +1527,11 @@
   },
   "notes": "Open source and completely free per PortableApps; could not verify the developer's own download URL in this pass.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/cook_timer_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -1531,8 +1582,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -1609,8 +1663,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "http://www.softwareok.com/?seite=Microsoft/CpuFrequenz",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -1706,8 +1763,11 @@
   },
   "notes": "Submitting scores to the optional CrystalMarkDB comparison site requires a free account; the benchmark itself needs none.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/crystalmark-retro-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -1913,8 +1973,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/debugview",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -1964,8 +2027,11 @@
   },
   "notes": "Freeware confirmed on softwareok.com, which states it is free for private, commercial and government use without restrictions. Current v7.11. Basket Utilities/Gadgets kept: it is a desktop novelty.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "http://www.softwareok.com/?Download=DesktopSnowOK",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -2176,8 +2242,11 @@
   },
   "notes": "GPLv3 open source, actively maintained (release 3.25.113.0, September 2025). URL: Official maintained GitHub repo; the project's own site is SourceForge-hosted and demoted per policy.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/ditto_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -2283,8 +2352,11 @@
   },
   "notes": "GPL open source per PortableFreeware forums; PortableApps describes it as open source and completely free. Could not verify the developer's own download URL in this pass. URL: No live developer site found. PortableApps co-publishes Don't Panic! Portable, so its app page is primary.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/dont_panic_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -2306,8 +2378,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?Download=DontSleep",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -2432,8 +2507,11 @@
   },
   "notes": "Free for personal and business use per PortableApps, packaged with the publisher's permission.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/dtaskmanager_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -2540,8 +2618,11 @@
   },
   "notes": "UNCERTAIN: GitHub reports NOASSERTION on the license; the LICENSE file is MIT text with entity exclusions. Treated as open source by press coverage. Also distributed via the Microsoft Store.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/File-New-Project/EarTrumpet",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -2684,8 +2765,11 @@
   },
   "notes": "last release 2.1.1 (2012); could not verify the developer's site; distributed via PortableApps.com. URL: Original developer site is defunct. PortableApps.com co-published the EraserDrop package and remains the maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/security/eraserdrop-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -2822,8 +2906,11 @@
   },
   "notes": "Not open source despite the GitHub distribution; the upstream license is proprietary freeware for personal, non-commercial use. No paid tier. The project also runs an official site at getfancontrol.com.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/Rem0o/FanControl.Releases",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "OS support alone does not establish motherboard, GPU or fan-controller compatibility; a hardware-specific test is required. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -2896,8 +2983,11 @@
   },
   "notes": "original site offline; PortableApps.com hosts a build; could not verify an official download page. URL: Packaged with permission from developer Sector Seven. The original download site is defunct, so PortableApps.com is the trustworthy maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/internet/feedroller-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -2947,8 +3037,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://file-converter.io",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Evidence applies to File Converter 2 and its 64-bit installer; legacy downloads are separate. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -3201,8 +3294,11 @@
   },
   "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?Download=FontViewOK",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -3252,8 +3348,11 @@
   },
   "notes": "MIT licensed; latest release 2023.4.1.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.lmadhavan.com/fotografix/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -3321,8 +3420,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.freedownloadmanager.org",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -3441,8 +3543,11 @@
   },
   "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass. URL: Original developer homepage is defunct. The project publishes through SourceForge, so the PortableApps.com co-published package is the trustworthy maintained primary.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/development/frhed_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -3464,8 +3569,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/free_upx_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   },
   "audit_reference": "docs/windows-audit-2026-10-12.md"
  },
@@ -3613,8 +3721,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "http://www.gnucash.org",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -3669,8 +3780,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: The developer site is hosted on SourceForge. PortableApps.com co-publishes the current release with the Golly team and is used as primary since SourceForge cannot be primary.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/golly-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -3748,8 +3862,11 @@
   },
   "notes": "a PortableApps add-on packaging GnuPG, not a standalone app; could not verify an official download page. URL: GPG Plugin is a PortableApps.com product: a repack of GnuPG for use with Thunderbird Portable and SeaMonkey Portable. Upstream GnuPG sources are linked as an alternative.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/security/gpg-plugin-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -3929,8 +4046,11 @@
   },
   "notes": "License verified earlier as MIT open source; could not verify official download URL in this pass. URL: The original sector-seven.net download page is gone and the domain now serves unrelated content. PortableApps.com co-published the package and is the maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/gridy-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4054,8 +4174,11 @@
   },
   "notes": "License GPLv3 (open source). Core use requires your existing Epic, GOG or Amazon accounts. official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://heroicgameslauncher.com/downloads",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4082,8 +4205,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site is gone; PortableApps co-published release is the maintained download source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/hex-a-hop_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4154,8 +4280,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.gethomebank.org/en/downloads.php",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4256,8 +4385,11 @@
   },
   "notes": "License recorded as open source (GPL) per wide distribution in distro repositories, but UNCERTAIN: could not firmly verify the exact license version or the official site in this pass. URL: LGames project has no non-SourceForge developer site; PortableApps co-published release is the maintained download source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/icebreaker_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4281,8 +4413,11 @@
   "needs_review": true,
   "review_notes": "Use the linked portable distribution; the old vendor download page described sponsored installers.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/graphics_pictures/idphotostudio-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   },
   "audit_reference": "docs/windows-audit-2026-10-12.md"
  },
@@ -4314,8 +4449,11 @@
   },
   "notes": "GPL-3.0; 9.5.0.515 released May 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/d2phap/ImageGlass",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Check the matching x64/ARM64 build and edition-specific runtime requirements. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -4342,8 +4480,11 @@
   },
   "notes": "MPL 1.1 open source (SourceForge). A separate modern project (github.com/robdk97/initranslator, MIT) shares the name but this row refers to the classic SourceForge IniTranslator translation tool. URL: Developer site is SourceForge-hosted; PortableApps is the maintained distribution (co-published with Peter Törnqvist).",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/development/initranslator-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4425,8 +4566,11 @@
   },
   "notes": "Free for private and non-commercial use plus educational and charitable organizations; commercial users need a license. No ads or nags.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/graphics_pictures/irfanview_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4448,8 +4592,11 @@
   },
   "notes": "batch hint said oss but no source repository or OSI license statement was found, so it is recorded as freeware.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.srware.net/en/software_srware_iron.php",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4471,8 +4618,11 @@
   },
   "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued (last release around 2017) but the Tox and XMPP protocols still work. URL: Original developer site (isotoxin.im) is dead; PortableApps co-published release is the maintained download source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/internet/isotoxin-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4499,8 +4649,11 @@
   },
   "notes": "Code is GPL and assets are CC-BY-NC 2.5, so the assets carry a non-commercial restriction. UNCERTAIN: could not verify an official URL. URL: Developer site is a dead SourceForge mirror; PortableApps co-published release is the maintained download source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/jooleem_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -4556,8 +4709,11 @@
   },
   "notes": "GPL v2; maintained fork by sylikc on GitHub.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/sylikc/jpegview",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4676,8 +4832,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://keepass.info/download.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Evidence applies to the Classic 1.x edition. It is x86; x64/ARM64 use emulation. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -4699,8 +4858,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://keepass.info/download.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Evidence applies to Professional 2.x; the download page lists x86, x64 and ARM64. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -4722,8 +4884,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://keepassxc.org/download/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4745,8 +4910,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.kicad.org/download/windows/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4838,8 +5006,11 @@
   },
   "notes": "Source repo: github.com/AdventDevInc/kudu.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://usekudu.com/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -4921,8 +5092,11 @@
   },
   "notes": "GPLv2; 4.21 released 2023.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/music_video/lamexp-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -5198,8 +5372,11 @@
   },
   "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL. URL: LGames project has no non-SourceForge developer site; PortableApps co-published release is the maintained download source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "http://portableapps.com/apps/games/lmarbles_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -5226,8 +5403,11 @@
   },
   "notes": "GPL-2.0-or-later; stable 1.2.2 from 2020; 1.3.0-alpha.2 released Sep 2026, development active.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://lmms.io/download/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "x86_64 builds require an x86_64-v2 or newer CPU; ARM64 builds require Windows 11 and ARMv8.1-A or newer. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -5391,8 +5571,11 @@
   },
   "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL. URL: Official site of developer Reto Schoelly.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/mahjongg-solitaire-3d-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -5442,8 +5625,11 @@
   },
   "notes": "Code is GPL and some media is CC-BY-SA (open source). UNCERTAIN: could not verify an official URL. URL: Original developer homepage maniadrive.raydium.org is long dead and the project is inactive since 2008; PortableApps.com co-publishes the game and is the most trustworthy maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/maniadrive-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -5524,8 +5710,11 @@
   },
   "notes": "Disambiguated as the SourceForge 'Windows MBox Viewer' (the PortableApps-listed one), not the assistmyteam.com commercial product whose free edition is personal-use only. SourceForge lists Affero GNU Public License; the PortableApps listing says GPLv2. URL: Verified: github.com/eneam/mboxviewer is the real upstream repo (the SourceForge page itself says development continues there); releases page counts as official for this FOSS app. SourceForge demoted to alt per project rules.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/mbox-viewer-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -5547,8 +5736,11 @@
   },
   "notes": "GPL-3.0-or-later; 1.9.0 released June 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/Aleksoid1978/MPC-BE",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -5570,8 +5762,11 @@
   },
   "notes": "GPL v3; 2.8.3 released Sep 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/clsid2/mpc-hc",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -5593,8 +5788,11 @@
   },
   "notes": "License verified earlier as BSD-2 open source; could not verify official download URL in this pass. URL: Official developer download page for MediaArea MediaInfo.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://mediaarea.net/en/MediaInfo/Download/Windows",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -5639,8 +5837,11 @@
   },
   "notes": "expires 10 days after download; re-download is free.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -5690,8 +5891,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original Mines-Perfect author site is gone; PortableApps.com co-publishes the game and is the most trustworthy maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/mines-perfect_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -5844,8 +6048,11 @@
   },
   "notes": "Open source. UNCERTAIN: could not verify whether the current official binaries are still sold without a free download option, or an official URL. URL: Open-source SNES-style RPG by Trent (nooskewl.com, now dead); PortableApps.com co-publishes it and is the most trustworthy maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/monster_2_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -6061,8 +6268,11 @@
   },
   "notes": "Freeware; 3.6.9668 released June 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.getmusicbee.com/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -6237,8 +6447,11 @@
   },
   "notes": "License is the NetHack General Public License (open source). UNCERTAIN: could not verify an official URL. URL: Official NetHack download page per the NetHack Wiki; nethack.org download paths were restructured under /common/.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.nethack.org/common/index.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -6293,8 +6506,11 @@
   },
   "notes": "License GPL-2.0-or-later (open source). official_url from the GNU Guix package page text, not the verbatim Full URLs list.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/neverball_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -6469,8 +6685,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.oo-software.com/en/shutup10",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -6497,8 +6716,11 @@
   },
   "notes": "GPL-2.0; 32.1.2 released Apr 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://obsproject.com/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -6544,8 +6766,11 @@
   },
   "notes": "This is a PortableApps launcher for the built-in Windows OSK, not a standalone keyboard app.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/accessibility/on-screen_keyboard_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -6567,8 +6792,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/accessibility/oneloupe-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -6693,8 +6921,11 @@
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Official OpenTTD latest stable release download page (older /downloads and /downloads.html paths 404).",
   "sibling": "org.openttd.fdroid",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.openttd.org/downloads/openttd-releases/latest",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The explicit Windows 11 download labels reviewed apply to ARM64 packages. x64 support remains to be verified separately. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -6842,8 +7073,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site pathological.sourceforge.net is abandoned; PortableApps.com co-publishes the game with the original developers and is the most trustworthy maintained source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/pathological_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -6865,8 +7099,11 @@
   },
   "notes": "GPL-2.0 via the openSUSE Build Service packaging. Could not verify an official download URL for the standalone app, so it is left blank. URL: Author Nasca Octavian Paul's original site is offline; PortableApps.com publishes the maintained portable build of the 2.2-2 release.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/music_video/paul_stretch_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -7123,8 +7360,11 @@
   },
   "notes": "BSD licensed; 2025.12 release.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://photodemon.org/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -7345,8 +7585,11 @@
   },
   "notes": " URL: Andrey Gruber distributes PNotes only through his SourceForge project site; SourceForge is demoted to alt per policy, so the co-published PortableApps build is primary",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "http://portableapps.com/apps/office/pnotes_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -7419,8 +7662,11 @@
   },
   "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used; version 3.17 released 2026-06-29 per PortableApps news.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/portableapps.com_appcompactor",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   },
   "audit_reference": "docs/windows-audit-2026-10-12.md"
  },
@@ -7466,8 +7712,11 @@
   },
   "notes": "portableapps.com states the launcher source 'is included and licensed under the GPL'. Free for use with open source and freeware apps; commercial use requires contacting PortableApps.com. Basket confirmed.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "http://portableapps.com/apps/development/portableapps.com_launcher",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -7611,8 +7860,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -7659,8 +7911,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -7682,8 +7937,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?seite=Freeware/ProcessKO",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -7761,8 +8019,11 @@
   },
   "notes": "License MIT (open source). UNCERTAIN: could not verify an official URL.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/puzzle_collection_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -7784,8 +8045,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?seite=Freeware/Q-Dir",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -7860,8 +8124,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8072,8 +8339,11 @@
   },
   "notes": "Proprietary freeware by Wesley Steiner; PortableApps lists it as free for personal and business use, so personal_use is false. No ads, in-app purchases or accounts.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/quick_solitaire_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -8095,8 +8365,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?seite=Microsoft/QuickMemoryTestOK",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8141,8 +8414,11 @@
   },
   "notes": "UNCERTAIN: the author's own site no longer offers the download; PortableApps is the working source and the URL above is their distribution page rather than the developer's site.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/qwikmark-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -8422,8 +8698,11 @@
   },
   "notes": "Freeware by Angus Johnson, officially stated as 'no nags, no ads and fully functional'; PortableApps packages it for personal and business use.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/resource-hacker-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -8446,8 +8725,11 @@
   "notes": "License GPLv3 (open source). official_url is the well-documented official domain from the project record rather than the verbatim Full URLs list.",
   "sibling": "com.retroarch",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.retroarch.com/?page=platforms",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8594,8 +8876,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?seite=Freeware/Run-Command",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8642,8 +8927,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://sandboxie-plus.com/downloads/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8842,8 +9130,11 @@
   },
   "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass. URL: developer's own site as named in the app's license docs; could not live-verify it from this environment since free.fr is blocked by egress policy",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "http://jacquelin.potier.free.fr/ShortcutsSearchAndReplace/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8870,8 +9161,11 @@
   },
   "notes": "GPL-3.0-or-later; 26.8.1 released Aug 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.shotcut.org/download/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -8980,8 +9274,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/henrypp/simplewall",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -9057,8 +9354,11 @@
   },
   "notes": "Open source per the official site and GitHub; could not verify official download URL in this pass.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "http://portableapps.com/apps/utilities/snaptimer-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -9236,8 +9536,11 @@
   },
   "notes": "License GPLv2 (open source). The project describes itself as DonationWare: donations are encouraged but everything works without donating.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://stella-emu.github.io/downloads.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -9264,8 +9567,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://stellarium.org/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The requirements explicitly mention Windows 11 on ARM64; check CPU architecture and OpenGL/GPU requirements separately. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -9370,8 +9676,11 @@
   },
   "notes": "Open source; 6.0.1 released Apr 2025.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/music_video/streamwriter-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -9393,8 +9702,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.softwareok.com/?Download=StressMyPC",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -9449,8 +9761,11 @@
   },
   "notes": "Licensed under (A)GPLv3.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.sumatrapdfreader.org/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -9654,8 +9969,11 @@
   },
   "notes": "License GPLv2+ per libregamewiki. official_url from page text, not the verbatim Full URLs list. URL: Original download host was SourceForge; PortableApps co-publishes it as T^3 Portable and is the maintained distributor",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/t-3_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -9774,8 +10092,11 @@
   },
   "notes": "GPL open source (Lifehacker). Development ended with v0.6 (2007) but the released build still works. Could not verify a current official download URL in this pass. URL: Texter is the Lifehacker/Adam Pash text substitution app; its Lifehacker page is defunct and the app is discontinued, so PortableApps is the maintained distributor",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/texter_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -9876,8 +10197,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Gomoku game by Xmartin Yao; no standalone developer download page found, so PortableApps is the maintained distributor",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/tick5_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10024,8 +10348,11 @@
   },
   "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/toucan",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   },
   "audit_reference": "docs/windows-audit-2026-10-12.md"
  },
@@ -10124,8 +10451,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Puzzle game by Keith Frampton; the original twind.sourceforge.net site is gone and PortableApps is the maintained distributor",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/twin_distress_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10152,8 +10482,11 @@
   },
   "notes": "Discontinued by the developer, but PortableApps still distributes v1.20 and describes it as freeware for business and personal use. Could not verify official download URL in this pass. URL: Discontinued by the original author with the site offline; PortableApps maintains TyperTask Portable",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/typertask-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10230,8 +10563,11 @@
   },
   "notes": "License verified earlier as GPL-3.0 open source; could not verify official download URL in this pass.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://mercury13.github.io/unicodia/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -10253,8 +10589,11 @@
   },
   "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL. URL: Credited to Rare Ideas; no standalone developer site found, so PortableApps is the maintained distributor",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/games/usb-sudoku-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10480,8 +10819,11 @@
   },
   "notes": "The Microsoft binary is proprietary freeware (Wikipedia: 'Proprietary freeware based on open-source project'); the underlying Code-OSS source is MIT-licensed. Sign-in is optional (settings sync only).",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://code.visualstudio.com/download",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -10532,8 +10874,11 @@
   },
   "notes": "original site offline; could not verify an official download page. URL: Original developer Millweed is offline so PortableApps.com, which maintains and co-publishes WackGet Portable, is the official distribution source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/internet/wackget-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10620,8 +10965,11 @@
   },
   "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site is dead; PortableApps.com co-publishes the maintained WAtomic Portable build.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "http://portableapps.com/apps/games/watomic_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10689,8 +11037,11 @@
   },
   "notes": "Developer site no longer offers the download; PortableApps is the working source.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/whatchanged-portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -10763,8 +11114,11 @@
   },
   "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass. URL: Developer's own app page on winaero.com; latest release 1.65 dated February 26 2026.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://winaero.com/winaero-tweaker/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -10855,8 +11209,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.mdtzone.it/sw/wincontig/en/index.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -10901,8 +11258,11 @@
   },
   "notes": "UNCERTAIN: the row name matches 'Windows Error Lookup Tool' by Gunners Software (freeware, unmaintained since v3.0.7 in 2013); this verdict covers the distinct, actively maintained 'Error Lookup' by Henry++, which fits the row's description.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/henrypp/errorlookup",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -10933,8 +11293,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/microsoft/winfile",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -10990,8 +11353,11 @@
   },
   "notes": "License verified earlier as GPL-3.0 open source per SourceForge; could not verify official download URL in this pass. URL: NullRiver's own site no longer reliably serves the download; PortableApps.com co-publishes the maintained portable build.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/winmd5sum_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -11022,8 +11388,11 @@
   },
   "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: Official project site; stable installers are linked from its Downloads section.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "https://portableapps.com/apps/utilities/winmerge_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -11096,8 +11465,11 @@
   },
   "notes": "GPL confirmed on the ricky65/WinPenguins GitHub repo and SoftLookup. Active: v1.2 supports Windows 10/11 and is on the Microsoft Store. Basket Utilities/Gadgets kept.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/ricky65/WinPenguins",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -11326,8 +11698,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://antibody-software.com/wizfile/download",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   },
   "audit_reference": "docs/windows-audit-2026-10-12.md"
  },
@@ -11424,8 +11799,11 @@
   },
   "notes": "GPL; 4.2 released May 2024.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://github.com/cfgnunes/wxmp3gain",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The project reports testing its precompiled binaries on Windows 11. No local executable test was performed. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -11549,8 +11927,11 @@
   },
   "notes": "Free for personal and non-commercial use; commercial users need a license.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.xnview.com/en/xnconvert/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -11572,8 +11953,11 @@
   },
   "notes": "Free for personal and non-commercial use; commercial users need a license.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://www.xnview.com/en/xnview-mp/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
   }
  },
  {
@@ -11692,8 +12076,11 @@
   },
   "notes": "",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Evidence comes from the host requirements section listing Windows 11/10/8, not from mentions of creating Windows 11 installation media. No local Windows 11 installation test was performed."
   }
  },
  {
@@ -11770,8 +12157,11 @@
   },
   "notes": "License GPLv3 (open source) per Wikipedia. official_url from page text, not the verbatim Full URLs list. URL: Developer's official site, listed as the homepage by Wikipedia and Debian.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "distributor",
+   "evidence_url": "http://portableapps.com/apps/games/zaz_portable",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
   }
  },
  {
@@ -11826,8 +12216,11 @@
   },
   "notes": "URL scheme (https) assumed for zim-wiki.org; could not verify canonical scheme. Windows builds support 64-bit Windows 10 only.",
   "windows11": {
-   "status": "unverified",
-   "tested": false
+   "status": "publisher",
+   "evidence_url": "https://zim-wiki.org/downloads.html",
+   "checked_at": "2026-10-12",
+   "tested": false,
+   "notes": "Publisher describes an installer built/tested on Windows 11 64-bit. This is the publisher's test statement, not a test performed here. No local Windows 11 installation test was performed."
   }
  },
  {

@@ -111,3 +111,14 @@ all 468 published applications or deploy the website.
 - Python compilation and `git diff --check` passed.
 - Full Android rebuild and Windows executable smoke tests were not run because
   the external Android corpus and a Windows runtime are unavailable here.
+
+## Follow-up evidence review
+
+See [windows11-evidence-follow-up.md](windows11-evidence-follow-up.md) for the
+subsequent review of all 468 active entries: 71 publisher/project statements,
+60 distributor-only statements, 336 unverified and one explicit incompatibility.
+No execution tests were performed. Scope notes are now visible on detail pages.
+
+Run `python3 tools/verify-live-windows.py` after deployment to compare the
+public JSON, all retained Windows detail pages, sitemap and service worker
+against the checked-in build. It fails immediately on stale catalogue data.
