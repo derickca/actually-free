@@ -11087,5 +11087,24 @@
   "free_enough_reason": "Windy Premium (in-app purchase) adds satellite archives and extended forecasts — but the free tier's forecast models, radar, and maps are what sailors and anglers rely on daily; one premium buyer admitted he “didn't ever use any of its advanced features.”",
   "notes": "Free Enough charter member 2026-10-06: Play shows In-app purchases (Premium); caveat: some features moved to Premium recently, core free experience still beloved.",
   "status": "free-enough"
+ },
+ {
+  "name": "Kept: Keep Your Promises",
+  "package": "com.agentiadiamond.kept",
+  "category": "Lifestyle",
+  "subcategory": "Tasks",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.agentiadiamond.kept",
+   "fdroid": false,
+   "github": null
+  },
+  "verification": {
+   "play_labels_clean": true,
+   "play_rating": null,
+   "fdroid_antifeatures": [],
+   "method": "play"
+  },
+  "notes": "Developer-submitted via site feedback 2026-10-12. Promise tracker with completion notes and kept/missed history. Play Store shows no 'Contains ads' or 'In-app purchases' labels (verified 2026-10-12 against a labeled control). Description states no ads, no account required, data stays on device.",
+  "status": "include"
  }
 ]
