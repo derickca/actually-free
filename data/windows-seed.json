@@ -100,6 +100,25 @@
   "notes": ""
  },
  {
+  "name": "AniFX",
+  "package": "anifx.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "Cursor editor for creating and editing static and animated cursors. Imports images, extracts cursors from EXE and DLL files and batch-processes files.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://anifx.informer.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "PortableApps release notes: freeware for personal and business use. Wikipedia notes development was discontinued after features were folded into IcoFX 2.0, but v1.0 remains functional. Could not verify an official developer site; Attila Kovrig's original site appears offline, so a download mirror is listed as the URL. Kept Utilities/Look: cursor creation is a desktop-look tool."
+ },
+ {
   "name": "Ant Renamer",
   "package": "ant.renamer.windows",
   "platform": "windows",
@@ -390,6 +409,25 @@
   "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
  },
  {
+  "name": "BYOND",
+  "package": "byond.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Players",
+  "description": "Platform for making and playing online multiplayer 2D games. Includes the Dream Maker scripting language, a game hub and hosting tools.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.byond.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "PortableApps release notes: freeware for personal and business use. Proprietary, not open source. No trial or upsell inside the client. Games/Players basket kept: it is primarily a game client and community."
+ },
+ {
   "name": "Capture2Text",
   "package": "capture2text.windows",
   "platform": "windows",
@@ -407,6 +445,25 @@
    "needs_account": false
   },
   "notes": "GPL open source (SourceForge)."
+ },
+ {
+  "name": "cdrtfe",
+  "package": "cdrtfe.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Front end for cdrtools that burns data, audio and video CDs, DVDs and Blu-rays. Creates ISO images and extracts audio tracks.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/cdrtfe/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL v2 confirmed on SourceForge; current version 1.5.9.1 (Sept 2024). Basket System/Disks kept."
  },
  {
   "name": "Checksum Control",
@@ -824,6 +881,25 @@
   "notes": "Freeware by Db Software Laboratory (etl-tools.com); last release around 2020. Could not verify official download URL in this pass."
  },
  {
+  "name": "DaVinci Resolve",
+  "package": "davinci.resolve.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Professional video editing suite with editing, color grading, Fusion VFX and Fairlight audio. Free edition edits and exports up to 4K UHD at 60fps.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "Free edition is a complete product: full editing, color, Fairlight and Fusion tools with exports up to 4K UHD 60fps. Studio ($295 one-time) adds higher resolutions, 10-bit, AI tools, noise reduction and collaboration.",
+  "official_url": "https://www.blackmagicdesign.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Paid tier exists and the free tier is a complete product for most editors, so free_enough=true. Limits that matter are disclosed: 4K UHD/60fps cap, single-GPU use, Studio-only AI tools and noise reduction. Third-party comparisons state no account registration is needed for the free edition; could not verify this on blackmagicdesign.com. Official URL not verified verbatim; blackmagicdesign.com used."
+ },
+ {
   "name": "DB Browser for SQLite",
   "package": "db.browser.for.sqlite.windows",
   "platform": "windows",
@@ -867,6 +943,25 @@
   "notes": ""
  },
  {
+  "name": "DesktopSnowOK",
+  "package": "desktopsnowok.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "Tiny portable tool that adds falling snowflakes (or leaves, flowers or stars) to the desktop. Configurable flake styles, count, speed and transparency.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.softwareok.com/?Download=DesktopSnowOK",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware confirmed on softwareok.com, which states it is free for private, commercial and government use without restrictions. Current v7.11. Basket Utilities/Gadgets kept: it is a desktop novelty."
+ },
+ {
   "name": "Detect It Easy",
   "package": "detect.it.easy.windows",
   "platform": "windows",
@@ -884,6 +979,25 @@
    "needs_account": false
   },
   "notes": "MIT open source."
+ },
+ {
+  "name": "Dia",
+  "package": "dia.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "General-purpose diagramming tool for flowcharts, UML, network and circuit diagrams. Exports to SVG, PNG, EPS and other formats.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wiki.gnome.org/Apps/Dia",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later confirmed by Wikipedia; repo at gitlab.gnome.org/GNOME/dia. Project is dormant (stable 0.97.3 from 2014) but functional; new maintainers produced test builds in 2019. Could not verify a current official Windows binary for Windows 10/11; the community installer at dia-installer.de targets older Windows. Basket corrected from Productivity/Office to Productivity/Design: a Design basket exists and fits diagramming better."
  },
  {
   "name": "Dicom",
@@ -1067,6 +1181,25 @@
   "notes": ""
  },
  {
+  "name": "Draw.io",
+  "package": "draw.io.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Desktop diagramming app for flowcharts, UML and network diagrams, wrapping the draw.io editor in Electron. Works offline with local files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://app.diagrams.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source confirmed; licensing is nuanced. Older desktop builds were Apache 2.0, while third-party fork documentation states desktop builds are GPL-3.0-only since v31.5.2; could not verify this on the official repo. Either way it is open source. Basket corrected from Productivity/Office to Productivity/Design: a Design basket exists."
+ },
+ {
   "name": "DSpeech",
   "package": "dspeech.windows",
   "platform": "windows",
@@ -1165,6 +1298,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "DVDStyler",
+  "package": "dvdstyler.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "DVD authoring tool that creates video DVDs with interactive menus, chapters and slideshows. Burns to disc or saves ISO.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/dvdstyler/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GNU GPL confirmed by Wikipedia and the project. No paid tier. Project is dormant (stable 3.2.1, Nov 2021) but functional; Wikipedia notes the old adware controversy was limited to versions 2.8.0/2.8.1 with no reports in newer versions. Basket Media/Video kept."
  },
  {
   "name": "EarTrumpet",
@@ -1310,6 +1462,25 @@
   "notes": ""
  },
  {
+  "name": "ExifToolGUI",
+  "package": "exiftoolgui.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Graphical front end for ExifTool that views and edits metadata in images, documents, audio and video files. Supports batch edits, IPTC and XMP tags.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/FrankBijnen/ExifToolGui",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "The GUI is freeware; the underlying ExifTool is open source under the Perl license. Maintained by Frank Bijnen on GitHub (v6.3.11, Jan 2026) after the original author Bogdan Hrastnik's build went stale. Basket Media/Photos kept: it is primarily a photo metadata tool."
+ },
+ {
   "name": "Explorer++",
   "package": "explorer.windows",
   "platform": "windows",
@@ -1408,6 +1579,30 @@
    "needs_account": false
   },
   "notes": "original site offline; PortableApps.com hosts a build; could not verify an official download page."
+ },
+ {
+  "name": "Ferdium",
+  "package": "ferdium.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Communications",
+  "subcategory": "Messaging",
+  "description": "Desktop workspace that consolidates messaging and productivity web services (WhatsApp, Slack, Discord, Telegram and 100+ more) into one app. Works offline without an account.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://ferdium.org/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2025-05-26--ferdium-portable-7.1.0-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Apache-2.0 open source confirmed by AlternativeTo and the AUR package. Ferdium states it is completely free with no subscription tiers and usable without registration. The underlying services keep their own accounts and costs, but Ferdium itself clears the bar. Basket Communications/Messaging kept."
  },
  {
   "name": "File Converter",
@@ -1776,6 +1971,25 @@
   "notes": ""
  },
  {
+  "name": "gMKVExtractGUI",
+  "package": "gmkvextractgui.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "GUI for MKVToolNix's mkvextract and mkvinfo utilities. Extracts tracks, chapters, attachments, tags and timecodes from MKV files without command-line flags.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/Gpower2/gMKVExtractGUI",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source under The Unlicense (public domain) per the GitHub repo (Gpower2/gMKVExtractGUI). Active: v2.12.0 released Jan 2026. Requires MKVToolNix (separate, also free). Basket Media/Video kept."
+ },
+ {
   "name": "GnuCash",
   "package": "gnucash.windows",
   "platform": "windows",
@@ -1898,6 +2112,44 @@
    "needs_account": false
   },
   "notes": "Free for personal and commercial use per the TechPowerUp license."
+ },
+ {
+  "name": "Gramps",
+  "package": "gramps.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Desktop genealogy program for storing, editing and researching family trees. Produces reports, charts and family websites.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://gramps-project.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Official wiki states Gramps is open source under the GNU General Public License. No account needed, no paid tier. Lifestyle/Education basket kept: genealogy is a loose but acceptable fit."
+ },
+ {
+  "name": "Greenfish Icon Editor Pro",
+  "package": "greenfish.icon.editor.pro.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Image editor focused on icons, cursors, animations and icon libraries. Supports layers, filters, gradients and batch conversion.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://greenfishsoftware.org/gfie.php",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL v3 confirmed by multiple sources; source mirrored on GitHub. Completely free with no paid tier. Basket corrected from Media/Photos to Productivity/Design: it is an icon design tool, not a photo tool. The official site appeared stale; could not verify a current official download page."
  },
  {
   "name": "Greenshot",
@@ -2497,6 +2749,25 @@
   "notes": ""
  },
  {
+  "name": "Listary",
+  "package": "listary.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Utilities",
+  "subcategory": "Keyboard",
+  "description": "Find-as-you-type file search and app launcher that integrates with File Explorer and file dialogs.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "Free version includes core file search, app launch, filters and commands with no nagging; Pro ($19.95 one-time) adds dark theme, custom filters and actions, network-drive indexing and a commercial-use license.",
+  "official_url": "http://www.listary.com/pro",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free plan is explicitly personal-use only per listary.com/pro: commercial use requires the $19.95 one-time Pro license. Free tier clears the bar otherwise. Basket corrected Utilities/Look to Utilities/Keyboard: it is a hotkey-driven launcher, not a look/customization tool."
+ },
+ {
   "name": "LocalSend",
   "package": "localsend.windows",
   "platform": "windows",
@@ -2700,6 +2971,25 @@
   "notes": ""
  },
  {
+  "name": "MyPAL",
+  "package": "mypal.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Web browser for Windows XP, forked from Firefox. Aims to give old machines a maintained browsing experience.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/Feodor2/Mypal",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Mozilla-licensed open source (Feodor2/Mypal on GitHub). The Register (Sept 2026) reports it is still in active maintenance. Niche but legitimate: it serves users stuck on XP. Basket System/Internet kept."
+ },
+ {
   "name": "NanaZip",
   "package": "nanazip.windows",
   "platform": "windows",
@@ -2722,6 +3012,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "NAPS2",
+  "package": "naps2.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Document scanning app that saves scans as PDF, TIFF, JPEG or PNG. Includes OCR, deskew and batch scanning.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.naps2.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL confirmed by the project and the PortableApps request page. No ads, no paid tier, free for personal and commercial use. Basket Productivity/Office kept: there is no Scan basket and Office is the nearest fit."
  },
  {
   "name": "Notepad++",
@@ -2862,6 +3171,26 @@
   "notes": ""
  },
  {
+  "name": "Obsidian",
+  "package": "obsidian.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Local-first note-taking app built on plain Markdown files. Includes bidirectional linking, graph view, Canvas and thousands of community plugins.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "Core app is free forever for any purpose including commercial; Catalyst (from $25 one-time) is a voluntary supporter tier that unlocks no features, and Sync ($4-5/mo) and Publish ($8-10/mo) are optional add-ons.",
+  "official_url": "https://obsidian.md",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Proprietary, not open source, but the core app is free for everyone including commercial use since Feb 2025 (official license page). Free tier is the complete product; paid items are supporter perks and optional services. No ads, no nagging, no account required. Basket Productivity/Office kept.",
+  "sibling": "md.obsidian"
+ },
+ {
   "name": "On-Screen Keyboard",
   "package": "on.screen.keyboard.windows",
   "platform": "windows",
@@ -2898,6 +3227,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Opal",
+  "package": "opal.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Ambient sound mixer that blends dozens of sounds like rain, thunder, fire and office noise into custom relaxing environments. JavaFX app by CodeDead.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/CodeDead/opal",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source confirmed on the CodeDead GitHub repo. Active: v1.5.1 released 2025. Basket corrected from Media/Music to Media/Audio: it is a sound generator, not music playback."
  },
  {
   "name": "OpenRGB",
@@ -3057,6 +3405,25 @@
   "notes": "UNCERTAIN: dormant since 2014; could not verify it works on Windows 10/11."
  },
  {
+  "name": "Pencil Project",
+  "package": "pencil.project.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "GUI prototyping and diagramming tool for mockups, wireframes and flowcharts. Available as a desktop app on Windows, Mac and Linux.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://pencil.evolus.vn/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source under the GPL per the evolus/pencil GitHub repo and the official site. Latest stable 3.1.1 (Jan 2023); quiet but functional. Basket corrected from Productivity/Office to Productivity/Design: a Design basket exists and prototyping is design work."
+ },
+ {
   "name": "Pencil2D",
   "package": "pencil2d.windows",
   "platform": "windows",
@@ -3074,6 +3441,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Pixelorama",
+  "package": "pixelorama.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Pixel art editor for sprites, tiles and animations with onion skinning, palette management and sprite-sheet export. Built on Godot.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.pixelorama.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT license confirmed on the official GitHub repo (Orama-Interactive/Pixelorama). Fully free, no paid tier. Basket corrected from Media/Photos to Productivity/Design: it is an art creation tool, not a photo manager."
  },
  {
   "name": "PNotes.NET",
@@ -3131,6 +3517,68 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used; version 3.17 released 2026-06-29 per PortableApps news."
+ },
+ {
+  "name": "PortableApps.com Installer",
+  "package": "portableapps.com.installer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "Full-featured installer for portable apps that installs them cleanly and leaves nothing behind on the host PC. Aimed at developers packaging apps in PortableApps.com Format.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/development/portableapps.com_installer",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified on portableapps.com: 'Open Source - Licensed under the GPL'. Fully free with no paid tier, no ads and no nagging. Basket confirmed: it is a developer packaging tool."
+ },
+ {
+  "name": "PortableApps.com Launcher",
+  "package": "portableapps.com.launcher.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "Builder that turns ordinary Windows apps into portable apps via INI configuration, no coding required. Handles registry portablization, settings moving and language switching.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://portableapps.com/apps/development/portableapps.com_launcher",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "portableapps.com states the launcher source 'is included and licensed under the GPL'. Free for use with open source and freeware apps; commercial use requires contacting PortableApps.com. Basket confirmed."
+ },
+ {
+  "name": "PortableApps.com Platform",
+  "package": "portableapps.com.platform.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "Portable app suite and menu that ties portable apps together with an app store, automatic updates, themes and backup. Runs from USB drives, cloud folders or a local PC.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/Download",
+  "alt_downloads": [
+   {
+    "label": "SourceForge",
+    "url": "https://sourceforge.net/projects/portableapps/?source=sfspproj"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "100% free and fully open source (GPL, with some MIT/CC components) per the platform download page. No paid tier. Basket Utilities/Gadgets kept: it is a launcher menu utility."
  },
  {
   "name": "PortExpert",
@@ -3304,6 +3752,25 @@
   "notes": ""
  },
  {
+  "name": "Q-Eye",
+  "package": "q.eye.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "Lightweight editor for QlikView QVD and QVX data files. Views, edits, filters and exports data to Excel, XML and SQL insert scripts.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.etl-tools.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "License verified via PortableApps release notes: freeware for personal and commercial use, packaged by the publisher DB Software Laboratory. Still maintained (v6.5.1, 2026). Could not verify the exact official product page; the publisher site is listed. Basket kept as Utilities/Dev tools: it is a niche data-file tool."
+ },
+ {
   "name": "Qalculate",
   "package": "qalculate.windows",
   "platform": "windows",
@@ -3436,6 +3903,30 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: the author's own site no longer offers the download; PortableApps is the working source and the URL above is their distribution page rather than the developer's site."
+ },
+ {
+  "name": "r3dfox",
+  "package": "r3dfox.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Firefox fork for Windows Vista, 7 and 8, based on current Firefox release branches. Reduces telemetry and adds a portable mode.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://eclipse.cx/projects/r3dfox",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2025-07-31--r3dfox-portable-140.0.4-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Mozilla-licensed open source (Eclipse-Community/r3dfox on GitHub). Active: releases tracked into 2026. Serves legacy Windows users that mainstream browsers abandoned. Basket System/Internet kept."
  },
  {
   "name": "RAMMap",
@@ -4044,6 +4535,30 @@
   "notes": ""
  },
  {
+  "name": "Supermium",
+  "package": "supermium.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Internet",
+  "description": "Chromium fork that supports Windows XP through 11 with modern Chromium features. Includes Aero-style title bars and Google Sync.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://win32subsystem.live/supermium/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/node/70710"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "BSD-3-Clause confirmed by Wikipedia; repo at github.com/win32ss/supermium. Active development (stable 144, July 2026). Basket System/Internet kept."
+ },
+ {
   "name": "SWI-Prolog",
   "package": "swi.prolog.windows",
   "platform": "windows",
@@ -4214,6 +4729,25 @@
    "needs_account": false
   },
   "notes": "Open source and completely free per PortableApps. Could not verify the developer's own download URL in this pass."
+ },
+ {
+  "name": "The Powder Toy",
+  "package": "the.powder.toy.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Games",
+  "subcategory": "Educational",
+  "description": "Falling-sand physics sandbox that simulates air pressure, heat, gravity and hundreds of interacting substances. Browse and upload community creations.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://powdertoy.co.uk/Download.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL confirmed via the GitHub repo (jacob1/The-Powder-Toy) and the Google Play listing ('Source code (GPL)'). Online save-browsing needs a free account; the game itself does not. Basket corrected Games/Puzzle to Games/Educational: it is a simulation sandbox, not a puzzle game."
  },
  {
   "name": "TidyTabs",
@@ -4904,6 +5438,30 @@
   "notes": ""
  },
  {
+  "name": "WinPenguins",
+  "package": "winpenguins.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "Desktop toy that sends cute penguins wandering across windows, the taskbar and the screen edge. Pop them with the cursor or steer the skateboarders with arrow keys.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/ricky65/WinPenguins",
+  "alt_downloads": [
+   {
+    "label": "Microsoft Store",
+    "url": "https://www.microsoft.com/store/apps/9P5Z59BMZZ5G"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL confirmed on the ricky65/WinPenguins GitHub repo and SoftLookup. Active: v1.2 supports Windows 10/11 and is on the Microsoft Store. Basket Utilities/Gadgets kept."
+ },
+ {
   "name": "WinSCP",
   "package": "winscp.windows",
   "platform": "windows",
@@ -5113,6 +5671,25 @@
   "notes": ""
  },
  {
+  "name": "XAMPP",
+  "package": "xampp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "One-installer package of Apache, MariaDB/MySQL, PHP and Perl for local web development. Includes phpMyAdmin and a control panel to start and stop services.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.apachefriends.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Apache Friends releases the XAMPP compilation under the GPL; bundled components carry their own licenses. Completely free, no paid tiers and no upsell in the product. Basket confirmed."
+ },
+ {
   "name": "XN Resource Editor",
   "package": "xn.resource.editor.windows",
   "platform": "windows",
@@ -5283,6 +5860,25 @@
    "needs_account": false
   },
   "notes": "Dual-licensed: the encoding library is BSD-3-clause and the GUI/CLI are GPL-3.0-or-later."
+ },
+ {
+  "name": "Zoom",
+  "package": "zoom.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Communications",
+  "subcategory": "Phone",
+  "description": "Video conferencing app for meetings, webinars and chat. Free Basic plan supports up to 100 participants.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "Basic is a permanent free plan with unlimited meetings for up to 100 participants; the 40-minute per-meeting cap is a standing product limit, not a trial.",
+  "official_url": "https://zoom.us",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": true
+  },
+  "notes": "Free tier clears the bar: Zoom Workplace Basic is permanent, not a trial, with unlimited meetings. The 40-minute limit on every meeting (including 1-on-1s since 2022) is a product limitation, and the meeting can be restarted for free. Judgment: free_enough=true, with the cap disclosed so users know the boundary. Requires a free Zoom account to host; could not verify whether guests can join without an account. Official URL not verified verbatim; zoom.us used."
  },
  {
   "name": "ZoomIt",

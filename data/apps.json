@@ -823,6 +823,48 @@
   "sibling_package": null
  },
  {
+  "name": "AniFX",
+  "package": "anifx.windows",
+  "slug": "anifx-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "Cursor editor for creating and editing static and animated cursors. Imports images, extracts cursors from EXE and DLL files and batch-processes files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://anifx.informer.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "AnkiDroid",
   "package": "com.ichi2.anki",
   "slug": "com-ichi2-anki",
@@ -3204,6 +3246,48 @@
   "sibling_package": null
  },
  {
+  "name": "BYOND",
+  "package": "byond.windows",
+  "slug": "byond-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Players",
+  "description": "Platform for making and playing online multiplayer 2D games. Includes the Dream Maker scripting language, a game hub and hosting tools.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.byond.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Calculator App",
   "package": "com.math.bmi.scientific.calculator.converter.android",
   "slug": "com-math-bmi-scientific-calculator-converter-android",
@@ -3436,6 +3520,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "cdrtfe",
+  "package": "cdrtfe.windows",
+  "slug": "cdrtfe-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Front end for cdrtools that burns data, audio and video CDs, DVDs and Blu-rays. Creates ISO images and extracts audio tracks.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/cdrtfe/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -5297,6 +5423,50 @@
   "sibling_package": null
  },
  {
+  "name": "DaVinci Resolve",
+  "package": "davinci.resolve.windows",
+  "slug": "davinci-resolve-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Professional video editing suite with editing, color grading, Fusion VFX and Fairlight audio. Free edition edits and exports up to 4K UHD at 60fps.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.blackmagicdesign.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Free edition is a complete product: full editing, color, Fairlight and Fusion tools with exports up to 4K UHD 60fps. Studio ($295 one-time) adds higher resolutions, 10-bit, AI tools, noise reduction and collaboration.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DAVx⁵",
   "package": "at.bitfire.davdroid",
   "slug": "at-bitfire-davdroid",
@@ -5548,6 +5718,48 @@
   "sibling_package": null
  },
  {
+  "name": "DesktopSnowOK",
+  "package": "desktopsnowok.windows",
+  "slug": "desktopsnowok-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "Tiny portable tool that adds falling snowflakes (or leaves, flowers or stars) to the desktop. Configurable flake styles, count, speed and transparency.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.softwareok.com/?Download=DesktopSnowOK",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Detect It Easy",
   "package": "detect.it.easy.windows",
   "slug": "detect-it-easy-windows",
@@ -5617,6 +5829,48 @@
   },
   "rating": 4.9,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Dia",
+  "package": "dia.windows",
+  "slug": "dia-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "General-purpose diagramming tool for flowcharts, UML, network and circuit diagrams. Exports to SVG, PNG, EPS and other formats.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wiki.gnome.org/Apps/Dia",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -6221,6 +6475,48 @@
   "sibling_package": null
  },
  {
+  "name": "Draw.io",
+  "package": "draw.io.windows",
+  "slug": "draw-io-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Desktop diagramming app for flowcharts, UML and network diagrams, wrapping the draw.io editor in Electron. Works offline with local files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://app.diagrams.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Drawpile",
   "package": "net.drawpile",
   "slug": "net-drawpile",
@@ -6542,6 +6838,48 @@
   },
   "downloads": {
    "official": "https://duplicati.com/download",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "DVDStyler",
+  "package": "dvdstyler.windows",
+  "slug": "dvdstyler-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "DVD authoring tool that creates video DVDs with interactive menus, chapters and slideshows. Burns to disc or saves ISO.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/dvdstyler/",
    "alternatives": []
   },
   "rating": null,
@@ -7303,6 +7641,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "ExifToolGUI",
+  "package": "exiftoolgui.windows",
+  "slug": "exiftoolgui-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Graphical front end for ExifTool that views and edits metadata in images, documents, audio and video files. Supports batch edits, IPTC and XMP tags.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/FrankBijnen/ExifToolGui",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -8136,6 +8516,53 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Ferdium",
+  "package": "ferdium.windows",
+  "slug": "ferdium-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Messaging",
+  "description": "Desktop workspace that consolidates messaging and productivity web services (WhatsApp, Slack, Discord, Telegram and 100+ more) into one app. Works offline without an account.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://ferdium.org/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2025-05-26--ferdium-portable-7.1.0-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -10742,6 +11169,48 @@
   "sibling_package": null
  },
  {
+  "name": "gMKVExtractGUI",
+  "package": "gmkvextractgui.windows",
+  "slug": "gmkvextractgui-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "GUI for MKVToolNix's mkvextract and mkvinfo utilities. Extracts tracks, chapters, attachments, tags and timecodes from MKV files without command-line flags.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Gpower2/gMKVExtractGUI",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "GnuCash",
   "package": "gnucash.windows",
   "slug": "gnucash-windows",
@@ -11399,6 +11868,90 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Gramophone ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "Gramps",
+  "package": "gramps.windows",
+  "slug": "gramps-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Desktop genealogy program for storing, editing and researching family trees. Produces reports, charts and family websites.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://gramps-project.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Greenfish Icon Editor Pro",
+  "package": "greenfish.icon.editor.pro.windows",
+  "slug": "greenfish-icon-editor-pro-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Image editor focused on icons, cursors, animations and icon libraries. Supports layers, filters, gradients and batch conversion.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://greenfishsoftware.org/gfie.php",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -14977,6 +15530,51 @@
   "sibling_package": null
  },
  {
+  "name": "Listary",
+  "package": "listary.windows",
+  "slug": "listary-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Keyboard",
+  "description": "Find-as-you-type file search and app launcher that integrates with File Explorer and file dialogs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.listary.com/pro",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Free version includes core file search, app launch, filters and commands with no nagging; Pro ($19.95 one-time) adds dark theme, custom filters and actions, network-drive indexing and a commercial-use license.",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "LocalSend",
   "package": "org.localsend.localsend_app",
   "slug": "org-localsend-localsend-app",
@@ -17690,6 +18288,48 @@
   "sibling_package": null
  },
  {
+  "name": "MyPAL",
+  "package": "mypal.windows",
+  "slug": "mypal-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Internet",
+  "description": "Web browser for Windows XP, forked from Firefox. Aims to give old machines a maintained browsing experience.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Feodor2/Mypal",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Namida",
   "package": "github.namidaco.namida",
   "slug": "github-namidaco-namida",
@@ -17752,6 +18392,48 @@
   },
   "downloads": {
    "official": "https://github.com/M2Team/NanaZip/releases",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "NAPS2",
+  "package": "naps2.windows",
+  "slug": "naps2-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Document scanning app that saves scans as PDF, TIFF, JPEG or PNG. Includes OCR, deskew and batch scanning.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.naps2.com/",
    "alternatives": []
   },
   "rating": null,
@@ -18847,7 +19529,55 @@
   ],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "obsidian-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "Obsidian",
+  "package": "obsidian.windows",
+  "slug": "obsidian-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Local-first note-taking app built on plain Markdown files. Includes bidirectional linking, graph view, Canvas and thousands of community plugins.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://obsidian.md",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Core app is free forever for any purpose including commercial; Catalyst (from $25 one-time) is a voluntary supporter tier that unlocks no features, and Sync ($4-5/mo) and Publish ($8-10/mo) are optional add-ons.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "md.obsidian",
+  "sibling_slug": "md-obsidian",
+  "sibling_platform": "android"
  },
  {
   "name": "Obtainium",
@@ -19208,6 +19938,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Opal",
+  "package": "opal.windows",
+  "slug": "opal-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Ambient sound mixer that blends dozens of sounds like rain, thunder, fire and office noise into custom relaxing environments. JavaFX app by CodeDead.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/CodeDead/opal",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -20415,6 +21187,48 @@
   "sibling_package": null
  },
  {
+  "name": "Pencil Project",
+  "package": "pencil.project.windows",
+  "slug": "pencil-project-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "GUI prototyping and diagramming tool for mockups, wireframes and flowcharts. Available as a desktop app on Windows, Mac and Linux.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://pencil.evolus.vn/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Pencil2D",
   "package": "pencil2d.windows",
   "slug": "pencil2d-windows",
@@ -20768,6 +21582,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Pixelorama",
+  "package": "pixelorama.windows",
+  "slug": "pixelorama-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Pixel art editor for sprites, tiles and animations with onion skinning, palette management and sprite-sheet export. Built on Godot.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.pixelorama.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -21373,6 +22229,137 @@
   "downloads": {
    "official": "https://portableapps.com",
    "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PortableApps.com Installer",
+  "package": "portableapps.com.installer.windows",
+  "slug": "portableapps-com-installer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "Full-featured installer for portable apps that installs them cleanly and leaves nothing behind on the host PC. Aimed at developers packaging apps in PortableApps.com Format.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/development/portableapps.com_installer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PortableApps.com Launcher",
+  "package": "portableapps.com.launcher.windows",
+  "slug": "portableapps-com-launcher-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "Builder that turns ordinary Windows apps into portable apps via INI configuration, no coding required. Handles registry portablization, settings moving and language switching.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://portableapps.com/apps/development/portableapps.com_launcher",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PortableApps.com Platform",
+  "package": "portableapps.com.platform.windows",
+  "slug": "portableapps-com-platform-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "Portable app suite and menu that ties portable apps together with an app store, automatic updates, themes and backup. Runs from USB drives, cloud folders or a local PC.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/Download",
+   "alternatives": [
+    {
+     "label": "SourceForge",
+     "url": "https://sourceforge.net/projects/portableapps/?source=sfspproj"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -22012,6 +22999,48 @@
   "sibling_package": null
  },
  {
+  "name": "Q-Eye",
+  "package": "q.eye.windows",
+  "slug": "q-eye-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "Lightweight editor for QlikView QVD and QVX data files. Views, edits, filters and exports data to Excel, XML and SQL insert scripts.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.etl-tools.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Qalculate",
   "package": "qalculate.windows",
   "slug": "qalculate-windows",
@@ -22621,6 +23650,53 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "r3dfox",
+  "package": "r3dfox.windows",
+  "slug": "r3dfox-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Internet",
+  "description": "Firefox fork for Windows Vista, 7 and 8, based on current Firefox release branches. Reduces telemetry and adds a portable mode.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://eclipse.cx/projects/r3dfox",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2025-07-31--r3dfox-portable-140.0.4-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -26207,6 +27283,53 @@
   "sibling_package": null
  },
  {
+  "name": "Supermium",
+  "package": "supermium.windows",
+  "slug": "supermium-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Internet",
+  "description": "Chromium fork that supports Windows XP through 11 with modern Chromium features. Includes Aero-style title bars and Google Sync.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://win32subsystem.live/supermium/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/node/70710"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "SuperTuxKart",
   "package": "org.supertuxkart.stk",
   "slug": "org-supertuxkart-stk",
@@ -27084,6 +28207,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "The Powder Toy",
+  "package": "the.powder.toy.windows",
+  "slug": "the-powder-toy-windows",
+  "category": "Games",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Educational",
+  "description": "Falling-sand physics sandbox that simulates air pressure, heat, gravity and hundreds of interacting substances. Browse and upload community creations.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://powdertoy.co.uk/Download.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -30128,6 +31293,53 @@
   "sibling_package": null
  },
  {
+  "name": "WinPenguins",
+  "package": "winpenguins.windows",
+  "slug": "winpenguins-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "Desktop toy that sends cute penguins wandering across windows, the taskbar and the screen edge. Pop them with the cursor or steer the skateboarders with arrow keys.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/ricky65/WinPenguins",
+   "alternatives": [
+    {
+     "label": "Microsoft Store",
+     "url": "https://www.microsoft.com/store/apps/9P5Z59BMZZ5G"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "WinSCP",
   "package": "winscp.windows",
   "slug": "winscp-windows",
@@ -30595,6 +31807,48 @@
   "tags": [
    "personal use"
   ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "XAMPP",
+  "package": "xampp.windows",
+  "slug": "xampp-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "One-installer package of Apache, MariaDB/MySQL, PHP and Perl for local web development. Includes phpMyAdmin and a control panel to start and stop services.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.apachefriends.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -31195,6 +32449,51 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zoom",
+  "package": "zoom.windows",
+  "slug": "zoom-windows",
+  "category": "Communications",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Phone",
+  "description": "Video conferencing app for meetings, webinars and chat. Free Basic plan supports up to 100 participants.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://zoom.us",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Basic is a permanent free plan with unlimited meetings for up to 100 participants; the 40-minute per-meeting cap is a standing product limit, not a trial.",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "free enough",
+   "needs account"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
