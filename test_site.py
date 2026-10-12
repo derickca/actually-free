@@ -76,13 +76,21 @@ def main():
         "Suspension Setup": ("Lifestyle", "Health"),
         "Krita": ("Media", "Photos"),
         "Jellyfin": ("Media", "Home Theater"),
-        "Amaze File Manager": ("System", "Files"),
+        "Amaze File Manager": ("Productivity", "Files"),
         "Firefox": ("System", "Internet"),
         "Easer": ("System", "Automate"),
         "Maid": ("System", "Automate"),
         "Jidoujisho": ("Lifestyle", "Education"),
         "Storii - audiobookshelf client": ("Media", "Audio"),
         "BetterCounter": ("Lifestyle", "Health"),
+        # Taxonomy v2 (2026-10-11)
+        "Google Docs": ("Productivity", "Office"),
+        "MJ PDF": ("Media", "Read"),
+        "EtchDroid ISO to USB Writer": ("System", "Disks"),
+        "CPU Info (open-source)": ("System", "Monitor"),
+        "SD Maid 2/SE": ("System", "Maintenance"),
+        "PlainApp": ("System", "Internet"),
+        "Activity Manager": ("Utilities", "Gadgets"),
     }
     for name, want in expected.items():
         check(f"taxonomy: {name}", m.get(name) == want,
@@ -93,7 +101,17 @@ def main():
     check("Media/Graphics merged into Photos", ("Media", "Graphics") not in subs)
     check("Media/Home Theater exists", ("Media", "Home Theater") in subs)
     check("Utilities/Files moved to System", ("Utilities", "Files") not in subs)
-    check("System/Files exists", ("System", "Files") in subs)
+    # Taxonomy v2 (2026-10-11): Productivity top-level, Device split three ways
+    check("Productivity/Files exists", ("Productivity", "Files") in subs)
+    check("System/Files gone", ("System", "Files") not in subs)
+    check("Productivity/Office exists", ("Productivity", "Office") in subs)
+    check("System/Device split away", ("System", "Device") not in subs)
+    check("System/Disks exists", ("System", "Disks") in subs)
+    check("System/Monitor exists", ("System", "Monitor") in subs)
+    check("System/Maintenance exists", ("System", "Maintenance") in subs)
+    for old in [("Lifestyle", "Finance"), ("Lifestyle", "Navigation"),
+                ("Lifestyle", "Tasks"), ("Lifestyle", "Productivity")]:
+        check(f"v2: {old[0]}/{old[1]} moved out", old not in subs)
     check("no empty subcategories", all(n > 0 for n in subs.values()))
 
     # 4. Alphabetical subcategory order in the emitted JS derivation.

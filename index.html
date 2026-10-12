@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Actually Free — Find the free apps they don&#x27;t want you to see.</title>
-<meta name="description" content="A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. Find the free apps they don&#x27;t want you to see.">
+<meta name="description" content="A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Find the free apps they don&#x27;t want you to see.">
 <meta property="og:title" content="Actually Free — Find the free apps they don&#x27;t want you to see.">
-<meta property="og:description" content="A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. Find the free apps they don&#x27;t want you to see.">
+<meta property="og:description" content="A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Find the free apps they don&#x27;t want you to see.">
 <meta property="og:url" content="https://free.certifiable.media/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Actually Free">
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="Actually Free — find the free apps they don't want you to see.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Actually Free — Find the free apps they don&#x27;t want you to see.">
-<meta name="twitter:description" content="A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. Find the free apps they don&#x27;t want you to see.">
+<meta name="twitter:description" content="A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Find the free apps they don&#x27;t want you to see.">
 <meta name="twitter:image" content="https://free.certifiable.media/assets/og-share.png">
 <link rel="icon" href="/assets/mascot-friendly.webp">
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
@@ -47,13 +47,18 @@
 </header>
 <main class="directory">
   <section class="hero">
-    <h1>Actually free Android apps.</h1>
+    <h1 id="hero-title">Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">Find the free apps they don&#x27;t want you to see.</span></p>
   </section>
-  <p class="promise-line"><span class="lock">✓ No ads</span> · <span class="lock">✓ No in-app purchases</span> · <span class="lock">✓ No subscriptions</span></p>
+  <p class="promise-line"><span class="lock">✓ No ads</span> · <span class="lock">✓ No purchases</span> · <span class="lock">✓ No subscriptions</span> · <span class="lock">✓ No trials</span> · <span class="lock">✓ No nagging</span> · <span class="lock">✓ No surprise bundles</span></p>
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;…"
            aria-label="Search apps" autocomplete="off">
+    <div class="platform-seg" id="platform-seg" role="group" aria-label="Filter by platform">
+      <button class="seg on" data-platform="">All</button>
+      <button class="seg" data-platform="android"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17.6 9.5l1.8-3.1c.1-.2 0-.5-.2-.6-.2-.1-.5 0-.6.2l-1.9 3.2c-1-.5-2.1-.7-3.2-.7s-2.2.2-3.2.7L8.4 5.9c-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6l1.8 3.1C6.6 11.3 5 13.9 5 16.9h14c0-3-1.6-5.6-4.4-7.4z"/></svg> Android</button>
+      <button class="seg" data-platform="windows"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5zM3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z"/></svg> Windows</button>
+    </div>
     <div class="cat-stack">
       <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
         <button class="chip on" data-cat="" style="--accent-h:210">All</button>
@@ -81,7 +86,8 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android apps that are
-    actually free. Every app is checked before listing: no ads, no in-app purchases, no subscriptions.
+    actually free. Every app is checked before listing: no ads, no purchases, no subscriptions,
+    no trials, no nagging and no surprise bundles.
     If an app breaks the promise, report it and we'll take a look.</p>
     <p class="fine-print"><strong>The fine print:</strong> We don't own these apps (except QR Cards).
     Not every store is equally trustworthy &mdash; download with judgment, use at your own risk.</p>

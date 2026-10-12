@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (AjY9ENQcUdOWjlQQ2vcfEw==, replaced at build time) embedded separately,
+     the key (DMDQHnWJ1SpOKQYO8R1tzA==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "AjY9ENQcUdOWjlQQ2vcfEw==";
+    var K = "DMDQHnWJ1SpOKQYO8R1tzA==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -268,8 +268,12 @@
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", subcat: "", attrs: {}, stores: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30 };
+  var state = { apps: [], query: "", cat: "", subcat: "", platform: "", attrs: {}, stores: {}, sort: "name" };
+var PLATFORM_SVGS = {
+  "android": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M17.6 9.5l1.8-3.1c.1-.2 0-.5-.2-.6-.2-.1-.5 0-.6.2l-1.9 3.2c-1-.5-2.1-.7-3.2-.7s-2.2.2-3.2.7L8.4 5.9c-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6l1.8 3.1C6.6 11.3 5 13.9 5 16.9h14c0-3-1.6-5.6-4.4-7.4z\"/></svg>",
+  "windows": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5zM3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z\"/></svg>"
+};
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30, "Productivity": 60 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -385,6 +389,11 @@
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
+    var accountBadge = app.needs_account ? '<span class="needs-account">needs account</span>' : "";
+    var platKey = app.platform || "android";
+    var platName = platKey === "windows" ? "Windows" : "Android";
+    var platTag = '<span class="platform-tag" title="' + platName + '" aria-label="' + platName + ' app">' +
+      (PLATFORM_SVGS[platKey] || PLATFORM_SVGS.android) + "</span>";
     var trustLine = app.free_enough
       ? '<span class="free-enough">Free Enough</span>'
       : '<span class="verified">\u2713 Verified actually-free</span>';
@@ -392,10 +401,10 @@
       '.html" data-slug="' + escHtml(app.slug) + '">' +
       '<span class="tile-top">' + iconHtml +
       "<span><h3>" + wbrify(app.name) + "</h3></span></span>" +
-      '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + ribbon + "</span>" +
+      '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + platTag + ribbon + "</span>" +
       rating +
       (app.description ? '<p class="desc">' + escHtml(app.description) + "</p>" : "") +
-      '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
+      '<span class="badges">' + storeBadges(app) + needsBadge + accountBadge + "</span>" +
       trustLine + '</a>';
   }
 
@@ -405,6 +414,7 @@
     state.apps.forEach(function (app) {
       if (state.cat && app.category !== state.cat) return;
       if (state.subcat && app.subcategory !== state.subcat) return;
+      if (state.platform && (app.platform || "android") !== state.platform) return;
       for (var k in state.attrs) {
         if (!(k in ATTR_KEYS)) continue; /* unknown key: ignore, never empty the grid */
         if (!attrMatches(app, k)) return;
@@ -439,6 +449,7 @@
     var r = filtered();
     var total = state.apps.length;
     grid.innerHTML = r.list.map(tile).join("");
+    renderHero();
     var empty = document.getElementById("empty-state");
     var count = document.getElementById("result-count");
     if (!r.list.length) {
@@ -447,7 +458,7 @@
       count.textContent = "0 of " + total;
     } else {
       empty.hidden = true;
-      var filtering = r.q || state.cat || state.subcat || Object.keys(state.attrs).length ||
+      var filtering = r.q || state.cat || state.subcat || state.platform || Object.keys(state.attrs).length ||
                       Object.keys(state.stores).length;
       count.textContent = filtering
         ? r.list.length + " of " + total + " actually-free apps"
@@ -642,6 +653,27 @@
   /* The static "All" category button lives in the shell; the rest render. */
   var allCat = document.querySelector('#category-chips [data-cat=""]');
   if (allCat) allCat.addEventListener("click", function () { selectCat(allCat); });
+  /* Platform: exclusive All/Android/Windows segmented control. */
+  document.querySelectorAll("#platform-seg .seg").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll("#platform-seg .seg").forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      state.platform = b.getAttribute("data-platform");
+      gcEvent("filter/platform/" + (state.platform || "all"));
+      render();
+    });
+  });
+  /* Headline follows the platform filter once Windows listings exist;
+     with an Android-only corpus the static headline stays. */
+  function renderHero() {
+    var h = document.getElementById("hero-title");
+    if (!h) return;
+    var hasWindows = state.apps.some(function (a) { return a.platform === "windows"; });
+    if (!hasWindows) return;
+    h.textContent = state.platform === "android" ? "Actually free Android apps."
+      : state.platform === "windows" ? "Actually free Windows apps."
+      : "Actually free apps.";
+  }
   document.getElementById("sort").addEventListener("change", function (e) {
     state.sort = e.target.value;
     render();
@@ -651,6 +683,10 @@
     .then(function (r) { return r.json(); })
     .then(function (apps) {
       state.apps = apps;
+      /* No Windows listings yet: the Windows segment stays out of sight. */
+      var hasWindows = apps.some(function (a) { return a.platform === "windows"; });
+      var winSeg = document.querySelector('#platform-seg [data-platform="windows"]');
+      if (winSeg) winSeg.style.display = hasWindows ? "" : "none";
       /* Build the subcategory chip map from the fetched data itself:
          count per (category, subcategory), most apps first, then A-Z.
          One payload drives both chips and tiles, so they cannot disagree. */

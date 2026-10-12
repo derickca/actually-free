@@ -1,7 +1,7 @@
 # Actually Free — free.certifiable.media
 
 A hand-curated directory of Android apps that are **actually free**:
-no ads, no in-app purchases, no subscriptions. Every app is checked
+no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
 before listing. Static site, vanilla HTML/CSS/JS, zero backend.
 
 ## Regenerate
@@ -50,7 +50,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
 - Transparency attributes (open source / offline / no account) are derived
   **conservatively**: open source iff on F-Droid; offline / no-account only
   when the research notes say so explicitly. Missing attribute = pill absent.
-- The three locked promises (no ads, no IAP, no subscriptions) hold for
+- The six locked promises (no ads, no purchases, no subscriptions, no trials, no nagging, no surprise bundles) hold for
   every `include`/`per-badge` listing by construction. `free-enough`
   listings are the deliberate exception: ad-free, but their Play
   IAP/subscription labels are reported honestly instead of promised away.

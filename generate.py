@@ -21,7 +21,28 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
 SITE_URL = "https://free.certifiable.media"
 TAGLINE = "Find the free apps they don't want you to see."
-PROMISES = ["No ads", "No in-app purchases", "No subscriptions"]
+# The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.
+PROMISES = ["No ads", "No purchases", "No subscriptions", "No trials", "No nagging", "No surprise bundles"]
+
+# Platform glyphs: tiny inline SVGs identifying Android vs Windows listings.
+# Silhouettes in currentColor so they adapt to playful/geek modes and themes.
+PLATFORM_SVG = {
+    "android":
+        '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">'
+        '<path fill="currentColor" d="M17.6 9.5l1.8-3.1c.1-.2 0-.5-.2-.6'
+        '-.2-.1-.5 0-.6.2l-1.9 3.2c-1-.5-2.1-.7-3.2-.7s-2.2.2-3.2.7L8.4 5.9'
+        'c-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6l1.8 3.1C6.6 11.3 5 13.9 5 16.9h14'
+        'c0-3-1.6-5.6-4.4-7.4z"/></svg>',
+    "windows":
+        '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">'
+        '<path fill="currentColor" d="M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5z'
+        'M3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z"/></svg>',
+}
+PLATFORM_NAMES = {"android": "Android", "windows": "Windows"}
+# Injected into app.js (tiles render client-side). json.dumps quoting keeps
+# the SVG attribute quotes intact.
+PLATFORM_SVGS_JS = ("var PLATFORM_SVGS = {\n" + ",\n".join(
+    '  "%s": %s' % (k, json.dumps(v)) for k, v in PLATFORM_SVG.items()) + "\n};")
 PER_BADGE_NOTE = ("The Play Store version of this app carries ads or in-app "
                   "purchases, so we only list the clean build.")
 # "Free Enough" — apps with paid upgrades whose free tier is the complete
@@ -202,6 +223,12 @@ def derive_attrs(rec):
         attrs["offline"] = True
     if re.search(r"no accounts?", notes):
         attrs["no_account"] = True
+    # "Needs Account" tag (2026-10-11): only when the notes say so explicitly,
+    # never alongside "no account".
+    if not attrs.get("no_account") and re.search(
+            r"requires? an? account|account required|sign-?in required|"
+            r"must sign in|login required|registration required", notes):
+        attrs["needs_account"] = True
     return attrs
 
 
@@ -275,6 +302,16 @@ SUB_REMAP = {
     ("Utilities", "Files"): ("System", "Files"),
     ("Utilities", "Internet"): ("System", "Internet"),
     ("Utilities", "Automate"): ("System", "Automate"),
+    # Taxonomy v2 (Derick 2026-10-11, Windows expansion): new top-level
+    # Productivity. Old Lifestyle/Productivity becomes Productivity/Office
+    # (avoids confusion with the top-level name); System/Files moves under
+    # Productivity. Chains resolve iteratively, so Utilities/Files still
+    # lands in Productivity/Files via System/Files.
+    ("Lifestyle", "Finance"): ("Productivity", "Finance"),
+    ("Lifestyle", "Navigation"): ("Productivity", "Navigation"),
+    ("Lifestyle", "Tasks"): ("Productivity", "Tasks"),
+    ("Lifestyle", "Productivity"): ("Productivity", "Office"),
+    ("System", "Files"): ("Productivity", "Files"),
 }
 
 # Individual misfiled apps, found by reading descriptions (taxonomy-map
@@ -293,7 +330,7 @@ APP_REMAP = {
     # Strays hiding in Media/Books
     "monocles translator": ("Utilities", "Language"),
     "SilverDict": ("Utilities", "Language"),
-    "LibreOffice Viewer": ("Utilities", "Files"),
+    "LibreOffice Viewer": ("Productivity", "Office"),  # v2: office suite, not a file tool
     "Lyrics Grabbr": ("Media", "Music"),
     # Wrong-subcategory utilities
     "RCX": ("Utilities", "Files"),
@@ -305,9 +342,25 @@ APP_REMAP = {
     "Notesnook - Private notes app": ("Lifestyle", "Productivity"),  # notes app, not tasks
     "Just (Video) Player": ("Media", "Video"),       # video player, was in Music
     "Storii - audiobookshelf client": ("Media", "Audio"),  # audiobooks; Lissen is in Audio
-    "MakeACopy": ("Utilities", "Files"),             # document scanner
+    "MakeACopy": ("Productivity", "Office"),             # document scanner, v2
     "BetterCounter": ("Lifestyle", "Health"),        # habit tracker; Loop is in Health
     "Suspension Setup": ("Lifestyle", "Health"),     # bike suspension tracker -> fitness
+    # Taxonomy v2 (Derick 2026-10-11): office-type file tools -> Productivity/Office
+    "FairScan \u2013 PDF Scanner & OCR": ("Productivity", "Office"),
+    "Gander": ("Productivity", "Office"),
+    "Google Docs": ("Productivity", "Office"),
+    "OpenScan": ("Productivity", "Office"),
+    "PaperKnife": ("Productivity", "Office"),
+    "MJ PDF": ("Media", "Read"),  # PDF reader, not an office tool
+    # Taxonomy v2: System/Device splits three ways (was the biggest
+    # subcategory in the taxonomy)
+    "EtchDroid ISO to USB Writer": ("System", "Disks"),
+    "CPU Info (open-source)": ("System", "Monitor"),
+    "SD Maid 2/SE": ("System", "Maintenance"),
+    "App Manager": ("System", "Maintenance"),
+    "Shizuku": ("System", "Maintenance"),
+    "Activity Manager": ("Utilities", "Gadgets"),
+    "PlainApp": ("System", "Internet"),
 }
 
 
@@ -325,7 +378,7 @@ def clean_record(rec):
         "openapk": stores.get("openapk") or None,
     }
     # Money promises the listed build keeps. Every strict listing satisfies
-    # all three (it's the inclusion bar). Free Enough apps are ad-free by
+    # all six (it's the inclusion bar). Free Enough apps are ad-free by
     # rule, but honestly report their IAP/subscription labels instead of
     # claiming promises they don't keep.
     if free_enough:
@@ -352,13 +405,15 @@ def clean_record(rec):
         if (category, subcategory) not in SUB_REMAP:
             break
         category, subcategory = SUB_REMAP[(category, subcategory)]
+    attrs = rec.get("attrs") or derive_attrs(rec)
     return {
         "name": rec["name"],
         "package": rec["package"],
         "slug": slugify(rec["package"]),
         "category": category,
+        "platform": rec.get("platform") or "android",
         # Money promises the listed build keeps. Every v1 listing satisfies
-        # all three (it's the inclusion bar); stored explicitly so the
+        # all six (it's the inclusion bar); stored explicitly so the
         # "Find apps with:" filters have real data if that ever changes.
         # Free Enough apps report honestly: ad-free, but IAP/subscription
         # labels kept as the Play listing shows them.
@@ -369,14 +424,15 @@ def clean_record(rec):
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
         "rating": ver.get("play_rating"),
-        "attrs": rec.get("attrs") or derive_attrs(rec),
+        "attrs": attrs,
         "made_by_us": bool(rec.get("made_by_us")),
         "per_badge": per_badge,
         "free_enough": free_enough,
         "free_enough_reason": rec.get("free_enough_reason") or "",
+        "needs_account": bool(attrs.get("needs_account")),
         # Search tags: surfaced in the client-side search haystack so the
         # tag itself is findable ("enough" -> the Free Enough apps).
-        "tags": ["free enough"] if free_enough else [],
+        "tags": (["free enough"] if free_enough else []) + (["needs account"] if attrs.get("needs_account") else []),
         "needs_review": bool(rec.get("needs_review")),
         "review_notes": rec.get("review_notes") or "",
     }
@@ -619,7 +675,8 @@ def site_footer(forms):
     return f"""<footer class="site-footer">
   <div class="footer-inner">
     <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android apps that are
-    actually free. Every app is checked before listing: no ads, no in-app purchases, no subscriptions.
+    actually free. Every app is checked before listing: no ads, no purchases, no subscriptions,
+    no trials, no nagging and no surprise bundles.
     If an app breaks the promise, report it and we'll take a look.</p>
     <p class="fine-print"><strong>The fine print:</strong> We don't own these apps (except QR Cards).
     Not every store is equally trustworthy &mdash; download with judgment, use at your own risk.</p>
@@ -657,18 +714,23 @@ def build_index(forms):
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Actually Free \u2014 " + TAGLINE,
-      "A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions. " + TAGLINE)}
+      "A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. " + TAGLINE)}
 <body>
 {site_header()}
 <main class="directory">
   <section class="hero">
-    <h1>Actually free Android apps.</h1>
+    <h1 id="hero-title">Actually free Android apps.</h1>
     <p class="tagline"><span class="marquee-text">{esc(TAGLINE)}</span></p>
   </section>
   <p class="promise-line">{promise_line}</p>
   <section class="controls" aria-label="Search and filter">
     <input id="search" type="search" placeholder="Search apps, e.g. &quot;flashlight&quot;\u2026"
            aria-label="Search apps" autocomplete="off">
+    <div class="platform-seg" id="platform-seg" role="group" aria-label="Filter by platform">
+      <button class="seg on" data-platform="">All</button>
+      <button class="seg" data-platform="android">{PLATFORM_SVG["android"]} Android</button>
+      <button class="seg" data-platform="windows">{PLATFORM_SVG["windows"]} Windows</button>
+    </div>
     <div class="cat-stack">
       <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
         <button class="chip on" data-cat="" style="--accent-h:210">All</button>
@@ -745,6 +807,8 @@ def transparency_pills(app):
     pills = [f'<span class="t-pill">\u2713 {esc(ATTR_LABELS[k])}</span>'
              for k in ("open_source", "offline", "no_account")
              if app["attrs"].get(k)]
+    if app.get("needs_account"):
+        pills.append('<span class="needs-account">needs account</span>')
     return "\n".join(pills)
 
 
@@ -795,6 +859,12 @@ def build_detail(app, forms):
               if app.get("needs_review") else "")
     desc_html = (f'<p class="desc">{esc(app["description"])}</p>'
                  if app.get("description") else "")
+    plat = app.get("platform") or "android"
+    plat_name = PLATFORM_NAMES.get(plat, "Android")
+    platform_line = (
+        f'<p class="platform-line"><span class="platform-tag">'
+        f'{PLATFORM_SVG.get(plat, PLATFORM_SVG["android"])}</span>'
+        f" {esc(plat_name)}</p>")
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -809,6 +879,7 @@ def build_detail(app, forms):
         <h1>{esc(app["name"])} {ribbon}</h1>
         <p class="cat">{esc(app["category"])}{" \u00b7 " + esc(app["subcategory"]) if app["subcategory"] else ""}</p>
         {rating}
+        {platform_line}
       </div>
     </div>
     {desc_html}
@@ -837,7 +908,7 @@ def build_suggest(forms):
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Suggest an app \u2014 Actually Free",
-      "Suggest an Android app for the Actually Free directory: no ads, no in-app purchases, no subscriptions.",
+      "Suggest an Android app for the Actually Free directory: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
       og_path="suggest")}
 <body>
 {site_header()}
@@ -860,11 +931,11 @@ def build_suggest(forms):
 
 
 def build_free_bar(forms):
-    # "What Is Free?" — the quality bar, in plain words. Derick's copy.
+    # "What Is Free?" — the quality bar, in Derick's words (2026-10-11).
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("What Is Free? \\u2014 Actually Free",
-      "What \\u201cactually free\\u201d means: no ads, nothing to buy inside the app, no subscriptions, no paid versions.",
+      "What \\u201cactually free\\u201d means: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
       og_path="what-is-free")}
 <body>
 {site_header()}
@@ -874,21 +945,27 @@ def build_free_bar(forms):
     <div class="detail-head">
       <div>
         <h1>What Do We Mean By Free?</h1>
-        <p class="cat">Every app listed here has to clear the same bar:</p>
+        <p class="cat">Actually Free means no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. The details:</p>
       </div>
     </div>
     <ul>
       <li><strong>No ads.</strong> None. Not a banner, not a pop-up, not a &ldquo;sponsored&rdquo; anything.</li>
-      <li><strong>Nothing to buy inside the app.</strong> No extra levels, no coins, no unlocks.</li>
+      <li><strong>No in-app purchases.</strong> No extra levels, no coins, no unlocks.</li>
       <li><strong>No subscriptions.</strong> No monthly charges, no free trials that turn into charges.</li>
+      <li><strong>No trials.</strong> &ldquo;Free for 30 days&rdquo; is not free.</li>
+      <li><strong>No nagging.</strong> Begging you to upgrade every launch counts as an ad. A single dismissible mention is information, every-launch popups are ads.</li>
+      <li><strong>No surprise bundles.</strong> The installer installs the app and nothing else &mdash; no toolbars, no pre-checked &ldquo;special offers&rdquo; and no cryptominer hitching a ride.</li>
       <li><strong>No paid versions.</strong> No &ldquo;pro&rdquo; edition with the good features locked away.</li>
       <li><strong>No paid server.</strong> A free client that depends on a paid or subscription service is not free.</li>
     </ul>
     <p>Requesting donations is fine &mdash; as long as everything works whether you donate or not.</p>
+    <p><strong>Free Enough:</strong> some apps have paid upgrades, but their free tier is the complete product &mdash; most people who use them never feel the need to pay. They're tagged <span class="free-enough">Free Enough</span>, and each one's page explains exactly why the free version is enough. The bar above still applies to everything else.</p>
+    <p><strong>Personal Use:</strong> some apps are free for people but paid for businesses. They're tagged <span class="free-enough">Personal Use</span> so the license limit is visible before you download.</p>
+    <p><strong>Needs Account:</strong> some apps require an account for their core features. They're tagged <span class="needs-account">needs account</span> so you know before you install.</p>
     <p>We check app details before listing &mdash; some by hand, some with automated checks &mdash; but we have not installed or tested them all; use caution when installing.</p>
+    <p>Developers change their minds. If a listed app starts charging, tell us and we'll re-check it.</p>
     <p>Anything marked <span class="needs-review">needs &#128064;</span> is still waiting on a human review.</p>
     <p><strong>Why the list is short:</strong> most &ldquo;free&rdquo; apps aren't actually free. They show you ads or sell you things. We'd rather list a few hundred apps we trust than thousands we don't.</p>
-    <p><strong>Free Enough:</strong> some apps have paid upgrades, but their free tier is the complete product &mdash; most people who use them never feel the need to pay. They're tagged <span class="free-enough">Free Enough</span>, and each one's page explains exactly why the free version is enough. The bar above still applies to everything else.</p>
     <p>Know an app that belongs here? <a href="/suggest">Suggest it</a>. Spot one that broke the rules? Tell us and we'll pull it.</p>
   </article>
 </main>
@@ -1272,6 +1349,41 @@ a.store-badge:hover { filter: brightness(0.96); }
   color: var(--accent);
   border: 1px dashed var(--accent);
 }
+/* "needs account" — same pill shape as the other badges, solid = confirmed */
+.needs-account {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e8eefc;
+  color: #1e40af;
+  border: 1px solid #93b4f5;
+  white-space: nowrap;
+}
+:root[data-theme="dark"] .needs-account { color: #bcd0fb; background: #1c2a4d; border-color: #3f5d9e; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .needs-account { color: #bcd0fb; background: #1c2a4d; border-color: #3f5d9e; }
+}
+/* Platform: segmented All/Android/Windows control + tile/detail glyphs. */
+.platform-seg {
+  display: inline-flex; gap: 2px;
+  background: var(--input-bg);
+  border: 1px solid var(--card-edge);
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.platform-seg .seg {
+  border: 0; background: transparent; color: var(--ink);
+  font: inherit; font-size: 0.85rem; font-weight: 600;
+  padding: 7px 13px; border-radius: 999px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.platform-seg .seg.on { background: var(--accent); color: var(--on-accent); }
+.platform-seg .seg svg { width: 16px; height: 16px; display: block; }
+.platform-tag { display: inline-flex; align-items: center; color: var(--muted); }
+.platform-tag svg { width: 15px; height: 15px; display: block; }
+.platform-line { color: var(--muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin: 2px 0 0; }
+.platform-line svg { width: 16px; height: 16px; display: block; }
 .review-note {
   background: var(--accent-soft);
   border: 1px dashed var(--accent);
@@ -1840,8 +1952,9 @@ JS_CONTENT = r"""
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", subcat: "", attrs: {}, stores: {}, sort: "name" };
-  var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30 };
+  var state = { apps: [], query: "", cat: "", subcat: "", platform: "", attrs: {}, stores: {}, sort: "name" };
+__PLATFORM_SVGS__
+  var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30, "Productivity": 60 };
 
   function norm(s) {
     return (s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
@@ -1957,6 +2070,11 @@ JS_CONTENT = r"""
     var rating = app.rating ? '<p class="rating">\u2605 ' + escHtml(app.rating) + "</p>" : "";
     var ribbon = app.made_by_us ? '<span class="made-by-us">Made by us</span>' : "";
     var needsBadge = app.needs_review ? '<span class="needs-review">needs 👀</span>' : "";
+    var accountBadge = app.needs_account ? '<span class="needs-account">needs account</span>' : "";
+    var platKey = app.platform || "android";
+    var platName = platKey === "windows" ? "Windows" : "Android";
+    var platTag = '<span class="platform-tag" title="' + platName + '" aria-label="' + platName + ' app">' +
+      (PLATFORM_SVGS[platKey] || PLATFORM_SVGS.android) + "</span>";
     var trustLine = app.free_enough
       ? '<span class="free-enough">Free Enough</span>'
       : '<span class="verified">\u2713 Verified actually-free</span>';
@@ -1964,10 +2082,10 @@ JS_CONTENT = r"""
       '.html" data-slug="' + escHtml(app.slug) + '">' +
       '<span class="tile-top">' + iconHtml +
       "<span><h3>" + wbrify(app.name) + "</h3></span></span>" +
-      '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + ribbon + "</span>" +
+      '<span class="tile-pills"><span class="subpill">' + escHtml(app.subcategory || app.category) + "</span>" + platTag + ribbon + "</span>" +
       rating +
       (app.description ? '<p class="desc">' + escHtml(app.description) + "</p>" : "") +
-      '<span class="badges">' + storeBadges(app) + needsBadge + "</span>" +
+      '<span class="badges">' + storeBadges(app) + needsBadge + accountBadge + "</span>" +
       trustLine + '</a>';
   }
 
@@ -1977,6 +2095,7 @@ JS_CONTENT = r"""
     state.apps.forEach(function (app) {
       if (state.cat && app.category !== state.cat) return;
       if (state.subcat && app.subcategory !== state.subcat) return;
+      if (state.platform && (app.platform || "android") !== state.platform) return;
       for (var k in state.attrs) {
         if (!(k in ATTR_KEYS)) continue; /* unknown key: ignore, never empty the grid */
         if (!attrMatches(app, k)) return;
@@ -2011,6 +2130,7 @@ JS_CONTENT = r"""
     var r = filtered();
     var total = state.apps.length;
     grid.innerHTML = r.list.map(tile).join("");
+    renderHero();
     var empty = document.getElementById("empty-state");
     var count = document.getElementById("result-count");
     if (!r.list.length) {
@@ -2019,7 +2139,7 @@ JS_CONTENT = r"""
       count.textContent = "0 of " + total;
     } else {
       empty.hidden = true;
-      var filtering = r.q || state.cat || state.subcat || Object.keys(state.attrs).length ||
+      var filtering = r.q || state.cat || state.subcat || state.platform || Object.keys(state.attrs).length ||
                       Object.keys(state.stores).length;
       count.textContent = filtering
         ? r.list.length + " of " + total + " actually-free apps"
@@ -2214,6 +2334,27 @@ JS_CONTENT = r"""
   /* The static "All" category button lives in the shell; the rest render. */
   var allCat = document.querySelector('#category-chips [data-cat=""]');
   if (allCat) allCat.addEventListener("click", function () { selectCat(allCat); });
+  /* Platform: exclusive All/Android/Windows segmented control. */
+  document.querySelectorAll("#platform-seg .seg").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll("#platform-seg .seg").forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      state.platform = b.getAttribute("data-platform");
+      gcEvent("filter/platform/" + (state.platform || "all"));
+      render();
+    });
+  });
+  /* Headline follows the platform filter once Windows listings exist;
+     with an Android-only corpus the static headline stays. */
+  function renderHero() {
+    var h = document.getElementById("hero-title");
+    if (!h) return;
+    var hasWindows = state.apps.some(function (a) { return a.platform === "windows"; });
+    if (!hasWindows) return;
+    h.textContent = state.platform === "android" ? "Actually free Android apps."
+      : state.platform === "windows" ? "Actually free Windows apps."
+      : "Actually free apps.";
+  }
   document.getElementById("sort").addEventListener("change", function (e) {
     state.sort = e.target.value;
     render();
@@ -2223,6 +2364,10 @@ JS_CONTENT = r"""
     .then(function (r) { return r.json(); })
     .then(function (apps) {
       state.apps = apps;
+      /* No Windows listings yet: the Windows segment stays out of sight. */
+      var hasWindows = apps.some(function (a) { return a.platform === "windows"; });
+      var winSeg = document.querySelector('#platform-seg [data-platform="windows"]');
+      if (winSeg) winSeg.style.display = hasWindows ? "" : "none";
       /* Build the subcategory chip map from the fetched data itself:
          count per (category, subcategory), most apps first, then A-Z.
          One payload drives both chips and tiles, so they cannot disagree. */
@@ -2291,7 +2436,7 @@ def build_config_js():
 README_MD = """# Actually Free — free.certifiable.media
 
 A hand-curated directory of Android apps that are **actually free**:
-no ads, no in-app purchases, no subscriptions. Every app is checked
+no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
 before listing. Static site, vanilla HTML/CSS/JS, zero backend.
 
 ## Regenerate
@@ -2340,7 +2485,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
 - Transparency attributes (open source / offline / no account) are derived
   **conservatively**: open source iff on F-Droid; offline / no-account only
   when the research notes say so explicitly. Missing attribute = pill absent.
-- The three locked promises (no ads, no IAP, no subscriptions) hold for
+- The six locked promises (no ads, no purchases, no subscriptions, no trials, no nagging, no surprise bundles) hold for
   every `include`/`per-badge` listing by construction. `free-enough`
   listings are the deliberate exception: ad-free, but their Play
   IAP/subscription labels are reported honestly instead of promised away.
@@ -2391,7 +2536,7 @@ def build_pwa_icons():
 MANIFEST = """{
   "name": "Actually Free",
   "short_name": "Actually Free",
-  "description": "A hand-curated directory of Android apps that are actually free: no ads, no in-app purchases, no subscriptions.",
+  "description": "A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -2561,9 +2706,12 @@ def main():
 
     apply_openapk(apps)
     index_html = build_index(forms)
-    app_js = JS_CONTENT.replace("__NTFY_KEY__", forms.key_b64)
+    app_js = (JS_CONTENT.replace("__NTFY_KEY__", forms.key_b64)
+                       .replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS))
     if "__NTFY_KEY__" in app_js:
         print("warning: ntfy key placeholder survived replacement")
+    if "__PLATFORM_SVGS__" in app_js:
+        print("warning: platform SVGs placeholder survived replacement")
     app_js = app_js.strip() + "\n"
     check_filter_consistency(apps, index_html, app_js)
     write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
