@@ -710,7 +710,7 @@ def site_footer(forms):
                     if forms.encoded else 'Suggest an app')
     return f"""<footer class="site-footer">
   <div class="footer-inner">
-    <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android apps that are
+    <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android and Windows apps that are
     actually free. Every app is checked before listing: no ads, no purchases, no subscriptions,
     no trials, no nagging and no surprise bundles.
     If an app breaks the promise, report it and we'll take a look.</p>
@@ -750,7 +750,7 @@ def build_index(forms):
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Actually Free \u2014 " + TAGLINE,
-      "A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. " + TAGLINE)}
+      "A hand-curated directory of Android and Windows apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. " + TAGLINE)}
 <body>
 {site_header()}
 <main class="directory">
@@ -977,7 +977,7 @@ def build_suggest(forms):
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Suggest an app \u2014 Actually Free",
-      "Suggest an Android app for the Actually Free directory: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
+      "Suggest an Android or Windows app for the Actually Free directory: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
       og_path="suggest")}
 <body>
 {site_header()}
@@ -987,7 +987,7 @@ def build_suggest(forms):
     <div class="detail-head">
       <div>
         <h1>Suggest an app</h1>
-        <p class="cat">Know an Android app that's actually free? Tell us where to find it and why.</p>
+        <p class="cat">Know an Android or Windows app that's actually free? Tell us where to find it and why.</p>
       </div>
     </div>
 {forms.suggest_form(visible=True)}
@@ -2542,7 +2542,7 @@ def build_config_js():
 
 README_MD = """# Actually Free — free.certifiable.media
 
-A hand-curated directory of Android apps that are **actually free**:
+A hand-curated directory of Android and Windows apps that are **actually free**:
 no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
 before listing. Static site, vanilla HTML/CSS/JS, zero backend.
 
@@ -2643,7 +2643,7 @@ def build_pwa_icons():
 MANIFEST = """{
   "name": "Actually Free",
   "short_name": "Actually Free",
-  "description": "A hand-curated directory of Android apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
+  "description": "A hand-curated directory of Android and Windows apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

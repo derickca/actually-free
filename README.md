@@ -1,6 +1,6 @@
 # Actually Free — free.certifiable.media
 
-A hand-curated directory of Android apps that are **actually free**:
+A hand-curated directory of Android and Windows apps that are **actually free**:
 no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
 before listing. Static site, vanilla HTML/CSS/JS, zero backend.
 
