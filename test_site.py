@@ -174,7 +174,23 @@ def main():
     check("android: store badges unchanged",
           "store-badge" in _ahtml and "Download from the developer" not in _ahtml)
 
-    # 4d. Sibling cross-linking (Stage 3, 2026-10-11): only the newer
+    # 4e. Windows download completeness (2026-10-12): every Windows
+    # listing must have at least one download URL (official primary or
+    # alternative). An empty "Get it" section must never ship.
+    _win_apps = [a for a in apps if a.get("platform") == "windows"]
+    _no_dl = [a["name"] for a in _win_apps
+              if not ((a.get("downloads") or {}).get("official")) and
+              not ((a.get("downloads") or {}).get("alternatives"))]
+    check("windows: every listing has a download",
+          not _no_dl, f"{len(_no_dl)} without: {_no_dl[:5]}")
+    _no_official = [a["name"] for a in _win_apps
+                    if not ((a.get("downloads") or {}).get("official"))]
+    # Official URL missing is a warning, not a failure: some listings
+    # legitimately use a maintained distributor as primary.
+    if _no_official:
+        print(f"  [note] {len(_no_official)} Windows apps without official_url "
+              f"(using distributor primary): {_no_official[:5]}")
+    # 4f. Sibling cross-linking (Stage 3, 2026-10-11): only the newer
     # listing names its sibling; both pages must link each other.
     # Fails without the Stage 3 fix.
     _sib_a = _gen.clean_record({"name": "Test Sib A", "package": "test.sib.a",
@@ -268,7 +284,13 @@ def main():
     check("open: subcategories alphabetical", d["alpha"], d.get("names", t))
 
     # 7. Stable height across subcategory selection (the 31px->37px jump).
+    # Transitions disabled: under --virtual-time-budget the open animation
+    # timing is racy (h1 measured 0 / 37.3 / 38.7 across runs); assert the
+    # end state like test 6 does.
     t = chrome_eval("", """
+      var killAnim = document.createElement('style');
+      killAnim.textContent = '*{transition:none !important;animation:none !important}';
+      document.head.appendChild(killAnim);
       document.querySelector('#category-chips [data-cat="Utilities"]').click();
       setTimeout(function(){
         var sub = document.getElementById('subcategory-chips');
@@ -302,6 +324,28 @@ def main():
     d = json.loads(t)
     check("mobile: subcategory row scrolls (scrollWidth > clientWidth)",
           d["scrollW"] > d["clientW"] + 20, t)
+
+    # 9. Platform filter: Windows button filters the grid and the hero
+    # follows. (Windows launch, 2026-10-12.)
+    t = chrome_eval("", f"""
+      var winSlugs = {json.dumps([a["slug"] for a in apps if a.get("platform") == "windows"])};
+      document.querySelector('.platform-seg [data-platform="windows"]').click();
+      setTimeout(function(){{
+        var hero = document.getElementById('hero-title').textContent;
+        var tiles = document.querySelectorAll('#grid .tile');
+        var vis = 0, bad = 0;
+        tiles.forEach(function(el){{
+          if (el.offsetParent === null) return;
+          vis++;
+          if (winSlugs.indexOf(el.getAttribute('data-slug')) < 0) bad++;
+        }});
+        document.title = JSON.stringify({{hero: hero, vis: vis, bad: bad}});
+      }}, 1200);
+    """)
+    d = json.loads(t)
+    check("platform: Windows hero copy", d["hero"] == "Actually free Windows apps.", t)
+    check("platform: Windows grid non-empty", d["vis"] > 0, t)
+    check("platform: Windows grid has only Windows tiles", d["bad"] == 0, t)
 
     srv.shutdown()
     print()

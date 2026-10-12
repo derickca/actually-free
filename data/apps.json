@@ -183,8 +183,17 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/4st-attack-portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project (original files)",
+     "url": "https://sourceforge.net/projects/forcedattack/"
+    },
+    {
+     "label": "Community-maintained source (GitHub)",
+     "url": "https://github.com/3D1T0R/4st-attack"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -225,7 +234,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://rammichael.com/7-taskbar-tweaker",
    "alternatives": []
   },
   "rating": null,
@@ -618,6 +627,97 @@
   "sibling_package": null
  },
  {
+  "name": "Aegisub",
+  "package": "aegisub.windows",
+  "slug": "aegisub-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Subtitle editor with timing, styling and karaoke templating for fansub workflows.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://aegisub.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/TypesettingTools/Aegisub"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "AIMP",
+  "package": "aimp.windows",
+  "slug": "aimp-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Audio player with a skinnable interface, 18-band equalizer and format conversion.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.aimp.ru/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "AkelPad",
   "package": "akelpad.windows",
   "slug": "akelpad-windows",
@@ -640,7 +740,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "http://akelpad.sourceforge.net/en/index.php",
    "alternatives": []
   },
   "rating": null,
@@ -907,6 +1007,48 @@
   "sibling_package": null
  },
  {
+  "name": "AndreaMosaic",
+  "package": "andreamosaic.windows",
+  "slug": "andreamosaic-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Creates photographic mosaics from a tile image library at high resolution.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.andreaplanet.com/andreamosaic/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Angry IP Scanner",
   "package": "angry.ip.scanner.windows",
   "slug": "angry-ip-scanner-windows",
@@ -1093,8 +1235,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/projects/ant-renamer/",
-   "alternatives": []
+   "official": "https://antp.be/software/renamer/",
+   "alternatives": [
+    {
+     "label": "SourceForge (mirror)",
+     "url": "https://sourceforge.net/projects/ant-renamer/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -1421,7 +1568,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.nurgo-software.com/products/aquasnap",
    "alternatives": []
   },
   "rating": null,
@@ -1716,7 +1863,12 @@
   },
   "downloads": {
    "official": "https://artha.sourceforge.net/wiki/index.php/Home",
-   "alternatives": []
+   "alternatives": [
+    {
+     "label": "SourceForge (mirror)",
+     "url": "https://sourceforge.net/projects/artha/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -1969,12 +2121,101 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.petges.lu/download/",
    "alternatives": []
   },
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Audacious",
+  "package": "audacious.windows",
+  "slug": "audacious-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Lightweight audio player with a classic Winamp-style interface and plugin support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://audacious-media-player.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Audacity",
+  "package": "audacity.windows",
+  "slug": "audacity-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Multitrack audio recorder and editor with effects, spectral analysis and plugin support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.audacityteam.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/audacity/audacity"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -2108,6 +2349,53 @@
   "sibling_package": null
  },
  {
+  "name": "AutoDrum",
+  "package": "autodrum.windows",
+  "slug": "autodrum-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Drum machine and rhythm composer with pattern editing and export.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://openmidiproject.opal.ne.jp/AutoDrum_en.html",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/music_video/autodrum-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "AutoHotkey",
   "package": "autohotkey.windows",
   "slug": "autohotkey-windows",
@@ -2220,6 +2508,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Avidemux",
+  "package": "avidemux.windows",
+  "slug": "avidemux-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Simple video editor for cutting, filtering and encoding without re-encoding where possible.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://avidemux.org/download",
+   "alternatives": [
+    {
+     "label": "Official nightly builds",
+     "url": "https://avidemux.org/nightly/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -2630,8 +2965,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.wesnoth.org/downloads",
+   "alternatives": [
+    {
+     "label": "GitHub releases",
+     "url": "https://github.com/wesnoth/wesnoth/releases"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -2713,7 +3053,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/node/61768",
    "alternatives": []
   },
   "rating": null,
@@ -2838,11 +3178,15 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/projects/big3dsol/",
+   "official": "http://big3dsol.sourceforge.net/index.html",
    "alternatives": [
     {
      "label": "PortableApps",
      "url": "https://portableapps.com/news/2012-06-18--big-solitaires-3d-portable-1.4-rev-2-released"
+    },
+    {
+     "label": "SourceForge (mirror)",
+     "url": "https://sourceforge.net/projects/big3dsol/"
     }
    ]
   },
@@ -3480,6 +3824,48 @@
   "sibling_package": null
  },
  {
+  "name": "Brain Workshop",
+  "package": "brain.workshop.windows",
+  "slug": "brain-workshop-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Dual n-back memory training game implementing the Brain Workshop protocol with progressive difficulty.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://brainworkshop.sourceforge.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Breezy Weather",
   "package": "org.breezyweather",
   "slug": "org-breezyweather",
@@ -3560,6 +3946,48 @@
   "sibling_package": null
  },
  {
+  "name": "BriskPlayer",
+  "package": "briskplayer.windows",
+  "slug": "briskplayer-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Minimal music player with a compact queue-based interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/briskplayer/briskplayer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Brutal Chess",
   "package": "brutal.chess.windows",
   "slug": "brutal-chess-windows",
@@ -3582,11 +4010,15 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/projects/brutalchess/",
+   "official": "https://portableapps.com/apps/games/brutal_chess_portable",
    "alternatives": [
     {
-     "label": "PortableApps",
+     "label": "PortableApps release news",
      "url": "https://portableapps.com/news/2018-08-20--brutal-chess-portable-0.5.2.2-released"
+    },
+    {
+     "label": "winget",
+     "url": "https://winget.run/pkg/BrutalChess/BrutalChess"
     }
    ]
   },
@@ -3770,6 +4202,53 @@
   "sibling_package": null
  },
  {
+  "name": "Caesium",
+  "package": "caesium.windows",
+  "slug": "caesium-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Batch image compressor with quality preview and folder processing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://saerasoft.com/caesium",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Lymphatus/caesium-image-compressor"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Calculator App",
   "package": "com.math.bmi.scientific.calculator.converter.android",
   "slug": "com-math-bmi-scientific-calculator-converter-android",
@@ -3809,6 +4288,53 @@
   "sibling_package": null
  },
  {
+  "name": "calibre",
+  "package": "calibre.windows",
+  "slug": "calibre-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "Ebook library manager with conversion between formats, editing and device sync.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://calibre-ebook.com/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/kovidgoyal/calibre"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Canabalt",
   "package": "canabalt.windows",
   "slug": "canabalt-windows",
@@ -3831,8 +4357,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://canabalt.com/",
+   "alternatives": [
+    {
+     "label": "itch.io (Classic)",
+     "url": "https://finji.itch.io/canabalt-classic"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -3874,7 +4405,12 @@
   },
   "downloads": {
    "official": "https://capture2text.sourceforge.net/",
-   "alternatives": []
+   "alternatives": [
+    {
+     "label": "SourceForge (mirror)",
+     "url": "https://sourceforge.net/projects/capture2text/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -4079,8 +4615,60 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/projects/cdrtfe/",
-   "alternatives": []
+   "official": "https://portableapps.com/apps/music_video/cdrtfe_portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project files (official, demoted per policy)",
+     "url": "https://sourceforge.net/projects/cdrtfe/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Celestia",
+  "package": "celestia.windows",
+  "slug": "celestia-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Real-time 3D space simulator that lets you fly through a model of the universe down to planetary surfaces.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://celestiaproject.space/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Anthony-B/Celestia-Project"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -4162,7 +4750,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/news/2016-05-19--checksum-control-portable-2.4.1-released",
    "alternatives": [
     {
      "label": "Portable Freeware Collection listing",
@@ -4414,8 +5002,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/node/61772",
+   "alternatives": [
+    {
+     "label": "SourceForge project files (official, demoted per policy)",
+     "url": "https://sourceforge.net/projects/chromium-bsu/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -4581,8 +5174,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/utilities/clicky-gone-portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project files (official, demoted per policy)",
+     "url": "https://sourceforge.net/projects/clickygone/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -4832,11 +5430,11 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "http://www.xyntec.com/unit-converter-download.htm",
    "alternatives": [
     {
      "label": "PortableApps release",
-     "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-rev-2-released"
+     "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-released"
     }
    ]
   },
@@ -5260,11 +5858,15 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://cppcheck.sourceforge.io",
+   "official": "https://github.com/cppcheck-opensource/cppcheck/releases",
    "alternatives": [
     {
      "label": "GitHub",
      "url": "https://github.com/cppcheck-opensource/cppcheck"
+    },
+    {
+     "label": "cppcheck.sourceforge.io (official project site, demoted per policy)",
+     "url": "https://cppcheck.sourceforge.io"
     }
    ]
   },
@@ -5907,6 +6509,53 @@
   "sibling_package": null
  },
  {
+  "name": "darktable",
+  "package": "darktable.windows",
+  "slug": "darktable-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Non-destructive RAW photo editor with modules for exposure, color grading and lens correction.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.darktable.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/darktable-org/darktable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DataBackup",
   "package": "com.xayah.databackup.foss",
   "slug": "com-xayah-databackup-foss",
@@ -6011,8 +6660,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.etl-tools.com/products/database-browser.html",
+   "alternatives": [
+    {
+     "label": "Portable Freeware Collection listing",
+     "url": "https://www.portablefreeware.com/index.php?id=1915"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -6651,7 +7305,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/news/2014-09-11--diffimg-portable-2.2.0-released",
    "alternatives": []
   },
   "rating": null,
@@ -6693,7 +7347,49 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.qtrac.eu/diffpdf.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "digiKam",
+  "package": "digikam.windows",
+  "slug": "digikam-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Photo management suite with a RAW editor, tagging, face detection and album organization.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.digikam.org/",
    "alternatives": []
   },
   "rating": null,
@@ -6861,7 +7557,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "http://ditto-cp.sourceforge.net",
+   "official": "https://github.com/sabrogden/Ditto/releases",
    "alternatives": [
     {
      "label": "PortableApps",
@@ -6908,8 +7604,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://github.com/igr/dm2/releases",
+   "alternatives": [
+    {
+     "label": "SourceForge project page (migrated to GitHub, demoted per policy)",
+     "url": "https://sourceforge.net/projects/dm2/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -7033,8 +7734,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://domino-chain.gitlab.io/",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2024-05-06--domino-chain-portable-1.1-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -7075,7 +7781,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/utilities/dont_panic_portable",
    "alternatives": [
     {
      "label": "PortableApps release",
@@ -7709,8 +8415,17 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/projects/dvdstyler/",
-   "alternatives": []
+   "official": "https://www.dvdstyler.org/",
+   "alternatives": [
+    {
+     "label": "GitHub (official repo)",
+     "url": "https://github.com/ntxalex/DVDStyler"
+    },
+    {
+     "label": "FossHub (official mirror, demoted per policy)",
+     "url": "https://www.fosshub.com/DVDStyler.html"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -8338,7 +9053,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/security/eraserdrop-portable",
    "alternatives": [
     {
      "label": "PortableApps",
@@ -8989,6 +9704,50 @@
   "sibling_package": null
  },
  {
+  "name": "FastStone Image Viewer",
+  "package": "faststone.image.viewer.windows",
+  "slug": "faststone-image-viewer-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Fast image browser, viewer and basic editor with batch conversion and lossless JPEG operations.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.faststone.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Fcitx5",
   "package": "org.fcitx.fcitx5.android",
   "slug": "org-fcitx-fcitx5-android",
@@ -9421,11 +10180,11 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/internet/feedroller-portable",
    "alternatives": [
     {
-     "label": "PortableApps",
-     "url": "https://portableapps.com/apps/internet/feedroller-portable"
+     "label": "TechSpot",
+     "url": "https://www.techspot.com/downloads/downloadnow/5767/?evp=e767cd2d8c7a9c58801c64c57abb5692&file=6731"
     }
    ]
   },
@@ -9596,8 +10355,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.safer-networking.org/products/filealyzer/download/",
+   "alternatives": [
+    {
+     "label": "PortableApps (2012 release announcement)",
+     "url": "https://portableapps.com/news/2012-10-22--filealyzer-portable-2.0.5.57-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -9638,8 +10402,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer",
-   "alternatives": []
+   "official": "https://portableapps.com/node/64805",
+   "alternatives": [
+    {
+     "label": "SourceForge (developer page)",
+     "url": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -10665,8 +11434,17 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://fontforge.org/en-US/downloads/windows/",
+   "alternatives": [
+    {
+     "label": "GitHub Releases",
+     "url": "https://github.com/fontforge/fontforge/releases"
+    },
+    {
+     "label": "PortableApps",
+     "url": "http://portableapps.com/apps/utilities/fontforge-portable"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -10707,7 +11485,49 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.softwareok.com/?Download=FontViewOK",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "foobar2000",
+  "package": "foobar2000.windows",
+  "slug": "foobar2000-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Highly customizable audio player with gapless playback, DSP chains and component extensions.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.foobar2000.org/",
    "alternatives": []
   },
   "rating": null,
@@ -11216,6 +12036,142 @@
   "sibling_package": null
  },
  {
+  "name": "Fotografix",
+  "package": "fotografix.windows",
+  "slug": "fotografix-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Lightweight photo editor with layers, brushes and effects in a Photoshop-style UI.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.lmadhavan.com/fotografix/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/lmadhavan/fotografix"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FotoSketcher",
+  "package": "fotosketcher.windows",
+  "slug": "fotosketcher-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Turns digital photos into pencil, oil-paint and watercolor style artworks with adjustable effects.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.fotosketcher.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "fre:ac",
+  "package": "fre.ac.windows",
+  "slug": "fre-ac-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Audio converter and CD ripper with encoder presets and freedb lookup.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.freac.org/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/music_video/freac-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Free Download Manager",
   "package": "free.download.manager.windows",
   "slug": "free-download-manager-windows",
@@ -11404,7 +12360,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.freeciv.org/",
    "alternatives": []
   },
   "rating": null,
@@ -11614,8 +12570,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/development/frhed_portable",
+   "alternatives": [
+    {
+     "label": "SourceForge (developer page)",
+     "url": "https://sourceforge.net/projects/frhed/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -11901,8 +12862,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.geany.org/download/releases/",
+   "alternatives": [
+    {
+     "label": "GitHub Releases",
+     "url": "https://github.com/geany/geany/releases"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -12026,8 +12992,55 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/node/43374",
    "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "GIMP",
+  "package": "gimp.windows",
+  "slug": "gimp-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Full-featured raster image editor with layers, masks, filters and plugin support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.gimp.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/GNOME/gimp"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -12404,8 +13417,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/golly-portable",
+   "alternatives": [
+    {
+     "label": "SourceForge (developer page)",
+     "url": "https://golly.sourceforge.net/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -12683,8 +13701,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://gopherus.sourceforge.io",
-   "alternatives": []
+   "official": "https://portableapps.com/news/2023-02-14--gopherus-portable-1.2.2-released",
+   "alternatives": [
+    {
+     "label": "SourceForge (developer page)",
+     "url": "https://gopherus.sourceforge.io"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -12725,11 +13748,58 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/security/gpg-plugin-portable",
    "alternatives": [
     {
-     "label": "PortableApps",
-     "url": "https://portableapps.com/apps/security/gpg-plugin"
+     "label": "GnuPG (upstream)",
+     "url": "https://www.gnupg.org/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "gPodder",
+  "package": "gpodder.windows",
+  "slug": "gpodder-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Podcast client with subscriptions, episode downloads and sync across devices.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://gpodder.github.io/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/gpodder/gpodder"
     }
    ]
   },
@@ -13154,8 +14224,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/utilities/gridy-portable",
+   "alternatives": [
+    {
+     "label": "AfterDawn",
+     "url": "https://www.afterdawn.com/software/desktop/misc_desktop_tools/gridy.cfm"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -13237,8 +14312,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.vim.org/download.php",
+   "alternatives": [
+    {
+     "label": "Vim Windows installer releases (GitHub)",
+     "url": "https://github.com/vim/vim-win32-installer/releases"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -13367,6 +14447,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "HandBrake",
+  "package": "handbrake.windows",
+  "slug": "handbrake-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Video transcoder with presets for devices, batch queues and subtitle support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://handbrake.fr/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/HandBrake/HandBrake"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -13690,8 +14817,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/hex-a-hop_portable",
+   "alternatives": [
+    {
+     "label": "Hex-a-Hop project page (SourceForge, demoted)",
+     "url": "https://sourceforge.net/projects/hexahop/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -14030,8 +15162,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "http://tomatoes.sourceforge.net",
-   "alternatives": []
+   "official": "https://portableapps.com/node/64119",
+   "alternatives": [
+    {
+     "label": "Developer site (SourceForge, demoted)",
+     "url": "http://tomatoes.sourceforge.net"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -14072,12 +15209,64 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/icebreaker_portable",
+   "alternatives": [
+    {
+     "label": "PortableApps release news",
+     "url": "https://portableapps.com/news/2021-05-02--icebreaker-portable-2.2.0-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "IDPhotoStudio",
+  "package": "idphotostudio.windows",
+  "slug": "idphotostudio-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Generates ID and passport photos in standard sizes from a single portrait.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://kcsoftwares.com/download.php?avt",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/graphics_pictures/idphotostudio-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "made_by_us": false,
@@ -14174,6 +15363,57 @@
   "sibling_package": null
  },
  {
+  "name": "ImageGlass",
+  "package": "imageglass.windows",
+  "slug": "imageglass-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Fast, themeable image viewer with a modern Fluent-style UI.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://imageglass.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/d2phap/ImageGlass"
+    },
+    {
+     "label": "Microsoft Store",
+     "url": "https://apps.microsoft.com/detail/9N33VZK3C7TH"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Immich",
   "package": "app.alextran.immich",
   "slug": "app-alextran-immich",
@@ -14235,8 +15475,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.NET/projects/initranslator/",
-   "alternatives": []
+   "official": "https://portableapps.com/apps/development/initranslator-portable",
+   "alternatives": [
+    {
+     "label": "Developer site (SourceForge, demoted)",
+     "url": "http://initranslator.sourceforge.net"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -14360,11 +15605,15 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.rathlev-home.de/index-e.html?tools/prog-e.html#unpack",
    "alternatives": [
     {
      "label": "PortableApps release",
      "url": "https://portableapps.com/news/2026-05-05--innounpacker-portable-2.2.9-released"
+    },
+    {
+     "label": "InnoUnpacker GitHub project",
+     "url": "https://github.com/jrathlev/innounpacker-windows-gui"
     }
    ]
   },
@@ -14465,6 +15714,59 @@
   "sibling_package": null
  },
  {
+  "name": "IrfanView",
+  "package": "irfanview.windows",
+  "slug": "irfanview-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Compact image viewer with batch conversion, slideshow and basic editing plugins.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.irfanview.com/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/graphics_pictures/irfanview_portable"
+    },
+    {
+     "label": "Microsoft Store",
+     "url": "https://apps.microsoft.com/detail/9nblggh4wfpz"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Iron",
   "package": "iron.windows",
   "slug": "iron-windows",
@@ -14529,7 +15831,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/internet/isotoxin-portable",
    "alternatives": []
   },
   "rating": null,
@@ -14975,8 +16277,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/jooleem_portable",
+   "alternatives": [
+    {
+     "label": "Developer site (SourceForge, demoted)",
+     "url": "http://jooleem.sourceforge.net/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -15085,6 +16392,57 @@
   "sibling_package": "net.cozic.joplin",
   "sibling_slug": "net-cozic-joplin",
   "sibling_platform": "android"
+ },
+ {
+  "name": "JPEGView",
+  "package": "jpegview.windows",
+  "slug": "jpegview-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Minimal, extremely fast JPEG/PNG image viewer with basic editing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/sylikc/jpegview",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/graphics_pictures/jpegview-portable"
+    },
+    {
+     "label": "Chocolatey",
+     "url": "https://community.chocolatey.org/packages/jpegview"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "jtx Board",
@@ -15294,10 +16652,10 @@
   "sibling_package": null
  },
  {
-  "name": "Kaspersky TDSSKiller",
-  "package": "kaspersky.tdsskiller.windows",
-  "slug": "kaspersky-tdsskiller-windows",
-  "category": "System",
+  "name": "KchmViewer",
+  "package": "kchmviewer.windows",
+  "slug": "kchmviewer-windows",
+  "category": "Media",
   "platform": "windows",
   "promises": {
    "no_ads": true,
@@ -15306,8 +16664,8 @@
   },
   "icon_svg": null,
   "icon": null,
-  "subcategory": "Security",
-  "description": "Portable rootkit scanner and remover from Kaspersky.",
+  "subcategory": "Read",
+  "description": "Viewer for CHM (compiled HTML help) files with tabs and bookmarks.",
   "stores": {
    "play": null,
    "fdroid": false,
@@ -15316,12 +16674,59 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://github.com/eBookProjects/uChmViewer",
    "alternatives": []
   },
   "rating": null,
   "attrs": {
-   "open_source": false,
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Kdenlive",
+  "package": "kdenlive.windows",
+  "slug": "kdenlive-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Multi-track video editor with effects, transitions and proxy editing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://kdenlive.org/",
+   "alternatives": [
+    {
+     "label": "GitLab",
+     "url": "https://invent.kde.org/multimedia/kdenlive"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -16036,7 +17441,60 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "krita-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "Krita",
+  "package": "krita.windows",
+  "slug": "krita-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Professional digital painting studio with brush engines, HDR painting and animation tools.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://krita.org/",
+   "alternatives": [
+    {
+     "label": "Microsoft Store",
+     "url": "https://apps.microsoft.com/detail/9n8w29w2czq5"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Paid Microsoft Store and Steam editions are functionally identical to the free download; purchase funds development per the official FAQ.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "org.krita",
+  "sibling_slug": "org-krita",
+  "sibling_platform": "android"
  },
  {
   "name": "Kudu",
@@ -16146,8 +17604,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://kvirc.net/?id=releases&platform=win64&version=5.2.4&lang=",
+   "alternatives": [
+    {
+     "label": "KVIrc GitHub project",
+     "url": "https://github.com/kvirc/KVIrc"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -16208,6 +17671,57 @@
   "sibling_package": null
  },
  {
+  "name": "LameXP",
+  "package": "lamexp.windows",
+  "slug": "lamexp-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Graphical front-end for LAME, Ogg Vorbis and other audio encoders with batch processing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://lamexp.sourceforge.net/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/lordmulder/LameXP"
+    },
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/music_video/lamexp-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "LAN Messenger",
   "package": "lan.messenger.windows",
   "slug": "lan-messenger-windows",
@@ -16230,8 +17744,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/node/62011",
+   "alternatives": [
+    {
+     "label": "Developer site (SourceForge, demoted)",
+     "url": "https://lanmsngr.sourceforge.net/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -16289,6 +17808,53 @@
   "sibling_package": null
  },
  {
+  "name": "LazPaint",
+  "package": "lazpaint.windows",
+  "slug": "lazpaint-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Raster editor with layers and vector shapes built on the Lazarus/Free Pascal stack.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://lazpaint.github.io/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/bgrabitmap/lazpaint"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "LBreakout2",
   "package": "lbreakout2.windows",
   "slug": "lbreakout2-windows",
@@ -16311,8 +17877,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://lgames.sourceforge.net/index.php?project=LBreakout2",
-   "alternatives": []
+   "official": "https://portableapps.com/node/64436",
+   "alternatives": [
+    {
+     "label": "LGames project page (SourceForge, demoted)",
+     "url": "https://lgames.sourceforge.net/index.php?project=LBreakout2"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -17145,8 +18716,60 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "http://portableapps.com/apps/games/lmarbles_portable",
+   "alternatives": [
+    {
+     "label": "PortableApps release news",
+     "url": "https://portableapps.com/news/2010-12-28_-_lmarbles_portable_1.0.6"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "LMMS",
+  "package": "lmms.windows",
+  "slug": "lmms-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Digital audio workstation for composing with samples, synthesizers and MIDI.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://lmms.io/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/LMMS/lmms"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -17421,6 +19044,55 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Lossless Cut",
+  "package": "lossless.cut.windows",
+  "slug": "lossless-cut-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Losslessly trims and merges video and audio files without re-encoding.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://losslesscut.net/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mifi/lossless-cut"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Paid Microsoft Store version is functionally identical to the free download; purchase covers auto-updates and supports development per losslesscut.net.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -17907,8 +19579,17 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.reto-schoelly.com/downloads",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/apps/games/mahjongg-solitaire-3d-portable"
+    },
+    {
+     "label": "Old developer page",
+     "url": "http://www.reto-schoelly.de/mahjongg3d/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -18074,7 +19755,54 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/games/maniadrive-portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project",
+     "url": "https://sourceforge.net/projects/maniadrive/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Marble",
+  "package": "marble.windows",
+  "slug": "marble-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Virtual globe and atlas with maps, satellite imagery, routing and open-streetmap data.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://marble.kde.org/",
    "alternatives": []
   },
   "rating": null,
@@ -18445,13 +20173,105 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.Net/projects/mbox-viewer/",
+   "official": "https://github.com/eneam/mboxviewer/releases",
    "alternatives": [
     {
      "label": "GitHub",
      "url": "https://github.com/eneam/mboxviewer"
+    },
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/utilities/mbox-viewer-portable"
+    },
+    {
+     "label": "SourceForge",
+     "url": "https://sourceforge.net/projects/mbox-viewer/"
     }
    ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Media Player Classic - BE",
+  "package": "media.player.classic.be.windows",
+  "slug": "media-player-classic-be-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Lightweight DirectShow media player fork of Media Player Classic with a modern toolbar UI.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Aleksoid1978/MPC-BE",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Media Player Classic - HC",
+  "package": "media.player.classic.hc.windows",
+  "slug": "media-player-classic-hc-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Maintained community fork of the classic lightweight media player (original ended 2017).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/clsid2/mpc-hc",
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -18492,7 +20312,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://mediaarea.net/en/MediaInfo/Download/Windows",
    "alternatives": []
   },
   "rating": null,
@@ -19111,6 +20931,53 @@
   "sibling_package": null
  },
  {
+  "name": "MilkyTracker",
+  "package": "milkytracker.windows",
+  "slug": "milkytracker-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "FastTracker II style music tracker for composing chiptune and module music.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://milkytracker.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/milkytracker/MilkyTracker"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Mill",
   "package": "com.calcitem.sanmill",
   "slug": "com-calcitem-sanmill",
@@ -19255,7 +21122,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/games/mines-perfect_portable",
    "alternatives": []
   },
   "rating": null,
@@ -19404,6 +21271,53 @@
   "sibling_package": null
  },
  {
+  "name": "Mixxx",
+  "package": "mixxx.windows",
+  "slug": "mixxx-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "DJ software with beatmatching, effects, controller support and live broadcasting.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://mixxx.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mixxxdj/mixxx"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "MJ PDF",
   "package": "com.gitlab.mudlej.MjPdfReader",
   "slug": "com-gitlab-mudlej-mjpdfreader",
@@ -19432,6 +21346,95 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MKVToolNix",
+  "package": "mkvtoolnix.windows",
+  "slug": "mkvtoolnix-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Matroska (MKV) toolkit for muxing, splitting, merging and inspecting video files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://mkvtoolnix.download/",
+   "alternatives": [
+    {
+     "label": "GitLab",
+     "url": "https://gitlab.com/mbunkus/mkvtoolnix"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Mnemosyne",
+  "package": "mnemosyne.windows",
+  "slug": "mnemosyne-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Spaced-repetition flashcard program with a research-grade scheduling algorithm and card statistics.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://mnemosyne-proj.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -19718,7 +21721,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/games/monster_2_portable",
    "alternatives": []
   },
   "rating": null,
@@ -19990,6 +21993,95 @@
   "sibling_package": null
  },
  {
+  "name": "Mp3splt-gtk",
+  "package": "mp3splt.gtk.windows",
+  "slug": "mp3splt-gtk-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Graphical splitter for MP3 and Ogg files with silence detection, no re-encoding.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/mp3splt/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MPV",
+  "package": "mpv.windows",
+  "slug": "mpv-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Minimal, scriptable media player with high-quality rendering and no GUI chrome.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://mpv.io/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mpv-player/mpv"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "mpv-android",
   "package": "is.xyz.mpv",
   "slug": "is-xyz-mpv",
@@ -20192,6 +22284,53 @@
   "sibling_package": null
  },
  {
+  "name": "MuseScore",
+  "package": "musescore.windows",
+  "slug": "musescore-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Music notation software for composing, engraving and playing back scores.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://musescore.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/MuseScore/MuseScore"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Music Player GO",
   "package": "com.iven.musicplayergo",
   "slug": "com-iven-musicplayergo",
@@ -20220,6 +22359,95 @@
   "rating": null,
   "attrs": {
    "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MusicBee",
+  "package": "musicbee.windows",
+  "slug": "musicbee-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Music manager and player with tagging, auto-playlists, sync and theater-mode skins.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.getmusicbee.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MusicBrainz Picard",
+  "package": "musicbrainz.picard.windows",
+  "slug": "musicbrainz-picard-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Music tagger that identifies tracks acoustically and writes metadata from MusicBrainz.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://picard.musicbrainz.org/downloads/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/metabrainz/picard"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -20342,6 +22570,53 @@
   },
   "made_by_us": false,
   "per_badge": true,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MyPaint",
+  "package": "mypaint.windows",
+  "slug": "mypaint-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Distraction-free painting app with a large brush library and infinite canvas.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://mypaint.app/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mypaint/mypaint"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
   "free_enough": false,
   "free_enough_reason": "",
   "needs_account": false,
@@ -20636,6 +22911,53 @@
   "sibling_package": null
  },
  {
+  "name": "Nemp",
+  "package": "nemp.windows",
+  "slug": "nemp-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Audio player and media library manager with tagging and playlist tools.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.nemp-online.de/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/DanielGausi/Nemp"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Neo Backup",
   "package": "com.machiav3lli.backup",
   "slug": "com-machiav3lli-backup",
@@ -20781,7 +23103,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.nethack.org/common/index.html",
    "alternatives": []
   },
   "rating": null,
@@ -20823,8 +23145,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://github.com/netpanzer/netpanzer/releases",
+   "alternatives": [
+    {
+     "label": "Official site",
+     "url": "https://netpanzer.io"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -21200,8 +23527,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://notepad-plus-plus.org/downloads/",
+   "alternatives": [
+    {
+     "label": "GitHub releases",
+     "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -21242,7 +23574,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "http://www.flos-freeware.ch/notepad2.html",
    "alternatives": []
   },
   "rating": null,
@@ -21284,8 +23616,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://xhmikosr.github.io/notepad2-mod/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/XhmikosR/notepad2-mod"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -21580,7 +23917,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://nsis.sourceforge.io/",
    "alternatives": []
   },
   "rating": null,
@@ -21681,6 +24018,53 @@
   "tags": [
    "free enough"
   ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "OBS Studio",
+  "package": "obs.studio.windows",
+  "slug": "obs-studio-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Screen recording and live streaming studio with scenes, sources and filters.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://obsproject.com/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/obsproject/obs-studio"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -22431,6 +24815,48 @@
   "sibling_package": null
  },
  {
+  "name": "OpenMPT",
+  "package": "openmpt.windows",
+  "slug": "openmpt-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Module tracker for composing music in MOD/XM/IT formats with a piano-roll editor.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://openmpt.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Openreads",
   "package": "software.mdev.bookstracker",
   "slug": "software-mdev-bookstracker",
@@ -22541,6 +24967,53 @@
   },
   "rating": 3.7,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "OpenShot",
+  "package": "openshot.windows",
+  "slug": "openshot-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Video editor with timeline trimming, transitions, titles and keyframe animation.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.openshot.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/OpenShot/openshot-qt"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -22698,8 +25171,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.openttd.org/downloads/openttd-releases/latest",
+   "alternatives": [
+    {
+     "label": "GitHub releases",
+     "url": "https://github.com/OpenTTD/OpenTTD/releases"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -23134,6 +25612,55 @@
   "sibling_package": null
  },
  {
+  "name": "Paint.NET",
+  "package": "paint.net.windows",
+  "slug": "paint-net-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Layered raster editor with an active plugin ecosystem and GPU-accelerated effects.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.getpaint.net/",
+   "alternatives": [
+    {
+     "label": "Microsoft Store",
+     "url": "https://apps.microsoft.com/detail/9nbhcs1lx4r0"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Paid Microsoft Store edition is functionally identical to the free download; purchase supports development.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "PaperKnife",
   "package": "com.paperknife.app",
   "slug": "com-paperknife-app",
@@ -23242,7 +25769,49 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/games/pathological_portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Paul Stretch",
+  "package": "paul.stretch.windows",
+  "slug": "paul-stretch-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Extreme time-stretch audio effect for turning short sounds into long ambient textures.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/music_video/paul_stretch_portable",
    "alternatives": []
   },
   "rating": null,
@@ -23325,7 +25894,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://www.portablefreeware.com/index.php?id=1731",
    "alternatives": [
     {
      "label": "Portable Freeware",
@@ -23378,6 +25947,178 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PDF Arranger",
+  "package": "pdf.arranger.windows",
+  "slug": "pdf-arranger-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "Merges, splits, rotates and reorders PDF pages via drag and drop.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/pdfarranger/pdfarranger",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PDF-XChange Editor",
+  "package": "pdf.xchange.editor.windows",
+  "slug": "pdf-xchange-editor-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "PDF editor with annotation, form filling, OCR and page manipulation.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.pdf-xchange.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "A paid perpetual license exists, but the free version is a complete PDF editor — roughly 70% of features are free, and used pro features only stamp a watermark.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PDFsam Basic",
+  "package": "pdfsam.basic.windows",
+  "slug": "pdfsam-basic-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "Splits, merges, rotates and extracts pages from PDF files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pdfsam.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Paid PDFsam Enhanced/Visual editions exist; PDFsam Basic is a complete PDF split/merge/rotate tool.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PDFTK Builder",
+  "package": "pdftk.builder.windows",
+  "slug": "pdftk-builder-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "Graphical front-end for PDFtk to merge, split, stamp and encrypt PDFs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pdftk-builder-enhanced.sourceforge.io/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -23724,6 +26465,145 @@
   "sibling_package": null
  },
  {
+  "name": "PhotoDemon",
+  "package": "photodemon.windows",
+  "slug": "photodemon-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Portable photo editor with layers, filters and a non-modal UI, single EXE with no installer.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://photodemon.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/tannerhelland/PhotoDemon"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PhotoFilmStrip",
+  "package": "photofilmstrip.windows",
+  "slug": "photofilmstrip-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Turns photo collections into slideshow movies with pan-and-zoom effects.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.photofilmstrip.org/en/download/",
+   "alternatives": [
+    {
+     "label": "SourceForge",
+     "url": "https://sourceforge.net/projects/photofilmstrip/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PhotoFiltre",
+  "package": "photofiltre.windows",
+  "slug": "photofiltre-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Image retouching program with filters, batch processing and a classic single-window UI.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.photofiltre-studio.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "A paid PhotoFiltre Studio X exists; the free PhotoFiltre 7 is a complete image retoucher (described by BetaNews as 'slightly cut down').",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Photok",
   "package": "dev.leonlatsch.photok",
   "slug": "dev-leonlatsch-photok",
@@ -23907,8 +26787,60 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "http://pingus.seul.org/download.html",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Pingus/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Pinta",
+  "package": "pinta.windows",
+  "slug": "pinta-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Simple drawing and image-editing program modeled on Paint.NET with layers and effects.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.pinta-project.com/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/PintaProject/Pinta"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -24314,8 +27246,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://pnotes.sourceforge.io/",
-   "alternatives": []
+   "official": "http://portableapps.com/apps/office/pnotes_portable",
+   "alternatives": [
+    {
+     "label": "SourceForge (developer project site)",
+     "url": "https://pnotes.sourceforge.io/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -24965,6 +27902,50 @@
   "sibling_package": null
  },
  {
+  "name": "PotPlayer",
+  "package": "potplayer.windows",
+  "slug": "potplayer-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Feature-rich media player with extensive codec, subtitle and playback-speed options.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://potplayer.daum.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "PowerToys",
   "package": "powertoys.windows",
   "slug": "powertoys-windows",
@@ -25361,11 +28342,11 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/projects/project-invincible/",
+   "official": "https://portableapps.com/news/2013-01-06--project-invincible-portable-2.02-released",
    "alternatives": [
     {
-     "label": "PortableApps",
-     "url": "https://portableapps.com/news/2013-01-06--project-invincible-portable-2.02-released"
+     "label": "SourceForge (developer project site)",
+     "url": "https://sourceforge.net/projects/project-invincible/"
     }
    ]
   },
@@ -25571,8 +28552,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/games/puzzle_collection_portable"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -25697,8 +28683,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://github.com/Qalculate/qalculate-qt/releases/tag/v5.12.0",
+   "alternatives": [
+    {
+     "label": "Official site",
+     "url": "http://qalculate.github.io/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -25915,6 +28906,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Qmmp",
+  "package": "qmmp.windows",
+  "slug": "qmmp-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Winamp/XMMS-style audio player with skins, plugins and a compact interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://qmmp.ylsoftware.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -26666,8 +29699,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.ov2.eu/programs/rapidcrc-unicode",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2024-05-11--rapid-crc-unicode-portable-0.3.40-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -26725,6 +29763,53 @@
   "sibling_package": null
  },
  {
+  "name": "RawTherapee",
+  "package": "rawtherapee.windows",
+  "slug": "rawtherapee-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "RAW photo processor with advanced demosaicing, color management and batch queues.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.rawtherapee.com/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Beep6581/RawTherapee"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "RBTray",
   "package": "rbtray.windows",
   "slug": "rbtray-windows",
@@ -26747,8 +29832,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://github.com/g-bortoletto/rbtray",
+   "alternatives": [
+    {
+     "label": "SourceForge (original)",
+     "url": "https://sourceforge.net/projects/rbtray/files/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -29011,8 +32101,60 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "http://jacquelin.potier.free.fr/ShortcutsSearchAndReplace/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2024-05-11--shortcuts-search-and-replace-portable-1.14.0--released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Shotcut",
+  "package": "shotcut.windows",
+  "slug": "shotcut-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Cross-platform video editor with timeline editing, filters and 4K support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.shotcut.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mltframework/shotcut"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -29097,6 +32239,61 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Sigil",
+  "package": "sigil.windows",
+  "slug": "sigil-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "WYSIWYG and code-view EPUB ebook editor with metadata editing, TOC generation and validation.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sigil-ebook.com/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Sigil-Ebook/Sigil"
+    },
+    {
+     "label": "Chocolatey",
+     "url": "https://community.chocolatey.org/packages/Sigil"
+    },
+    {
+     "label": "winget",
+     "url": "https://winstall.app/apps/Sigil-Ebook.Sigil"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -29340,8 +32537,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "http://www.angusj.com/sudoku/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/news/2017-12-11--simple-sudoku-portable-4.2n-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -29603,6 +32805,95 @@
   "sibling_package": null
  },
  {
+  "name": "Smart Deblur",
+  "package": "smart.deblur.windows",
+  "slug": "smart-deblur-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Deblurs out-of-focus and motion-blurred photos with blind deconvolution algorithms.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Y-Vladimir/SmartDeblur",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "SMPlayer",
+  "package": "smplayer.windows",
+  "slug": "smplayer-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Graphical front-end for MPlayer/mpv with subtitle search and YouTube playback.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.smplayer.info/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "SMS Import/Export",
   "package": "com.github.tmo1.sms_ie",
   "slug": "com-github-tmo1-sms-ie",
@@ -29707,8 +32998,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://dan.hersam.com/software/snaptimer/index.php",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "http://portableapps.com/apps/utilities/snaptimer-portable"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -29790,7 +33086,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "http://speedcrunch.org/",
    "alternatives": []
   },
   "rating": null,
@@ -29964,8 +33260,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/news/2016-06-30--ssd-z-portable-16.06.29.b-released",
+   "alternatives": [
+    {
+     "label": "Guru3D",
+     "url": "https://www.guru3d.com/download/ssd-z-download/?print"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -30006,8 +33307,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://sourceforge.net/p/stacknotes/",
-   "alternatives": []
+   "official": "https://portableapps.com/node/70651",
+   "alternatives": [
+    {
+     "label": "SourceForge (developer project site)",
+     "url": "https://sourceforge.net/p/stacknotes/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -30154,6 +33460,53 @@
   "sibling_package": null
  },
  {
+  "name": "Stellarium",
+  "package": "stellarium.windows",
+  "slug": "stellarium-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Planetarium app that renders a realistic night sky for any location and date, with deep-sky catalog data.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://stellarium.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Stellarium/stellarium"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Stepsy: Step Counter",
   "package": "com.nvllz.stepsy",
   "slug": "com-nvllz-stepsy",
@@ -30237,6 +33590,50 @@
   "sibling_package": null
  },
  {
+  "name": "Stirling PDF",
+  "package": "stirling.pdf.windows",
+  "slug": "stirling-pdf-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "Self-hosted web app with dozens of PDF operations: merge, split, compress, OCR and more.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Stirling-Tools/Stirling-PDF",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "A paid tier covers team SSO and unlimited users; personal use of the self-hosted app is complete.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "StoneAge",
   "package": "com.cweb.messenger",
   "slug": "com-cweb-messenger",
@@ -30306,6 +33703,100 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Strawberry Music Player",
+  "package": "strawberry.music.player.windows",
+  "slug": "strawberry-music-player-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Music collection organizer and player forked from Clementine with audiophile features.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.strawberrymusicplayer.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/strawberrymusicplayer/strawberry"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "StreamWriter",
+  "package": "streamwriter.windows",
+  "slug": "streamwriter-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Internet radio recorder that saves streams and splits them into tracks automatically.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://streamwriter.org/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/music_video/streamwriter-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -30467,7 +33958,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/node/58961",
    "alternatives": []
   },
   "rating": null,
@@ -30518,6 +34009,57 @@
   "attrs": {
    "open_source": true,
    "offline": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Sumatra PDF",
+  "package": "sumatra.pdf.windows",
+  "slug": "sumatra-pdf-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Read",
+  "description": "Minimal, fast PDF, ePub, DjVu and comic-book reader with no bloat.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.sumatrapdfreader.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/sumatrapdfreader/sumatrapdf"
+    },
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/office/sumatra_pdf_portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -30765,8 +34307,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://supertuxkart.net/Download",
+   "alternatives": [
+    {
+     "label": "GitHub Releases",
+     "url": "https://github.com/supertuxkart/stk-code/releases/latest"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -31149,8 +34696,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "http://sourceforge.net/projects/t-3/",
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/t-3_portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project",
+     "url": "http://sourceforge.net/projects/t-3/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -31610,11 +35162,11 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/utilities/texter_portable",
    "alternatives": [
     {
-     "label": "PortableApps",
-     "url": "https://portableapps.com/apps/utilities/texter_portable"
+     "label": "Lifehacker Code announcement (archived)",
+     "url": "http://lifehacker.com/238306/lifehacker-code-texter-windows"
     }
    ]
   },
@@ -31657,7 +35209,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://ramensoftware.com/textify",
    "alternatives": [
     {
      "label": "PortableApps release",
@@ -31911,8 +35463,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/tick5_portable",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2015-06-07--tick5-portable-1.0-rev-2-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -31994,8 +35551,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://www.nurgo-software.com/products/tidytabs",
+   "alternatives": [
+    {
+     "label": "Official MSI download",
+     "url": "https://www.nurgo-software.com/download/TidyTabs.msi"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -32038,8 +35600,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "http://www.muppetlabs.com/~breadbox/software/tworld/",
+   "alternatives": [
+    {
+     "label": "GitHub fork (mjfwalsh)",
+     "url": "https://github.com/mjfwalsh/tworld"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -32086,6 +35653,48 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "TIPP10",
+  "package": "tipp10.windows",
+  "slug": "tipp10-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Touch-typing tutor with lessons, dictation texts and progress statistics.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.tipp10.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -32777,8 +36386,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/games/twin_distress_portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project",
+     "url": "https://sourceforge.net/p/twind/news/2004/07/twin-distress-110-released/history"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -32819,8 +36433,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/utilities/typertask-portable",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2019-08-05--typertask-portable-1.20-rev-3-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -33027,8 +36646,17 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://mercury13.github.io/unicodia/",
+   "alternatives": [
+    {
+     "label": "GitHub Releases",
+     "url": "https://github.com/Mercury13/unicodia/releases"
+    },
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2024-05-20--unicodia-portable-2.7.1-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -33313,7 +36941,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/games/usb-sudoku-portable",
    "alternatives": []
   },
   "rating": null,
@@ -33355,8 +36983,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/node/66008",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2023-11-06--uuid-guid-generator-portable-3.0-released"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -33723,8 +37356,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "http://magnifier.sourceforge.net/",
-   "alternatives": []
+   "official": "https://portableapps.com/news/2013-09-24--virtual-magnifying-glass-portable-3.6-released",
+   "alternatives": [
+    {
+     "label": "SourceForge project site",
+     "url": "http://magnifier.sourceforge.net/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -33765,8 +37403,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://vvvapp.sourceforge.io/",
-   "alternatives": []
+   "official": "https://portableapps.com/news/2021-06-16--virtual-volumes-view-portable-1.4-released",
+   "alternatives": [
+    {
+     "label": "SourceForge project",
+     "url": "https://sourceforge.net/projects/vvvapp/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -33808,7 +37451,12 @@
   },
   "downloads": {
    "official": "https://virtuawin.sourceforge.io/",
-   "alternatives": []
+   "alternatives": [
+    {
+     "label": "SourceForge project page",
+     "url": "http://sourceforge.net/projects/virtuawin/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -33894,6 +37542,53 @@
   "rating": "4.05",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "VLC Media Player",
+  "package": "vlc.media.player.windows",
+  "slug": "vlc-media-player-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Video",
+  "description": "Plays virtually any audio or video format with no codec packs, plus streaming and conversion.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.videolan.org/vlc/",
+   "alternatives": [
+    {
+     "label": "Microsoft Store",
+     "url": "https://apps.microsoft.com/detail/9nblggh4vzwk"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -34142,11 +37837,11 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/apps/internet/wackget-portable",
    "alternatives": [
     {
-     "label": "PortableApps",
-     "url": "https://portableapps.com/apps/internet/wackget-portable"
+     "label": "GitHub (fabianod/wackget) modified source",
+     "url": "https://github.com/fabianod/wackget"
     }
    ]
   },
@@ -34189,11 +37884,15 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://github.com/gbaudic/warmux2",
    "alternatives": [
     {
      "label": "FSF Free Software Directory",
      "url": "https://directory.fsf.org/wiki/WarMUX"
+    },
+    {
+     "label": "GitHub (former author's code)",
+     "url": "https://github.com/yekcim/warmux"
     }
    ]
   },
@@ -34236,8 +37935,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://wz2100.net/",
+   "alternatives": [
+    {
+     "label": "GitHub Releases",
+     "url": "https://github.com/Warzone2100/warzone2100/releases"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -34401,7 +38105,54 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "http://portableapps.com/apps/games/watomic_portable",
+   "alternatives": [
+    {
+     "label": "SourceForge project page",
+     "url": "https://sourceforge.net/projects/watomic/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WaveShop",
+  "package": "waveshop.windows",
+  "slug": "waveshop-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Bit-perfect audio editor aimed at sample-accurate editing without dithering.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://waveshop.sourceforge.net/",
    "alternatives": []
   },
   "rating": null,
@@ -34732,8 +38483,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://winaero.com/winaero-tweaker/",
+   "alternatives": [
+    {
+     "label": "Official direct download (zip)",
+     "url": "https://winaerotweaker.com/download/winaerotweaker.zip"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -35096,6 +38852,53 @@
   "sibling_package": null
  },
  {
+  "name": "winLAME",
+  "package": "winlame.windows",
+  "slug": "winlame-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Easy-to-use audio encoder front-end with presets and CD ripping.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://winlame.sourceforge.io/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/hypercubemc/winlame"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "winMd5Sum",
   "package": "winmd5sum.windows",
   "slug": "winmd5sum-windows",
@@ -35118,8 +38921,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://portableapps.com/apps/utilities/winmd5sum_portable",
+   "alternatives": [
+    {
+     "label": "NullRiver (original developer)",
+     "url": "http://www.nullriver.com/products/winmd5sum"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -35160,8 +38968,17 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://winmerge.org/",
+   "alternatives": [
+    {
+     "label": "WinMerge Portable",
+     "url": "https://portableapps.com/apps/utilities/winmerge_portable"
+    },
+    {
+     "label": "GitHub Releases",
+     "url": "https://github.com/WinMerge/winmerge/releases/latest"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -35375,7 +39192,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://winwget.sourceforge.io/",
    "alternatives": []
   },
   "rating": null,
@@ -35805,7 +39622,96 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
+   "official": "https://portableapps.com/node/65402",
+   "alternatives": [
+    {
+     "label": "SourceForge project files",
+     "url": "https://sourceforge.net/projects/wizznic/files/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Workrave",
+  "package": "workrave.windows",
+  "slug": "workrave-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Health",
+  "description": "Reminds you to take micro-breaks and rest breaks to prevent RSI, with usage statistics.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://workrave.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "wxMP3gain",
+  "package": "wxmp3gain.windows",
+  "slug": "wxmp3gain-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Audio",
+  "description": "Graphical front-end for MP3Gain to normalize track volume without re-encoding.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/cfgnunes/wxmp3gain",
    "alternatives": []
   },
   "rating": null,
@@ -35996,6 +39902,48 @@
   "sibling_package": null
  },
  {
+  "name": "XMPlay",
+  "package": "xmplay.windows",
+  "slug": "xmplay-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Music",
+  "description": "Tiny, skinnable audio player famous for low resource use and module-format support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.un4seen.com/xmplay.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "XN Resource Editor",
   "package": "xn.resource.editor.windows",
   "slug": "xn-resource-editor-windows",
@@ -36038,6 +39986,138 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "XnConvert",
+  "package": "xnconvert.windows",
+  "slug": "xnconvert-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Batch image converter and resizer with over 80 actions and live preview.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.xnview.com/en/xnconvert/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "XnView",
+  "package": "xnview.windows",
+  "slug": "xnview-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Image browser and viewer supporting 500+ formats with batch rename and conversion.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.xnview.com/en/xnview-classic/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "XnView MP",
+  "package": "xnview.mp.windows",
+  "slug": "xnview-mp-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Photos",
+  "description": "Modern cross-platform image browser with tabbed interface, rating and cataloging.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.xnview.com/en/xnview-mp/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -36189,8 +40269,13 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://xye.sourceforge.net/download.php",
+   "alternatives": [
+    {
+     "label": "SourceForge project page",
+     "url": "https://sourceforge.net/projects/xye/"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -36441,7 +40526,12 @@
   },
   "downloads": {
    "official": "https://zaz.sourceforge.net/",
-   "alternatives": []
+   "alternatives": [
+    {
+     "label": "Zaz Portable",
+     "url": "http://portableapps.com/apps/games/zaz_portable"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -36707,12 +40797,59 @@
    "openapk": null
   },
   "downloads": {
-   "official": null,
-   "alternatives": []
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit",
+   "alternatives": [
+    {
+     "label": "Microsoft PowerToys on GitHub (ZoomIt module)",
+     "url": "https://github.com/microsoft/PowerToys"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zotero",
+  "package": "zotero.windows",
+  "slug": "zotero-windows",
+  "category": "Lifestyle",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Education",
+  "description": "Research manager that collects, organizes and cites sources with browser capture.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.zotero.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,

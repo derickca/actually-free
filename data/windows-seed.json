@@ -29,13 +29,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/4st-attack-portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project (original files)",
+    "url": "https://sourceforge.net/projects/forcedattack/"
+   },
+   {
+    "label": "Community-maintained source (GitHub)",
+    "url": "https://github.com/3D1T0R/4st-attack"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Developer's original site forcedattack.sf.net is offline. PortableApps.com co-publishes the game and is the maintained distribution."
  },
  {
   "name": "7+ Taskbar Tweaker",
@@ -48,13 +57,13 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://rammichael.com/7-taskbar-tweaker",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass. URL: Official site of the developer RaMMicHaeL."
  },
  {
   "name": "7-Zip",
@@ -119,6 +128,49 @@
   "notes": "Row is the PortableApps launcher for the open-source A Dark Room game. Code is MPL-2.0. No separate upstream download page found for this launcher build."
  },
  {
+  "name": "Aegisub",
+  "package": "aegisub.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Subtitle editor with timing, styling and karaoke templating for fansub workflows.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://aegisub.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/TypesettingTools/Aegisub"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "BSD-3-Clause; 3.5.0 released Oct 5, 2026."
+ },
+ {
+  "name": "AIMP",
+  "package": "aimp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Audio player with a skinnable interface, 18-band equalizer and format conversion.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.aimp.ru/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: FileHorse describes it as 'Free for non-commercial use'; could not fully verify commercial-use terms on the official site. Marked personal_use=true."
+ },
+ {
   "name": "AkelPad",
   "package": "akelpad.windows",
   "platform": "windows",
@@ -129,13 +181,32 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "http://akelpad.sourceforge.net/en/index.php",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as BSD open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as BSD open source; could not verify official download URL in this pass. URL: Official developer homepage hosted on SourceForge."
+ },
+ {
+  "name": "AndreaMosaic",
+  "package": "andreamosaic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Creates photographic mosaics from a tile image library at high resolution.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.andreaplanet.com/andreamosaic/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "3.54.0 released Sep 2025; free for personal and commercial use per official site."
  },
  {
   "name": "Angry IP Scanner",
@@ -186,13 +257,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/projects/ant-renamer/",
-  "alt_downloads": [],
+  "official_url": "https://antp.be/software/renamer/",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (mirror)",
+    "url": "https://sourceforge.net/projects/ant-renamer/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Open source: SourceForge lists GPL-2.0, AlternativeTo cites GPL-3.0. Active (v2.13.0 released December 2024)."
+  "notes": "Open source: SourceForge lists GPL-2.0, AlternativeTo cites GPL-3.0. Active (v2.13.0 released December 2024). URL: Official site of the developer Antoine Potten. SourceForge project page demoted to alternatives."
  },
  {
   "name": "Apache OpenOffice",
@@ -224,13 +300,13 @@
   "license": "freeware",
   "personal_use": true,
   "free_enough_reason": "The free Personal version is a complete product; multi-monitor support is the only significant feature reserved for the paid tier.",
-  "official_url": "",
+  "official_url": "https://www.nurgo-software.com/products/aquasnap",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Free for personal use. Could not verify official download URL in this pass."
+  "notes": "Free for personal use. Could not verify official download URL in this pass. URL: Official product page from Nurgo Software. Free Personal Edition is available."
  },
  {
   "name": "Armagetron Advanced",
@@ -268,12 +344,17 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://artha.sourceforge.net/wiki/index.php/Home",
-  "alt_downloads": [],
+  "alt_downloads": [
+   {
+    "label": "SourceForge (mirror)",
+    "url": "https://sourceforge.net/projects/artha/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL-2 open source. Development appears stalled (latest release 1.0.3), but the Windows build works offline and passes the bar."
+  "notes": "GPL-2 open source. Development appears stalled (latest release 1.0.3), but the Windows build works offline and passes the bar. URL: Official project site hosted on SourceForge."
  },
  {
   "name": "AssaultCube",
@@ -316,7 +397,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list."
+  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list. URL: Official developer project site hosted on SourceForge. Kept the existing PortableApps link."
  },
  {
   "name": "Attribute Changer",
@@ -329,13 +410,80 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.petges.lu/download/",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Freeware for personal and business use; could not verify official download URL in this pass."
+  "notes": "Freeware for personal and business use; could not verify official download URL in this pass. URL: Official download page from the developer Romain Petges."
+ },
+ {
+  "name": "Audacious",
+  "package": "audacious.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Lightweight audio player with a classic Winamp-style interface and plugin support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://audacious-media-player.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source; 4.6.1 released June 2026; official Windows builds."
+ },
+ {
+  "name": "Audacity",
+  "package": "audacity.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Multitrack audio recorder and editor with effects, spectral analysis and plugin support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.audacityteam.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/audacity/audacity"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv3; 4.0.1 released Sep 2026."
+ },
+ {
+  "name": "AutoDrum",
+  "package": "autodrum.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Drum machine and rhythm composer with pattern editing and export.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://openmidiproject.opal.ne.jp/AutoDrum_en.html",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/music_video/autodrum-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "8.1 released May 2024; PortableApps describes it as 'open source and completely free'. Could not verify an official project site, so the URL is left blank. URL: OpenMIDI Project's own AutoDrum page with current Windows downloads."
  },
  {
   "name": "AutoHotkey",
@@ -374,6 +522,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Avidemux",
+  "package": "avidemux.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Simple video editor for cutting, filtering and encoding without re-encoding where possible.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://avidemux.org/download",
+  "alt_downloads": [
+   {
+    "label": "Official nightly builds",
+    "url": "https://avidemux.org/nightly/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL; 2.8.1. Could not verify the exact official download URL, so it is left blank. URL: Official avidemux.org downloads page; nightly builds linked from the project forum."
  },
  {
   "name": "BabelMap",
@@ -448,13 +620,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.wesnoth.org/downloads",
+  "alt_downloads": [
+   {
+    "label": "GitHub releases",
+    "url": "https://github.com/wesnoth/wesnoth/releases"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL. URL: Official wesnoth.org downloads page. GitHub org wesnoth/wesnoth is also official."
  },
  {
   "name": "Beret",
@@ -467,13 +644,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/node/61768",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License confirmed as LGPL (open source) via a PortableApps forum post and a software directory listing. UNCERTAIN: could not verify an official URL for this game."
+  "notes": "License confirmed as LGPL (open source) via a PortableApps forum post and a software directory listing. UNCERTAIN: could not verify an official URL for this game. URL: Original developer site is defunct. PortableApps.com is the trusted distributor of the final 1.2.1 build."
  },
  {
   "name": "Betterbird",
@@ -505,18 +682,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/projects/big3dsol/",
+  "official_url": "http://big3dsol.sourceforge.net/index.html",
   "alt_downloads": [
    {
     "label": "PortableApps",
     "url": "https://portableapps.com/news/2012-06-18--big-solitaires-3d-portable-1.4-rev-2-released"
+   },
+   {
+    "label": "SourceForge (mirror)",
+    "url": "https://sourceforge.net/projects/big3dsol/"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL 2.0 (open source) per a software directory listing. official_url from page text, not the verbatim Full URLs list."
+  "notes": "License GPL 2.0 (open source) per a software directory listing. official_url from page text, not the verbatim Full URLs list. URL: Official developer homepage hosted on SourceForge. SourceForge project page demoted to alternatives and kept the existing PortableApps link."
  },
  {
   "name": "Bitwarden Desktop",
@@ -614,6 +795,44 @@
   "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
  },
  {
+  "name": "Brain Workshop",
+  "package": "brain.workshop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Dual n-back memory training game implementing the Brain Workshop protocol with progressive difficulty.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://brainworkshop.sourceforge.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL; maintained on SourceForge."
+ },
+ {
+  "name": "BriskPlayer",
+  "package": "briskplayer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Minimal music player with a compact queue-based interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/briskplayer/briskplayer",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL; 3.0.3 released June 2026."
+ },
+ {
   "name": "Brutal Chess",
   "package": "brutal.chess.windows",
   "platform": "windows",
@@ -624,18 +843,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/projects/brutalchess/",
+  "official_url": "https://portableapps.com/apps/games/brutal_chess_portable",
   "alt_downloads": [
    {
-    "label": "PortableApps",
+    "label": "PortableApps release news",
     "url": "https://portableapps.com/news/2018-08-20--brutal-chess-portable-0.5.2.2-released"
+   },
+   {
+    "label": "winget",
+    "url": "https://winget.run/pkg/BrutalChess/BrutalChess"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). Discontinued; the last release was an alpha. official_url from page text, not the verbatim Full URLs list."
+  "notes": "License GPL (open source). Discontinued; the last release was an alpha. official_url from page text, not the verbatim Full URLs list. URL: Original project site brutalchess.sourceforge.net is inactive since 2007. PortableApps.com is the maintained distribution. Kept the existing PortableApps link and added the PortableApps app page plus the verified winget listing."
  },
  {
   "name": "BYOND",
@@ -657,6 +880,54 @@
   "notes": "PortableApps release notes: freeware for personal and business use. Proprietary, not open source. No trial or upsell inside the client. Games/Players basket kept: it is primarily a game client and community."
  },
  {
+  "name": "Caesium",
+  "package": "caesium.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Batch image compressor with quality preview and folder processing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://saerasoft.com/caesium",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Lymphatus/caesium-image-compressor"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0."
+ },
+ {
+  "name": "calibre",
+  "package": "calibre.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Ebook library manager with conversion between formats, editing and device sync.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://calibre-ebook.com/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/kovidgoyal/calibre"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0 per the official user manual."
+ },
+ {
   "name": "Canabalt",
   "package": "canabalt.windows",
   "platform": "windows",
@@ -667,13 +938,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://canabalt.com/",
+  "alt_downloads": [
+   {
+    "label": "itch.io (Classic)",
+    "url": "https://finji.itch.io/canabalt-classic"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Game engine is MIT but the developer states the game art and game-specific code are proprietary, so freeware is the accurate label. UNCERTAIN: could not verify an official download URL."
+  "notes": "Game engine is MIT but the developer states the game art and game-specific code are proprietary, so freeware is the accurate label. UNCERTAIN: could not verify an official download URL. URL: Official game page from developer Adam Saltsman. The PC downloadable build is the Flash classic hosted on the page."
  },
  {
   "name": "Capture2Text",
@@ -687,12 +963,17 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://capture2text.sourceforge.net/",
-  "alt_downloads": [],
+  "alt_downloads": [
+   {
+    "label": "SourceForge (mirror)",
+    "url": "https://sourceforge.net/projects/capture2text/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL open source (SourceForge)."
+  "notes": "GPL open source (SourceForge). URL: Official project site hosted on SourceForge. The actual download files are hosted by SourceForge per the site's own download section."
  },
  {
   "name": "cdrtfe",
@@ -705,13 +986,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/projects/cdrtfe/",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/music_video/cdrtfe_portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project files (official, demoted per policy)",
+    "url": "https://sourceforge.net/projects/cdrtfe/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL v2 confirmed on SourceForge; current version 1.5.9.1 (Sept 2024). Basket System/Disks kept."
+  "notes": "GPL v2 confirmed on SourceForge; current version 1.5.9.1 (Sept 2024). Basket System/Disks kept. URL: The developer's official site is hosted on SourceForge, which cannot be primary. PortableApps co-publishes cdrtfe Portable with the author Oliver Valencia."
+ },
+ {
+  "name": "Celestia",
+  "package": "celestia.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Real-time 3D space simulator that lets you fly through a model of the universe down to planetary surfaces.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://celestiaproject.space/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Anthony-B/Celestia-Project"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Active: 1.6.4 released Nov 2023; 1.7.0 betas in progress; Windows installer and Steam release current as of 2026."
  },
  {
   "name": "Checksum Control",
@@ -724,7 +1034,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/news/2016-05-19--checksum-control-portable-2.4.1-released",
   "alt_downloads": [
    {
     "label": "Portable Freeware Collection listing",
@@ -735,7 +1045,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL open source per PortableFreeware; could not verify the developer's own download URL in this pass."
+  "notes": "GPL open source per PortableFreeware; could not verify the developer's own download URL in this pass. URL: No live developer site found. PortableApps co-publishes Checksum Control Portable with the author Reinhard Berger, so the PortableApps release page is primary."
  },
  {
   "name": "Cherrytree",
@@ -767,13 +1077,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/61772",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project files (official, demoted per policy)",
+    "url": "https://sourceforge.net/projects/chromium-bsu/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License is the Clarified Artistic License (also described as MIT) per Wikipedia. UNCERTAIN: could not verify an official download URL."
+  "notes": "License is the Clarified Artistic License (also described as MIT) per Wikipedia. UNCERTAIN: could not verify an official download URL. URL: The original dev site is gone and the official project homepage is SourceForge-hosted, which cannot be primary. PortableApps co-publishes Chromium B.S.U. Portable."
  },
  {
   "name": "Chromium",
@@ -824,13 +1139,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/utilities/clicky-gone-portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project files (official, demoted per policy)",
+    "url": "https://sourceforge.net/projects/clickygone/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: Developer Alan Howie distributes via SourceForge only. PortableApps co-publishes Clicky Gone Portable with his assistance, so that page is primary."
  },
  {
   "name": "Colour Contrast Analyser",
@@ -867,18 +1187,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "http://www.xyntec.com/unit-converter-download.htm",
   "alt_downloads": [
    {
     "label": "PortableApps release",
-    "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-rev-2-released"
+    "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-released"
    }
   ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Freeware by Xyntec for personal and business use; last release 2012 but the local tool still works. Could not verify the developer's own download URL in this pass."
+  "notes": "Freeware by Xyntec for personal and business use; last release 2012 but the local tool still works. Could not verify the developer's own download URL in this pass. URL: Official developer (Xyntec Automation) download page, verified live."
  },
  {
   "name": "ConvertAll",
@@ -977,18 +1297,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://cppcheck.sourceforge.io",
+  "official_url": "https://github.com/cppcheck-opensource/cppcheck/releases",
   "alt_downloads": [
    {
     "label": "GitHub",
     "url": "https://github.com/cppcheck-opensource/cppcheck"
+   },
+   {
+    "label": "cppcheck.sourceforge.io (official project site, demoted per policy)",
+    "url": "https://cppcheck.sourceforge.io"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL-3.0 open source."
+  "notes": "GPL-3.0 open source. URL: Official GitHub releases. The project's own site cppcheck.sourceforge.io is developer-run but SourceForge-hosted, so it is demoted per policy."
  },
  {
   "name": "CPU-Z",
@@ -1148,6 +1472,30 @@
   "notes": "Project is archived/legacy but functional. Per the author, the installers offer no third-party software and the app is free of charge."
  },
  {
+  "name": "darktable",
+  "package": "darktable.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Non-destructive RAW photo editor with modules for exposure, color grading and lens correction.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.darktable.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/darktable-org/darktable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 5.6.2 released Oct 2026."
+ },
+ {
   "name": "Database Browser",
   "package": "database.browser.windows",
   "platform": "windows",
@@ -1158,13 +1506,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.etl-tools.com/products/database-browser.html",
+  "alt_downloads": [
+   {
+    "label": "Portable Freeware Collection listing",
+    "url": "https://www.portablefreeware.com/index.php?id=1915"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Freeware by Db Software Laboratory (etl-tools.com); last release around 2020. Could not verify official download URL in this pass."
+  "notes": "Freeware by Db Software Laboratory (etl-tools.com); last release around 2020. Could not verify official download URL in this pass. URL: Official developer (DB Software Laboratory) product and download page, verified live and actively maintained."
  },
  {
   "name": "Dave Gnukem",
@@ -1363,13 +1716,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/news/2014-09-11--diffimg-portable-2.2.0-released",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: The developer's site thehive.xbee.net is dead (the domain now serves unrelated content). PortableApps co-publishes DiffImg Portable, so its release page is primary."
  },
  {
   "name": "Diffpdf",
@@ -1382,13 +1735,32 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.qtrac.eu/diffpdf.html",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2 open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-2 open source; could not verify official download URL in this pass. URL: Official site of the author (Qtrac / Mark Summerfield), confirmed by multiple mirrors and GitHub forks."
+ },
+ {
+  "name": "digiKam",
+  "package": "digikam.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Photo management suite with a RAW editor, tagging, face detection and album organization.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.digikam.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; 9.1.0 released June 2026."
  },
  {
   "name": "Disk Cleaner",
@@ -1439,7 +1811,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "http://ditto-cp.sourceforge.net",
+  "official_url": "https://github.com/sabrogden/Ditto/releases",
   "alt_downloads": [
    {
     "label": "PortableApps",
@@ -1450,7 +1822,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPLv3 open source, actively maintained (release 3.25.113.0, September 2025)."
+  "notes": "GPLv3 open source, actively maintained (release 3.25.113.0, September 2025). URL: Official maintained GitHub repo; the project's own site is SourceForge-hosted and demoted per policy."
  },
  {
   "name": "DM2",
@@ -1463,13 +1835,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://github.com/igr/dm2/releases",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project page (migrated to GitHub, demoted per policy)",
+    "url": "https://sourceforge.net/projects/dm2/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: The official SourceForge project page says it migrated to GitHub, so GitHub releases are the official channel."
  },
  {
   "name": "Dolphin",
@@ -1501,13 +1878,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://domino-chain.gitlab.io/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2024-05-06--domino-chain-portable-1.1-released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL."
+  "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL. URL: Official upstream homepage (GitLab Pages), confirmed by Arch AUR and Flathub listings."
  },
  {
   "name": "Don't Panic!",
@@ -1520,7 +1902,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/utilities/dont_panic_portable",
   "alt_downloads": [
    {
     "label": "PortableApps release",
@@ -1531,7 +1913,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL open source per PortableFreeware forums; PortableApps describes it as open source and completely free. Could not verify the developer's own download URL in this pass."
+  "notes": "GPL open source per PortableFreeware forums; PortableApps describes it as open source and completely free. Could not verify the developer's own download URL in this pass. URL: No live developer site found. PortableApps co-publishes Don't Panic! Portable, so its app page is primary."
  },
  {
   "name": "Don't Sleep",
@@ -1701,13 +2083,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/projects/dvdstyler/",
-  "alt_downloads": [],
+  "official_url": "https://www.dvdstyler.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub (official repo)",
+    "url": "https://github.com/ntxalex/DVDStyler"
+   },
+   {
+    "label": "FossHub (official mirror, demoted per policy)",
+    "url": "https://www.fosshub.com/DVDStyler.html"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GNU GPL confirmed by Wikipedia and the project. No paid tier. Project is dormant (stable 3.2.1, Nov 2021) but functional; Wikipedia notes the old adware controversy was limited to versions 2.8.0/2.8.1 with no reports in newer versions. Basket Media/Video kept."
+  "notes": "GNU GPL confirmed by Wikipedia and the project. No paid tier. Project is dormant (stable 3.2.1, Nov 2021) but functional; Wikipedia notes the old adware controversy was limited to versions 2.8.0/2.8.1 with no reports in newer versions. Basket Media/Video kept. URL: Official developer site; the maintainer's official GitHub repo is ntxalex/DVDStyler."
  },
  {
   "name": "EarTrumpet",
@@ -1839,7 +2230,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/security/eraserdrop-portable",
   "alt_downloads": [
    {
     "label": "PortableApps",
@@ -1850,7 +2241,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "last release 2.1.1 (2012); could not verify the developer's site; distributed via PortableApps.com."
+  "notes": "last release 2.1.1 (2012); could not verify the developer's site; distributed via PortableApps.com. URL: Original developer site is defunct. PortableApps.com co-published the EraserDrop package and remains the maintained source."
  },
  {
   "name": "Espanso",
@@ -1986,6 +2377,25 @@
   "notes": "UNCERTAIN: the current EULA on fastcopy.jp was not verified; pendriveapps reports personal-use-free with a paid license for some commercial use."
  },
  {
+  "name": "FastStone Image Viewer",
+  "package": "faststone.image.viewer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Fast image browser, viewer and basic editor with batch conversion and lossless JPEG operations.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.faststone.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal and educational use including non-profits; commercial users need a license. No ads or nags."
+ },
+ {
   "name": "FeedRoller",
   "package": "feedroller.windows",
   "platform": "windows",
@@ -1996,18 +2406,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/internet/feedroller-portable",
   "alt_downloads": [
    {
-    "label": "PortableApps",
-    "url": "https://portableapps.com/apps/internet/feedroller-portable"
+    "label": "TechSpot",
+    "url": "https://www.techspot.com/downloads/downloadnow/5767/?evp=e767cd2d8c7a9c58801c64c57abb5692&file=6731"
    }
   ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "original site offline; PortableApps.com hosts a build; could not verify an official download page."
+  "notes": "original site offline; PortableApps.com hosts a build; could not verify an official download page. URL: Packaged with permission from developer Sector Seven. The original download site is defunct, so PortableApps.com is the trustworthy maintained source."
  },
  {
   "name": "Ferdium",
@@ -2063,8 +2473,13 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.safer-networking.org/products/filealyzer/download/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps (2012 release announcement)",
+    "url": "https://portableapps.com/news/2012-10-22--filealyzer-portable-2.0.5.57-released"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
@@ -2082,13 +2497,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/64805",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (developer page)",
+    "url": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "UNCERTAIN: portablefreeware.com reports an optional startup ad screen that can be disabled — could not verify it only promotes the developer's own support message."
+  "notes": "UNCERTAIN: portablefreeware.com reports an optional startup ad screen that can be disabled — could not verify it only promotes the developer's own support message. URL: Developer distributes exclusively through SourceForge. PortableApps.com publishes an official co-released Portable package with the developer and is used as primary since SourceForge cannot be primary."
  },
  {
   "name": "FileVoyager",
@@ -2220,8 +2640,17 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://fontforge.org/en-US/downloads/windows/",
+  "alt_downloads": [
+   {
+    "label": "GitHub Releases",
+    "url": "https://github.com/fontforge/fontforge/releases"
+   },
+   {
+    "label": "PortableApps",
+    "url": "http://portableapps.com/apps/utilities/fontforge-portable"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -2239,13 +2668,99 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.softwareok.com/?Download=FontViewOK",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
   "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+ },
+ {
+  "name": "foobar2000",
+  "package": "foobar2000.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Highly customizable audio player with gapless playback, DSP chains and component extensions.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.foobar2000.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Core is proprietary freeware with an open-source (BSD) SDK; 2.26.1 released Oct 2026."
+ },
+ {
+  "name": "Fotografix",
+  "package": "fotografix.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Lightweight photo editor with layers, brushes and effects in a Photoshop-style UI.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.lmadhavan.com/fotografix/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/lmadhavan/fotografix"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT licensed; latest release 2023.4.1."
+ },
+ {
+  "name": "FotoSketcher",
+  "package": "fotosketcher.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Turns digital photos into pencil, oil-paint and watercolor style artworks with adjustable effects.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.fotosketcher.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "4.30 released June 2026; free for personal and commercial use; no subscription and no account required."
+ },
+ {
+  "name": "fre:ac",
+  "package": "fre.ac.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Audio converter and CD ripper with encoder presets and freedb lookup.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.freac.org/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/music_video/freac-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; 1.1.7. Quiet since 2023 but functional."
  },
  {
   "name": "Free Download Manager",
@@ -2296,7 +2811,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.freeciv.org/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -2353,13 +2868,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/development/frhed_portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (developer page)",
+    "url": "https://sourceforge.net/projects/frhed/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass. URL: Original developer homepage is defunct. The project publishes through SourceForge, so the PortableApps.com co-published package is the trustworthy maintained primary."
  },
  {
   "name": "FUPX",
@@ -2391,8 +2911,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.geany.org/download/releases/",
+  "alt_downloads": [
+   {
+    "label": "GitHub Releases",
+    "url": "https://github.com/geany/geany/releases"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -2429,13 +2954,37 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/node/43374",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site is defunct. PortableApps.com released Get Sudoku Portable and is the maintained source."
+ },
+ {
+  "name": "GIMP",
+  "package": "gimp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Full-featured raster image editor with layers, masks, filters and plugin support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.gimp.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/GNOME/gimp"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 3.2.6 released Sep 2026."
  },
  {
   "name": "gMKVExtractGUI",
@@ -2510,13 +3059,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/golly-portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (developer page)",
+    "url": "https://golly.sourceforge.net/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: The developer site is hosted on SourceForge. PortableApps.com co-publishes the current release with the Golly team and is used as primary since SourceForge cannot be primary."
  },
  {
   "name": "Google Chrome",
@@ -2548,13 +3102,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://gopherus.sourceforge.io",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/news/2023-02-14--gopherus-portable-1.2.2-released",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (developer page)",
+    "url": "https://gopherus.sourceforge.io"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": " URL: The developer site is hosted on SourceForge. PortableApps.com co-published the 1.2.2 release and is used as primary since SourceForge cannot be primary."
  },
  {
   "name": "GPG Plugin",
@@ -2567,18 +3126,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/security/gpg-plugin-portable",
   "alt_downloads": [
    {
-    "label": "PortableApps",
-    "url": "https://portableapps.com/apps/security/gpg-plugin"
+    "label": "GnuPG (upstream)",
+    "url": "https://www.gnupg.org/"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "a PortableApps add-on packaging GnuPG, not a standalone app; could not verify an official download page."
+  "notes": "a PortableApps add-on packaging GnuPG, not a standalone app; could not verify an official download page. URL: GPG Plugin is a PortableApps.com product: a repack of GnuPG for use with Thunderbird Portable and SeaMonkey Portable. Upstream GnuPG sources are linked as an alternative."
+ },
+ {
+  "name": "gPodder",
+  "package": "gpodder.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Podcast client with subscriptions, episode downloads and sync across devices.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://gpodder.github.io/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/gpodder/gpodder"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL v3; 3.11.5 released Dec 2024; official Windows installer and portable build."
  },
  {
   "name": "GPU-Z",
@@ -2696,13 +3279,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/utilities/gridy-portable",
+  "alt_downloads": [
+   {
+    "label": "AfterDawn",
+    "url": "https://www.afterdawn.com/software/desktop/misc_desktop_tools/gridy.cfm"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as MIT open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as MIT open source; could not verify official download URL in this pass. URL: The original sector-seven.net download page is gone and the domain now serves unrelated content. PortableApps.com co-published the package and is the maintained source."
  },
  {
   "name": "gVim",
@@ -2715,13 +3303,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.vim.org/download.php",
+  "alt_downloads": [
+   {
+    "label": "Vim Windows installer releases (GitHub)",
+    "url": "https://github.com/vim/vim-win32-installer/releases"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Vim charityware open source; the donation request is encouragement only, not a paywall. Could not verify official download URL in this pass."
+  "notes": "Vim charityware open source; the donation request is encouragement only, not a paywall. Could not verify official download URL in this pass. URL: Official Vim download page; Windows binaries point to the vim-win32-installer GitHub releases."
+ },
+ {
+  "name": "HandBrake",
+  "package": "handbrake.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Video transcoder with presets for devices, batch queues and subtitle support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://handbrake.fr/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/HandBrake/HandBrake"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv2; 1.11.2 released June 2026."
  },
  {
   "name": "HDHacker",
@@ -2791,13 +3408,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/hex-a-hop_portable",
+  "alt_downloads": [
+   {
+    "label": "Hex-a-Hop project page (SourceForge, demoted)",
+    "url": "https://sourceforge.net/projects/hexahop/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site is gone; PortableApps co-published release is the maintained download source."
  },
  {
   "name": "HexChat",
@@ -2910,13 +3532,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "http://tomatoes.sourceforge.net",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/64119",
+  "alt_downloads": [
+   {
+    "label": "Developer site (SourceForge, demoted)",
+    "url": "http://tomatoes.sourceforge.net"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "The author's 2004 release announcement says the game is under the zlib/libpng license; one software directory lists MIT. official_url from page text (the author's own announcement), not the verbatim Full URLs list."
+  "notes": "The author's 2004 release announcement says the game is under the zlib/libpng license; one software directory lists MIT. official_url from page text (the author's own announcement), not the verbatim Full URLs list. URL: Developer site is a dead SourceForge mirror; PortableApps co-published release is the maintained download source."
  },
  {
   "name": "IceBreaker",
@@ -2929,13 +3556,70 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/icebreaker_portable",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release news",
+    "url": "https://portableapps.com/news/2021-05-02--icebreaker-portable-2.2.0-released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License recorded as open source (GPL) per wide distribution in distro repositories, but UNCERTAIN: could not firmly verify the exact license version or the official site in this pass."
+  "notes": "License recorded as open source (GPL) per wide distribution in distro repositories, but UNCERTAIN: could not firmly verify the exact license version or the official site in this pass. URL: LGames project has no non-SourceForge developer site; PortableApps co-published release is the maintained download source."
+ },
+ {
+  "name": "IDPhotoStudio",
+  "package": "idphotostudio.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Generates ID and passport photos in standard sizes from a single portrait.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://kcsoftwares.com/download.php?avt",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/graphics_pictures/idphotostudio-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "2.16.5.75; free for personal and business use per PortableApps listing. Could not verify exact official download URL from KC Softwares, so it is left blank. URL: KC Softwares' official download page listing IDPhotoStudio."
+ },
+ {
+  "name": "ImageGlass",
+  "package": "imageglass.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Fast, themeable image viewer with a modern Fluent-style UI.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://imageglass.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/d2phap/ImageGlass"
+   },
+   {
+    "label": "Microsoft Store",
+    "url": "https://apps.microsoft.com/detail/9N33VZK3C7TH"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0; 9.5.0.515 released May 2026."
  },
  {
   "name": "IniTranslator",
@@ -2948,13 +3632,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.NET/projects/initranslator/",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/development/initranslator-portable",
+  "alt_downloads": [
+   {
+    "label": "Developer site (SourceForge, demoted)",
+    "url": "http://initranslator.sourceforge.net"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "MPL 1.1 open source (SourceForge). A separate modern project (github.com/robdk97/initranslator, MIT) shares the name but this row refers to the classic SourceForge IniTranslator translation tool."
+  "notes": "MPL 1.1 open source (SourceForge). A separate modern project (github.com/robdk97/initranslator, MIT) shares the name but this row refers to the classic SourceForge IniTranslator translation tool. URL: Developer site is SourceForge-hosted; PortableApps is the maintained distribution (co-published with Peter Törnqvist)."
  },
  {
   "name": "Inkscape",
@@ -2986,18 +3675,50 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.rathlev-home.de/index-e.html?tools/prog-e.html#unpack",
   "alt_downloads": [
    {
     "label": "PortableApps release",
     "url": "https://portableapps.com/news/2026-05-05--innounpacker-portable-2.2.9-released"
+   },
+   {
+    "label": "InnoUnpacker GitHub project",
+    "url": "https://github.com/jrathlev/innounpacker-windows-gui"
    }
   ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Freeware for personal and business use, packaged by PortableApps. Could not verify the developer's own download URL in this pass."
+  "notes": "Freeware for personal and business use, packaged by PortableApps. Could not verify the developer's own download URL in this pass. URL: Official site of Jürgen Rathlev, the InnoUnpacker maintainer."
+ },
+ {
+  "name": "IrfanView",
+  "package": "irfanview.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Compact image viewer with batch conversion, slideshow and basic editing plugins.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.irfanview.com/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/graphics_pictures/irfanview_portable"
+   },
+   {
+    "label": "Microsoft Store",
+    "url": "https://apps.microsoft.com/detail/9nblggh4wfpz"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for private and non-commercial use plus educational and charitable organizations; commercial users need a license. No ads or nags."
  },
  {
   "name": "Iron",
@@ -3029,13 +3750,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/internet/isotoxin-portable",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued (last release around 2017) but the Tox and XMPP protocols still work."
+  "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued (last release around 2017) but the Tox and XMPP protocols still work. URL: Original developer site (isotoxin.im) is dead; PortableApps co-published release is the maintained download source."
  },
  {
   "name": "Jooleem",
@@ -3048,13 +3769,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/jooleem_portable",
+  "alt_downloads": [
+   {
+    "label": "Developer site (SourceForge, demoted)",
+    "url": "http://jooleem.sourceforge.net/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Code is GPL and assets are CC-BY-NC 2.5, so the assets carry a non-commercial restriction. UNCERTAIN: could not verify an official URL."
+  "notes": "Code is GPL and assets are CC-BY-NC 2.5, so the assets carry a non-commercial restriction. UNCERTAIN: could not verify an official URL. URL: Developer site is a dead SourceForge mirror; PortableApps co-published release is the maintained download source."
  },
  {
   "name": "Joplin",
@@ -3080,6 +3806,34 @@
   },
   "notes": "No account needed for core features; a Joplin Cloud account is only needed if using that optional paid sync service. Self-hosted Joplin Server is free for non-commercial use.",
   "sibling": "net.cozic.joplin"
+ },
+ {
+  "name": "JPEGView",
+  "package": "jpegview.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Minimal, extremely fast JPEG/PNG image viewer with basic editing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/sylikc/jpegview",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/graphics_pictures/jpegview-portable"
+   },
+   {
+    "label": "Chocolatey",
+    "url": "https://community.chocolatey.org/packages/jpegview"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL v2; maintained fork by sylikc on GitHub."
  },
  {
   "name": "K-Meleon",
@@ -3120,23 +3874,47 @@
   "notes": ""
  },
  {
-  "name": "Kaspersky TDSSKiller",
-  "package": "kaspersky.tdsskiller.windows",
+  "name": "KchmViewer",
+  "package": "kchmviewer.windows",
   "platform": "windows",
   "status": "include",
-  "category": "System",
-  "subcategory": "Security",
-  "description": "Portable rootkit scanner and remover from Kaspersky.",
-  "license": "freeware",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Viewer for CHM (compiled HTML help) files with tabs and bookmarks.",
+  "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://github.com/eBookProjects/uChmViewer",
   "alt_downloads": [],
   "attrs": {
-   "open_source": false,
+   "open_source": true,
    "needs_account": false
   },
-  "notes": "could not verify a direct download page; Kaspersky tools have regional availability limits in some jurisdictions."
+  "notes": "The original KchmViewer is discontinued per AlternativeTo; this entry points to the active uChmViewer fork with Windows builds."
+ },
+ {
+  "name": "Kdenlive",
+  "package": "kdenlive.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Multi-track video editor with effects, transitions and proxy editing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://kdenlive.org/",
+  "alt_downloads": [
+   {
+    "label": "GitLab",
+    "url": "https://invent.kde.org/multimedia/kdenlive"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 26.08.1 released Sep 2026. Note: per official docs the Windows port has some drawbacks versus Linux."
  },
  {
   "name": "KeePass Classic",
@@ -3253,6 +4031,31 @@
   "notes": "Code is GPLv2+ (open source). official_url from page text, not the verbatim Full URLs list."
  },
  {
+  "name": "Krita",
+  "package": "krita.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Professional digital painting studio with brush engines, HDR painting and animation tools.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "Paid Microsoft Store and Steam editions are functionally identical to the free download; purchase funds development per the official FAQ.",
+  "official_url": "https://krita.org/",
+  "alt_downloads": [
+   {
+    "label": "Microsoft Store",
+    "url": "https://apps.microsoft.com/detail/9n8w29w2czq5"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-only; 5.3.4.1 released Oct 2026.",
+  "sibling": "org.krita"
+ },
+ {
   "name": "Kudu",
   "package": "kudu.windows",
   "platform": "windows",
@@ -3282,13 +4085,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://kvirc.net/?id=releases&platform=win64&version=5.2.4&lang=",
+  "alt_downloads": [
+   {
+    "label": "KVIrc GitHub project",
+    "url": "https://github.com/kvirc/KVIrc"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-2.0 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPL-2.0 (open source). UNCERTAIN: could not verify an official URL. URL: Official site downloads page; Windows binaries are served from the KVIrc GitHub releases."
  },
  {
   "name": "Lagrange",
@@ -3310,6 +4118,34 @@
   "notes": ""
  },
  {
+  "name": "LameXP",
+  "package": "lamexp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Graphical front-end for LAME, Ogg Vorbis and other audio encoders with batch processing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lamexp.sourceforge.net/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/lordmulder/LameXP"
+   },
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/music_video/lamexp-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv2; 4.21 released 2023."
+ },
+ {
   "name": "LAN Messenger",
   "package": "lan.messenger.windows",
   "platform": "windows",
@@ -3320,13 +4156,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/62011",
+  "alt_downloads": [
+   {
+    "label": "Developer site (SourceForge, demoted)",
+    "url": "https://lanmsngr.sourceforge.net/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued."
+  "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL. AlternativeTo flags it as discontinued. URL: Developer site is SourceForge-hosted; PortableApps is the maintained distribution. Not the commercial Softros LAN Messenger."
+ },
+ {
+  "name": "LazPaint",
+  "package": "lazpaint.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Raster editor with layers and vector shapes built on the Lazarus/Free Pascal stack.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lazpaint.github.io/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/bgrabitmap/lazpaint"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-only; 7.3 released May 2025."
  },
  {
   "name": "LBreakout2",
@@ -3339,13 +4204,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://lgames.sourceforge.net/index.php?project=LBreakout2",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/64436",
+  "alt_downloads": [
+   {
+    "label": "LGames project page (SourceForge, demoted)",
+    "url": "https://lgames.sourceforge.net/index.php?project=LBreakout2"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list."
+  "notes": "License GPLv2 (open source). official_url from page text, not the verbatim Full URLs list. URL: LGames project has no non-SourceForge developer site; PortableApps co-published release is the maintained download source."
  },
  {
   "name": "LibreCAD",
@@ -3492,13 +4362,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "http://portableapps.com/apps/games/lmarbles_portable",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release news",
+    "url": "https://portableapps.com/news/2010-12-28_-_lmarbles_portable_1.0.6"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL."
+  "notes": "License GPL (open source). UNCERTAIN: could not verify the exact GPL version or an official URL. URL: LGames project has no non-SourceForge developer site; PortableApps co-published release is the maintained download source."
+ },
+ {
+  "name": "LMMS",
+  "package": "lmms.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Digital audio workstation for composing with samples, synthesizers and MIDI.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lmms.io/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/LMMS/lmms"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; stable 1.2.2 from 2020; 1.3.0-alpha.2 released Sep 2026, development active."
  },
  {
   "name": "LocalSend",
@@ -3544,6 +4443,30 @@
   },
   "notes": "No account needed for core features; paid sync is optional.",
   "sibling": "com.logseq.app"
+ },
+ {
+  "name": "Lossless Cut",
+  "package": "lossless.cut.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Losslessly trims and merges video and audio files without re-encoding.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "Paid Microsoft Store version is functionally identical to the free download; purchase covers auto-updates and supports development per losslesscut.net.",
+  "official_url": "https://losslesscut.net/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mifi/lossless-cut"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-only."
  },
  {
   "name": "Lucas Chess",
@@ -3599,13 +4522,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.reto-schoelly.com/downloads",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/apps/games/mahjongg-solitaire-3d-portable"
+   },
+   {
+    "label": "Old developer page",
+    "url": "http://www.reto-schoelly.de/mahjongg3d/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPL (open source). UNCERTAIN: could not verify an official URL. URL: Official site of developer Reto Schoelly."
  },
  {
   "name": "Mana Plus",
@@ -3637,13 +4569,37 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/games/maniadrive-portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project",
+    "url": "https://sourceforge.net/projects/maniadrive/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Code is GPL and some media is CC-BY-SA (open source). UNCERTAIN: could not verify an official URL. URL: Original developer homepage maniadrive.raydium.org is long dead and the project is inactive since 2008; PortableApps.com co-publishes the game and is the most trustworthy maintained source."
+ },
+ {
+  "name": "Marble",
+  "package": "marble.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Virtual globe and atlas with maps, satellite imagery, routing and open-streetmap data.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://marble.kde.org/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Code is GPL and some media is CC-BY-SA (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "LGPL-2.1; Windows builds ship with KDE's installer."
  },
  {
   "name": "Maxthon",
@@ -3675,18 +4631,64 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.Net/projects/mbox-viewer/",
+  "official_url": "https://github.com/eneam/mboxviewer/releases",
   "alt_downloads": [
    {
     "label": "GitHub",
     "url": "https://github.com/eneam/mboxviewer"
+   },
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/utilities/mbox-viewer-portable"
+   },
+   {
+    "label": "SourceForge",
+    "url": "https://sourceforge.net/projects/mbox-viewer/"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Disambiguated as the SourceForge 'Windows MBox Viewer' (the PortableApps-listed one), not the assistmyteam.com commercial product whose free edition is personal-use only. SourceForge lists Affero GNU Public License; the PortableApps listing says GPLv2."
+  "notes": "Disambiguated as the SourceForge 'Windows MBox Viewer' (the PortableApps-listed one), not the assistmyteam.com commercial product whose free edition is personal-use only. SourceForge lists Affero GNU Public License; the PortableApps listing says GPLv2. URL: Verified: github.com/eneam/mboxviewer is the real upstream repo (the SourceForge page itself says development continues there); releases page counts as official for this FOSS app. SourceForge demoted to alt per project rules."
+ },
+ {
+  "name": "Media Player Classic - BE",
+  "package": "media.player.classic.be.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Lightweight DirectShow media player fork of Media Player Classic with a modern toolbar UI.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/Aleksoid1978/MPC-BE",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 1.9.0 released June 2026."
+ },
+ {
+  "name": "Media Player Classic - HC",
+  "package": "media.player.classic.hc.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Maintained community fork of the classic lightweight media player (original ended 2017).",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/clsid2/mpc-hc",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL v3; 2.8.3 released Sep 2026."
  },
  {
   "name": "MediaInfo",
@@ -3699,13 +4701,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://mediaarea.net/en/MediaInfo/Download/Windows",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as BSD-2 open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as BSD-2 open source; could not verify official download URL in this pass. URL: Official developer download page for MediaArea MediaInfo."
  },
  {
   "name": "MicroSIP",
@@ -3746,6 +4748,30 @@
   "notes": "expires 10 days after download; re-download is free."
  },
  {
+  "name": "MilkyTracker",
+  "package": "milkytracker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "FastTracker II style music tracker for composing chiptune and module music.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://milkytracker.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/milkytracker/MilkyTracker"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 1.05 released Nov 2024."
+ },
+ {
   "name": "Mines-Perfect",
   "package": "mines.perfect.windows",
   "platform": "windows",
@@ -3756,13 +4782,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/games/mines-perfect_portable",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original Mines-Perfect author site is gone; PortableApps.com co-publishes the game and is the most trustworthy maintained source."
  },
  {
   "name": "Miranda NG",
@@ -3787,6 +4813,73 @@
    "needs_account": false
   },
   "notes": "License GPL-2.0-or-later (open source). official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "Mixxx",
+  "package": "mixxx.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "DJ software with beatmatching, effects, controller support and live broadcasting.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://mixxx.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mixxxdj/mixxx"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; 2.5.3 released Sep 2025."
+ },
+ {
+  "name": "MKVToolNix",
+  "package": "mkvtoolnix.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Matroska (MKV) toolkit for muxing, splitting, merging and inspecting video files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://mkvtoolnix.download/",
+  "alt_downloads": [
+   {
+    "label": "GitLab",
+    "url": "https://gitlab.com/mbunkus/mkvtoolnix"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv2-only; 102.0 released Sep 2026."
+ },
+ {
+  "name": "Mnemosyne",
+  "package": "mnemosyne.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Spaced-repetition flashcard program with a research-grade scheduling algorithm and card statistics.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://mnemosyne-proj.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Licensed AGPL-3.0/LGPL-3.0; active development as of ~Aug 2026."
  },
  {
   "name": "Money Manager Ex",
@@ -3819,13 +4912,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "The author sells prebuilt copies but the git repository stays open, so the game remains free to build and play.",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/games/monster_2_portable",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Open source. UNCERTAIN: could not verify whether the current official binaries are still sold without a free download option, or an official URL."
+  "notes": "Open source. UNCERTAIN: could not verify whether the current official binaries are still sold without a free download option, or an official URL. URL: Open-source SNES-style RPG by Trent (nooskewl.com, now dead); PortableApps.com co-publishes it and is the most trustworthy maintained source."
  },
  {
   "name": "Moonlight",
@@ -3904,6 +4997,49 @@
   "notes": "License MPL-2.0 (open source). official_url from page text, not the verbatim Full URLs list."
  },
  {
+  "name": "Mp3splt-gtk",
+  "package": "mp3splt.gtk.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Graphical splitter for MP3 and Ogg files with silence detection, no re-encoding.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/mp3splt/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0; Windows builds 0.9.2; dormant-ish but functional."
+ },
+ {
+  "name": "MPV",
+  "package": "mpv.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Minimal, scriptable media player with high-quality rendering and no GUI chrome.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://mpv.io/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mpv-player/mpv"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv2-or-later; 0.41.0 released Dec 2025."
+ },
+ {
   "name": "Mumble",
   "package": "mumble.windows",
   "platform": "windows",
@@ -3921,6 +5057,97 @@
    "needs_account": false
   },
   "notes": "License BSD-3-Clause (open source) per the mumble.info about page. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "MuseScore",
+  "package": "musescore.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Music notation software for composing, engraving and playing back scores.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://musescore.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/MuseScore/MuseScore"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0; 4.7.4 released Jul 2026. The companion MuseScore.com sells sheet-music subscriptions, but the desktop app is complete without an account; needs_account=false."
+ },
+ {
+  "name": "MusicBee",
+  "package": "musicbee.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Music manager and player with tagging, auto-playlists, sync and theater-mode skins.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.getmusicbee.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware; 3.6.9668 released June 2026."
+ },
+ {
+  "name": "MusicBrainz Picard",
+  "package": "musicbrainz.picard.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Music tagger that identifies tracks acoustically and writes metadata from MusicBrainz.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://picard.musicbrainz.org/downloads/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/metabrainz/picard"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; 3.0.1."
+ },
+ {
+  "name": "MyPaint",
+  "package": "mypaint.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Distraction-free painting app with a large brush library and infinite canvas.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://mypaint.app/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mypaint/mypaint"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL; 2.0.1 is somewhat old but functional."
  },
  {
   "name": "MyPAL",
@@ -3985,6 +5212,30 @@
   "notes": "GPL confirmed by the project and the PortableApps request page. No ads, no paid tier, free for personal and commercial use. Basket Productivity/Office kept: there is no Scan basket and Office is the nearest fit."
  },
  {
+  "name": "Nemp",
+  "package": "nemp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Audio player and media library manager with tagging and playlist tools.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.nemp-online.de/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/DanielGausi/Nemp"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Per PortableApps: 'open source with freeware components'; GitHub repo is stale but 5.2.0 was released Oct 2025."
+ },
+ {
   "name": "NetHack",
   "package": "nethack.windows",
   "platform": "windows",
@@ -3995,13 +5246,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.nethack.org/common/index.html",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License is the NetHack General Public License (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License is the NetHack General Public License (open source). UNCERTAIN: could not verify an official URL. URL: Official NetHack download page per the NetHack Wiki; nethack.org download paths were restructured under /common/."
  },
  {
   "name": "netPanzer",
@@ -4014,13 +5265,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://github.com/netpanzer/netpanzer/releases",
+  "alt_downloads": [
+   {
+    "label": "Official site",
+    "url": "https://netpanzer.io"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-2.0 (open source). UNCERTAIN: the project sites appear defunct, so the official URL could not be verified."
+  "notes": "License GPL-2.0 (open source). UNCERTAIN: the project sites appear defunct, so the official URL could not be verified. URL: Official community site is netpanzer.io; the README points to the GitHub Releases tab for downloads, which counts as official for this FOSS game."
  },
  {
   "name": "Neverball",
@@ -4057,13 +5313,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://notepad-plus-plus.org/downloads/",
+  "alt_downloads": [
+   {
+    "label": "GitHub releases",
+    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-3.0+ open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-3.0+ open source; could not verify official download URL in this pass. URL: Official Notepad++ download page."
  },
  {
   "name": "Notepad2-mod",
@@ -4076,13 +5337,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://xhmikosr.github.io/notepad2-mod/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/XhmikosR/notepad2-mod"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as BSD-3-clause open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as BSD-3-clause open source; could not verify official download URL in this pass. URL: Official Notepad2-mod site by XhmikosR (project is archived; its successor is Notepad3)."
  },
  {
   "name": "Notepad2",
@@ -4095,13 +5361,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "http://www.flos-freeware.ch/notepad2.html",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as BSD open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as BSD open source; could not verify official download URL in this pass. URL: Official Notepad2 page by Florian Balmer (Flos-freeware)."
  },
  {
   "name": "Notes",
@@ -4138,13 +5404,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://nsis.sourceforge.io/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as zlib open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as zlib open source; could not verify official download URL in this pass. URL: This is the project's official developer homepage hosted on SourceForge, not a download mirror."
  },
  {
   "name": "NVDA",
@@ -4183,6 +5449,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "OBS Studio",
+  "package": "obs.studio.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Screen recording and live streaming studio with scenes, sources and filters.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://obsproject.com/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/obsproject/obs-studio"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0; 32.1.2 released Apr 2026."
  },
  {
   "name": "Obsidian",
@@ -4262,6 +5552,25 @@
   "notes": "GPL open source confirmed on the CodeDead GitHub repo. Active: v1.5.1 released 2025. Basket corrected from Media/Music to Media/Audio: it is a sound generator, not music playback."
  },
  {
+  "name": "OpenMPT",
+  "package": "openmpt.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Module tracker for composing music in MOD/XM/IT formats with a piano-roll editor.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://openmpt.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "BSD-3-Clause; 1.32.11.00 released Aug 2026."
+ },
+ {
   "name": "OpenRGB",
   "package": "openrgb.windows",
   "platform": "windows",
@@ -4281,6 +5590,30 @@
   "notes": "GPL-2.0-or-later open source."
  },
  {
+  "name": "OpenShot",
+  "package": "openshot.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Video editor with timeline trimming, transitions, titles and keyframe animation.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.openshot.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/OpenShot/openshot-qt"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 4.0.0 released Aug 2026."
+ },
+ {
   "name": "OpenTTD",
   "package": "openttd.windows",
   "platform": "windows",
@@ -4291,13 +5624,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.openttd.org/downloads/openttd-releases/latest",
+  "alt_downloads": [
+   {
+    "label": "GitHub releases",
+    "url": "https://github.com/OpenTTD/OpenTTD/releases"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL.",
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Official OpenTTD latest stable release download page (older /downloads and /downloads.html paths 404).",
   "sibling": "org.openttd.fdroid"
  },
  {
@@ -4358,6 +5696,30 @@
   "notes": ""
  },
  {
+  "name": "Paint.NET",
+  "package": "paint.net.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Layered raster editor with an active plugin ecosystem and GPU-accelerated effects.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "Paid Microsoft Store edition is functionally identical to the free download; purchase supports development.",
+  "official_url": "https://www.getpaint.net/",
+  "alt_downloads": [
+   {
+    "label": "Microsoft Store",
+    "url": "https://apps.microsoft.com/detail/9nbhcs1lx4r0"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for commercial use."
+ },
+ {
   "name": "Password Safe",
   "package": "password.safe.windows",
   "platform": "windows",
@@ -4392,13 +5754,32 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/games/pathological_portable",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site pathological.sourceforge.net is abandoned; PortableApps.com co-publishes the game with the original developers and is the most trustworthy maintained source."
+ },
+ {
+  "name": "Paul Stretch",
+  "package": "paul.stretch.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Extreme time-stretch audio effect for turning short sounds into long ambient textures.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/music_video/paul_stretch_portable",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0 via the openSUSE Build Service packaging. Could not verify an official download URL for the standalone app, so it is left blank. URL: Author Nasca Octavian Paul's original site is offline; PortableApps.com publishes the maintained portable build of the 2.2-2 release."
  },
  {
   "name": "PChat",
@@ -4411,7 +5792,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://www.portablefreeware.com/index.php?id=1731",
   "alt_downloads": [
    {
     "label": "Portable Freeware",
@@ -4422,7 +5803,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). Development stalled since 2012; portablefreeware warns of possible security vulnerabilities. UNCERTAIN: could not verify an official URL."
+  "notes": "License GPL (open source). Development stalled since 2012; portablefreeware warns of possible security vulnerabilities. UNCERTAIN: could not verify an official URL. URL: PChat is an abandoned XChat fork; the developer site is dead and PortableApps.com retired its PChat Portable app page (404), so the Portable Freeware Collection catalog entry is the most trustworthy maintained source."
  },
  {
   "name": "PCI-Z",
@@ -4442,6 +5823,82 @@
    "needs_account": false
   },
   "notes": "Free for business and personal use per PortableApps."
+ },
+ {
+  "name": "PDF Arranger",
+  "package": "pdf.arranger.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Merges, splits, rotates and reorders PDF pages via drag and drop.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/pdfarranger/pdfarranger",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 1.14.0 released May 2026."
+ },
+ {
+  "name": "PDF-XChange Editor",
+  "package": "pdf.xchange.editor.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "PDF editor with annotation, form filling, OCR and page manipulation.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "A paid perpetual license exists, but the free version is a complete PDF editor — roughly 70% of features are free, and used pro features only stamp a watermark.",
+  "official_url": "https://www.pdf-xchange.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free tier is a complete product; paid perpetual license from $62."
+ },
+ {
+  "name": "PDFsam Basic",
+  "package": "pdfsam.basic.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Splits, merges, rotates and extracts pages from PDF files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "Paid PDFsam Enhanced/Visual editions exist; PDFsam Basic is a complete PDF split/merge/rotate tool.",
+  "official_url": "https://pdfsam.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "AGPL-3.0."
+ },
+ {
+  "name": "PDFTK Builder",
+  "package": "pdftk.builder.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Graphical front-end for PDFtk to merge, split, stamp and encrypt PDFs.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pdftk-builder-enhanced.sourceforge.io/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "The original Angus Johnson 3.10 (2018) is unmaintained; this entry lists the maintained continuation PDFTK Builder Enhanced (GPL-3.0, David King, 4.1.9 Nov 2025)."
  },
  {
   "name": "PeaZip",
@@ -4520,6 +5977,73 @@
   "notes": ""
  },
  {
+  "name": "PhotoDemon",
+  "package": "photodemon.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Portable photo editor with layers, filters and a non-modal UI, single EXE with no installer.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://photodemon.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/tannerhelland/PhotoDemon"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "BSD licensed; 2025.12 release."
+ },
+ {
+  "name": "PhotoFilmStrip",
+  "package": "photofilmstrip.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Turns photo collections into slideshow movies with pan-and-zoom effects.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.photofilmstrip.org/en/download/",
+  "alt_downloads": [
+   {
+    "label": "SourceForge",
+    "url": "https://sourceforge.net/projects/photofilmstrip/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: upstream activity looks stalled around 2020; could not verify current maintenance status. GPLv2. URL: Official project site; SourceForge kept as alternative."
+ },
+ {
+  "name": "PhotoFiltre",
+  "package": "photofiltre.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Image retouching program with filters, batch processing and a classic single-window UI.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "A paid PhotoFiltre Studio X exists; the free PhotoFiltre 7 is a complete image retoucher (described by BetaNews as 'slightly cut down').",
+  "official_url": "https://www.photofiltre-studio.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Older installers were reported to offer a browser toolbar (per loaditsoft) — use the current download from the official site and deselect any bundled offers."
+ },
+ {
   "name": "Pidgin",
   "package": "pidgin.windows",
   "platform": "windows",
@@ -4549,13 +6073,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "http://pingus.seul.org/download.html",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Pingus/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
   "notes": "License GPL-3.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+ },
+ {
+  "name": "Pinta",
+  "package": "pinta.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Simple drawing and image-editing program modeled on Paint.NET with layers and effects.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.pinta-project.com/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/PintaProject/Pinta"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT licensed; 3.1.2 released Apr 2026."
  },
  {
   "name": "Pixelorama",
@@ -4625,13 +6178,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://pnotes.sourceforge.io/",
-  "alt_downloads": [],
+  "official_url": "http://portableapps.com/apps/office/pnotes_portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (developer project site)",
+    "url": "https://pnotes.sourceforge.io/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": " URL: Andrey Gruber distributes PNotes only through his SourceForge project site; SourceForge is demoted to alt per policy, so the co-published PortableApps build is primary"
  },
  {
   "name": "PokerTH",
@@ -4777,6 +6335,25 @@
   "notes": "UNCERTAIN: could not verify the current download page; third-party reviews note the standard installer bundles a declinable third-party offer (RelevantKnowledge) - use the Lite build, which ships without sponsors; AlternativeTo flags the project discontinued while other catalogs show a 2026 update."
  },
  {
+  "name": "PotPlayer",
+  "package": "potplayer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Feature-rich media player with extensive codec, subtitle and playback-speed options.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://potplayer.daum.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: AlternativeTo lists it as 'Proprietary and Free Personal product'; could not verify commercial terms on the official site. Some listings note the installer offers optional third-party software — deselect during install."
+ },
+ {
   "name": "PowerToys",
   "package": "powertoys.windows",
   "platform": "windows",
@@ -4901,18 +6478,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/projects/project-invincible/",
+  "official_url": "https://portableapps.com/news/2013-01-06--project-invincible-portable-2.02-released",
   "alt_downloads": [
    {
-    "label": "PortableApps",
-    "url": "https://portableapps.com/news/2013-01-06--project-invincible-portable-2.02-released"
+    "label": "SourceForge (developer project site)",
+    "url": "https://sourceforge.net/projects/project-invincible/"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "UNCERTAIN: described as open source by PortableApps and OnWorks but the exact license text could not be verified in this pass. Upstream activity ended around 2013. official_url from page text, not the verbatim Full URLs list."
+  "notes": "UNCERTAIN: described as open source by PortableApps and OnWorks but the exact license text could not be verified in this pass. Upstream activity ended around 2013. official_url from page text, not the verbatim Full URLs list. URL: the developer's only official home is their SourceForge project page; SourceForge is demoted to alt per policy, so the co-published PortableApps release is primary"
  },
  {
   "name": "PuTTY",
@@ -4944,8 +6521,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/games/puzzle_collection_portable"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -5001,13 +6583,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://github.com/Qalculate/qalculate-qt/releases/tag/v5.12.0",
+  "alt_downloads": [
+   {
+    "label": "Official site",
+    "url": "http://qalculate.github.io/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass.",
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: the dev team posts the Windows installer and portable zip on GitHub Releases; the official site links there",
   "sibling": "com.jherkenhoff.qalculate"
  },
  {
@@ -5047,6 +6634,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Qmmp",
+  "package": "qmmp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Winamp/XMMS-style audio player with skins, plugins and a compact interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://qmmp.ylsoftware.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; active development with Windows installers on the downloads page."
  },
  {
   "name": "QOwnNotes",
@@ -5297,13 +6903,42 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.ov2.eu/programs/rapidcrc-unicode",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2024-05-11--rapid-crc-unicode-portable-0.3.40-released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
   "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "RawTherapee",
+  "package": "rawtherapee.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "RAW photo processor with advanced demosaicing, color management and batch queues.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.rawtherapee.com/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Beep6581/RawTherapee"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 5.13 released Jul 2026."
  },
  {
   "name": "RBTray",
@@ -5316,13 +6951,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://github.com/g-bortoletto/rbtray",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (original)",
+    "url": "https://sourceforge.net/projects/rbtray/files/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass. URL: the original RBTray lives only on SourceForge, which is demoted to alt; the g-bortoletto GitHub fork is the maintained home"
  },
  {
   "name": "Recuva",
@@ -5780,13 +7420,74 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "http://jacquelin.potier.free.fr/ShortcutsSearchAndReplace/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2024-05-11--shortcuts-search-and-replace-portable-1.14.0--released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass. URL: developer's own site as named in the app's license docs; could not live-verify it from this environment since free.fr is blocked by egress policy"
+ },
+ {
+  "name": "Shotcut",
+  "package": "shotcut.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Cross-platform video editor with timeline editing, filters and 4K support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.shotcut.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/mltframework/shotcut"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0-or-later; 26.8.1 released Aug 2026."
+ },
+ {
+  "name": "Sigil",
+  "package": "sigil.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "WYSIWYG and code-view EPUB ebook editor with metadata editing, TOC generation and validation.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sigil-ebook.com/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Sigil-Ebook/Sigil"
+   },
+   {
+    "label": "Chocolatey",
+    "url": "https://community.chocolatey.org/packages/Sigil"
+   },
+   {
+    "label": "winget",
+    "url": "https://winstall.app/apps/Sigil-Ebook.Sigil"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv3; 2.7.6 released Mar 2026; repo active as of 2026."
  },
  {
   "name": "Signal Desktop",
@@ -5818,8 +7519,13 @@
   "license": "freeware",
   "personal_use": true,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "http://www.angusj.com/sudoku/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/news/2017-12-11--simple-sudoku-portable-4.2n-released"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
@@ -5846,6 +7552,49 @@
   "notes": ""
  },
  {
+  "name": "Smart Deblur",
+  "package": "smart.deblur.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Deblurs out-of-focus and motion-blurred photos with blind deconvolution algorithms.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/Y-Vladimir/SmartDeblur",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Listed version is the 1.27 open-source release (GPL v3). Note: smartdeblur.net's 2.x is now a separate paid product with a 10-image trial — that is NOT what is listed."
+ },
+ {
+  "name": "SMPlayer",
+  "package": "smplayer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Graphical front-end for MPlayer/mpv with subtitle search and YouTube playback.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.smplayer.info/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later; 26.8.29 released Aug 2026."
+ },
+ {
   "name": "SnapTimer",
   "package": "snaptimer.windows",
   "platform": "windows",
@@ -5856,8 +7605,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://dan.hersam.com/software/snaptimer/index.php",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "http://portableapps.com/apps/utilities/snaptimer-portable"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -5875,13 +7629,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "http://speedcrunch.org/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2.0+ open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-2.0+ open source; could not verify official download URL in this pass. URL: live official site; download via the Download link in its nav"
  },
  {
   "name": "SpeedyFox",
@@ -5937,13 +7691,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/news/2016-06-30--ssd-z-portable-16.06.29.b-released",
+  "alt_downloads": [
+   {
+    "label": "Guru3D",
+    "url": "https://www.guru3d.com/download/ssd-z-download/?print"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "UNCERTAIN: official site aezay.dk appeared unreachable during verification; could not confirm a current official download URL. Free for personal and business use per the author's license."
+  "notes": "UNCERTAIN: official site aezay.dk appeared unreachable during verification; could not confirm a current official download URL. Free for personal and business use per the author's license. URL: Aezay Productions' own site (aezay.dk) no longer serves content; PortableApps co-published the app and is the trustworthy maintained source"
  },
  {
   "name": "StackNotes",
@@ -5956,13 +7715,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://sourceforge.net/p/stacknotes/",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/70651",
+  "alt_downloads": [
+   {
+    "label": "SourceForge (developer project site)",
+    "url": "https://sourceforge.net/p/stacknotes/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": " URL: the developer publishes only via their SourceForge project page; SourceForge is demoted to alt per policy, so the co-published PortableApps app is primary"
  },
  {
   "name": "Startup Sentinel",
@@ -6008,6 +7772,30 @@
   "notes": "License GPLv2 (open source). The project describes itself as DonationWare: donations are encouraged but everything works without donating."
  },
  {
+  "name": "Stellarium",
+  "package": "stellarium.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Planetarium app that renders a realistic night sky for any location and date, with deep-sky catalog data.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://stellarium.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Stellarium/stellarium"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Stickies",
   "package": "stickies.windows",
   "platform": "windows",
@@ -6030,6 +7818,73 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Stirling PDF",
+  "package": "stirling.pdf.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Self-hosted web app with dozens of PDF operations: merge, split, compress, OCR and more.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "A paid tier covers team SSO and unlimited users; personal use of the self-hosted app is complete.",
+  "official_url": "https://github.com/Stirling-Tools/Stirling-PDF",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT licensed. Note: it runs as a server-style tool via Docker; a Windows .exe release exists. Free tier is complete for personal use."
+ },
+ {
+  "name": "Strawberry Music Player",
+  "package": "strawberry.music.player.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Music collection organizer and player forked from Clementine with audiophile features.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.strawberrymusicplayer.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/strawberrymusicplayer/strawberry"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: per the official GitHub README the official Windows installer is available to sponsors/donors only; unofficial free Windows builds exist but are third-party. GPL."
+ },
+ {
+  "name": "StreamWriter",
+  "package": "streamwriter.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Internet radio recorder that saves streams and splits them into tracks automatically.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://streamwriter.org/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/music_video/streamwriter-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source; 6.0.1 released Apr 2025."
  },
  {
   "name": "StressMyPC",
@@ -6061,14 +7916,42 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/node/58961",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL.",
+  "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL. URL: original developer site unavailable; PortableApps co-publishes the game and is the trustworthy maintained source",
   "sibling": "com.likhithpraveenk.sudoku"
+ },
+ {
+  "name": "Sumatra PDF",
+  "package": "sumatra.pdf.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Read",
+  "description": "Minimal, fast PDF, ePub, DjVu and comic-book reader with no bloat.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.sumatrapdfreader.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/sumatrapdfreader/sumatrapdf"
+   },
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/office/sumatra_pdf_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Licensed under (A)GPLv3."
  },
  {
   "name": "Supermium",
@@ -6124,8 +8007,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://supertuxkart.net/Download",
+  "alt_downloads": [
+   {
+    "label": "GitHub Releases",
+    "url": "https://github.com/supertuxkart/stk-code/releases/latest"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -6225,13 +8113,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "http://sourceforge.net/projects/t-3/",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/t-3_portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project",
+    "url": "http://sourceforge.net/projects/t-3/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2+ per libregamewiki. official_url from page text, not the verbatim Full URLs list."
+  "notes": "License GPLv2+ per libregamewiki. official_url from page text, not the verbatim Full URLs list. URL: Original download host was SourceForge; PortableApps co-publishes it as T^3 Portable and is the maintained distributor"
  },
  {
   "name": "Task Coach",
@@ -6325,18 +8218,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/utilities/texter_portable",
   "alt_downloads": [
    {
-    "label": "PortableApps",
-    "url": "https://portableapps.com/apps/utilities/texter_portable"
+    "label": "Lifehacker Code announcement (archived)",
+    "url": "http://lifehacker.com/238306/lifehacker-code-texter-windows"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL open source (Lifehacker). Development ended with v0.6 (2007) but the released build still works. Could not verify a current official download URL in this pass."
+  "notes": "GPL open source (Lifehacker). Development ended with v0.6 (2007) but the released build still works. Could not verify a current official download URL in this pass. URL: Texter is the Lifehacker/Adam Pash text substitution app; its Lifehacker page is defunct and the app is discontinued, so PortableApps is the maintained distributor"
  },
  {
   "name": "Textify",
@@ -6349,7 +8242,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://ramensoftware.com/textify",
   "alt_downloads": [
    {
     "label": "PortableApps release",
@@ -6360,7 +8253,7 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Open source and completely free per PortableApps. Could not verify the developer's own download URL in this pass."
+  "notes": "Open source and completely free per PortableApps. Could not verify the developer's own download URL in this pass. URL: Textify is by Ramen Software (Ramon Sala) - this URL is confirmed by the app's own installer metadata"
  },
  {
   "name": "The Legend of Edgar",
@@ -6411,13 +8304,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/tick5_portable",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2015-06-07--tick5-portable-1.0-rev-2-released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Gomoku game by Xmartin Yao; no standalone developer download page found, so PortableApps is the maintained distributor"
  },
  {
   "name": "TidyTabs",
@@ -6430,8 +8328,13 @@
   "license": "freeware",
   "personal_use": true,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://www.nurgo-software.com/products/tidytabs",
+  "alt_downloads": [
+   {
+    "label": "Official MSI download",
+    "url": "https://www.nurgo-software.com/download/TidyTabs.msi"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
@@ -6449,13 +8352,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "http://www.muppetlabs.com/~breadbox/software/tworld/",
+  "alt_downloads": [
+   {
+    "label": "GitHub fork (mjfwalsh)",
+    "url": "https://github.com/mjfwalsh/tworld"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL. URL: Developer's own homepage for this Chip's Challenge clone (by Brian Raiter)"
  },
  {
   "name": "TinyTask",
@@ -6475,6 +8383,25 @@
    "needs_account": false
   },
   "notes": "voluntary donations only; no paid tier or feature gating reported."
+ },
+ {
+  "name": "TIPP10",
+  "package": "tipp10.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Touch-typing tutor with lessons, dictation texts and progress statistics.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.tipp10.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: tipp10.com says the desktop version is no longer maintained and recommends the online version; the 2.1.0 Windows EXE is still offered and functional. GPLv2."
  },
  {
   "name": "Tor Browser",
@@ -6582,13 +8509,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/games/twin_distress_portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project",
+    "url": "https://sourceforge.net/p/twind/news/2004/07/twin-distress-110-released/history"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Puzzle game by Keith Frampton; the original twind.sourceforge.net site is gone and PortableApps is the maintained distributor"
  },
  {
   "name": "TyperTask",
@@ -6601,13 +8533,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/utilities/typertask-portable",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2019-08-05--typertask-portable-1.20-rev-3-released"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Discontinued by the developer, but PortableApps still distributes v1.20 and describes it as freeware for business and personal use. Could not verify official download URL in this pass."
+  "notes": "Discontinued by the developer, but PortableApps still distributes v1.20 and describes it as freeware for business and personal use. Could not verify official download URL in this pass. URL: Discontinued by the original author with the site offline; PortableApps maintains TyperTask Portable"
  },
  {
   "name": "uGet",
@@ -6658,8 +8595,17 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://mercury13.github.io/unicodia/",
+  "alt_downloads": [
+   {
+    "label": "GitHub Releases",
+    "url": "https://github.com/Mercury13/unicodia/releases"
+   },
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2024-05-20--unicodia-portable-2.7.1-released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -6677,13 +8623,13 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/games/usb-sudoku-portable",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL."
+  "notes": "Proprietary freeware (Rare Ideas). UNCERTAIN: could not verify the exact license terms or an official URL. URL: Credited to Rare Ideas; no standalone developer site found, so PortableApps is the maintained distributor"
  },
  {
   "name": "UUID-GUID Generator",
@@ -6696,13 +8642,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/node/66008",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2023-11-06--uuid-guid-generator-portable-3.0-released"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass. URL: A PortableApps original by John T. Haller - PortableApps is the developer here"
  },
  {
   "name": "Ventoy",
@@ -6753,13 +8704,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "http://magnifier.sourceforge.net/",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/news/2013-09-24--virtual-magnifying-glass-portable-3.6-released",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project site",
+    "url": "http://magnifier.sourceforge.net/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL-2.0 licensed project on SourceForge."
+  "notes": "GPL-2.0 licensed project on SourceForge. URL: The developer's site is SourceForge-hosted and the app is discontinued; PortableApps is the maintained distributor"
  },
  {
   "name": "Virtual Volumes View",
@@ -6772,13 +8728,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://vvvapp.sourceforge.io/",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/news/2021-06-16--virtual-volumes-view-portable-1.4-released",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project",
+    "url": "https://sourceforge.net/projects/vvvapp/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": " URL: The project's own site is SourceForge-hosted; PortableApps co-publishes it and is the maintained distributor"
  },
  {
   "name": "VirtuaWin",
@@ -6792,12 +8753,41 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://virtuawin.sourceforge.io/",
-  "alt_downloads": [],
+  "alt_downloads": [
+   {
+    "label": "SourceForge project page",
+    "url": "http://sourceforge.net/projects/virtuawin/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPL-2.0 open source; updated as recently as 2025 (v4.5)."
+  "notes": "GPL-2.0 open source; updated as recently as 2025 (v4.5). URL: This is the project's own official homepage on SourceForge web space, not a mirror; the older virtuawin.sourceforge.net address is retired."
+ },
+ {
+  "name": "VLC Media Player",
+  "package": "vlc.media.player.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Plays virtually any audio or video format with no codec packs, plus streaming and conversion.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.videolan.org/vlc/",
+  "alt_downloads": [
+   {
+    "label": "Microsoft Store",
+    "url": "https://apps.microsoft.com/detail/9nblggh4vzwk"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv2-or-later; 3.0.21."
  },
  {
   "name": "VMMap",
@@ -6872,18 +8862,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/apps/internet/wackget-portable",
   "alt_downloads": [
    {
-    "label": "PortableApps",
-    "url": "https://portableapps.com/apps/internet/wackget-portable"
+    "label": "GitHub (fabianod/wackget) modified source",
+    "url": "https://github.com/fabianod/wackget"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "original site offline; could not verify an official download page."
+  "notes": "original site offline; could not verify an official download page. URL: Original developer Millweed is offline so PortableApps.com, which maintains and co-publishes WackGet Portable, is the official distribution source."
  },
  {
   "name": "WarMUX",
@@ -6896,18 +8886,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://github.com/gbaudic/warmux2",
   "alt_downloads": [
    {
     "label": "FSF Free Software Directory",
     "url": "https://directory.fsf.org/wiki/WarMUX"
+   },
+   {
+    "label": "GitHub (former author's code)",
+    "url": "https://github.com/yekcim/warmux"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). Last release 11.04 (April 2011); the official site is dead, so UNCERTAIN: could not verify an official URL. The game still runs."
+  "notes": "License GPL (open source). Last release 11.04 (April 2011); the official site is dead, so UNCERTAIN: could not verify an official URL. The game still runs. URL: warmux.org is dead; this maintenance-mode revival by a contributor rebuilds the code published by former author yeKcim and is the most current maintained home."
  },
  {
   "name": "Warzone 2100",
@@ -6920,13 +8914,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://wz2100.net/",
+  "alt_downloads": [
+   {
+    "label": "GitHub Releases",
+    "url": "https://github.com/Warzone2100/warzone2100/releases"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License GPL-2.0-or-later (open source). UNCERTAIN: could not verify an official URL. URL: Project's official download hub pointing at the latest stable Windows installer."
  },
  {
   "name": "WAtomic",
@@ -6939,13 +8938,37 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "http://portableapps.com/apps/games/watomic_portable",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project page",
+    "url": "https://sourceforge.net/projects/watomic/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL. URL: Original developer site is dead; PortableApps.com co-publishes the maintained WAtomic Portable build."
+ },
+ {
+  "name": "WaveShop",
+  "package": "waveshop.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Bit-perfect audio editor aimed at sample-accurate editing without dithering.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://waveshop.sourceforge.net/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv2 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "UNCERTAIN: appears dormant since ~2018 but functional. GPL."
  },
  {
   "name": "Whalebird",
@@ -7034,13 +9057,18 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://winaero.com/winaero-tweaker/",
+  "alt_downloads": [
+   {
+    "label": "Official direct download (zip)",
+    "url": "https://winaerotweaker.com/download/winaerotweaker.zip"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass. URL: Developer's own app page on winaero.com; latest release 1.65 dated February 26 2026."
  },
  {
   "name": "WinBoard Chess",
@@ -7189,6 +9217,30 @@
   "notes": ""
  },
  {
+  "name": "winLAME",
+  "package": "winlame.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Easy-to-use audio encoder front-end with presets and CD ripping.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://winlame.sourceforge.io/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/hypercubemc/winlame"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL; 2025 Release 1, Jan 2026."
+ },
+ {
   "name": "winMd5Sum",
   "package": "winmd5sum.windows",
   "platform": "windows",
@@ -7199,13 +9251,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://portableapps.com/apps/utilities/winmd5sum_portable",
+  "alt_downloads": [
+   {
+    "label": "NullRiver (original developer)",
+    "url": "http://www.nullriver.com/products/winmd5sum"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-3.0 open source per SourceForge; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-3.0 open source per SourceForge; could not verify official download URL in this pass. URL: NullRiver's own site no longer reliably serves the download; PortableApps.com co-publishes the maintained portable build."
  },
  {
   "name": "WinMerge",
@@ -7218,13 +9275,22 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://winmerge.org/",
+  "alt_downloads": [
+   {
+    "label": "WinMerge Portable",
+    "url": "https://portableapps.com/apps/utilities/winmerge_portable"
+   },
+   {
+    "label": "GitHub Releases",
+    "url": "https://github.com/WinMerge/winmerge/releases/latest"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: Official project site; stable installers are linked from its Downloads section."
  },
  {
   "name": "WinMTR",
@@ -7318,13 +9384,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://winwget.sourceforge.io/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "could not verify the developer's download page; the WinWGet+ fork is closed-source freeware and is a different project."
+  "notes": "could not verify the developer's download page; the WinWGet+ fork is closed-source freeware and is a different project. URL: Project's official homepage on SourceForge web space; the standalone cybershade.us/winwget site it linked is no longer reachable."
  },
  {
   "name": "WireGuard",
@@ -7508,13 +9574,56 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
+  "official_url": "https://portableapps.com/node/65402",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project files",
+    "url": "https://sourceforge.net/projects/wizznic/files/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL. URL: Developer homepage is dead; PortableApps.com publishes the maintained Wizznic Portable build and this release page links its app homepage."
+ },
+ {
+  "name": "Workrave",
+  "package": "workrave.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Health",
+  "description": "Reminds you to take micro-breaks and rest breaks to prevent RSI, with usage statistics.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://workrave.org/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL-3.0 (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "GPL-3.0-or-later; 1.11.4 released Sep 2026. Basket Lifestyle/Health is correct."
+ },
+ {
+  "name": "wxMP3gain",
+  "package": "wxmp3gain.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Graphical front-end for MP3Gain to normalize track volume without re-encoding.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/cfgnunes/wxmp3gain",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL; 4.2 released May 2024."
  },
  {
   "name": "X-Moto",
@@ -7560,6 +9669,25 @@
   "notes": "Apache Friends releases the XAMPP compilation under the GPL; bundled components carry their own licenses. Completely free, no paid tiers and no upsell in the product. Basket confirmed."
  },
  {
+  "name": "XMPlay",
+  "package": "xmplay.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Music",
+  "description": "Tiny, skinnable audio player famous for low resource use and module-format support.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.un4seen.com/xmplay.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware; no ads or nags."
+ },
+ {
   "name": "XN Resource Editor",
   "package": "xn.resource.editor.windows",
   "platform": "windows",
@@ -7582,6 +9710,63 @@
    "needs_account": false
   },
   "notes": "MPL/GPL open source. The original developer site is gone; stefansundin.github.io hosts a mirror of the last build (3.0.0.1) and source is mirrored on GitHub."
+ },
+ {
+  "name": "XnConvert",
+  "package": "xnconvert.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Batch image converter and resizer with over 80 actions and live preview.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.xnview.com/en/xnconvert/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal and non-commercial use; commercial users need a license."
+ },
+ {
+  "name": "XnView MP",
+  "package": "xnview.mp.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Modern cross-platform image browser with tabbed interface, rating and cataloging.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.xnview.com/en/xnview-mp/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal and non-commercial use; commercial users need a license."
+ },
+ {
+  "name": "XnView",
+  "package": "xnview.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Image browser and viewer supporting 500+ formats with batch rename and conversion.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.xnview.com/en/xnview-classic/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal and non-commercial use; commercial users need a license."
  },
  {
   "name": "Xonotic",
@@ -7613,13 +9798,18 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://xye.sourceforge.net/download.php",
+  "alt_downloads": [
+   {
+    "label": "SourceForge project page",
+    "url": "https://sourceforge.net/projects/xye/"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License zlib/libpng (open source). UNCERTAIN: could not verify an official URL."
+  "notes": "License zlib/libpng (open source). UNCERTAIN: could not verify an official URL. URL: Developer's official download page on the project's own homepage; serves the portable Windows zip."
  },
  {
   "name": "Yubico Authenticator",
@@ -7709,12 +9899,17 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://zaz.sourceforge.net/",
-  "alt_downloads": [],
+  "alt_downloads": [
+   {
+    "label": "Zaz Portable",
+    "url": "http://portableapps.com/apps/games/zaz_portable"
+   }
+  ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPLv3 (open source) per Wikipedia. official_url from page text, not the verbatim Full URLs list."
+  "notes": "License GPLv3 (open source) per Wikipedia. official_url from page text, not the verbatim Full URLs list. URL: Developer's official site, listed as the homepage by Wikipedia and Debian."
  },
  {
   "name": "Zettlr",
@@ -7818,13 +10013,37 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "",
-  "alt_downloads": [],
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit",
+  "alt_downloads": [
+   {
+    "label": "Microsoft PowerToys on GitHub (ZoomIt module)",
+    "url": "https://github.com/microsoft/PowerToys"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": "Microsoft freeware with no nags, ads or paywalls. Could not verify official download URL in this pass."
+  "notes": "Microsoft freeware with no nags, ads or paywalls. Could not verify official download URL in this pass. URL: Official Microsoft Sysinternals page by Mark Russinovich with the direct zip download and Sysinternals Live run link."
+ },
+ {
+  "name": "Zotero",
+  "package": "zotero.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Lifestyle",
+  "subcategory": "Education",
+  "description": "Research manager that collects, organizes and cites sources with browser capture.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.zotero.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "AGPL-3.0. An account is only needed for sync (300 MB free storage); core features work offline. Paid storage tiers are an optional service, not an app tier. Basket Lifestyle/Education kept."
  },
  {
   "name": "Zulip",
