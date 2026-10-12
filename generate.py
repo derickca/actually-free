@@ -456,6 +456,13 @@ def load_corpus():
     kept = [clean_record(r) for r in seed
             if r.get("status") in ("include", "per-badge", "free-enough")]
     kept.append(clean_record(QR_CARDS))
+    # Windows listings live in-repo (reviewed in staged batches).
+    win_seed = os.path.join(HERE, "data", "windows-seed.json")
+    if os.path.exists(win_seed):
+        with open(win_seed, encoding="utf-8") as f:
+            wseed = json.load(f)
+        kept += [clean_record(r) for r in wseed
+                 if r.get("status") in ("include", "per-badge", "free-enough")]
     kept.sort(key=lambda a: a["name"].lower())
     return kept
 
