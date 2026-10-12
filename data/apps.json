@@ -160,6 +160,48 @@
   "sibling_package": null
  },
  {
+  "name": "A Note",
+  "package": "a.note.windows",
+  "slug": "a-note-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Lightweight desktop sticky notes app with colored notes, fonts, alarms and docking to screen edges. Open source (GPL) with no ads or paid tiers.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/office/a-note-portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "AAAAXY",
   "package": "io.github.divverent.aaaaxy",
   "slug": "io-github-divverent-aaaaxy",
@@ -803,6 +845,48 @@
   "rating": 4.1,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Apache OpenOffice",
+  "package": "apache.openoffice.windows",
+  "slug": "apache-openoffice-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Full open-source office suite (Apache License 2.0) with Writer, Calc, Impress, Draw, Base and Math. Actively released (4.1.16, Nov 2025) and free for any purpose including commercial use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.openoffice.org/download/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -1490,6 +1574,48 @@
   },
   "rating": 5.0,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "BabelPad",
+  "package": "babelpad.windows",
+  "slug": "babelpad-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Unicode text editor and word processor by Andrew West with full Unicode character support. Free for personal and commercial use, fully featured, single executable with no installer, no ads or in-app purchases.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://babelstone.co.uk/Software/BabelPad.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -2625,6 +2751,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Cherrytree",
+  "package": "cherrytree.windows",
+  "slug": "cherrytree-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Hierarchical note-taking app (GPLv3) storing rich text, images, tables, links and code snippets in a single file, with password protection. Actively maintained by Giuseppe Penone.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.giuspen.net/cherrytree/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -5886,6 +6054,48 @@
   "sibling_package": null
  },
  {
+  "name": "FocusWriter",
+  "package": "focuswriter.windows",
+  "slug": "focuswriter-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Distraction-free full-screen text editor with hide-away controls, themes, daily writing goals and live statistics. Free and open source (GPL) by Graeme Gott, actively released (1.9.0, Feb 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://gottcode.org/focuswriter/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Food Expirations",
   "package": "com.lorenzovainigli.foodexpirationdates.foss",
   "slug": "com-lorenzovainigli-foodexpirationdates-foss",
@@ -8431,7 +8641,60 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "joplin-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "Joplin",
+  "package": "joplin.windows",
+  "slug": "joplin-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Free and open-source (AGPL) note-taking and to-do app with Markdown notes, end-to-end encrypted sync to a target of your choice, plugins and web clipper.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://joplinapp.org",
+   "alternatives": [
+    {
+     "label": "GitHub releases",
+     "url": "https://github.com/laurent22/joplin/releases"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "Paid Joplin Cloud sync service exists, but the app is complete offline-first software and syncs free to local folders, Dropbox, OneDrive, WebDAV or a self-hosted Joplin Server.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "net.cozic.joplin",
+  "sibling_slug": "net-cozic-joplin",
+  "sibling_platform": "android"
  },
  {
   "name": "jtx Board",
@@ -9252,6 +9515,50 @@
   "sibling_package": null
  },
  {
+  "name": "LibreOffice",
+  "package": "libreoffice.windows",
+  "slug": "libreoffice-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Open-source (MPL-2.0) full office suite from The Document Foundation with Writer, Calc, Impress, Draw, Base and Math. Actively released (26.8.1, Oct 2026) with no licensing fees and no vendor lock-in.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.libreoffice.org/download/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "org.documentfoundation.libreoffice",
+  "sibling_slug": "org-documentfoundation-libreoffice",
+  "sibling_platform": "android"
+ },
+ {
   "name": "LibreOffice Viewer",
   "package": "org.documentfoundation.libreoffice",
   "slug": "org-documentfoundation-libreoffice",
@@ -9290,7 +9597,9 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "libreoffice-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "LibreSudoku",
@@ -9699,7 +10008,55 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "logseq-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "Logseq",
+  "package": "logseq.windows",
+  "slug": "logseq-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Privacy-first open-source (AGPL-3.0) personal knowledge base with graph view, Markdown and org-mode support and local-first data storage. Actively maintained by Logseq Inc.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://logseq.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "A paid Logseq Sync service exists, but the app is a complete local-first knowledge base that stores notes as local Markdown or org-mode files and syncs fine without it.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "com.logseq.app",
+  "sibling_slug": "com-logseq-app",
+  "sibling_platform": "android"
  },
  {
   "name": "Loop Habit Tracker",
@@ -12417,6 +12774,55 @@
   "sibling_package": null
  },
  {
+  "name": "Notes",
+  "package": "notes.windows",
+  "slug": "notes-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Fast, private Qt-based note-taking app by nuttyartist with Markdown support, folders, tags, themes and a Markdown-to-Kanban board. Fully open source and cross-platform, tracks nothing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://notes-foss.com",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/nuttyartist/notes"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "A paid Pro license exists but only unlocks editing inside the Kanban view and a year of Pro updates; the free app is otherwise complete, and all Pro features are available free by building from source.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Notesnook - Private notes app",
   "package": "com.streetwriters.notesnook",
   "slug": "com-streetwriters-notesnook",
@@ -14970,6 +15376,48 @@
   "sibling_package": null
  },
  {
+  "name": "QOwnNotes",
+  "package": "qownnotes.windows",
+  "slug": "qownnotes-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Plain-text Markdown note-taking app (GPL-2.0-only) storing notes as local files, with tags, scripting, optional AES-256 encryption and Nextcloud/ownCloud integration. Actively maintained by Patrizio Bekerle.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.qownnotes.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "QR Cards",
   "package": "derickca/qr-cards",
   "slug": "derickca-qr-cards",
@@ -15399,6 +15847,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "RedNotebook",
+  "package": "rednotebook.windows",
+  "slug": "rednotebook-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Desktop journal and diary (GPL) with calendar navigation, tags, templates, spell check and export to plain text, HTML, LaTeX or PDF. Data stored in plain-text files. Actively released (2.43, Oct 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://rednotebook.app",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -19740,6 +20230,100 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zettlr",
+  "package": "zettlr.windows",
+  "slug": "zettlr-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Open-source (GPL-3.0) Markdown editor for researchers and note-takers with citation support, Zettelkasten knowledge management and exports via Pandoc and LaTeX.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.zettlr.com/download/",
+   "alternatives": [
+    {
+     "label": "Chocolatey",
+     "url": "https://community.chocolatey.org/packages/zettlr/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zim",
+  "package": "zim.windows",
+  "slug": "zim-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Office",
+  "description": "Desktop personal wiki (GPL-2.0-or-later) keeping notes as plain-text wiki pages in a folder structure, with linking, plugins, task list and equation editor. Actively released (0.77.0, June 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://zim-wiki.org/",
+   "alternatives": [
+    {
+     "label": "Portable Freeware Collection",
+     "url": "https://www.portablefreeware.com/?id=3044&ts=1612711802"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,

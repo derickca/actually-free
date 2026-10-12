@@ -1,0 +1,272 @@
+[
+ {
+  "name": "A Note",
+  "package": "a.note.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Lightweight desktop sticky notes app with colored notes, fonts, alarms and docking to screen edges. Open source (GPL) with no ads or paid tiers.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/office/a-note-portable",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the standalone project's own site could not be verified; official_url is the PortableApps entry (third party). PortableApps lists App License: Open Source (GPL) and release 4.2.4 (2013-01-05). URL note: original developer site is gone; PortableApps.com (co-publisher, GPL source linked) is the maintained distribution and serves as the primary download."
+ },
+ {
+  "name": "Apache OpenOffice",
+  "package": "apache.openoffice.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Full open-source office suite (Apache License 2.0) with Writer, Calc, Impress, Draw, Base and Math. Actively released (4.1.16, Nov 2025) and free for any purpose including commercial use.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.openoffice.org/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Project strongly warns users to download only from the official site. Also listed in the Microsoft Store for selected languages; could not verify a stable store URL so no alt added."
+ },
+ {
+  "name": "BabelPad",
+  "package": "babelpad.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Unicode text editor and word processor by Andrew West with full Unicode character support. Free for personal and commercial use, fully featured, single executable with no installer, no ads or in-app purchases.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://babelstone.co.uk/Software/BabelPad.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Author asks users to download only from babelstone.co.uk and does not support third-party distributions. Verified free for commercial use on the official page."
+ },
+ {
+  "name": "Cherrytree",
+  "package": "cherrytree.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Hierarchical note-taking app (GPLv3) storing rich text, images, tables, links and code snippets in a single file, with password protection. Actively maintained by Giuseppe Penone.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.giuspen.net/cherrytree/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: official site URL — sources cite both giuspen.net/cherrytree and giuspen.com/cherrytree; used the most recent citation (giuspen.net). GitHub repo giuspen/cherrytree confirms open source."
+ },
+ {
+  "name": "FocusWriter",
+  "package": "focuswriter.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Distraction-free full-screen text editor with hide-away controls, themes, daily writing goals and live statistics. Free and open source (GPL) by Graeme Gott, actively released (1.9.0, Feb 2026).",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://gottcode.org/focuswriter/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Sources conflict slightly on GPL version (Wikipedia says GPL-2.0-or-later, LinuxLinks says GPLv3.0); repo is github.com/gottcode/focuswriter. URL scheme (https) assumed from the cited domain; could not verify exact canonical form."
+ },
+ {
+  "name": "Joplin",
+  "package": "joplin.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Free and open-source (AGPL) note-taking and to-do app with Markdown notes, end-to-end encrypted sync to a target of your choice, plugins and web clipper.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "Paid Joplin Cloud sync service exists, but the app is complete offline-first software and syncs free to local folders, Dropbox, OneDrive, WebDAV or a self-hosted Joplin Server.",
+  "official_url": "https://joplinapp.org",
+  "alt_downloads": [
+   {
+    "label": "GitHub releases",
+    "url": "https://github.com/laurent22/joplin/releases"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "No account needed for core features; a Joplin Cloud account is only needed if using that optional paid sync service. Self-hosted Joplin Server is free for non-commercial use.",
+  "sibling": "net.cozic.joplin"
+ },
+ {
+  "name": "LibreOffice",
+  "package": "libreoffice.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Open-source (MPL-2.0) full office suite from The Document Foundation with Writer, Calc, Impress, Draw, Base and Math. Actively released (26.8.1, Oct 2026) with no licensing fees and no vendor lock-in.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.libreoffice.org/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Enterprise ecosystem editions with SLAs exist from third-party companies, but the community release itself is fully free with no paid tier, so free_enough is false.",
+  "sibling": "org.documentfoundation.libreoffice"
+ },
+ {
+  "name": "Logseq",
+  "package": "logseq.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Privacy-first open-source (AGPL-3.0) personal knowledge base with graph view, Markdown and org-mode support and local-first data storage. Actively maintained by Logseq Inc.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "A paid Logseq Sync service exists, but the app is a complete local-first knowledge base that stores notes as local Markdown or org-mode files and syncs fine without it.",
+  "official_url": "https://logseq.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "No account needed for core features; paid sync is optional.",
+  "sibling": "com.logseq.app"
+ },
+ {
+  "name": "Notes",
+  "package": "notes.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Fast, private Qt-based note-taking app by nuttyartist with Markdown support, folders, tags, themes and a Markdown-to-Kanban board. Fully open source and cross-platform, tracks nothing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "A paid Pro license exists but only unlocks editing inside the Kanban view and a year of Pro updates; the free app is otherwise complete, and all Pro features are available free by building from source.",
+  "official_url": "https://notes-foss.com",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/nuttyartist/notes"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Could not verify the exact OSI license identifier (README asserts fully open source); repo is github.com/nuttyartist/notes."
+ },
+ {
+  "name": "QOwnNotes",
+  "package": "qownnotes.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Plain-text Markdown note-taking app (GPL-2.0-only) storing notes as local files, with tags, scripting, optional AES-256 encryption and Nextcloud/ownCloud integration. Actively maintained by Patrizio Bekerle.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.qownnotes.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Sync is handled externally (e.g. Nextcloud client); no account required for core features."
+ },
+ {
+  "name": "RedNotebook",
+  "package": "rednotebook.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Desktop journal and diary (GPL) with calendar navigation, tags, templates, spell check and export to plain text, HTML, LaTeX or PDF. Data stored in plain-text files. Actively released (2.43, Oct 2026).",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://rednotebook.app",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "PortableApps lists an old RedNotebook Portable (1.15.0, 2017); current releases come from the official site, so no alt added."
+ },
+ {
+  "name": "Zettlr",
+  "package": "zettlr.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Open-source (GPL-3.0) Markdown editor for researchers and note-takers with citation support, Zettelkasten knowledge management and exports via Pandoc and LaTeX.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.zettlr.com/download/",
+  "alt_downloads": [
+   {
+    "label": "Chocolatey",
+    "url": "https://community.chocolatey.org/packages/zettlr/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Donations requested on the site; all features work without donating."
+ },
+ {
+  "name": "Zim",
+  "package": "zim.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Desktop personal wiki (GPL-2.0-or-later) keeping notes as plain-text wiki pages in a folder structure, with linking, plugins, task list and equation editor. Actively released (0.77.0, June 2026).",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://zim-wiki.org/",
+  "alt_downloads": [
+   {
+    "label": "Portable Freeware Collection",
+    "url": "https://www.portablefreeware.com/?id=3044&ts=1612711802"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "URL scheme (https) assumed for zim-wiki.org; could not verify canonical scheme. Windows builds support 64-bit Windows 10 only."
+ }
+]
