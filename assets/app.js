@@ -57,13 +57,13 @@
   /* ---------- ntfy feedback ------------------------------------------------
      The browser POSTs straight to ntfy.sh — no backend, no relay, no email.
      The topic is XOR-obfuscated per build: base64 in each form's data-t,
-     the key (g83rueioEHnf+y+PABfOew==, replaced at build time) embedded separately,
+     the key (x2T3m454/oCj9RpzX22cew==, replaced at build time) embedded separately,
      decoded only at send time. Anti-spam, all client-side: honeypot trap,
      3-second open rule, 3-per-10-minutes / 10-per-day limits, length caps.
      Same pattern as FundingSpark. */
   (function () {
     "use strict";
-    var K = "g83rueioEHnf+y+PABfOew==";
+    var K = "x2T3m454/oCj9RpzX22cew==";
     var API = "https://ntfy.sh/", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000, BODY_BYTES = 3500;
@@ -468,6 +468,52 @@ var PLATFORM_SVGS = {
     grid.querySelectorAll(".tile").forEach(function (t) {
       t.addEventListener("click", function () { gcEvent("tile-view/" + t.getAttribute("data-slug")); });
     });
+    saveFilters();
+  }
+
+  /* Filter state survives tile -> detail -> back navigation. sessionStorage
+     is per-tab, so a fresh tab starts unfiltered and closing the tab clears
+     it — no stale filters haunting the next visit. */
+  var FILTER_STORE = "af-filters";
+  function saveFilters() {
+    try {
+      sessionStorage.setItem(FILTER_STORE, JSON.stringify({
+        query: state.query, cat: state.cat, subcat: state.subcat,
+        platform: state.platform, attrs: state.attrs,
+        stores: state.stores, sort: state.sort
+      }));
+    } catch (e) {}
+  }
+  function restoreFilters() {
+    var f = null;
+    try { f = JSON.parse(sessionStorage.getItem(FILTER_STORE) || "null"); }
+    catch (e) {}
+    if (!f || typeof f !== "object") return;
+    if (typeof f.query === "string") state.query = f.query;
+    if (typeof f.cat === "string") state.cat = f.cat;
+    if (typeof f.subcat === "string") state.subcat = f.subcat;
+    if (typeof f.platform === "string") state.platform = f.platform;
+    if (f.attrs && typeof f.attrs === "object") state.attrs = f.attrs;
+    if (f.stores && typeof f.stores === "object") state.stores = f.stores;
+    if (typeof f.sort === "string") state.sort = f.sort;
+  }
+  /* After the controls are built, mark them to match restored state. */
+  function syncControls() {
+    searchInput.value = state.query || "";
+    document.querySelectorAll("#platform-seg .seg").forEach(function (b) {
+      b.classList.toggle("on", b.getAttribute("data-platform") === state.platform);
+    });
+    document.querySelectorAll("#category-chips .chip").forEach(function (c) {
+      c.classList.toggle("on", c.getAttribute("data-cat") === state.cat);
+    });
+    document.querySelectorAll("#attr-pills .pill").forEach(function (p) {
+      p.classList.toggle("on", !!state.attrs[p.getAttribute("data-attr")]);
+    });
+    document.querySelectorAll("#store-pills .pill").forEach(function (p) {
+      p.classList.toggle("on", !!state.stores[p.getAttribute("data-store")]);
+    });
+    var sort = document.getElementById("sort");
+    if (sort && state.sort) sort.value = state.sort;
   }
 
   /* controls */
@@ -685,6 +731,12 @@ var PLATFORM_SVGS = {
     .then(function (r) { return r.json(); })
     .then(function (apps) {
       state.apps = apps;
+      restoreFilters();
+      /* A restored category that no longer exists (stale after a data
+         update) resets instead of showing an empty grid. */
+      if (state.cat && !apps.some(function (a) { return a.category === state.cat; })) {
+        state.cat = ""; state.subcat = "";
+      }
       /* No Windows listings yet: the Windows segment stays out of sight. */
       var hasWindows = apps.some(function (a) { return a.platform === "windows"; });
       var winSeg = document.querySelector('#platform-seg [data-platform="windows"]');
@@ -714,6 +766,7 @@ var PLATFORM_SVGS = {
         state.subcats[c] = state.subcats[c].map(function (p) { return p[0]; });
       });
       renderFilters();
+      syncControls();
       renderSubcats();
       render();
     })

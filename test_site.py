@@ -347,6 +347,34 @@ def main():
     check("platform: Windows grid non-empty", d["vis"] > 0, t)
     check("platform: Windows grid has only Windows tiles", d["bad"] == 0, t)
 
+    # 10. Filter survives tile -> detail -> back: set filters, reload the
+    # page (what back-button navigation does), filters are restored.
+    # (Derick, 2026-10-12.)
+    t = chrome_eval("", """
+      if (!sessionStorage.getItem('af-test-phase')) {
+        sessionStorage.setItem('af-test-phase', '1');
+        document.querySelector('.platform-seg [data-platform="windows"]').click();
+        setTimeout(function(){
+          document.querySelector('#category-chips [data-cat="Games"]').click();
+          setTimeout(function(){ location.reload(); }, 500);
+        }, 600);
+      } else {
+        sessionStorage.removeItem('af-test-phase');
+        setTimeout(function(){
+          var segOn = document.querySelector('.platform-seg [data-platform="windows"]').classList.contains('on');
+          var catOn = document.querySelector('#category-chips [data-cat="Games"]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          var tiles = document.querySelectorAll('#grid .tile').length;
+          document.title = JSON.stringify({segOn: segOn, catOn: catOn, hero: hero, tiles: tiles});
+        }, 2500);
+      }
+    """)
+    d = json.loads(t)
+    check("filters: platform restored after reload", d["segOn"], t)
+    check("filters: category restored after reload", d["catOn"], t)
+    check("filters: hero follows restored platform", d["hero"] == "Actually free Windows apps.", t)
+    check("filters: grid non-empty after restore", d["tiles"] > 0, t)
+
     srv.shutdown()
     print()
     if FAILURES:
