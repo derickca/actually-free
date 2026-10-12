@@ -411,11 +411,11 @@ a.store-badge:hover { filter: brightness(0.96); }
   display: inline-flex; align-items: center; gap: 7px;
 }
 .platform-seg .seg.on { background: var(--accent); color: var(--on-accent); }
-.platform-seg .seg svg { width: 16px; height: 16px; display: block; }
+.platform-seg .seg svg { width: 26px; height: 26px; display: block; }
 .platform-tag { display: inline-flex; align-items: center; color: var(--muted); }
-.platform-tag svg { width: 15px; height: 15px; display: block; }
+.platform-tag svg { width: 24px; height: 24px; display: block; }
 .platform-line { color: var(--muted); font-size: 0.9rem; display: flex; align-items: center; gap: 6px; margin: 2px 0 0; }
-.platform-line svg { width: 16px; height: 16px; display: block; }
+.platform-line svg { width: 26px; height: 26px; display: block; }
 .review-note {
   background: var(--accent-soft);
   border: 1px dashed var(--accent);
