@@ -12,14 +12,38 @@ One command rebuilds everything from the research corpus:
 python3 generate.py
 ```
 
-This reads `~/workspace/certifiable-apps/apps-seed.json`, keeps the
-verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
+The full build reads the Android research corpus from `AF_ANDROID_SEED`
+(default `~/workspace/certifiable-apps/apps-seed.json`) and the versioned
+Windows source `data/windows-seed.json`. It keeps published statuses
+(`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 
-- `data/apps.json` — the 79 listings as JSON
+- `data/apps.json` — published listings as JSON
 - `index.html` — the directory (tiles render client-side)
 - `app/<slug>.html` — one static page per app (SEO: real title, meta, OG tags)
 - `sitemap.xml`, `robots.txt`
 - `assets/` — styles.css, app.js, config.js, mascots
+
+## Windows catalogue maintenance
+
+Edit `data/windows-seed.json`, then run:
+
+```
+python3 tools/check-windows.py
+python3 generate.py --windows-only
+python3 -m unittest test_windows_catalog.py
+```
+
+The incremental build reuses the checked-in Android snapshot and existing
+Windows feedback forms. It removes withdrawn Windows pages and refreshes the
+service-worker cache. Adding a new Windows page requires a full build with the
+Android corpus and feedback configuration. Full builds validate the Windows
+seed too. See `docs/windows-maintenance.md` for evidence rules and the audit.
+
+For a non-mutating HTTP report (network required):
+
+```
+python3 tools/check-windows.py --check-links --output /tmp/windows-links.json
+```
 
 ## Derick's setup steps
 

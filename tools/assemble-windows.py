@@ -8,9 +8,9 @@ Each verdict file is an array of:
    "personal_use", "free_enough", "free_enough_reason", "needs_account",
    "official_url", "alt_downloads": [{"label","url"}], "description", "notes"}
 
-Only verdict=include rows become seed records. Without --append the seed
-file is rewritten from the given verdict files; with --append new records
-are added (existing packages are replaced by package id).
+Only verdict=include rows become seed records. Initial creation accepts verdict
+files; an existing seed requires --append. Reviewed records must be edited
+directly and cannot be replaced by an older verdict import.
 """
 import json
 import os
@@ -56,6 +56,8 @@ def main():
         print("usage: assemble-windows.py <verdicts.json> [...] [--append]")
         sys.exit(2)
 
+    if os.path.exists(SEED_PATH) and not append:
+        raise SystemExit("Existing Windows seed is authoritative. Use --append to add records; edit reviewed records directly.")
     records = {}
     if append and os.path.exists(SEED_PATH):
         for r in json.load(open(SEED_PATH, encoding="utf-8")):
@@ -69,6 +71,9 @@ def main():
                 n_skip += 1
                 continue
             r = to_record(v)
+            existing = records.get(r["package"])
+            if existing and (existing.get("audit_reference") or existing.get("windows11")):
+                raise SystemExit(f"Refusing to overwrite reviewed record: {r['name']}. Edit the seed directly.")
             records[r["package"]] = r
 
     # disambiguate duplicate package ids
