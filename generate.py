@@ -15,10 +15,13 @@ import os
 import re
 import secrets
 import shutil
+import sys
+from urllib.parse import urlsplit
+from windows_catalog import validate, rebuild_windows
 from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
+SEED = os.path.expanduser(os.environ.get("AF_ANDROID_SEED", "~/workspace/certifiable-apps/apps-seed.json"))
 SITE_URL = "https://free.certifiable.media"
 TAGLINE = "Find the free apps they don't want you to see."
 # The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.
@@ -385,7 +388,9 @@ def clean_record(rec):
             dl_alts.append({"label": alt.get("label") or "Download",
                             "url": alt["url"]})
     downloads = {"official": rec.get("official_url") or None,
-                 "alternatives": dl_alts}
+                 "alternatives": dl_alts,
+                 "label": rec.get("download_label"),
+                 "winget_id": rec.get("winget_id")}
     if free_enough:
         has_iap = bool(rec.get("has_iap"))
         promises = {"no_ads": True, "no_iap": not has_iap,
@@ -429,6 +434,8 @@ def clean_record(rec):
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
         "downloads": downloads,
+        **({"windows11": rec.get("windows11") or {"status": "unverified", "tested": False}}
+           if rec.get("platform") == "windows" else {}),
         "rating": ver.get("play_rating"),
         "attrs": attrs,
         "made_by_us": bool(rec.get("made_by_us")),
@@ -461,6 +468,7 @@ def load_corpus():
     if os.path.exists(win_seed):
         with open(win_seed, encoding="utf-8") as f:
             wseed = json.load(f)
+        validate(wseed)
         kept += [clean_record(r) for r in wseed
                  if r.get("status") in ("include", "per-badge", "free-enough")]
     kept.sort(key=lambda a: a["name"].lower())
@@ -846,8 +854,10 @@ def windows_downloads(app):
         # When the primary download is PortableApps (dead-developer
         # exception), label it honestly instead of claiming it's the
         # developer's own site.
-        label = ("PortableApps" if "portableapps.com" in url
-                 else "Download from the developer")
+        label = dl.get("label") or ("PortableApps download page"
+                 if urlsplit(url).hostname == "portableapps.com"
+                 else "GitHub releases" if urlsplit(url).hostname == "github.com" and "/releases" in url
+                 else "Visit download site")
         parts.append(
             f'<a class="dl-official" href="{esc(url)}" '
             f'rel="noopener">{label}</a>')
@@ -855,7 +865,25 @@ def windows_downloads(app):
         parts.append(
             f'<a class="store-badge big" href="{esc(alt["url"])}" '
             f'rel="noopener">{esc(alt["label"])}</a>')
+    if dl.get("winget_id"):
+        command = "winget install --id " + dl["winget_id"] + " -e"
+        parts.append(f'<p>Install with Winget: <code>{esc(command)}</code></p>')
     return "\n".join(parts)
+
+
+def windows_compatibility(app):
+    if app.get("platform") != "windows":
+        return ""
+    evidence = app.get("windows11") or {}
+    labels = {"unverified": "Windows 11 compatibility has not been verified.",
+              "publisher": "The publisher documents Windows 11 support; not installation-tested here.",
+              "distributor": "The linked distributor documents Windows 11 support for its build; not installation-tested here.",
+              "tested": "Tested on Windows 11; see the test report for the version and configuration.",
+              "unsupported": "Does not support the standard Windows 11 taskbar."}
+    text = labels.get(evidence.get("status"), labels["unverified"])
+    source = evidence.get("evidence_url")
+    link = (f' <a href="{esc(source)}" rel="noopener">Compatibility source</a>' if source else "")
+    return f'<p class="compatibility-note">{esc(text)}{link}</p>'
 
 
 ATTR_LABELS = {"open_source": "Open source",
@@ -958,6 +986,7 @@ def build_detail(app, forms):
     </div>
     {desc_html}
     {review}
+    {windows_compatibility(app)}
     <h2>Get it</h2>
     <div class="get-it">
 {get_it}
@@ -2613,14 +2642,38 @@ One command rebuilds everything from the research corpus:
 python3 generate.py
 ```
 
-This reads `~/workspace/certifiable-apps/apps-seed.json`, keeps the
-verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
+The full build reads the Android research corpus from `AF_ANDROID_SEED`
+(default `~/workspace/certifiable-apps/apps-seed.json`) and the versioned
+Windows source `data/windows-seed.json`. It keeps published statuses
+(`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 
-- `data/apps.json` — the 79 listings as JSON
+- `data/apps.json` — published listings as JSON
 - `index.html` — the directory (tiles render client-side)
 - `app/<slug>.html` — one static page per app (SEO: real title, meta, OG tags)
 - `sitemap.xml`, `robots.txt`
 - `assets/` — styles.css, app.js, config.js, mascots
+
+## Windows catalogue maintenance
+
+Edit `data/windows-seed.json`, then run:
+
+```
+python3 tools/check-windows.py
+python3 generate.py --windows-only
+python3 -m unittest test_windows_catalog.py
+```
+
+The incremental build reuses the checked-in Android snapshot and existing
+Windows feedback forms. It removes withdrawn Windows pages and refreshes the
+service-worker cache. Adding a new Windows page requires a full build with the
+Android corpus and feedback configuration. Full builds validate the Windows
+seed too. See `docs/windows-maintenance.md` for evidence rules and the audit.
+
+For a non-mutating HTTP report (network required):
+
+```
+python3 tools/check-windows.py --check-links --output /tmp/windows-links.json
+```
 
 ## Derick's setup steps
 
@@ -2858,6 +2911,9 @@ def check_filter_consistency(apps, index_html, app_js):
 
 
 def main():
+    if "--windows-only" in sys.argv:
+        rebuild_windows(sys.modules[__name__])
+        return
     apps = load_corpus()
     resolve_siblings(apps)
     print(f"{len(apps)} apps "
@@ -2887,6 +2943,12 @@ def main():
     write("index.html", index_html)
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
+    with open(os.path.join(HERE, "data", "windows-seed.json"), encoding="utf-8") as f:
+        for record in json.load(f):
+            if record.get("status") not in ("include", "per-badge", "free-enough"):
+                stale = os.path.join(HERE, "app", slugify(record["package"]) + ".html")
+                if os.path.exists(stale):
+                    os.remove(stale)
     for app in apps:
         write(f"app/{app['slug']}.html", build_detail(app, forms))
     write("sitemap.xml", build_sitemap(apps))
