@@ -12,8 +12,8 @@ One command rebuilds everything from the research corpus:
 python3 generate.py
 ```
 
-The full build reads the Android research corpus from `AF_ANDROID_SEED`
-(default `~/workspace/certifiable-apps/apps-seed.json`) and the versioned
+The full build reads the Android research corpus from `data/apps-seed.json`
+(overridable via `AF_ANDROID_SEED`) and the versioned
 Windows source `data/windows-seed.json`. It keeps published statuses
 (`include` + `per-badge` + `free-enough`), adds QR Cards, and emits:
 

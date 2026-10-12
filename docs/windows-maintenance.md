@@ -57,8 +57,8 @@ The Windows-only build preserves existing report form markup and the Android
 snapshot. It prepares every Windows page before writing, and aborts if an
 existing page/form cannot be reused. Adding a new Windows listing needs the full
 build. Configure that build with `AF_ANDROID_SEED=/path/to/apps-seed.json` and
-its usual feedback configuration. The external Android research corpus has not
-been reconstructed from generated output.
+its usual feedback configuration. The Android research corpus now lives in the
+repo at `data/apps-seed.json` (override with `AF_ANDROID_SEED=/path/to/seed`).
 
 The legacy verdict importer refuses to overwrite audited records. Edit their
 seed records directly so imported research does not silently undo corrections.

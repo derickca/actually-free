@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Actually Free — static site generator.
 
-Reads ~/workspace/certifiable-apps/apps-seed.json, keeps the verified
+Reads data/apps-seed.json (overridable via AF_ANDROID_SEED), keeps the verified
 listings (status=include + status=per-badge + status=free-enough), adds QR Cards, and emits a
 fully static site deployable as-is to Cloudflare Pages.
 
@@ -21,7 +21,7 @@ from windows_catalog import validate, rebuild_windows
 from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SEED = os.path.expanduser(os.environ.get("AF_ANDROID_SEED", "~/workspace/certifiable-apps/apps-seed.json"))
+SEED = os.path.expanduser(os.environ.get("AF_ANDROID_SEED", os.path.join(HERE, "data", "apps-seed.json")))
 SITE_URL = "https://free.certifiable.media"
 TAGLINE = "Find the free apps they don't want you to see."
 # The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.

@@ -163,7 +163,7 @@ def main():
     _forms = _gen.NtfyForms(None)
     _whtml = _gen.build_detail(_wout, _forms)
     check("windows: official download button",
-          "Download from the developer" in _whtml and
+          "Visit download site" in _whtml and
           "https://example.com/download" in _whtml)
     check("windows: alternative labeled", "PortableApps" in _whtml)
     _arec = {"name": "Test Android App", "package": "test.android.app",
