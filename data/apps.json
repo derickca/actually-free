@@ -119,6 +119,48 @@
   "sibling_package": null
  },
  {
+  "name": "7-Zip",
+  "package": "7.zip.windows",
+  "slug": "7-zip-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "7-Zip is a file archiver with high compression ratios that supports many archive formats. It is released under the LGPL.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.7-zip.org/download.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "< polycule >",
   "package": "business.braid.polycule",
   "slug": "business-braid-polycule",
@@ -2031,6 +2073,48 @@
   "tags": [
    "free enough"
   ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Blender",
+  "package": "blender.windows",
+  "slug": "blender-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Blender is a 3D creation suite for modeling, animation, rendering and video editing. It is developed by the Blender Foundation and released under the GPL.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.blender.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -4184,6 +4268,48 @@
   "sibling_package": null
  },
  {
+  "name": "DSynchronize",
+  "package": "dsynchronize.windows",
+  "slug": "dsynchronize-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "DSynchronize is a folder synchronization tool from Dimio. It is freeware, free for personal and business use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://dimio.altervista.org/eng/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Dungeon Crawl Stone Soup",
   "package": "org.develz.crawl",
   "slug": "org-develz-crawl",
@@ -4212,6 +4338,92 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Duplicate Files Finder",
+  "package": "duplicate.files.finder.windows",
+  "slug": "duplicate-files-finder-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Duplicate Files Finder from MindGems scans drives for duplicate files so they can be removed. It is freeware.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.mindgems.com/products/Duplicate-Files-Finder/Duplicate-Files-Finder-Download.htm",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free tier fully finds and deletes duplicate files; the Pro version only adds fuzzy search and related extras.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Duplicati",
+  "package": "duplicati.windows",
+  "slug": "duplicati-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Duplicati is an encrypted backup client that stores incremental backups on cloud storage and remote servers. It is released under the MIT license; the commercial Duplicati, Inc. sells managed services, not the client.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://duplicati.com/download",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -4633,6 +4845,48 @@
   "sibling_package": null
  },
  {
+  "name": "Everything",
+  "package": "everything.windows",
+  "slug": "everything-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Everything is a file and folder search tool from voidtools that returns results as you type. It is freeware; donations are optional and all features work without paying.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.voidtools.com/downloads/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Exclave",
   "package": "com.github.dyhkwong.sagernet",
   "slug": "com-github-dyhkwong-sagernet",
@@ -4702,6 +4956,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Explorer++",
+  "package": "explorer.windows",
+  "slug": "explorer-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Explorer++ is a tabbed, dual-pane file manager for Windows. It is released under GPL-3.0-only; version 1.4.0 is current.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.explorerplusplus.com/download",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -4874,6 +5170,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FastCopy",
+  "package": "fastcopy.windows",
+  "slug": "fastcopy-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "FastCopy is a file copy and delete utility. It is freeware; personal use is free while some commercial use may require a paid license.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://fastcopy.jp/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -5328,6 +5668,90 @@
   "sibling_package": null
  },
  {
+  "name": "File Converter",
+  "package": "file.converter.windows",
+  "slug": "file-converter-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "File Converter adds file conversion and compression presets to the Windows Explorer context menu. It is a personal open source project released under the GPLv3.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://file-converter.io",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FileOptimizer",
+  "package": "fileoptimizer.windows",
+  "slug": "fileoptimizer-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "FileOptimizer reduces file sizes without changing their formats and supports many file types. It is released under the AGPL-3.0.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Files by Google",
   "package": "com.google.android.apps.nbu.files",
   "slug": "com-google-android-apps-nbu-files",
@@ -5369,6 +5793,48 @@
   "sibling_package": null
  },
  {
+  "name": "FileVoyager",
+  "package": "filevoyager.windows",
+  "slug": "filevoyager-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "FileVoyager is a dual-pane file manager with tabs and a preview pane. It is freeware; version 25.12.5 is current.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.filevoyager.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Finamp",
   "package": "com.unicornsonlsd.finamp",
   "slug": "com-unicornsonlsd-finamp",
@@ -5407,6 +5873,48 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Finamp ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "Finance Explorer",
+  "package": "finance.explorer.windows",
+  "slug": "finance-explorer-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Finance",
+  "description": "Finance Explorer is a personal finance and budgeting application from Metalogic Software. It is freeware for personal and business use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/news/2018-11-21--finance-explorer-portable-8.2.0-released",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -6667,6 +7175,90 @@
   "sibling_package": null
  },
  {
+  "name": "FreeCAD",
+  "package": "freecad.windows",
+  "slug": "freecad-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "FreeCAD is a parametric 3D CAD modeler aimed at mechanical engineering and product design. It is released under the LGPL-2.1.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.freecad.org/downloads.php",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FreeCommander",
+  "package": "freecommander.windows",
+  "slug": "freecommander-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "FreeCommander is a dual-pane orthodox file manager with tabs and built-in viewers. It is freeware, free for personal and commercial use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://freecommander.com/en/downloads/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "FreeDcam",
   "package": "troop.com.freedcam",
   "slug": "troop-com-freedcam",
@@ -6736,6 +7328,92 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FreeFileSync",
+  "package": "freefilesync.windows",
+  "slug": "freefilesync-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "FreeFileSync is a folder comparison and synchronization tool. It is released under the GPLv3.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://freefilesync.org/download.php",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FUPX",
+  "package": "fupx.windows",
+  "slug": "fupx-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "FUPX is a compressor frontend from gurupia based on UPX for shrinking executables. It is freeware; version 3.2 is current.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://gurupia.wordpress.com/fupx/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -7101,6 +7779,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "GnuCash",
+  "package": "gnucash.windows",
+  "slug": "gnucash-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Finance",
+  "description": "GnuCash is a double-entry accounting program for personal and small-business finances. It is released under the GPL.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.gnucash.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -7877,6 +8597,48 @@
   "sibling_package": null
  },
  {
+  "name": "HomeBank",
+  "package": "homebank.windows",
+  "slug": "homebank-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Finance",
+  "description": "HomeBank is a personal accounting application for managing accounts, budgets and reports. It is released under the GPLv2.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.gethomebank.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "HomerPlayer2",
   "package": "com.studio4plus.homerplayer2",
   "slug": "com-studio4plus-homerplayer2",
@@ -8068,6 +8830,48 @@
   },
   "rating": 4.7,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Inkscape",
+  "package": "inkscape.windows",
+  "slug": "inkscape-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Inkscape is a vector graphics editor for illustrations, icons and diagrams. It is released under the GPL-2.0 or later.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://inkscape.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -8779,6 +9583,48 @@
   "sibling_package": null
  },
  {
+  "name": "Kanri",
+  "package": "kanri.windows",
+  "slug": "kanri-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Tasks",
+  "description": "Kanri is an offline kanban board application for organizing projects and to-dos. It is released under the GPL-3.0 and saw active development through 2026.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://kanriapp.com/download",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "KashCal",
   "package": "org.onekash.kashcal",
   "slug": "org-onekash-kashcal",
@@ -8973,6 +9819,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "KiCad",
+  "package": "kicad.windows",
+  "slug": "kicad-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "KiCad is an electronic design automation suite for schematic capture and PCB layout. It is released under the GPL-3.0.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.kicad.org/download/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -9461,6 +10349,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "LibreCAD",
+  "package": "librecad.windows",
+  "slug": "librecad-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "LibreCAD is a 2D CAD application for technical drawings and plans. It is released under the GPLv2.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://librecad.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -11718,7 +12648,53 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "money-manager-ex-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "Money Manager Ex",
+  "package": "money.manager.ex.windows",
+  "slug": "money-manager-ex-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Finance",
+  "description": "Money Manager Ex is a personal finance manager with budgeting, reporting and multi-currency support. It is released under the GPL.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/moneymanagerex/moneymanagerex/releases",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "com.money.manager.ex",
+  "sibling_slug": "com-money-manager-ex",
+  "sibling_platform": "android"
  },
  {
   "name": "monocles chat",
@@ -12232,6 +13208,48 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "NanaZip",
+  "package": "nanazip.windows",
+  "slug": "nanazip-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "NanaZip is a 7-Zip fork with a modern Windows interface, dark mode and MSIX packaging. Its own code is MIT licensed; the 7-Zip-derived code keeps the 7-Zip license. Actively developed; 7.0 released 2026.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/M2Team/NanaZip/releases",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -14164,6 +15182,48 @@
   "sibling_package": null
  },
  {
+  "name": "PeaZip",
+  "package": "peazip.windows",
+  "slug": "peazip-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "PeaZip is a file archiver and manager that supports many archive formats. It is released under the LGPLv3.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://peazip.github.io/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Pedometer (PFA)",
   "package": "org.secuso.privacyfriendlyactivitytracker",
   "slug": "org-secuso-privacyfriendlyactivitytracker",
@@ -14192,6 +15252,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Pencil2D",
+  "package": "pencil2d.windows",
+  "slug": "pencil2d-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Pencil2D is a hand-drawn 2D animation and drawing application. It is released under the GPL-2.0.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.pencil2d.org/download",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -14728,6 +15830,90 @@
   "sibling_package": null
  },
  {
+  "name": "PNotes",
+  "package": "pnotes.windows",
+  "slug": "pnotes-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Tasks",
+  "description": "PNotes is a desktop sticky-notes application with scheduling and customization options. It is released under the GPLv2.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pnotes.sourceforge.io/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "PNotes.NET",
+  "package": "pnotes.net.windows",
+  "slug": "pnotes-net-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Tasks",
+  "description": "PNotes.NET is the .NET-based successor to PNotes, a desktop sticky-notes application. Its project page lists the GPLv2 as its license.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pnotes.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Pocket Casts",
   "package": "au.com.shiftyjelly.pocketcasts",
   "slug": "au-com-shiftyjelly-pocketcasts",
@@ -15013,6 +16199,48 @@
   "sibling_package": null
  },
  {
+  "name": "PortableApps.com AppCompactor",
+  "package": "portableapps.com.appcompactor.windows",
+  "slug": "portableapps-com-appcompactor-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "AppCompactor compresses application folders to reduce their disk footprint. It is open source; version 3.17 released 2026-06-29.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "PPSSPP",
   "package": "org.ppsspp.ppsspp",
   "slug": "org-ppsspp-ppsspp",
@@ -15241,6 +16469,48 @@
   },
   "rating": 4.9,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Q-Dir",
+  "package": "q.dir.windows",
+  "slug": "q-dir-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Q-Dir is a quad-pane file manager from SoftwareOK. It is freeware.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.softwareok.com/?seite=Freeware/Q-Dir",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -16268,6 +17538,48 @@
   "sibling_package": null
  },
  {
+  "name": "Run-Command",
+  "package": "run.command.windows",
+  "slug": "run-command-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Run-Command is a small run-dialog replacement from SoftwareOK. It is freeware; version 6.41 is current.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.softwareok.com/?seite=Freeware/Run-Command",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Ruslin",
   "package": "org.dianqk.ruslin",
   "slug": "org-dianqk-ruslin",
@@ -16620,6 +17932,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Scribus",
+  "package": "scribus.windows",
+  "slug": "scribus-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Design",
+  "description": "Scribus is a desktop publishing application for page layout and print-ready documents. It is released under the GPL.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.scribus.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -17562,6 +18916,48 @@
   "sibling_package": null
  },
  {
+  "name": "StackNotes",
+  "package": "stacknotes.windows",
+  "slug": "stacknotes-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Tasks",
+  "description": "StackNotes is a desktop sticky-notes application distributed as open source. SourceForge lists it as Public Domain while PortableApps lists a FreeBSD license.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/p/stacknotes/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Standard Notes",
   "package": "com.standardnotes",
   "slug": "com-standardnotes",
@@ -17629,6 +19025,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Stickies",
+  "package": "stickies.windows",
+  "slug": "stickies-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Tasks",
+  "description": "Stickies is a lightweight sticky-notes application from Zhorn Software. It is freeware for personal and business use; version 10.2a released Jan 2025.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.zhornsoftware.co.uk/stickies/versions.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -18093,6 +19531,48 @@
   "sibling_package": null
  },
  {
+  "name": "Syncthing",
+  "package": "syncthing.windows",
+  "slug": "syncthing-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Syncthing is a continuous file synchronization program that syncs files between devices. It is released under the MPL-2.0.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://syncthing.net",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Syncthing-Fork",
   "package": "com.github.catfriend1.syncthingfork",
   "slug": "com-github-catfriend1-syncthingfork",
@@ -18284,6 +19764,48 @@
   },
   "rating": 5.0,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Task Coach",
+  "package": "task.coach.windows",
+  "slug": "task-coach-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Tasks",
+  "description": "Task Coach is a to-do manager with hierarchical tasks, effort tracking and reminders. It is released under the GPL-3.0 and remains actively developed.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/taskcoach/taskcoach",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -18663,6 +20185,48 @@
   "sibling_package": null
  },
  {
+  "name": "Toucan",
+  "package": "toucan.windows",
+  "slug": "toucan-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Toucan is a file synchronization, backup and encryption utility. It is released under the GPLv2 and maintained by PortableApps; version 3.1.8.2 is current.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "TrackerControl",
   "package": "net.kollnig.missioncontrol.fdroid",
   "slug": "net-kollnig-missioncontrol-fdroid",
@@ -18822,6 +20386,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "TreeSize Free",
+  "package": "treesize.free.windows",
+  "slug": "treesize-free-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "TreeSize Free scans drives and folders to show disk space usage. It is freeware and the free edition is a complete product.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.jam-software.com/treesize_free",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free edition fully scans and reports disk usage; paid editions add export, scheduling and enterprise features.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -19553,6 +21161,48 @@
   "sibling_package": null
  },
  {
+  "name": "Virtual Volumes View",
+  "package": "virtual.volumes.view.windows",
+  "slug": "virtual-volumes-view-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Virtual Volumes View catalogs offline media and archives so they can be searched later. It is released under the GPL; version 1.5 released Jan 2024.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://vvvapp.sourceforge.io/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "vivi",
   "package": "com.vivi.vivimusic",
   "slug": "com-vivi-vivimusic",
@@ -19957,6 +21607,48 @@
   "sibling_package": null
  },
  {
+  "name": "WinDirStat",
+  "package": "windirstat.windows",
+  "slug": "windirstat-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "WinDirStat is a disk usage statistics viewer with a treemap display. It is released under the GPLv2; version 2.8.0 released Aug 2026.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://windirstat.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Windy",
   "package": "com.windyty.android",
   "slug": "com-windyty-android",
@@ -19992,6 +21684,273 @@
   "personal_use": false,
   "tags": [
    "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WinFile",
+  "package": "winfile.windows",
+  "slug": "winfile-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "WinFile is the classic Windows File Manager, open-sourced by Microsoft. It is released under the MIT license.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/microsoft/winfile",
+   "alternatives": [
+    {
+     "label": "Chocolatey",
+     "url": "https://chocolatey.org/packages/winfile"
+    },
+    {
+     "label": "Microsoft Store",
+     "url": "https://www.microsoft.com/store/apps/9p7vbbbc49rb?ocid=badge"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Wise Duplicate Finder",
+  "package": "wise.duplicate.finder.windows",
+  "slug": "wise-duplicate-finder-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Wise Duplicate Finder finds and removes duplicate files on a drive. It is freeware.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.wisecleaner.com/wise-duplicate-finder.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free version fully searches for and deletes duplicate files; only the automatic 'Keep One' option requires the Pro version.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Wise Force Deleter",
+  "package": "wise.force.deleter.windows",
+  "slug": "wise-force-deleter-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Wise Force Deleter deletes files locked by other processes. It is completely free with no paid tier.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.wisecleaner.com/wise-force-deleter.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Wise JetSearch",
+  "package": "wise.jetsearch.windows",
+  "slug": "wise-jetsearch-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "Wise JetSearch is a file search tool from WiseCleaner. It is freeware.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.wisecleaner.com/wise-jetsearch.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WizFile",
+  "package": "wizfile.windows",
+  "slug": "wizfile-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "WizFile is a disk search utility from Antibody Software. It is freeware; personal use is free while commercial use requires a Supporter or Enterprise license.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://antibody-software.com/wizfile/download/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WizTree",
+  "package": "wiztree.windows",
+  "slug": "wiztree-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Files",
+  "description": "WizTree is a disk space analyzer that scans drives quickly. It is freeware, free for personal use only; commercial use requires a paid license.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://diskanalyzer.com/download",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
   ],
   "needs_review": false,
   "review_notes": "",

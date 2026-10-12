@@ -1,5 +1,29 @@
 [
  {
+  "name": "7-Zip",
+  "package": "7.zip.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "7-Zip is a file archiver with high compression ratios that supports many archive formats. It is released under the LGPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.7-zip.org/download.html",
+  "alt_downloads": [
+   {
+    "label": "winget: 7zip.7zip",
+    "url": ""
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "A Note",
   "package": "a.note.windows",
   "platform": "windows",
@@ -57,6 +81,25 @@
   "notes": "Author asks users to download only from babelstone.co.uk and does not support third-party distributions. Verified free for commercial use on the official page."
  },
  {
+  "name": "Blender",
+  "package": "blender.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Blender is a 3D creation suite for modeling, animation, rendering and video editing. It is developed by the Blender Foundation and released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.blender.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Cherrytree",
   "package": "cherrytree.windows",
   "platform": "windows",
@@ -76,6 +119,196 @@
   "notes": "UNCERTAIN: official site URL — sources cite both giuspen.net/cherrytree and giuspen.com/cherrytree; used the most recent citation (giuspen.net). GitHub repo giuspen/cherrytree confirms open source."
  },
  {
+  "name": "DSynchronize",
+  "package": "dsynchronize.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "DSynchronize is a folder synchronization tool from Dimio. It is freeware, free for personal and business use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://dimio.altervista.org/eng/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Duplicate Files Finder",
+  "package": "duplicate.files.finder.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Duplicate Files Finder from MindGems scans drives for duplicate files so they can be removed. It is freeware.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "The free tier fully finds and deletes duplicate files; the Pro version only adds fuzzy search and related extras.",
+  "official_url": "https://www.mindgems.com/products/Duplicate-Files-Finder/Duplicate-Files-Finder-Download.htm",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Duplicati",
+  "package": "duplicati.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Duplicati is an encrypted backup client that stores incremental backups on cloud storage and remote servers. It is released under the MIT license; the commercial Duplicati, Inc. sells managed services, not the client.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://duplicati.com/download",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Everything",
+  "package": "everything.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Everything is a file and folder search tool from voidtools that returns results as you type. It is freeware; donations are optional and all features work without paying.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.voidtools.com/downloads/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Explorer++",
+  "package": "explorer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Explorer++ is a tabbed, dual-pane file manager for Windows. It is released under GPL-3.0-only; version 1.4.0 is current.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.explorerplusplus.com/download",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "FastCopy",
+  "package": "fastcopy.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "FastCopy is a file copy and delete utility. It is freeware; personal use is free while some commercial use may require a paid license.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://fastcopy.jp/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the current EULA on fastcopy.jp was not verified; pendriveapps reports personal-use-free with a paid license for some commercial use."
+ },
+ {
+  "name": "File Converter",
+  "package": "file.converter.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "File Converter adds file conversion and compression presets to the Windows Explorer context menu. It is a personal open source project released under the GPLv3.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://file-converter.io",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "FileOptimizer",
+  "package": "fileoptimizer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "FileOptimizer reduces file sizes without changing their formats and supports many file types. It is released under the AGPL-3.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: portablefreeware.com reports an optional startup ad screen that can be disabled — could not verify it only promotes the developer's own support message."
+ },
+ {
+  "name": "FileVoyager",
+  "package": "filevoyager.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "FileVoyager is a dual-pane file manager with tabs and a preview pane. It is freeware; version 25.12.5 is current.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.filevoyager.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Finance Explorer",
+  "package": "finance.explorer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Finance",
+  "description": "Finance Explorer is a personal finance and budgeting application from Metalogic Software. It is freeware for personal and business use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/news/2018-11-21--finance-explorer-portable-8.2.0-released",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Publisher site is offline; the PortableApps release page is used as the download source (PortableApps notes the package is made available directly from the publisher)."
+ },
+ {
   "name": "FocusWriter",
   "package": "focuswriter.windows",
   "platform": "windows",
@@ -93,6 +326,144 @@
    "needs_account": false
   },
   "notes": "Sources conflict slightly on GPL version (Wikipedia says GPL-2.0-or-later, LinuxLinks says GPLv3.0); repo is github.com/gottcode/focuswriter. URL scheme (https) assumed from the cited domain; could not verify exact canonical form."
+ },
+ {
+  "name": "FreeCAD",
+  "package": "freecad.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "FreeCAD is a parametric 3D CAD modeler aimed at mechanical engineering and product design. It is released under the LGPL-2.1.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.freecad.org/downloads.php",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "FreeCommander",
+  "package": "freecommander.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "FreeCommander is a dual-pane orthodox file manager with tabs and built-in viewers. It is freeware, free for personal and commercial use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://freecommander.com/en/downloads/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "FreeFileSync",
+  "package": "freefilesync.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "FreeFileSync is a folder comparison and synchronization tool. It is released under the GPLv3.",
+  "license": "oss",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://freefilesync.org/download.php",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the official FAQ says the standard and Donation editions are personal-use-only (businesses need the Business Edition); third parties report occasional donation prompts, not verified as nagging."
+ },
+ {
+  "name": "FUPX",
+  "package": "fupx.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "FUPX is a compressor frontend from gurupia based on UPX for shrinking executables. It is freeware; version 3.2 is current.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://gurupia.wordpress.com/fupx/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "GnuCash",
+  "package": "gnucash.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Finance",
+  "description": "GnuCash is a double-entry accounting program for personal and small-business finances. It is released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.gnucash.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "HomeBank",
+  "package": "homebank.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Finance",
+  "description": "HomeBank is a personal accounting application for managing accounts, budgets and reports. It is released under the GPLv2.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.gethomebank.org",
+  "alt_downloads": [
+   {
+    "label": "winget: HomeBank.HomeBank",
+    "url": ""
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Inkscape",
+  "package": "inkscape.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Inkscape is a vector graphics editor for illustrations, icons and diagrams. It is released under the GPL-2.0 or later.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://inkscape.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "Joplin",
@@ -118,6 +489,63 @@
   },
   "notes": "No account needed for core features; a Joplin Cloud account is only needed if using that optional paid sync service. Self-hosted Joplin Server is free for non-commercial use.",
   "sibling": "net.cozic.joplin"
+ },
+ {
+  "name": "Kanri",
+  "package": "kanri.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Tasks",
+  "description": "Kanri is an offline kanban board application for organizing projects and to-dos. It is released under the GPL-3.0 and saw active development through 2026.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://kanriapp.com/download",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "KiCad",
+  "package": "kicad.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "KiCad is an electronic design automation suite for schematic capture and PCB layout. It is released under the GPL-3.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.kicad.org/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "LibreCAD",
+  "package": "librecad.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "LibreCAD is a 2D CAD application for technical drawings and plans. It is released under the GPLv2.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://librecad.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "LibreOffice",
@@ -160,6 +588,50 @@
   "sibling": "com.logseq.app"
  },
  {
+  "name": "Money Manager Ex",
+  "package": "money.manager.ex.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Finance",
+  "description": "Money Manager Ex is a personal finance manager with budgeting, reporting and multi-currency support. It is released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/moneymanagerex/moneymanagerex/releases",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "",
+  "sibling": "com.money.manager.ex"
+ },
+ {
+  "name": "NanaZip",
+  "package": "nanazip.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "NanaZip is a 7-Zip fork with a modern Windows interface, dark mode and MSIX packaging. Its own code is MIT licensed; the 7-Zip-derived code keeps the 7-Zip license. Actively developed; 7.0 released 2026.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/M2Team/NanaZip/releases",
+  "alt_downloads": [
+   {
+    "label": "Microsoft Store",
+    "url": ""
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Notes",
   "package": "notes.windows",
   "platform": "windows",
@@ -182,6 +654,120 @@
    "needs_account": false
   },
   "notes": "Could not verify the exact OSI license identifier (README asserts fully open source); repo is github.com/nuttyartist/notes."
+ },
+ {
+  "name": "PeaZip",
+  "package": "peazip.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "PeaZip is a file archiver and manager that supports many archive formats. It is released under the LGPLv3.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://peazip.github.io/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Pencil2D",
+  "package": "pencil2d.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Pencil2D is a hand-drawn 2D animation and drawing application. It is released under the GPL-2.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.pencil2d.org/download",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "PNotes.NET",
+  "package": "pnotes.net.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Tasks",
+  "description": "PNotes.NET is the .NET-based successor to PNotes, a desktop sticky-notes application. Its project page lists the GPLv2 as its license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pnotes.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the standalone license file could not be located; the SourceForge project umbrella lists GPLv2. Last release 3.8.2.2 (Nov 2021)."
+ },
+ {
+  "name": "PNotes",
+  "package": "pnotes.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Tasks",
+  "description": "PNotes is a desktop sticky-notes application with scheduling and customization options. It is released under the GPLv2.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pnotes.sourceforge.io/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "PortableApps.com AppCompactor",
+  "package": "portableapps.com.appcompactor.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "AppCompactor compresses application folders to reduce their disk footprint. It is open source; version 3.17 released 2026-06-29.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used; version 3.17 released 2026-06-29 per PortableApps news."
+ },
+ {
+  "name": "Q-Dir",
+  "package": "q.dir.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Q-Dir is a quad-pane file manager from SoftwareOK. It is freeware.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com/?seite=Freeware/Q-Dir",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "QOwnNotes",
@@ -220,6 +806,328 @@
    "needs_account": false
   },
   "notes": "PortableApps lists an old RedNotebook Portable (1.15.0, 2017); current releases come from the official site, so no alt added."
+ },
+ {
+  "name": "Run-Command",
+  "package": "run.command.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Run-Command is a small run-dialog replacement from SoftwareOK. It is freeware; version 6.41 is current.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com/?seite=Freeware/Run-Command",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Scribus",
+  "package": "scribus.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Scribus is a desktop publishing application for page layout and print-ready documents. It is released under the GPL.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.scribus.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "StackNotes",
+  "package": "stacknotes.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Tasks",
+  "description": "StackNotes is a desktop sticky-notes application distributed as open source. SourceForge lists it as Public Domain while PortableApps lists a FreeBSD license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/p/stacknotes/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Stickies",
+  "package": "stickies.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Tasks",
+  "description": "Stickies is a lightweight sticky-notes application from Zhorn Software. It is freeware for personal and business use; version 10.2a released Jan 2025.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.zhornsoftware.co.uk/stickies/versions.html",
+  "alt_downloads": [
+   {
+    "label": "winget: ZhornSoftware.Stickies",
+    "url": ""
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Syncthing",
+  "package": "syncthing.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Syncthing is a continuous file synchronization program that syncs files between devices. It is released under the MPL-2.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://syncthing.net",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Task Coach",
+  "package": "task.coach.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Tasks",
+  "description": "Task Coach is a to-do manager with hierarchical tasks, effort tracking and reminders. It is released under the GPL-3.0 and remains actively developed.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/taskcoach/taskcoach",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Toucan",
+  "package": "toucan.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Toucan is a file synchronization, backup and encryption utility. It is released under the GPLv2 and maintained by PortableApps; version 3.1.8.2 is current.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the exact PortableApps app-page URL was not captured verbatim, so the PortableApps.com domain root is used."
+ },
+ {
+  "name": "TreeSize Free",
+  "package": "treesize.free.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "TreeSize Free scans drives and folders to show disk space usage. It is freeware and the free edition is a complete product.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "The free edition fully scans and reports disk usage; paid editions add export, scheduling and enterprise features.",
+  "official_url": "https://www.jam-software.com/treesize_free",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: JAM's own FAQ allows commercial use but a JAM marketing PDF says personal non-commercial only — conflict unresolved; personal_use set to false per the FAQ."
+ },
+ {
+  "name": "Virtual Volumes View",
+  "package": "virtual.volumes.view.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Virtual Volumes View catalogs offline media and archives so they can be searched later. It is released under the GPL; version 1.5 released Jan 2024.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://vvvapp.sourceforge.io/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinDirStat",
+  "package": "windirstat.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "WinDirStat is a disk usage statistics viewer with a treemap display. It is released under the GPLv2; version 2.8.0 released Aug 2026.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://windirstat.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinFile",
+  "package": "winfile.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "WinFile is the classic Windows File Manager, open-sourced by Microsoft. It is released under the MIT license.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/microsoft/winfile",
+  "alt_downloads": [
+   {
+    "label": "Chocolatey",
+    "url": "https://chocolatey.org/packages/winfile"
+   },
+   {
+    "label": "winget",
+    "url": ""
+   },
+   {
+    "label": "Microsoft Store",
+    "url": "https://www.microsoft.com/store/apps/9p7vbbbc49rb?ocid=badge"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Wise Duplicate Finder",
+  "package": "wise.duplicate.finder.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Wise Duplicate Finder finds and removes duplicate files on a drive. It is freeware.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "The free version fully searches for and deletes duplicate files; only the automatic 'Keep One' option requires the Pro version.",
+  "official_url": "https://www.wisecleaner.com/wise-duplicate-finder.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Wise Force Deleter",
+  "package": "wise.force.deleter.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Wise Force Deleter deletes files locked by other processes. It is completely free with no paid tier.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.wisecleaner.com/wise-force-deleter.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Wise JetSearch",
+  "package": "wise.jetsearch.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "Wise JetSearch is a file search tool from WiseCleaner. It is freeware.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.wisecleaner.com/wise-jetsearch.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WizFile",
+  "package": "wizfile.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "WizFile is a disk search utility from Antibody Software. It is freeware; personal use is free while commercial use requires a Supporter or Enterprise license.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://antibody-software.com/wizfile/download/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WizTree",
+  "package": "wiztree.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Files",
+  "description": "WizTree is a disk space analyzer that scans drives quickly. It is freeware, free for personal use only; commercial use requires a paid license.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://diskanalyzer.com/download",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "Zettlr",
