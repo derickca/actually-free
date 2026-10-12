@@ -1591,6 +1591,48 @@
   "sibling_package": null
  },
  {
+  "name": "Autoruns",
+  "package": "autoruns.windows",
+  "slug": "autoruns-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that shows every program configured to start automatically with Windows and lets you disable entries. It covers the registry, startup folders, services, drivers and scheduled tasks.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Auxio",
   "package": "org.oxycblt.auxio",
   "slug": "org-oxycblt-auxio",
@@ -1735,6 +1777,48 @@
   },
   "downloads": {
    "official": "http://babelstone.co.uk/Software/BabelPad.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Balabolka",
+  "package": "balabolka.windows",
+  "slug": "balabolka-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "Freeware text-to-speech program that reads documents aloud using installed Windows voices and can save speech to audio files. It supports many file formats, custom dictionaries and pronunciation rules.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.cross-plus-a.com/balabolka.htm",
    "alternatives": []
   },
   "rating": null,
@@ -2235,6 +2319,48 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "BleachBit",
+  "package": "bleachbit.windows",
+  "slug": "bleachbit-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Open source privacy cleaner (GPL-3.0) that deletes caches, temp files, cookies and history from browsers and the system. It has no ads, accounts or paid tier.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.bleachbit.org",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -3674,6 +3800,48 @@
   "sibling_package": null
  },
  {
+  "name": "Coreinfo",
+  "package": "coreinfo.windows",
+  "slug": "coreinfo-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals command-line utility that maps logical processors to physical cores, NUMA nodes, sockets and caches. Actively maintained (v4.0, Dec 2025).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Cosmic IDE",
   "package": "org.cosmicide",
   "slug": "org-cosmicide",
@@ -3756,6 +3924,90 @@
   "sibling_package": null
  },
  {
+  "name": "CPU-Z",
+  "package": "cpu.z.windows",
+  "slug": "cpu-z-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware system profiler by CPUID that reports detailed information about the CPU, motherboard, memory and graphics. The free edition is complete with no paid version.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.cpuid.com/softwares/cpu-z.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "CpuFrequenz",
+  "package": "cpufrequenz.windows",
+  "slug": "cpufrequenz-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware tool by SoftwareOK that shows CPU load and clock frequency in real time with a load graph and a precise frequency determination mode. Actively maintained (v4.55, Apr 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.softwareok.com/?seite=Microsoft/CpuFrequenz",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "CrossWords",
   "package": "org.eehouse.android.xw4",
   "slug": "org-eehouse-android-xw4",
@@ -3821,6 +4073,137 @@
   "downloads": {
    "official": "https://cryptomator.org/",
    "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "CrystalDiskInfo",
+  "package": "crystaldiskinfo.windows",
+  "slug": "crystaldiskinfo-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source disk health monitor that reads S.M.A.R.T. data and shows drive temperature, error counts and overall health status. It is MIT licensed with no paid tier.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://crystalmark.info/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "CrystalDiskMark",
+  "package": "crystaldiskmark.windows",
+  "slug": "crystaldiskmark-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source disk benchmark that measures sequential and random read and write speeds of storage devices. It is MIT licensed and fully functional with no paid tier.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://crystalmark.info/en/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "CrystalMark Retro",
+  "package": "crystalmark.retro.windows",
+  "slug": "crystalmark-retro-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Open source benchmark (GPL) by Crystal Dew World that measures CPU, disk, 2D and 3D performance with one click on Windows 95 through 11. The full benchmark runs locally with no account needed.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://crystalmark.info/en/software/crystalmarkretro/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/utilities/crystalmark-retro-portable"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -4038,6 +4421,48 @@
   "sibling_package": null
  },
  {
+  "name": "Daphne",
+  "package": "daphne.windows",
+  "slug": "daphne-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Open source process manager (GPL, source published on the author's site) that can kill, debug and control windows, with drag-over-window targeting, always-on-top rules and process traps. Latest release v2.04 (2014); the official site now lists it under legacy.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.drk.com.ar/en/legacy/daphne-windows-task-manager-replacement/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DataBackup",
   "package": "com.xayah.databackup.foss",
   "slug": "com-xayah-databackup-foss",
@@ -4200,6 +4625,48 @@
   "sibling_package": null
  },
  {
+  "name": "DebugView",
+  "package": "debugview.windows",
+  "slug": "debugview-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that captures debug output (OutputDebugString and DbgPrint) from drivers and programs in real time. Latest release v4.90 (2019); functional and unmaintained.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/debugview",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Deku SMS",
   "package": "com.afkanerd.deku",
   "slug": "com-afkanerd-deku",
@@ -4321,6 +4788,48 @@
   "sibling_package": null
  },
  {
+  "name": "Dicom",
+  "package": "dicom.windows",
+  "slug": "dicom-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "Word completion tool that pops up word suggestions after a few keystrokes, reducing typing effort for users with motor and coordination impairments. It ships with English and French dictionaries and custom word lists.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/node/59248",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Diktafon",
   "package": "cz.mod42.diktafon",
   "slug": "cz-mod42-diktafon",
@@ -4363,6 +4872,90 @@
   "sibling_package": null
  },
  {
+  "name": "Disk Cleaner",
+  "package": "disk.cleaner.windows",
+  "slug": "disk-cleaner-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Open source (GPL) junk-file cleaner by R.J. Moerland that removes temp files, caches and histories. The project site diskcleaner.nl redirects to its SourceForge page.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://diskcleaner.nl/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "DiskMon",
+  "package": "diskmon.windows",
+  "slug": "diskmon-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Freeware Sysinternals utility that captures hard disk activity and displays it like a software disk activity light in the system tray. It is a tiny standalone executable from Microsoft.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://docs.microsoft.com/en-us/sysinternals/downloads/diskmon",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DNSNet",
   "package": "dev.clombardo.dnsnet",
   "slug": "dev-clombardo-dnsnet",
@@ -4391,6 +4984,48 @@
   "rating": 4.5,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Don't Sleep",
+  "package": "don.t.sleep.windows",
+  "slug": "don-t-sleep-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware tool by SoftwareOK that prevents the PC from sleeping, shutting down, hibernating or restarting, with timer-based rules. Free for personal and business use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.softwareok.com/?Download=DontSleep",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -4607,6 +5242,48 @@
   "sibling_package": null
  },
  {
+  "name": "DSpeech",
+  "package": "dspeech.windows",
+  "slug": "dspeech-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "Freeware text-to-speech tool by Dimio that reads clipboard text or documents aloud through Windows voices. It is free for personal and commercial use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://dimio.altervista.org/eng/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DSynchronize",
   "package": "dsynchronize.windows",
   "slug": "dsynchronize-windows",
@@ -4631,6 +5308,53 @@
   "downloads": {
    "official": "https://dimio.altervista.org/eng/",
    "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "DTaskManager",
+  "package": "dtaskmanager.windows",
+  "slug": "dtaskmanager-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware task manager by Dimio with batch process termination, process suspend/resume and forced kill of stubborn processes. Actively maintained (v1.57.32, Oct 2025).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://dimio.altervista.org/eng/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/utilities/dtaskmanager_portable"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
@@ -5726,6 +6450,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FanControl",
+  "package": "fancontrol.windows",
+  "slug": "fancontrol-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware fan control tool by Remi Mercier (Rem0o) that builds custom fan curves from temperature sensors for CPU, GPU and case fans. It is free for personal, non-commercial use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Rem0o/FanControl.Releases",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -8361,6 +9129,50 @@
   "sibling_package": null
  },
  {
+  "name": "GeekUninstaller",
+  "package": "geekuninstaller.windows",
+  "slug": "geekuninstaller-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware uninstaller by Thomas Koen that removes programs completely, including leftover files and registry traces, with forced removal for broken installs. Actively maintained (v1.5.5.185, Sep 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://geekuninstaller.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free edition uninstalls programs and removes leftover files and registry traces with no ads or nags; Pro adds batch uninstall and forced uninstall.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Gemini Notebook",
   "package": "com.google.android.apps.labs.language.tailwind",
   "slug": "com-google-android-apps-labs-language-tailwind",
@@ -9053,6 +9865,48 @@
   "sibling_package": null
  },
  {
+  "name": "GPU-Z",
+  "package": "gpu.z.windows",
+  "slug": "gpu-z-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware graphics profiler by TechPowerUp that reports detailed GPU specifications, clock speeds, temperatures and sensor readings. There is no paid version and donations are optional.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Gramophone",
   "package": "org.akanework.gramophone",
   "slug": "org-akanework-gramophone",
@@ -9377,6 +10231,48 @@
   "sibling_package": null
  },
  {
+  "name": "HDHacker",
+  "package": "hdhacker.windows",
+  "slug": "hdhacker-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Freeware tool by Dimio that saves and restores the master boot record and boot sectors of disks. Latest release is v1.6.2 from July 2017; unmaintained but functional.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://dimio.altervista.org/eng/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "HeliBoard",
   "package": "helium314.keyboard",
   "slug": "helium314-keyboard",
@@ -9579,6 +10475,96 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "HWiNFO",
+  "package": "hwinfo.windows",
+  "slug": "hwinfo-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Hardware information and monitoring tool that reports detailed sensor data for CPU, GPU, memory, drives and mainboard components. It includes real-time monitoring, logging and reporting.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.hwinfo.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "HWiNFO64 is a complete monitoring and reporting product for non-commercial use; the ~$29 Pro adds commercial licensing, remote monitoring and priority support.",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "HWMonitor",
+  "package": "hwmonitor.windows",
+  "slug": "hwmonitor-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware hardware monitor by CPUID that reads voltages, temperatures, fan speeds and power sensors in an expandable tree view.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.cpuid.com/softwares/hwmonitor.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free version covers complete local sensor monitoring; the paid Pro adds remote monitoring, logging and graphing.",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -11352,6 +12338,50 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Kudu",
+  "package": "kudu.windows",
+  "slug": "kudu-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Open source PC maintenance suite (MIT) that cleans junk files, manages startup items and uninstalls programs. The desktop app is complete without donating or subscribing.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://usekudu.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The desktop app is a complete MIT-licensed maintenance suite with no ads or upsells; the $5/device/month Kudu Cloud only adds optional remote monitoring.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -15631,6 +16661,48 @@
   "sibling_package": null
  },
  {
+  "name": "NVDA",
+  "package": "nvda.windows",
+  "slug": "nvda-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "Free and open source screen reader by NV Access that provides spoken and braille feedback for blind and low-vision users. It is GPL-2-or-later licensed and donation-funded.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.nvaccess.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "O&O ShutUp10++",
   "package": "o.o.shutup10.windows",
   "slug": "o-o-shutup10-windows",
@@ -15949,6 +17021,90 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "On-Screen Keyboard",
+  "package": "on.screen.keyboard.windows",
+  "slug": "on-screen-keyboard-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "PortableApps launcher for the built-in Windows on-screen keyboard that carries settings like hover-to-select and always-on-top from PC to PC. It gives quick access to the system keyboard for accessibility and alternate text entry.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/accessibility/on-screen_keyboard_portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "OneLoupe",
+  "package": "oneloupe.windows",
+  "slug": "oneloupe-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "Portable screen magnifier by SoftwareOK that zooms into the area of the screen around the mouse cursor. It runs without installation and is free for personal and business use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/accessibility/oneloupe-portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -16985,6 +18141,48 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (PCAPdroid - network monitor ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "PCI-Z",
+  "package": "pci.z.windows",
+  "slug": "pci-z-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware utility by Bruno Banelli that identifies PCI and PCI-E devices, including unknown ones, using the public PCI ID repository. It is a single portable executable; latest release v2.0 (2017), unmaintained but functional.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.pci-z.com/current/PCI-Z.exe",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -18209,6 +19407,219 @@
   "sibling_package": null
  },
  {
+  "name": "PrivaZer",
+  "package": "privazer.windows",
+  "slug": "privazer-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware privacy cleaner that removes traces of computer and internet activity and can securely erase files. The free version is complete and donation-funded with no nag screens.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://privazer.com/en/downloadupdate.php",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free version is a complete cleaner with no nagware; the $10+ Donors version adds early access to updates and extra features.",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Process Explorer",
+  "package": "process.explorer.windows",
+  "slug": "process-explorer-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals task manager replacement showing which files, registry keys and DLLs each process has open, with a tree view and per-process details. A standard diagnostic tool.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Process Hacker",
+  "package": "process.hacker.windows",
+  "slug": "process-hacker-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Open source advanced task manager (GPL-3.0) for monitoring processes, services, network connections and memory in depth.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/winsiderss/systeminformer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Process Monitor",
+  "package": "process.monitor.windows",
+  "slug": "process-monitor-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that logs file system, registry, process and network activity in real time with powerful filtering. The essential Windows troubleshooting utility.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "ProcessKO",
+  "package": "processko.windows",
+  "slug": "processko-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware process killer by SoftwareOK that terminates or restarts hanging processes from the system tray, with favorites and an automatic KO timer. Actively maintained (v6.77, Jul 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.softwareok.com/?seite=Freeware/ProcessKO",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Productivity System: timeto.me",
   "package": "me.timeto.app",
   "slug": "me-timeto-app",
@@ -18825,6 +20236,48 @@
   "sibling_package": null
  },
  {
+  "name": "QuickMemoryTestOK",
+  "package": "quickmemorytestok.windows",
+  "slug": "quickmemorytestok-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware RAM tester by SoftwareOK that quickly checks memory for errors and displays module details like manufacturer, serial number and clock frequency. Actively maintained (v5.41, Mar 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.softwareok.com/?seite=Microsoft/QuickMemoryTestOK",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Quiet Grid",
   "package": "com.quietgrid.app",
   "slug": "com-quietgrid-app",
@@ -18934,6 +20387,90 @@
   "rating": null,
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "QwikMark",
+  "package": "qwikmark.windows",
+  "slug": "qwikmark-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware single-screen benchmark by Vista Software that tests CPU, memory and disk throughput in one window. The project was abandoned at v0.4 (2012) but remains functional.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/utilities/qwikmark-portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "RAMMap",
+  "package": "rammap.windows",
+  "slug": "rammap-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that analyzes physical memory usage across tabs like Use Counts, Processes and File Summary. It shows exactly how Windows allocates RAM.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/rammap",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "made_by_us": false,
@@ -19147,6 +20684,51 @@
   "sibling_package": null
  },
  {
+  "name": "Recuva",
+  "package": "recuva.windows",
+  "slug": "recuva-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Freeware file recovery tool by Piriform (Gen Digital) that restores deleted files from disks, USB drives and memory cards with a step-by-step wizard.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.ccleaner.com/recuva/download/standard",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free edition recovers unlimited data; the paid Professional adds virtual hard drive support, automatic updates and premium support.",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Red Moon",
   "package": "com.jmstudios.redmoon",
   "slug": "com-jmstudios-redmoon",
@@ -19298,6 +20880,90 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "RegAlyzer",
+  "package": "regalyzer.windows",
+  "slug": "regalyzer-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware registry editor by Safer-Networking with advanced search, bookmarks, favorites and registry comparison features.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://safer-networking.org/products/regalyzer/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Regshot",
+  "package": "regshot.windows",
+  "slug": "regshot-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Open source snapshot tool that compares registry and file system states before and after changes to show exactly what an installer modified. The maintained GitHub fork states MIT; SourceForge lists LGPL-2.0.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/Seabreg/Regshot",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -19625,6 +21291,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Rufus",
+  "package": "rufus.windows",
+  "slug": "rufus-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source utility that creates bootable USB drives from ISO images for Windows and Linux installs. It is GPL-3.0 licensed and runs as a single portable executable.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://rufus.ie",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -21237,6 +22945,48 @@
   "sibling_package": null
  },
  {
+  "name": "SSD-Z",
+  "package": "ssd.z.windows",
+  "slug": "ssd-z-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Freeware SSD information tool that reports drive model, firmware, S.M.A.R.T. attributes and controller details. Latest release is the 16.09.09b beta from 2016.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "StackNotes",
   "package": "stacknotes.windows",
   "slug": "stacknotes-windows",
@@ -21306,6 +23056,53 @@
   },
   "rating": 4.6,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Startup Sentinel",
+  "package": "startup.sentinel.windows",
+  "slug": "startup-sentinel-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware startup manager by KC Softwares that watches for programs adding themselves to autostart and lets you approve, reject or blacklist them. It is a self-contained local tool with no paid tier or upsells.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.kcsoftwares.com/?home",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/node/64610"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -21511,6 +23308,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "StressMyPC",
+  "package": "stressmypc.windows",
+  "slug": "stressmypc-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware stress tester by SoftwareOK that loads the CPU, GPU and hard drive to test system stability and laptop battery endurance. Actively maintained (v5.88, May 2026).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.softwareok.com/?Download=StressMyPC",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -21924,6 +23763,48 @@
    "open_source": true,
    "offline": true,
    "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "System Informer",
+  "package": "system.informer.windows",
+  "slug": "system-informer-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Open source task and system manager (GPL-3.0), formerly Process Hacker, for deep monitoring of processes, services, drivers and network activity. Actively developed.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/winsiderss/systeminformer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -23256,6 +25137,48 @@
   "sibling_package": null
  },
  {
+  "name": "UNetbootin",
+  "package": "unetbootin.windows",
+  "slug": "unetbootin-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source tool that creates bootable USB drives for Linux distributions. It is GPL-2.0-or-later licensed; the latest stable release (702) dates from Feb 2021 but it remains functional.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://unetbootin.github.io",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Unexpected Keyboard",
   "package": "juloo.keyboard2",
   "slug": "juloo-keyboard2",
@@ -23701,6 +25624,48 @@
   "sibling_package": null
  },
  {
+  "name": "Ventoy",
+  "package": "ventoy.windows",
+  "slug": "ventoy-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source tool that turns a USB drive into a multiboot device by simply copying ISO files onto it, with no reformatting. It is GPL-3.0-or-later licensed.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.ventoy.net/en/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "VeraCrypt",
   "package": "veracrypt.windows",
   "slug": "veracrypt-windows",
@@ -23825,6 +25790,48 @@
   "sibling_package": null
  },
  {
+  "name": "Virtual Magnifying Glass",
+  "package": "virtual.magnifying.glass.windows",
+  "slug": "virtual-magnifying-glass-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Accessibility",
+  "description": "Open source screen magnifier that shows a zoomed view of the area under the mouse cursor in a floating window. It works on any application without installation.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://magnifier.sourceforge.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Virtual Volumes View",
   "package": "virtual.volumes.view.windows",
   "slug": "virtual-volumes-view-windows",
@@ -23934,6 +25941,48 @@
   "rating": "4.05",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "VMMap",
+  "package": "vmmap.windows",
+  "slug": "vmmap-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that breaks down a process's virtual and physical memory by type, such as heap, stack, image and mapped files. Useful for finding memory leaks.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/vmmap",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -24238,6 +26287,48 @@
   "sibling_package": null
  },
  {
+  "name": "WhatChanged",
+  "package": "whatchanged.windows",
+  "slug": "whatchanged-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware tool by Vista Software that scans the registry and file system for changes between two snapshots. Latest release is from 2010; unmaintained but functional, free for personal and business use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/utilities/whatchanged-portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "whoBIRD",
   "package": "org.woheller69.whobird",
   "slug": "org-woheller69-whobird",
@@ -24321,6 +26412,48 @@
   "sibling_package": null
  },
  {
+  "name": "WhyNotWin11",
+  "package": "whynotwin11.windows",
+  "slug": "whynotwin11-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Open source (LGPL-3.0) detection tool that checks which Windows 11 requirements a PC fails, such as TPM, Secure Boot, CPU generation and storage. It runs as a single executable with no ads.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/rcmaehl/WhyNotWin11/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Wikipedia",
   "package": "org.wikipedia",
   "slug": "org-wikipedia",
@@ -24360,6 +26493,90 @@
   "sibling_package": null
  },
  {
+  "name": "WinCDEmu",
+  "package": "wincdemu.windows",
+  "slug": "wincdemu-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source virtual disc tool that mounts ISO, CUE, NRG and other image files as virtual CD and DVD drives. It is LGPL-3.0 licensed; unmaintained since 2015 but functional.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://wincdemu.sysprogs.org/portable/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WinContig",
+  "package": "wincontig.windows",
+  "slug": "wincontig-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Freeware defragmenter by Marco D'Amato that defragments individual files or folders instead of whole disks. It is free for personal and business use with no ads or upsells.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.mdtzone.it/sw/wincontig/en/index.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "WinDirStat",
   "package": "windirstat.windows",
   "slug": "windirstat-windows",
@@ -24383,6 +26600,48 @@
   },
   "downloads": {
    "official": "https://windirstat.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Windows Error Lookup Tool",
+  "package": "windows.error.lookup.tool.windows",
+  "slug": "windows-error-lookup-tool-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Open source (GPL-3.0) error code lookup tool that translates Windows, NTSTATUS, DirectX and STOP codes into readable descriptions. It is portable and actively maintained.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/henrypp/errorlookup",
    "alternatives": []
   },
   "rating": null,
@@ -24536,6 +26795,48 @@
   "sibling_package": null
  },
  {
+  "name": "WinObj",
+  "package": "winobj.windows",
+  "slug": "winobj-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals viewer for the NT Object Manager namespace, showing devices, drivers, symbolic links and other kernel objects. It is the definitive tool for exploring the object directory.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://learn.microsoft.com/en-us/sysinternals/downloads/winobj",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "WinSCP",
   "package": "winscp.windows",
   "slug": "winscp-windows",
@@ -24648,6 +26949,48 @@
   "rating": null,
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Wise Disk Cleaner",
+  "package": "wise.disk.cleaner.windows",
+  "slug": "wise-disk-cleaner-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Freeware junk-file cleaner by WiseCleaner that removes temporary files, browser traces and other clutter to free disk space. The official site states the free edition is completely free with lifetime updates.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://www.wisecleaner.com/wise-disk-cleaner.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "made_by_us": false,
@@ -24785,6 +27128,94 @@
   "needs_account": false,
   "personal_use": false,
   "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Wise Program Uninstaller",
+  "package": "wise.program.uninstaller.windows",
+  "slug": "wise-program-uninstaller-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware uninstaller by WiseCleaner that removes desktop programs, Windows apps and browser extensions, with force uninstall for broken entries.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.wisecleaner.com/wise-program-uninstaller.html",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free edition is a complete uninstaller with leftover cleanup, force uninstall and no ads, per TechRadar and Gizmodo reviews.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Wise Registry Cleaner",
+  "package": "wise.registry.cleaner.windows",
+  "slug": "wise-registry-cleaner-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Maintenance",
+  "description": "Freeware registry cleaner by WiseCleaner that scans for invalid entries, backs up changes before cleaning and defragments the registry.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.wisecleaner.com/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free edition is a complete registry cleaner; Pro adds multi-user scanning and priority support.",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [
+   "free enough"
+  ],
   "needs_review": false,
   "review_notes": "",
   "sibling_package": null
@@ -25106,6 +27537,132 @@
   },
   "downloads": {
    "official": "http://www.yubico.com/products/yubico-authenticator/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "YUMI exFAT",
+  "package": "yumi.exfat.windows",
+  "slug": "yumi-exfat-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source multiboot USB creator (GPL) for exFAT-formatted drives that boots multiple operating systems from one USB stick. Latest release v1.0.2.4 (Oct 2023).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "YUMI Legacy",
+  "package": "yumi.legacy.windows",
+  "slug": "yumi-legacy-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source multiboot USB creator (GPL-2.0) that installs multiple Linux distributions and tools on one drive. Archived at v2.0.9.4 (Jan 2022); the publisher recommends the exFAT variant for current use.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "YUMI UEFI",
+  "package": "yumi.uefi.windows",
+  "slug": "yumi-uefi-windows",
+  "category": "System",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Disks",
+  "description": "Open source multiboot USB creator (GPL-2.0) with UEFI support. It remains an archived preview at v0.0.4.5 (Mar 2022).",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
    "alternatives": []
   },
   "rating": null,

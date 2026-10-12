@@ -100,6 +100,25 @@
   "notes": ""
  },
  {
+  "name": "Autoruns",
+  "package": "autoruns.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that shows every program configured to start automatically with Windows and lets you disable entries. It covers the registry, startup folders, services, drivers and scheduled tasks.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "BabelPad",
   "package": "babelpad.windows",
   "platform": "windows",
@@ -117,6 +136,25 @@
    "needs_account": false
   },
   "notes": "Author asks users to download only from babelstone.co.uk and does not support third-party distributions. Verified free for commercial use on the official page."
+ },
+ {
+  "name": "Balabolka",
+  "package": "balabolka.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "Freeware text-to-speech program that reads documents aloud using installed Windows voices and can save speech to audio files. It supports many file formats, custom dictionaries and pronunciation rules.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.cross-plus-a.com/balabolka.htm",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Donations are accepted; the separate paid product Cross+A is unrelated to the free Balabolka."
  },
  {
   "name": "Bitwarden Desktop",
@@ -152,6 +190,25 @@
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "BleachBit",
+  "package": "bleachbit.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Open source privacy cleaner (GPL-3.0) that deletes caches, temp files, cookies and history from browsers and the system. It has no ads, accounts or paid tier.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.bleachbit.org",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "notes": ""
@@ -252,6 +309,63 @@
   "notes": "UNCERTAIN: bundled engine is 0.103.2.1 (stale since 2021-06); an unverified third-party claim says ClamAV blocks database updates for engines at or below 0.105, which would leave it unable to fetch current signatures. Could not verify."
  },
  {
+  "name": "Coreinfo",
+  "package": "coreinfo.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals command-line utility that maps logical processors to physical cores, NUMA nodes, sockets and caches. Actively maintained (v4.0, Dec 2025).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "CPU-Z",
+  "package": "cpu.z.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware system profiler by CPUID that reports detailed information about the CPU, motherboard, memory and graphics. The free edition is complete with no paid version.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.cpuid.com/softwares/cpu-z.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Caution: CPUID's site suffered a watering-hole compromise on Apr 9-10 2026 that served trojanized CPU-Z 2.19 and HWMonitor installers; fixed since. Download only from cpuid.com and verify SHA256 checksums."
+ },
+ {
+  "name": "CpuFrequenz",
+  "package": "cpufrequenz.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware tool by SoftwareOK that shows CPU load and clock frequency in real time with a load graph and a precise frequency determination mode. Actively maintained (v4.55, Apr 2026).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.softwareok.com/?seite=Microsoft/CpuFrequenz",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Cryptomator",
   "package": "cryptomator.windows",
   "platform": "windows",
@@ -266,6 +380,201 @@
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "CrystalDiskInfo",
+  "package": "crystaldiskinfo.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source disk health monitor that reads S.M.A.R.T. data and shows drive temperature, error counts and overall health status. It is MIT licensed with no paid tier.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://crystalmark.info/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "CrystalDiskMark",
+  "package": "crystaldiskmark.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source disk benchmark that measures sequential and random read and write speeds of storage devices. It is MIT licensed and fully functional with no paid tier.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://crystalmark.info/en/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "CrystalMark Retro",
+  "package": "crystalmark.retro.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Open source benchmark (GPL) by Crystal Dew World that measures CPU, disk, 2D and 3D performance with one click on Windows 95 through 11. The full benchmark runs locally with no account needed.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://crystalmark.info/en/software/crystalmarkretro/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/utilities/crystalmark-retro-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Submitting scores to the optional CrystalMarkDB comparison site requires a free account; the benchmark itself needs none."
+ },
+ {
+  "name": "Daphne",
+  "package": "daphne.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Open source process manager (GPL, source published on the author's site) that can kill, debug and control windows, with drag-over-window targeting, always-on-top rules and process traps. Latest release v2.04 (2014); the official site now lists it under legacy.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.drk.com.ar/en/legacy/daphne-windows-task-manager-replacement/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Project is archived/legacy but functional. Per the author, the installers offer no third-party software and the app is free of charge."
+ },
+ {
+  "name": "DebugView",
+  "package": "debugview.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that captures debug output (OutputDebugString and DbgPrint) from drivers and programs in real time. Latest release v4.90 (2019); functional and unmaintained.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/debugview",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Dicom",
+  "package": "dicom.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "Word completion tool that pops up word suggestions after a few keystrokes, reducing typing effort for users with motor and coordination impairments. It ships with English and French dictionaries and custom word lists.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/node/59248",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: PortableApps and AlternativeTo describe Dicom as open source, but no specific OSI license or source repo could be verified. UNCERTAIN: developer Icom Provence's own site could not be found; the PortableApps page above is the sanctioned distribution."
+ },
+ {
+  "name": "Disk Cleaner",
+  "package": "disk.cleaner.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Open source (GPL) junk-file cleaner by R.J. Moerland that removes temp files, caches and histories. The project site diskcleaner.nl redirects to its SourceForge page.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://diskcleaner.nl/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "DiskMon",
+  "package": "diskmon.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Freeware Sysinternals utility that captures hard disk activity and displays it like a software disk activity light in the system tray. It is a tiny standalone executable from Microsoft.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://docs.microsoft.com/en-us/sysinternals/downloads/diskmon",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Don't Sleep",
+  "package": "don.t.sleep.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware tool by SoftwareOK that prevents the PC from sleeping, shutting down, hibernating or restarting, with timer-based rules. Free for personal and business use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com/?Download=DontSleep",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "DSpeech",
+  "package": "dspeech.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "Freeware text-to-speech tool by Dimio that reads clipboard text or documents aloud through Windows voices. It is free for personal and commercial use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://dimio.altervista.org/eng/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "notes": ""
@@ -288,6 +597,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "DTaskManager",
+  "package": "dtaskmanager.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware task manager by Dimio with batch process termination, process suspend/resume and forced kill of stubborn processes. Actively maintained (v1.57.32, Oct 2025).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://dimio.altervista.org/eng/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/utilities/dtaskmanager_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal and business use per PortableApps, packaged with the publisher's permission."
  },
  {
   "name": "Duplicate Files Finder",
@@ -464,6 +797,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "FanControl",
+  "package": "fancontrol.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware fan control tool by Remi Mercier (Rem0o) that builds custom fan curves from temperature sensors for CPU, GPU and case fans. It is free for personal, non-commercial use.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/Rem0o/FanControl.Releases",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Not open source despite the GitHub distribution; the upstream license is proprietary freeware for personal, non-commercial use. No paid tier. The project also runs an official site at getfancontrol.com."
  },
  {
   "name": "FastCopy",
@@ -737,6 +1089,25 @@
   "notes": ""
  },
  {
+  "name": "GeekUninstaller",
+  "package": "geekuninstaller.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware uninstaller by Thomas Koen that removes programs completely, including leftover files and registry traces, with forced removal for broken installs. Actively maintained (v1.5.5.185, Sep 2026).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "The free edition uninstalls programs and removes leftover files and registry traces with no ads or nags; Pro adds batch uninstall and forced uninstall.",
+  "official_url": "https://geekuninstaller.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "GnuCash",
   "package": "gnucash.windows",
   "platform": "windows",
@@ -818,6 +1189,44 @@
   "notes": "a PortableApps add-on packaging GnuPG, not a standalone app; could not verify an official download page."
  },
  {
+  "name": "GPU-Z",
+  "package": "gpu.z.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware graphics profiler by TechPowerUp that reports detailed GPU specifications, clock speeds, temperatures and sensor readings. There is no paid version and donations are optional.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal and commercial use per the TechPowerUp license."
+ },
+ {
+  "name": "HDHacker",
+  "package": "hdhacker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Freeware tool by Dimio that saves and restores the master boot record and boot sectors of disks. Latest release is v1.6.2 from July 2017; unmaintained but functional.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://dimio.altervista.org/eng/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "HijackThis",
   "package": "hijackthis.windows",
   "platform": "windows",
@@ -859,6 +1268,44 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "HWiNFO",
+  "package": "hwinfo.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Hardware information and monitoring tool that reports detailed sensor data for CPU, GPU, memory, drives and mainboard components. It includes real-time monitoring, logging and reporting.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "HWiNFO64 is a complete monitoring and reporting product for non-commercial use; the ~$29 Pro adds commercial licensing, remote monitoring and priority support.",
+  "official_url": "https://www.hwinfo.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for non-commercial use since v7.00; commercial use requires the Pro license."
+ },
+ {
+  "name": "HWMonitor",
+  "package": "hwmonitor.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware hardware monitor by CPUID that reads voltages, temperatures, fan speeds and power sensors in an expandable tree view.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "The free version covers complete local sensor monitoring; the paid Pro adds remote monitoring, logging and graphing.",
+  "official_url": "https://www.cpuid.com/softwares/hwmonitor.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Caution: CPUID's site suffered a watering-hole compromise on Apr 9-10 2026 that served trojanized CPU-Z 2.19 and HWMonitor installers; fixed since. Download only from cpuid.com and verify SHA256 checksums. UNCERTAIN: reported as freeware for non-commercial use by abit.ee; CPUID's own license terms were not re-verified in this pass."
  },
  {
   "name": "Inkscape",
@@ -1074,6 +1521,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Kudu",
+  "package": "kudu.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Open source PC maintenance suite (MIT) that cleans junk files, manages startup items and uninstalls programs. The desktop app is complete without donating or subscribing.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "The desktop app is a complete MIT-licensed maintenance suite with no ads or upsells; the $5/device/month Kudu Cloud only adds optional remote monitoring.",
+  "official_url": "https://usekudu.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Source repo: github.com/AdventDevInc/kudu."
  },
  {
   "name": "Lagrange",
@@ -1380,6 +1846,25 @@
   "notes": "Could not verify the exact OSI license identifier (README asserts fully open source); repo is github.com/nuttyartist/notes."
  },
  {
+  "name": "NVDA",
+  "package": "nvda.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "Free and open source screen reader by NV Access that provides spoken and braille feedback for blind and low-vision users. It is GPL-2-or-later licensed and donation-funded.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.nvaccess.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "O&O ShutUp10++",
   "package": "o.o.shutup10.windows",
   "platform": "windows",
@@ -1391,6 +1876,44 @@
   "personal_use": false,
   "free_enough_reason": "paid ShutUp10 Premium exists, but the free edition applies all privacy toggles; Premium only automates re-applying them after Windows updates.",
   "official_url": "https://www.oo-software.com/en/shutup10",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "On-Screen Keyboard",
+  "package": "on.screen.keyboard.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "PortableApps launcher for the built-in Windows on-screen keyboard that carries settings like hover-to-select and always-on-top from PC to PC. It gives quick access to the system keyboard for accessibility and alternate text entry.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/accessibility/on-screen_keyboard_portable",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "This is a PortableApps launcher for the built-in Windows OSK, not a standalone keyboard app."
+ },
+ {
+  "name": "OneLoupe",
+  "package": "oneloupe.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "Portable screen magnifier by SoftwareOK that zooms into the area of the screen around the mouse cursor. It runs without installation and is free for personal and business use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/accessibility/oneloupe-portable",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
@@ -1478,6 +2001,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "PCI-Z",
+  "package": "pci.z.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware utility by Bruno Banelli that identifies PCI and PCI-E devices, including unknown ones, using the public PCI ID repository. It is a single portable executable; latest release v2.0 (2017), unmaintained but functional.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.pci-z.com/current/PCI-Z.exe",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for business and personal use per PortableApps."
  },
  {
   "name": "PeaZip",
@@ -1613,6 +2155,101 @@
   "notes": "UNCERTAIN: could not verify the current download page; third-party reviews note the standard installer bundles a declinable third-party offer (RelevantKnowledge) - use the Lite build, which ships without sponsors; AlternativeTo flags the project discontinued while other catalogs show a 2026 update."
  },
  {
+  "name": "PrivaZer",
+  "package": "privazer.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware privacy cleaner that removes traces of computer and internet activity and can securely erase files. The free version is complete and donation-funded with no nag screens.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "The free version is a complete cleaner with no nagware; the $10+ Donors version adds early access to updates and extra features.",
+  "official_url": "https://privazer.com/en/downloadupdate.php",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Flagged row given extra scrutiny: no bundled offers, no persistent upgrade nagging and no ads found; the donation prompt is a single optional dialog. Free for personal use; the Donors version is aimed at commercial users."
+ },
+ {
+  "name": "Process Explorer",
+  "package": "process.explorer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals task manager replacement showing which files, registry keys and DLLs each process has open, with a tree view and per-process details. A standard diagnostic tool.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Process Hacker",
+  "package": "process.hacker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Open source advanced task manager (GPL-3.0) for monitoring processes, services, network connections and memory in depth.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/winsiderss/systeminformer",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Process Hacker was renamed to System Informer; this row and the System Informer row cover the same project."
+ },
+ {
+  "name": "Process Monitor",
+  "package": "process.monitor.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that logs file system, registry, process and network activity in real time with powerful filtering. The essential Windows troubleshooting utility.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "ProcessKO",
+  "package": "processko.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware process killer by SoftwareOK that terminates or restarts hanging processes from the system tray, with favorites and an automatic KO timer. Actively maintained (v6.77, Jul 2026).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com/?seite=Freeware/ProcessKO",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "PuTTY",
   "package": "putty.windows",
   "platform": "windows",
@@ -1708,6 +2345,25 @@
   "notes": "Sync is handled externally (e.g. Nextcloud client); no account required for core features."
  },
  {
+  "name": "QuickMemoryTestOK",
+  "package": "quickmemorytestok.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware RAM tester by SoftwareOK that quickly checks memory for errors and displays module details like manufacturer, serial number and clock frequency. Actively maintained (v5.41, Mar 2026).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com/?seite=Microsoft/QuickMemoryTestOK",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "QuiteRSS",
   "package": "quiterss.windows",
   "platform": "windows",
@@ -1725,6 +2381,63 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: dormant since 2020; could not verify the last release works on Windows 11."
+ },
+ {
+  "name": "QwikMark",
+  "package": "qwikmark.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware single-screen benchmark by Vista Software that tests CPU, memory and disk throughput in one window. The project was abandoned at v0.4 (2012) but remains functional.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/utilities/qwikmark-portable",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the author's own site no longer offers the download; PortableApps is the working source and the URL above is their distribution page rather than the developer's site."
+ },
+ {
+  "name": "RAMMap",
+  "package": "rammap.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that analyzes physical memory usage across tabs like Use Counts, Processes and File Summary. It shows exactly how Windows allocates RAM.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/rammap",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Recuva",
+  "package": "recuva.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Freeware file recovery tool by Piriform (Gen Digital) that restores deleted files from disks, USB drives and memory cards with a step-by-step wizard.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "The free edition recovers unlimited data; the paid Professional adds virtual hard drive support, automatic updates and premium support.",
+  "official_url": "https://www.ccleaner.com/recuva/download/standard",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for home use only; commercial use needs a paid license. UNCERTAIN: Piriform installers for sibling products bundle opt-out third-party offers; could not verify whether the current Recuva installer still does."
  },
  {
   "name": "RedNotebook",
@@ -1746,6 +2459,44 @@
   "notes": "PortableApps lists an old RedNotebook Portable (1.15.0, 2017); current releases come from the official site, so no alt added."
  },
  {
+  "name": "RegAlyzer",
+  "package": "regalyzer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware registry editor by Safer-Networking with advanced search, bookmarks, favorites and registry comparison features.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://safer-networking.org/products/regalyzer/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: could not fully verify the current standalone download status of RegAlyzer 2 RC on the Safer-Networking site."
+ },
+ {
+  "name": "Regshot",
+  "package": "regshot.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Open source snapshot tool that compares registry and file system states before and after changes to show exactly what an installer modified. The maintained GitHub fork states MIT; SourceForge lists LGPL-2.0.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/Seabreg/Regshot",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License text discrepancy between the fork (MIT) and SourceForge (LGPLv2); both are OSI licenses."
+ },
+ {
   "name": "RSS Guard",
   "package": "rss.guard.windows",
   "platform": "windows",
@@ -1757,6 +2508,25 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://github.com/martinrotter/rssguard",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Rufus",
+  "package": "rufus.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source utility that creates bootable USB drives from ISO images for Windows and Linux installs. It is GPL-3.0 licensed and runs as a single portable executable.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://rufus.ie",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -1899,6 +2669,25 @@
   "notes": ""
  },
  {
+  "name": "SSD-Z",
+  "package": "ssd.z.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Freeware SSD information tool that reports drive model, firmware, S.M.A.R.T. attributes and controller details. Latest release is the 16.09.09b beta from 2016.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: official site aezay.dk appeared unreachable during verification; could not confirm a current official download URL. Free for personal and business use per the author's license."
+ },
+ {
   "name": "StackNotes",
   "package": "stacknotes.windows",
   "platform": "windows",
@@ -1916,6 +2705,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Startup Sentinel",
+  "package": "startup.sentinel.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware startup manager by KC Softwares that watches for programs adding themselves to autostart and lets you approve, reject or blacklist them. It is a self-contained local tool with no paid tier or upsells.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.kcsoftwares.com/?home",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/node/64610"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "KC Softwares shut down in Oct 2023 and declared all products EOL, but this local tool needs no online service and remains functional; the official site now shows the termination notice. PortableApps packages the latest 1.9.0.28 with the publisher's permission."
  },
  {
   "name": "Stickies",
@@ -1942,6 +2755,25 @@
   "notes": ""
  },
  {
+  "name": "StressMyPC",
+  "package": "stressmypc.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware stress tester by SoftwareOK that loads the CPU, GPU and hard drive to test system stability and laptop battery endurance. Actively maintained (v5.88, May 2026).",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.softwareok.com/?Download=StressMyPC",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Syncthing",
   "package": "syncthing.windows",
   "platform": "windows",
@@ -1953,6 +2785,25 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://syncthing.net",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "System Informer",
+  "package": "system.informer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Open source task and system manager (GPL-3.0), formerly Process Hacker, for deep monitoring of processes, services, drivers and network activity. Actively developed.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/winsiderss/systeminformer",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -2156,6 +3007,44 @@
   "notes": ""
  },
  {
+  "name": "UNetbootin",
+  "package": "unetbootin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source tool that creates bootable USB drives for Linux distributions. It is GPL-2.0-or-later licensed; the latest stable release (702) dates from Feb 2021 but it remains functional.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://unetbootin.github.io",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "Ventoy",
+  "package": "ventoy.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source tool that turns a USB drive into a multiboot device by simply copying ISO files onto it, with no reformatting. It is GPL-3.0-or-later licensed.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.ventoy.net/en/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Wikipedia notes parts of the project ecosystem are only partially open source; the core tool is GPL-3.0-or-later."
+ },
+ {
   "name": "VeraCrypt",
   "package": "veracrypt.windows",
   "platform": "windows",
@@ -2175,6 +3064,25 @@
   "notes": ""
  },
  {
+  "name": "Virtual Magnifying Glass",
+  "package": "virtual.magnifying.glass.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Accessibility",
+  "description": "Open source screen magnifier that shows a zoomed view of the area under the mouse cursor in a floating window. It works on any application without installation.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://magnifier.sourceforge.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0 licensed project on SourceForge."
+ },
+ {
   "name": "Virtual Volumes View",
   "package": "virtual.volumes.view.windows",
   "platform": "windows",
@@ -2189,6 +3097,25 @@
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "VMMap",
+  "package": "vmmap.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals tool that breaks down a process's virtual and physical memory by type, such as heap, stack, image and mapped files. Useful for finding memory leaks.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/vmmap",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "notes": ""
@@ -2218,6 +3145,25 @@
   "notes": "original site offline; could not verify an official download page."
  },
  {
+  "name": "WhatChanged",
+  "package": "whatchanged.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware tool by Vista Software that scans the registry and file system for changes between two snapshots. Latest release is from 2010; unmaintained but functional, free for personal and business use.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/utilities/whatchanged-portable",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Developer site no longer offers the download; PortableApps is the working source."
+ },
+ {
   "name": "WhoDat",
   "package": "whodat.windows",
   "platform": "windows",
@@ -2237,6 +3183,63 @@
   "notes": "last release 0.9 (2013); could not verify an active developer site; distributed via PortableApps.com; UNCERTAIN whether it works on Windows 11."
  },
  {
+  "name": "WhyNotWin11",
+  "package": "whynotwin11.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Open source (LGPL-3.0) detection tool that checks which Windows 11 requirements a PC fails, such as TPM, Secure Boot, CPU generation and storage. It runs as a single executable with no ads.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/rcmaehl/WhyNotWin11/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinCDEmu",
+  "package": "wincdemu.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source virtual disc tool that mounts ISO, CUE, NRG and other image files as virtual CD and DVD drives. It is LGPL-3.0 licensed; unmaintained since 2015 but functional.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://wincdemu.sysprogs.org/portable/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinContig",
+  "package": "wincontig.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Freeware defragmenter by Marco D'Amato that defragments individual files or folders instead of whole disks. It is free for personal and business use with no ads or upsells.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.mdtzone.it/sw/wincontig/en/index.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "WinDirStat",
   "package": "windirstat.windows",
   "platform": "windows",
@@ -2254,6 +3257,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Windows Error Lookup Tool",
+  "package": "windows.error.lookup.tool.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Open source (GPL-3.0) error code lookup tool that translates Windows, NTSTATUS, DirectX and STOP codes into readable descriptions. It is portable and actively maintained.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/henrypp/errorlookup",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the row name matches 'Windows Error Lookup Tool' by Gunners Software (freeware, unmaintained since v3.0.7 in 2013); this verdict covers the distinct, actively maintained 'Error Lookup' by Henry++, which fits the row's description."
  },
  {
   "name": "WinFile",
@@ -2302,6 +3324,25 @@
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "WinObj",
+  "package": "winobj.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Monitor",
+  "description": "Freeware Sysinternals viewer for the NT Object Manager namespace, showing devices, drivers, symbolic links and other kernel objects. It is the definitive tool for exploring the object directory.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/winobj",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "notes": ""
@@ -2364,6 +3405,25 @@
   "notes": ""
  },
  {
+  "name": "Wise Disk Cleaner",
+  "package": "wise.disk.cleaner.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Freeware junk-file cleaner by WiseCleaner that removes temporary files, browser traces and other clutter to free disk space. The official site states the free edition is completely free with lifetime updates.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://www.wisecleaner.com/wise-disk-cleaner.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
   "name": "Wise Duplicate Finder",
   "package": "wise.duplicate.finder.windows",
   "platform": "windows",
@@ -2421,6 +3481,44 @@
   "notes": ""
  },
  {
+  "name": "Wise Program Uninstaller",
+  "package": "wise.program.uninstaller.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware uninstaller by WiseCleaner that removes desktop programs, Windows apps and browser extensions, with force uninstall for broken entries.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "The free edition is a complete uninstaller with leftover cleanup, force uninstall and no ads, per TechRadar and Gizmodo reviews.",
+  "official_url": "https://www.wisecleaner.com/wise-program-uninstaller.html",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: third-party pages (an IObit comparison, coupon listings) reference a newer paid Pro tier (~$9.97/yr) adding deeper leftover scanning and support; could not verify its feature split on the official site."
+ },
+ {
+  "name": "Wise Registry Cleaner",
+  "package": "wise.registry.cleaner.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "System",
+  "subcategory": "Maintenance",
+  "description": "Freeware registry cleaner by WiseCleaner that scans for invalid entries, backs up changes before cleaning and defragments the registry.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "The free edition is a complete registry cleaner; Pro adds multi-user scanning and priority support.",
+  "official_url": "https://www.wisecleaner.com/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: the product page URL could not be captured verbatim, so the official homepage is used above. Could not verify whether the free edition shows Pro upgrade prompts."
+ },
+ {
   "name": "WizFile",
   "package": "wizfile.windows",
   "platform": "windows",
@@ -2476,6 +3574,63 @@
    "needs_account": false
   },
   "notes": "requires a YubiKey hardware key; could not verify the exact OSI license from search results."
+ },
+ {
+  "name": "YUMI exFAT",
+  "package": "yumi.exfat.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source multiboot USB creator (GPL) for exFAT-formatted drives that boots multiple operating systems from one USB stick. Latest release v1.0.2.4 (Oct 2023).",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "YUMI Legacy",
+  "package": "yumi.legacy.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source multiboot USB creator (GPL-2.0) that installs multiple Linux distributions and tools on one drive. Archived at v2.0.9.4 (Jan 2022); the publisher recommends the exFAT variant for current use.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
+ },
+ {
+  "name": "YUMI UEFI",
+  "package": "yumi.uefi.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "System",
+  "subcategory": "Disks",
+  "description": "Open source multiboot USB creator (GPL-2.0) with UEFI support. It remains an archived preview at v0.0.4.5 (Mar 2022).",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": ""
  },
  {
   "name": "Zettlr",
