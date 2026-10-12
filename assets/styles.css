@@ -459,6 +459,16 @@ a.store-badge:hover { filter: brightness(0.96); }
 .detail-card h2 { font-size: 1.05rem; margin: 22px 0 10px; }
 .get-it { display: flex; flex-wrap: wrap; gap: 10px; }
 .store-badge.big { font-size: 0.95rem; padding: 10px 20px; }
+.dl-official {
+  display: inline-block;
+  font-size: 0.95rem; font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+.dl-official:hover { filter: brightness(0.94); }
 .per-badge-note {
   background: var(--accent-soft);
   border-radius: 12px;

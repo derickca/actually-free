@@ -377,10 +377,15 @@ def clean_record(rec):
         "github": stores.get("github") or None,
         "openapk": stores.get("openapk") or None,
     }
-    # Money promises the listed build keeps. Every strict listing satisfies
-    # all six (it's the inclusion bar). Free Enough apps are ad-free by
-    # rule, but honestly report their IAP/subscription labels instead of
-    # claiming promises they don't keep.
+    # Windows download sources: the official developer site is the primary
+    # download; stores and package managers are labeled alternatives.
+    dl_alts = []
+    for alt in rec.get("alt_downloads") or []:
+        if isinstance(alt, dict) and alt.get("url"):
+            dl_alts.append({"label": alt.get("label") or "Download",
+                            "url": alt["url"]})
+    downloads = {"official": rec.get("official_url") or None,
+                 "alternatives": dl_alts}
     if free_enough:
         has_iap = bool(rec.get("has_iap"))
         promises = {"no_ads": True, "no_iap": not has_iap,
@@ -423,6 +428,7 @@ def clean_record(rec):
         "subcategory": subcategory,
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
+        "downloads": downloads,
         "rating": ver.get("play_rating"),
         "attrs": attrs,
         "made_by_us": bool(rec.get("made_by_us")),
@@ -802,6 +808,23 @@ def store_badges(app, big=False):
     return "\n".join(parts)
 
 
+def windows_downloads(app):
+    """Download buttons for Windows listings: the official developer site
+    is the primary call to action; stores and package managers are labeled
+    alternatives, not trust endorsements."""
+    dl = app.get("downloads") or {}
+    parts = []
+    if dl.get("official"):
+        parts.append(
+            f'<a class="dl-official" href="{esc(dl["official"])}" '
+            f'rel="noopener">Download from the developer</a>')
+    for alt in dl.get("alternatives") or []:
+        parts.append(
+            f'<a class="store-badge big" href="{esc(alt["url"])}" '
+            f'rel="noopener">{esc(alt["label"])}</a>')
+    return "\n".join(parts)
+
+
 ATTR_LABELS = {"open_source": "Open source",
                "offline": "Works offline",
                "no_account": "No account needed"}
@@ -868,6 +891,8 @@ def build_detail(app, forms):
               if app.get("needs_review") else "")
     desc_html = (f'<p class="desc">{esc(app["description"])}</p>'
                  if app.get("description") else "")
+    get_it = (windows_downloads(app) if app.get("platform") == "windows"
+              else store_badges(app, big=True))
     plat = app.get("platform") or "android"
     plat_name = PLATFORM_NAMES.get(plat, "Android")
     platform_line = (
@@ -895,7 +920,7 @@ def build_detail(app, forms):
     {review}
     <h2>Get it</h2>
     <div class="get-it">
-{store_badges(app, big=True)}
+{get_it}
     </div>
     {per_badge}
     {personal_note}
@@ -1461,6 +1486,16 @@ a.store-badge:hover { filter: brightness(0.96); }
 .detail-card h2 { font-size: 1.05rem; margin: 22px 0 10px; }
 .get-it { display: flex; flex-wrap: wrap; gap: 10px; }
 .store-badge.big { font-size: 0.95rem; padding: 10px 20px; }
+.dl-official {
+  display: inline-block;
+  font-size: 0.95rem; font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+.dl-official:hover { filter: brightness(0.94); }
 .per-badge-note {
   background: var(--accent-soft);
   border-radius: 12px;

@@ -21,6 +21,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -54,6 +58,10 @@
    "izzy": null,
    "github": "https://github.com/andstatus/game2048",
    "openapk": "https://www.openapk.net/2048-open-fun-game/org.andstatus.game2048/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -91,6 +99,10 @@
    "github": "https://codeberg.org/979/2fa",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -124,6 +136,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -161,6 +177,10 @@
    "github": "https://github.com/divVerent/aaaaxy",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -196,6 +216,10 @@
    "izzy": null,
    "github": "https://github.com/itkach/aard2-android",
    "openapk": "https://www.openapk.net/aard-2/itkach.aard2/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.26",
   "attrs": {
@@ -234,6 +258,10 @@
    "github": "https://github.com/sdex/ActivityManager",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -269,6 +297,10 @@
    "izzy": null,
    "github": "https://github.com/AdAway/AdAway",
    "openapk": "https://www.openapk.net/adaway/org.adaway/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -306,6 +338,10 @@
    "github": "https://github.com/beemdevelopment/Aegis",
    "openapk": "https://www.openapk.net/aegis-authenticator/com.beemdevelopment.aegis/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.69",
   "attrs": {
    "open_source": true
@@ -341,6 +377,10 @@
    "izzy": null,
    "github": "https://github.com/meypod/al-quran",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -378,6 +418,10 @@
    "github": "https://github.com/kraigs-android/kraigsandroid",
    "openapk": "https://www.openapk.net/alarm-klock/com.angrydoughnuts.android.alarmclock/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -413,6 +457,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -450,6 +498,10 @@
    "github": "https://github.com/TeamAmaze/AmazeFileManager",
    "openapk": "https://www.openapk.net/amaze/com.amaze.filemanager/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "3.58",
   "attrs": {
    "open_source": true
@@ -485,6 +537,10 @@
    "izzy": null,
    "github": "https://github.com/AndBible/and-bible",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {
@@ -523,6 +579,10 @@
    "github": "https://github.com/AndorsTrailRelease/andors-trail",
    "openapk": "https://www.openapk.net/andors-trail/com.gpl.rpg.AndorsTrail/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {
    "open_source": true
@@ -559,6 +619,10 @@
    "github": "https://github.com/ankidroid/Anki-Android",
    "openapk": "https://www.openapk.net/ankidroid/com.ichi2.anki/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -592,6 +656,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -629,6 +697,10 @@
    "github": "https://github.com/AntennaPod/AntennaPod",
    "openapk": "https://www.openapk.net/antennapod/de.danoeh.antennapod/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.84",
   "attrs": {
    "open_source": true
@@ -664,6 +736,10 @@
    "izzy": null,
    "github": "https://github.com/RisorseArtificiali/anti-vocale",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -701,6 +777,10 @@
    "github": "https://github.com/mjaun/android-anuto",
    "openapk": "https://www.openapk.net/anuto-td/ch.logixisland.anuto/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.1,
   "attrs": {
    "open_source": true
@@ -737,6 +817,10 @@
    "github": "https://github.com/rumboalla/apkupdater",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -770,6 +854,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/remix.myplayer",
    "github": "https://github.com/rRemix/APlayer",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {
@@ -807,6 +895,10 @@
    "github": "https://github.com/MuntashirAkon/AppManager",
    "openapk": "https://www.openapk.net/app-manager-android-package-manager/io.github.muntashirakon.AppManager/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -842,6 +934,10 @@
    "izzy": null,
    "github": "https://github.com/ArcaneChat/android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -879,6 +975,10 @@
    "github": "https://github.com/rukamori/ArchiveTune",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -913,6 +1013,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -946,6 +1050,10 @@
    "izzy": null,
    "github": "https://github.com/poppingmoon/aria",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -982,6 +1090,10 @@
    "izzy": null,
    "github": "https://github.com/sidhant947/arrowescape",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1020,6 +1132,10 @@
    "github": "https://github.com/mlm-games/asteroids-revenge",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -1055,6 +1171,10 @@
    "izzy": null,
    "github": "https://github.com/PubDeer/astro-loop",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1092,6 +1212,10 @@
    "github": "https://github.com/retransmit/Atrium",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -1127,6 +1251,10 @@
    "izzy": null,
    "github": "https://github.com/Dimowner/AudioRecorder",
    "openapk": "https://www.openapk.net/audio-recorder/com.dimowner.audiorecorder/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.09",
   "attrs": {
@@ -1164,6 +1292,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/aurora-store/com.aurora.store/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -1198,6 +1330,10 @@
    "github": "https://github.com/stratumauth/app",
    "openapk": "https://www.openapk.net/authenticator-pro/me.jmh.authenticatorpro/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -1231,6 +1367,10 @@
    "izzy": null,
    "github": "https://github.com/OxygenCobalt/Auxio",
    "openapk": "https://www.openapk.net/auxio/org.oxycblt.auxio/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1268,6 +1408,10 @@
    "github": "https://github.com/gujjwal00/avnc",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {
    "open_source": true
@@ -1304,6 +1448,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 5.0,
   "attrs": {},
   "made_by_us": false,
@@ -1337,6 +1485,10 @@
    "izzy": null,
    "github": "https://github.com/rw-account/baly_groceries_tracker",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1374,6 +1526,10 @@
    "github": "https://github.com/czy0729/Bangumi",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -1409,6 +1565,10 @@
    "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/barcode-scanner/com.atharok.barcodescanner/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.09",
   "attrs": {
@@ -1446,6 +1606,10 @@
    "github": "https://github.com/chenxiaolong/BasicSync",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -1481,6 +1645,10 @@
    "izzy": null,
    "github": "https://github.com/brandonp2412/BeatBridge",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1518,6 +1686,10 @@
    "github": "https://github.com/albertvaka/bettercounter",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 5.0,
   "attrs": {
    "open_source": true
@@ -1553,6 +1725,10 @@
    "izzy": null,
    "github": "https://github.com/markusfisch/BinaryEye",
    "openapk": "https://www.openapk.net/binary-eye/de.markusfisch.android.binaryeye/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.84",
   "attrs": {
@@ -1590,6 +1766,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -1623,6 +1803,10 @@
    "izzy": null,
    "github": "https://github.com/permissionlesstech/bitchat-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1660,6 +1844,10 @@
    "github": "https://github.com/bitwarden/mobile",
    "openapk": "https://www.openapk.net/bitwarden/com.x8bit.bitwarden/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.73",
   "attrs": {},
   "made_by_us": false,
@@ -1695,6 +1883,10 @@
    "izzy": null,
    "github": "https://github.com/SoltauFintel/blockpuzzle",
    "openapk": "https://www.openapk.net/block-puzzle-stone-wars/de.mwvb.blockpuzzle/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1732,6 +1924,10 @@
    "github": "https://github.com/brandonp2412/BlockDrop",
    "openapk": "https://www.openapk.net/blockdrop/com.blockdrop.game/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -1768,6 +1964,10 @@
    "github": "https://github.com/HemantKArya/BloomeeTunes",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -1801,6 +2001,10 @@
    "izzy": null,
    "github": "https://github.com/christianjuth/blorp",
    "openapk": "https://www.openapk.net/blorp/xyz.blorpblorp.app/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1838,6 +2042,10 @@
    "github": "https://github.com/rdOxalis/bluesoundplayer",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -1874,6 +2082,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -1907,6 +2119,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.breezyweather",
    "github": "https://github.com/breezy-weather/breezy-weather",
    "openapk": "https://www.openapk.net/breezy-weather/org.breezyweather/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -1944,6 +2160,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/briar/org.briarproject.briar.android/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -1977,6 +2197,10 @@
    "izzy": null,
    "github": "https://github.com/woheller69/level",
    "openapk": "https://www.openapk.net/bubble/org.woheller69.level/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2014,6 +2238,10 @@
    "github": "https://github.com/rsquared226/budget_my_life",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -2047,6 +2275,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2084,6 +2316,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -2117,6 +2353,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.capyreader.app",
    "github": "https://github.com/jocmp/capyreader",
    "openapk": "https://www.openapk.net/capy-reader/com.capyreader.app/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.77",
   "attrs": {
@@ -2154,6 +2394,10 @@
    "github": "https://github.com/GeorgeYT9769/cardabase-app",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -2189,6 +2433,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/me.hackerchick.catima",
    "github": "https://github.com/CatimaLoyalty/Android",
    "openapk": "https://www.openapk.net/catima-loyalty-card-wallet/me.hackerchick.catima/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.8,
   "attrs": {
@@ -2226,6 +2474,10 @@
    "github": "https://github.com/mlm-games/cclauncher",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -2261,6 +2513,10 @@
    "izzy": null,
    "github": "https://github.com/elementdavv/chaka",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2298,6 +2554,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -2334,6 +2594,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -2367,6 +2631,10 @@
    "izzy": null,
    "github": "https://github.com/choganhq/chogan",
    "openapk": "https://www.openapk.net/chogan/io.github.choganhq.chogan/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2404,6 +2672,10 @@
    "github": "https://github.com/vicolo-dev/chrono",
    "openapk": "https://www.openapk.net/chrono/com.vicolo.chrono/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -2439,6 +2711,10 @@
    "izzy": null,
    "github": "https://github.com/adeeteya/Classipod",
    "openapk": "https://www.openapk.net/classipod/com.adeeteya.classipod/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2477,6 +2753,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/clima/co.prestosole.clima/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -2513,6 +2793,10 @@
    "github": "https://codeberg.org/comaps/comaps",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -2546,6 +2830,10 @@
    "izzy": null,
    "github": "https://github.com/Kr0oked/Compass",
    "openapk": "https://www.openapk.net/compass/com.bobek.compass/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.61",
   "attrs": {
@@ -2583,6 +2871,10 @@
    "github": "https://github.com/gwitko/Conduit",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -2618,6 +2910,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2655,6 +2951,10 @@
    "github": "https://github.com/ferraridamiano/ConverterNOW",
    "openapk": "https://www.openapk.net/converter-now-unit-converter/com.ferrarid.converterpro/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.51",
   "attrs": {
    "open_source": true
@@ -2690,6 +2990,10 @@
    "izzy": null,
    "github": "https://github.com/j6k4m8/coppelia",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2727,6 +3031,10 @@
    "github": "https://github.com/fumiama/copymanga",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -2760,6 +3068,10 @@
    "izzy": null,
    "github": "https://github.com/Cosmic-Ide/Cosmic-IDE",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2797,6 +3109,10 @@
    "github": "https://github.com/kamgurgul/cpu-info",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {
    "open_source": true
@@ -2832,6 +3148,10 @@
    "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/crosswords/org.eehouse.android.xw4/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2869,6 +3189,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -2902,6 +3226,10 @@
    "izzy": null,
    "github": "https://github.com/curbox-app/curbox-android",
    "openapk": "https://www.openapk.net/curbox-app-website-blocker/neth.iecal.curbox/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -2939,6 +3267,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -2973,6 +3305,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -3006,6 +3342,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.demizo.daily_you",
    "github": "https://github.com/Demizo/Daily_You",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3043,6 +3383,10 @@
    "github": "https://github.com/XayahSuSuSu/Android-DataBackup",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3078,6 +3422,10 @@
    "izzy": null,
    "github": "https://github.com/balzack/databag",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3115,6 +3463,10 @@
    "github": "https://github.com/bitfireAT/davx5-ose",
    "openapk": "https://www.openapk.net/davx/at.bitfire.davdroid/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3151,6 +3503,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -3184,6 +3540,10 @@
    "izzy": null,
    "github": "https://github.com/deku-messaging/DekuSMS-Android",
    "openapk": "https://www.openapk.net/deku-sms/com.afkanerd.deku/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3221,6 +3581,10 @@
    "github": "https://github.com/deltachat/deltachat-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3257,6 +3621,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -3290,6 +3658,10 @@
    "izzy": null,
    "github": "https://github.com/jaromiru/diktafon",
    "openapk": "https://www.openapk.net/diktafon-voice-memos-on-tape/cz.mod42.diktafon/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.5",
   "attrs": {
@@ -3328,6 +3700,10 @@
    "github": "https://github.com/t895/DNSNet",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {
    "open_source": true
@@ -3364,6 +3740,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -3397,6 +3777,10 @@
    "izzy": null,
    "github": "https://github.com/yamin8000/dooz",
    "openapk": "https://www.openapk.net/dooz/io.github.yamin8000.dooz/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3434,6 +3818,10 @@
    "github": "https://github.com/IacobIonut01/Gallery",
    "openapk": "https://www.openapk.net/gallery/com.dot.gallery/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3469,6 +3857,10 @@
    "izzy": null,
    "github": "https://github.com/drawpile/Drawpile",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3506,6 +3898,10 @@
    "github": "https://github.com/Droid-ify/client",
    "openapk": "https://www.openapk.net/droid-ify/com.looker.droidify/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3541,6 +3937,10 @@
    "izzy": null,
    "github": "https://github.com/crawl/crawl",
    "openapk": "https://www.openapk.net/dungeon-crawl-stone-soup/org.develz.crawl/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3578,6 +3978,10 @@
    "github": "https://github.com/renyuneyun/Easer",
    "openapk": "https://www.openapk.net/easer-beta/ryey.easer.beta/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3613,6 +4017,10 @@
    "izzy": null,
    "github": "https://github.com/bilec/econverter",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3650,6 +4058,10 @@
    "github": "https://github.com/element-hq/element-android",
    "openapk": "https://www.openapk.net/element-secure-messenger/im.vector.app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -3683,6 +4095,10 @@
    "izzy": null,
    "github": "https://github.com/element-hq/element-x-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3720,6 +4136,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3755,6 +4175,10 @@
    "izzy": null,
    "github": "https://github.com/thewierdnut/endless-mobile",
    "openapk": "https://www.openapk.net/endless-sky/com.github.thewierdnut.endless_mobile/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3792,6 +4216,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3827,6 +4255,10 @@
    "izzy": null,
    "github": "https://github.com/ya27hw/equran_app",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -3864,6 +4296,10 @@
    "github": "https://github.com/Etar-Group/Etar-Calendar",
    "openapk": "https://www.openapk.net/etar-opensource-calendar/ws.xsoh.etar/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3899,6 +4335,10 @@
    "izzy": null,
    "github": "https://github.com/EtchDroid/EtchDroid",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {
@@ -3936,6 +4376,10 @@
    "github": "https://github.com/ExclaveNetwork/Exclave",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -3971,6 +4415,10 @@
    "izzy": null,
    "github": "https://github.com/Exodus-Privacy/exodus-android-app",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4008,6 +4456,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/f-droid/org.fdroid.fdroid/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4043,6 +4495,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.fadcam",
    "github": "https://github.com/anonfaded/FadCam",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4080,6 +4536,10 @@
    "github": "https://github.com/M66B/FairEmail",
    "openapk": "https://www.openapk.net/fairemail/eu.faircode.email/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.69",
   "attrs": {
    "open_source": true
@@ -4115,6 +4575,10 @@
    "izzy": null,
    "github": "https://github.com/pynicolas/FairScan",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.8,
   "attrs": {
@@ -4152,6 +4616,10 @@
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4187,6 +4655,10 @@
    "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4224,6 +4696,10 @@
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4259,6 +4735,10 @@
    "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4296,6 +4776,10 @@
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4331,6 +4815,10 @@
    "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4368,6 +4856,10 @@
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4403,6 +4895,10 @@
    "izzy": null,
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4440,6 +4936,10 @@
    "github": "https://github.com/fcitx5-android/fcitx5-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4475,6 +4975,10 @@
    "izzy": null,
    "github": "https://github.com/spacecowboy/Feeder",
    "openapk": "https://www.openapk.net/feeder-play-version/com.nononsenseapps.feeder.play/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "3.81",
   "attrs": {
@@ -4512,6 +5016,10 @@
    "github": "https://github.com/jean-voila/FeurStagram",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -4545,6 +5053,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {
@@ -4582,6 +5094,10 @@
    "github": "https://github.com/jmshrv/finamp",
    "openapk": "https://www.openapk.net/finamp/com.unicornsonlsd.finamp/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4618,6 +5134,10 @@
    "github": "https://github.com/mozilla-mobile/firefox-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.61",
   "attrs": {},
   "made_by_us": false,
@@ -4651,6 +5171,10 @@
    "izzy": null,
    "github": "https://github.com/brandonp2412/FitBook",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4688,6 +5212,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -4722,6 +5250,10 @@
    "github": "https://github.com/flareteam/flare-engine",
    "openapk": "https://www.openapk.net/flare/org.flare.app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -4755,6 +5287,10 @@
    "izzy": null,
    "github": "https://github.com/cyb3rko/flashdim",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.6,
   "attrs": {
@@ -4792,6 +5328,10 @@
    "github": "https://github.com/polodarb/Flashlight-Tiramisu",
    "openapk": "https://www.openapk.net/flashlight-tiramisu/com.pdb82.flashlighttiramisu/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4827,6 +5367,10 @@
    "izzy": null,
    "github": "https://github.com/brandonp2412/Flexify",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4864,6 +5408,10 @@
    "github": "https://github.com/mlm-games/flicky",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -4899,6 +5447,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.patrickgold.florisboard.beta",
    "github": "https://github.com/florisboard/florisboard",
    "openapk": "https://www.openapk.net/florisboard/dev.patrickgold.florisboard/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -4936,6 +5488,10 @@
    "github": "https://github.com/A-EDev/Flow",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -4970,6 +5526,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -5003,6 +5563,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.fluffy",
    "github": "https://github.com/mlm-games/fluffy",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5040,6 +5604,10 @@
    "github": "https://github.com/boyan01/flutter-tetris",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -5073,6 +5641,10 @@
    "izzy": null,
    "github": "https://github.com/KevinCFechtel/FluxNews/tree/main",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5110,6 +5682,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.3",
   "attrs": {},
   "made_by_us": false,
@@ -5145,6 +5721,10 @@
    "izzy": null,
    "github": "https://github.com/39aldo39/Flym-DecSync",
    "openapk": "https://www.openapk.net/flym-decsync/org.decsync.flym/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5182,6 +5762,10 @@
    "github": "https://github.com/lorenzovngl/FoodExpirationDates",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -5216,6 +5800,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/forkyz/app.crossword.yourealwaysbe.forkyz/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -5249,6 +5837,10 @@
    "izzy": null,
    "github": "https://github.com/OpenDataEnsemble/ode",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5286,6 +5878,10 @@
    "github": "https://github.com/FossifyOrg/Calendar",
    "openapk": "https://www.openapk.net/fossify-calendar/org.fossify.calendar/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.30",
   "attrs": {
    "open_source": true
@@ -5321,6 +5917,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.clock",
    "github": "https://github.com/FossifyOrg/Clock",
    "openapk": "https://www.openapk.net/fossify-clock/org.fossify.clock/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5358,6 +5958,10 @@
    "github": "https://github.com/FossifyOrg/Contacts",
    "openapk": "https://www.openapk.net/fossify-contacts/org.fossify.contacts/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.24",
   "attrs": {
    "open_source": true
@@ -5393,6 +5997,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.filemanager",
    "github": "https://github.com/FossifyOrg/File-Manager",
    "openapk": "https://www.openapk.net/fossify-file-manager/org.fossify.filemanager/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.36",
   "attrs": {
@@ -5430,6 +6038,10 @@
    "github": "https://github.com/FossifyOrg/Gallery",
    "openapk": "https://www.openapk.net/fossify-gallery/org.fossify.gallery/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "3.98",
   "attrs": {
    "open_source": true
@@ -5465,6 +6077,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.home",
    "github": "https://github.com/FossifyOrg/Launcher",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5502,6 +6118,10 @@
    "github": "https://github.com/FossifyOrg/Phone",
    "openapk": "https://www.openapk.net/fossify-phone/org.fossify.phone/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.20",
   "attrs": {
    "open_source": true
@@ -5538,6 +6158,10 @@
    "github": "https://github.com/FossifyOrg/Messages",
    "openapk": "https://www.openapk.net/fossify-sms-messenger/org.fossify.messages/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "3.16",
   "attrs": {
    "open_source": true
@@ -5573,6 +6197,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.fossify.voicerecorder",
    "github": "https://github.com/FossifyOrg/Voice-Recorder",
    "openapk": "https://www.openapk.net/fossify-voice-recorder/org.fossify.voicerecorder/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.48",
   "attrs": {
@@ -5611,6 +6239,10 @@
    "github": "https://github.com/mlm-games/free-the-bugs",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -5646,6 +6278,10 @@
    "izzy": null,
    "github": "https://github.com/shlusiak/Freebloks-Android",
    "openapk": "https://www.openapk.net/freebloks/de.saschahlusiak.freebloks/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.8,
   "attrs": {
@@ -5683,6 +6319,10 @@
    "github": "https://github.com/KillerInk/FreeDcam",
    "openapk": "https://www.openapk.net/freedcam/troop.com.freedcam/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -5718,6 +6358,10 @@
    "izzy": null,
    "github": "https://github.com/emileb/Freedoom-for-Android",
    "openapk": "https://www.openapk.net/freedoom/net.nullsum.freedoom/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5755,6 +6399,10 @@
    "github": "https://github.com/Freeyourgadget/Gadgetbridge",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -5790,6 +6438,10 @@
    "izzy": null,
    "github": "https://github.com/mokshablr/gander",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 3.6,
   "attrs": {
@@ -5827,6 +6479,10 @@
    "github": "https://github.com/meikpiep/gauguin",
    "openapk": "https://www.openapk.net/gauguin/org.piepmeyer.gauguin/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -5863,6 +6519,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -5896,6 +6556,10 @@
    "izzy": null,
    "github": "https://github.com/kstepanovdev/gdf_hema_timer",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -5933,6 +6597,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -5966,6 +6634,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6003,6 +6675,10 @@
    "github": "https://codeberg.org/gitnex/GitNex",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -6038,6 +6714,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6075,6 +6755,10 @@
    "github": "https://github.com/godotengine/godot/",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -6110,6 +6794,10 @@
    "izzy": null,
    "github": "https://github.com/godotengine/godot/",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6147,6 +6835,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -6180,6 +6872,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {},
@@ -6215,6 +6911,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -6248,6 +6948,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {},
@@ -6283,6 +6987,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -6317,6 +7025,10 @@
    "github": "https://github.com/BasicAirData/GPSLogger",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -6350,6 +7062,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.android.gpstest.osmdroid",
    "github": "https://github.com/barbeau/gpstest",
    "openapk": "https://www.openapk.net/gpstest/com.android.gpstest.osmdroid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6387,6 +7103,10 @@
    "github": "https://github.com/AkaneTan/Gramophone",
    "openapk": "https://www.openapk.net/gramophone/org.akanework.gramophone/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -6422,6 +7142,10 @@
    "izzy": null,
    "github": "https://github.com/billthefarmer/gridle",
    "openapk": "https://www.openapk.net/gridle/org.billthefarmer.gridle/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6459,6 +7183,10 @@
    "github": "https://github.com/shub39/Grit",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {
    "open_source": true
@@ -6494,6 +7222,10 @@
    "izzy": null,
    "github": "https://github.com/InlitX/GymMane",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6531,6 +7263,10 @@
    "github": "https://github.com/Livinglist/Hacki",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {
    "open_source": true
@@ -6566,6 +7302,10 @@
    "izzy": null,
    "github": "https://github.com/aistra0528/Hail",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6603,6 +7343,10 @@
    "github": "https://github.com/SimonHalvdansson/Harmonic-HN",
    "openapk": "https://www.openapk.net/harmonic/com.simon.harmonichackernews/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -6637,6 +7381,10 @@
    "github": "https://github.com/anandnet/Harmony-Music",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -6670,6 +7418,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/helium314.keyboard",
    "github": "https://github.com/HeliBorg/HeliBoard",
    "openapk": "https://www.openapk.net/heliboard/helium314.keyboard/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6707,6 +7459,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.9",
   "attrs": {},
   "made_by_us": false,
@@ -6742,6 +7498,10 @@
    "izzy": null,
    "github": "https://github.com/msimonides/homerplayer2",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6779,6 +7539,10 @@
    "github": "https://github.com/zenorogue/hyperrogue",
    "openapk": "https://www.openapk.net/hyperrogue/com.roguetemple.hyperroid/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -6814,6 +7578,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6851,6 +7619,10 @@
    "github": "https://github.com/T8RIN/ImageToolbox",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -6887,6 +7659,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -6920,6 +7696,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.zionhuang.music",
    "github": "https://github.com/z-huang/InnerTune",
    "openapk": "https://www.openapk.net/innertune/com.zionhuang.music/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -6957,6 +7737,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.7",
   "attrs": {},
   "made_by_us": false,
@@ -6993,6 +7777,10 @@
    "github": "https://github.com/Gedsh/InviZible",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.3,
   "attrs": {},
   "made_by_us": false,
@@ -7026,6 +7814,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.iyps",
    "github": "https://github.com/StellarSand/IYPS",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7063,6 +7855,10 @@
    "github": "https://github.com/nikita36078/J2ME-Loader",
    "openapk": "https://www.openapk.net/j2me-loader/ru.playsoftware.j2meloader/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -7097,6 +7893,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/jami/cx.ring/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -7130,6 +7930,10 @@
    "izzy": null,
    "github": "https://github.com/jekyllex/jekyllex-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7167,6 +7971,10 @@
    "github": "https://github.com/jellyfin/jellyfin-android",
    "openapk": "https://www.openapk.net/jellyfin-your-media-in-your-hands/org.jellyfin.mobile/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -7202,6 +8010,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.jerboa",
    "github": "https://github.com/LemmyNet/jerboa",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 3.8,
   "attrs": {
@@ -7239,6 +8051,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -7275,6 +8091,10 @@
    "github": "https://github.com/arianneorpilla/jidoujisho",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -7308,6 +8128,10 @@
    "izzy": null,
    "github": "https://github.com/jitsi/jitsi-meet",
    "openapk": "https://www.openapk.net/jitsi-meet/org.jitsi.meet/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7345,6 +8169,10 @@
    "github": "https://github.com/xiaoshihou514/jiyi",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -7381,6 +8209,10 @@
    "github": "https://github.com/laurent22/joplin",
    "openapk": "https://www.openapk.net/joplin/net.cozic.joplin/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -7414,6 +8246,10 @@
    "izzy": null,
    "github": "https://github.com/TechbeeAT/jtxBoard",
    "openapk": "https://www.openapk.net/jtx-board-journalsnotestasks/at.techbee.jtx/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7451,6 +8287,10 @@
    "github": "https://github.com/moneytoo/Player",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -7486,6 +8326,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.onekash.kashcal",
    "github": "https://github.com/KashCal/KashCal",
    "openapk": "https://www.openapk.net/kashcal/org.onekash.kashcal/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7523,6 +8367,10 @@
    "github": "https://github.com/PhilippC/keepass2android",
    "openapk": "https://www.openapk.net/keepass2android-offline/keepass2android.keepass2android_nonet/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "offline": true
@@ -7558,6 +8406,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kunzisoft.keepass.free",
    "github": "https://github.com/Kunzisoft/KeePassDX",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7597,6 +8449,10 @@
    "github": "https://github.com/yogeshpaliyal/KeyPass",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.4,
   "attrs": {
    "open_source": true
@@ -7632,6 +8488,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.kaizen.khushu",
    "github": "https://github.com/greykaizen/khushu",
    "openapk": "https://www.openapk.net/khushu/com.kaizen.khushu/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7669,6 +8529,10 @@
    "github": "https://github.com/Neamar/KISS",
    "openapk": "https://www.openapk.net/kiss-launcher/fr.neamar.kiss/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.19",
   "attrs": {
    "open_source": true
@@ -7704,6 +8568,10 @@
    "izzy": null,
    "github": "https://github.com/Nain57/Smart-AutoClicker",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7741,6 +8609,10 @@
    "github": "https://github.com/getknit/knit",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 3.7,
   "attrs": {
    "open_source": true
@@ -7777,6 +8649,10 @@
    "github": "https://github.com/xbmc/xbmc",
    "openapk": "https://www.openapk.net/kodi/org.xbmc.kodi/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -7810,6 +8686,10 @@
    "izzy": null,
    "github": "https://github.com/Chooloo/koler",
    "openapk": "https://www.openapk.net/koler/com.chooloo.www.koler/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7847,6 +8727,10 @@
    "github": "https://github.com/koreader/koreader",
    "openapk": "https://www.openapk.net/koreader/org.koreader.launcher.fdroid/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -7882,6 +8766,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7919,6 +8807,10 @@
    "github": "https://github.com/MM2-0/Kvaesitso",
    "openapk": "https://www.openapk.net/kvaesitso/de.mm20.launcher2.release/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -7955,6 +8847,10 @@
    "github": "https://github.com/LawnchairLauncher/lawnchair",
    "openapk": "https://www.openapk.net/lawnchair/app.lawnchair/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -7988,6 +8884,10 @@
    "izzy": null,
    "github": "https://github.com/Swordfish90/Lemuroid",
    "openapk": "https://www.openapk.net/lemuroid/com.swordfish.lemuroid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 3.9,
   "attrs": {
@@ -8025,6 +8925,10 @@
    "github": "https://github.com/LibChecker/LibChecker",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {
    "open_source": true
@@ -8060,6 +8964,10 @@
    "izzy": null,
    "github": "https://github.com/iakdis/librecamera",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8097,6 +9005,10 @@
    "github": "https://github.com/jksalcedo/librefind",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8132,6 +9044,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8169,6 +9085,10 @@
    "github": "https://github.com/kaajjo/LibreSudoku",
    "openapk": "https://www.openapk.net/libresudoku/com.kaajjo.libresudoku/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8204,6 +9124,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8241,6 +9165,10 @@
    "github": "https://github.com/libre-tube/LibreTube",
    "openapk": "https://www.openapk.net/libretube/com.github.libretube/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8276,6 +9204,10 @@
    "izzy": null,
    "github": "https://github.com/lichess-org/mobile",
    "openapk": "https://www.openapk.net/lichess/org.lichess.mobileV2/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8313,6 +9245,10 @@
    "github": "https://github.com/LinkoraApp/Linkora",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8349,6 +9285,10 @@
    "github": "https://github.com/SimonSchubert/Betabase",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -8382,6 +9322,10 @@
    "izzy": null,
    "github": "https://github.com/GrakovNe/lissen-android",
    "openapk": "https://www.openapk.net/lissen-audiobookshelf-client/org.grakovne.lissen/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8420,6 +9364,10 @@
    "github": "https://github.com/localsend/localsend",
    "openapk": "https://www.openapk.net/localsend/org.localsend.localsend_app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8455,6 +9403,10 @@
    "izzy": null,
    "github": "https://github.com/darshanparajuli/LogcatReader",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.1,
   "attrs": {
@@ -8492,6 +9444,10 @@
    "github": "https://github.com/logseq/logseq",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8528,6 +9484,10 @@
    "github": "https://github.com/iSoron/uhabits",
    "openapk": "https://www.openapk.net/loop-habit-tracker/org.isoron.uhabits/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -8561,6 +9521,10 @@
    "izzy": null,
    "github": "https://github.com/luanti-org/luanti",
    "openapk": "https://www.openapk.net/minetest/net.minetest.minetest/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.16",
   "attrs": {
@@ -8598,6 +9562,10 @@
    "github": "https://github.com/SniShaper/lumine-for-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8633,6 +9601,10 @@
    "izzy": null,
    "github": "https://github.com/mrdemonc/lune",
    "openapk": "https://www.openapk.net/lune/com.demonlab.lune/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8671,6 +9643,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/lxreader/io.gitlab.coolreader_ng.lxreader.fdroid/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8706,6 +9682,10 @@
    "izzy": null,
    "github": "https://github.com/illusionman1212/lyrics-grabbr",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8743,6 +9723,10 @@
    "github": "https://github.com/Leadaxe/LxBox",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8778,6 +9762,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.svenjacobs.app.leon",
    "github": "https://github.com/svenjacobs/leon",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.6,
   "attrs": {
@@ -8815,6 +9803,10 @@
    "github": "https://github.com/mlm-games/mages",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8851,6 +9843,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8886,6 +9882,10 @@
    "izzy": null,
    "github": "https://github.com/Mobile-Artificial-Intelligence/maid",
    "openapk": "https://www.openapk.net/maid/com.danemadsen.maid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "2.72",
   "attrs": {
@@ -8924,6 +9924,10 @@
    "github": "https://github.com/egdels/makeacopy",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -8959,6 +9963,10 @@
    "izzy": null,
    "github": "https://github.com/gsantner/markor",
    "openapk": "https://www.openapk.net/markor/net.gsantner.markor/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.78",
   "attrs": {
@@ -8996,6 +10004,10 @@
    "github": "https://github.com/maxwhipw/marmalade-tts-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9031,6 +10043,10 @@
    "izzy": null,
    "github": "https://github.com/zhanghai/MaterialFiles",
    "openapk": "https://www.openapk.net/material-files/me.zhanghai.android.files/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.31",
   "attrs": {
@@ -9068,6 +10084,10 @@
    "github": "https://github.com/garmax1/material-flashlight",
    "openapk": "https://www.openapk.net/material-flashlight/co.garmax.materialflashlight/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9103,6 +10123,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.maelchiotti.localmaterialnotes",
    "github": "https://github.com/maelchiotti/LocalMaterialNotes",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {
@@ -9140,6 +10164,10 @@
    "github": "https://github.com/Materialious/Materialious",
    "openapk": "https://www.openapk.net/materialious/us.materialio.app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9175,6 +10203,10 @@
    "izzy": null,
    "github": "https://github.com/mattermost/mattermost-mobile",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -9212,6 +10244,10 @@
    "github": "https://github.com/janekbt/MeditationApp",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9247,6 +10283,10 @@
    "izzy": null,
    "github": "https://github.com/nyxkn/meditation",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -9284,6 +10324,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -9317,6 +10361,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {},
@@ -9352,6 +10400,10 @@
    "github": "https://github.com/meditohq/medito-app",
    "openapk": "https://www.openapk.net/medito/meditofoundation.medito/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -9385,6 +10437,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.mensinator.app",
    "github": "https://github.com/EmmaTellblom/Mensinator",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -9422,6 +10478,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 5.0,
   "attrs": {},
   "made_by_us": false,
@@ -9456,6 +10516,10 @@
    "github": "https://github.com/MetrolistGroup/Metrolist",
    "openapk": "https://www.openapk.net/metrolist/com.metrolist.music/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -9489,6 +10553,10 @@
    "izzy": null,
    "github": "https://github.com/thetwom/toc2",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.9,
   "attrs": {
@@ -9526,6 +10594,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -9559,6 +10631,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.6,
   "attrs": {},
@@ -9594,6 +10670,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -9627,6 +10707,10 @@
    "izzy": null,
    "github": "https://github.com/mihonapp/mihon",
    "openapk": "https://www.openapk.net/mihon/app.mihon/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {},
@@ -9662,6 +10746,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -9695,6 +10783,10 @@
    "izzy": null,
    "github": "https://github.com/Anuken/Mindustry",
    "openapk": "https://www.openapk.net/mindustry/io.anuke.mindustry/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {
@@ -9731,6 +10823,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/tech.dongdongbh.mindwtr",
    "github": "https://github.com/dongdongbh/Mindwtr",
    "openapk": "https://www.openapk.net/mindwtr/tech.dongdongbh.mindwtr/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -9769,6 +10865,10 @@
    "github": "https://github.com/john-athan/minesweeper",
    "openapk": "https://www.openapk.net/minesweeper/io.github.johnathan.minesweeper/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9804,6 +10904,10 @@
    "izzy": null,
    "github": "https://github.com/mlm-games/miniter",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -9841,6 +10945,10 @@
    "github": "https://gitlab.com/mudlej_android/mj_pdf_reader",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9876,6 +10984,10 @@
    "izzy": null,
    "github": "https://github.com/mudkipme/MoeMemosAndroid",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {
@@ -9913,6 +11025,10 @@
    "github": "https://github.com/shub39/Momentum",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -9948,6 +11064,10 @@
    "izzy": null,
    "github": "https://github.com/moneymanagerex/android-money-manager-ex",
    "openapk": "https://www.openapk.net/money-manager-ex/com.money.manager.ex/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -9985,6 +11105,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -10020,6 +11144,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10057,6 +11185,10 @@
    "github": "https://github.com/moonlight-stream/moonlight-android",
    "openapk": "https://www.openapk.net/moonlight-game-streaming/com.limelight/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.4,
   "attrs": {
    "open_source": true
@@ -10092,6 +11224,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.joinmastodon.android.moshinda",
    "github": "https://github.com/LucasGGamerM/moshidon",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.31",
   "attrs": {
@@ -10129,6 +11265,10 @@
    "github": "https://github.com/mpv-android/mpv-android",
    "openapk": "https://www.openapk.net/mpv-android/is.xyz.mpv/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.2",
   "attrs": {
    "open_source": true
@@ -10165,6 +11305,10 @@
    "github": "https://github.com/marlboro-advance/mpvEx",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -10199,6 +11343,10 @@
    "github": "https://github.com/ArtifexSoftware/mupdf",
    "openapk": "https://www.openapk.net/mupdf-viewer/com.artifex.mupdf.viewer.app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -10232,6 +11380,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.murinelauncher",
    "github": "https://github.com/alesimula/Murine-launcher",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 5.0,
   "attrs": {
@@ -10269,6 +11421,10 @@
    "github": "https://github.com/enricocid/Music-Player-GO",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "offline": true
@@ -10305,6 +11461,10 @@
    "github": "https://github.com/gokadzev/Musify",
    "openapk": "https://www.openapk.net/musify/com.gokadzev.musify/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -10339,6 +11499,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -10372,6 +11536,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.starry.myne",
    "github": "https://github.com/Pool-Of-Tears/Myne",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10409,6 +11577,10 @@
    "github": "https://github.com/namidaco/namida",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -10442,6 +11614,10 @@
    "izzy": null,
    "github": "https://github.com/Dar9586/NClientV2",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {},
@@ -10477,6 +11653,10 @@
    "github": "https://github.com/yjeanrenaud/yj_nearbyglasses",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -10510,6 +11690,10 @@
    "izzy": null,
    "github": "https://github.com/fellipitopv/nekovideo",
    "openapk": "https://www.openapk.net/nekovideo/com.nkls.nekovideo/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10547,6 +11731,10 @@
    "github": "https://github.com/NeoApplications/Neo-Backup",
    "openapk": "https://www.openapk.net/neo-backup/com.machiav3lli.backup/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -10582,6 +11770,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.machiav3lli.fdroid",
    "github": "https://codeberg.org/NeoApplications/Neo-Store",
    "openapk": "https://www.openapk.net/neo-store/com.machiav3lli.fdroid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10619,6 +11811,10 @@
    "github": "https://github.com/M66B/NetGuard",
    "openapk": "https://www.openapk.net/netguard/eu.faircode.netguard/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.25",
   "attrs": {
    "open_source": true
@@ -10655,6 +11851,10 @@
    "github": "https://github.com/6eero/NewPass",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -10690,6 +11890,10 @@
    "izzy": null,
    "github": "https://github.com/TeamNewPipe/NewPipe",
    "openapk": "https://www.openapk.net/newpipe/org.schabi.newpipe/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10728,6 +11932,10 @@
    "github": "https://github.com/anilbeesetti/nextplayer",
    "openapk": "https://www.openapk.net/next-player/dev.anilbeesetti.nextplayer/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.31",
   "attrs": {
    "open_source": true
@@ -10763,6 +11971,10 @@
    "izzy": null,
    "github": "https://github.com/nextcloud/android",
    "openapk": "https://www.openapk.net/nextcloud/com.nextcloud.client/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.71",
   "attrs": {
@@ -10800,6 +12012,10 @@
    "github": "https://github.com/nightdropapp/nightdrop",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -10835,6 +12051,10 @@
    "izzy": null,
    "github": "https://github.com/adil192/no_more_background",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10872,6 +12092,10 @@
    "github": "https://github.com/omgodse/notally",
    "openapk": "https://www.openapk.net/notally-minimalist-notes/com.omgodse.notally/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.39",
   "attrs": {
    "open_source": true
@@ -10907,6 +12131,10 @@
    "izzy": null,
    "github": "https://github.com/streetwriters/notesnook",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -10944,6 +12172,10 @@
    "github": "https://github.com/tirkarthi/NotificationDictionary",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {
    "open_source": true
@@ -10979,6 +12211,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.6",
   "attrs": {},
@@ -11016,6 +12252,10 @@
    "github": "https://github.com/nonbili/NouTube",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -11051,6 +12291,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/org.courville.nova",
    "github": "https://github.com/nova-video-player/aos-AVP",
    "openapk": "https://www.openapk.net/nova-video-player/org.courville.nova/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.12",
   "attrs": {
@@ -11088,6 +12332,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.3",
   "attrs": {},
   "made_by_us": false,
@@ -11123,6 +12371,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/dev.imranr.obtainium",
    "github": "https://github.com/ImranR98/Obtainium",
    "openapk": "https://www.openapk.net/obtainium/dev.imranr.obtainium/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11160,6 +12412,10 @@
    "github": "https://github.com/jegly/OfflineLLM",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "offline": true
@@ -11195,6 +12451,10 @@
    "izzy": null,
    "github": "https://github.com/emavgl/oinkoin",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11232,6 +12492,10 @@
    "github": "https://github.com/OksigeniaSL/oksigenia-sos",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -11267,6 +12531,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/app.olauncher",
    "github": "https://github.com/tanujnotes/Olauncher",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.8,
   "attrs": {
@@ -11304,6 +12572,10 @@
    "github": "https://github.com/mvbasov/OMN-Go",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -11339,6 +12611,10 @@
    "izzy": null,
    "github": "https://github.com/onionshare/onionshare-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11376,6 +12652,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/open-camera/net.sourceforge.opencamera/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.0",
   "attrs": {
    "open_source": true
@@ -11411,6 +12691,10 @@
    "izzy": null,
    "github": "https://github.com/d-rk/open-patience",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11448,6 +12732,10 @@
    "github": null,
    "openapk": "https://www.openapk.net/open-sudoku/org.moire.opensudoku/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -11481,6 +12769,10 @@
    "izzy": null,
    "github": "https://github.com/OpenBoard-team/OpenBoard",
    "openapk": "https://www.openapk.net/openboard/org.dslul.openboard.inputmethod.latin/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11519,6 +12811,10 @@
    "github": "https://github.com/clementwzk/OpenCalc",
    "openapk": "https://www.openapk.net/opencalc/com.darkempire78.opencalculator/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.16",
   "attrs": {
    "open_source": true
@@ -11555,6 +12851,10 @@
    "github": "https://github.com/OpenListTeam/OpenList-Mobile",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -11588,6 +12888,10 @@
    "izzy": null,
    "github": "https://github.com/mateusz-bak/openreads",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {
@@ -11625,6 +12929,10 @@
    "github": "https://github.com/ethereal-developers/OpenScan",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 3.7,
   "attrs": {},
   "made_by_us": false,
@@ -11658,6 +12966,10 @@
    "izzy": null,
    "github": "https://github.com/dmfs/opentasks",
    "openapk": "https://www.openapk.net/opentasks/org.dmfs.tasks/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11695,6 +13007,10 @@
    "github": "https://github.com/OpenTracksApp/OpenTracks",
    "openapk": "https://www.openapk.net/opentracks/de.dennisguse.opentracks/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -11728,6 +13044,10 @@
    "izzy": null,
    "github": "https://github.com/n-ice-community/commandergenius",
    "openapk": "https://www.openapk.net/openttd/org.openttd.fdroid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11765,6 +13085,10 @@
    "github": "https://github.com/Etregin/OPNsense_Manager",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -11800,6 +13124,10 @@
    "izzy": null,
    "github": "https://github.com/organicmaps/organicmaps",
    "openapk": "https://www.openapk.net/organic-maps-offline-hike-bike-gps-navigation/app.organicmaps/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11838,6 +13166,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -11871,6 +13203,10 @@
    "izzy": null,
    "github": "https://github.com/max-kammerer/orion-viewer",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -11908,6 +13244,10 @@
    "github": "https://github.com/Jigsaw-Code/outline-apps",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -11944,6 +13284,10 @@
    "github": "https://github.com/ciddwd/overlay-translator",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -11977,6 +13321,10 @@
    "izzy": null,
    "github": "https://github.com/owncloud/android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {
@@ -12014,6 +13362,10 @@
    "github": "https://github.com/potatameister/PaperKnife",
    "openapk": "https://www.openapk.net/paperknife-privacy-first-pdf-utility/com.paperknife.app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -12047,6 +13399,10 @@
    "izzy": null,
    "github": "https://github.com/emanuele-f/PCAPdroid",
    "openapk": "https://www.openapk.net/pcapdroid/com.emanuelef.remote_capture/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12084,6 +13440,10 @@
    "github": "https://github.com/SecUSo/privacy-friendly-pedometer",
    "openapk": "https://www.openapk.net/pedometer-pfa/org.secuso.privacyfriendlyactivitytracker/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -12119,6 +13479,10 @@
    "izzy": null,
    "github": "https://github.com/persian-calendar/persian-calendar",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.6,
   "attrs": {
@@ -12156,6 +13520,10 @@
    "github": "https://github.com/IngoZenz/personaldnsfilter",
    "openapk": "https://www.openapk.net/personaldnsfilter/dnsfilter.android/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.40",
   "attrs": {
    "open_source": true
@@ -12191,6 +13559,10 @@
    "izzy": null,
    "github": "https://github.com/chr56/Phonograph_Plus",
    "openapk": "https://www.openapk.net/phonograph-plus/player.phonograph.plus/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12228,6 +13600,10 @@
    "github": "https://github.com/leonlatsch/Photok",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -12264,6 +13640,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -12298,6 +13678,10 @@
    "github": "https://github.com/wgh136/PicaComic",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -12331,6 +13715,10 @@
    "izzy": null,
    "github": "https://github.com/agateau/pixelwheels",
    "openapk": "https://www.openapk.net/pixel-wheels/com.agateau.tinywheels.android/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12368,6 +13756,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -12404,6 +13796,10 @@
    "github": "https://github.com/PixelPlayerHQ/PixelPlayer",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -12438,6 +13834,10 @@
    "github": "https://github.com/CeuiLiSA/Pixiv-Shaft",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -12471,6 +13871,10 @@
    "izzy": null,
    "github": "https://github.com/plainhub/plain-app",
    "openapk": "https://www.openapk.net/plainapp-file-web-access/com.ismartcoding.plain/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12508,6 +13912,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -12541,6 +13949,10 @@
    "izzy": null,
    "github": "https://github.com/mlm-games/plutonic",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12578,6 +13990,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.8",
   "attrs": {},
   "made_by_us": false,
@@ -12613,6 +14029,10 @@
    "izzy": null,
    "github": "https://github.com/Catrobat/Paintroid",
    "openapk": "https://www.openapk.net/pocket-paint/org.catrobat.paintroid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.38",
   "attrs": {
@@ -12650,6 +14070,10 @@
    "github": "https://github.com/XilinJia/Podcini.A",
    "openapk": "https://www.openapk.net/podcini-a-extensible-media-instrument/ac.mdiq.Podcini.A/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -12685,6 +14109,10 @@
    "izzy": null,
    "github": "https://github.com/aimok04/podium",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 3.2,
   "attrs": {
@@ -12722,6 +14150,10 @@
    "github": "https://github.com/ExTV/Podroid",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -12755,6 +14187,10 @@
    "izzy": null,
    "github": "https://github.com/podverse/podverse-fdroid",
    "openapk": "https://www.openapk.net/podverse/com.podverse.fdroid/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -12792,6 +14228,10 @@
    "github": "https://github.com/mlm-games/pomodorot",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -12828,6 +14268,10 @@
    "github": "https://github.com/hrydgard/ppsspp",
    "openapk": "https://www.openapk.net/ppsspp/org.ppsspp.ppsspp/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -12862,6 +14306,10 @@
    "github": "https://github.com/kaleedtc/Privacium",
    "openapk": "https://www.openapk.net/privacium/com.kaleedtc.privacium/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -12895,6 +14343,10 @@
    "izzy": null,
    "github": "https://github.com/Medvedev91/timeto.me",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 5.0,
   "attrs": {
@@ -12932,6 +14384,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.8",
   "attrs": {},
   "made_by_us": false,
@@ -12967,6 +14423,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.7",
   "attrs": {},
@@ -13004,6 +14464,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -13037,6 +14501,10 @@
    "izzy": null,
    "github": "https://github.com/jherkenhoff/qalculate-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13074,6 +14542,10 @@
    "github": "https://github.com/Bartuzen/qBitController",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13110,6 +14582,10 @@
    "github": "https://github.com/marmistrz/QDict",
    "openapk": "https://www.openapk.net/qdict/com.annie.dictionary.fork/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13145,6 +14621,10 @@
    "izzy": null,
    "github": "https://github.com/derickca/qr-cards",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13184,6 +14664,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -13218,6 +14702,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -13251,6 +14739,10 @@
    "izzy": null,
    "github": "https://github.com/lendl/quiet-grid",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13289,6 +14781,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -13323,6 +14819,10 @@
    "github": "https://github.com/aicodix/rattlegram",
    "openapk": "https://www.openapk.net/rattlegram-sms-via-audio/com.aicodix.rattlegram/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -13356,6 +14856,10 @@
    "izzy": null,
    "github": "https://github.com/x0b/rcx",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13393,6 +14897,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.86",
   "attrs": {},
   "made_by_us": false,
@@ -13427,6 +14935,10 @@
    "github": "https://github.com/readest/readest",
    "openapk": "https://www.openapk.net/readest/com.bilingify.readest/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -13460,6 +14972,10 @@
    "izzy": null,
    "github": "https://github.com/Ashinch/ReadYou",
    "openapk": "https://www.openapk.net/read-you/me.ash.reader/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13497,6 +15013,10 @@
    "github": "https://github.com/LibreShift/red-moon",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13532,6 +15052,10 @@
    "izzy": null,
    "github": "https://github.com/QuantumBadger/RedReader",
    "openapk": "https://www.openapk.net/redreader/org.quantumbadger.redreader/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.09",
   "attrs": {
@@ -13569,6 +15093,10 @@
    "github": "https://github.com/aload0/Reef",
    "openapk": "https://www.openapk.net/reef/dev.pranav.reef/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -13602,6 +15130,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.samyak.repostore",
    "github": "https://github.com/samyak2403/RepoStore",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13639,6 +15171,10 @@
    "github": "https://github.com/libretro/RetroArch",
    "openapk": "https://www.openapk.net/retroarch/com.retroarch/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -13672,6 +15208,10 @@
    "izzy": null,
    "github": "https://github.com/adil192/ricochlime",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13709,6 +15249,10 @@
    "github": "https://github.com/mgdx/RoueLibre",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13745,6 +15289,10 @@
    "github": "https://github.com/chenxiaolong/RSAF",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13780,6 +15328,10 @@
    "izzy": null,
    "github": "https://github.com/niedev/RTranslator",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13818,6 +15370,10 @@
    "github": "https://github.com/ruffle-rs/ruffle-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13853,6 +15409,10 @@
    "izzy": null,
    "github": "https://github.com/ruslin-note/ruslin-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13890,6 +15450,10 @@
    "github": "https://github.com/rustdesk/rustdesk",
    "openapk": "https://www.openapk.net/rustdesk/com.carriez.flutter_hbb/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -13925,6 +15489,10 @@
    "izzy": null,
    "github": "https://github.com/saber-notes/saber",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -13962,6 +15530,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -13996,6 +15568,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -14029,6 +15605,10 @@
    "izzy": null,
    "github": "https://github.com/ElishaAz/Sayboard",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14066,6 +15646,10 @@
    "github": "https://github.com/dmi3dmi3/saywhen",
    "openapk": "https://www.openapk.net/saywhen/com.dmi3dmi3.saywhen/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -14101,6 +15685,10 @@
    "izzy": null,
    "github": "https://github.com/SchildiChat/SchildiChat-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14138,6 +15726,10 @@
    "github": "https://github.com/SchildiChat/schildichat-android-next",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -14173,6 +15765,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/eu.darken.sdmse",
    "github": "https://github.com/d4rken-org/sdmaid-se",
    "openapk": "https://www.openapk.net/sd-maid-se/eu.darken.sdmse/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14210,6 +15806,10 @@
    "github": "https://github.com/JunkFood02/Seal",
    "openapk": "https://www.openapk.net/seal/com.junkfood.seal/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -14246,6 +15846,10 @@
    "github": "https://github.com/GrapheneOS/Camera",
    "openapk": "https://www.openapk.net/secure-camera/app.grapheneos.camera/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -14280,6 +15884,10 @@
    "github": "https://github.com/jackBonadies/SeekerAndroid",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -14313,6 +15921,10 @@
    "izzy": null,
    "github": "https://github.com/UweTrottmann/SeriesGuide",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14350,6 +15962,10 @@
    "github": "https://github.com/00-Evan/shattered-pixel-dungeon",
    "openapk": "https://www.openapk.net/shattered-pixel-dungeon/com.shatteredpixel.shatteredpixeldungeon/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {
    "open_source": true
@@ -14385,6 +16001,10 @@
    "izzy": null,
    "github": "https://github.com/PeterCxy/Shelter",
    "openapk": "https://www.openapk.net/shelter/net.typeblog.shelter/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14423,6 +16043,10 @@
    "github": "https://github.com/RikkaApps/Shizuku",
    "openapk": "https://www.openapk.net/shizuku/moe.shizuku.privileged.api/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -14456,6 +16080,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.michaldrabik.showly2",
    "github": "https://github.com/trakt/showly",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {},
@@ -14491,6 +16119,10 @@
    "github": "https://github.com/matscornegoor/sift-recipe-keeper",
    "openapk": "https://www.openapk.net/sift/app.siftrecipes/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -14524,6 +16156,10 @@
    "izzy": null,
    "github": "https://github.com/Crissium/SilverDict-mobile",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14561,6 +16197,10 @@
    "github": "https://github.com/chrisboyle/sgtpuzzles",
    "openapk": "https://www.openapk.net/puzzles/name.boyle.chris.sgtpuzzles/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {
    "open_source": true
@@ -14597,6 +16237,10 @@
    "github": "https://github.com/yuriykulikov/AlarmClock",
    "openapk": "https://www.openapk.net/simple-alarm-clock/com.better.alarm/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.36",
   "attrs": {
    "open_source": true
@@ -14632,6 +16276,10 @@
    "izzy": null,
    "github": "https://github.com/rkkr/simple-keyboard",
    "openapk": "https://www.openapk.net/simple-keyboard/rkr.simplekeyboard.inputmethod/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "3.92",
   "attrs": {
@@ -14670,6 +16318,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -14704,6 +16356,10 @@
    "github": "https://github.com/simplex-chat/simplex-chat",
    "openapk": "https://www.openapk.net/simplex-chat/chat.simplex.app/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -14737,6 +16393,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14774,6 +16434,10 @@
    "github": "https://github.com/maxrave-dev/SimpMusic",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -14807,6 +16471,10 @@
    "izzy": null,
    "github": "https://github.com/SkyTubeTeam/SkyTube",
    "openapk": "https://www.openapk.net/skytube/free.rm.skytube.oss/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14844,6 +16512,10 @@
    "github": "https://github.com/tmo1/sms-ie",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -14879,6 +16551,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.8",
   "attrs": {
@@ -14916,6 +16592,10 @@
    "github": "https://github.com/snikket-im/snikket-android",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -14951,6 +16631,10 @@
    "izzy": null,
    "github": "https://github.com/KRTirtho/spotube",
    "openapk": "https://www.openapk.net/spotube/oss.krtirtho.spotube/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -14988,6 +16672,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {},
   "made_by_us": false,
@@ -15021,6 +16709,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.nvllz.stepsy",
    "github": "https://github.com/nvllz/stepsy",
    "openapk": "https://www.openapk.net/stepsy-step-counter/com.nvllz.stepsy/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15058,6 +16750,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15093,6 +16789,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.likhithpraveenk.storii",
    "github": "https://github.com/likhithpraveenk/storii",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15130,6 +16830,10 @@
    "github": "https://github.com/streetcomplete/StreetComplete",
    "openapk": "https://www.openapk.net/streetcomplete/de.westnordost.streetcomplete/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15166,6 +16870,10 @@
    "github": "https://github.com/likhithpraveenk/sudoku",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15201,6 +16909,10 @@
    "izzy": null,
    "github": "https://github.com/Galaxy-rio/SudokuYou",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15239,6 +16951,10 @@
    "github": "https://github.com/johannesjo/super-productivity-android",
    "openapk": "https://www.openapk.net/super-productivity/com.superproductivity.superproductivity/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -15272,6 +16988,10 @@
    "izzy": null,
    "github": "https://github.com/retrowars/retrowars",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.5,
   "attrs": {
@@ -15309,6 +17029,10 @@
    "github": "https://github.com/supertuxkart/stk-code",
    "openapk": "https://www.openapk.net/supertuxkart/org.supertuxkart.stk/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15345,6 +17069,10 @@
    "github": "https://github.com/alexch33/super-video-downloader",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15380,6 +17108,10 @@
    "izzy": null,
    "github": "https://github.com/ligi/SurvivalManual",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15418,6 +17150,10 @@
    "github": "https://github.com/pec0ra/suspension_setup",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15453,6 +17189,10 @@
    "izzy": null,
    "github": "https://github.com/Catfriend1/syncthing-android",
    "openapk": "https://www.openapk.net/syncthing-fork/com.github.catfriend1.syncthingfork/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15492,6 +17232,10 @@
    "github": "https://github.com/FriesI23/mhabit",
    "openapk": "https://www.openapk.net/table-habit/io.github.friesi23.mhabit/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15528,6 +17272,10 @@
    "github": "https://github.com/tagspaces/tagspaces",
    "openapk": "https://www.openapk.net/tagspaces/org.tagspaces.mobileapp/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -15561,6 +17309,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15598,6 +17350,10 @@
    "github": "https://github.com/singleNeuron/LockNotification",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 5.0,
   "attrs": {},
   "made_by_us": false,
@@ -15631,6 +17387,10 @@
    "izzy": null,
    "github": "https://github.com/tasks/tasks",
    "openapk": "https://www.openapk.net/tasks-org-open-source-to-do-lists-reminders/org.tasks/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15668,6 +17428,10 @@
    "github": "https://github.com/termux/termux-app",
    "openapk": "https://www.openapk.net/termux/com.termux/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.52",
   "attrs": {
    "open_source": true
@@ -15703,6 +17467,10 @@
    "izzy": null,
    "github": "https://github.com/wesnoth/wesnoth",
    "openapk": "https://www.openapk.net/the-battle-for-wesnoth/org.wesnoth.Wesnoth/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15740,6 +17508,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15775,6 +17547,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.dessalines.thumbkey",
    "github": "https://github.com/dessalines/thumb-key",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15812,6 +17588,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.6",
   "attrs": {},
   "made_by_us": false,
@@ -15848,6 +17628,10 @@
    "github": "https://github.com/chrisbanes/tivi",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -15881,6 +17665,10 @@
    "izzy": null,
    "github": "https://github.com/KerlosGirgis/Todo",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15918,6 +17706,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -15953,6 +17745,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/net.kollnig.missioncontrol",
    "github": "https://github.com/TrackerControl/tracker-control-android",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -15990,6 +17786,10 @@
    "github": "https://github.com/kylecorry31/Trail-Sense",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.6,
   "attrs": {
    "open_source": true
@@ -16025,6 +17825,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.bnyro.translate",
    "github": "https://github.com/you-apps/TranslateYou",
    "openapk": "https://www.openapk.net/translate-you/com.bnyro.translate/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16062,6 +17866,10 @@
    "github": "https://github.com/grote/Transportr",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -16098,6 +17906,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.9,
   "attrs": {},
   "made_by_us": false,
@@ -16131,6 +17943,10 @@
    "izzy": null,
    "github": "https://github.com/thetwom/Tuner",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.7,
   "attrs": {
@@ -16168,6 +17984,10 @@
    "github": "https://github.com/tuskyapp/Tusky",
    "openapk": "https://www.openapk.net/tusky/com.keylesspalace.tusky/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -16202,6 +18022,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.8,
   "attrs": {},
   "made_by_us": false,
@@ -16235,6 +18059,10 @@
    "izzy": null,
    "github": "https://github.com/yairm210/Unciv",
    "openapk": "https://www.openapk.net/unciv/com.unciv.app/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16272,6 +18100,10 @@
    "github": "https://github.com/Julow/Unexpected-Keyboard",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.3,
   "attrs": {
    "open_source": true
@@ -16307,6 +18139,10 @@
    "izzy": null,
    "github": "https://github.com/physphil/UnitConverterUltimate",
    "openapk": "https://www.openapk.net/unit-converter-ultimate/com.physphil.android.unitconverterultimate/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16344,6 +18180,10 @@
    "github": "https://github.com/sadellie/unitto",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {
    "open_source": true
@@ -16380,6 +18220,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.7,
   "attrs": {},
   "made_by_us": false,
@@ -16413,6 +18257,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16450,6 +18298,10 @@
    "github": "https://github.com/zhanghai/Untracker",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {
    "open_source": true
@@ -16485,6 +18337,10 @@
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.trianguloy.urlchecker",
    "github": "https://github.com/TrianguloY/URLCheck",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.4,
   "attrs": {
@@ -16522,6 +18378,10 @@
    "github": "https://github.com/vanilla-music/vanilla",
    "openapk": "https://www.openapk.net/vanilla-music/ch.blinkenlights.android.vanilla/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -16557,6 +18417,10 @@
    "izzy": null,
    "github": "https://github.com/R0b0To/VaultExplorer",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16594,6 +18458,10 @@
    "github": "https://github.com/nikhilvishwakarma00/Velune",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -16628,6 +18496,10 @@
    "github": "https://github.com/venera-app/venera",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -16661,6 +18533,10 @@
    "izzy": null,
    "github": "https://github.com/adelmonte/victoria-launcher",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16698,6 +18574,10 @@
    "github": "https://github.com/VinylMusicPlayer/VinylMusicPlayer",
    "openapk": "https://www.openapk.net/vinyl-music-player/com.poupa.vinylmusicplayer/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "3.89",
   "attrs": {
    "open_source": true
@@ -16734,6 +18614,10 @@
    "github": "https://github.com/vivizzz007/vivi-music",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -16767,6 +18651,10 @@
    "izzy": null,
    "github": null,
    "openapk": "https://www.openapk.net/vlc/org.videolan.vlc/"
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.05",
   "attrs": {
@@ -16804,6 +18692,10 @@
    "github": "https://github.com/PaulWoitaschek/Voice",
    "openapk": "https://www.openapk.net/voice-audiobook-player/de.ph1b.audiobook/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": "4.6",
   "attrs": {
    "open_source": true
@@ -16839,6 +18731,10 @@
    "izzy": null,
    "github": "https://github.com/aeharding/voyager",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 4.3,
   "attrs": {
@@ -16876,6 +18772,10 @@
    "github": "https://github.com/sidhant947/water-sort",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -16911,6 +18811,10 @@
    "izzy": null,
    "github": "https://github.com/dreautall/waterfly-iii",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -16948,6 +18852,10 @@
    "github": "https://github.com/adeekshith/watomatic",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -16984,6 +18892,10 @@
    "github": null,
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.5,
   "attrs": {},
   "made_by_us": false,
@@ -17017,6 +18929,10 @@
    "izzy": null,
    "github": "https://github.com/woheller69/whoBIRD",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -17054,6 +18970,10 @@
    "github": "https://github.com/wikimedia/apps-android-wikipedia",
    "openapk": "https://www.openapk.net/wikipedia/org.wikipedia/"
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.3,
   "attrs": {},
   "made_by_us": false,
@@ -17087,6 +19007,10 @@
    "izzy": null,
    "github": null,
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": "4.7",
   "attrs": {},
@@ -17124,6 +19048,10 @@
    "github": "https://github.com/Xed-Editor/Xed-Editor",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": 4.2,
   "attrs": {
    "open_source": true
@@ -17159,6 +19087,10 @@
    "izzy": null,
    "github": "https://github.com/ximeiorg/Xime",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -17196,6 +19128,10 @@
    "github": "https://github.com/SaeedDev94/Xray",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -17231,6 +19167,10 @@
    "izzy": null,
    "github": "https://github.com/Q7DF1/XrayFA",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -17268,6 +19208,10 @@
    "github": "https://github.com/turtton/YtAlarm",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {
    "open_source": true
@@ -17304,6 +19248,10 @@
    "github": "https://github.com/kaaass/ZerotierFix",
    "openapk": null
   },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
   "rating": null,
   "attrs": {},
   "made_by_us": false,
@@ -17337,6 +19285,10 @@
    "izzy": null,
    "github": "https://github.com/jrpie/Launcher",
    "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": 5.0,
   "attrs": {

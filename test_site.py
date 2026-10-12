@@ -146,6 +146,34 @@ def main():
     check("personal_use: detail note wired",
           "personal-use-note" in _detail_src)
 
+    # 4c. Windows download sources (Stage 2, 2026-10-11): a synthetic
+    # Windows record must produce the downloads structure and render the
+    # official download prominently. Fails without the Stage 2 fix.
+    _wrec = {"name": "Test Windows App", "package": "test.windows.app",
+             "status": "include", "category": "Utilities",
+             "subcategory": "Gadgets", "platform": "windows",
+             "official_url": "https://example.com/download",
+             "alt_downloads": [{"label": "PortableApps",
+                                "url": "https://example.com/portable"}]}
+    _wout = _gen.clean_record(_wrec)
+    check("windows: downloads structure",
+          _wout.get("downloads", {}).get("official") == "https://example.com/download" and
+          len(_wout["downloads"]["alternatives"]) == 1,
+          str(_wout.get("downloads")))
+    _forms = _gen.NtfyForms(None)
+    _whtml = _gen.build_detail(_wout, _forms)
+    check("windows: official download button",
+          "Download from the developer" in _whtml and
+          "https://example.com/download" in _whtml)
+    check("windows: alternative labeled", "PortableApps" in _whtml)
+    _arec = {"name": "Test Android App", "package": "test.android.app",
+             "status": "include", "category": "Utilities",
+             "subcategory": "Gadgets", "platform": "android",
+             "stores": {"play": "https://example.com/play"}}
+    _ahtml = _gen.build_detail(_gen.clean_record(_arec), _forms)
+    check("android: store badges unchanged",
+          "store-badge" in _ahtml and "Download from the developer" not in _ahtml)
+
     # Serve + browser checks
     class H(SimpleHTTPRequestHandler):
         def log_message(self, *a):
