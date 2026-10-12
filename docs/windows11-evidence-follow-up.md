@@ -485,7 +485,7 @@ Distributor evidence applies only to the linked portable package. OpenTTD and St
 
 ## Windows 11 execution blocker
 
-This workspace runs Linux and has no accessible Windows 11 desktop/VM. No apps were installed or launched. GitHub Windows Server runners and Wine are not Windows 11 substitutes. Test records must remain pending until a real Windows 11 environment is available.
+This workspace runs Linux and has no accessible Windows 11 desktop/VM. No apps were installed or launched. GitHub Windows Server runners and Wine are not Windows 11 substitutes. Test records stay pending until a real Windows 11 environment is available.
 
 For each app: record Windows edition/build and CPU architecture; exact app version, download URL and file SHA-256; publisher signature if present; install/extract result; launch result; a meaningful core task; save/reopen or equivalent persistence; uninstall/cleanup; and any runtime, GPU, driver or permission prerequisites. Use a clean VM snapshot per app and physical hardware where required. Do not bulk-install shell, driver, cleanup or security tools on a daily-use PC.
 
