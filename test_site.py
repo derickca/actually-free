@@ -174,6 +174,29 @@ def main():
     check("android: store badges unchanged",
           "store-badge" in _ahtml and "Download from the developer" not in _ahtml)
 
+    # 4d. Sibling cross-linking (Stage 3, 2026-10-11): only the newer
+    # listing names its sibling; both pages must link each other.
+    # Fails without the Stage 3 fix.
+    _sib_a = _gen.clean_record({"name": "Test Sib A", "package": "test.sib.a",
+                                "status": "include", "category": "Utilities",
+                                "subcategory": "Gadgets", "platform": "android"})
+    _sib_w = _gen.clean_record({"name": "Test Sib W", "package": "test.sib.w",
+                                "status": "include", "category": "Utilities",
+                                "subcategory": "Gadgets", "platform": "windows",
+                                "sibling": "test.sib.a"})
+    _gen.resolve_siblings([_sib_a, _sib_w])
+    check("sibling: forward link",
+          _sib_w.get("sibling_slug") == _sib_a["slug"] and
+          _sib_w.get("sibling_platform") == "android",
+          str((_sib_w.get("sibling_slug"), _sib_w.get("sibling_platform"))))
+    check("sibling: backlink automatic",
+          _sib_a.get("sibling_slug") == _sib_w["slug"] and
+          _sib_a.get("sibling_platform") == "windows")
+    _sib_html = _gen.build_detail(_sib_w, _forms)
+    check("sibling: detail renders link",
+          "Also available on" in _sib_html and
+          f'/app/{_sib_a["slug"]}.html' in _sib_html and ">Android<" in _sib_html)
+
     # Serve + browser checks
     class H(SimpleHTTPRequestHandler):
         def log_message(self, *a):

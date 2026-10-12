@@ -35,7 +35,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "2048 Open Fun Game",
@@ -75,7 +76,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "2FA",
@@ -113,7 +115,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "< polycule >",
@@ -153,7 +156,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "AAAAXY",
@@ -193,7 +197,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Aard 2",
@@ -234,7 +239,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Activity Manager",
@@ -274,7 +280,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "AdAway",
@@ -314,7 +321,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Aegis Authenticator",
@@ -354,7 +362,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Al-Quran - Simple",
@@ -394,7 +403,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Alarm Klock",
@@ -434,7 +444,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Albi",
@@ -474,7 +485,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Amaze File Manager",
@@ -514,7 +526,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "AndBible: Bible Study",
@@ -555,7 +568,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Andor's Trail",
@@ -595,7 +609,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "AnkiDroid",
@@ -633,7 +648,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "another.im",
@@ -673,7 +689,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "AntennaPod",
@@ -713,7 +730,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Anti-Vocale",
@@ -753,7 +771,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Anuto TD",
@@ -793,7 +812,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "APKUpdater",
@@ -831,7 +851,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Its README claims no ads or tracking, but IzzyOnDroid flags the Tracking anti-feature on this build — please check in use whether anything phones home."
+  "review_notes": "Its README claims no ads or tracking, but IzzyOnDroid flags the Tracking anti-feature on this build — please check in use whether anything phones home.",
+  "sibling_package": null
  },
  {
   "name": "APlayer",
@@ -871,7 +892,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean"
+  "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean",
+  "sibling_package": null
  },
  {
   "name": "App Manager",
@@ -911,7 +933,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "ArcaneChat",
@@ -951,7 +974,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "ArchiveTune",
@@ -989,7 +1013,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Arcticons - Line Icon Pack",
@@ -1027,7 +1052,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Aria for Misskey",
@@ -1067,7 +1093,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Arrow Escape",
@@ -1108,7 +1135,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Asteroid's Revenge",
@@ -1148,7 +1176,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Astro Loop",
@@ -1188,7 +1217,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Atrium",
@@ -1228,7 +1258,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Audio Recorder",
@@ -1268,7 +1299,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Audio Recorder ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Audio Recorder ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Aurora Store",
@@ -1306,7 +1338,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Authenticator Pro",
@@ -1344,7 +1377,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Auxio",
@@ -1384,7 +1418,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "AVNC",
@@ -1424,7 +1459,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "B71 - Roguelite brick breaker",
@@ -1462,7 +1498,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Baly Groceries Tracker",
@@ -1502,7 +1539,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Bangumi",
@@ -1542,7 +1580,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Barcode Scanner",
@@ -1582,7 +1621,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "BasicSync",
@@ -1622,7 +1662,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "BeatBridge: Bluetooth Music",
@@ -1662,7 +1703,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "BetterCounter",
@@ -1702,7 +1744,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Binary Eye",
@@ -1742,7 +1785,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Birday - Birthday Manager",
@@ -1780,7 +1824,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "bitchat",
@@ -1820,7 +1865,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Bitwarden",
@@ -1860,7 +1906,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Block Puzzle Stone Wars",
@@ -1900,7 +1947,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "BlockDrop: Block Puzzle",
@@ -1940,7 +1988,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Bloomee",
@@ -1978,7 +2027,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Blorp",
@@ -2018,7 +2068,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "BlueSound Controller",
@@ -2058,7 +2109,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Bowl Timer",
@@ -2096,7 +2148,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Breezy Weather",
@@ -2136,7 +2189,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Briar",
@@ -2174,7 +2228,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Bubble",
@@ -2214,7 +2269,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Budget My Life",
@@ -2252,7 +2308,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Bunny Media Editor",
@@ -2292,7 +2349,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Calculator App",
@@ -2330,7 +2388,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Capy Reader",
@@ -2370,7 +2429,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Cardabase",
@@ -2410,7 +2470,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Catima",
@@ -2450,7 +2511,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "CClauncher",
@@ -2490,7 +2552,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Chaka Book Reader",
@@ -2530,7 +2593,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Cheogram",
@@ -2570,7 +2634,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Chess Clock",
@@ -2608,7 +2673,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Chogan",
@@ -2648,7 +2714,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Chrono",
@@ -2688,7 +2755,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "ClassiPod",
@@ -2729,7 +2797,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Clima",
@@ -2769,7 +2838,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "CoMaps",
@@ -2807,7 +2877,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Compass",
@@ -2847,7 +2918,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Conduit",
@@ -2887,7 +2959,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Conversations",
@@ -2927,7 +3000,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Converter NOW: Unit Converter",
@@ -2967,7 +3041,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Coppelia",
@@ -3007,7 +3082,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "CopyManga",
@@ -3045,7 +3121,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Cosmic IDE",
@@ -3085,7 +3162,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "CPU Info (open-source)",
@@ -3125,7 +3203,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "CrossWords",
@@ -3165,7 +3244,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Cuppa - Tea Timer",
@@ -3203,7 +3283,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Curbox",
@@ -3243,7 +3324,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Currencies: Exchange Rate Calc",
@@ -3281,7 +3363,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Cx File Explorer",
@@ -3319,7 +3402,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Daily You",
@@ -3359,7 +3443,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "DataBackup",
@@ -3399,7 +3484,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Databag",
@@ -3439,7 +3525,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "DAVx⁵",
@@ -3479,7 +3566,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Open question: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free. OpenAPK desc: Free download of DAVx⁵ APK file and source code repo under GPL-3.0-only license - Latest Version 4.5.20-ose - CalDAV/CardDAV Synchronization and Client Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "review_notes": "Open question: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free. OpenAPK desc: Free download of DAVx⁵ APK file and source code repo under GPL-3.0-only license - Latest Version 4.5.20-ose - CalDAV/CardDAV Synchronization and Client Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked",
+  "sibling_package": null
  },
  {
   "name": "DeadHash",
@@ -3517,7 +3605,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Deku SMS",
@@ -3557,7 +3646,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Delta Chat",
@@ -3597,7 +3687,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Dharmik - Browse Bhagavad Gita",
@@ -3635,7 +3726,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Diktafon",
@@ -3676,7 +3768,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "DNSNet",
@@ -3716,7 +3809,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Doodle: Live Wallpapers",
@@ -3754,7 +3848,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Dooz",
@@ -3794,7 +3889,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "dotGallery (ReFra)",
@@ -3834,7 +3930,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Drawpile",
@@ -3874,7 +3971,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Droid-ify",
@@ -3914,7 +4012,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Dungeon Crawl Stone Soup",
@@ -3954,7 +4053,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Easer",
@@ -3994,7 +4094,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "EbookConverter",
@@ -4034,7 +4135,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Element",
@@ -4072,7 +4174,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Element X",
@@ -4112,7 +4215,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Emacs",
@@ -4152,7 +4256,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Endless Sky",
@@ -4192,7 +4297,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Energize",
@@ -4232,7 +4338,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "eQuran",
@@ -4272,7 +4379,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Etar - OpenSource Calendar",
@@ -4312,7 +4420,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "EtchDroid ISO to USB Writer",
@@ -4352,7 +4461,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Exclave",
@@ -4392,7 +4502,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Exodus",
@@ -4432,7 +4543,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "F-Droid",
@@ -4472,7 +4584,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FadCam",
@@ -4512,7 +4625,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FairEmail",
@@ -4552,7 +4666,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (FairEmail, privacy aware email ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (FairEmail, privacy aware email ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "FairScan – PDF Scanner & OCR",
@@ -4592,7 +4707,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5",
@@ -4632,7 +4748,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Anthy Plugin)",
@@ -4672,7 +4789,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Chewing Plugin)",
@@ -4712,7 +4830,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Hangul Plugin)",
@@ -4752,7 +4871,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Jyutping Plugin)",
@@ -4792,7 +4912,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (RIME Plugin)",
@@ -4832,7 +4953,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Sayura Plugin)",
@@ -4872,7 +4994,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Thai Plugin)",
@@ -4912,7 +5035,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fcitx5 (Unikey Plugin)",
@@ -4952,7 +5076,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Feeder",
@@ -4992,7 +5117,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FeurStagram",
@@ -5030,7 +5156,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Open question: patches Instagram, ToS grey area Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "review_notes": "Open question: patches Instagram, ToS grey area Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked",
+  "sibling_package": null
  },
  {
   "name": "Files by Google",
@@ -5070,7 +5197,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Finamp",
@@ -5110,7 +5238,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Finamp ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Finamp ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Firefox",
@@ -5148,7 +5277,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FitBook",
@@ -5188,7 +5318,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FitoTrack",
@@ -5226,7 +5357,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FLARE",
@@ -5264,7 +5396,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FlashDim - Dim your flashlight",
@@ -5304,7 +5437,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flashlight Tiramisu",
@@ -5344,7 +5478,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flexify: Gym Workout Log",
@@ -5384,7 +5519,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flicky",
@@ -5424,7 +5560,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FlorisBoard",
@@ -5464,7 +5601,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flow",
@@ -5502,7 +5640,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flowit — Block Puzzle",
@@ -5540,7 +5679,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fluffy",
@@ -5580,7 +5720,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flutter Tetris",
@@ -5618,7 +5759,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flux News",
@@ -5658,7 +5800,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FlyLady",
@@ -5698,7 +5841,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Flym DecSync",
@@ -5738,7 +5882,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Food Expirations",
@@ -5776,7 +5921,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Food Expiration Dates ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Food Expiration Dates ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Forkyz",
@@ -5814,7 +5960,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Formulus",
@@ -5854,7 +6001,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Calendar",
@@ -5894,7 +6042,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Clock Beta",
@@ -5934,7 +6083,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Contacts",
@@ -5974,7 +6124,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify File Manager",
@@ -6014,7 +6165,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Gallery",
@@ -6054,7 +6206,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Launcher",
@@ -6094,7 +6247,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Phone",
@@ -6134,7 +6288,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify SMS Messenger",
@@ -6174,7 +6329,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Fossify Voice Recorder",
@@ -6215,7 +6371,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Free the bugs",
@@ -6255,7 +6412,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Freebloks",
@@ -6295,7 +6453,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "FreeDcam",
@@ -6335,7 +6494,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Freedoom",
@@ -6375,7 +6535,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Gadgetbridge",
@@ -6415,7 +6576,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Gander",
@@ -6455,7 +6617,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Gauguin",
@@ -6495,7 +6658,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "GCompris Educational Game",
@@ -6533,7 +6697,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "GDF HEMA Timer",
@@ -6573,7 +6738,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Gemini Notebook",
@@ -6611,7 +6777,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Gitalchemy",
@@ -6651,7 +6818,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "GitNex",
@@ -6691,7 +6859,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Global Send",
@@ -6731,7 +6900,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Godot Editor 3",
@@ -6771,7 +6941,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Godot Engine 4 (release)",
@@ -6811,7 +6982,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Google Calendar",
@@ -6849,7 +7021,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Google Docs",
@@ -6887,7 +7060,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Google Keep - Notes and lists",
@@ -6925,7 +7099,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Google Lens",
@@ -6963,7 +7138,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Google Tasks",
@@ -7001,7 +7177,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "GPS Logger",
@@ -7039,7 +7216,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "GPSTest",
@@ -7079,7 +7257,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Gramophone",
@@ -7119,7 +7298,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Gramophone ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Gramophone ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Gridle",
@@ -7159,7 +7339,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Grit",
@@ -7199,7 +7380,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Grit - Productivity App ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Grit - Productivity App ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "GymMane",
@@ -7239,7 +7421,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Hacki for Hacker News",
@@ -7279,7 +7462,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Hail",
@@ -7319,7 +7503,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Harmonic",
@@ -7357,7 +7542,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Harmony Music",
@@ -7395,7 +7581,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "HeliBoard",
@@ -7435,7 +7622,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Hevy",
@@ -7475,7 +7663,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "HomerPlayer2",
@@ -7515,7 +7704,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "HyperRogue",
@@ -7555,7 +7745,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Image Compressor",
@@ -7595,7 +7786,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Image Toolbox",
@@ -7635,7 +7827,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Immich",
@@ -7673,7 +7866,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "InnerTune",
@@ -7713,7 +7907,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Insight Timer",
@@ -7753,7 +7948,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "InviZible",
@@ -7791,7 +7987,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean"
+  "review_notes": "Play build shows in-app purchases — listed via the GitHub build only; help verify the GitHub build is clean",
+  "sibling_package": null
  },
  {
   "name": "IYPS",
@@ -7831,7 +8028,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "J2ME Loader",
@@ -7869,7 +8067,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (J2ME Loader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (J2ME Loader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Jami",
@@ -7907,7 +8106,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "JekyllEx",
@@ -7947,7 +8147,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Jellyfin",
@@ -7987,7 +8188,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Jerboa",
@@ -8027,7 +8229,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "JetBird",
@@ -8067,7 +8270,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Jidoujisho",
@@ -8105,7 +8309,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Jitsi Meet",
@@ -8145,7 +8350,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Jiyi",
@@ -8185,7 +8391,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Joplin",
@@ -8223,7 +8430,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "jtx Board",
@@ -8263,7 +8471,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (jtx Board | journals \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (jtx Board | journals \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Just (Video) Player",
@@ -8303,7 +8512,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "KashCal",
@@ -8343,7 +8553,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Keepass2Android Offline",
@@ -8383,7 +8594,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "KeePassDX",
@@ -8425,7 +8637,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "KeyPass",
@@ -8465,7 +8678,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Khushu",
@@ -8505,7 +8719,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "KISS Launcher",
@@ -8545,7 +8760,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Klick'r - Smart AutoClicker",
@@ -8585,7 +8801,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Klick\\u0027r - Smart AutoClicker ads=True iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Klick\\u0027r - Smart AutoClicker ads=True iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Knit",
@@ -8625,7 +8842,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Kodi",
@@ -8663,7 +8881,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Koler",
@@ -8703,7 +8922,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "KOReader",
@@ -8743,7 +8963,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Krita",
@@ -8783,7 +9004,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Kvaesitso",
@@ -8823,7 +9045,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lawnchair",
@@ -8861,7 +9084,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lemuroid",
@@ -8901,7 +9125,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "F-Droid flags NonFreeAdd (promotes non-free add-ons) — help verify nothing costs money"
+  "review_notes": "F-Droid flags NonFreeAdd (promotes non-free add-ons) — help verify nothing costs money",
+  "sibling_package": null
  },
  {
   "name": "LibChecker - View Apps Info",
@@ -8941,7 +9166,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Libre Camera",
@@ -8981,7 +9207,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LibreFind",
@@ -9021,7 +9248,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LibreOffice Viewer",
@@ -9061,7 +9289,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LibreSudoku",
@@ -9101,7 +9330,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LibreTorrent",
@@ -9141,7 +9371,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LibreTube",
@@ -9181,7 +9412,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lichess",
@@ -9221,7 +9453,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Linkora",
@@ -9261,7 +9494,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Linux Command Library",
@@ -9299,7 +9533,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lissen",
@@ -9340,7 +9575,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LocalSend",
@@ -9380,7 +9616,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (LocalSend: Transfer Files ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (LocalSend: Transfer Files ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Logcat Reader",
@@ -9420,7 +9657,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Logseq",
@@ -9460,7 +9698,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Loop Habit Tracker",
@@ -9498,7 +9737,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Luanti",
@@ -9538,7 +9778,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lumine",
@@ -9578,7 +9819,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lune",
@@ -9619,7 +9861,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "LxReader (CoolReader NG)",
@@ -9659,7 +9902,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Lyrics Grabbr",
@@ -9699,7 +9943,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "L×Box: VPN & Proxy Client",
@@ -9739,7 +9984,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Léon – The URL Cleaner",
@@ -9779,7 +10025,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mages",
@@ -9819,7 +10066,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mahjong Scoring Compass",
@@ -9859,7 +10107,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Maid",
@@ -9900,7 +10149,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "MakeACopy",
@@ -9940,7 +10190,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Markor",
@@ -9980,7 +10231,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Marmalade TTS",
@@ -10020,7 +10272,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Material Files",
@@ -10060,7 +10313,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Material Flashlight",
@@ -10100,7 +10354,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Material Notes",
@@ -10140,7 +10395,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Materialious",
@@ -10180,7 +10436,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mattermost Beta",
@@ -10220,7 +10477,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Meditate",
@@ -10260,7 +10518,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Meditation",
@@ -10300,7 +10559,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Meditation Timer",
@@ -10338,7 +10598,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Meditation Timer",
@@ -10376,7 +10637,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Medito",
@@ -10414,7 +10676,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mensinator",
@@ -10454,7 +10717,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mental Math",
@@ -10492,7 +10756,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Metrolist",
@@ -10530,7 +10795,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Metronome",
@@ -10570,7 +10836,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Microsoft Launcher",
@@ -10608,7 +10875,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Microsoft OneNote: Save Notes",
@@ -10646,7 +10914,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Microsoft To Do: Lists & Tasks",
@@ -10684,7 +10953,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Mihon",
@@ -10722,7 +10992,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mill",
@@ -10760,7 +11031,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mindustry",
@@ -10800,7 +11072,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Mindwtr",
@@ -10841,7 +11114,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Minesweeper",
@@ -10881,7 +11155,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Miniter",
@@ -10921,7 +11196,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "MJ PDF",
@@ -10961,7 +11237,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "MoeMemos",
@@ -11001,7 +11278,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Momentum",
@@ -11041,7 +11319,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Momentum - Make a Montage ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Momentum - Make a Montage ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Money Manager Ex",
@@ -11081,7 +11360,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "monocles chat",
@@ -11121,7 +11401,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "monocles translator",
@@ -11161,7 +11442,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Moonlight Game Streaming",
@@ -11201,7 +11483,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Moshidon",
@@ -11241,7 +11524,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "mpv-android",
@@ -11281,7 +11565,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "mpvExtended",
@@ -11319,7 +11604,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "MuPDF viewer",
@@ -11357,7 +11643,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Murine Launcher",
@@ -11397,7 +11684,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Music Player GO",
@@ -11437,7 +11725,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Musify",
@@ -11475,7 +11764,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "MyMoney—Track Expense & Budget",
@@ -11513,7 +11803,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Myne",
@@ -11553,7 +11844,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Namida",
@@ -11591,7 +11883,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "NClientV2",
@@ -11629,7 +11922,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Nearby Glasses",
@@ -11667,7 +11961,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "NekoVideo",
@@ -11707,7 +12002,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Neo Backup",
@@ -11747,7 +12043,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Neo Store",
@@ -11787,7 +12084,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "NetGuard",
@@ -11827,7 +12125,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (NetGuard - no-root firewall ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (NetGuard - no-root firewall ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "NewPass",
@@ -11867,7 +12166,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "NewPipe",
@@ -11908,7 +12208,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Next Player",
@@ -11948,7 +12249,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Nextcloud",
@@ -11988,7 +12290,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Night Drop",
@@ -12028,7 +12331,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "NoMoreBackground",
@@ -12068,7 +12372,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Notally | Minimalist Notes",
@@ -12108,7 +12413,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Notesnook - Private notes app",
@@ -12148,7 +12454,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Notification Dictionary",
@@ -12188,7 +12495,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Notion",
@@ -12228,7 +12536,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "NouTube",
@@ -12268,7 +12577,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Nova Video Player",
@@ -12308,7 +12618,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Obsidian",
@@ -12348,7 +12659,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Obtainium",
@@ -12388,7 +12700,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OfflineLLM",
@@ -12428,7 +12741,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Oinkoin",
@@ -12468,7 +12782,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Oksigenia SOS",
@@ -12508,7 +12823,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Olauncher. Minimal AF Launcher",
@@ -12548,7 +12864,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OMN-Go",
@@ -12588,7 +12905,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OnionShare",
@@ -12628,7 +12946,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Open Camera",
@@ -12668,7 +12987,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Open Patience",
@@ -12708,7 +13028,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Open Sudoku",
@@ -12746,7 +13067,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenBoard",
@@ -12787,7 +13109,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenCalc",
@@ -12827,7 +13150,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenList Mobile",
@@ -12865,7 +13189,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Openreads",
@@ -12905,7 +13230,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenScan",
@@ -12943,7 +13269,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenTasks",
@@ -12983,7 +13310,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenTracks",
@@ -13021,7 +13349,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OpenTTD",
@@ -13061,7 +13390,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "OPNsense Manager",
@@ -13101,7 +13431,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (OPNsense Manager ads=True iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (OPNsense Manager ads=True iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Organic Maps",
@@ -13142,7 +13473,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Orgzly: Notes & To-Do Lists",
@@ -13180,7 +13512,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Orion Viewer - Pdf & Djvu",
@@ -13220,7 +13553,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Outline",
@@ -13260,7 +13594,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Overlay Translator",
@@ -13298,7 +13633,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "ownCloud",
@@ -13338,7 +13674,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PaperKnife",
@@ -13376,7 +13713,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "PCAPdroid",
@@ -13416,7 +13754,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (PCAPdroid - network monitor ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (PCAPdroid - network monitor ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Pedometer (PFA)",
@@ -13456,7 +13795,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Persian Calendar",
@@ -13496,7 +13836,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "personalDNSfilter",
@@ -13536,7 +13877,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Phonograph Plus",
@@ -13576,7 +13918,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Photok",
@@ -13616,7 +13959,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has none."
+  "review_notes": "The Play Store build shows in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has none.",
+  "sibling_package": null
  },
  {
   "name": "phyphox",
@@ -13654,7 +13998,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PicaComic",
@@ -13692,7 +14037,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Pixel Wheels",
@@ -13732,7 +14078,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PixelDroid",
@@ -13772,7 +14119,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PixelPlayer",
@@ -13810,7 +14158,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Pixiv Shaft",
@@ -13848,7 +14197,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PlainApp",
@@ -13888,7 +14238,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Planes Android",
@@ -13926,7 +14277,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Plutonic",
@@ -13966,7 +14318,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Pocket Casts",
@@ -14006,7 +14359,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Pocket Paint",
@@ -14046,7 +14400,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Podcini",
@@ -14086,7 +14441,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "podium",
@@ -14126,7 +14482,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Podroid",
@@ -14164,7 +14521,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Podverse",
@@ -14204,7 +14562,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Podverse - Podcast Player ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Podverse - Podcast Player ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Pomodorot",
@@ -14244,7 +14603,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PPSSPP",
@@ -14282,7 +14642,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Open question: a paid 'PPSSPP Gold' app exists on Play, but it is donation-identical (same features) Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "review_notes": "Open question: a paid 'PPSSPP Gold' app exists on Play, but it is donation-identical (same features) Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked",
+  "sibling_package": null
  },
  {
   "name": "Privacium",
@@ -14320,7 +14681,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Productivity System: timeto.me",
@@ -14360,7 +14722,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Proton Pass",
@@ -14400,7 +14763,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Proton VPN",
@@ -14440,7 +14804,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "PSLab",
@@ -14478,7 +14843,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Qalculate!",
@@ -14518,7 +14884,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "qBitController",
@@ -14558,7 +14925,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "QDict",
@@ -14598,7 +14966,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "QR Cards",
@@ -14640,7 +15009,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "QR code & barcode scanner, reader",
@@ -14678,7 +15048,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "QR Code Scanner - without ads",
@@ -14716,7 +15087,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Quiet Grid",
@@ -14757,7 +15129,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Quillpad",
@@ -14795,7 +15168,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Rattlegram",
@@ -14833,7 +15207,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RCX",
@@ -14873,7 +15248,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "ReadEra",
@@ -14911,7 +15287,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Readest",
@@ -14949,7 +15326,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Readest: EPUB \\u0026 PDF Reader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Readest: EPUB \\u0026 PDF Reader ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "ReadYou",
@@ -14989,7 +15367,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Red Moon",
@@ -15029,7 +15408,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RedReader",
@@ -15069,7 +15449,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Reef",
@@ -15107,7 +15488,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RepoStore",
@@ -15147,7 +15529,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RetroArch",
@@ -15185,7 +15568,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Ricochlime",
@@ -15225,7 +15609,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Ricochlime ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Ricochlime ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Roue Libre",
@@ -15265,7 +15650,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RSAF",
@@ -15305,7 +15691,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RTranslator",
@@ -15346,7 +15733,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Ruffle",
@@ -15386,7 +15774,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Ruslin",
@@ -15426,7 +15815,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "RustDesk",
@@ -15466,7 +15856,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Saber",
@@ -15506,7 +15897,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Samsung Calculator",
@@ -15544,7 +15936,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Samsung Notes",
@@ -15582,7 +15975,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing."
+  "review_notes": "Big-tech app with clean store labels — please sanity-check in actual use: no account wall, upsell screen, or paywalled feature hiding behind the listing.",
+  "sibling_package": null
  },
  {
   "name": "Sayboard",
@@ -15622,7 +16016,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SayWhen",
@@ -15662,7 +16057,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SchildiChat Legacy",
@@ -15702,7 +16098,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SchildiChat Next",
@@ -15742,7 +16139,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SD Maid 2/SE",
@@ -15782,7 +16180,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build has a separate paid Pro unlocker app. This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell or unlocker prompt."
+  "review_notes": "The Play Store build has a separate paid Pro unlocker app. This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell or unlocker prompt.",
+  "sibling_package": null
  },
  {
   "name": "Seal",
@@ -15822,7 +16221,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Secure Camera",
@@ -15860,7 +16260,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Seeker",
@@ -15898,7 +16299,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SeriesGuide",
@@ -15938,7 +16340,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Shattered Pixel Dungeon",
@@ -15978,7 +16381,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Shattered Pixel Dungeon ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Shattered Pixel Dungeon ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Shelter",
@@ -16019,7 +16423,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Shizuku",
@@ -16057,7 +16462,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Showly",
@@ -16095,7 +16501,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads and in-app purchases — listed via the IzzyOnDroid build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Sift",
@@ -16133,7 +16540,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SilverDict",
@@ -16173,7 +16581,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Simon Tatham's Puzzles",
@@ -16213,7 +16622,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Simple Alarm Clock",
@@ -16253,7 +16663,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Simple Keyboard",
@@ -16294,7 +16705,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Simple Time Tracker",
@@ -16332,7 +16744,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SimpleX Chat",
@@ -16370,7 +16783,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (SimpleX Chat ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (SimpleX Chat ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Simply Scored",
@@ -16410,7 +16824,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SimpMusic",
@@ -16448,7 +16863,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SkyTube",
@@ -16488,7 +16904,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SMS Import/Export",
@@ -16528,7 +16945,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Snapseed",
@@ -16568,7 +16986,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Snikket",
@@ -16608,7 +17027,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Spotube",
@@ -16648,7 +17068,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "Open question: grey-area use of Spotify streams Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked"
+  "review_notes": "Open question: grey-area use of Spotify streams Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked",
+  "sibling_package": null
  },
  {
   "name": "Standard Notes",
@@ -16686,7 +17107,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Stepsy: Step Counter",
@@ -16726,7 +17148,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "StoneAge",
@@ -16766,7 +17189,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Storii - audiobookshelf client",
@@ -16806,7 +17230,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Street­Complete",
@@ -16846,7 +17271,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Sudoku",
@@ -16886,7 +17312,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Sudoku You",
@@ -16927,7 +17354,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Super Productivity",
@@ -16965,7 +17393,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Super Retro Mega Wars",
@@ -17005,7 +17434,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SuperTuxKart",
@@ -17045,7 +17475,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "SuperX Video Downloader",
@@ -17085,7 +17516,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Survival Manual",
@@ -17126,7 +17558,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Suspension Setup",
@@ -17166,7 +17599,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Syncthing-Fork",
@@ -17208,7 +17642,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Table Habit",
@@ -17248,7 +17683,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "TagSpaces",
@@ -17286,7 +17722,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build of this same app shows in-app purchases (TagSpaces Pro). This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell."
+  "review_notes": "The Play Store build of this same app shows in-app purchases (TagSpaces Pro). This listing uses the free IzzyOnDroid build — please confirm the installed app has no Pro upsell.",
+  "sibling_package": null
  },
  {
   "name": "Taler Wallet",
@@ -17326,7 +17763,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Tarnhelm",
@@ -17364,7 +17802,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Tasks.org",
@@ -17404,7 +17843,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Tasks.org: to-do list \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Tasks.org: to-do list \\u0026 tasks ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Termux",
@@ -17444,7 +17884,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "The Battle for Wesnoth",
@@ -17484,7 +17925,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "The One App",
@@ -17524,7 +17966,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Thumb-Key",
@@ -17564,7 +18007,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "TickTick",
@@ -17604,7 +18048,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Tivi",
@@ -17642,7 +18087,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Todo",
@@ -17682,7 +18128,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "TorServices (alpha)",
@@ -17722,7 +18169,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "TrackerControl",
@@ -17762,7 +18210,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Trail Sense",
@@ -17802,7 +18251,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Translate You",
@@ -17842,7 +18292,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Transportr",
@@ -17882,7 +18333,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "TTS Util",
@@ -17920,7 +18372,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Tuner",
@@ -17960,7 +18413,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Tusky",
@@ -17998,7 +18452,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Tux Math",
@@ -18036,7 +18491,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Unciv",
@@ -18076,7 +18532,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Unexpected Keyboard",
@@ -18116,7 +18573,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Unit Converter Ultimate",
@@ -18156,7 +18614,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Unitto — calculator, converter",
@@ -18196,7 +18655,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Universal Installer: APK, XAPK",
@@ -18234,7 +18694,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Unofficial CheckMK Monitoring",
@@ -18274,7 +18735,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Untracker",
@@ -18314,7 +18776,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "URLCheck",
@@ -18354,7 +18817,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Vanilla Music",
@@ -18394,7 +18858,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Vault Explorer",
@@ -18434,7 +18899,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Velune",
@@ -18472,7 +18938,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Venera",
@@ -18510,7 +18977,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Victoria Launcher",
@@ -18550,7 +19018,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Vinyl Music Player",
@@ -18590,7 +19059,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "vivi",
@@ -18628,7 +19098,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "VLC",
@@ -18668,7 +19139,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Voice Audiobook Player",
@@ -18708,7 +19180,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Voyager",
@@ -18748,7 +19221,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Voyager for Lemmy ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Voyager for Lemmy ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "Water Sort",
@@ -18788,7 +19262,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Waterfly III",
@@ -18828,7 +19303,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Watomatic",
@@ -18868,7 +19344,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "The Play Store build shows ads/in-app purchases (Atomatic ads=False iap=True) — listed via the repo build only; help verify the listed build has neither."
+  "review_notes": "The Play Store build shows ads/in-app purchases (Atomatic ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
  },
  {
   "name": "WebLibre: Private Browser",
@@ -18906,7 +19383,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "whoBIRD",
@@ -18946,7 +19424,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Wikipedia",
@@ -18984,7 +19463,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": true,
-  "review_notes": "F-Droid flags Tracking on its build — listed via another clean build; help verify"
+  "review_notes": "F-Droid flags Tracking on its build — listed via another clean build; help verify",
+  "sibling_package": null
  },
  {
   "name": "Windy",
@@ -19024,7 +19504,8 @@
    "free enough"
   ],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Xed Editor",
@@ -19064,7 +19545,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Xime",
@@ -19104,7 +19586,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "Xray",
@@ -19144,7 +19627,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "XrayFA",
@@ -19184,7 +19668,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "YtAlarm",
@@ -19224,7 +19709,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "ZerotierFix",
@@ -19262,7 +19748,8 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  },
  {
   "name": "µLauncher",
@@ -19302,6 +19789,7 @@
   "personal_use": false,
   "tags": [],
   "needs_review": false,
-  "review_notes": ""
+  "review_notes": "",
+  "sibling_package": null
  }
 ]

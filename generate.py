@@ -444,6 +444,9 @@ def clean_record(rec):
                  (["personal use"] if rec.get("personal_use") else [])),
         "needs_review": bool(rec.get("needs_review")),
         "review_notes": rec.get("review_notes") or "",
+        # Sibling listing on the other platform (package id); resolved to
+        # a slug + platform by resolve_siblings() after the corpus loads.
+        "sibling_package": rec.get("sibling") or None,
     }
 
 
@@ -455,6 +458,23 @@ def load_corpus():
     kept.append(clean_record(QR_CARDS))
     kept.sort(key=lambda a: a["name"].lower())
     return kept
+
+
+def resolve_siblings(apps):
+    """Cross-link Android/Windows versions of the same product. Only the
+    newer listing needs the `sibling` field (package id); the older one
+    gets the backlink automatically."""
+    by_package = {a["package"]: a for a in apps}
+    for a in apps:
+        sib = a.get("sibling_package")
+        if not sib or sib not in by_package:
+            continue
+        b = by_package[sib]
+        a["sibling_slug"] = b["slug"]
+        a["sibling_platform"] = b["platform"]
+        if not b.get("sibling_package"):
+            b["sibling_slug"] = a["slug"]
+            b["sibling_platform"] = a["platform"]
 
 # ---------------------------------------------------------------------------
 # ntfy feedback — browser POSTs straight to ntfy.sh, no backend, no relay.
@@ -899,6 +919,12 @@ def build_detail(app, forms):
         f'<p class="platform-line"><span class="platform-tag">'
         f'{PLATFORM_SVG.get(plat, PLATFORM_SVG["android"])}</span>'
         f" {esc(plat_name)}</p>")
+    sib = ""
+    if app.get("sibling_slug"):
+        sib_plat = ("Android" if app.get("sibling_platform") == "android"
+                    else "Windows")
+        sib = (f'<p class="sibling-link">Also available on '
+               f'<a href="/app/{esc(app["sibling_slug"])}.html">{sib_plat}</a></p>')
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -914,6 +940,7 @@ def build_detail(app, forms):
         <p class="cat">{esc(app["category"])}{" \u00b7 " + esc(app["subcategory"]) if app["subcategory"] else ""}</p>
         {rating}
         {platform_line}
+        {sib}
       </div>
     </div>
     {desc_html}
@@ -1496,6 +1523,8 @@ a.store-badge:hover { filter: brightness(0.96); }
   text-decoration: none;
 }
 .dl-official:hover { filter: brightness(0.94); }
+.sibling-link { font-size: 0.85rem; color: var(--muted); margin: 4px 0 0; }
+.sibling-link a { color: var(--accent); }
 .per-badge-note {
   background: var(--accent-soft);
   border-radius: 12px;
@@ -2764,6 +2793,7 @@ def check_filter_consistency(apps, index_html, app_js):
 
 def main():
     apps = load_corpus()
+    resolve_siblings(apps)
     print(f"{len(apps)} apps "
           f"({sum(1 for a in apps if a['made_by_us'])} made by us, "
           f"{sum(1 for a in apps if a['per_badge'])} per-badge, "

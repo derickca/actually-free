@@ -469,6 +469,8 @@ a.store-badge:hover { filter: brightness(0.96); }
   text-decoration: none;
 }
 .dl-official:hover { filter: brightness(0.94); }
+.sibling-link { font-size: 0.85rem; color: var(--muted); margin: 4px 0 0; }
+.sibling-link a { color: var(--accent); }
 .per-badge-note {
   background: var(--accent-soft);
   border-radius: 12px;
