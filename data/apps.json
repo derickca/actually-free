@@ -166,7 +166,7 @@
    "evidence_url": "https://portableapps.com/apps/games/4st-attack-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -359,7 +359,7 @@
    "evidence_url": "https://portableapps.com/apps/office/a-note-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -1084,7 +1084,7 @@
    "evidence_url": "https://www.andreaplanet.com/andreamosaic/download/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -1320,7 +1320,7 @@
    "evidence_url": "https://sourceforge.net/projects/ant-renamer/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -2183,7 +2183,7 @@
    "evidence_url": "https://portableapps.com/apps/games/atomic_tanks_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -2381,7 +2381,7 @@
    "evidence_url": "https://www.audacityteam.org/download/windows",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Publisher reports Windows 10/11 testing. Windows ARM64 has separate prerequisites and caveats; use its matching build."
+   "notes": "The ARM64 build has its own prerequisites and caveats — use the matching build."
   },
   "rating": null,
   "attrs": {
@@ -2562,7 +2562,7 @@
    "evidence_url": "http://openmidiproject.opal.ne.jp/AutoDrum_en.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to the 64-bit AutoDrum 8.1/8.0 downloads; do not apply it to older builds."
+   "notes": "Covers the 64-bit 8.1/8.0 downloads only, not older builds."
   },
   "rating": null,
   "attrs": {
@@ -2894,7 +2894,7 @@
    "evidence_url": "https://www.babelstone.co.uk/Software/BabelMap.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -2945,7 +2945,7 @@
    "evidence_url": "http://babelstone.co.uk/Software/BabelPad.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -3777,7 +3777,7 @@
    "evidence_url": "https://www.bleachbit.org/download",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -3828,7 +3828,7 @@
    "evidence_url": "https://www.blender.org/download/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -4370,7 +4370,7 @@
    "evidence_url": "https://portableapps.com/apps/games/brutal_chess_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -5026,7 +5026,7 @@
    "evidence_url": "https://portableapps.com/apps/music_video/cdrtfe_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -5642,7 +5642,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/clicky-gone-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -5916,7 +5916,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/converber_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -6106,7 +6106,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/cook_timer_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -6294,7 +6294,7 @@
    "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/coreinfo",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -6536,7 +6536,7 @@
    "evidence_url": "http://www.softwareok.com/?seite=Microsoft/CpuFrequenz",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -6779,7 +6779,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/crystalmark-retro-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -7567,7 +7567,7 @@
    "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/debugview",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -7759,7 +7759,7 @@
    "evidence_url": "http://www.softwareok.com/?Download=DesktopSnowOK",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -8284,7 +8284,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/ditto_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -8537,7 +8537,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/dont_panic_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -8588,7 +8588,7 @@
    "evidence_url": "https://www.softwareok.com/?Download=DontSleep",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -9054,7 +9054,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/dtaskmanager_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -9258,7 +9258,7 @@
    "evidence_url": "https://github.com/File-New-Project/EarTrumpet",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -9895,7 +9895,7 @@
    "evidence_url": "https://portableapps.com/apps/security/eraserdrop-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -10530,7 +10530,7 @@
    "evidence_url": "https://github.com/Rem0o/FanControl.Releases",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "OS support alone does not establish motherboard, GPU or fan-controller compatibility; a hardware-specific test is required."
+   "notes": "OS support alone doesn't mean it works with your motherboard, GPU or fan controller — that needs a hardware-specific test."
   },
   "rating": null,
   "attrs": {
@@ -11118,7 +11118,7 @@
    "evidence_url": "https://portableapps.com/apps/internet/feedroller-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -11263,7 +11263,7 @@
    "evidence_url": "https://file-converter.io",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to File Converter 2 and its 64-bit installer; legacy downloads are separate."
+   "notes": "Covers File Converter 2's 64-bit installer only, not the legacy downloads."
   },
   "rating": null,
   "attrs": {
@@ -12534,7 +12534,7 @@
    "evidence_url": "https://www.softwareok.com/?Download=FontViewOK",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -13151,7 +13151,7 @@
    "evidence_url": "https://www.lmadhavan.com/fotografix/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -13298,7 +13298,7 @@
    "evidence_url": "https://www.freedownloadmanager.org",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -13720,7 +13720,7 @@
    "evidence_url": "https://portableapps.com/apps/development/frhed_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -13771,7 +13771,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/free_upx_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -14457,7 +14457,7 @@
    "evidence_url": "http://www.gnucash.org",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -14652,7 +14652,7 @@
    "evidence_url": "https://portableapps.com/apps/games/golly-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -15014,7 +15014,7 @@
    "evidence_url": "https://portableapps.com/apps/security/gpg-plugin-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -15543,7 +15543,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/gridy-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -16093,7 +16093,7 @@
    "evidence_url": "https://heroicgameslauncher.com/downloads",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -16194,7 +16194,7 @@
    "evidence_url": "https://portableapps.com/apps/games/hex-a-hop_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -16341,7 +16341,7 @@
    "evidence_url": "https://www.gethomebank.org/en/downloads.php",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -16638,7 +16638,7 @@
    "evidence_url": "https://portableapps.com/apps/games/icebreaker_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -16689,7 +16689,7 @@
    "evidence_url": "https://portableapps.com/apps/graphics_pictures/idphotostudio-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -16835,7 +16835,7 @@
    "evidence_url": "https://github.com/d2phap/ImageGlass",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Check the matching x64/ARM64 build and edition-specific runtime requirements."
+   "notes": "Get the matching x64/ARM64 build and check its required runtimes."
   },
   "rating": null,
   "attrs": {
@@ -16932,7 +16932,7 @@
    "evidence_url": "https://portableapps.com/apps/development/initranslator-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -17220,7 +17220,7 @@
    "evidence_url": "https://portableapps.com/apps/graphics_pictures/irfanview_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -17273,7 +17273,7 @@
    "evidence_url": "https://www.srware.net/en/software_srware_iron.php",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -17324,7 +17324,7 @@
    "evidence_url": "https://portableapps.com/apps/internet/isotoxin-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -17804,7 +17804,7 @@
    "evidence_url": "https://portableapps.com/apps/games/jooleem_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -17960,7 +17960,7 @@
    "evidence_url": "https://github.com/sylikc/jpegview",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -18337,7 +18337,7 @@
    "evidence_url": "https://keepass.info/download.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to the Classic 1.x edition. It is x86; x64/ARM64 use emulation."
+   "notes": "Covers the Classic 1.x edition, which is x86 only — on x64/ARM64 it runs under emulation."
   },
   "rating": null,
   "attrs": {
@@ -18527,7 +18527,7 @@
    "evidence_url": "https://keepassxc.org/download/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -18664,7 +18664,7 @@
    "evidence_url": "https://www.kicad.org/download/windows/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -19164,7 +19164,7 @@
    "evidence_url": "https://usekudu.com/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -19370,7 +19370,7 @@
    "evidence_url": "https://portableapps.com/apps/music_video/lamexp-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -20484,7 +20484,7 @@
    "evidence_url": "http://portableapps.com/apps/games/lmarbles_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -21425,7 +21425,7 @@
    "evidence_url": "https://portableapps.com/apps/games/mahjongg-solitaire-3d-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -21616,7 +21616,7 @@
    "evidence_url": "https://portableapps.com/apps/games/maniadrive-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -22077,7 +22077,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/mbox-viewer-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -22128,7 +22128,7 @@
    "evidence_url": "https://github.com/Aleksoid1978/MPC-BE",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -22179,7 +22179,7 @@
    "evidence_url": "https://github.com/clsid2/mpc-hc",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -22230,7 +22230,7 @@
    "evidence_url": "https://mediaarea.net/en/MediaInfo/Download/Windows",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -22788,7 +22788,7 @@
    "evidence_url": "https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -23102,7 +23102,7 @@
    "evidence_url": "https://portableapps.com/apps/games/mines-perfect_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -23756,7 +23756,7 @@
    "evidence_url": "https://portableapps.com/apps/games/monster_2_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -24500,7 +24500,7 @@
    "evidence_url": "https://www.getmusicbee.com/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -25274,7 +25274,7 @@
    "evidence_url": "https://www.nethack.org/common/index.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -25383,7 +25383,7 @@
    "evidence_url": "https://portableapps.com/apps/games/neverball_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -26256,7 +26256,7 @@
    "evidence_url": "https://www.oo-software.com/en/shutup10",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -26314,7 +26314,7 @@
    "evidence_url": "https://obsproject.com/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -26720,7 +26720,7 @@
    "evidence_url": "https://portableapps.com/apps/accessibility/on-screen_keyboard_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -26771,7 +26771,7 @@
    "evidence_url": "https://portableapps.com/apps/accessibility/oneloupe-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -27535,7 +27535,7 @@
    "evidence_url": "https://www.openttd.org/downloads/openttd-releases/latest",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The explicit Windows 11 download labels reviewed apply to ARM64 packages. x64 support remains to be verified separately."
+   "notes": "The Windows 11 labels checked cover the ARM64 packages only; x64 still needs verifying."
   },
   "rating": null,
   "attrs": {
@@ -28183,7 +28183,7 @@
    "evidence_url": "https://portableapps.com/apps/games/pathological_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -28234,7 +28234,7 @@
    "evidence_url": "https://portableapps.com/apps/music_video/paul_stretch_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -28989,7 +28989,7 @@
    "evidence_url": "https://photodemon.org/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -29814,7 +29814,7 @@
    "evidence_url": "http://portableapps.com/apps/office/pnotes_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -30313,7 +30313,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/portableapps.com_appcompactor",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -30412,7 +30412,7 @@
    "evidence_url": "http://portableapps.com/apps/development/portableapps.com_launcher",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -30747,7 +30747,7 @@
    "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -30798,7 +30798,7 @@
    "evidence_url": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -30849,7 +30849,7 @@
    "evidence_url": "https://www.softwareok.com/?seite=Freeware/ProcessKO",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -31176,7 +31176,7 @@
    "evidence_url": "https://portableapps.com/apps/games/puzzle_collection_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -31227,7 +31227,7 @@
    "evidence_url": "https://www.softwareok.com/?seite=Freeware/Q-Dir",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -31517,7 +31517,7 @@
    "evidence_url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -32079,7 +32079,7 @@
    "evidence_url": "https://portableapps.com/apps/games/quick_solitaire_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -32130,7 +32130,7 @@
    "evidence_url": "https://www.softwareok.com/?seite=Microsoft/QuickMemoryTestOK",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -32314,7 +32314,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/qwikmark-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -33254,7 +33254,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/resource-hacker-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -33348,7 +33348,7 @@
    "evidence_url": "https://www.retroarch.com/?page=platforms",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -33867,7 +33867,7 @@
    "evidence_url": "https://www.softwareok.com/?seite=Freeware/Run-Command",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -34183,7 +34183,7 @@
    "evidence_url": "https://sandboxie-plus.com/downloads/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -35099,7 +35099,7 @@
    "evidence_url": "http://jacquelin.potier.free.fr/ShortcutsSearchAndReplace/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -35155,7 +35155,7 @@
    "evidence_url": "https://www.shotcut.org/download/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -35668,7 +35668,7 @@
    "evidence_url": "https://github.com/henrypp/simplewall",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -36074,7 +36074,7 @@
    "evidence_url": "http://portableapps.com/apps/utilities/snaptimer-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -36504,7 +36504,7 @@
    "evidence_url": "https://stella-emu.github.io/downloads.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -36560,7 +36560,7 @@
    "evidence_url": "https://stellarium.org/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The requirements explicitly mention Windows 11 on ARM64; check CPU architecture and OpenGL/GPU requirements separately."
+   "notes": "Requirements mention Windows 11 on ARM64. Check your CPU architecture and OpenGL/GPU requirements too."
   },
   "rating": null,
   "attrs": {
@@ -36843,7 +36843,7 @@
    "evidence_url": "https://portableapps.com/apps/music_video/streamwriter-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -36937,7 +36937,7 @@
    "evidence_url": "https://www.softwareok.com/?Download=StressMyPC",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -37136,7 +37136,7 @@
    "evidence_url": "https://www.sumatrapdfreader.org/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -37849,7 +37849,7 @@
    "evidence_url": "https://portableapps.com/apps/games/t-3_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -38355,7 +38355,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/texter_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -38689,7 +38689,7 @@
    "evidence_url": "https://portableapps.com/apps/games/tick5_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -39162,7 +39162,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/toucan",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -39702,7 +39702,7 @@
    "evidence_url": "https://portableapps.com/apps/games/twin_distress_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -39758,7 +39758,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/typertask-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -40000,7 +40000,7 @@
    "evidence_url": "https://mercury13.github.io/unicodia/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -40307,7 +40307,7 @@
    "evidence_url": "https://portableapps.com/apps/games/usb-sudoku-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -41186,7 +41186,7 @@
    "evidence_url": "https://code.visualstudio.com/download",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -41290,7 +41290,7 @@
    "evidence_url": "https://portableapps.com/apps/internet/wackget-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -41585,7 +41585,7 @@
    "evidence_url": "http://portableapps.com/apps/games/watomic_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -41775,7 +41775,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/whatchanged-portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -42011,7 +42011,7 @@
    "evidence_url": "https://winaero.com/winaero-tweaker/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -42206,7 +42206,7 @@
    "evidence_url": "https://www.mdtzone.it/sw/wincontig/en/index.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -42305,7 +42305,7 @@
    "evidence_url": "https://github.com/henrypp/errorlookup",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -42408,7 +42408,7 @@
    "evidence_url": "https://github.com/microsoft/winfile",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -42517,7 +42517,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/winmd5sum_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -42577,7 +42577,7 @@
    "evidence_url": "https://portableapps.com/apps/utilities/winmerge_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -42729,7 +42729,7 @@
    "evidence_url": "https://github.com/ricky65/WinPenguins",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -43218,7 +43218,7 @@
    "evidence_url": "https://antibody-software.com/wizfile/download",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -43422,7 +43422,7 @@
    "evidence_url": "https://github.com/cfgnunes/wxmp3gain",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The project reports testing its precompiled binaries on Windows 11. No local executable test was performed."
+   "notes": "The project says it tested its precompiled binaries on Windows 11. We haven't tested them here."
   },
   "rating": null,
   "attrs": {
@@ -43761,7 +43761,7 @@
    "evidence_url": "https://www.xnview.com/en/xnconvert/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -43864,7 +43864,7 @@
    "evidence_url": "https://www.xnview.com/en/xnview-mp/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The app-specific publisher/project page explicitly documents Windows 11 support. This is documentation evidence, not an installation test."
+   "notes": ""
   },
   "rating": null,
   "attrs": {
@@ -44251,7 +44251,7 @@
    "evidence_url": "http://portableapps.com/apps/games/zaz_portable",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "PortableApps lists Windows 11 for this app-specific portable package. This evidence does not cover other installers or confirm architecture/build-specific operation."
+   "notes": "Covers only the linked portable package, not other installers."
   },
   "rating": null,
   "attrs": {
@@ -44401,7 +44401,7 @@
    "evidence_url": "https://zim-wiki.org/downloads.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Publisher describes an installer built/tested on Windows 11 64-bit. This is the publisher's test statement, not a test performed here."
+   "notes": "The publisher says its installer was built and tested on 64-bit Windows 11. We haven't tested it here."
   },
   "rating": null,
   "attrs": {
