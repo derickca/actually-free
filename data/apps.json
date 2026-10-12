@@ -2277,7 +2277,7 @@
    "evidence_url": "https://www.petges.lu/download/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Current 11.50a is 64-bit only and lists Windows 11 and Windows 11 ARM; older 11.40b is explicitly unsupported. No local Windows 11 installation test was performed."
+   "notes": "Current 11.50a is 64-bit only and lists Windows 11 and Windows 11 ARM; older 11.40b is explicitly unsupported."
   },
   "rating": null,
   "attrs": {
@@ -2381,7 +2381,7 @@
    "evidence_url": "https://www.audacityteam.org/download/windows",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Publisher reports Windows 10/11 testing. Windows ARM64 has separate prerequisites and caveats; use its matching build. No local Windows 11 installation test was performed."
+   "notes": "Publisher reports Windows 10/11 testing. Windows ARM64 has separate prerequisites and caveats; use its matching build."
   },
   "rating": null,
   "attrs": {
@@ -2562,7 +2562,7 @@
    "evidence_url": "http://openmidiproject.opal.ne.jp/AutoDrum_en.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to the 64-bit AutoDrum 8.1/8.0 downloads; do not apply it to older builds. No local Windows 11 installation test was performed."
+   "notes": "Evidence applies to the 64-bit AutoDrum 8.1/8.0 downloads; do not apply it to older builds."
   },
   "rating": null,
   "attrs": {
@@ -10530,7 +10530,7 @@
    "evidence_url": "https://github.com/Rem0o/FanControl.Releases",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "OS support alone does not establish motherboard, GPU or fan-controller compatibility; a hardware-specific test is required. No local Windows 11 installation test was performed."
+   "notes": "OS support alone does not establish motherboard, GPU or fan-controller compatibility; a hardware-specific test is required."
   },
   "rating": null,
   "attrs": {
@@ -11263,7 +11263,7 @@
    "evidence_url": "https://file-converter.io",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to File Converter 2 and its 64-bit installer; legacy downloads are separate. No local Windows 11 installation test was performed."
+   "notes": "Evidence applies to File Converter 2 and its 64-bit installer; legacy downloads are separate."
   },
   "rating": null,
   "attrs": {
@@ -16835,7 +16835,7 @@
    "evidence_url": "https://github.com/d2phap/ImageGlass",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Check the matching x64/ARM64 build and edition-specific runtime requirements. No local Windows 11 installation test was performed."
+   "notes": "Check the matching x64/ARM64 build and edition-specific runtime requirements."
   },
   "rating": null,
   "attrs": {
@@ -18337,7 +18337,7 @@
    "evidence_url": "https://keepass.info/download.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to the Classic 1.x edition. It is x86; x64/ARM64 use emulation. No local Windows 11 installation test was performed."
+   "notes": "Evidence applies to the Classic 1.x edition. It is x86; x64/ARM64 use emulation."
   },
   "rating": null,
   "attrs": {
@@ -18388,7 +18388,7 @@
    "evidence_url": "https://keepass.info/download.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence applies to Professional 2.x; the download page lists x86, x64 and ARM64. No local Windows 11 installation test was performed."
+   "notes": "Evidence applies to Professional 2.x; the download page lists x86, x64 and ARM64."
   },
   "rating": null,
   "attrs": {
@@ -20540,7 +20540,7 @@
    "evidence_url": "https://lmms.io/download/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "x86_64 builds require an x86_64-v2 or newer CPU; ARM64 builds require Windows 11 and ARMv8.1-A or newer. No local Windows 11 installation test was performed."
+   "notes": "x86_64 builds require an x86_64-v2 or newer CPU; ARM64 builds require Windows 11 and ARMv8.1-A or newer."
   },
   "rating": null,
   "attrs": {
@@ -27535,7 +27535,7 @@
    "evidence_url": "https://www.openttd.org/downloads/openttd-releases/latest",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The explicit Windows 11 download labels reviewed apply to ARM64 packages. x64 support remains to be verified separately. No local Windows 11 installation test was performed."
+   "notes": "The explicit Windows 11 download labels reviewed apply to ARM64 packages. x64 support remains to be verified separately."
   },
   "rating": null,
   "attrs": {
@@ -36560,7 +36560,7 @@
    "evidence_url": "https://stellarium.org/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The requirements explicitly mention Windows 11 on ARM64; check CPU architecture and OpenGL/GPU requirements separately. No local Windows 11 installation test was performed."
+   "notes": "The requirements explicitly mention Windows 11 on ARM64; check CPU architecture and OpenGL/GPU requirements separately."
   },
   "rating": null,
   "attrs": {
@@ -43422,7 +43422,7 @@
    "evidence_url": "https://github.com/cfgnunes/wxmp3gain",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "The project reports testing its precompiled binaries on Windows 11. No local executable test was performed. No local Windows 11 installation test was performed."
+   "notes": "The project reports testing its precompiled binaries on Windows 11. No local executable test was performed."
   },
   "rating": null,
   "attrs": {
@@ -44195,7 +44195,7 @@
    "evidence_url": "https://pendrivelinux.com/yumi-multiboot-usb-creator/",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Evidence comes from the host requirements section listing Windows 11/10/8, not from mentions of creating Windows 11 installation media. No local Windows 11 installation test was performed."
+   "notes": "Evidence comes from the host requirements section listing Windows 11/10/8, not from mentions of creating Windows 11 installation media."
   },
   "rating": null,
   "attrs": {
@@ -44401,7 +44401,7 @@
    "evidence_url": "https://zim-wiki.org/downloads.html",
    "checked_at": "2026-10-12",
    "tested": false,
-   "notes": "Publisher describes an installer built/tested on Windows 11 64-bit. This is the publisher's test statement, not a test performed here. No local Windows 11 installation test was performed."
+   "notes": "Publisher describes an installer built/tested on Windows 11 64-bit. This is the publisher's test statement, not a test performed here."
   },
   "rating": null,
   "attrs": {
