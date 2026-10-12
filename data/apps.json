@@ -119,6 +119,48 @@
   "sibling_package": null
  },
  {
+  "name": "7+ Taskbar Tweaker",
+  "package": "7.taskbar.tweaker.windows",
+  "slug": "7-taskbar-tweaker-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool for customizing Windows taskbar behaviour, including grouping, thumbnails and mouse controls.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "7-Zip",
   "package": "7.zip.windows",
   "slug": "7-zip-windows",
@@ -437,6 +479,48 @@
   "rating": "4.69",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "AkelPad",
+  "package": "akelpad.windows",
+  "slug": "akelpad-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A plain-text editor for Windows with syntax highlighting, tabbed editing and plugin support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -819,6 +903,48 @@
   "sibling_package": null
  },
  {
+  "name": "Ant Renamer",
+  "package": "ant.renamer.windows",
+  "slug": "ant-renamer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A batch file and folder renamer with rules for string replacement, case changes, regular expressions and metadata-based renaming.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.net/projects/ant-renamer/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "AntennaPod",
   "package": "de.danoeh.antennapod",
   "slug": "de-danoeh-antennapod",
@@ -1105,6 +1231,51 @@
   "sibling_package": null
  },
  {
+  "name": "AquaSnap",
+  "package": "aquasnap.windows",
+  "slug": "aquasnap-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A window management tool that adds snapping, tiling, window docking and desktop splitting to Windows.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": true,
+  "free_enough_reason": "The free Personal version is a complete product; multi-monitor support is the only significant feature reserved for the paid tier.",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "free enough",
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "ArcaneChat",
   "package": "chat.delta.lite",
   "slug": "chat-delta-lite",
@@ -1307,6 +1478,48 @@
   "sibling_package": null
  },
  {
+  "name": "Artha",
+  "package": "artha.windows",
+  "slug": "artha-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Language",
+  "description": "An offline English thesaurus based on WordNet with global hotkey lookup and regular-expression search.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://artha.sourceforge.net/wiki/index.php/Home",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Asteroid's Revenge",
   "package": "com.game.asteroids_revenge",
   "slug": "com-game-asteroids-revenge",
@@ -1417,6 +1630,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Attribute Changer",
+  "package": "attribute.changer.windows",
+  "slug": "attribute-changer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool for changing file and folder attributes, timestamps and photo dates in bulk.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -1742,6 +1997,53 @@
   },
   "rating": 5.0,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "BabelMap",
+  "package": "babelmap.windows",
+  "slug": "babelmap-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Language",
+  "description": "A Unicode character map for browsing over 110,000 characters and copying them to the clipboard.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.babelstone.co.uk/Software/BabelMap.html",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2024-09-29--babelmap-portable-16.0.0.3-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -2941,6 +3243,48 @@
   "sibling_package": null
  },
  {
+  "name": "Capture2Text",
+  "package": "capture2text.windows",
+  "slug": "capture2text-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that runs OCR on a selected screen region and copies the recognized text to the clipboard.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://capture2text.sourceforge.net/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Capy Reader",
   "package": "com.capyreader.app",
   "slug": "com-capyreader-app",
@@ -3133,6 +3477,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Checksum Control",
+  "package": "checksum.control.windows",
+  "slug": "checksum-control-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A wizard-style utility for generating and verifying file checksums in SFV and MD5 formats.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "Portable Freeware Collection listing",
+     "url": "https://www.portablefreeware.com/index.php?sc=28"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -3476,6 +3867,48 @@
   "sibling_package": null
  },
  {
+  "name": "Clicky Gone",
+  "package": "clicky.gone.windows",
+  "slug": "clicky-gone-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool that automatically hides the mouse cursor when it has not moved for a while.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Clima",
   "package": "co.prestosole.clima",
   "slug": "co-prestosole-clima",
@@ -3504,6 +3937,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Colour Contrast Analyser",
+  "package": "colour.contrast.analyser.windows",
+  "slug": "colour-contrast-analyser-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool for checking the contrast ratio of text and visual elements against accessibility guidelines.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.tpgi.com/color-contrast-checker/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/soluciones-inclusivas/ccae"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -3638,6 +4118,53 @@
   "sibling_package": null
  },
  {
+  "name": "Converber",
+  "package": "converber.windows",
+  "slug": "converber-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A unit converter covering over 1,300 units across 38 categories.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-rev-2-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Conversations",
   "package": "eu.siacs.conversations",
   "slug": "eu-siacs-conversations",
@@ -3679,6 +4206,53 @@
   "sibling_package": null
  },
  {
+  "name": "ConvertAll",
+  "package": "convertall.windows",
+  "slug": "convertall-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A unit converter that lets units be combined freely, for example converting inches per decade to other units.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://bellz.org/ConvertAll-py/index.html",
+   "alternatives": [
+    {
+     "label": "SourceForge",
+     "url": "https://sourceforge.net/projects/convertall/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Converter NOW: Unit Converter",
   "package": "com.ferrarid.converterpro",
   "slug": "com-ferrarid-converterpro",
@@ -3707,6 +4281,48 @@
   "rating": "4.51",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Cook Timer",
+  "package": "cook.timer.windows",
+  "slug": "cook-timer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Time",
+  "description": "A simple countdown timer with presets for 3, 5, 10 and 15 minutes and a visual progress bar.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://portableapps.com/apps/utilities/cook_timer_portable",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -3800,6 +4416,53 @@
   "sibling_package": null
  },
  {
+  "name": "CopyQ",
+  "package": "copyq.windows",
+  "slug": "copyq-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A clipboard manager with tabs, scripting and a command-line interface that stores text, image and HTML clips.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://hluk.github.io/CopyQ/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/git-cgallagher/copyq"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Coreinfo",
   "package": "coreinfo.windows",
   "slug": "coreinfo-windows",
@@ -3870,6 +4533,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Cppcheck",
+  "package": "cppcheck.windows",
+  "slug": "cppcheck-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A static analysis tool that finds bugs in C and C++ code without running it. It reports issues such as memory leaks, out-of-bounds access and undefined behaviour.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://cppcheck.sourceforge.io",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/cppcheck-opensource/cppcheck"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -4545,6 +5255,48 @@
   "sibling_package": null
  },
  {
+  "name": "Database Browser",
+  "package": "database.browser.windows",
+  "slug": "database-browser-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A visual database tool for creating, browsing and querying databases with a spreadsheet-style interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DAVx⁵",
   "package": "at.bitfire.davdroid",
   "slug": "at-bitfire-davdroid",
@@ -4583,6 +5335,53 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "Open question: the Play Store listing is paid (funding model), but the FOSS build is identical and fully free. OpenAPK desc: Free download of DAVx⁵ APK file and source code repo under GPL-3.0-only license - Latest Version 4.5.20-ose - CalDAV/CardDAV Synchronization and Client Not yet fully verified — listed from the GitHub repo; Play labels and F-Droid anti-features not yet checked",
+  "sibling_package": null
+ },
+ {
+  "name": "DB Browser for SQLite",
+  "package": "db.browser.for.sqlite.windows",
+  "slug": "db-browser-for-sqlite-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A visual tool for creating, designing and editing SQLite database files through a spreadsheet-like interface, with no SQL knowledge required.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sqlitebrowser.org/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/sqlitebrowser/sqlitebrowser"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -4749,6 +5548,48 @@
   "sibling_package": null
  },
  {
+  "name": "Detect It Easy",
+  "package": "detect.it.easy.windows",
+  "slug": "detect-it-easy-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that identifies file types and detects the compiler, linker or packer used to build a binary.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/horsicq/Detect-It-Easy",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Dharmik - Browse Bhagavad Gita",
   "package": "com.shub39.dharmik.online",
   "slug": "com-shub39-dharmik-online",
@@ -4811,6 +5652,90 @@
   },
   "downloads": {
    "official": "https://portableapps.com/node/59248",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "DiffImg",
+  "package": "diffimg.windows",
+  "slug": "diffimg-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that compares two images and highlights the differences between them.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Diffpdf",
+  "package": "diffpdf.windows",
+  "slug": "diffpdf-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that compares two PDF files page by page and highlights text and layout differences.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
    "alternatives": []
   },
   "rating": null,
@@ -4956,6 +5881,95 @@
   "sibling_package": null
  },
  {
+  "name": "Ditto",
+  "package": "ditto.windows",
+  "slug": "ditto-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A clipboard manager that keeps a searchable history of clipboard items and can synchronize clipboards between computers on a network.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://ditto-cp.sourceforge.net",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/utilities/ditto_portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "DM2",
+  "package": "dm2.windows",
+  "slug": "dm2-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool that minimizes windows to the system tray and adds desktop window-management shortcuts.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "DNSNet",
   "package": "dev.clombardo.dnsnet",
   "slug": "dev-clombardo-dnsnet",
@@ -4984,6 +5998,53 @@
   "rating": 4.5,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Don't Panic!",
+  "package": "don.t.panic.windows",
+  "slug": "don-t-panic-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A one-click button that hides, minimizes or closes chosen windows and can clear recent documents and browser history.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2012-10-03--dont-panic-portable-2.0.1-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -5500,6 +6561,53 @@
   "sibling_package": null
  },
  {
+  "name": "EarTrumpet",
+  "package": "eartrumpet.windows",
+  "slug": "eartrumpet-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A volume mixer for Windows that shows per-app volume sliders in a taskbar flyout.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://eartrumpet.app",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/File-New-Project/EarTrumpet"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Easer",
   "package": "ryey.easer.beta",
   "slug": "ryey-easer-beta",
@@ -5983,6 +7091,48 @@
      "url": "https://portableapps.com/apps/security/eraserdrop-portable"
     }
    ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Espanso",
+  "package": "espanso.windows",
+  "slug": "espanso-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Keyboard",
+  "description": "A cross-platform text expander that replaces typed abbreviations with longer text, images or shell command output.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/espanso/espanso",
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -7081,6 +8231,48 @@
   "sibling_package": null
  },
  {
+  "name": "FileAlyzer",
+  "package": "filealyzer.windows",
+  "slug": "filealyzer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that analyzes files to show their type, structure and metadata details.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "FileOptimizer",
   "package": "fileoptimizer.windows",
   "slug": "fileoptimizer-windows",
@@ -7735,6 +8927,53 @@
   "sibling_package": null
  },
  {
+  "name": "Flow Launcher",
+  "package": "flow.launcher.windows",
+  "slug": "flow-launcher-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A keyboard-driven app launcher and file search tool for Windows with a community plugin ecosystem.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://flowlauncher.com",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/Flow-Launcher/Flow.Launcher"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Flowit — Block Puzzle",
   "package": "com.bytehamster.flowitgame",
   "slug": "com-bytehamster-flowitgame",
@@ -8047,6 +9286,90 @@
   "rating": null,
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FontForge",
+  "package": "fontforge.windows",
+  "slug": "fontforge-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A font editor for creating and modifying outline and bitmap fonts.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "FontViewOK",
+  "package": "fontviewok.windows",
+  "slug": "fontviewok-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool for quickly previewing and comparing installed fonts.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "made_by_us": false,
@@ -8884,6 +10207,48 @@
   "sibling_package": null
  },
  {
+  "name": "Frhed",
+  "package": "frhed.windows",
+  "slug": "frhed-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A hex editor for Windows that can edit binary files and large text files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "FUPX",
   "package": "fupx.windows",
   "slug": "fupx-windows",
@@ -9116,6 +10481,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Geany",
+  "package": "geany.windows",
+  "slug": "geany-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A lightweight code editor and IDE with syntax highlighting, code folding and plugin support.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -9446,6 +10853,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "GoldenDict",
+  "package": "goldendict.windows",
+  "slug": "goldendict-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Language",
+  "description": "A dictionary program that searches multiple dictionary formats and Wikipedia from one interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://goldendict.org/",
+   "alternatives": [
+    {
+     "label": "GoldenDict-ng (active fork) on GitHub",
+     "url": "https://github.com/xiaoyifang/goldendict-ng"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -9948,6 +11402,100 @@
   "sibling_package": null
  },
  {
+  "name": "Greenshot",
+  "package": "greenshot.windows",
+  "slug": "greenshot-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A screenshot tool that captures regions, windows and full screens and includes a built-in editor for annotations.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://getgreenshot.org",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/greenshot"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "grepWin",
+  "package": "grepwin.windows",
+  "slug": "grepwin-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A search and replace tool for files that supports regular expressions.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://tools.stefankueng.com/grepWin.html",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/stefankueng/grepWin"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Gridle",
   "package": "org.billthefarmer.gridle",
   "slug": "org-billthefarmer-gridle",
@@ -9976,6 +11524,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Gridy",
+  "package": "gridy.windows",
+  "slug": "gridy-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool that overlays a grid on the screen for aligning and measuring on-screen elements.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -10027,6 +11617,48 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Grit - Productivity App ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "gVim",
+  "package": "gvim.windows",
+  "slug": "gvim-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "The graphical version of the Vim text editor for Windows. Donations to the Vim project are encouraged but not required.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -10732,6 +12364,48 @@
   "sibling_package": null
  },
  {
+  "name": "IniTranslator",
+  "package": "initranslator.windows",
+  "slug": "initranslator-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A tool for translating and localizing the INI-style language files used by other programs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.NET/projects/initranslator/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Inkscape",
   "package": "inkscape.windows",
   "slug": "inkscape-windows",
@@ -10802,6 +12476,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "InnoUnpacker",
+  "package": "innounpacker.windows",
+  "slug": "innounpacker-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool for inspecting Inno Setup installer files to list and extract the files they contain.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2026-05-05--innounpacker-portable-2.2.9-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -12967,6 +14688,48 @@
   "sibling_package": null
  },
  {
+  "name": "LICEcap",
+  "package": "licecap.windows",
+  "slug": "licecap-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A simple screen recorder by Cockos that captures a desktop region directly to animated GIF or its own LCF format.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.cockos.com/licecap/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Lichess",
   "package": "org.lichess.mobileV2",
   "slug": "org-lichess-mobilev2",
@@ -12995,6 +14758,48 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Lightscreen",
+  "package": "lightscreen.windows",
+  "slug": "lightscreen-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A lightweight screenshot tool that runs in the background and saves screenshots through hotkeys.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://lightscreen.com.ar/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -14243,6 +16048,95 @@
   "rating": null,
   "attrs": {
    "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MBox Viewer",
+  "package": "mbox.viewer.windows",
+  "slug": "mbox-viewer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A viewer for mbox email archives such as Gmail Takeout exports and Thunderbird archives. It opens large archives, previews attachments and exports mails to EML.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://sourceforge.Net/projects/mbox-viewer/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/eneam/mboxviewer"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "MediaInfo",
+  "package": "mediainfo.windows",
+  "slug": "mediainfo-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that displays technical details of audio and video files such as codecs, bitrates and subtitles.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
    "needs_account": false
   },
   "made_by_us": false,
@@ -16407,6 +18301,132 @@
   "sibling_package": null
  },
  {
+  "name": "Notepad++",
+  "package": "notepad.windows",
+  "slug": "notepad-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A text editor and source code editor for Windows with syntax highlighting, tabbed editing and macros.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Notepad2",
+  "package": "notepad2.windows",
+  "slug": "notepad2-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A lightweight plain-text editor for Windows with syntax highlighting and regular-expression search.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Notepad2-mod",
+  "package": "notepad2.mod.windows",
+  "slug": "notepad2-mod-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A fork of Notepad2 with extra features such as code folding and additional editing options.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Notes",
   "package": "notes.windows",
   "slug": "notes-windows",
@@ -16648,6 +18668,48 @@
   "rating": "4.12",
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "NSIS",
+  "package": "nsis.windows",
+  "slug": "nsis-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A system for building Windows installers from script files. The installers it produces are self-contained.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -17430,6 +19492,48 @@
   "rating": 4.7,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "OpenRGB",
+  "package": "openrgb.windows",
+  "slug": "openrgb-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool for controlling RGB lighting across motherboards, RAM, fans and peripherals from one interface.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://openrgb.org/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -19329,6 +21433,48 @@
   "sibling_package": null
  },
  {
+  "name": "PowerToys",
+  "package": "powertoys.windows",
+  "slug": "powertoys-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A Microsoft suite of Windows utilities including FancyZones window layouts, PowerRename, a command palette and a color picker.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/microsoft/PowerToys",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "PPSSPP",
   "package": "org.ppsspp.ppsspp",
   "slug": "org-ppsspp-ppsspp",
@@ -19866,6 +22012,50 @@
   "sibling_package": null
  },
  {
+  "name": "Qalculate",
+  "package": "qalculate.windows",
+  "slug": "qalculate-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A calculator that supports symbolic calculation, unit conversion, plotting and currency conversion.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "com.jherkenhoff.qalculate",
+  "sibling_slug": "com-jherkenhoff-qalculate",
+  "sibling_platform": "android"
+ },
+ {
   "name": "Qalculate!",
   "package": "com.jherkenhoff.qalculate",
   "slug": "com-jherkenhoff-qalculate",
@@ -19904,7 +22094,9 @@
   "tags": [],
   "needs_review": false,
   "review_notes": "",
-  "sibling_package": null
+  "sibling_package": null,
+  "sibling_slug": "qalculate-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "qBitController",
@@ -20485,6 +22677,48 @@
   "sibling_package": null
  },
  {
+  "name": "Rapid CRC Unicode",
+  "package": "rapid.crc.unicode.windows",
+  "slug": "rapid-crc-unicode-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool for generating and verifying CRC checksums of files with support for Unicode filenames.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Rattlegram",
   "package": "com.aicodix.rattlegram",
   "slug": "com-aicodix-rattlegram",
@@ -20512,6 +22746,48 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "RBTray",
+  "package": "rbtray.windows",
+  "slug": "rbtray-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool that sends any window to the system tray by right-clicking its minimize button.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -20976,6 +23252,50 @@
   "sibling_package": null
  },
  {
+  "name": "ReNamer",
+  "package": "renamer.windows",
+  "slug": "renamer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A batch file renamer with fourteen renaming rule categories and metadata-based renaming.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.den4b.com/changelogs/renamer",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "RepoStore",
   "package": "com.samyak.repostore",
   "slug": "com-samyak-repostore",
@@ -21004,6 +23324,53 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Resource Hacker",
+  "package": "resource.hacker.windows",
+  "slug": "resource-hacker-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A resource compiler and decompiler for viewing and editing resources inside Windows executables and DLLs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "http://angusj.com/resourcehacker/",
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/utilities/resource-hacker-portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -21094,6 +23461,53 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Ricochlime ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "RisohEditor",
+  "package": "risoheditor.windows",
+  "slug": "risoheditor-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A resource editor for Win32 development that edits resources in EXE, DLL, RC and RES files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://katahiromz.web.fc2.com/re/en",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/katahiromz/RisohEditor"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -21846,6 +24260,53 @@
   "sibling_package": null
  },
  {
+  "name": "ScreenToGif",
+  "package": "screentogif.windows",
+  "slug": "screentogif-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A screen recorder that captures a selected area, webcam or sketchboard, then edits the result before saving it as GIF or video.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.screentogif.com/",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/NickeManarin/ScreenToGif/"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Scribus",
   "package": "scribus.windows",
   "slug": "scribus-windows",
@@ -22131,6 +24592,53 @@
   "sibling_package": null
  },
  {
+  "name": "ShareX",
+  "package": "sharex.windows",
+  "slug": "sharex-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A screen capture and file sharing tool that uploads images, text and files to many destinations.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://getsharex.com",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/ShareX/ShareX"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Shattered Pixel Dungeon",
   "package": "com.shatteredpixel.shatteredpixeldungeon",
   "slug": "com-shatteredpixel-shatteredpixeldungeon",
@@ -22241,6 +24749,48 @@
   },
   "rating": null,
   "attrs": {},
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Shortcuts Search And Replace",
+  "package": "shortcuts.search.and.replace.windows",
+  "slug": "shortcuts-search-and-replace-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool for finding and replacing paths inside Windows shortcut (.lnk) files in bulk.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
   "made_by_us": false,
   "per_badge": false,
   "free_enough": false,
@@ -22819,6 +25369,48 @@
   "sibling_package": null
  },
  {
+  "name": "SnapTimer",
+  "package": "snaptimer.windows",
+  "slug": "snaptimer-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Time",
+  "description": "A countdown and alarm timer utility for Windows.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Snikket",
   "package": "org.snikket.android",
   "slug": "org-snikket-android",
@@ -22847,6 +25439,95 @@
   "rating": null,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "SpeedCrunch",
+  "package": "speedcrunch.windows",
+  "slug": "speedcrunch-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A keyboard-driven scientific calculator with scrollable history and syntax highlighting.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "SpeedyFox",
+  "package": "speedyfox.windows",
+  "slug": "speedyfox-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that speeds up Firefox, Thunderbird, Chrome and similar apps by optimizing their SQLite databases.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://crystalidea.com/speedyfox/",
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2020-10-12--speedyfox-portable-2.0.30-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -23691,6 +26372,53 @@
   "sibling_package": null
  },
  {
+  "name": "SWI-Prolog",
+  "package": "swi.prolog.windows",
+  "slug": "swi-prolog-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A widely used implementation of the Prolog logic programming language with a large standard library, a graphical debugger and an HTTP server framework.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://www.swi-prolog.org",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/SWI-Prolog"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Syncthing",
   "package": "syncthing.windows",
   "slug": "syncthing-windows",
@@ -24193,6 +26921,100 @@
   "sibling_package": null
  },
  {
+  "name": "Texter",
+  "package": "texter.windows",
+  "slug": "texter-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Keyboard",
+  "description": "A text-substitution tool that expands user-defined abbreviations into longer phrases while typing in any application.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "PortableApps",
+     "url": "https://portableapps.com/apps/utilities/texter_portable"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Textify",
+  "package": "textify.windows",
+  "slug": "textify-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that copies text from dialog boxes and other interface elements that do not normally allow text selection.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": [
+    {
+     "label": "PortableApps release",
+     "url": "https://portableapps.com/news/2022-05-30--textify-portable-1.10.1-released"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "The Battle for Wesnoth",
   "package": "org.wesnoth.Wesnoth",
   "slug": "org-wesnoth-wesnoth",
@@ -24351,6 +27173,50 @@
   "personal_use": false,
   "tags": [
    "free enough"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "TidyTabs",
+  "package": "tidytabs.windows",
+  "slug": "tidytabs-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tool that adds browser-style tabs to any application window.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": true,
+  "tags": [
+   "personal use"
   ],
   "needs_review": false,
   "review_notes": "",
@@ -25054,6 +27920,48 @@
   "sibling_package": null
  },
  {
+  "name": "TyperTask",
+  "package": "typertask.windows",
+  "slug": "typertask-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Keyboard",
+  "description": "A text macro tool that types predefined text snippets when triggered by a keyword.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "uGet",
   "package": "uget.windows",
   "slug": "uget-windows",
@@ -25207,6 +28115,48 @@
   "rating": 4.3,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Unicodia",
+  "package": "unicodia.windows",
+  "slug": "unicodia-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Language",
+  "description": "A tool for browsing Unicode character data and code charts.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -25451,6 +28401,48 @@
   "rating": 4.4,
   "attrs": {
    "open_source": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "UUID-GUID Generator",
+  "package": "uuid.guid.generator.windows",
+  "slug": "uuid-guid-generator-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that generates UUID/GUID values and copies them to the clipboard.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
   },
   "made_by_us": false,
   "per_badge": false,
@@ -25874,6 +28866,48 @@
   "sibling_package": null
  },
  {
+  "name": "VirtuaWin",
+  "package": "virtuawin.windows",
+  "slug": "virtuawin-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A virtual desktop manager for Windows with configurable hotkeys, mouse edge switching and a plugin system.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://virtuawin.sourceforge.io/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "vivi",
   "package": "com.vivi.vivimusic",
   "slug": "com-vivi-vivimusic",
@@ -26075,6 +29109,95 @@
   "tags": [],
   "needs_review": true,
   "review_notes": "The Play Store build shows ads/in-app purchases (Voyager for Lemmy ads=False iap=True) — listed via the repo build only; help verify the listed build has neither.",
+  "sibling_package": null
+ },
+ {
+  "name": "VS Code",
+  "package": "vs.code.windows",
+  "slug": "vs-code-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "Microsoft's code editor with debugging, syntax highlighting and a large extension marketplace.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://code.visualstudio.com",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "VSCodium",
+  "package": "vscodium.windows",
+  "slug": "vscodium-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "Community-built binaries of VS Code made from the MIT-licensed open-source codebase, without Microsoft branding or telemetry.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://vscodium.com/",
+   "alternatives": [
+    {
+     "label": "winget",
+     "url": "VSCodium.VSCodium"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
   "sibling_package": null
  },
  {
@@ -26493,6 +29616,48 @@
   "sibling_package": null
  },
  {
+  "name": "Winaero Tweaker",
+  "package": "winaero.tweaker.windows",
+  "slug": "winaero-tweaker-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Look",
+  "description": "A tweaking tool for adjusting hidden Windows settings and behaviour without editing the registry by hand.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "WinCDEmu",
   "package": "wincdemu.windows",
   "slug": "wincdemu-windows",
@@ -26516,6 +29681,48 @@
   },
   "downloads": {
    "official": "https://wincdemu.sysprogs.org/portable/",
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WinCompose",
+  "package": "wincompose.windows",
+  "slug": "wincompose-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Keyboard",
+  "description": "A compose key for Windows that types special characters and emoji with short intuitive key sequences.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://github.com/samhocevar/wincompose",
    "alternatives": []
   },
   "rating": null,
@@ -26735,6 +29942,90 @@
      "url": "https://www.microsoft.com/store/apps/9p7vbbbc49rb?ocid=badge"
     }
    ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "winMd5Sum",
+  "package": "winmd5sum.windows",
+  "slug": "winmd5sum-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A tool that computes MD5 checksums of files to verify download integrity.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "WinMerge",
+  "package": "winmerge.windows",
+  "slug": "winmerge-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A visual file and folder comparison tool with merging support for text files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -27391,6 +30682,53 @@
   "sibling_package": null
  },
  {
+  "name": "XN Resource Editor",
+  "package": "xn.resource.editor.windows",
+  "slug": "xn-resource-editor-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Dev tools",
+  "description": "A resource editor and PE module explorer with special support for Delphi programs.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://stefansundin.github.io/xn_resource_editor/",
+   "alternatives": [
+    {
+     "label": "SourceForge mirror",
+     "url": "https://sourceforge.net/projects/xn-resource-editor/support"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
   "name": "Xray",
   "package": "io.github.saeeddev94.xray",
   "slug": "io-github-saeeddev94-xray",
@@ -27801,6 +31139,95 @@
   "rating": null,
   "attrs": {
    "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "Zint Barcode Studio",
+  "package": "zint.barcode.studio.windows",
+  "slug": "zint-barcode-studio-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A GUI for generating barcodes and QR codes in over 50 symbologies and exporting them as image files.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": "https://zint.org.uk",
+   "alternatives": [
+    {
+     "label": "GitHub",
+     "url": "https://github.com/zint/zint"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null
+ },
+ {
+  "name": "ZoomIt",
+  "package": "zoomit.windows",
+  "slug": "zoomit-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Gadgets",
+  "description": "A Microsoft Sysinternals tool for zooming the screen and annotating during presentations. It is also bundled with PowerToys.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": false,
    "needs_account": false
   },
   "made_by_us": false,

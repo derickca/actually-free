@@ -1,5 +1,24 @@
 [
  {
+  "name": "7+ Taskbar Tweaker",
+  "package": "7.taskbar.tweaker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool for customizing Windows taskbar behaviour, including grouping, thumbnails and mouse controls.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+ },
+ {
   "name": "7-Zip",
   "package": "7.zip.windows",
   "platform": "windows",
@@ -43,6 +62,25 @@
   "notes": "UNCERTAIN: the standalone project's own site could not be verified; official_url is the PortableApps entry (third party). PortableApps lists App License: Open Source (GPL) and release 4.2.4 (2013-01-05). URL note: original developer site is gone; PortableApps.com (co-publisher, GPL source linked) is the maintained distribution and serves as the primary download."
  },
  {
+  "name": "AkelPad",
+  "package": "akelpad.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A plain-text editor for Windows with syntax highlighting, tabbed editing and plugin support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as BSD open source; could not verify official download URL in this pass."
+ },
+ {
   "name": "Angry IP Scanner",
   "package": "angry.ip.scanner.windows",
   "platform": "windows",
@@ -62,6 +100,25 @@
   "notes": ""
  },
  {
+  "name": "Ant Renamer",
+  "package": "ant.renamer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A batch file and folder renamer with rules for string replacement, case changes, regular expressions and metadata-based renaming.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.net/projects/ant-renamer/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source: SourceForge lists GPL-2.0, AlternativeTo cites GPL-3.0. Active (v2.13.0 released December 2024)."
+ },
+ {
   "name": "Apache OpenOffice",
   "package": "apache.openoffice.windows",
   "platform": "windows",
@@ -79,6 +136,63 @@
    "needs_account": false
   },
   "notes": "Project strongly warns users to download only from the official site. Also listed in the Microsoft Store for selected languages; could not verify a stable store URL so no alt added."
+ },
+ {
+  "name": "AquaSnap",
+  "package": "aquasnap.windows",
+  "platform": "windows",
+  "status": "free-enough",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A window management tool that adds snapping, tiling, window docking and desktop splitting to Windows.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "The free Personal version is a complete product; multi-monitor support is the only significant feature reserved for the paid tier.",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal use. Could not verify official download URL in this pass."
+ },
+ {
+  "name": "Artha",
+  "package": "artha.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Language",
+  "description": "An offline English thesaurus based on WordNet with global hotkey lookup and regular-expression search.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://artha.sourceforge.net/wiki/index.php/Home",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2 open source. Development appears stalled (latest release 1.0.3), but the Windows build works offline and passes the bar."
+ },
+ {
+  "name": "Attribute Changer",
+  "package": "attribute.changer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool for changing file and folder attributes, timestamps and photo dates in bulk.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware for personal and business use; could not verify official download URL in this pass."
  },
  {
   "name": "AutoHotkey",
@@ -117,6 +231,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "BabelMap",
+  "package": "babelmap.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Language",
+  "description": "A Unicode character map for browsing over 110,000 characters and copying them to the clipboard.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.babelstone.co.uk/Software/BabelMap.html",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2024-09-29--babelmap-portable-16.0.0.3-released"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware by BabelStone: free to download and use for personal or commercial purposes, fully featured, no ads, no IAP. The developer asks users to download only from babelstone.co.uk."
  },
  {
   "name": "BabelPad",
@@ -252,6 +390,49 @@
   "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
  },
  {
+  "name": "Capture2Text",
+  "package": "capture2text.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that runs OCR on a selected screen region and copies the recognized text to the clipboard.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://capture2text.sourceforge.net/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source (SourceForge)."
+ },
+ {
+  "name": "Checksum Control",
+  "package": "checksum.control.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A wizard-style utility for generating and verifying file checksums in SFV and MD5 formats.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "Portable Freeware Collection listing",
+    "url": "https://www.portablefreeware.com/index.php?sc=28"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source per PortableFreeware; could not verify the developer's own download URL in this pass."
+ },
+ {
   "name": "Cherrytree",
   "package": "cherrytree.windows",
   "platform": "windows",
@@ -309,6 +490,140 @@
   "notes": "UNCERTAIN: bundled engine is 0.103.2.1 (stale since 2021-06); an unverified third-party claim says ClamAV blocks database updates for engines at or below 0.105, which would leave it unable to fetch current signatures. Could not verify."
  },
  {
+  "name": "Clicky Gone",
+  "package": "clicky.gone.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool that automatically hides the mouse cursor when it has not moved for a while.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "Colour Contrast Analyser",
+  "package": "colour.contrast.analyser.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool for checking the contrast ratio of text and visual elements against accessibility guidelines.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.tpgi.com/color-contrast-checker/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/soluciones-inclusivas/ccae"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv3 open source by TPGi."
+ },
+ {
+  "name": "Converber",
+  "package": "converber.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A unit converter covering over 1,300 units across 38 categories.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-rev-2-released"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware by Xyntec for personal and business use; last release 2012 but the local tool still works. Could not verify the developer's own download URL in this pass."
+ },
+ {
+  "name": "ConvertAll",
+  "package": "convertall.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A unit converter that lets units be combined freely, for example converting inches per decade to other units.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://bellz.org/ConvertAll-py/index.html",
+  "alt_downloads": [
+   {
+    "label": "SourceForge",
+    "url": "https://sourceforge.net/projects/convertall/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0 open source."
+ },
+ {
+  "name": "Cook Timer",
+  "package": "cook.timer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Time",
+  "description": "A simple countdown timer with presets for 3, 5, 10 and 15 minutes and a visual progress bar.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://portableapps.com/apps/utilities/cook_timer_portable",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source and completely free per PortableApps; could not verify the developer's own download URL in this pass."
+ },
+ {
+  "name": "CopyQ",
+  "package": "copyq.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A clipboard manager with tabs, scripting and a command-line interface that stores text, image and HTML clips.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://hluk.github.io/CopyQ/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/git-cgallagher/copyq"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0 open source."
+ },
+ {
   "name": "Coreinfo",
   "package": "coreinfo.windows",
   "platform": "windows",
@@ -326,6 +641,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Cppcheck",
+  "package": "cppcheck.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A static analysis tool that finds bugs in C and C++ code without running it. It reports issues such as memory leaks, out-of-bounds access and undefined behaviour.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://cppcheck.sourceforge.io",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/cppcheck-opensource/cppcheck"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0 open source."
  },
  {
   "name": "CPU-Z",
@@ -466,6 +805,49 @@
   "notes": "Project is archived/legacy but functional. Per the author, the installers offer no third-party software and the app is free of charge."
  },
  {
+  "name": "Database Browser",
+  "package": "database.browser.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A visual database tool for creating, browsing and querying databases with a spreadsheet-style interface.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware by Db Software Laboratory (etl-tools.com); last release around 2020. Could not verify official download URL in this pass."
+ },
+ {
+  "name": "DB Browser for SQLite",
+  "package": "db.browser.for.sqlite.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A visual tool for creating, designing and editing SQLite database files through a spreadsheet-like interface, with no SQL knowledge required.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sqlitebrowser.org/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/sqlitebrowser/sqlitebrowser"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0+/MPL-2.0 open source."
+ },
+ {
   "name": "DebugView",
   "package": "debugview.windows",
   "platform": "windows",
@@ -485,6 +867,25 @@
   "notes": ""
  },
  {
+  "name": "Detect It Easy",
+  "package": "detect.it.easy.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that identifies file types and detects the compiler, linker or packer used to build a binary.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/horsicq/Detect-It-Easy",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT open source."
+ },
+ {
   "name": "Dicom",
   "package": "dicom.windows",
   "platform": "windows",
@@ -502,6 +903,44 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: PortableApps and AlternativeTo describe Dicom as open source, but no specific OSI license or source repo could be verified. UNCERTAIN: developer Icom Provence's own site could not be found; the PortableApps page above is the sanctioned distribution."
+ },
+ {
+  "name": "DiffImg",
+  "package": "diffimg.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that compares two images and highlights the differences between them.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "Diffpdf",
+  "package": "diffpdf.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that compares two PDF files page by page and highlights text and layout differences.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2 open source; could not verify official download URL in this pass."
  },
  {
   "name": "Disk Cleaner",
@@ -540,6 +979,73 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Ditto",
+  "package": "ditto.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A clipboard manager that keeps a searchable history of clipboard items and can synchronize clipboards between computers on a network.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://ditto-cp.sourceforge.net",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/utilities/ditto_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPLv3 open source, actively maintained (release 3.25.113.0, September 2025)."
+ },
+ {
+  "name": "DM2",
+  "package": "dm2.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool that minimizes windows to the system tray and adds desktop window-management shortcuts.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "Don't Panic!",
+  "package": "don.t.panic.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A one-click button that hides, minimizes or closes chosen windows and can clear recent documents and browser history.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2012-10-03--dont-panic-portable-2.0.1-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source per PortableFreeware forums; PortableApps describes it as open source and completely free. Could not verify the developer's own download URL in this pass."
  },
  {
   "name": "Don't Sleep",
@@ -661,6 +1167,30 @@
   "notes": ""
  },
  {
+  "name": "EarTrumpet",
+  "package": "eartrumpet.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A volume mixer for Windows that shows per-app volume sliders in a taskbar flyout.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://eartrumpet.app",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/File-New-Project/EarTrumpet"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: GitHub reports NOASSERTION on the license; the LICENSE file is MIT text with entity exclusions. Treated as open source by press coverage. Also distributed via the Microsoft Store."
+ },
+ {
   "name": "Emsisoft Emergency Kit",
   "package": "emsisoft.emergency.kit.windows",
   "platform": "windows",
@@ -740,6 +1270,25 @@
    "needs_account": false
   },
   "notes": "last release 2.1.1 (2012); could not verify the developer's site; distributed via PortableApps.com."
+ },
+ {
+  "name": "Espanso",
+  "package": "espanso.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Keyboard",
+  "description": "A cross-platform text expander that replaces typed abbreviations with longer text, images or shell command output.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/espanso/espanso",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3.0 open source."
  },
  {
   "name": "Everything",
@@ -880,6 +1429,25 @@
   "notes": ""
  },
  {
+  "name": "FileAlyzer",
+  "package": "filealyzer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that analyzes files to show their type, structure and metadata details.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+ },
+ {
   "name": "FileOptimizer",
   "package": "fileoptimizer.windows",
   "platform": "windows",
@@ -956,6 +1524,30 @@
   "notes": "Publisher site is offline; the PortableApps release page is used as the download source (PortableApps notes the package is made available directly from the publisher)."
  },
  {
+  "name": "Flow Launcher",
+  "package": "flow.launcher.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A keyboard-driven app launcher and file search tool for Windows with a community plugin ecosystem.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://flowlauncher.com",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/Flow-Launcher/Flow.Launcher"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT open source. No paid tier, no account, no sign-in."
+ },
+ {
   "name": "FocusWriter",
   "package": "focuswriter.windows",
   "platform": "windows",
@@ -992,6 +1584,44 @@
    "needs_account": false
   },
   "notes": "UNCERTAIN: no taxonomy basket fits distributed computing; kept input placement System/Automate."
+ },
+ {
+  "name": "FontForge",
+  "package": "fontforge.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A font editor for creating and modifying outline and bitmap fonts.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-3.0/BSD mix open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "FontViewOK",
+  "package": "fontviewok.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool for quickly previewing and comparing installed fonts.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
  },
  {
   "name": "Free Download Manager",
@@ -1070,6 +1700,25 @@
   "notes": "UNCERTAIN: the official FAQ says the standard and Donation editions are personal-use-only (businesses need the Business Edition); third parties report occasional donation prompts, not verified as nagging."
  },
  {
+  "name": "Frhed",
+  "package": "frhed.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A hex editor for Windows that can edit binary files and large text files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+ },
+ {
   "name": "FUPX",
   "package": "fupx.windows",
   "platform": "windows",
@@ -1087,6 +1736,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Geany",
+  "package": "geany.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A lightweight code editor and IDE with syntax highlighting, code folding and plugin support.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0+ open source; could not verify official download URL in this pass."
  },
  {
   "name": "GeekUninstaller",
@@ -1125,6 +1793,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "GoldenDict",
+  "package": "goldendict.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Language",
+  "description": "A dictionary program that searches multiple dictionary formats and Wikipedia from one interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://goldendict.org/",
+  "alt_downloads": [
+   {
+    "label": "GoldenDict-ng (active fork) on GitHub",
+    "url": "https://github.com/xiaoyifang/goldendict-ng"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Original GoldenDict was GPL-3 open source but the project is inactive; active development continues in the GoldenDict-ng fork."
  },
  {
   "name": "Google Chrome",
@@ -1206,6 +1898,92 @@
    "needs_account": false
   },
   "notes": "Free for personal and commercial use per the TechPowerUp license."
+ },
+ {
+  "name": "Greenshot",
+  "package": "greenshot.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A screenshot tool that captures regions, windows and full screens and includes a built-in editor for annotations.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getgreenshot.org",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/greenshot"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source for the Windows build (the macOS version is proprietary, which is irrelevant for this directory)."
+ },
+ {
+  "name": "grepWin",
+  "package": "grepwin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A search and replace tool for files that supports regular expressions.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://tools.stefankueng.com/grepWin.html",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/stefankueng/grepWin"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-3 open source."
+ },
+ {
+  "name": "Gridy",
+  "package": "gridy.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool that overlays a grid on the screen for aligning and measuring on-screen elements.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as MIT open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "gVim",
+  "package": "gvim.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "The graphical version of the Vim text editor for Windows. Donations to the Vim project are encouraged but not required.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Vim charityware open source; the donation request is encouragement only, not a paywall. Could not verify official download URL in this pass."
  },
  {
   "name": "HDHacker",
@@ -1308,6 +2086,25 @@
   "notes": "Caution: CPUID's site suffered a watering-hole compromise on Apr 9-10 2026 that served trojanized CPU-Z 2.19 and HWMonitor installers; fixed since. Download only from cpuid.com and verify SHA256 checksums. UNCERTAIN: reported as freeware for non-commercial use by abit.ee; CPUID's own license terms were not re-verified in this pass."
  },
  {
+  "name": "IniTranslator",
+  "package": "initranslator.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A tool for translating and localizing the INI-style language files used by other programs.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.NET/projects/initranslator/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MPL 1.1 open source (SourceForge). A separate modern project (github.com/robdk97/initranslator, MIT) shares the name but this row refers to the classic SourceForge IniTranslator translation tool."
+ },
+ {
   "name": "Inkscape",
   "package": "inkscape.windows",
   "platform": "windows",
@@ -1325,6 +2122,30 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "InnoUnpacker",
+  "package": "innounpacker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool for inspecting Inno Setup installer files to list and extract the files they contain.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2026-05-05--innounpacker-portable-2.2.9-released"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware for personal and business use, packaged by PortableApps. Could not verify the developer's own download URL in this pass."
  },
  {
   "name": "Iron",
@@ -1619,6 +2440,44 @@
   "notes": ""
  },
  {
+  "name": "LICEcap",
+  "package": "licecap.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A simple screen recorder by Cockos that captures a desktop region directly to animated GIF or its own LCF format.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.cockos.com/licecap/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL free software; each download package includes the source."
+ },
+ {
+  "name": "Lightscreen",
+  "package": "lightscreen.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A lightweight screenshot tool that runs in the background and saves screenshots through hotkeys.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://lightscreen.com.ar/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source. The original project appears dormant (latest official release 2.4 is hosted on GitHub) but the Windows build still works, so it clears the bar."
+ },
+ {
   "name": "Links",
   "package": "links.windows",
   "platform": "windows",
@@ -1719,6 +2578,49 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "MBox Viewer",
+  "package": "mbox.viewer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A viewer for mbox email archives such as Gmail Takeout exports and Thunderbird archives. It opens large archives, previews attachments and exports mails to EML.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://sourceforge.Net/projects/mbox-viewer/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/eneam/mboxviewer"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Disambiguated as the SourceForge 'Windows MBox Viewer' (the PortableApps-listed one), not the assistmyteam.com commercial product whose free edition is personal-use only. SourceForge lists Affero GNU Public License; the PortableApps listing says GPLv2."
+ },
+ {
+  "name": "MediaInfo",
+  "package": "mediainfo.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that displays technical details of audio and video files such as codecs, bitrates and subtitles.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as BSD-2 open source; could not verify official download URL in this pass."
  },
  {
   "name": "Microsoft Safety Scanner",
@@ -1822,6 +2724,63 @@
   "notes": ""
  },
  {
+  "name": "Notepad++",
+  "package": "notepad.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A text editor and source code editor for Windows with syntax highlighting, tabbed editing and macros.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-3.0+ open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "Notepad2-mod",
+  "package": "notepad2.mod.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A fork of Notepad2 with extra features such as code folding and additional editing options.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as BSD-3-clause open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "Notepad2",
+  "package": "notepad2.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A lightweight plain-text editor for Windows with syntax highlighting and regular-expression search.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as BSD open source; could not verify official download URL in this pass."
+ },
+ {
   "name": "Notes",
   "package": "notes.windows",
   "platform": "windows",
@@ -1844,6 +2803,25 @@
    "needs_account": false
   },
   "notes": "Could not verify the exact OSI license identifier (README asserts fully open source); repo is github.com/nuttyartist/notes."
+ },
+ {
+  "name": "NSIS",
+  "package": "nsis.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A system for building Windows installers from script files. The installers it produces are self-contained.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as zlib open source; could not verify official download URL in this pass."
  },
  {
   "name": "NVDA",
@@ -1920,6 +2898,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "OpenRGB",
+  "package": "openrgb.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool for controlling RGB lighting across motherboards, RAM, fans and peripherals from one interface.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://openrgb.org/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0-or-later open source."
  },
  {
   "name": "Opera GX",
@@ -2155,6 +3152,25 @@
   "notes": "UNCERTAIN: could not verify the current download page; third-party reviews note the standard installer bundles a declinable third-party offer (RelevantKnowledge) - use the Lite build, which ships without sponsors; AlternativeTo flags the project discontinued while other catalogs show a 2026 update."
  },
  {
+  "name": "PowerToys",
+  "package": "powertoys.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A Microsoft suite of Windows utilities including FancyZones window layouts, PowerRename, a command palette and a color picker.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/microsoft/PowerToys",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT open source, actively maintained (30+ utilities, 139k+ GitHub stars)."
+ },
+ {
   "name": "PrivaZer",
   "package": "privazer.windows",
   "platform": "windows",
@@ -2286,6 +3302,26 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Qalculate",
+  "package": "qalculate.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A calculator that supports symbolic calculation, unit conversion, plotting and currency conversion.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass.",
+  "sibling": "com.jherkenhoff.qalculate"
  },
  {
   "name": "qBittorrent Enhanced",
@@ -2421,6 +3457,44 @@
   "notes": ""
  },
  {
+  "name": "Rapid CRC Unicode",
+  "package": "rapid.crc.unicode.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool for generating and verifying CRC checksums of files with support for Unicode filenames.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "RBTray",
+  "package": "rbtray.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool that sends any window to the system tray by right-clicking its minimize button.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+ },
+ {
   "name": "Recuva",
   "package": "recuva.windows",
   "platform": "windows",
@@ -2495,6 +3569,73 @@
    "needs_account": false
   },
   "notes": "License text discrepancy between the fork (MIT) and SourceForge (LGPLv2); both are OSI licenses."
+ },
+ {
+  "name": "ReNamer",
+  "package": "renamer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A batch file renamer with fourteen renaming rule categories and metadata-based renaming.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "https://www.den4b.com/changelogs/renamer",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal use (liteware). free_enough=false: the free Lite version is capped at 5 presets and 5 rules, so the free tier is not a complete product. Could not verify the exact download page; den4b.com changelog URL used."
+ },
+ {
+  "name": "Resource Hacker",
+  "package": "resource.hacker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A resource compiler and decompiler for viewing and editing resources inside Windows executables and DLLs.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "http://angusj.com/resourcehacker/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/utilities/resource-hacker-portable"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware by Angus Johnson, officially stated as 'no nags, no ads and fully functional'; PortableApps packages it for personal and business use."
+ },
+ {
+  "name": "RisohEditor",
+  "package": "risoheditor.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A resource editor for Win32 development that edits resources in EXE, DLL, RC and RES files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://katahiromz.web.fc2.com/re/en",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/katahiromz/RisohEditor"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source, actively maintained (v5.9.4 released December 2025)."
  },
  {
   "name": "RSS Guard",
@@ -2593,6 +3734,30 @@
   "notes": ""
  },
  {
+  "name": "ScreenToGif",
+  "package": "screentogif.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A screen recorder that captures a selected area, webcam or sketchboard, then edits the result before saving it as GIF or video.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.screentogif.com/",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/NickeManarin/ScreenToGif/"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MS-PL (OSI-approved) open source."
+ },
+ {
   "name": "Scribus",
   "package": "scribus.windows",
   "platform": "windows",
@@ -2631,6 +3796,49 @@
   "notes": ""
  },
  {
+  "name": "ShareX",
+  "package": "sharex.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A screen capture and file sharing tool that uploads images, text and files to many destinations.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getsharex.com",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/ShareX/ShareX"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "UNCERTAIN: exact license version not confirmed in search results; ShareX is described as free and open source (commonly cited as GPL-3.0)."
+ },
+ {
+  "name": "Shortcuts Search And Replace",
+  "package": "shortcuts.search.and.replace.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool for finding and replacing paths inside Windows shortcut (.lnk) files in bulk.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
+ },
+ {
   "name": "SimpleWall",
   "package": "simplewall.windows",
   "platform": "windows",
@@ -2648,6 +3856,68 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "SnapTimer",
+  "package": "snaptimer.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Time",
+  "description": "A countdown and alarm timer utility for Windows.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source per the official site and GitHub; could not verify official download URL in this pass."
+ },
+ {
+  "name": "SpeedCrunch",
+  "package": "speedcrunch.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A keyboard-driven scientific calculator with scrollable history and syntax highlighting.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0+ open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "SpeedyFox",
+  "package": "speedyfox.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that speeds up Firefox, Thunderbird, Chrome and similar apps by optimizing their SQLite databases.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://crystalidea.com/speedyfox/",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2020-10-12--speedyfox-portable-2.0.30-released"
+   }
+  ],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware by CrystalIdea for business and personal use, packaged by PortableApps with permission."
  },
  {
   "name": "Spybot - Search & Destroy",
@@ -2774,6 +4044,30 @@
   "notes": ""
  },
  {
+  "name": "SWI-Prolog",
+  "package": "swi.prolog.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A widely used implementation of the Prolog logic programming language with a large standard library, a graphical debugger and an HTTP server framework.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://www.swi-prolog.org",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/SWI-Prolog"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "BSD-2 open source, actively maintained."
+ },
+ {
   "name": "Syncthing",
   "package": "syncthing.windows",
   "platform": "windows",
@@ -2872,6 +4166,73 @@
    "needs_account": false
   },
   "notes": "free tier covers personal use only; TeamViewer states sessions that appear commercial get flagged."
+ },
+ {
+  "name": "Texter",
+  "package": "texter.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Keyboard",
+  "description": "A text-substitution tool that expands user-defined abbreviations into longer phrases while typing in any application.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps",
+    "url": "https://portableapps.com/apps/utilities/texter_portable"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL open source (Lifehacker). Development ended with v0.6 (2007) but the released build still works. Could not verify a current official download URL in this pass."
+ },
+ {
+  "name": "Textify",
+  "package": "textify.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that copies text from dialog boxes and other interface elements that do not normally allow text selection.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [
+   {
+    "label": "PortableApps release",
+    "url": "https://portableapps.com/news/2022-05-30--textify-portable-1.10.1-released"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Open source and completely free per PortableApps. Could not verify the developer's own download URL in this pass."
+ },
+ {
+  "name": "TidyTabs",
+  "package": "tidytabs.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tool that adds browser-style tabs to any application window.",
+  "license": "freeware",
+  "personal_use": true,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Free for personal use. free_enough=false: the free version is capped at 3 tabs per group with no tab reordering, renaming or multi-monitor support. Could not verify official download URL in this pass."
  },
  {
   "name": "TinyTask",
@@ -2988,6 +4349,25 @@
   "notes": "could not verify the direct Stinger download page on trellix.com."
  },
  {
+  "name": "TyperTask",
+  "package": "typertask.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Keyboard",
+  "description": "A text macro tool that types predefined text snippets when triggered by a keyword.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Discontinued by the developer, but PortableApps still distributes v1.20 and describes it as freeware for business and personal use. Could not verify official download URL in this pass."
+ },
+ {
   "name": "uGet",
   "package": "uget.windows",
   "platform": "windows",
@@ -3024,6 +4404,44 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "Unicodia",
+  "package": "unicodia.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Language",
+  "description": "A tool for browsing Unicode character data and code charts.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-3.0 open source; could not verify official download URL in this pass."
+ },
+ {
+  "name": "UUID-GUID Generator",
+  "package": "uuid.guid.generator.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that generates UUID/GUID values and copies them to the clipboard.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL open source; could not verify official download URL in this pass."
  },
  {
   "name": "Ventoy",
@@ -3102,6 +4520,25 @@
   "notes": ""
  },
  {
+  "name": "VirtuaWin",
+  "package": "virtuawin.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A virtual desktop manager for Windows with configurable hotkeys, mouse edge switching and a plugin system.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://virtuawin.sourceforge.io/",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "GPL-2.0 open source; updated as recently as 2025 (v4.5)."
+ },
+ {
   "name": "VMMap",
   "package": "vmmap.windows",
   "platform": "windows",
@@ -3119,6 +4556,49 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "VS Code",
+  "package": "vs.code.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "Microsoft's code editor with debugging, syntax highlighting and a large extension marketplace.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://code.visualstudio.com",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "The Microsoft binary is proprietary freeware (Wikipedia: 'Proprietary freeware based on open-source project'); the underlying Code-OSS source is MIT-licensed. Sign-in is optional (settings sync only)."
+ },
+ {
+  "name": "VSCodium",
+  "package": "vscodium.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "Community-built binaries of VS Code made from the MIT-licensed open-source codebase, without Microsoft branding or telemetry.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://vscodium.com/",
+  "alt_downloads": [
+   {
+    "label": "winget",
+    "url": "VSCodium.VSCodium"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MIT open source. winget install -e --id VSCodium.VSCodium documented on AlternativeTo."
  },
  {
   "name": "WackGet",
@@ -3202,6 +4682,25 @@
   "notes": ""
  },
  {
+  "name": "Winaero Tweaker",
+  "package": "winaero.tweaker.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Look",
+  "description": "A tweaking tool for adjusting hidden Windows settings and behaviour without editing the registry by hand.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Freeware with no nags or paywalls; could not verify official download URL in this pass."
+ },
+ {
   "name": "WinCDEmu",
   "package": "wincdemu.windows",
   "platform": "windows",
@@ -3219,6 +4718,25 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "WinCompose",
+  "package": "wincompose.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Keyboard",
+  "description": "A compose key for Windows that types special characters and emoji with short intuitive key sequences.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://github.com/samhocevar/wincompose",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "WTFPL open source (MIT also cited by OpenHub). Actively forked and maintained (ell1010/thpoll83 forks ship current releases)."
  },
  {
   "name": "WinContig",
@@ -3308,6 +4826,44 @@
    "needs_account": false
   },
   "notes": ""
+ },
+ {
+  "name": "winMd5Sum",
+  "package": "winmd5sum.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A tool that computes MD5 checksums of files to verify download integrity.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-3.0 open source per SourceForge; could not verify official download URL in this pass."
+ },
+ {
+  "name": "WinMerge",
+  "package": "winmerge.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A visual file and folder comparison tool with merging support for text files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass."
  },
  {
   "name": "WinMTR",
@@ -3557,6 +5113,30 @@
   "notes": ""
  },
  {
+  "name": "XN Resource Editor",
+  "package": "xn.resource.editor.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "A resource editor and PE module explorer with special support for Delphi programs.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://stefansundin.github.io/xn_resource_editor/",
+  "alt_downloads": [
+   {
+    "label": "SourceForge mirror",
+    "url": "https://sourceforge.net/projects/xn-resource-editor/support"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "MPL/GPL open source. The original developer site is gone; stefansundin.github.io hosts a mirror of the last build (3.0.0.1) and source is mirrored on GitHub."
+ },
+ {
   "name": "Yubico Authenticator",
   "package": "yubico.authenticator.windows",
   "platform": "windows",
@@ -3679,5 +5259,48 @@
    "needs_account": false
   },
   "notes": "URL scheme (https) assumed for zim-wiki.org; could not verify canonical scheme. Windows builds support 64-bit Windows 10 only."
+ },
+ {
+  "name": "Zint Barcode Studio",
+  "package": "zint.barcode.studio.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A GUI for generating barcodes and QR codes in over 50 symbologies and exporting them as image files.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://zint.org.uk",
+  "alt_downloads": [
+   {
+    "label": "GitHub",
+    "url": "https://github.com/zint/zint"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": false
+  },
+  "notes": "Dual-licensed: the encoding library is BSD-3-clause and the GUI/CLI are GPL-3.0-or-later."
+ },
+ {
+  "name": "ZoomIt",
+  "package": "zoomit.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Gadgets",
+  "description": "A Microsoft Sysinternals tool for zooming the screen and annotating during presentations. It is also bundled with PowerToys.",
+  "license": "freeware",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "",
+  "alt_downloads": [],
+  "attrs": {
+   "open_source": false,
+   "needs_account": false
+  },
+  "notes": "Microsoft freeware with no nags, ads or paywalls. Could not verify official download URL in this pass."
  }
 ]
