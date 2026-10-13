@@ -458,6 +458,9 @@ a.store-badge:hover { filter: brightness(0.96); }
 .desc { font-size: 1.02rem; }
 .detail-card h2 { font-size: 1.05rem; margin: 22px 0 10px; }
 .get-it { display: flex; flex-wrap: wrap; gap: 10px; }
+.win-compat { color: var(--muted); margin: 4px 0 0; }
+.winget-cmd { flex-basis: 100%; margin: 2px 0 0; }
+.winget-cmd code { background: #f0f0f0; padding: 2px 8px; border-radius: 6px; font-size: 0.95em; }
 .store-badge.big { font-size: 0.95rem; padding: 10px 20px; }
 .dl-official {
   display: inline-block;

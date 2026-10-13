@@ -77,17 +77,13 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://www.7-zip.org/download.html",
-  "alt_downloads": [
-   {
-    "label": "winget: 7zip.7zip",
-    "url": ""
-   }
-  ],
+  "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": "",
+  "winget_id": "7zip.7zip"
  },
  {
   "name": "A Note",
@@ -858,7 +854,8 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "License GPL (open source). Discontinued; the last release was an alpha. official_url from page text, not the verbatim Full URLs list. URL: Original project site brutalchess.sourceforge.net is inactive since 2007. PortableApps.com is the maintained distribution. Kept the existing PortableApps link and added the PortableApps app page plus the verified winget listing."
+  "notes": "License GPL (open source). Discontinued; the last release was an alpha. official_url from page text, not the verbatim Full URLs list. URL: Original project site brutalchess.sourceforge.net is inactive since 2007. PortableApps.com is the maintained distribution. Kept the existing PortableApps link and added the PortableApps app page plus the verified winget listing.",
+  "winget_id": "BrutalChess.BrutalChess"
  },
  {
   "name": "BYOND",
@@ -1541,7 +1538,8 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "Dual MIT/GPL licensed (open source) per the GitHub readme. official_url from page text, not the verbatim Full URLs list."
+  "notes": "Dual MIT/GPL licensed (open source) per the GitHub readme. official_url from page text, not the verbatim Full URLs list.",
+  "winget_id": "DavidJoffe.DaveGnukem"
  },
  {
   "name": "DaVinci Resolve",
@@ -3471,17 +3469,13 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://www.gethomebank.org",
-  "alt_downloads": [
-   {
-    "label": "winget: HomeBank.HomeBank",
-    "url": ""
-   }
-  ],
+  "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": "",
+  "winget_id": "HomeBank.HomeBank"
  },
  {
   "name": "HWiNFO",
@@ -5182,15 +5176,16 @@
   "official_url": "https://github.com/M2Team/NanaZip/releases",
   "alt_downloads": [
    {
-    "label": "Microsoft Store",
-    "url": ""
+    "label": "winget",
+    "url": "https://winstall.app/apps/M2Team.NanaZip"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": ""
+  "notes": "",
+  "winget_id": "M2Team.NanaZip"
  },
  {
   "name": "NAPS2",
@@ -7492,7 +7487,8 @@
    "open_source": true,
    "needs_account": false
   },
-  "notes": "GPLv3; 2.7.6 released Mar 2026; repo active as of 2026."
+  "notes": "GPLv3; 2.7.6 released Mar 2026; repo active as of 2026.",
+  "winget_id": "Sigil-Ebook.Sigil"
  },
  {
   "name": "Signal Desktop",
@@ -7812,17 +7808,13 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://www.zhornsoftware.co.uk/stickies/versions.html",
-  "alt_downloads": [
-   {
-    "label": "winget: ZhornSoftware.Stickies",
-    "url": ""
-   }
-  ],
+  "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
   },
-  "notes": ""
+  "notes": "",
+  "winget_id": "ZhornSoftware.Stickies"
  },
  {
   "name": "Stirling PDF",
@@ -8172,7 +8164,8 @@
    "open_source": false,
    "needs_account": false
   },
-  "notes": ""
+  "notes": "",
+  "winget_id": "Microsoft.Sysinternals.TCPView"
  },
  {
   "name": "TeamViewer",
@@ -8847,14 +8840,15 @@
   "alt_downloads": [
    {
     "label": "winget",
-    "url": "VSCodium.VSCodium"
+    "url": "https://winstall.app/apps/VSCodium.VSCodium"
    }
   ],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "MIT open source. winget install -e --id VSCodium.VSCodium documented on AlternativeTo."
+  "notes": "MIT open source. winget install -e --id VSCodium.VSCodium documented on AlternativeTo.",
+  "winget_id": "VSCodium.VSCodium"
  },
  {
   "name": "WackGet",
@@ -9205,10 +9199,6 @@
    {
     "label": "Chocolatey",
     "url": "https://chocolatey.org/packages/winfile"
-   },
-   {
-    "label": "winget",
-    "url": ""
    },
    {
     "label": "Microsoft Store",

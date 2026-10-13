@@ -445,6 +445,10 @@ def clean_record(rec):
         # Sibling listing on the other platform (package id); resolved to
         # a slug + platform by resolve_siblings() after the corpus loads.
         "sibling_package": rec.get("sibling") or None,
+        # Windows package-manager id and Windows 11 compatibility evidence
+        # (seed-only fields; Android records simply lack them).
+        "winget_id": rec.get("winget_id") or None,
+        "windows11": rec.get("windows11") or None,
     }
 
 
@@ -788,10 +792,41 @@ def windows_downloads(app):
             f'<a class="dl-official" href="{esc(url)}" '
             f'rel="noopener">{label}</a>')
     for alt in dl.get("alternatives") or []:
+        if alt.get("label") == "winget" and app.get("winget_id"):
+            # A package-manager alternative with a known id renders as the
+            # install command itself, not a link to a third-party listing.
+            continue
         parts.append(
             f'<a class="store-badge big" href="{esc(alt["url"])}" '
             f'rel="noopener">{esc(alt["label"])}</a>')
+    if app.get("winget_id"):
+        parts.append(
+            f'<p class="winget-cmd">Install with winget: '
+            f'<code>winget install --id {esc(app["winget_id"])} -e</code></p>')
     return "\n".join(parts)
+
+
+def windows_compatibility(app):
+    """Windows 11 compatibility line for a Windows listing, from the
+    seed's evidence record. Statuses: unverified, publisher, distributor,
+    tested, unsupported. Plain wording; no dates in the UI."""
+    ev = app.get("windows11") or {}
+    status = ev.get("status", "unverified")
+    if status == "tested":
+        detail = "Tested working on Windows 11"
+        if ev.get("version"):
+            detail += f' (version {esc(str(ev["version"]))})'
+        return f'<p class="win-compat">{detail}.</p>'
+    if status == "publisher":
+        return ('<p class="win-compat">Windows 11: the publisher says '
+                'it works.</p>')
+    if status == "distributor":
+        return ('<p class="win-compat">Windows 11: the distributor '
+                'lists it as compatible.</p>')
+    if status == "unsupported":
+        return ('<p class="win-compat">Windows 11: not supported '
+                '&mdash; listed for Windows 10 and earlier.</p>')
+    return '<p class="win-compat">Windows 11: not yet verified.</p>'
 
 
 ATTR_LABELS = {"open_source": "Open source",
@@ -862,6 +897,8 @@ def build_detail(app, forms):
                  if app.get("description") else "")
     get_it = (windows_downloads(app) if app.get("platform") == "windows"
               else store_badges(app, big=True))
+    compat = (windows_compatibility(app) if app.get("platform") == "windows"
+              else "")
     plat = app.get("platform") or "android"
     plat_name = PLATFORM_NAMES.get(plat, "Android")
     platform_line = (
@@ -898,6 +935,7 @@ def build_detail(app, forms):
     <div class="get-it">
 {get_it}
     </div>
+    {compat}
     {per_badge}
     {personal_note}
     {promise_block}
@@ -1461,6 +1499,9 @@ a.store-badge:hover { filter: brightness(0.96); }
 .desc { font-size: 1.02rem; }
 .detail-card h2 { font-size: 1.05rem; margin: 22px 0 10px; }
 .get-it { display: flex; flex-wrap: wrap; gap: 10px; }
+.win-compat { color: var(--muted); margin: 4px 0 0; }
+.winget-cmd { flex-basis: 100%; margin: 2px 0 0; }
+.winget-cmd code { background: #f0f0f0; padding: 2px 8px; border-radius: 6px; font-size: 0.95em; }
 .store-badge.big { font-size: 0.95rem; padding: 10px 20px; }
 .dl-official {
   display: inline-block;
