@@ -4886,7 +4886,7 @@
    "alternatives": [
     {
      "label": "GitHub",
-     "url": "https://github.com/Anthony-B/Celestia-Project"
+     "url": "https://github.com/CelestiaProject/Celestia"
     }
    ]
   },
@@ -5686,13 +5686,8 @@
    "openapk": null
   },
   "downloads": {
-   "official": "http://www.xyntec.com/unit-converter-download.htm",
-   "alternatives": [
-    {
-     "label": "PortableApps release",
-     "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-released"
-    }
-   ]
+   "official": "https://portableapps.com/node/58574",
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -8585,7 +8580,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://dimio.altervista.org/eng/",
+   "official": "http://dimio.altervista.org/eng/",
    "alternatives": []
   },
   "rating": null,
@@ -8721,7 +8716,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://www.mindgems.com/products/Duplicate-Files-Finder/Duplicate-Files-Finder-Download.htm",
+   "official": "https://www.mindgems.com/products/Fast-Duplicate-File-Finder/Fast-Duplicate-File-Finder-About.htm",
    "alternatives": []
   },
   "rating": null,
@@ -12725,7 +12720,7 @@
    "alternatives": [
     {
      "label": "PortableApps",
-     "url": "https://portableapps.com/apps/music_video/freac-portable"
+     "url": "https://portableapps.com/apps/music_video/freac_portable"
     }
    ]
   },
@@ -13213,7 +13208,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://gurupia.wordpress.com/fupx/",
+   "official": "https://gurupia.tistory.com/entry/FUPX-Free-UPX-GUI-Tool",
    "alternatives": []
   },
   "rating": null,
@@ -16486,7 +16481,7 @@
     },
     {
      "label": "Microsoft Store",
-     "url": "https://apps.microsoft.com/detail/9nblggh4wfpz"
+     "url": "https://apps.microsoft.com/detail/9pjz3btl5pv6"
     }
    ]
   },
@@ -17194,7 +17189,7 @@
    "alternatives": [
     {
      "label": "PortableApps",
-     "url": "https://portableapps.com/apps/graphics_pictures/jpegview-portable"
+     "url": "https://portableapps.com/apps/graphics_pictures/jpegview_portable"
     },
     {
      "label": "Chocolatey",
@@ -18336,12 +18331,7 @@
   },
   "downloads": {
    "official": "https://krita.org/",
-   "alternatives": [
-    {
-     "label": "Microsoft Store",
-     "url": "https://apps.microsoft.com/detail/9n8w29w2czq5"
-    }
-   ]
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -24063,13 +24053,8 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://www.nemp-online.de/",
-   "alternatives": [
-    {
-     "label": "GitHub",
-     "url": "https://github.com/DanielGausi/Nemp"
-    }
-   ]
+   "official": "https://github.com/DanielGausi/Nemp",
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -27837,8 +27822,8 @@
    "official": "https://www.photofilmstrip.org/en/download/",
    "alternatives": [
     {
-     "label": "SourceForge",
-     "url": "https://sourceforge.net/projects/photofilmstrip/"
+     "label": "GitHub",
+     "url": "https://github.com/PhotoFilmStrip/PFS"
     }
    ]
   },
@@ -29246,7 +29231,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://www.kcsoftwares.com",
+   "official": "https://portableapps.com/node/64934",
    "alternatives": []
   },
   "rating": null,
@@ -32621,7 +32606,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://rustdesk.com/download/",
+   "official": "https://github.com/rustdesk/rustdesk/releases",
    "alternatives": []
   },
   "rating": null,
@@ -34434,7 +34419,7 @@
    "alternatives": [
     {
      "label": "PortableApps",
-     "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur-portable"
+     "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur_portable"
     }
    ]
   },
@@ -34745,7 +34730,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://crystalidea.com/speedyfox/",
+   "official": "https://crystalidea.com/speedyfox",
    "alternatives": [
     {
      "label": "PortableApps release",
@@ -35022,13 +35007,8 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://www.kcsoftwares.com/?home",
-   "alternatives": [
-    {
-     "label": "PortableApps",
-     "url": "https://portableapps.com/node/64610"
-    }
-   ]
+   "official": "https://portableapps.com/node/64610",
+   "alternatives": []
   },
   "rating": null,
   "attrs": {
@@ -36876,8 +36856,8 @@
    "official": "https://portableapps.com/apps/utilities/texter_portable",
    "alternatives": [
     {
-     "label": "Lifehacker Code announcement (archived)",
-     "url": "http://lifehacker.com/238306/lifehacker-code-texter-windows"
+     "label": "GitHub",
+     "url": "https://github.com/peskyfood/texter"
     }
    ]
   },
@@ -38253,7 +38233,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://ugetdm.com",
+   "official": "https://sourceforge.net/projects/urlget/",
    "alternatives": []
   },
   "rating": null,
@@ -40763,7 +40743,7 @@
    "alternatives": [
     {
      "label": "GitHub",
-     "url": "https://github.com/hypercubemc/winlame"
+     "url": "https://github.com/vividos/winLAME"
     }
    ]
   },
@@ -41449,7 +41429,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://antibody-software.com/wizfile/download/",
+   "official": "https://antibody-software.com/wizfile/",
    "alternatives": []
   },
   "rating": null,

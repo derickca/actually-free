@@ -1011,7 +1011,7 @@
   "alt_downloads": [
    {
     "label": "GitHub",
-    "url": "https://github.com/Anthony-B/Celestia-Project"
+    "url": "https://github.com/CelestiaProject/Celestia"
    }
   ],
   "attrs": {
@@ -1184,13 +1184,8 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "http://www.xyntec.com/unit-converter-download.htm",
-  "alt_downloads": [
-   {
-    "label": "PortableApps release",
-    "url": "https://portableapps.com/news/2019-08-05--converber-portable-2.3.1-released"
-   }
-  ],
+  "official_url": "https://portableapps.com/node/58574",
+  "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
@@ -2000,7 +1995,7 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://dimio.altervista.org/eng/",
+  "official_url": "http://dimio.altervista.org/eng/",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
@@ -2043,7 +2038,7 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "The free tier fully finds and deletes duplicate files; the Pro version only adds fuzzy search and related extras.",
-  "official_url": "https://www.mindgems.com/products/Duplicate-Files-Finder/Duplicate-Files-Finder-Download.htm",
+  "official_url": "https://www.mindgems.com/products/Fast-Duplicate-File-Finder/Fast-Duplicate-File-Finder-About.htm",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
@@ -2751,7 +2746,7 @@
   "alt_downloads": [
    {
     "label": "PortableApps",
-    "url": "https://portableapps.com/apps/music_video/freac-portable"
+    "url": "https://portableapps.com/apps/music_video/freac_portable"
    }
   ],
   "attrs": {
@@ -2890,7 +2885,7 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://gurupia.wordpress.com/fupx/",
+  "official_url": "https://gurupia.tistory.com/entry/FUPX-Free-UPX-GUI-Tool",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
@@ -3705,7 +3700,7 @@
    },
    {
     "label": "Microsoft Store",
-    "url": "https://apps.microsoft.com/detail/9nblggh4wfpz"
+    "url": "https://apps.microsoft.com/detail/9pjz3btl5pv6"
    }
   ],
   "attrs": {
@@ -3816,7 +3811,7 @@
   "alt_downloads": [
    {
     "label": "PortableApps",
-    "url": "https://portableapps.com/apps/graphics_pictures/jpegview-portable"
+    "url": "https://portableapps.com/apps/graphics_pictures/jpegview_portable"
    },
    {
     "label": "Chocolatey",
@@ -4036,12 +4031,7 @@
   "personal_use": false,
   "free_enough_reason": "Paid Microsoft Store and Steam editions are functionally identical to the free download; purchase funds development per the official FAQ.",
   "official_url": "https://krita.org/",
-  "alt_downloads": [
-   {
-    "label": "Microsoft Store",
-    "url": "https://apps.microsoft.com/detail/9n8w29w2czq5"
-   }
-  ],
+  "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
@@ -5217,13 +5207,8 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://www.nemp-online.de/",
-  "alt_downloads": [
-   {
-    "label": "GitHub",
-    "url": "https://github.com/DanielGausi/Nemp"
-   }
-  ],
+  "official_url": "https://github.com/DanielGausi/Nemp",
+  "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
@@ -6009,8 +5994,8 @@
   "official_url": "https://www.photofilmstrip.org/en/download/",
   "alt_downloads": [
    {
-    "label": "SourceForge",
-    "url": "https://sourceforge.net/projects/photofilmstrip/"
+    "label": "GitHub",
+    "url": "https://github.com/PhotoFilmStrip/PFS"
    }
   ],
   "attrs": {
@@ -6321,7 +6306,7 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://www.kcsoftwares.com",
+  "official_url": "https://portableapps.com/node/64934",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
@@ -7238,7 +7223,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "a paid Pro server exists, but the free self-hosted server and the free client cover remote desktop fully.",
-  "official_url": "https://rustdesk.com/download/",
+  "official_url": "https://github.com/rustdesk/rustdesk/releases",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -7567,7 +7552,7 @@
   "alt_downloads": [
    {
     "label": "PortableApps",
-    "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur-portable"
+    "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur_portable"
    }
   ],
   "attrs": {
@@ -7649,7 +7634,7 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://crystalidea.com/speedyfox/",
+  "official_url": "https://crystalidea.com/speedyfox",
   "alt_downloads": [
    {
     "label": "PortableApps release",
@@ -7740,13 +7725,8 @@
   "license": "freeware",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://www.kcsoftwares.com/?home",
-  "alt_downloads": [
-   {
-    "label": "PortableApps",
-    "url": "https://portableapps.com/node/64610"
-   }
-  ],
+  "official_url": "https://portableapps.com/node/64610",
+  "alt_downloads": [],
   "attrs": {
    "open_source": false,
    "needs_account": false
@@ -8219,8 +8199,8 @@
   "official_url": "https://portableapps.com/apps/utilities/texter_portable",
   "alt_downloads": [
    {
-    "label": "Lifehacker Code announcement (archived)",
-    "url": "http://lifehacker.com/238306/lifehacker-code-texter-windows"
+    "label": "GitHub",
+    "url": "https://github.com/peskyfood/texter"
    }
   ],
   "attrs": {
@@ -8555,7 +8535,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://ugetdm.com",
+  "official_url": "https://sourceforge.net/projects/urlget/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -9226,7 +9206,7 @@
   "alt_downloads": [
    {
     "label": "GitHub",
-    "url": "https://github.com/hypercubemc/winlame"
+    "url": "https://github.com/vividos/winLAME"
    }
   ],
   "attrs": {
@@ -9531,7 +9511,7 @@
   "license": "freeware",
   "personal_use": true,
   "free_enough_reason": "",
-  "official_url": "https://antibody-software.com/wizfile/download/",
+  "official_url": "https://antibody-software.com/wizfile/",
   "alt_downloads": [],
   "attrs": {
    "open_source": false,
