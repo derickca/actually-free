@@ -7820,7 +7820,7 @@
    "openapk": null
   },
   "downloads": {
-   "official": "https://diskcleaner.nl/",
+   "official": "https://sourceforge.net/projects/dclean/",
    "alternatives": []
   },
   "rating": null,
@@ -16820,7 +16820,7 @@
   "subcategory": "Social",
   "description": "An app for Lemmy, a federated reddit alternative.",
   "stores": {
-   "play": "https://play.google.com/store/apps/details?id=com.jerboa",
+   "play": null,
    "fdroid": true,
    "izzy": "https://apt.izzysoft.de/fdroid/index/apk/com.jerboa",
    "github": "https://github.com/LemmyNet/jerboa",
@@ -34419,7 +34419,7 @@
    "alternatives": [
     {
      "label": "PortableApps",
-     "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur_portable"
+     "url": "https://portableapps.com/apps/graphics_pictures/smart-deblur-portable"
     }
    ]
   },
@@ -39383,12 +39383,7 @@
   },
   "downloads": {
    "official": "https://www.videolan.org/vlc/",
-   "alternatives": [
-    {
-     "label": "Microsoft Store",
-     "url": "https://apps.microsoft.com/detail/9nblggh4vzwk"
-    }
-   ]
+   "alternatives": []
   },
   "rating": null,
   "attrs": {

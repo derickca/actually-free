@@ -1766,7 +1766,7 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://diskcleaner.nl/",
+  "official_url": "https://sourceforge.net/projects/dclean/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
@@ -7552,7 +7552,7 @@
   "alt_downloads": [
    {
     "label": "PortableApps",
-    "url": "https://portableapps.com/apps/graphics_pictures/smartdeblur_portable"
+    "url": "https://portableapps.com/apps/graphics_pictures/smart-deblur-portable"
    }
   ],
   "attrs": {
@@ -8755,12 +8755,7 @@
   "personal_use": false,
   "free_enough_reason": "",
   "official_url": "https://www.videolan.org/vlc/",
-  "alt_downloads": [
-   {
-    "label": "Microsoft Store",
-    "url": "https://apps.microsoft.com/detail/9nblggh4vzwk"
-   }
-  ],
+  "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false

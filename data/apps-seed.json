@@ -8988,7 +8988,7 @@
   "category": "Communications",
   "subcategory": "Social",
   "stores": {
-   "play": "https://play.google.com/store/apps/details?id=com.jerboa",
+   "play": null,
    "fdroid": true,
    "github": "https://github.com/LemmyNet/jerboa",
    "openapk": null,
