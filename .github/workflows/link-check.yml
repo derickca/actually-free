@@ -1,0 +1,39 @@
+name: External link check
+on:
+  workflow_dispatch:
+  schedule:
+    # Monthly, on the 3rd at 15:00 UTC (morning in BC)
+    - cron: '0 15 3 * *'
+permissions:
+  contents: read
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect external links from catalogue data
+        run: python tools/collect-external-links.py links.txt
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --timeout 20
+            --max-retries 2
+            --retry-wait-time 3
+            --accept 200..=399,403,429
+            ./links.txt
+          format: markdown
+          output: link-report.md
+          fail: false
+          jobSummary: true
+      - name: Upload link report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-report
+          path: link-report.md
+          if-no-files-found: ignore
