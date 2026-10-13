@@ -11106,5 +11106,27 @@
   },
   "notes": "Developer-submitted via site feedback 2026-10-12. Promise tracker with completion notes and kept/missed history. Play Store shows no 'Contains ads' or 'In-app purchases' labels (verified 2026-10-12 against a labeled control). Description states no ads, no account required, data stays on device.",
   "status": "include"
+ },
+ {
+  "name": "Desk Movement Breaks",
+  "package": "com.appfactory.deskmovementbreaks",
+  "category": "Lifestyle",
+  "subcategory": "Health",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.appfactory.deskmovementbreaks",
+   "fdroid": false,
+   "github": null
+  },
+  "verification": {
+   "play_labels_clean": true,
+   "play_rating": null,
+   "fdroid_antifeatures": [],
+   "method": "play"
+  },
+  "description": "Short seated and standing movement breaks for desk workers, with quiet-office and limited-space filters",
+  "notes": "Submitted via site feedback 2026-10-12. Desk break companion: short seated and standing routines, quiet-office and limited-space filters, silent weekday reminders, movement exclusions and on-device history. Play Store shows no 'Contains ads' or 'In-app purchases' labels (verified 2026-10-12 against a labeled control). Listing states no account, no advertising or analytics, preferences and history stay on device, and Version 1 contains no purchases or subscriptions. Not on F-Droid.",
+  "status": "include",
+  "needs_review": false,
+  "review_notes": ""
  }
 ]

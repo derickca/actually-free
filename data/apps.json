@@ -7405,6 +7405,49 @@
   "windows11": null
  },
  {
+  "name": "Desk Movement Breaks",
+  "package": "com.appfactory.deskmovementbreaks",
+  "slug": "com-appfactory-deskmovementbreaks",
+  "category": "Lifestyle",
+  "platform": "android",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": null,
+  "subcategory": "Health",
+  "description": "Short seated and standing movement breaks for desk workers, with quiet-office and limited-space filters",
+  "stores": {
+   "play": "https://play.google.com/store/apps/details?id=com.appfactory.deskmovementbreaks",
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null
+  },
+  "downloads": {
+   "official": null,
+   "alternatives": []
+  },
+  "rating": null,
+  "attrs": {
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": null,
+  "winget_id": null,
+  "windows11": null
+ },
+ {
   "name": "DesktopSnowOK",
   "package": "desktopsnowok.windows",
   "slug": "desktopsnowok-windows",
