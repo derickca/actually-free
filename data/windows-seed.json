@@ -6346,7 +6346,12 @@
   "personal_use": true,
   "free_enough_reason": "",
   "official_url": "https://potplayer.tv/",
-  "alt_downloads": [],
+  "alt_downloads": [
+   {
+    "label": "Microsoft Store",
+    "url": "https://apps.microsoft.com/detail/xp8bsbgqw2dks0"
+   }
+  ],
   "attrs": {
    "open_source": false,
    "needs_account": false

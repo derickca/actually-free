@@ -27966,7 +27966,12 @@
   },
   "downloads": {
    "official": "https://potplayer.tv/",
-   "alternatives": []
+   "alternatives": [
+    {
+     "label": "Microsoft Store",
+     "url": "https://apps.microsoft.com/detail/xp8bsbgqw2dks0"
+    }
+   ]
   },
   "rating": null,
   "attrs": {
