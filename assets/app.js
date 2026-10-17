@@ -453,7 +453,7 @@ var PLATFORM_SVGS = {
     var f = null;
     try { f = JSON.parse(sessionStorage.getItem(FILTER_STORE) || "null"); }
     catch (e) {}
-    if (!f || typeof f !== "object") return;
+    if (!f || typeof f !== "object") return false;
     if (typeof f.query === "string") state.query = f.query;
     if (typeof f.cat === "string") state.cat = f.cat;
     if (typeof f.subcat === "string") state.subcat = f.subcat;
@@ -461,6 +461,21 @@ var PLATFORM_SVGS = {
     if (f.attrs && typeof f.attrs === "object") state.attrs = f.attrs;
     if (f.stores && typeof f.stores === "object") state.stores = f.stores;
     if (typeof f.sort === "string") state.sort = f.sort;
+    return true;
+  }
+  /* Arrival auto-detect (Derick, 2026-10-16): the platform the visitor
+     is browsing on, or "" when it cannot be told. iPads in desktop mode
+     send a Macintosh UA, so touch points break the tie toward iOS.
+     Android is tested before Linux (its UA carries both) and iPhone
+     before Mac (its UA says "like Mac OS X"). */
+  function detectPlatform() {
+    var ua = navigator.userAgent || "";
+    if (/Android/i.test(ua)) return "android";
+    if (/iPhone|iPad|iPod/i.test(ua)) return "ios";
+    if (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1) return "ios";
+    if (/Windows/i.test(ua)) return "windows";
+    if (/Macintosh|Mac OS X/i.test(ua)) return "macos";
+    return "";
   }
   /* After the controls are built, mark them to match restored state. */
   function syncControls() {
@@ -676,15 +691,18 @@ var PLATFORM_SVGS = {
       render();
     });
   });
-  /* Headline follows the platform filter once Windows listings exist;
-     with an Android-only corpus the static headline stays. */
+  /* Headline follows the platform filter once the corpus spans more
+     than one platform; with a single-platform corpus it stays static. */
   function renderHero() {
     var h = document.getElementById("hero-title");
     if (!h) return;
-    var hasWindows = state.apps.some(function (a) { return a.platform === "windows"; });
-    if (!hasWindows) return;
+    var platforms = {};
+    state.apps.forEach(function (a) { platforms[a.platform] = true; });
+    if (Object.keys(platforms).length < 2) return;
     h.textContent = state.platform === "android" ? "Actually free Android apps."
       : state.platform === "windows" ? "Actually free Windows apps."
+      : state.platform === "macos" ? "Actually free Mac apps."
+      : state.platform === "ios" ? "Actually free iOS apps."
       : "Actually free apps.";
   }
   document.getElementById("sort").addEventListener("change", function (e) {
@@ -696,7 +714,19 @@ var PLATFORM_SVGS = {
     .then(function (r) { return r.json(); })
     .then(function (apps) {
       state.apps = apps;
-      restoreFilters();
+      var hadSaved = restoreFilters();
+      /* Fresh arrival (nothing restored): preselect the visitor's own
+         platform, exactly as if they had tapped its segment — the
+         headline follows through render(). Applies only when the
+         catalogue has listings for that platform; anything unknown
+         lands on All, the standing default. One tap on All clears it. */
+      if (!hadSaved) {
+        var detected = detectPlatform();
+        if (detected && apps.some(function (a) { return a.platform === detected; })) {
+          state.platform = detected;
+          gcEvent("filter/platform-auto/" + detected);
+        }
+      }
       /* A restored category that no longer exists (stale after a data
          update) resets instead of showing an empty grid. */
       if (state.cat && !apps.some(function (a) { return a.category === state.cat; })) {

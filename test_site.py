@@ -21,8 +21,14 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 HERE = Path(__file__).parent
-CHROME = str(Path.home() / ".cache/ms-playwright/chromium_headless_shell-1243"
-             / "chrome-headless-shell-linux64/chrome-headless-shell")
+# Resolve the newest installed headless shell rather than pinning a
+# build number: the pinned 1243 path went stale when Playwright moved
+# to 1248 and the whole browser section of this suite stopped running.
+import glob as _glob
+_shells = sorted(_glob.glob(str(
+    Path.home() / ".cache/ms-playwright/chromium_headless_shell-*"
+    / "chrome-headless-shell-linux64/chrome-headless-shell")))
+CHROME = _shells[-1] if _shells else ""
 
 FAILURES = []
 
@@ -34,7 +40,7 @@ def check(name, cond, detail=""):
         FAILURES.append(name)
 
 
-def chrome_eval(url, js, width=1280, height=800, vtb=15000):
+def chrome_eval(url, js, width=1280, height=800, vtb=15000, ua=None):
     """Load url in headless Chrome, run js after load, return document.title."""
     probe = f"""<script>setTimeout(function(){{try{{{js}}}catch(e){{
         document.title='ERROR:'+e.message;}}}},1800);</script></body>"""
@@ -42,12 +48,13 @@ def chrome_eval(url, js, width=1280, height=800, vtb=15000):
     tmp = HERE / "_test_probe.html"
     tmp.write_text(html)
     try:
-        out = subprocess.run(
-            [CHROME, "--no-sandbox", "--no-proxy-server", "--disable-gpu",
-             f"--virtual-time-budget={vtb}", "--dump-dom",
-             f"--window-size={width},{height}",
-             f"http://127.0.0.1:{PORT}/_test_probe.html"],
-            capture_output=True, text=True, timeout=90)
+        args = [CHROME, "--no-sandbox", "--no-proxy-server", "--disable-gpu",
+                f"--virtual-time-budget={vtb}", "--dump-dom",
+                f"--window-size={width},{height}"]
+        if ua:
+            args.append(f"--user-agent={ua}")
+        args.append(f"http://127.0.0.1:{PORT}/_test_probe.html")
+        out = subprocess.run(args, capture_output=True, text=True, timeout=90)
         for line in out.stdout.splitlines():
             if "<title>" in line:
                 s = line.split("<title>", 1)[1]
@@ -374,6 +381,92 @@ def main():
     check("filters: category restored after reload", d["catOn"], t)
     check("filters: hero follows restored platform", d["hero"] == "Actually free Windows apps.", t)
     check("filters: grid non-empty after restore", d["tiles"] > 0, t)
+
+    # 11. Arrival auto-detect (Derick, 2026-10-16): a fresh visit with no
+    # saved filters preselects the visitor's own platform, headline
+    # included; one tap on All clears it; platforms with no listings and
+    # unknown platforms land on All. Each probe clears saved filters and
+    # reloads once so the arrival is genuinely fresh.
+    UA_ANDROID = ("Mozilla/5.0 (Linux; Android 14; Pixel 8) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/126.0.0.0 Mobile Safari/537.36")
+    UA_WINDOWS = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/126.0.0.0 Safari/537.36")
+    UA_LINUX = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+    UA_IPHONE = ("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) "
+                 "AppleWebKit/605.1.15 (KHTML, like Gecko) "
+                 "Version/17.0 Mobile/15E148 Safari/604.1")
+
+    def arrival_probe(phase_key, measure_js):
+        return f"""
+      if (!sessionStorage.getItem('{phase_key}')) {{
+        sessionStorage.setItem('{phase_key}', '1');
+        sessionStorage.removeItem('af-filters');
+        location.reload();
+      }} else {{
+        sessionStorage.removeItem('{phase_key}');
+        setTimeout(function(){{ {measure_js} }}, 1600);
+      }}
+    """
+
+    # 11a. Android arrival: Android preselected, hero follows, grid is
+    # Android-only, and tapping All restores the full grid.
+    t = chrome_eval("", arrival_probe("af-test-arrive-android", f"""
+          var andSlugs = {json.dumps([a["slug"] for a in apps if a.get("platform") == "android"])};
+          var segOn = document.querySelector('.platform-seg [data-platform="android"]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          var tiles = document.querySelectorAll('#grid .tile');
+          var bad = 0;
+          tiles.forEach(function(el){{ if (andSlugs.indexOf(el.getAttribute('data-slug')) < 0) bad++; }});
+          var visBefore = tiles.length;
+          document.querySelector('.platform-seg [data-platform=""]').click();
+          setTimeout(function(){{
+            var allSegOn = document.querySelector('.platform-seg [data-platform=""]').classList.contains('on');
+            var total = document.querySelectorAll('#grid .tile').length;
+            document.title = JSON.stringify({{segOn: segOn, hero: hero, visBefore: visBefore,
+              bad: bad, allSegOn: allSegOn, totalAfterClear: total}});
+          }}, 900);
+    """), ua=UA_ANDROID)
+    d = json.loads(t)
+    check("arrive: Android segment preselected", d["segOn"], t)
+    check("arrive: Android hero copy", d["hero"] == "Actually free Android apps.", t)
+    check("arrive: Android grid non-empty", d["visBefore"] > 0, t)
+    check("arrive: Android grid has only Android tiles", d["bad"] == 0, t)
+    check("arrive: one tap on All clears", d["allSegOn"] and d["totalAfterClear"] == len(apps), t)
+
+    # 11b. Windows arrival: Windows preselected, hero follows.
+    t = chrome_eval("", arrival_probe("af-test-arrive-windows", """
+          var segOn = document.querySelector('.platform-seg [data-platform="windows"]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          document.title = JSON.stringify({segOn: segOn, hero: hero});
+    """), ua=UA_WINDOWS)
+    d = json.loads(t)
+    check("arrive: Windows segment preselected", d["segOn"], t)
+    check("arrive: Windows hero copy", d["hero"] == "Actually free Windows apps.", t)
+
+    # 11c. Unknown platform (Linux desktop): no filter applied.
+    t = chrome_eval("", arrival_probe("af-test-arrive-linux", """
+          var allOn = document.querySelector('.platform-seg [data-platform=""]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          var total = document.querySelectorAll('#grid .tile').length;
+          document.title = JSON.stringify({allOn: allOn, hero: hero, total: total});
+    """), ua=UA_LINUX)
+    d = json.loads(t)
+    check("arrive: unknown platform lands on All", d["allOn"], t)
+    check("arrive: unknown platform hero copy", d["hero"] == "Actually free apps.", t)
+    check("arrive: unknown platform sees full grid", d["total"] == len(apps), t)
+
+    # 11d. iPhone arrival: iOS has no listings yet, so no filter applies.
+    t = chrome_eval("", arrival_probe("af-test-arrive-iphone", """
+          var allOn = document.querySelector('.platform-seg [data-platform=""]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          document.title = JSON.stringify({allOn: allOn, hero: hero});
+    """), ua=UA_IPHONE)
+    d = json.loads(t)
+    check("arrive: iPhone lands on All until iOS listings exist", d["allOn"], t)
+    check("arrive: iPhone hero copy", d["hero"] == "Actually free apps.", t)
 
     srv.shutdown()
     print()
