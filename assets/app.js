@@ -233,7 +233,7 @@
   var grid = document.getElementById("grid");
   if (!grid) return; // not the directory page
 
-  var state = { apps: [], query: "", cat: "", subcat: "", platform: "", attrs: {}, stores: {}, sort: "name" };
+  var state = { apps: [], query: "", cat: "", subcat: "", platform: "", platformChosen: false, attrs: {}, stores: {}, sort: "name" };
 var PLATFORM_SVGS = {
   "android": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M17.6 9.5l1.8-3.1c.1-.2 0-.5-.2-.6-.2-.1-.5 0-.6.2l-1.9 3.2c-1-.5-2.1-.7-3.2-.7s-2.2.2-3.2.7L8.4 5.9c-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6l1.8 3.1C6.6 11.3 5 13.9 5 16.9h14c0-3-1.6-5.6-4.4-7.4z\"/></svg>",
   "windows": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5zM3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z\"/></svg>"
@@ -444,8 +444,8 @@ var PLATFORM_SVGS = {
     try {
       sessionStorage.setItem(FILTER_STORE, JSON.stringify({
         query: state.query, cat: state.cat, subcat: state.subcat,
-        platform: state.platform, attrs: state.attrs,
-        stores: state.stores, sort: state.sort
+        platform: state.platform, platformChosen: state.platformChosen,
+        attrs: state.attrs, stores: state.stores, sort: state.sort
       }));
     } catch (e) {}
   }
@@ -458,6 +458,7 @@ var PLATFORM_SVGS = {
     if (typeof f.cat === "string") state.cat = f.cat;
     if (typeof f.subcat === "string") state.subcat = f.subcat;
     if (typeof f.platform === "string") state.platform = f.platform;
+    if (typeof f.platformChosen === "boolean") state.platformChosen = f.platformChosen;
     if (f.attrs && typeof f.attrs === "object") state.attrs = f.attrs;
     if (f.stores && typeof f.stores === "object") state.stores = f.stores;
     if (typeof f.sort === "string") state.sort = f.sort;
@@ -687,6 +688,7 @@ var PLATFORM_SVGS = {
       document.querySelectorAll("#platform-seg .seg").forEach(function (x) { x.classList.remove("on"); });
       b.classList.add("on");
       state.platform = b.getAttribute("data-platform");
+      state.platformChosen = true;
       gcEvent("filter/platform/" + (state.platform || "all"));
       render();
     });
@@ -714,13 +716,20 @@ var PLATFORM_SVGS = {
     .then(function (r) { return r.json(); })
     .then(function (apps) {
       state.apps = apps;
-      var hadSaved = restoreFilters();
-      /* Fresh arrival (nothing restored): preselect the visitor's own
-         platform, exactly as if they had tapped its segment — the
-         headline follows through render(). Applies only when the
-         catalogue has listings for that platform; anything unknown
-         lands on All, the standing default. One tap on All clears it. */
-      if (!hadSaved) {
+      restoreFilters();
+      /* Preselect the visitor's own platform, exactly as if they had
+         tapped its segment — the headline follows through render().
+         The gate is platformChosen, not "was anything saved": a state
+         saved by an earlier build (or by renders before the visitor
+         ever touched the control) holds platform "" without any choice
+         behind it, and treating that as a deliberate All suppressed
+         detection for returning visitors (Derick, 2026-10-16 — saw
+         the Android view, then it reverted to All). A real tap on the
+         segment sets platformChosen and always wins. Detection also
+         applies only when the catalogue has listings for the
+         platform; anything unknown lands on All, the standing
+         default. One tap on All clears it. */
+      if (!state.platformChosen) {
         var detected = detectPlatform();
         if (detected && apps.some(function (a) { return a.platform === detected; })) {
           state.platform = detected;

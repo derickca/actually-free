@@ -468,6 +468,62 @@ def main():
     check("arrive: iPhone lands on All until iOS listings exist", d["allOn"], t)
     check("arrive: iPhone hero copy", d["hero"] == "Actually free apps.", t)
 
+    # 12. Saved state vs auto-detect (Derick, 2026-10-16): he visited on
+    # his Android phone, saw the Android view, then it reverted to All.
+    # Cause: the pre-detection build had already saved a filter state
+    # with platform "" into the tab session, and the new build treated
+    # that saved default as a deliberate choice, skipping detection.
+    # Rule: detection applies unless the visitor has actually chosen a
+    # platform (platformChosen). A saved "" with no choice behind it is
+    # not a choice. Each probe seeds af-filters, reloads, then measures.
+    def seeded_probe(phase_key, saved, measure_js):
+        return f"""
+      if (!sessionStorage.getItem('{phase_key}')) {{
+        sessionStorage.setItem('{phase_key}', '1');
+        sessionStorage.setItem('af-filters', {json.dumps(json.dumps(saved))});
+        location.reload();
+      }} else {{
+        sessionStorage.removeItem('{phase_key}');
+        setTimeout(function(){{ {measure_js} }}, 1600);
+      }}
+    """
+    SAVED_DEFAULT = {"query": "", "cat": "", "subcat": "", "platform": "",
+                     "attrs": {}, "stores": {}, "sort": "name"}
+
+    # 12a. Saved default (no choice ever made) under an Android UA:
+    # detection must still apply.
+    t = chrome_eval("", seeded_probe("af-test-seed-default", SAVED_DEFAULT, """
+          var segOn = document.querySelector('.platform-seg [data-platform="android"]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          document.title = JSON.stringify({segOn: segOn, hero: hero});
+    """), ua=UA_ANDROID)
+    d = json.loads(t)
+    check("saved: untouched default does not block detection", d["segOn"], t)
+    check("saved: hero follows detection over default", d["hero"] == "Actually free Android apps.", t)
+
+    # 12b. Deliberate All (platformChosen) under an Android UA: the
+    # visitor's tap wins, detection stays out.
+    t = chrome_eval("", seeded_probe("af-test-seed-all",
+                    dict(SAVED_DEFAULT, platformChosen=True), """
+          var allOn = document.querySelector('.platform-seg [data-platform=""]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          document.title = JSON.stringify({allOn: allOn, hero: hero});
+    """), ua=UA_ANDROID)
+    d = json.loads(t)
+    check("saved: deliberate All beats detection", d["allOn"], t)
+    check("saved: deliberate All hero copy", d["hero"] == "Actually free apps.", t)
+
+    # 12c. Deliberate Windows under an Android UA: explicit choice wins.
+    t = chrome_eval("", seeded_probe("af-test-seed-windows",
+                    dict(SAVED_DEFAULT, platform="windows", platformChosen=True), """
+          var segOn = document.querySelector('.platform-seg [data-platform="windows"]').classList.contains('on');
+          var hero = document.getElementById('hero-title').textContent;
+          document.title = JSON.stringify({segOn: segOn, hero: hero});
+    """), ua=UA_ANDROID)
+    d = json.loads(t)
+    check("saved: deliberate Windows beats Android detection", d["segOn"], t)
+    check("saved: deliberate Windows hero copy", d["hero"] == "Actually free Windows apps.", t)
+
     srv.shutdown()
     print()
     if FAILURES:
