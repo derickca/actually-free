@@ -458,15 +458,18 @@ def main():
     check("arrive: unknown platform hero copy", d["hero"] == "Actually free apps.", t)
     check("arrive: unknown platform sees full grid", d["total"] == len(apps), t)
 
-    # 11d. iPhone arrival: iOS has no listings yet, so no filter applies.
+    # 11d. iPhone arrival: iOS listings exist (since 2026-10-16), so the
+    # iOS segment is preselected and the hero follows.
     t = chrome_eval("", arrival_probe("af-test-arrive-iphone", """
-          var allOn = document.querySelector('.platform-seg [data-platform=""]').classList.contains('on');
+          var segOn = document.querySelector('.platform-seg [data-platform="ios"]').classList.contains('on');
           var hero = document.getElementById('hero-title').textContent;
-          document.title = JSON.stringify({allOn: allOn, hero: hero});
+          var total = document.querySelectorAll('#grid .tile').length;
+          document.title = JSON.stringify({segOn: segOn, hero: hero, total: total});
     """), ua=UA_IPHONE)
     d = json.loads(t)
-    check("arrive: iPhone lands on All until iOS listings exist", d["allOn"], t)
-    check("arrive: iPhone hero copy", d["hero"] == "Actually free apps.", t)
+    check("arrive: iPhone segment preselected", d["segOn"], t)
+    check("arrive: iPhone hero copy", d["hero"] == "Actually free iOS apps.", t)
+    check("arrive: iPhone grid non-empty", d["total"] > 0, t)
 
     # 12. Saved state vs auto-detect (Derick, 2026-10-16): he visited on
     # his Android phone, saw the Android view, then it reverted to All.

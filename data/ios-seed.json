@@ -1,0 +1,3104 @@
+[
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "A private messenger with end-to-end encrypted texts, voice calls and video calls. It is run by a nonprofit and asks only for a phone number to sign up.",
+  "free_enough_reason": "The only in-app purchase is Signal Secure Backups at $1.99, an optional paid tier for larger and longer message backups. Messaging, calls and groups are complete and free without it.",
+  "name": "Signal",
+  "needs_review": false,
+  "notes": "Group chats and group calls are included free. A paid backup plan is offered for message history storage.",
+  "package": "org.whispersystems.signal",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/signal-private-messenger/id874139669"
+  },
+  "subcategory": "Messaging",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/signal-private-messenger/id874139669",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "System",
+  "description": "A password manager that stores logins, passkeys and notes in an end-to-end encrypted vault. The vault syncs across phones, tablets, computers and browsers.",
+  "free_enough_reason": "Premium plans add advanced features on top of the free vault, which already stores unlimited passwords on unlimited devices. The App Store page lists no in-app purchase items or prices, so no App Store price can be named.",
+  "name": "Bitwarden",
+  "needs_review": false,
+  "notes": "The App Store page lists no in-app purchases. The description mentions Premium plans with advanced features, sold outside the App Store listing.",
+  "package": "com.8bit.bitwarden",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.x8bit.bitwarden",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "An email service with end-to-end encryption and zero-access storage, based in Switzerland. The free account gives an encrypted inbox with folders, labels and password-protected messages.",
+  "name": "Proton Mail",
+  "needs_review": false,
+  "notes": "Paid plans are sold in the app, starting with Mail Plus at $5.99 a month.",
+  "package": "protonmail.ios",
+  "platform": "ios",
+  "review_notes": "Age rating declares Advertising, so it fails the no-ads check even though the description says the inbox is not used for targeted ads.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/proton-mail-encrypted-email/id979659905"
+  },
+  "subcategory": "Email",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/proton-mail-encrypted-email/id979659905",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": false,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "A no-logs VPN that encrypts your connection on public and home networks. The free tier has unlimited data and needs no personal details to sign up.",
+  "free_enough_reason": "VPN Plus costs $11.99 (a $83.90 option is also listed) and adds more servers, speed and devices. The free tier is a complete VPN with unlimited data and no speed or bandwidth cap stated on the page.",
+  "name": "Proton VPN",
+  "needs_review": false,
+  "notes": "Paid VPN Plus adds more countries, faster servers, streaming support and up to 10 devices at once.",
+  "package": "protonvpn.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "ch.protonvpn.android",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/proton-vpn-fast-secure/id1437005085"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/proton-vpn-fast-secure/id1437005085",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "End-to-end encrypted cloud storage for files and photos, with automatic photo backup and sharing by secure links. Every account starts with 5 GB free.",
+  "free_enough_reason": "Drive Plus starts at $4.99 a month and buys more storage, up to 1 TB. The free 5 GB tier includes backup, sharing and docs, so the free product works on its own.",
+  "name": "Proton Drive",
+  "needs_review": false,
+  "notes": "Files can be kept available offline. Paid plans only raise the storage amount.",
+  "package": "protondrive.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/proton-drive-cloud-storage/id1509667851"
+  },
+  "subcategory": "File Sync",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/proton-drive-cloud-storage/id1509667851",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "A password manager with an encrypted vault, a built-in two-factor code generator and email aliases. Passwords sync across unlimited devices on the free tier.",
+  "free_enough_reason": "Pass Plus costs $35.90 for 12 months and Proton Unlimited costs $119.99 for 12 months. The free tier already covers unlimited passwords, unlimited devices, autofill and two-factor codes.",
+  "name": "Proton Pass",
+  "needs_review": false,
+  "notes": "Your vault can be opened while offline. Paid plans add monitoring and sharing extras.",
+  "package": "protonpass.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "proton.android.pass",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id6443490629"
+  },
+  "subcategory": "Password manager",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id6443490629",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "Ente Photos backs up photos and videos with end-to-end encryption, so only you and people you share with can see them. Search runs on the device and albums can be shared with family.",
+  "free_enough_reason": "Paid items are larger storage plans, from 10 GB at $0.99 up to 1000 GB at $11.99 a month or $119.99 a year. The free tier includes 10 GB with the full app, so paying buys space and nothing else.",
+  "name": "Ente",
+  "needs_review": false,
+  "notes": "Accounts start with 10 GB free. Paid plans raise storage only.",
+  "package": "ente.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1542026904"
+  },
+  "subcategory": "Photos",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1542026904",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "The client for a Nextcloud server you host yourself or with a provider you choose. It syncs files and photos, shares documents and keeps chosen files available offline.",
+  "name": "Nextcloud",
+  "needs_review": false,
+  "notes": "You need a Nextcloud server to connect to. The app itself collects no data, per its App Store privacy label.",
+  "package": "nextcloud.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.nextcloud.client",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1125420102"
+  },
+  "subcategory": "File Sync",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1125420102",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "A messenger and calling app built on the open Matrix network. You pick the server that hosts your account, including the free matrix.org server or your own.",
+  "name": "Element X",
+  "needs_review": false,
+  "notes": "Works with other Matrix apps. Rated 16+ on the App Store.",
+  "package": "io.element.elementx",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "io.element.android.x",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/element-x-secure-chat-call/id1631335820"
+  },
+  "subcategory": "Messaging",
+  "verification": {
+   "appstore_rating": 3.4,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/element-x-secure-chat-call/id1631335820",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "An encrypted email service from Germany with an end-to-end encrypted mailbox, contacts and calendar. The free account includes 1 GB of storage and offline access to mail.",
+  "free_enough_reason": "The paid Revolutionary plan costs $3.99 a month or $39.99 a year and Legend costs $9.99 a month or $99.99 a year. The free mailbox is a complete email product with encryption and calendar included.",
+  "name": "Tuta Mail",
+  "needs_review": false,
+  "notes": "Sign-up does not require a phone number. Paid plans add storage, custom domains and more addresses.",
+  "package": "tuta.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id922429609"
+  },
+  "subcategory": "Email",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id922429609",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "An offline-first note and to-do app that stores notes in Markdown, organised into notebooks with tags. Notes can be encrypted and synced through services such as Nextcloud, Dropbox or OneDrive.",
+  "name": "Joplin",
+  "needs_review": false,
+  "notes": "No account is needed to write notes on the device. Sync is optional and uses a service you choose.",
+  "package": "joplin.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1315599797"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1315599797",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A simple note app with end-to-end encryption, syncing an unlimited number of notes across unlimited devices. Downloaded notes stay available offline.",
+  "free_enough_reason": "The only in-app purchase is the Professional Plan at $119.99, which adds editors such as Markdown and spreadsheets, themes and backup tools. Note taking, sync and offline access are unlimited on the free tier.",
+  "name": "Standard Notes",
+  "needs_review": false,
+  "notes": "The free tier is plain-text notes with tags and passcode lock. Paid plans add rich editors, themes and encrypted backups.",
+  "package": "standardnotes.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.standardnotes",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1285392450"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1285392450",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A private notes app that encrypts every note on your device before syncing. The free plan covers unlimited notes on unlimited devices with notebooks, tags and a full editor.",
+  "free_enough_reason": "Paid plans are the Essential Plan from $1.99 and Pro from $4.49, with yearly options up to $69.99 and a Believer Plan at $8.99 or $89.99. The free tier is a complete notes app with unlimited notes, unlimited devices and encryption always on.",
+  "name": "Notesnook",
+  "needs_review": false,
+  "notes": "Free notebooks and tags are capped at 50 each. Paid plans add task lists, more storage and, on Pro, an app lock and encrypted vault.",
+  "package": "notesnook.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1544027013"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1544027013",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "VLC plays movies, shows and music in most formats without conversion, straight from your device or your home network. It handles subtitles, multi-track audio and playback speed control.",
+  "name": "VLC",
+  "needs_review": false,
+  "notes": "Files can come from cloud drives, Wi-Fi sharing or local network servers such as SMB and DLNA.",
+  "package": "vlc.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.videolan.vlc",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id650377962"
+  },
+  "subcategory": "Video player",
+  "verification": {
+   "appstore_rating": 3.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id650377962",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "Cryptomator encrypts files before they go to cloud storage such as iCloud Drive, Dropbox or Google Drive, using password-protected vaults inside the Files app. No account or registration is needed.",
+  "name": "Cryptomator",
+  "needs_review": false,
+  "notes": "The free download does not include the full version. Write access to vaults is the paid part of the product.",
+  "package": "cryptomator.ios",
+  "platform": "ios",
+  "review_notes": "The page lists a 30-Day Trial item at $0.00 and Full Version unlock purchases at $19.99 and $9.99. The free version is read-only, so the core function of adding and editing encrypted files is paid, and the directory promise excludes trials.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1560822163"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.4,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1560822163",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "A password manager for KeePass and KeePassXC vaults. It works offline by default and fills passwords in apps and websites.",
+  "free_enough_reason": "Premium adds extras such as multiple databases and YubiKey support; Premium is listed at $19.99 with other Premium options at $1.99 and $29.99, and the free tier is a complete local KeePass vault.",
+  "name": "KeePassium",
+  "needs_review": false,
+  "notes": "Open source and independently audited. Premium adds extras such as multiple databases.",
+  "package": "keepassium.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111"
+  },
+  "subcategory": "Password manager",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Utilities",
+  "description": "A password manager for KeePass and Password Safe vaults. Passwords are stored in one vault protected by a master password.",
+  "free_enough_reason": "Strongbox Pro adds enhanced Pro features; Pro is listed at $24.99 per year, $2.99 per month and $99.99 lifetime, and the page says the free version is perfectly adequate for most users.",
+  "name": "Strongbox",
+  "needs_review": false,
+  "notes": "The page describes the app as freemium and says most users find the free version adequate. Pro is also offered as an opt-in 90 day trial.",
+  "package": "strongbox.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/strongbox-password-manager/id897283731"
+  },
+  "subcategory": "Password manager",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/strongbox-password-manager/id897283731",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "Offline maps and navigation built on OpenStreetMap data. Search and turn-by-turn guidance work without an internet connection.",
+  "name": "Organic Maps",
+  "needs_review": false,
+  "notes": "Free with unlimited map downloads. No account is needed.",
+  "package": "organic.maps.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "app.organicmaps",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/organic-maps/id1567437057"
+  },
+  "subcategory": "Navigation",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/organic-maps/id1567437057",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "Offline maps and navigation built on OpenStreetMap data. It plans routes for driving, cycling and walking.",
+  "name": "OsmAnd",
+  "needs_review": true,
+  "notes": "Paid Maps+ and Pro tiers are listed on the page.",
+  "package": "osmand.ios",
+  "platform": "ios",
+  "review_notes": "Flag: page lists Maps+ and Pro purchases and paid features include unlimited map downloads; release notes also mention a CarPlay trial period, so the free map download limit needs review.",
+  "status": "flag",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/osmand-maps-travel-navigate/id934850257"
+  },
+  "subcategory": "Navigation",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/osmand-maps-travel-navigate/id934850257",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "The official app for Mastodon, a decentralized social network. Feeds are chronological and there are no algorithms deciding what you see.",
+  "name": "Mastodon",
+  "needs_review": false,
+  "notes": "You need an account on a Mastodon server to post.",
+  "package": "mastodon.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/mastodon/id1571998974"
+  },
+  "subcategory": "Social",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/mastodon/id1571998974",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "A Mastodon client for any Mastodon instance. It offers timeline sync, push notifications and multi-account support.",
+  "free_enough_reason": "Purchases are tips and a supporter subscription only and unlock nothing: Small Tip $0.99, Nice Tip $2.99, Generous tip $6.99, Insane tip $13.99 and Monthly supporter subscription $0.99.",
+  "name": "Ice Cubes",
+  "needs_review": false,
+  "notes": "Open source. You need a Mastodon account to use it.",
+  "package": "icecubes.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884"
+  },
+  "subcategory": "Social",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "A web browser from Mozilla with tracking protection built in. Private browsing mode does not save history or cookies.",
+  "name": "Firefox",
+  "needs_review": false,
+  "notes": "Signing in to a Mozilla account is optional and only needed for sync.",
+  "package": "org.mozilla.firefox.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.mozilla.firefox",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/firefox-fast-private-browser/id989804926"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/firefox-fast-private-browser/id989804926",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true
+  },
+  "category": "Utilities",
+  "description": "A private browser with its own search engine. It blocks trackers and clears tabs and browsing data with the Fire Button.",
+  "free_enough_reason": "The browser is free and complete; the optional DuckDuckGo Subscription adds a VPN and other services, listed at $9.99 per month and $99.99 per year with Pro at $19.99 per month.",
+  "name": "DuckDuckGo",
+  "needs_review": false,
+  "notes": "Rating shown is from the page as opened. The browser itself is free; a paid subscription adds a VPN and other services.",
+  "package": "duckduckgo.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/duckduckgo-duck-ai-optional/id663592361"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 4.2,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/duckduckgo-duck-ai-optional/id663592361",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "A web browser that blocks ads and trackers. It includes its own search engine and a free AI assistant.",
+  "name": "Brave",
+  "needs_review": false,
+  "notes": "Firewall + VPN is listed at $9.99 per month.",
+  "package": "brave.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: age rating Contains section lists Advertising.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/brave-browser-search-engine/id1052879175"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/brave-browser-search-engine/id1052879175",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": false,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "System",
+  "description": "A mesh VPN built on WireGuard that connects your devices into one private network. Access is controlled by identity rather than IP address.",
+  "name": "Tailscale",
+  "needs_review": false,
+  "notes": "An account is required. The App Store page lists no in-app purchases.",
+  "package": "tailscale.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/tailscale/id1470499037"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.4,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/tailscale/id1470499037",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "A Linux-like shell on iOS. You can edit files and run shell tools on the device.",
+  "name": "iSH Shell",
+  "needs_review": false,
+  "notes": "Free and open source.",
+  "package": "ish.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/ish-shell/id1436902243"
+  },
+  "subcategory": "Dev tools",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/ish-shell/id1436902243",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true
+  },
+  "category": "Utilities",
+  "description": "A Syncthing client that syncs files between iOS devices and other Syncthing devices without a cloud service.",
+  "name": "Möbius Sync",
+  "needs_review": false,
+  "notes": "Free use is limited to 20 MB inside the app sandbox.",
+  "package": "mobius.sync.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: free sync is limited to 20 MB in the app sandbox; Unlimited file sync is a $4.99 purchase and gates core sync.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/m%C3%B6bius-sync/id1539203216"
+  },
+  "subcategory": "File Sync",
+  "verification": {
+   "appstore_rating": 3.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/m%C3%B6bius-sync/id1539203216",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Utilities",
+  "description": "A Git client for cloning, editing and committing repositories on iOS. Other apps can access the repositories through Files.",
+  "name": "Working Copy",
+  "needs_review": false,
+  "notes": "Pushing commits requires the Pro unlock.",
+  "package": "workingcopy.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: pushing commits requires the Pro Unlock at $35.99, free use is limited to 5 repositories, and Pro features are offered as a 10 day free trial.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/apple-store/id896694807"
+  },
+  "subcategory": "Dev tools",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/apple-store/id896694807",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Media",
+  "description": "A podcast player with Smart Speed and Voice Boost. Episodes can be downloaded for offline listening.",
+  "name": "Overcast",
+  "needs_review": false,
+  "notes": "Overcast Premium is listed at $19.99 and $29.99.",
+  "package": "overcast.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: age rating Contains section lists Advertising, and the description says the app is funded by ads that Premium hides.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/apple-store/id888422857"
+  },
+  "subcategory": "Audio",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/apple-store/id888422857",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": false,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Media",
+  "description": "A podcast player with playlists, playback effects and sync across devices. Episodes can be downloaded for offline listening.",
+  "name": "Pocket Casts",
+  "needs_review": false,
+  "notes": "Page opened was the Australian storefront. Plus is listed at $5.99 per month and $59.99 per year on that page.",
+  "package": "pocketcasts.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: age rating Contains section lists Advertising.",
+  "sibling": "au.com.shiftyjelly.pocketcasts",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/au/app/pocket-casts-podcast-player/id414834813"
+  },
+  "subcategory": "Audio",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/au/app/pocket-casts-podcast-player/id414834813",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": false,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "A meditation and sleep app with a large free library of guided practices. It also includes a meditation timer and community groups.",
+  "free_enough_reason": "Insight Premium Meditation is an optional subscription at $59.99 per year or $9.99 per month for courses and offline listening; the free library is the product.",
+  "name": "Insight Timer",
+  "needs_review": false,
+  "notes": "Teacher donations are also listed as purchases.",
+  "package": "insighttimer.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.spotlightsix.zentimerlite2",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/insight-timer-meditate-sleep/id337472899"
+  },
+  "subcategory": "Spirituality",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/insight-timer-meditate-sleep/id337472899",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "A workspace for notes, tasks and projects. Individuals can create as many notes and docs as they want.",
+  "free_enough_reason": "Notion Plus is an optional paid tier at $11.99 per month or $119.99 per year; the app is free for personal use with unlimited notes and docs.",
+  "name": "Notion",
+  "needs_review": false,
+  "notes": "An account is required. Paid tiers are aimed at teams and added features.",
+  "package": "notion.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "notion.id",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/notion-notes-docs-tasks/id1232780281"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/notion-notes-docs-tasks/id1232780281",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "A to-do list and task manager with reminders, calendar views and habit tracking. Tasks sync across devices.",
+  "free_enough_reason": "TickTick Premium is an optional subscription at $49.99 per year or $4.99 per month for higher limits and advanced features; the page says TickTick is always free in its basic form.",
+  "name": "TickTick",
+  "needs_review": false,
+  "notes": "Premium raises list, task and attachment limits.",
+  "package": "ticktick.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.ticktick.task",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601"
+  },
+  "subcategory": "Tasks",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "A workout tracker and routine planner for weight lifting. It logs sets and shows progress graphs.",
+  "free_enough_reason": "Hevy Pro is an optional subscription at $23.99 per year, $2.99 per month or $74.99 lifetime for unlimited history and advanced measurements; the workout tracker is free with no ads.",
+  "name": "Hevy",
+  "needs_review": false,
+  "notes": "The page says the app has no ads.",
+  "package": "hevy.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.hevy",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/apple-store/id1458862350"
+  },
+  "subcategory": "Health",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/apple-store/id1458862350",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true
+  },
+  "category": "Lifestyle",
+  "description": "A note app that works on a local folder of plain text Markdown files. Notes can be linked and viewed in a graph.",
+  "name": "Obsidian",
+  "needs_review": false,
+  "notes": "The App Store page lists no in-app purchases. iCloud vaults are supported.",
+  "package": "obsidian.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "md.obsidian",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "Windy.com weather forecasts shown on detailed maps. It covers wind, rain, radar and satellite layers from many forecast models.",
+  "free_enough_reason": "Windy Premium is an optional subscription listed at $29.99, $24.99 and $2.99 for longer outlooks and extra maps; the free forecast maps are the product.",
+  "name": "Windy",
+  "needs_review": false,
+  "notes": "This is the Windyty app with the red icon. Donation purchases are also listed.",
+  "package": "windy.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.windyty.android",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/windy-com/id1161387262"
+  },
+  "subcategory": "Weather",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/windy-com/id1161387262",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true
+  },
+  "category": "Lifestyle",
+  "description": "Cleaning routines based on the FlyLady Method. It provides pre-loaded routines and room-by-room lists organized by zone.",
+  "free_enough_reason": "A FlyLadyPlus subscription at $37.99 per year, $3.99 per month or $1.99 per week unlocks every feature including extra customization; the free routines and zone lists are the product.",
+  "name": "FlyLady",
+  "needs_review": false,
+  "notes": "The page says no login is required to start. Some features need a subscription.",
+  "package": "flylady.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.FlyLady.Premium",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/flylady-routines-cleaning/id1115477521"
+  },
+  "subcategory": "Tasks",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/flylady-routines-cleaning/id1115477521",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A free and open source RSS reader. It shows articles from blogs and news sites and keeps track of what you have read.",
+  "name": "NetNewsWire",
+  "needs_review": false,
+  "notes": "Sync is available through iCloud and several feed services, and a local account needs no sign-up.",
+  "package": "netnewswire.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/netnewswire-rss-reader/id1480640210"
+  },
+  "subcategory": "RSS reader",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/netnewswire-rss-reader/id1480640210",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "A puzzle platform game where gravity and geometry keep changing. You explore a strange world and solve rooms that bend the usual rules of movement.",
+  "name": "AAAAXY",
+  "needs_review": false,
+  "notes": "Open source. The same game is sold on some other platforms but the iOS version is free with no purchases.",
+  "package": "aaaaxy.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "io.github.divverent.aaaaxy",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/aaaaxy/id6447063878"
+  },
+  "subcategory": "Puzzle",
+  "verification": {
+   "appstore_rating": 5.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/aaaaxy/id6447063878",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A Bible study app with offline Bibles and commentaries and study tools. It states it is ad-free and open source.",
+  "name": "AndBible: Bible Study",
+  "needs_review": false,
+  "notes": "Works offline once documents are installed. An optional AI agent is off by default and needs your own third-party API key.",
+  "package": "andbible.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "net.bible.android.activity",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/andbible-bible-study/id6774904527"
+  },
+  "subcategory": "Education",
+  "verification": {
+   "appstore_rating": 5.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/andbible-bible-study/id6774904527",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "The iOS version of the Anki spaced repetition flashcard system. It syncs with AnkiWeb and the desktop app.",
+  "name": "AnkiMobile Flashcards",
+  "needs_review": false,
+  "notes": "Excluded because the iOS app is paid. The Android app AnkiDroid is free.",
+  "package": "ankimobile.ios",
+  "platform": "ios",
+  "review_notes": "Paid on iOS: $24.99.",
+  "sibling": "com.ichi2.anki",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/ankimobile-flashcards/id373493387"
+  },
+  "subcategory": "Education",
+  "verification": {
+   "appstore_rating": 4.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/ankimobile-flashcards/id373493387",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "A peer-to-peer messenger that works over Bluetooth mesh with no internet connection. Messages relay between nearby devices and no account or phone number is needed.",
+  "name": "bitchat",
+  "needs_review": false,
+  "notes": "Listed on the App Store as bitchat mesh. Open source and built for offline use.",
+  "package": "bitchat.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.bitchat.droid",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/bitchat-mesh/id6748219622"
+  },
+  "subcategory": "Messaging",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/bitchat-mesh/id6748219622",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "A two-player game clock for over-the-board chess. It supports custom time controls with increments and delays and multi-stage tournament controls.",
+  "name": "Chess Clock by Chess.com",
+  "needs_review": false,
+  "notes": "By Chess.com. The listing states it is 100% free with no in-app purchases and no ads. Works offline.",
+  "package": "chessclock.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.chess.clock",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/chess-clock-by-chess-com/id858039162"
+  },
+  "subcategory": "Puzzle",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/chess-clock-by-chess-com/id858039162",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "CoMaps is a community-led open source maps app based on OpenStreetMap data. It is built for offline search and navigation with a focus on privacy.",
+  "name": "CoMaps",
+  "needs_review": false,
+  "notes": "Maps are downloaded for offline use. The app says it does not identify people and does not track or collect personal information.",
+  "package": "comaps.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "app.comaps",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/comaps/id6747180809"
+  },
+  "subcategory": "Navigation",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/comaps/id6747180809",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true
+  },
+  "category": "Utilities",
+  "description": "Cuppa times tea as it steeps. Tap a tea type to start a countdown and get a notification when brewing is done.",
+  "name": "Cuppa - Tea Timer",
+  "needs_review": false,
+  "notes": "Brew times can be customised and two teas can be timed at once. Seller on the App Store page is Nathan Cosgray.",
+  "package": "cuppa.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.nathanatos.Cuppa",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1241458171"
+  },
+  "subcategory": "Time",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1241458171",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "Delta Chat is a decentralized messenger that works over email and chatmail relays. It offers end-to-end encryption and supports multiple chat profiles.",
+  "name": "Delta Chat",
+  "needs_review": false,
+  "notes": "No phone number is needed to start. You can use your own email address or server.",
+  "package": "deltachat.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.b44t.messenger",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/delta-chat/id1459523234"
+  },
+  "subcategory": "Messaging",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/delta-chat/id1459523234",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "Element Classic is the previous generation Element app for the Matrix network. It supports encrypted messaging and group chats.",
+  "name": "Element Classic",
+  "needs_review": false,
+  "notes": "The App Store page says this is the previous generation app and points most users to Element X. A Matrix account is needed.",
+  "package": "elementclassic.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "im.vector.app",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/id1083446067"
+  },
+  "subcategory": "Messaging",
+  "verification": {
+   "appstore_rating": 3.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/id1083446067",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Lifestyle",
+  "description": "A research notebook from Google. You add your own sources and it answers questions and builds summaries from them.",
+  "free_enough_reason": "In-app purchases are Google AI plan subscriptions (Google AI Plus from $4.99 and Google AI Pro (5 TB) at $19.99) that raise usage limits and storage. The free tier is the complete product: notebooks, sources, questions and Audio Overviews all work without paying.",
+  "name": "Gemini Notebook",
+  "needs_review": false,
+  "notes": "Needs a Google account. This is the app formerly called NotebookLM.",
+  "package": "gemininotebook.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.google.android.apps.labs.language.tailwind",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/google-notebooklm/id6737527615"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/google-notebooklm/id6737527615",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Utilities",
+  "description": "Google's calendar app for iPhone and iPad. It shows your events and tasks together and syncs with your Google account.",
+  "free_enough_reason": "In-app purchases are Google storage and AI plans (100 GB at $1.99 and Google AI Plus (2 TB) at $9.99), not calendar features. The calendar itself is complete and free.",
+  "name": "Google Calendar",
+  "needs_review": false,
+  "notes": "Needs a Google account. A few team features in the description need a paid Google Workspace plan.",
+  "package": "googlecalendar.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.google.android.calendar",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/google-calendar-get-organized/id909319292"
+  },
+  "subcategory": "Calendar",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/google-calendar-get-organized/id909319292",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Utilities",
+  "description": "Create and edit documents on your phone. Several people can work on the same document at once.",
+  "free_enough_reason": "The only in-app purchase listed is Google AI Pro (5 TB) at $199.99, a storage and AI plan. Creating, editing and sharing documents is free and complete without it.",
+  "name": "Google Docs",
+  "needs_review": false,
+  "notes": "Needs a Google account. Paid Google Workspace plans add Gemini writing help inside Docs.",
+  "package": "googledocs.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.google.android.apps.docs.editors.docs",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/google-docs/id842842640"
+  },
+  "subcategory": "Documents",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/google-docs/id842842640",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "Quick notes and lists that sync across your devices. Notes can hold photos and voice recordings as well as text.",
+  "name": "Google Keep - Notes and lists",
+  "needs_review": false,
+  "notes": "Needs a Google account. The App Store page shows no in-app purchases.",
+  "package": "googlekeep.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.google.android.keep",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/google-keep-notes-and-lists/id1029207872"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/google-keep-notes-and-lists/id1029207872",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "A simple to-do list from Google. Tasks sync across devices and connect with Gmail and Google Calendar.",
+  "name": "Google Tasks",
+  "needs_review": false,
+  "notes": "Needs a Google account. The App Store page shows no in-app purchases.",
+  "package": "googletasks.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.google.android.apps.tasks",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/google-tasks-get-things-done/id1353634006"
+  },
+  "subcategory": "Tasks",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/google-tasks-get-things-done/id1353634006",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A photo and video backup app that stores your library on a server you run yourself. It is a private alternative to cloud photo services.",
+  "name": "Immich",
+  "needs_review": false,
+  "notes": "The app is only a client. You need to run the free Immich server on your own computer or server first.",
+  "package": "immich.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "app.alextran.immich",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/immich/id1613945652"
+  },
+  "subcategory": "Photos",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/immich/id1613945652",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "The official Jellyfin client for iPhone and iPad. It streams films, shows and music from your own Jellyfin server.",
+  "name": "Jellyfin",
+  "needs_review": false,
+  "notes": "You need a Jellyfin server set up and running. The server software is free.",
+  "package": "jellyfin.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.jellyfin.mobile",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/jellyfin-mobile/id1480192618"
+  },
+  "subcategory": "Media center",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/jellyfin-mobile/id1480192618",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "Video meetings with no account and no time limits. Share a room link and anyone can join from a browser or the app.",
+  "name": "Jitsi Meet",
+  "needs_review": false,
+  "notes": "Calls run on the public Jitsi service by default. You can point the app at your own server instead.",
+  "package": "jitsimeet.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.jitsi.meet",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/jitsi-meet/id1165103905"
+  },
+  "subcategory": "Video player",
+  "verification": {
+   "appstore_rating": 3.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/jitsi-meet/id1165103905",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "Play chess online or against the computer and solve puzzles in many variants. Games can be analysed with the Stockfish engine.",
+  "name": "Lichess",
+  "needs_review": false,
+  "notes": "Open source and funded by donations. An account is optional and puzzles can be solved offline.",
+  "package": "lichess.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.lichess.mobileV2",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/lichess/id1662361230"
+  },
+  "subcategory": "Board",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/lichess/id1662361230",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Lifestyle",
+  "description": "Guided meditation courses, breathing exercises and sleep stories from the non-profit Medito Foundation. Sessions can be downloaded for offline listening.",
+  "name": "Medito",
+  "needs_review": false,
+  "notes": "The App Store privacy label says identifiers may be used to track you across apps and websites owned by other companies.",
+  "package": "medito.ios",
+  "platform": "ios",
+  "review_notes": "Privacy label declares Data Used to Track You (Identifiers).",
+  "sibling": "meditofoundation.medito",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/medito-mindfulness-meditation/id1500780518"
+  },
+  "subcategory": "Health",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/medito-mindfulness-meditation/id1500780518",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Tracking declared"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": false
+  },
+  "category": "Lifestyle",
+  "description": "A digital notebook for notes, drawings and clippings organised into sections and pages. Notebooks sync through OneDrive and can be shared for collaboration.",
+  "free_enough_reason": "In-app purchases are Microsoft 365 subscriptions (Personal $99.99 and Family $129.99 as listed) that unlock premium Office features. OneNote note-taking itself is the complete free product with a Microsoft account.",
+  "name": "Microsoft OneNote",
+  "needs_review": false,
+  "notes": "A free Microsoft account is required. The listing rendered as the Mac storefront variant of the same App Store app.",
+  "package": "onenote.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.microsoft.office.onenote",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/microsoft-onenote/id784801555"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/microsoft-onenote/id784801555",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": false
+  },
+  "category": "Lifestyle",
+  "description": "Make task lists with reminders, due dates and smaller steps for each task. Lists can be shared and sync across devices through a Microsoft account.",
+  "name": "Microsoft To Do",
+  "needs_review": false,
+  "notes": "A Microsoft account is required and lists are hosted on Microsoft 365.",
+  "package": "microsoft-todo.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.microsoft.todos",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/microsoft-to-do/id1212616790"
+  },
+  "subcategory": "Tasks",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/microsoft-to-do/id1212616790",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "A factory building game with tower defence and real time strategy elements. Players build supply chains, produce materials and defend their base against waves of enemies.",
+  "name": "Mindustry",
+  "needs_review": false,
+  "notes": "The iOS version is a paid download. The same game is free on Android.",
+  "package": "mindustry.ios",
+  "platform": "ios",
+  "review_notes": "Paid on iOS at $2.99 CAD, so it does not meet the free promise.",
+  "sibling": "io.anuke.mindustry",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1385258906"
+  },
+  "subcategory": "Strategy",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1385258906",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A quick capture app for short notes and ideas. It works on the device alone or syncs with a self hosted Memos server.",
+  "free_enough_reason": "The only in-app purchase is a donation tip jar (Buy me a coffee, $4.99) that unlocks nothing.",
+  "name": "Moe Memos",
+  "needs_review": false,
+  "notes": "The only purchase is an optional coffee tip that unlocks nothing.",
+  "package": "moememos.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "me.mudkip.moememos",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/moe-memos/id1643902185"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/moe-memos/id1643902185",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "Streams games and other apps from a gaming PC on the local network to an iPhone or iPad. It works with NVIDIA GameStream hosts and with Sunshine on any GPU.",
+  "name": "Moonlight Game Streaming",
+  "needs_review": false,
+  "notes": "A host PC running GameStream or Sunshine is required.",
+  "package": "moonlight.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.limelight",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1000551566"
+  },
+  "subcategory": "Streaming",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1000551566",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "Scans Bluetooth signals to warn when smart glasses are nearby. It uses the identifiers glasses broadcast to spot devices that are hard to tell from ordinary eyewear.",
+  "name": "Nearby Glasses (Original)",
+  "needs_review": false,
+  "notes": "Listed with the word Original in its name to set it apart from copycat apps. Detection distance can be adjusted.",
+  "package": "nearbyglasses.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "ch.pocketpc.nearbyglasses",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id6761056896"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id6761056896",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A reading list app that sorts a personal library into finished, currently reading and want to read lists. Books can be added by search, barcode scan or manual entry, with reading statistics included.",
+  "name": "Openreads",
+  "needs_review": false,
+  "notes": "Book details come from Open Library when a book is searched or scanned.",
+  "package": "openreads.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "software.mdev.bookstracker",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id6476542305"
+  },
+  "subcategory": "Books",
+  "verification": {
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id6476542305",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "Connects to a self hosted ownCloud server to browse, share and sync files. It supports multiple accounts, offline files and integration with the iOS Files app.",
+  "name": "ownCloud",
+  "needs_review": true,
+  "notes": "Several extra features are sold as in-app purchases and the listing mentions a pro trial.",
+  "package": "owncloud.ios",
+  "platform": "ios",
+  "review_notes": "Listing states in its own words that some features may require a purchase or subscription. Paid unlocks are listed for Pro Features ($2.49), Document Scanner ($3.99), Photo Pro Features ($3.99), Markup Documents ($3.99) and Shortcuts Actions ($3.99), plus a 30 Day Pro Trial at $0.00. Core file access appears free, but the scanner and markup tools are among the paid items, so a human should decide whether this fits the no trials and no paid unlocks promise.",
+  "sibling": "com.owncloud.android",
+  "status": "flag",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1359583808"
+  },
+  "subcategory": "File Sync",
+  "verification": {
+   "appstore_rating": 3.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1359583808",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true
+  },
+  "category": "Lifestyle",
+  "description": "Turns a phone into a physics lab using its built in sensors. It ships with ready made experiments, can export results, and lets users design their own experiments.",
+  "name": "phyphox",
+  "needs_review": false,
+  "notes": "Made by RWTH Aachen University. Available sensors vary by device.",
+  "package": "phyphox.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "de.rwth_aachen.phyphox",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1127319693"
+  },
+  "subcategory": "Education",
+  "verification": {
+   "appstore_rating": 4.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1127319693",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "A collection of 38 single-player logic puzzles for iPhone and iPad. Each game generates fresh puzzles that can be played offline.",
+  "name": "Simon Tatham's Puzzles",
+  "needs_review": false,
+  "notes": "The iOS port is by Greg Hewgill for the Simon Tatham puzzles project. No account is needed.",
+  "package": "simontathams-puzzles.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "name.boyle.chris.sgtpuzzles",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/simon-tathams-puzzles/id622220631"
+  },
+  "subcategory": "Puzzle",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/simon-tathams-puzzles/id622220631",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Media",
+  "description": "Google's photo editor with tools for tuning images and applying film-style looks. Edits are non-destructive and RAW files are supported.",
+  "name": "Snapseed",
+  "needs_review": false,
+  "notes": "Free with no purchases or subscriptions shown on its App Store page.",
+  "package": "snapseed.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.niksoftware.snapseed",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/gb/app/snapseed/id439438619"
+  },
+  "subcategory": "Image editor",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/gb/app/snapseed/id439438619",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A to-do list and time tracker that keeps data on the device by default. It can import tasks from services such as Jira and GitHub.",
+  "name": "Super Productivity",
+  "needs_review": false,
+  "notes": "Open source and local-first. Sync is optional and uses services the user chooses.",
+  "package": "superproductivity.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.superproductivity.superproductivity",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/app/super-productivity/id1482572463"
+  },
+  "subcategory": "Tasks",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/app/super-productivity/id1482572463",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Games",
+  "description": "A 3D kart racing game with single-player races and online races against other players. It is open source and the listing states the game has no ads.",
+  "name": "SuperTuxKart",
+  "needs_review": false,
+  "notes": "The official project download page links to this App Store listing. Online play is optional.",
+  "package": "supertuxkart.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.supertuxkart.stk",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/supertuxkart/id6737858957"
+  },
+  "subcategory": "Arcade",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/supertuxkart/id6737858957",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "The official Wikipedia app for reading and exploring Wikipedia articles in many languages. It offers saved reading lists for offline reading and discovery features such as nearby places and a picture of the day.",
+  "name": "Wikipedia",
+  "needs_review": false,
+  "notes": "Published by the Wikimedia Foundation. Its App Store privacy label says data is collected but not linked to you.",
+  "package": "wikipedia.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.wikipedia",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/wikipedia/id324715238"
+  },
+  "subcategory": "Education",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/wikipedia/id324715238",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Communications",
+  "description": "A client app for Misskey, a federated social media platform. It supports timelines, posting notes and switching between multiple accounts on multiple servers.",
+  "name": "Aria for Misskey",
+  "needs_review": false,
+  "notes": "Published by Takehito Yasui. You need an account on a Misskey server to use it.",
+  "package": "aria.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.poppingmoon.aria",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id6499410880"
+  },
+  "subcategory": "Social",
+  "verification": {
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id6499410880",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "The official WireGuard client for managing VPN tunnels. It imports tunnel files and QR codes or builds a tunnel from scratch.",
+  "name": "WireGuard",
+  "needs_review": false,
+  "notes": "You need your own WireGuard server or a provider that gives you a tunnel file.",
+  "package": "wireguard.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/wireguard/id1441195209"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/wireguard/id1441195209",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "System",
+  "description": "Joins your device to ZeroTier virtual networks as a VPN connection. You add a network by its ID and turn it on.",
+  "name": "ZeroTier One",
+  "needs_review": false,
+  "notes": "iOS allows only one ZeroTier network to be joined at a time.",
+  "package": "zerotier-one.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/zerotier-one/id1084101492"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 3.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/zerotier-one/id1084101492",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "System",
+  "description": "The official OpenVPN client from OpenVPN Inc. It imports .ovpn profiles and connects to OpenVPN servers.",
+  "name": "OpenVPN Connect",
+  "needs_review": false,
+  "notes": "The app has no built-in VPN service. You need a server or service that uses the OpenVPN protocol.",
+  "package": "openvpn-connect.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/openvpn-connect-openvpn-app/id590379981"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/openvpn-connect-openvpn-app/id590379981",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "Mozilla's private browser with tracking protection built in. One tap erases your history, passwords and cookies.",
+  "name": "Firefox Focus",
+  "needs_review": false,
+  "notes": "It is a single-session browser with no tabs and no sync.",
+  "package": "firefox-focus.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/firefox-focus-privacy-browser/id1055677337"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/firefox-focus-privacy-browser/id1055677337",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "A free and open-source Tor-powered browser by Mike Tigas. It routes browsing through the Tor network and can open .onion sites.",
+  "free_enough_reason": "The only in-app purchases are tips that unlock nothing: Small Onion Browser Tip $0.99, Medium Onion Browser Tip $4.99 and Large Onion Browser Tip $9.99.",
+  "name": "Onion Browser",
+  "needs_review": false,
+  "notes": "Browsing is slower than a normal browser because traffic is relayed through Tor.",
+  "package": "onion-browser.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/onion-browser/id519296448"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 3.2,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/onion-browser/id519296448",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Utilities",
+  "description": "Kagi's WebKit browser with built-in ad blocking and anti-tracking. Kagi states it collects no telemetry.",
+  "free_enough_reason": "The free browser is the complete product. The optional Orion+ pass costs $5.00 a month, $50.00 a year or $150.00 lifetime, and tips from $5.00 to $100.00 are also offered.",
+  "name": "Orion Browser",
+  "needs_review": false,
+  "notes": "An optional Orion+ pass adds extras and early access. The browser itself is free and complete without it.",
+  "package": "orion-browser.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/orion-browser-by-kagi/id1484498200"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 4.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/orion-browser-by-kagi/id1484498200",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "Utilities",
+  "description": "An open-source Safari extension that saves and runs your own JavaScript and CSS on sites you visit.",
+  "name": "Userscripts",
+  "needs_review": false,
+  "notes": "You supply the scripts yourself. It can also be used for custom ad blocking.",
+  "package": "userscripts.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/userscripts/id1463298887"
+  },
+  "subcategory": "Dev tools",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/userscripts/id1463298887",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A music player for your own Jellyfin server. It streams your music and can download it for offline listening.",
+  "name": "Finamp",
+  "needs_review": false,
+  "notes": "You need access to a Jellyfin server. Without one the app cannot be used.",
+  "package": "finamp.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/finamp/id1574922594"
+  },
+  "subcategory": "Music",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/finamp/id1574922594",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A native video client for the Jellyfin media server. It streams video and Live TV from your own server.",
+  "name": "Swiftfin",
+  "needs_review": false,
+  "notes": "You must have a Jellyfin server set up and running. It is video only and does not handle music or photos.",
+  "package": "swiftfin.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/swiftfin/id1604098728"
+  },
+  "subcategory": "Media center",
+  "verification": {
+   "appstore_rating": 3.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/swiftfin/id1604098728",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "Media",
+  "description": "OverDrive's library app for borrowing ebooks, audiobooks and magazines. Titles can be downloaded for offline reading.",
+  "name": "Libby",
+  "needs_review": false,
+  "notes": "You need a library card from a participating library. Loans are time-limited like physical library loans.",
+  "package": "libby.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/libby-by-overdrive/id1076402606"
+  },
+  "subcategory": "Books",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/libby-by-overdrive/id1076402606",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Media",
+  "description": "Streams films and documentaries free through your library. The catalogue includes festival films and The Criterion Collection.",
+  "name": "Kanopy",
+  "needs_review": false,
+  "notes": "You need a library card from a participating library and a Kanopy account. Libraries set monthly viewing limits.",
+  "package": "kanopy.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/kanopy/id1205614510"
+  },
+  "subcategory": "Video",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/kanopy/id1205614510",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true
+  },
+  "category": "Games",
+  "description": "Dan Vogt's story-driven neon racing game with over 40 levels. A solo passion project with a two hour story.",
+  "name": "DATA WING",
+  "needs_review": false,
+  "notes": "Completely free with no purchases. The listing shows no privacy details provided by the developer.",
+  "package": "data-wing.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/data-wing/id1206723870"
+  },
+  "subcategory": "Arcade",
+  "verification": {
+   "appstore_rating": 4.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/data-wing/id1206723870",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "No tracking"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "Matt Rubin's simple and open-source two-factor app. It generates time-based and counter-based one-time passwords and never connects to the internet.",
+  "name": "Authenticator",
+  "needs_review": false,
+  "notes": "Secrets are stored in the iOS keychain and never leave your device. The listing shows no privacy details provided by the developer.",
+  "package": "authenticator-matt-rubin.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/authenticator/id766157276"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 3.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/authenticator/id766157276",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "No tracking"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true
+  },
+  "category": "System",
+  "description": "Ente's two-factor app with end-to-end encrypted backups and sync across devices. Codes are generated offline.",
+  "name": "Ente Auth",
+  "needs_review": false,
+  "notes": "Sync and web access use an Ente account. Codes can also be exported to a plain text file.",
+  "package": "ente-auth.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/ente-authenticator/id6444121398"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/ente-authenticator/id6444121398",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "Proton's open-source two-factor app with local-first storage and offline support. The listing states no tracking and no ads.",
+  "name": "Proton Authenticator",
+  "needs_review": false,
+  "notes": "No Proton account is required. A Proton account is only needed for cross-platform sync.",
+  "package": "proton-authenticator.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/proton-authenticator/id6741758667"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.4,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/proton-authenticator/id6741758667",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "System",
+  "description": "Bitwarden's standalone two-factor app. It generates time-based one-time passwords for any site that supports them.",
+  "name": "Bitwarden Authenticator",
+  "needs_review": false,
+  "notes": "It can sync codes with the Bitwarden Password Manager vault if you use both apps.",
+  "package": "bitwarden-authenticator.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/bitwarden-authenticator/id6497335175"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 3.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/bitwarden-authenticator/id6497335175",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "An open-source two-factor app that works offline with no account required. It supports backups and browser extensions for one-tap sign-in.",
+  "name": "2FAS",
+  "needs_review": false,
+  "notes": "The current App Store page lists no in-app purchases at all.",
+  "package": "2fas.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/2fa-authenticator-2fas/id1217793794"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.7,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/2fa-authenticator-2fas/id1217793794",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "A native two-factor app with iCloud backup and encrypted exports. It can send a code to a Mac companion app in one tap.",
+  "free_enough_reason": "The only in-app purchases on the current page are tips and a donation that unlock nothing: Coffee-Sized Tip $1.99, Domain-sized Tip $7.99, Raivo - Medium Donation $19.99, Hosting-sized tip $41.99 and License-sized tip $99.99.",
+  "name": "Raivo OTP",
+  "needs_review": false,
+  "notes": "Judged on the current page only. Its current purchases are tips and a donation, with no subscription listed.",
+  "package": "raivo-otp.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/raivo-otp/id1459042137"
+  },
+  "subcategory": "Security",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/raivo-otp/id1459042137",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "An open-source outliner that works on local plain-text Markdown and Org-mode files. It offers backlinks, a knowledge graph and tasks.",
+  "name": "Logseq",
+  "needs_review": false,
+  "notes": "Your notes stay in local files you control.",
+  "package": "logseq.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/logseq/id1601013908"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.4,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/logseq/id1601013908",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A private and offline-first workspace for notes, docs and tasks. Data is end-to-end encrypted and stored on your device.",
+  "free_enough_reason": "The free app is the complete local-first workspace for notes, docs and tasks. Optional membership purchases are Pro $9.99 and Builder $119.00.",
+  "name": "Anytype",
+  "needs_review": false,
+  "notes": "Optional memberships are sold as in-app purchases. Core notes and tasks work offline without them.",
+  "package": "anytype.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/anytype-the-everything-app/id6449487029"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/anytype-the-everything-app/id6449487029",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Media",
+  "description": "An ad-free manga and comic reader built as a Komga client. It supports an extensive scripting API to extend the app.",
+  "name": "Paperback",
+  "needs_review": false,
+  "notes": "You need a Komga server or sources you add yourself. The app ships with no content.",
+  "package": "paperback.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/paperback-comic-manga-reader/id1626613373"
+  },
+  "subcategory": "Comics",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/paperback-comic-manga-reader/id1626613373",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A player for your own M4B, M4A, MP3 and FLAC audiobooks. It remembers your place and supports playlists, CarPlay and an Apple Watch app.",
+  "free_enough_reason": "The free player plays your own audiobooks in full. Optional Pro costs $4.99 a month or $49.99 a year, and support subscriptions and tips are also offered.",
+  "name": "BookPlayer",
+  "needs_review": false,
+  "notes": "The app includes no audiobooks. You import your own files or connect an Audiobookshelf or Jellyfin server.",
+  "package": "bookplayer.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/bookplayer/id1138219998"
+  },
+  "subcategory": "Audio",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/bookplayer/id1138219998",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "An open-source client for playing music and podcasts from your own Ampache or Subsonic server. Songs can be downloaded for offline play.",
+  "name": "Amperfy",
+  "needs_review": false,
+  "notes": "You need a private Ampache or Subsonic server. The current App Store page lists no in-app purchases at all.",
+  "package": "amperfy.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/amperfy-music/id1530145038"
+  },
+  "subcategory": "Music",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/amperfy-music/id1530145038",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true
+  },
+  "category": "Media",
+  "description": "Apple's music studio with touch instruments and a full recording setup. It records up to 32 tracks and includes Live Loops.",
+  "name": "GarageBand",
+  "needs_review": false,
+  "notes": "Extra instruments, loops and sound packs in the Sound Library are free downloads. Made by Apple for iPhone and iPad only.",
+  "package": "garageband.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/garageband/id408709785"
+  },
+  "subcategory": "Music",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/garageband/id408709785",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true
+  },
+  "category": "Media",
+  "description": "An ebook reader for books and documents in many common formats. It reads files stored on the device and works offline.",
+  "name": "ReadEra",
+  "needs_review": false,
+  "notes": "Seller is READERA EOOD. The iOS listing states no ads and no internal purchases.",
+  "package": "readera.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "org.readera",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1669188337"
+  },
+  "subcategory": "Books",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1669188337",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A handwritten notes app made for pen input. Notes can be organised in nested folders and synced between devices.",
+  "name": "Saber",
+  "needs_review": false,
+  "notes": "Seller is Adil Hanney. Open source.",
+  "package": "saber.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.adilhanney.saber",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/saber/id1671523739"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/saber/id1671523739",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true
+  },
+  "category": "Communications",
+  "description": "A messaging app that sends short text messages as audio tones through a radio. It is aimed at amateur radio use.",
+  "name": "Rattlegram",
+  "needs_review": false,
+  "notes": "Seller on the iOS page is aicodix GmbH. Found via a Similarweb comparison page that listed this App Store ID.",
+  "package": "rattlegram.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "sibling": "com.aicodix.rattlegram",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1664526096"
+  },
+  "subcategory": "Messaging",
+  "verification": {
+   "appstore_rating": 5.0,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1664526096",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true
+  },
+  "category": "System",
+  "description": "An ad blocker for Safari with tracker blocking and DNS filtering options. The free version blocks ads in Safari with basic privacy protection.",
+  "free_enough_reason": "Free Safari ad blocking is the complete core product. Premium adds advanced YouTube blocking and DNS app protection, priced on the page as 1 Year Premium at $7.99 and Premium Lifetime at $14.99 with other Premium prices also listed.",
+  "name": "AdGuard",
+  "needs_review": false,
+  "notes": "Seller is Adguard Software Limited. A Pro trial is offered for the paid features.",
+  "package": "adguard.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/adguard-ad-blocker-for-safari/id1047223162"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/adguard-ad-blocker-for-safari/id1047223162",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "System",
+  "description": "A firewall app that blocks trackers and badware across apps on the device. A separate VPN tunnel is sold as an extra.",
+  "free_enough_reason": "The basic on-device firewall is free and is the core product. Paid items are the VPN and advanced firewall, priced on the page as One Month of Lockdown VPN at $11.49 and Lockdown iOS Firewall Monthly at $4.99 with yearly options also listed.",
+  "name": "Lockdown",
+  "needs_review": false,
+  "notes": "Seller shown is CELESTIAN GOLDEN APPS SL. Basic firewall features are listed as free on the page.",
+  "package": "lockdown.ios",
+  "platform": "ios",
+  "review_notes": "Privacy section declares tracking: a Data Used to Track You heading is present for Identifiers, even though the age rating declares no Advertising.",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1469783711"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.3,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1469783711",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Tracking declared"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "open_source": true
+  },
+  "category": "System",
+  "description": "A Safari content blocker that blocks ads and tracking scripts with a curated filter list. It is open source.",
+  "name": "Ka-Block!",
+  "needs_review": false,
+  "notes": "Seller is Negative Code, LLC. Last version shown is from 2021.",
+  "package": "kablock.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/ka-block/id1037173557"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.2,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/ka-block/id1037173557",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "System",
+  "description": "A VPN client for OpenVPN and WireGuard connections using your own profiles. Basic import and connection features are included free.",
+  "free_enough_reason": "Basic import and connection for OpenVPN and WireGuard are free and are the core product. A Core (iOS) purchase at $34.99 CAD on the page unlocks extra features such as on-demand rules and iCloud sharing, with donation items also listed.",
+  "name": "Passepartout",
+  "needs_review": false,
+  "notes": "Seller is Algoritmico Ltd. You need your own VPN profile or provider to connect. Bundle ID is taken from project material opened during the hunt.",
+  "package": "com.algoritmico.ios.Passepartout",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1433648537"
+  },
+  "subcategory": "Privacy",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1433648537",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Utilities",
+  "description": "A web browser with built-in ad blocking and tracker blocking. It offers desktop-style tabs and encrypted sync.",
+  "name": "Vivaldi",
+  "needs_review": false,
+  "notes": "Seller is Vivaldi Technologies AS. The description notes that some links in the app are affiliate links.",
+  "package": "vivaldi.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/vivaldi-browser/id1633234600"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/vivaldi-browser/id1633234600",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Utilities",
+  "description": "A Safari extension that redirects Safari searches to the Kagi search service. The extension itself is free to download.",
+  "name": "Kagi",
+  "needs_review": true,
+  "notes": "Seller is Kagi Inc. Listed on the store as Kagi for Safari.",
+  "package": "kagi.ios",
+  "platform": "ios",
+  "review_notes": "Core function requires a paid external service: the extension sends searches to Kagi search, and Kagi search itself is a paid subscription service, so searching is not free even though the extension download is free.",
+  "status": "flag",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1622835804"
+  },
+  "subcategory": "Web",
+  "verification": {
+   "appstore_rating": 3.4,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1622835804",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "An RSS reader with gesture navigation and colour themes. It syncs through its own cloud service and through several feed services.",
+  "free_enough_reason": "Core feed reading and syncing are free. A subscription at $29.99 per year or $4.99 per month adds extra article actions, webpage caching and other extras listed on the page.",
+  "name": "Unread",
+  "needs_review": false,
+  "notes": "Seller shown is John Brayton for Golden Hill Software.",
+  "package": "unread.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/unread-an-rss-reader/id1363637349"
+  },
+  "subcategory": "News",
+  "verification": {
+   "appstore_rating": 4.6,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/unread-an-rss-reader/id1363637349",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Media",
+  "description": "A Subsonic client for streaming music from your own Subsonic-compatible server. It supports caching for offline playback.",
+  "name": "play:Sub",
+  "needs_review": false,
+  "notes": "Paid on iOS at $6.99 CAD, so it does not meet the free promise. Tip purchases are also listed.",
+  "package": "playsub.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: paid on iOS, priced at $6.99 CAD on the opened page.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id955329386"
+  },
+  "subcategory": "Music",
+  "verification": {
+   "appstore_rating": 4.2,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id955329386",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "A music player for Subsonic-compatible servers such as Navidrome. It streams and downloads music from your own library.",
+  "name": "Substreamer",
+  "needs_review": false,
+  "notes": "Seller is Gaven Henry. Open source. You need access to a Subsonic-compatible server.",
+  "package": "substreamer.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "include",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1012991665"
+  },
+  "subcategory": "Music",
+  "verification": {
+   "appstore_rating": 3.9,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1012991665",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {
+   "open_source": true
+  },
+  "category": "Lifestyle",
+  "description": "A plain text and Markdown notes manager that stores notes as files. It syncs through iCloud Drive.",
+  "name": "FSNotes",
+  "needs_review": false,
+  "notes": "Paid on iOS at $6.99 CAD, so it does not meet the free promise. A separate Mac-only listing exists under a different ID.",
+  "package": "fsnotes.ios",
+  "platform": "ios",
+  "review_notes": "Exclude: paid on iOS, priced at $6.99 CAD on the opened iOS page.",
+  "status": "exclude",
+  "stores": {
+   "appstore": "https://apps.apple.com/ca/app/id1346501102"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.1,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/ca/app/id1346501102",
+   "iap_free": true,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data Not Collected"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "A quick text capture app that opens ready to type. Captured text can be tagged and sent on to other apps with built-in actions.",
+  "free_enough_reason": "Free capture and use of built-in actions are the complete core product and the page states the app is always free to use. Drafts Pro at $2.99 per month or $29.99 per year on the opened page adds creating and editing actions, workspaces, themes and extra widgets.",
+  "name": "Drafts",
+  "needs_review": false,
+  "notes": "Seller is Agile Tortoise.",
+  "package": "drafts.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/drafts/id1236254471"
+  },
+  "subcategory": "Productivity",
+  "verification": {
+   "appstore_rating": 4.8,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/drafts/id1236254471",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ },
+ {
+  "attrs": {},
+  "category": "Lifestyle",
+  "description": "An email client that puts Gmail, Outlook, iCloud and IMAP accounts in one inbox. It includes tracker blocking and snooze tools.",
+  "free_enough_reason": "Reading and sending mail for your existing accounts is free and is the core product. Paid plans add AI writing and encryption features, priced on the page as Canary Growth yearly at $35.99 and Canary Pro Lifetime at $59.99 with other Pro prices also listed.",
+  "name": "Canary Mail",
+  "needs_review": false,
+  "notes": "Seller is Cartasec Pte. Ltd. Paid plans are sold by subscription and as lifetime options.",
+  "package": "canarymail.ios",
+  "platform": "ios",
+  "review_notes": "",
+  "status": "free-enough",
+  "stores": {
+   "appstore": "https://apps.apple.com/us/app/canary-mail-ai-email-client/id1155470386"
+  },
+  "subcategory": "Email",
+  "verification": {
+   "appstore_rating": 4.5,
+   "checked_at": "2026-10-16",
+   "evidence_url": "https://apps.apple.com/us/app/canary-mail-ai-email-client/id1155470386",
+   "iap_free": false,
+   "method": "appstore",
+   "no_ads_declared": true,
+   "privacy": "Data collected, not tracked"
+  }
+ }
+]

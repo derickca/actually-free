@@ -236,7 +236,15 @@
   var state = { apps: [], query: "", cat: "", subcat: "", platform: "", platformChosen: false, attrs: {}, stores: {}, sort: "name" };
 var PLATFORM_SVGS = {
   "android": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M17.6 9.5l1.8-3.1c.1-.2 0-.5-.2-.6-.2-.1-.5 0-.6.2l-1.9 3.2c-1-.5-2.1-.7-3.2-.7s-2.2.2-3.2.7L8.4 5.9c-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6l1.8 3.1C6.6 11.3 5 13.9 5 16.9h14c0-3-1.6-5.6-4.4-7.4z\"/></svg>",
-  "windows": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5zM3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z\"/></svg>"
+  "windows": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5zM3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z\"/></svg>",
+  "macos": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.03 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701\"/></svg>",
+  "ios": "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><rect x=\"6.5\" y=\"1.8\" width=\"11\" height=\"20.4\" rx=\"2.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"/><path d=\"M10.4 18.9h3.2\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\"/></svg>"
+};
+var PLATFORM_NAMES = {
+  "android": "Android",
+  "windows": "Windows",
+  "macos": "Mac",
+  "ios": "iOS"
 };
   var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30, "Productivity": 60 };
 
@@ -305,6 +313,7 @@ var PLATFORM_SVGS = {
                 ["izzy", "IzzyOnDroid", app.stores.izzy],
                 ["openapk", "OpenAPK", app.stores.openapk],
                 ["play", "Play", app.stores.play],
+                ["appstore", "App Store", app.stores.appstore],
                 ["github", "GitHub", app.stores.github]];
     defs.forEach(function (d) {
       if (d[2]) out.push('<span class="store-badge">' + d[1] + "</span>");
@@ -357,7 +366,7 @@ var PLATFORM_SVGS = {
     var accountBadge = app.needs_account ? '<span class="needs-account">needs account</span>' : "";
     var personalBadge = app.personal_use ? '<span class="personal-use">personal use</span>' : "";
     var platKey = app.platform || "android";
-    var platName = platKey === "windows" ? "Windows" : "Android";
+    var platName = PLATFORM_NAMES[platKey] || "Android";
     var platTag = '<span class="platform-tag" title="' + platName + '" aria-label="' + platName + ' app">' +
       (PLATFORM_SVGS[platKey] || PLATFORM_SVGS.android) + "</span>";
     var trustLine = app.free_enough
@@ -741,10 +750,12 @@ var PLATFORM_SVGS = {
       if (state.cat && !apps.some(function (a) { return a.category === state.cat; })) {
         state.cat = ""; state.subcat = "";
       }
-      /* No Windows listings yet: the Windows segment stays out of sight. */
-      var hasWindows = apps.some(function (a) { return a.platform === "windows"; });
-      var winSeg = document.querySelector('#platform-seg [data-platform="windows"]');
-      if (winSeg) winSeg.style.display = hasWindows ? "" : "none";
+      /* A platform with no listings keeps its segment out of sight. */
+      document.querySelectorAll('#platform-seg .seg[data-platform]').forEach(function (seg) {
+        var p = seg.getAttribute("data-platform");
+        if (!p) return;
+        seg.style.display = apps.some(function (a) { return a.platform === p; }) ? "" : "none";
+      });
       /* Build the subcategory chip map from the fetched data itself:
          count per (category, subcategory), most apps first, then A-Z.
          One payload drives both chips and tiles, so they cannot disagree. */

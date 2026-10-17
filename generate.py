@@ -35,12 +35,32 @@ PLATFORM_SVG = {
         '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">'
         '<path fill="currentColor" d="M3 5.6l7.3-1v7H3zM11.5 4.4L21 3v8.6h-9.5z'
         'M3 12.4h7.3v7L3 18.5zM11.5 12.4H21V21l-9.5-1.3z"/></svg>',
+    "macos":
+        '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">'
+        '<path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04'
+        '-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09'
+        ' 1.013 1.454 2.208 3.09 3.792 3.03 1.52-.065 2.09-.987 3.935-.987'
+        ' 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948'
+        ' 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857'
+        '-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376'
+        '-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427'
+        ' 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338'
+        '-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>',
+    "ios":
+        '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">'
+        '<rect x="6.5" y="1.8" width="11" height="20.4" rx="2.6" fill="none" '
+        'stroke="currentColor" stroke-width="1.9"/>'
+        '<path d="M10.4 18.9h3.2" stroke="currentColor" stroke-width="1.9" '
+        'stroke-linecap="round"/></svg>',
 }
-PLATFORM_NAMES = {"android": "Android", "windows": "Windows"}
+PLATFORM_NAMES = {"android": "Android", "windows": "Windows",
+                  "macos": "Mac", "ios": "iOS"}
 # Injected into app.js (tiles render client-side). json.dumps quoting keeps
 # the SVG attribute quotes intact.
 PLATFORM_SVGS_JS = ("var PLATFORM_SVGS = {\n" + ",\n".join(
     '  "%s": %s' % (k, json.dumps(v)) for k, v in PLATFORM_SVG.items()) + "\n};")
+PLATFORM_NAMES_JS = ("var PLATFORM_NAMES = {\n" + ",\n".join(
+    '  "%s": %s' % (k, json.dumps(v)) for k, v in PLATFORM_NAMES.items()) + "\n};")
 PER_BADGE_NOTE = ("The Play Store version of this app carries ads or in-app "
                   "purchases, so we only list the clean build.")
 # "Free Enough" — apps with paid upgrades whose free tier is the complete
@@ -374,6 +394,7 @@ def clean_record(rec):
         "izzy": stores.get("izzy") or None,
         "github": stores.get("github") or None,
         "openapk": stores.get("openapk") or None,
+        "appstore": stores.get("appstore") or None,
     }
     # Windows download sources: the official developer site is the primary
     # download; stores and package managers are labeled alternatives.
@@ -427,7 +448,7 @@ def clean_record(rec):
         "description": rec.get("description") or extract_description(rec),
         "stores": out_stores,
         "downloads": downloads,
-        "rating": ver.get("play_rating"),
+        "rating": ver.get("play_rating") or ver.get("appstore_rating"),
         "attrs": attrs,
         "made_by_us": bool(rec.get("made_by_us")),
         "per_badge": per_badge,
@@ -449,6 +470,12 @@ def clean_record(rec):
         # (seed-only fields; Android records simply lack them).
         "winget_id": rec.get("winget_id") or None,
         "windows11": rec.get("windows11") or None,
+        # Homebrew cask id for Mac listings (seed-only, mirrors winget_id).
+        "brew_id": rec.get("brew_id") or None,
+        # Where the star rating came from, so the detail page can label
+        # it honestly ("on Google Play" vs "on the App Store").
+        "rating_source": ("appstore" if ver.get("appstore_rating")
+                          else "play" if ver.get("play_rating") else None),
     }
 
 
@@ -465,25 +492,54 @@ def load_corpus():
             wseed = json.load(f)
         kept += [clean_record(r) for r in wseed
                  if r.get("status") in ("include", "per-badge", "free-enough")]
+    # Mac and iOS listings likewise (Apple platforms, Derick 2026-10-16).
+    for extra in ("macos-seed.json", "ios-seed.json"):
+        extra_seed = os.path.join(HERE, "data", extra)
+        if os.path.exists(extra_seed):
+            with open(extra_seed, encoding="utf-8") as f:
+                eseed = json.load(f)
+            kept += [clean_record(r) for r in eseed
+                     if r.get("status") in ("include", "per-badge", "free-enough")]
     kept.sort(key=lambda a: a["name"].lower())
     return kept
 
 
 def resolve_siblings(apps):
-    """Cross-link Android/Windows versions of the same product. Only the
-    newer listing needs the `sibling` field (package id); the older one
-    gets the backlink automatically."""
+    """Cross-link versions of the same product across platforms. Only one
+    listing per product needs the `sibling` field (the package id of any
+    one sibling); the group is built transitively, so with four
+    platforms a chain of declarations still links every member to every
+    other. sibling_slug/sibling_platform keep naming the first sibling
+    (older consumers); `siblings` carries the full list."""
     by_package = {a["package"]: a for a in apps}
+    parent = {a["package"]: a["package"] for a in apps}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
     for a in apps:
         sib = a.get("sibling_package")
-        if not sib or sib not in by_package:
+        if sib and sib in by_package:
+            ra, rb = find(a["package"]), find(sib)
+            if ra != rb:
+                parent[ra] = rb
+    order = {"android": 0, "windows": 1, "macos": 2, "ios": 3}
+    groups = {}
+    for a in apps:
+        groups.setdefault(find(a["package"]), []).append(a)
+    for members in groups.values():
+        if len(members) < 2:
             continue
-        b = by_package[sib]
-        a["sibling_slug"] = b["slug"]
-        a["sibling_platform"] = b["platform"]
-        if not b.get("sibling_package"):
-            b["sibling_slug"] = a["slug"]
-            b["sibling_platform"] = a["platform"]
+        for a in members:
+            sibs = sorted((b for b in members if b is not a),
+                          key=lambda b: order.get(b["platform"], 9))
+            a["siblings"] = [{"slug": b["slug"], "platform": b["platform"]}
+                             for b in sibs]
+            a["sibling_slug"] = sibs[0]["slug"]
+            a["sibling_platform"] = sibs[0]["platform"]
 
 # ---------------------------------------------------------------------------
 # Feedback — the browser POSTs JSON to the shared msg service
@@ -650,7 +706,7 @@ def site_footer(forms):
     suggest_link = '<a href="/suggest">Suggest an app</a>'
     return f"""<footer class="site-footer">
   <div class="footer-inner">
-    <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android and Windows apps that are
+    <p class="about"><strong>Actually Free</strong> is a hand-curated directory of Android, Windows, Mac and iPhone apps that are
     actually free. Every app is checked before listing: no ads, no purchases, no subscriptions,
     no trials, no nagging and no surprise bundles.
     If an app breaks the promise, report it and we'll take a look.</p>
@@ -690,7 +746,7 @@ def build_index(forms):
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Actually Free \u2014 " + TAGLINE,
-      "A hand-curated directory of Android and Windows apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. " + TAGLINE)}
+      "A hand-curated directory of Android, Windows, Mac and iPhone apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. " + TAGLINE)}
 <body>
 {site_header()}
 <main class="directory">
@@ -706,6 +762,8 @@ def build_index(forms):
       <button class="seg on" data-platform="">All</button>
       <button class="seg" data-platform="android">{PLATFORM_SVG["android"]} Android</button>
       <button class="seg" data-platform="windows">{PLATFORM_SVG["windows"]} Windows</button>
+      <button class="seg" data-platform="macos">{PLATFORM_SVG["macos"]} Mac</button>
+      <button class="seg" data-platform="ios">{PLATFORM_SVG["ios"]} iOS</button>
     </div>
     <div class="cat-stack">
       <div class="filter-row" id="category-chips" role="group" aria-label="Filter by category">
@@ -740,7 +798,7 @@ def build_index(forms):
 # Detail pages — one real static HTML page per app (SEO)
 # ---------------------------------------------------------------------------
 
-STORE_LABELS = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"), ("openapk", "OpenAPK"), ("play", "Play"), ("github", "GitHub")]
+STORE_LABELS = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"), ("openapk", "OpenAPK"), ("play", "Play"), ("appstore", "App Store"), ("github", "GitHub")]
 
 # Filter pills on the directory page. These tables fix labels and ordering only;
 # whether a pill appears is decided by the apps.json payload at runtime (a pill
@@ -749,6 +807,7 @@ STORE_LABELS = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"), ("openapk", "Ope
 # the HTML shell. STORE order is Derick's preferred filter order.
 FILTER_STORES = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"),
                  ("openapk", "OpenAPK"), ("play", "Google Play"),
+                 ("appstore", "App Store"),
                  ("github", "GitHub")]
 FILTER_ATTRS = [("open_source", "Open source"), ("offline", "Works offline"),
                 ("no_account", "No account needed"), ("made_by_us", "Made by us"),
@@ -806,6 +865,30 @@ def windows_downloads(app):
     return "\n".join(parts)
 
 
+def macos_downloads(app):
+    """Download buttons for Mac listings, mirroring the Windows pattern:
+    the official developer site is the primary call to action; the Mac
+    App Store and other sources are labeled alternatives, and a known
+    Homebrew cask renders as its install command."""
+    dl = app.get("downloads") or {}
+    parts = []
+    if dl.get("official"):
+        parts.append(
+            f'<a class="dl-official" href="{esc(dl["official"])}" '
+            f'rel="noopener">Download from the developer</a>')
+    for alt in dl.get("alternatives") or []:
+        if alt.get("label") == "Homebrew" and app.get("brew_id"):
+            continue
+        parts.append(
+            f'<a class="store-badge big" href="{esc(alt["url"])}" '
+            f'rel="noopener">{esc(alt["label"])}</a>')
+    if app.get("brew_id"):
+        parts.append(
+            f'<p class="brew-cmd">Install with Homebrew: '
+            f'<code>brew install --cask {esc(app["brew_id"])}</code></p>')
+    return "\n".join(parts)
+
+
 def windows_compatibility(app):
     """Windows 11 compatibility line for a Windows listing, from the
     seed's evidence record. Statuses: unverified, publisher, distributor,
@@ -851,7 +934,9 @@ def build_detail(app, forms):
     else:
         title = f'{app["name"]} \u2014 actually free, no ads | Actually Free'
     desc = tidy(app["description"], 160)
-    rating = (f'<p class="rating">\u2605 {esc(app["rating"])} on Google Play</p>'
+    rating_from = ("the App Store" if app.get("rating_source") == "appstore"
+                   else "Google Play")
+    rating = (f'<p class="rating">\u2605 {esc(app["rating"])} on {rating_from}</p>'
               if app.get("rating") else "")
     ribbon = '<span class="made-by-us">Made by us</span>' if app["made_by_us"] else ""
     per_badge = (f'<p class="per-badge-note">{esc(PER_BADGE_NOTE)}</p>'
@@ -896,6 +981,7 @@ def build_detail(app, forms):
     desc_html = (f'<p class="desc">{esc(app["description"])}</p>'
                  if app.get("description") else "")
     get_it = (windows_downloads(app) if app.get("platform") == "windows"
+              else macos_downloads(app) if app.get("platform") == "macos"
               else store_badges(app, big=True))
     compat = (windows_compatibility(app) if app.get("platform") == "windows"
               else "")
@@ -906,11 +992,16 @@ def build_detail(app, forms):
         f'{PLATFORM_SVG.get(plat, PLATFORM_SVG["android"])}</span>'
         f" {esc(plat_name)}</p>")
     sib = ""
-    if app.get("sibling_slug"):
-        sib_plat = ("Android" if app.get("sibling_platform") == "android"
-                    else "Windows")
-        sib = (f'<p class="sibling-link">Also available on '
-               f'<a href="/app/{esc(app["sibling_slug"])}.html">{sib_plat}</a></p>')
+    sibs = app.get("siblings") or (
+        [{"slug": app["sibling_slug"], "platform": app["sibling_platform"]}]
+        if app.get("sibling_slug") else [])
+    if sibs:
+        links = [f'<a href="/app/{esc(s["slug"])}.html">'
+                 f'{esc(PLATFORM_NAMES.get(s["platform"], s["platform"]))}</a>'
+                 for s in sibs]
+        joined = (links[0] if len(links) == 1
+                  else ", ".join(links[:-1]) + " and " + links[-1])
+        sib = f'<p class="sibling-link">Also available on {joined}</p>'
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -957,7 +1048,7 @@ def build_suggest(forms):
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("Suggest an app \u2014 Actually Free",
-      "Suggest an Android or Windows app for the Actually Free directory: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
+      "Suggest an Android, Windows, Mac or iPhone app for the Actually Free directory: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
       og_path="suggest")}
 <body>
 {site_header()}
@@ -967,7 +1058,7 @@ def build_suggest(forms):
     <div class="detail-head">
       <div>
         <h1>Suggest an app</h1>
-        <p class="cat">Know an Android or Windows app that's actually free? Tell us where to find it and why.</p>
+        <p class="cat">Know an Android, Windows, Mac or iPhone app that's actually free? Tell us where to find it and why.</p>
       </div>
     </div>
 {forms.suggest_form(visible=True)}
@@ -1444,7 +1535,9 @@ a.store-badge:hover { filter: brightness(0.96); }
   border-radius: 999px;
   padding: 4px;
   margin-bottom: 10px;
+  max-width: 100%; overflow-x: auto; scrollbar-width: none;
 }
+.platform-seg::-webkit-scrollbar { display: none; }
 .platform-seg .seg {
   border: 0; background: transparent; color: var(--ink);
   font: inherit; font-size: 0.85rem; font-weight: 600;
@@ -1500,8 +1593,8 @@ a.store-badge:hover { filter: brightness(0.96); }
 .detail-card h2 { font-size: 1.05rem; margin: 22px 0 10px; }
 .get-it { display: flex; flex-wrap: wrap; gap: 10px; }
 .win-compat { color: var(--muted); margin: 4px 0 0; }
-.winget-cmd { flex-basis: 100%; margin: 2px 0 0; }
-.winget-cmd code { background: #f0f0f0; padding: 2px 8px; border-radius: 6px; font-size: 0.95em; }
+.winget-cmd, .brew-cmd { flex-basis: 100%; margin: 2px 0 0; }
+.winget-cmd code, .brew-cmd code { background: #f0f0f0; padding: 2px 8px; border-radius: 6px; font-size: 0.95em; }
 .store-badge.big { font-size: 0.95rem; padding: 10px 20px; }
 .dl-official {
   display: inline-block;
@@ -2007,6 +2100,7 @@ JS_CONTENT = r"""
 
   var state = { apps: [], query: "", cat: "", subcat: "", platform: "", platformChosen: false, attrs: {}, stores: {}, sort: "name" };
 __PLATFORM_SVGS__
+__PLATFORM_NAMES__
   var ACCENTS = { "Utilities": 210, "Media": 280, "Games": 0, "Communications": 160, "Lifestyle": 120, "System": 30, "Productivity": 60 };
 
   function norm(s) {
@@ -2074,6 +2168,7 @@ __PLATFORM_SVGS__
                 ["izzy", "IzzyOnDroid", app.stores.izzy],
                 ["openapk", "OpenAPK", app.stores.openapk],
                 ["play", "Play", app.stores.play],
+                ["appstore", "App Store", app.stores.appstore],
                 ["github", "GitHub", app.stores.github]];
     defs.forEach(function (d) {
       if (d[2]) out.push('<span class="store-badge">' + d[1] + "</span>");
@@ -2126,7 +2221,7 @@ __PLATFORM_SVGS__
     var accountBadge = app.needs_account ? '<span class="needs-account">needs account</span>' : "";
     var personalBadge = app.personal_use ? '<span class="personal-use">personal use</span>' : "";
     var platKey = app.platform || "android";
-    var platName = platKey === "windows" ? "Windows" : "Android";
+    var platName = PLATFORM_NAMES[platKey] || "Android";
     var platTag = '<span class="platform-tag" title="' + platName + '" aria-label="' + platName + ' app">' +
       (PLATFORM_SVGS[platKey] || PLATFORM_SVGS.android) + "</span>";
     var trustLine = app.free_enough
@@ -2510,10 +2605,12 @@ __PLATFORM_SVGS__
       if (state.cat && !apps.some(function (a) { return a.category === state.cat; })) {
         state.cat = ""; state.subcat = "";
       }
-      /* No Windows listings yet: the Windows segment stays out of sight. */
-      var hasWindows = apps.some(function (a) { return a.platform === "windows"; });
-      var winSeg = document.querySelector('#platform-seg [data-platform="windows"]');
-      if (winSeg) winSeg.style.display = hasWindows ? "" : "none";
+      /* A platform with no listings keeps its segment out of sight. */
+      document.querySelectorAll('#platform-seg .seg[data-platform]').forEach(function (seg) {
+        var p = seg.getAttribute("data-platform");
+        if (!p) return;
+        seg.style.display = apps.some(function (a) { return a.platform === p; }) ? "" : "none";
+      });
       /* Build the subcategory chip map from the fetched data itself:
          count per (category, subcategory), most apps first, then A-Z.
          One payload drives both chips and tiles, so they cannot disagree. */
@@ -2578,7 +2675,7 @@ def build_config_js():
 
 README_MD = """# Actually Free — free.certifiable.media
 
-A hand-curated directory of Android and Windows apps that are **actually free**:
+A hand-curated directory of Android, Windows, Mac and iPhone apps that are **actually free**:
 no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
 before listing. Static site, vanilla HTML/CSS/JS, zero backend.
 
@@ -2674,7 +2771,7 @@ def build_pwa_icons():
 MANIFEST = """{
   "name": "Actually Free",
   "short_name": "Actually Free",
-  "description": "A hand-curated directory of Android and Windows apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
+  "description": "A hand-curated directory of Android, Windows, Mac and iPhone apps that are actually free: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -2841,8 +2938,9 @@ def main():
 
     apply_openapk(apps)
     index_html = build_index(forms)
-    app_js = (JS_CONTENT.replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS))
-    if "__PLATFORM_SVGS__" in app_js:
+    app_js = (JS_CONTENT.replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS)
+              .replace("__PLATFORM_NAMES__", PLATFORM_NAMES_JS))
+    if "__PLATFORM_SVGS__" in app_js or "__PLATFORM_NAMES__" in app_js:
         print("warning: platform SVGs placeholder survived replacement")
     app_js = app_js.strip() + "\n"
     check_filter_consistency(apps, index_html, app_js)

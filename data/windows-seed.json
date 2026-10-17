@@ -6139,13 +6139,13 @@
   "license": "oss",
   "personal_use": false,
   "free_enough_reason": "",
-  "official_url": "https://pnotes.net/",
+  "official_url": "https://sourceforge.net/projects/pnotes/",
   "alt_downloads": [],
   "attrs": {
    "open_source": true,
    "needs_account": false
   },
-  "notes": "UNCERTAIN: the standalone license file could not be located; the SourceForge project umbrella lists GPLv2. Last release 3.8.2.2 (Nov 2021)."
+  "notes": "UNCERTAIN: the standalone license file could not be located; the SourceForge project umbrella lists GPLv2. Last release 3.8.2.2 (Nov 2021). DOMAIN TAKEN OVER (found 2026-10-16 during the Mac corpus pass, verified by opening it): pnotes.net now serves an unrelated online slot-gambling site, so the official link moved to the project's SourceForge page, which is active."
  },
  {
   "name": "PNotes",

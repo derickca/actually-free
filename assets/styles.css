@@ -403,7 +403,9 @@ a.store-badge:hover { filter: brightness(0.96); }
   border-radius: 999px;
   padding: 4px;
   margin-bottom: 10px;
+  max-width: 100%; overflow-x: auto; scrollbar-width: none;
 }
+.platform-seg::-webkit-scrollbar { display: none; }
 .platform-seg .seg {
   border: 0; background: transparent; color: var(--ink);
   font: inherit; font-size: 0.85rem; font-weight: 600;
@@ -459,8 +461,8 @@ a.store-badge:hover { filter: brightness(0.96); }
 .detail-card h2 { font-size: 1.05rem; margin: 22px 0 10px; }
 .get-it { display: flex; flex-wrap: wrap; gap: 10px; }
 .win-compat { color: var(--muted); margin: 4px 0 0; }
-.winget-cmd { flex-basis: 100%; margin: 2px 0 0; }
-.winget-cmd code { background: #f0f0f0; padding: 2px 8px; border-radius: 6px; font-size: 0.95em; }
+.winget-cmd, .brew-cmd { flex-basis: 100%; margin: 2px 0 0; }
+.winget-cmd code, .brew-cmd code { background: #f0f0f0; padding: 2px 8px; border-radius: 6px; font-size: 0.95em; }
 .store-badge.big { font-size: 0.95rem; padding: 10px 20px; }
 .dl-official {
   display: inline-block;
