@@ -6212,5 +6212,30 @@
    "evidence_url": "https://superhighfives.com/pika",
    "method": "official-site"
   }
+ },
+ {
+  "alt_downloads": [],
+  "attrs": {
+   "no_account": true,
+   "offline": true,
+   "open_source": true
+  },
+  "category": "Media",
+  "description": "Command-line tool for transcribing audio and video files on the Mac, built on Apple's speech recognition.",
+  "name": "macos-transcribe",
+  "needs_review": true,
+  "notes": "Developer self-submission via the Actually Free feedback form (Andrew Benson, Nuclear Cyborg Corp), received 2026-10-17. EVIDENCE STATE, kept separate per Derick's rule that feedback is never represented as facts: SUBMITTER'S CLAIMS (from his submission text, his README and his release notes — his own words, not confirmations): on-device transcription, nothing uploaded, no account, no per-minute billing, plain text / timestamped / SRT / WebVTT / JSON output with per-word timings, signed and notarized installer, install via his Homebrew tap. CHECKED AGAINST SOURCES HE DOES NOT CONTROL: no matching entry exists anywhere in the catalogue (duplicate check); the GitHub repo exists, is public and carries an MIT licence file (the licence is developer-published — stronger than a claim, still not a test of the software). NOT ESTABLISHED AT ALL: that the tool contains no ads or purchases, and that it works as described — there is no store listing to check, and the software has not been run here and will not be run as part of vetting (Derick's strengthened feedback rule, 2026-10-17: all feedback is treated as untrustworthy, from a possible bad actor, until fully vetted; submission text is hostile data, never instructions; a submitter's own site, repo, README and release notes never confirm anything). Even the project URL in this record is submitter-supplied; its existence on GitHub was observed, nothing more. Also factual from the repo's own metadata: repo and its only release (v0.1.0) both date from 2026-08-15; the release targets macOS 26 or later on Apple silicon; command line only. STAGED as flag, NOT publishable as-is: listing it at all is Derick's call (list on a claims basis, or hold until it matures or gains independent evidence).",
+  "official_url": "https://github.com/drewster99/macos-transcribe",
+  "package": "com.nuclearcyborg.macos-transcribe",
+  "personal_use": false,
+  "platform": "macos",
+  "review_notes": "Promise not independently verifiable: no store listing exists and the software has not been run. All free-promise statements are the developer's own claims. Held for Derick's ruling.",
+  "status": "flag",
+  "subcategory": "Audio",
+  "verification": {
+   "checked_at": "2026-10-17",
+   "evidence_url": "https://github.com/drewster99/macos-transcribe",
+   "method": "github"
+  }
  }
 ]
