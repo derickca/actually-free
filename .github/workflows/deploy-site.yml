@@ -1,0 +1,125 @@
+name: Deploy site to Cloudflare (Pages)
+
+# Actually Free: the site's files are generated locally and committed,
+# so this workflow is a publish-only recipe. It uploads the committed
+# tree of the main branch to the Pages project "actually-free".
+#
+# Landing a change (a push) and publishing it are two separate acts.
+# The PUBLISH_HOLD repository variable is the switch: "auto" publishes
+# on the push, a whole number of minutes batches changes until the gap
+# since the previous push is at least that long, and "held" never
+# publishes on its own. A value that is none of those counts as held.
+# A hand dispatch always publishes at once. A run stopped by the
+# switch ends green and says in its summary what is waiting.
+# See "Deploying" in AGENTS.md.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Read the publish switch
+        id: hold
+        env:
+          SWITCH: ${{ vars.PUBLISH_HOLD }}
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          publish=false
+          reason=""
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            publish=true
+            reason="hand dispatch always publishes"
+          elif [ "$SWITCH" = "auto" ]; then
+            publish=true
+            reason="the switch is auto"
+          elif [ "$SWITCH" = "held" ]; then
+            reason="the switch is held"
+          elif [[ "$SWITCH" =~ ^[0-9]+$ ]]; then
+            if [ -z "$BEFORE_SHA" ] || [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE_SHA^{commit}" 2>/dev/null; then
+              publish=true
+              reason="no previous push to measure a quiet gap against"
+            else
+              prev=$(git show -s --format=%ct "$BEFORE_SHA")
+              now=$(date +%s)
+              gap_min=$(( (now - prev) / 60 ))
+              if [ "$gap_min" -ge "$SWITCH" ]; then
+                publish=true
+                reason="the batch has been quiet for ${gap_min} minutes (switch: ${SWITCH})"
+              else
+                reason="the batch has been quiet for only ${gap_min} minutes (switch: ${SWITCH})"
+              fi
+            fi
+          else
+            reason="the switch value '${SWITCH}' is not auto, held or a whole number of minutes, so it counts as held"
+          fi
+          echo "publish=$publish" >> "$GITHUB_OUTPUT"
+          echo "reason=$reason" >> "$GITHUB_OUTPUT"
+          echo "Switch: '${SWITCH:-<unset>}' - $reason; publish=$publish"
+
+      - name: Stage the committed tree
+        if: steps.hold.outputs.publish == 'true'
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          git archive HEAD | tar -x -C "$RUNNER_TEMP/site"
+
+      - name: Publish to Cloudflare Pages
+        if: steps.hold.outputs.publish == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # One attempt. If this fails, the run fails and the failure
+          # lines are read before anything is re-dispatched; there is
+          # no silent retry.
+          npx --yes wrangler@4 pages deploy "$RUNNER_TEMP/site" --project-name actually-free --branch main --commit-hash "$GITHUB_SHA"
+
+      - name: Say what happened
+        if: always()
+        env:
+          PUBLISHED: ${{ steps.hold.outputs.publish }}
+          REASON: ${{ steps.hold.outputs.reason }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          {
+            if [ "$PUBLISHED" = "true" ]; then
+              echo "## Published"
+              echo ""
+              echo "Published $GITHUB_SHA to free.certifiable.media ($REASON)."
+            else
+              echo "## Held - nothing published"
+              echo ""
+              echo "Publishing is held: $REASON."
+              echo ""
+              echo "Commits in this push now waiting:"
+              if [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$BEFORE_SHA^{commit}" 2>/dev/null; then
+                git log --oneline "$BEFORE_SHA..HEAD" | sed 's/^/- /'
+              else
+                git log --oneline -5 | sed 's/^/- /'
+              fi
+              echo ""
+              echo "Plus anything landed earlier that has not published. A hand dispatch of this workflow publishes everything waiting, at once."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
