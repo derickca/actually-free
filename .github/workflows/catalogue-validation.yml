@@ -1,4 +1,4 @@
-name: Windows catalogue validation
+name: Catalogue validation
 on:
   pull_request:
   push:
@@ -16,3 +16,5 @@ jobs:
           python-version: '3.12'
       - run: python tools/check-windows.py
       - run: python -m unittest test_windows_catalog.py
+      - run: python tools/check-apple.py
+      - run: python -m unittest test_apple_catalog.py
