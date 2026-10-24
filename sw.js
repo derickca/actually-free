@@ -1,5 +1,5 @@
-// Actually Free service worker — build 202610242136
-const CACHE = "actually-free-202610242136";
+// Actually Free service worker — build 202610242220
+const CACHE = "actually-free-202610242220";
 const PRECACHE = [
   "/", "/suggest", "/what-is-free", "/manifest.webmanifest",
   "/assets/styles.css", "/assets/app.js", "/assets/config.js",

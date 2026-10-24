@@ -719,6 +719,7 @@ def site_footer(forms):
       <a href="/app/{QR_CARDS_SLUG}.html">QR Cards</a>
     </p>
     <p class="made-by">Actually Free is made by <a href="https://certifiable.media">Certifiable Media</a>.</p>
+    <p class="maker-tagline">Built by makers, for makers.</p>
     <p class="geek-webring" aria-hidden="true"><span>&larr; prev</span> &middot; <button id="random-app" type="button">random</button> &middot; <span>next &rarr;</span></p>
     <p class="construction" aria-hidden="true"><span>UNDER CONSTRUCTION</span></p>
     <p class="count-line">We count clicks, not people.</p>
@@ -1674,6 +1675,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 .fine-print { max-width: 640px; color: var(--muted); font-size: 0.85rem; }
 .footer-links { font-size: 0.92rem; }
 .count-line { color: var(--muted); font-size: 0.85rem; font-style: italic; }
+.maker-tagline { color: var(--muted); font-size: 0.92rem; font-style: italic; }
 .geek-webring, .construction { display: none; }
 
 /* ================================================================

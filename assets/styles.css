@@ -542,6 +542,7 @@ a.store-badge:hover { filter: brightness(0.96); }
 .fine-print { max-width: 640px; color: var(--muted); font-size: 0.85rem; }
 .footer-links { font-size: 0.92rem; }
 .count-line { color: var(--muted); font-size: 0.85rem; font-style: italic; }
+.maker-tagline { color: var(--muted); font-size: 0.92rem; font-style: italic; }
 .geek-webring, .construction { display: none; }
 
 /* ================================================================
