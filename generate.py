@@ -543,7 +543,7 @@ def resolve_siblings(apps):
 
 # ---------------------------------------------------------------------------
 # Feedback — the browser POSTs JSON to the shared msg service
-# (https://msg.certifiable.media/api/submit), which stores it and notifies
+# (https://feedback.certifiable.media/api/submit), which stores it and notifies
 # Derick. No per-build secret, no third party. Anti-spam, all client-side:
 # honeypot trap, 3-second open rule, 3-per-10-minutes / 10-per-day limits,
 # length caps; the service re-checks server-side.
@@ -1926,7 +1926,7 @@ JS_CONTENT = r"""
      re-checks server-side. */
   (function () {
     "use strict";
-    var API = "https://msg.certifiable.media/api/submit", STORE = "af.sends";
+    var API = "https://feedback.certifiable.media/api/submit", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000;
     var memory = [];
@@ -2653,7 +2653,7 @@ CONFIG_JS_TEMPLATE = """/* Actually Free — site configuration.
 
    Feedback reports ("doesn't work" / "broke a promise" / corrections /
    app suggestions) POST as JSON to the shared msg service at
-   https://msg.certifiable.media/api/submit, which stores them for review.
+   https://feedback.certifiable.media/api/submit, which stores them for review.
    No per-build secret, no third party. */
 window.AF_CONFIG = {{
   GOATCOUNTER_CODE: "{gc}"

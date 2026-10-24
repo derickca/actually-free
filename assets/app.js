@@ -61,7 +61,7 @@
      re-checks server-side. */
   (function () {
     "use strict";
-    var API = "https://msg.certifiable.media/api/submit", STORE = "af.sends";
+    var API = "https://feedback.certifiable.media/api/submit", STORE = "af.sends";
     var MIN_OPEN_MS = 3000, BURST = 3, BURST_MS = 600000,
         DAY = 10, DAY_MS = 86400000;
     var memory = [];
