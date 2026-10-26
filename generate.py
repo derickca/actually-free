@@ -13,10 +13,15 @@ import json
 import os
 import re
 import shutil
+import subprocess
 from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
+# slug -> the seed file the record came from, filled by load_corpus().
+# build_sitemap() turns each file's last commit date into that page's
+# <lastmod>: the date the page's source data last changed.
+SEED_ORIGINS = {}
 SITE_URL = "https://free.certifiable.media"
 TAGLINE = "Find the free apps they don't want you to see."
 # The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.
@@ -480,26 +485,36 @@ def clean_record(rec):
 
 
 def load_corpus():
+    kept = []
+
+    def take(records, origin):
+        for r in records:
+            if r.get("status") in ("include", "per-badge", "free-enough"):
+                app = clean_record(r)
+                SEED_ORIGINS[app["slug"]] = origin
+                kept.append(app)
+
     with open(SEED, encoding="utf-8") as f:
         seed = json.load(f)
-    kept = [clean_record(r) for r in seed
-            if r.get("status") in ("include", "per-badge", "free-enough")]
-    kept.append(clean_record(QR_CARDS))
+    # SEED lives outside the repo; its identical in-repo mirror carries
+    # the git history the sitemap dates come from.
+    take(seed, os.path.join(HERE, "data", "apps-seed.json"))
+    qr = clean_record(QR_CARDS)
+    SEED_ORIGINS[qr["slug"]] = os.path.join(HERE, "generate.py")
+    kept.append(qr)
     # Windows listings live in-repo (reviewed in staged batches).
     win_seed = os.path.join(HERE, "data", "windows-seed.json")
     if os.path.exists(win_seed):
         with open(win_seed, encoding="utf-8") as f:
             wseed = json.load(f)
-        kept += [clean_record(r) for r in wseed
-                 if r.get("status") in ("include", "per-badge", "free-enough")]
+        take(wseed, win_seed)
     # Mac and iOS listings likewise (Apple platforms, Derick 2026-10-16).
     for extra in ("macos-seed.json", "ios-seed.json"):
         extra_seed = os.path.join(HERE, "data", extra)
         if os.path.exists(extra_seed):
             with open(extra_seed, encoding="utf-8") as f:
                 eseed = json.load(f)
-            kept += [clean_record(r) for r in eseed
-                     if r.get("status") in ("include", "per-badge", "free-enough")]
+            take(eseed, extra_seed)
     kept.sort(key=lambda a: a["name"].lower())
     return kept
 
@@ -1116,12 +1131,43 @@ def build_free_bar(forms):
 """
 
 
+def source_date(path):
+    """The date a source file last changed: its last git commit date, or
+    the file's own modified date when no git history answers."""
+    try:
+        out = subprocess.run(
+            ["git", "-C", HERE, "log", "-1", "--format=%cs", "--", path],
+            capture_output=True, text=True, timeout=10)
+        date = out.stdout.strip()
+        if out.returncode == 0 and re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+            return date
+    except Exception:
+        pass
+    return datetime.date.fromtimestamp(os.path.getmtime(path)).isoformat()
+
+
 def build_sitemap(apps):
-    urls = [f"  <url><loc>{SITE_URL}/</loc></url>",
-            f"  <url><loc>{SITE_URL}/suggest</loc></url>",
-            f"  <url><loc>{SITE_URL}/what-is-free</loc></url>"]
+    # <lastmod> is the date each page's source last changed: for an app
+    # page, the last commit date of the seed file its record came from;
+    # for the three site pages, the newest seed date or generate.py's own
+    # date, whichever is later (the home page renders the whole
+    # catalogue, so it changes when any seed does).
+    date_by_path = {}
+
+    def date_of(path):
+        if path not in date_by_path:
+            date_by_path[path] = source_date(path)
+        return date_by_path[path]
+
+    site_date = max([date_of(p) for p in set(SEED_ORIGINS.values())] +
+                    [date_of(os.path.join(HERE, "generate.py"))])
+    urls = [f"  <url><loc>{SITE_URL}/</loc><lastmod>{site_date}</lastmod></url>",
+            f"  <url><loc>{SITE_URL}/suggest</loc><lastmod>{site_date}</lastmod></url>",
+            f"  <url><loc>{SITE_URL}/what-is-free</loc><lastmod>{site_date}</lastmod></url>"]
     for app in apps:
-        urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}.html</loc></url>")
+        d = date_of(SEED_ORIGINS[app["slug"]])
+        urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}.html</loc>"
+                    f"<lastmod>{d}</lastmod></url>")
     return ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
             "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
             + "\n".join(urls) + "\n</urlset>\n")
