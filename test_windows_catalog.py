@@ -57,7 +57,7 @@ class WindowsCatalogueTests(unittest.TestCase):
             if row['status'] not in ('include', 'per-badge', 'free-enough'):
                 self.assertNotIn(row['package'], windows)
                 self.assertFalse(path.exists(), slug)
-                self.assertNotIn(f'/app/{slug}.html', sitemap)
+                self.assertNotIn(f'/app/{slug}</loc>', sitemap)
                 continue
             app = windows[row['package']]
             expected = generate.clean_record(row)
@@ -65,7 +65,9 @@ class WindowsCatalogueTests(unittest.TestCase):
             html = path.read_text()
             self.assertIn(generate.windows_downloads(app), html)
             self.assertIn(generate.windows_compatibility(app), html)
-            self.assertIn(f'/app/{slug}.html', sitemap)
+            # The sitemap lists canonical addresses: the pretty form,
+            # not the .html file name (site standards, 2026-10-28).
+            self.assertIn(f'/app/{slug}</loc>', sitemap)
 
 
 if __name__ == '__main__':

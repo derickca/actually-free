@@ -8,10 +8,13 @@ Covers the failure modes Derick has caught in review:
   4. Open subcategory row: stable height across subcategory selection.
   5. Mobile: subcategory row scrolls horizontally when chips overflow.
 
-Usage: python3 test_site.py [--serve-port 8131]
+Usage: python3 test_site.py [--serve-port 8131] [--standards-only]
 Runs generate.py first, then serves and drives headless Chrome.
+--standards-only runs just the site-standards file checks (section 4g).
 """
 import json
+import re
+import struct
 import subprocess
 import sys
 import time
@@ -62,6 +65,132 @@ def chrome_eval(url, js, width=1280, height=800, vtb=15000, ua=None):
     finally:
         tmp.unlink(missing_ok=True)
     return "ERROR:no-title"
+
+
+def _page_head(path):
+    return path.read_text(encoding="utf-8").split("</head>", 1)[0]
+
+
+def _png_size(path):
+    data = path.read_bytes()
+    if data[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    return struct.unpack(">II", data[16:24])
+
+
+def standards_checks():
+    """Section 4g: the fleet site standards (agents-policy
+    docs/site-standards.md), checked against the generated files.
+    A live check after deploy proves the same items on the real site;
+    these keep the gaps from reopening in the build."""
+    SITE = "https://free.certifiable.media"
+    pages = {"index.html": SITE + "/",
+             "suggest.html": SITE + "/suggest",
+             "what-is-free.html": SITE + "/what-is-free"}
+    for f in sorted((HERE / "app").glob("*.html")):
+        pages[f"app/{f.name}"] = SITE + "/app/" + f.name[:-5]
+
+    # Icons: a real favicon.ico, a true 32px PNG, the declared set.
+    ico = HERE / "favicon.ico"
+    check("standards: favicon.ico exists", ico.exists())
+    if ico.exists():
+        check("standards: favicon.ico is an icon file",
+              ico.read_bytes()[:4] == b"\x00\x00\x01\x00")
+    png32 = HERE / "assets" / "icon-32.png"
+    check("standards: icon-32.png exists", png32.exists())
+    if png32.exists():
+        check("standards: icon-32.png is 32x32",
+              _png_size(png32) == (32, 32), str(_png_size(png32)))
+    home_head = _page_head(HERE / "index.html")
+    for snippet, label in [
+            ('sizes="32x32" href="/assets/icon-32.png"', "32"),
+            ('sizes="192x192" href="/assets/icon-192.png"', "192"),
+            ('sizes="512x512" href="/assets/icon-512.png"', "512")]:
+        check(f"standards: head declares the {label}px PNG icon",
+              snippet in home_head)
+    check("standards: head declares apple-touch-icon",
+          'rel="apple-touch-icon"' in home_head)
+
+    # Canonicals, og:url, and one title + description per page.
+    bad_canon, bad_ogurl, dupe_t, dupe_d = [], [], [], []
+    titles, descs = {}, {}
+    for rel, want in list(pages.items()) + [("404.html", None)]:
+        head_html = _page_head(HERE / rel)
+        if want is not None:
+            m = re.search(r'<link rel="canonical" href="([^"]*)"',
+                          head_html)
+            if not m or m.group(1) != want:
+                bad_canon.append(rel)
+            m = re.search(r'<meta property="og:url" content="([^"]*)"',
+                          head_html)
+            if not m or m.group(1) != want:
+                bad_ogurl.append(rel)
+        t = re.search(r"<title>(.*?)</title>", head_html, re.S)
+        d = re.search(r'<meta name="description" content="([^"]*)"',
+                      head_html)
+        if t:
+            if t.group(1) in titles:
+                dupe_t.append(rel)
+            titles[t.group(1)] = rel
+        if d:
+            if d.group(1) in descs:
+                dupe_d.append(rel)
+            descs[d.group(1)] = rel
+    check("standards: every page names its own canonical",
+          not bad_canon, str(bad_canon[:5]))
+    check("standards: og:url names the page's own address",
+          not bad_ogurl, str(bad_ogurl[:5]))
+    check("standards: no two pages share a title",
+          not dupe_t, str(dupe_t[:5]))
+    check("standards: no two pages share a description",
+          not dupe_d, str(dupe_d[:5]))
+
+    # Sitemap: each page once, at its canonical address, with lastmod.
+    sm = (HERE / "sitemap.xml").read_text(encoding="utf-8")
+    locs = re.findall(r"<loc>([^<]+)</loc>", sm)
+    check("standards: sitemap lists each page once, at its canonical",
+          sorted(locs) == sorted(pages.values()),
+          f"{len(locs)} entries vs {len(pages)} pages")
+    check("standards: sitemap carries no .html addresses",
+          not any(u.endswith(".html") for u in locs))
+    mods = re.findall(r"<lastmod>([^<]+)</lastmod>", sm)
+    check("standards: every sitemap entry carries a lastmod",
+          len(mods) == len(locs), f"{len(mods)} vs {len(locs)}")
+
+    # Splash: declared size matches the file; og:locale present.
+    size = _png_size(HERE / "assets" / "og-share.png")
+    bad_dims, bad_locale = [], []
+    sample = ["index.html", "suggest.html", "what-is-free.html",
+              "app/" + sorted(p.name for p in
+                              (HERE / "app").glob("*.html"))[0]]
+    for rel in sample:
+        head_html = _page_head(HERE / rel)
+        mw = re.search(r'og:image:width" content="(\d+)"', head_html)
+        mh = re.search(r'og:image:height" content="(\d+)"', head_html)
+        if (not mw or not mh or size is None
+                or (int(mw.group(1)), int(mh.group(1))) != size):
+            bad_dims.append(rel)
+        if 'og:locale" content="en_CA"' not in head_html:
+            bad_locale.append(rel)
+    check("standards: og:image declarations match the splash file",
+          not bad_dims, str(bad_dims))
+    check("standards: og:locale names en_CA", not bad_locale,
+          str(bad_locale))
+
+    # The 404 page and the Bing verification file exist.
+    f404 = HERE / "404.html"
+    check("standards: 404.html exists", f404.exists())
+    if f404.exists():
+        body = f404.read_text(encoding="utf-8")
+        check("standards: 404 page says the page is not found",
+              "page not found" in body.lower())
+        check("standards: 404 page links back to the directory",
+              'href="/"' in body)
+        check("standards: 404 page carries header and footer",
+              "site-header" in body and "site-footer" in body)
+    bing = HERE / "BingSiteAuth.xml"
+    check("standards: BingSiteAuth.xml exists with a user entry",
+          bing.exists() and "<user>" in bing.read_text(encoding="utf-8"))
 
 
 def main():
@@ -219,6 +348,16 @@ def main():
     check("sibling: detail renders link",
           "Also available on" in _sib_html and
           f'/app/{_sib_a["slug"]}.html' in _sib_html and ">Android<" in _sib_html)
+
+    # 4g. Site standards (fleet standard, 2026-10-28).
+    standards_checks()
+    if "--standards-only" in sys.argv:
+        print()
+        if FAILURES:
+            print(f"{len(FAILURES)} FAILURES: {FAILURES}")
+            return 1
+        print("All standards checks passed.")
+        return 0
 
     # Serve + browser checks
     class H(SimpleHTTPRequestHandler):

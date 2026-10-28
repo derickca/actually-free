@@ -648,28 +648,39 @@ class FeedbackForms:
 # ---------------------------------------------------------------------------
 
 def head(title, description, og_path="", og_image="og-share.png"):
-    """<head> with SEO/OG basics. og_path like 'app/foo-bar.html' or ''."""
-    url = SITE_URL + ("/" + og_path if og_path else "/")
+    """<head> with SEO/OG basics. og_path like 'app/foo-bar.html' or ''.
+
+    The canonical address (and og:url) is the page's pretty address:
+    the .html form 308-redirects to it, so the suffix is stripped.
+    og:image:width/height state the splash file's true size; the test
+    suite checks them against assets/og-share.png itself."""
+    pretty = og_path[:-5] if og_path.endswith(".html") else og_path
+    url = SITE_URL + ("/" + pretty if pretty else "/")
     img = SITE_URL + "/assets/" + og_image
     return f"""<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
+<link rel="canonical" href="{esc(url)}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{esc(url)}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Actually Free">
+<meta property="og:locale" content="en_CA">
 <meta property="og:image" content="{esc(img)}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
 <meta property="og:image:alt" content="Actually Free — find the free apps they don't want you to see.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{esc(img)}">
 <link rel="icon" href="/assets/mascot-friendly.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#fdf4e7">
@@ -944,12 +955,79 @@ def transparency_pills(app):
     return "\n".join(pills)
 
 
+PACKAGE_STOP_SEGMENTS = {"com", "org", "net", "io", "co", "uk", "www"}
+
+
+def maker_segment(app):
+    """The maker's name out of the app's package ("telesense" out of
+    uk.co.telesense.tm.free), capitalized. Used only to tell apart two
+    listings that share a name on one platform."""
+    for seg in re.split(r"[.\-_]", (app.get("package") or "").lower()):
+        if seg and seg not in PACKAGE_STOP_SEGMENTS:
+            return seg.capitalize()
+    return ""
+
+
+# Clash flags from mark_clashes, keyed by slug. They live outside the
+# app records so the published data/apps.json stays pure catalogue data.
+_TITLE_MAKERS = {}
+_DESC_NAME_SLUGS = set()
+
+
+def meta_description(app):
+    """The detail page's meta/og description: the app's blurb with the
+    platform named at the end ("... — for Windows."). Two listings can
+    share one blurb word for word (the Godot 3 and 4 editors carry the
+    same store tagline); mark_clashes flags those, and the app's own
+    name leads so the descriptions still differ."""
+    plat_name = PLATFORM_NAMES.get(app.get("platform") or "android",
+                                   "Android")
+    suffix = f" \u2014 for {plat_name}."
+    base = tidy(app["description"], 160 - len(suffix))
+    base = re.sub(r"(\u2026|\.)$", "", base)
+    if not base:
+        return ""
+    if app["slug"] in _DESC_NAME_SLUGS:
+        base = tidy(f'{app["name"]}: {base}', 160 - len(suffix))
+    return base + suffix
+
+
+def mark_clashes(apps):
+    """Flag the rare listings whose page title or meta description
+    would otherwise repeat another page's word for word: two apps
+    sharing a name on one platform (title), and two apps sharing one
+    blurb on one platform (description)."""
+    _TITLE_MAKERS.clear()
+    _DESC_NAME_SLUGS.clear()
+    by_name = {}
+    for a in apps:
+        by_name.setdefault((a["name"].lower(),
+                            a.get("platform") or "android"), []).append(a)
+    for group in by_name.values():
+        if len(group) > 1:
+            for a in group:
+                _TITLE_MAKERS[a["slug"]] = maker_segment(a)
+    by_desc = {}
+    for a in apps:
+        by_desc.setdefault(meta_description(a), []).append(a)
+    for desc, group in by_desc.items():
+        if desc and len(group) > 1:
+            for a in group:
+                _DESC_NAME_SLUGS.add(a["slug"])
+
+
 def build_detail(app, forms):
+    plat = app.get("platform") or "android"
+    plat_name = PLATFORM_NAMES.get(plat, "Android")
+    maker = (f' ({_TITLE_MAKERS[app["slug"]]})'
+             if app["slug"] in _TITLE_MAKERS else "")
     if app["free_enough"]:
-        title = f'{app["name"]} \u2014 free enough | Actually Free'
+        title = (f'{app["name"]}{maker} for {plat_name} '
+                 f'\u2014 free enough | Actually Free')
     else:
-        title = f'{app["name"]} \u2014 actually free, no ads | Actually Free'
-    desc = tidy(app["description"], 160)
+        title = (f'{app["name"]}{maker} for {plat_name} '
+                 f'\u2014 actually free, no ads | Actually Free')
+    desc = meta_description(app)
     rating_from = ("the App Store" if app.get("rating_source") == "appstore"
                    else "Google Play")
     rating = (f'<p class="rating">\u2605 {esc(app["rating"])} on {rating_from}</p>'
@@ -1001,8 +1079,6 @@ def build_detail(app, forms):
               else store_badges(app, big=True))
     compat = (windows_compatibility(app) if app.get("platform") == "windows"
               else "")
-    plat = app.get("platform") or "android"
-    plat_name = PLATFORM_NAMES.get(plat, "Android")
     platform_line = (
         f'<p class="platform-line"><span class="platform-tag">'
         f'{PLATFORM_SVG.get(plat, PLATFORM_SVG["android"])}</span>'
@@ -1131,6 +1207,34 @@ def build_free_bar(forms):
 """
 
 
+def build_404(forms):
+    # The 404 page. Cloudflare Pages serves this file with a real 404
+    # status for any address that matches nothing else. Without it,
+    # Pages falls back to serving index.html with a 200 for every
+    # unknown address, pages and assets alike (proven locally with
+    # wrangler pages dev on the committed tree, 2026-10-28).
+    return f"""<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+{head("Page not found \u2014 Actually Free",
+      "That page is not in the directory. Head back to the front page "
+      "to browse apps that are actually free.",
+      og_path="404.html")}
+<body>
+{site_header()}
+<main class="detail">
+  <article class="detail-card">
+    <h1>Page not found</h1>
+    <p class="desc">The page you asked for is not here. The address may
+    be wrong, or the app may have left the directory.</p>
+    <p><a href="/">Back to the directory</a></p>
+  </article>
+</main>
+{site_footer(forms)}
+</body>
+</html>
+"""
+
+
 def source_date(path):
     """The date a source file last changed: its last git commit date, or
     the file's own modified date when no git history answers."""
@@ -1166,7 +1270,7 @@ def build_sitemap(apps):
             f"  <url><loc>{SITE_URL}/what-is-free</loc><lastmod>{site_date}</lastmod></url>"]
     for app in apps:
         d = date_of(SEED_ORIGINS[app["slug"]])
-        urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}.html</loc>"
+        urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}</loc>"
                     f"<lastmod>{d}</lastmod></url>")
     return ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
             "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
@@ -2809,6 +2913,12 @@ def build_pwa_icons():
     icon192.save(os.path.join(HERE, "assets", "icon-192.png"))
     icon512 = src.resize((512, 512), Image.LANCZOS)
     icon512.save(os.path.join(HERE, "assets", "icon-512.png"))
+    icon32 = src.resize((32, 32), Image.LANCZOS)
+    icon32.save(os.path.join(HERE, "assets", "icon-32.png"))
+    # The root favicon: the same art in .ico form, three sizes in one
+    # file. Resizing and format conversion only; the art is untouched.
+    src.save(os.path.join(HERE, "favicon.ico"),
+             sizes=[(16, 16), (32, 32), (48, 48)])
     # maskable: mascot at 72% on the site's light background so edges survive the mask
     canvas = Image.new("RGBA", (512, 512), "#fdf4e7")
     inner = src.resize((368, 368), Image.LANCZOS)
@@ -2984,6 +3094,7 @@ def main():
 
     forms = FeedbackForms()
 
+    mark_clashes(apps)
     apply_openapk(apps)
     index_html = build_index(forms)
     app_js = (JS_CONTENT.replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS)
@@ -2996,8 +3107,18 @@ def main():
     write("index.html", index_html)
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
+    write("404.html", build_404(forms))
     for app in apps:
         write(f"app/{app['slug']}.html", build_detail(app, forms))
+    # Prune detail pages whose app has left the catalogue. A rename or
+    # removal otherwise leaves the old page in the tree: still served,
+    # but in no sitemap and under no one's care.
+    keep = {f"{app['slug']}.html" for app in apps}
+    app_dir = os.path.join(HERE, "app")
+    for stale in sorted(os.listdir(app_dir)):
+        if stale.endswith(".html") and stale not in keep:
+            os.remove(os.path.join(app_dir, stale))
+            print(f"pruned stale detail page: app/{stale}")
     write("sitemap.xml", build_sitemap(apps))
     write("robots.txt", ROBOTS)
     write("assets/styles.css", CSS_CONTENT.strip() + "\n")
