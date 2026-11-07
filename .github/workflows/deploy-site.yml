@@ -107,7 +107,7 @@ jobs:
             if [ "$PUBLISHED" = "true" ]; then
               echo "## Published"
               echo ""
-              echo "Published $GITHUB_SHA to free.certifiable.media ($REASON)."
+              echo "Published $GITHUB_SHA to actually-free.com ($REASON)."
             else
               echo "## Held - nothing published"
               echo ""
