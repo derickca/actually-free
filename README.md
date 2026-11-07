@@ -1,4 +1,4 @@
-# Actually Free — free.certifiable.media
+# Actually Free — actually-free.com
 
 A hand-curated directory of Android, Windows, Mac and iPhone apps that are **actually free**:
 no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
@@ -26,7 +26,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
 1. **Create the repo** at `github.com/derickca/actually-free` (public fits
    the transparency brand) and push this folder.
 2. **Cloudflare Pages**: connect the repo, then add the custom domain
-   `free.certifiable.media` (free SSL included).
+   `actually-free.com` (free SSL included).
 3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
    and redeploy.
 4. **Feedback** goes to the shared msg service (msg.certifiable.media) —

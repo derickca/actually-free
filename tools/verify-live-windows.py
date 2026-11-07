@@ -10,7 +10,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = 'https://free.certifiable.media'
+BASE = 'https://actually-free.com'
 
 def get(path):
     result = subprocess.run(['curl', '-f', '-s', '-S', '-L', '--retry', '1',

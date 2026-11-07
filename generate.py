@@ -22,7 +22,7 @@ SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
 # build_sitemap() turns each file's last commit date into that page's
 # <lastmod>: the date the page's source data last changed.
 SEED_ORIGINS = {}
-SITE_URL = "https://free.certifiable.media"
+SITE_URL = "https://actually-free.com"
 TAGLINE = "Find the free apps they don't want you to see."
 # The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.
 PROMISES = ["No ads", "No purchases", "No subscriptions", "No trials", "No nagging", "No surprise bundles"]
@@ -2825,7 +2825,7 @@ def build_config_js():
         pass
     return CONFIG_JS_TEMPLATE.format(gc=gc or "PASTE-YOUR-CODE-HERE")
 
-README_MD = """# Actually Free — free.certifiable.media
+README_MD = """# Actually Free — actually-free.com
 
 A hand-curated directory of Android, Windows, Mac and iPhone apps that are **actually free**:
 no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. Every app is checked
@@ -2853,7 +2853,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
 1. **Create the repo** at `github.com/derickca/actually-free` (public fits
    the transparency brand) and push this folder.
 2. **Cloudflare Pages**: connect the repo, then add the custom domain
-   `free.certifiable.media` (free SSL included).
+   `actually-free.com` (free SSL included).
 3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
    and redeploy.
 4. **Feedback** goes to the shared msg service (msg.certifiable.media) —

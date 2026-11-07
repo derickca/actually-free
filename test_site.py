@@ -83,7 +83,7 @@ def standards_checks():
     docs/site-standards.md), checked against the generated files.
     A live check after deploy proves the same items on the real site;
     these keep the gaps from reopening in the build."""
-    SITE = "https://free.certifiable.media"
+    SITE = "https://actually-free.com"
     pages = {"index.html": SITE + "/",
              "suggest.html": SITE + "/suggest",
              "what-is-free.html": SITE + "/what-is-free"}
