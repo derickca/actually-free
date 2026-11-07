@@ -1,0 +1,42 @@
+name: WWW redirect rule (actually-free.com zone)
+
+# Zone-side job for actually-free issue #17: one redirect rule
+# sends www.actually-free.com to the apex, the same shape the
+# oneinchscale.com zone uses. Redirect rules run in the zone
+# redirect phase, before Pages, so the rule answers for the www
+# host while it also stands as a Pages custom domain.
+#
+# Modes:
+#   check - probe the repo deploy credential and read the
+#           zone redirect ruleset; change nothing
+#   apply - write the one rule (creating the entrypoint
+#           ruleset when the zone has none), then read it back
+#
+# The credential is handed to the job for this run only.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check or apply"
+        type: choice
+        options: [check, apply]
+        default: check
+
+permissions:
+  contents: read
+
+jobs:
+  www-redirect:
+    runs-on: [self-hosted, linux, x64]
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Probe or apply the www redirect rule
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          MODE: ${{ inputs.mode }}
+        run: python3 .github/scripts/www_redirect.py
