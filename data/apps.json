@@ -2861,6 +2861,266 @@
   "rating_source": null
  },
  {
+  "name": "ArtCraft Launcher",
+  "package": "artcraft.launcher.windows",
+  "slug": "artcraft-launcher-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/artcraft.launcher.windows.png",
+  "subcategory": "Apps",
+  "description": "Open-source launcher that installs every ArtCraft Crafting App, keeps them up to date and opens them from one place. Early alpha. This is the suite's installer.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.16.1/artcraft-launcher-0.16.1-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/craft-launcher"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "artcraft.launcher.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "artcraft-launcher-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "artcraft-launcher-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "ArtCraft Launcher",
+  "package": "artcraft.launcher.mac",
+  "slug": "artcraft-launcher-mac",
+  "category": "Utilities",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/artcraft.launcher.mac.png",
+  "subcategory": "Apps",
+  "description": "Open-source launcher that installs every ArtCraft Crafting App, keeps them up to date and opens them from one place. Early alpha. This is the suite's installer.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.16.1/artcraft-launcher-0.16.1-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/craft-launcher"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "artcraft.launcher.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "artcraft-launcher",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "artcraft-launcher-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "artcraft-launcher-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "ArtCraft Studio",
+  "package": "artcraft.studio.windows",
+  "slug": "artcraft-studio-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/artcraft.studio.windows.png",
+  "subcategory": "Video",
+  "description": "Open-source generative studio for images and video: compose scenes in 2D and 3D, then render them with the latest models. The app itself is free; the outside models it calls may charge.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/studio",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.1/ArtCraft_0.41.1_x64_en-US.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/artcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "artcraft.studio.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "artcraft-studio-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "artcraft-studio-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "ArtCraft Studio",
+  "package": "artcraft.studio.mac",
+  "slug": "artcraft-studio-mac",
+  "category": "Media",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/artcraft.studio.mac.png",
+  "subcategory": "Video",
+  "description": "Open-source generative studio for images and video: compose scenes in 2D and 3D, then render them with the latest models. The app itself is free; the outside models it calls may charge.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/studio",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.1/ArtCraft_0.41.1_universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/artcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": true,
+  "personal_use": false,
+  "tags": [
+   "needs account"
+  ],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "artcraft.studio.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "artcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "artcraft-studio-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "artcraft-studio-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "Artha",
   "package": "artha.windows",
   "slug": "artha-windows",
@@ -6507,6 +6767,134 @@
   "rating_source": null
  },
  {
+  "name": "CADCraft",
+  "package": "cadcraft.windows",
+  "slug": "cadcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/cadcraft.windows.png",
+  "subcategory": "Design",
+  "description": "Open-source CAD and drafting with a command line, object snaps, layers, dimensions and DXF/DWG support. In development; built for people and AI agents over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/cadcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.18.0/cadcraft-0.18.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/cadcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "cadcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "cadcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "cadcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "CADCraft",
+  "package": "cadcraft.mac",
+  "slug": "cadcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/cadcraft.mac.png",
+  "subcategory": "Design",
+  "description": "Open-source CAD and drafting with a command line, object snaps, layers, dimensions and DXF/DWG support. In development; built for people and AI agents over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/cadcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.18.0/cadcraft-0.18.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/cadcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "cadcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "cadcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "cadcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "cadcraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "Caesium",
   "package": "caesium.windows",
   "slug": "caesium-windows",
@@ -9324,6 +9712,134 @@
   "rating_source": null
  },
  {
+  "name": "Craft Anything",
+  "package": "craft.anything.windows",
+  "slug": "craft-anything-windows",
+  "category": "Utilities",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/craft.anything.windows.png",
+  "subcategory": "Dev tools",
+  "description": "Open-source tool for studying how software works, then building your own version with a coding agent. Early alpha; its 320 tools are each a CLI command and an MCP tool.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/craft-anything",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/craft-anything/releases/download/v0.5.0/craft-anything-0.5.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/craft-anything"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "craft.anything.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "craft-anything-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "craft-anything-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "Craft Anything",
+  "package": "craft.anything.mac",
+  "slug": "craft-anything-mac",
+  "category": "Utilities",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/craft.anything.mac.png",
+  "subcategory": "Dev tools",
+  "description": "Open-source tool for studying how software works, then building your own version with a coding agent. Early alpha; its 320 tools are each a CLI command and an MCP tool.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/craft-anything",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/craft-anything/releases/download/v0.5.0/craft-anything-0.5.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/craft-anything"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "craft.anything.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "craft-anything-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "craft-anything-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "CrossWords",
   "package": "org.eehouse.android.xw4",
   "slug": "org-eehouse-android-xw4",
@@ -10861,6 +11377,134 @@
   "rating_source": null
  },
  {
+  "name": "DeckCraft",
+  "package": "deckcraft.windows",
+  "slug": "deckcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/deckcraft.windows.png",
+  "subcategory": "Office",
+  "description": "Open-source presentation app with slide masters, themes, transitions and presenter view; opens and saves .pptx. In development; 200+ commands scriptable over CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/deckcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/deckcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "deckcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "deckcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "deckcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "DeckCraft",
+  "package": "deckcraft.mac",
+  "slug": "deckcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/deckcraft.mac.png",
+  "subcategory": "Office",
+  "description": "Open-source presentation app with slide masters, themes, transitions and presenter view; opens and saves .pptx. In development; 200+ commands scriptable over CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/deckcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/deckcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "deckcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "deckcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "deckcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "deckcraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "Deku SMS",
   "package": "com.afkanerd.deku",
   "slug": "com-afkanerd-deku",
@@ -11128,6 +11772,134 @@
    }
   ],
   "sibling_slug": "delta-chat-desktop-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "DesignCraft",
+  "package": "designcraft.windows",
+  "slug": "designcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/designcraft.windows.png",
+  "subcategory": "Design",
+  "description": "Open-source page layout and publishing with threaded stories, styles and print-ready PDF export. In development; drivable over a JSON control channel and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/designcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.18.0/designcraft-0.18.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/designcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "designcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "designcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "designcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "DesignCraft",
+  "package": "designcraft.mac",
+  "slug": "designcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/designcraft.mac.png",
+  "subcategory": "Design",
+  "description": "Open-source page layout and publishing with threaded stories, styles and print-ready PDF export. In development; drivable over a JSON control channel and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/designcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.18.0/designcraft-0.18.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/designcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "designcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "designcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "designcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "designcraft-windows",
   "sibling_platform": "windows"
  },
  {
@@ -13452,6 +14224,134 @@
   "windows11": null,
   "brew_id": null,
   "rating_source": null
+ },
+ {
+  "name": "EffectCraft",
+  "package": "effectcraft.windows",
+  "slug": "effectcraft-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/effectcraft.windows.png",
+  "subcategory": "Video",
+  "description": "Open-source motion graphics and VFX compositor with layers, keyframes, 259 effects and a render queue. In development; engine commands run over CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/effectcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.22.0/effectcraft-0.22.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/effectcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "effectcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "effectcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "effectcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "EffectCraft",
+  "package": "effectcraft.mac",
+  "slug": "effectcraft-mac",
+  "category": "Media",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/effectcraft.mac.png",
+  "subcategory": "Video",
+  "description": "Open-source motion graphics and VFX compositor with layers, keyframes, 259 effects and a render queue. In development; engine commands run over CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/effectcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.22.0/effectcraft-0.22.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/effectcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "effectcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "effectcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "effectcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "effectcraft-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "Ekiga",
@@ -15784,6 +16684,136 @@
   "rating_source": null
  },
  {
+  "name": "FigCraft",
+  "package": "figcraft.windows",
+  "slug": "figcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/figcraft.windows.png",
+  "subcategory": "Design",
+  "description": "Open-source interface design and prototyping with auto layout, components, variants and live sessions. Early alpha; 400+ commands are open to CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/figcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.16.0/figcraft-0.16.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/figcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "figcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "figcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "figcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "FigCraft",
+  "package": "figcraft.mac",
+  "slug": "figcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/figcraft.mac.png",
+  "subcategory": "Design",
+  "description": "Open-source interface design and prototyping with auto layout, components, variants and live sessions. Early alpha; 400+ commands are open to CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/figcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.16.0/figcraft-0.16.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/figcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "figcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "figcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "figcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "figcraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "File Converter",
   "package": "file.converter.windows",
   "slug": "file-converter-windows",
@@ -16140,6 +17170,134 @@
    }
   ],
   "sibling_slug": "filezilla-windows",
+  "sibling_platform": "windows"
+ },
+ {
+  "name": "FilmCraft",
+  "package": "filmcraft.windows",
+  "slug": "filmcraft-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/filmcraft.windows.png",
+  "subcategory": "Video",
+  "description": "Open-source video editor with a multitrack timeline, its own native codecs, color grading and scopes. In development; commands are drivable over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/filmcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.18.0/filmcraft-0.18.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/filmcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "filmcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "filmcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "filmcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "FilmCraft",
+  "package": "filmcraft.mac",
+  "slug": "filmcraft-mac",
+  "category": "Media",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/filmcraft.mac.png",
+  "subcategory": "Video",
+  "description": "Open-source video editor with a multitrack timeline, its own native codecs, color grading and scopes. In development; commands are drivable over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/filmcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.18.0/filmcraft-0.18.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/filmcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "filmcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "filmcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "filmcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "filmcraft-windows",
   "sibling_platform": "windows"
  },
  {
@@ -21819,6 +22977,134 @@
   "windows11": null,
   "brew_id": null,
   "rating_source": null
+ },
+ {
+  "name": "GridCraft",
+  "package": "gridcraft.windows",
+  "slug": "gridcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/gridcraft.windows.png",
+  "subcategory": "Office",
+  "description": "Open-source spreadsheet with 500+ functions, dynamic arrays, PivotTables and charts; reads and writes .xlsx. In development; agents can drive it over MCP, CLI and JSON.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/gridcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.17.0/gridcraft-0.17.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/gridcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "gridcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "gridcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "gridcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "GridCraft",
+  "package": "gridcraft.mac",
+  "slug": "gridcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/gridcraft.mac.png",
+  "subcategory": "Office",
+  "description": "Open-source spreadsheet with 500+ functions, dynamic arrays, PivotTables and charts; reads and writes .xlsx. In development; agents can drive it over MCP, CLI and JSON.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/gridcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.17.0/gridcraft-0.17.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/gridcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "gridcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "gridcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "gridcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "gridcraft-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "Gridle",
@@ -29131,6 +30417,136 @@
   "sibling_platform": "android"
  },
  {
+  "name": "LightCraft",
+  "package": "lightcraft.windows",
+  "slug": "lightcraft-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/lightcraft.windows.png",
+  "subcategory": "Photos",
+  "description": "Open-source photo library and non-destructive raw developer that runs entirely on your machine. In development; drivable end to end by AI agents over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/lightcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.19.0/lightcraft-0.19.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/lightcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "lightcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "lightcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "lightcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "LightCraft",
+  "package": "lightcraft.mac",
+  "slug": "lightcraft-mac",
+  "category": "Media",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/lightcraft.mac.png",
+  "subcategory": "Photos",
+  "description": "Open-source photo library and non-destructive raw developer that runs entirely on your machine. In development; drivable end to end by AI agents over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/lightcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.19.0/lightcraft-0.19.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/lightcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "lightcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "lightcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "lightcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "lightcraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "Lightscreen",
   "package": "lightscreen.windows",
   "slug": "lightscreen-windows",
@@ -31710,6 +33126,136 @@
   "windows11": null,
   "brew_id": null,
   "rating_source": "play"
+ },
+ {
+  "name": "MaterialCraft",
+  "package": "materialcraft.windows",
+  "slug": "materialcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/materialcraft.windows.png",
+  "subcategory": "Design",
+  "description": "Open-source node-based procedural materials: build tileable PBR maps in a graph and export for any engine. In development; drivable from the CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/materialcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/materialcraft/releases/download/v0.2.0/materialcraft-0.2.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/materialcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "materialcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "materialcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "materialcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "MaterialCraft",
+  "package": "materialcraft.mac",
+  "slug": "materialcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/materialcraft.mac.png",
+  "subcategory": "Design",
+  "description": "Open-source node-based procedural materials: build tileable PBR maps in a graph and export for any engine. In development; drivable from the CLI, JSON and MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/materialcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/materialcraft/releases/download/v0.2.0/materialcraft-0.2.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/materialcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "materialcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "materialcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "materialcraft-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "Materialious",
@@ -41429,6 +42975,136 @@
   "rating_source": null
  },
  {
+  "name": "PdfCraft",
+  "package": "pdfcraft.windows",
+  "slug": "pdfcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/pdfcraft.windows.png",
+  "subcategory": "Office",
+  "description": "Open-source PDF workbench: read, organize, combine, split and secure PDFs, with no account or telemetry. Early alpha; includes an opt-in MCP server for agents.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/pdfcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.19.0/pdfcraft-0.19.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/pdfcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "pdfcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "pdfcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "pdfcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "PdfCraft",
+  "package": "pdfcraft.mac",
+  "slug": "pdfcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/pdfcraft.mac.png",
+  "subcategory": "Office",
+  "description": "Open-source PDF workbench: read, organize, combine, split and secure PDFs, with no account or telemetry. Early alpha; includes an opt-in MCP server for agents.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/pdfcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.19.0/pdfcraft-0.19.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/pdfcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "pdfcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "pdfcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "pdfcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "pdfcraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "PDFsam Basic",
   "package": "pdfsam.basic.windows",
   "slug": "pdfsam-basic-windows",
@@ -42200,6 +43876,136 @@
   "windows11": null,
   "brew_id": null,
   "rating_source": null
+ },
+ {
+  "name": "PhotoCraft",
+  "package": "photocraft.windows",
+  "slug": "photocraft-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/photocraft.windows.png",
+  "subcategory": "Photos",
+  "description": "Open-source image editor with layers, masks, adjustment layers and PSD round-tripping. Early alpha; every action is also a command an AI agent can drive.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/photocraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.21.0/photocraft-0.21.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/photocraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "photocraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "photocraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "photocraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "PhotoCraft",
+  "package": "photocraft.mac",
+  "slug": "photocraft-mac",
+  "category": "Media",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/photocraft.mac.png",
+  "subcategory": "Photos",
+  "description": "Open-source image editor with layers, masks, adjustment layers and PSD round-tripping. Early alpha; every action is also a command an AI agent can drive.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/photocraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.21.0/photocraft-0.21.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/photocraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "photocraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "photocraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "photocraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "photocraft-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "PhotoDemon",
@@ -51992,6 +53798,134 @@
   "rating_source": null
  },
  {
+  "name": "SoundCraft",
+  "package": "soundcraft.windows",
+  "slug": "soundcraft-windows",
+  "category": "Media",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/soundcraft.windows.png",
+  "subcategory": "Audio",
+  "description": "Open-source digital audio workstation with multitrack audio and MIDI, a full mixing console and built-in plugins. In development; scriptable from the CLI and an MCP server.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/soundcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.18.0/soundcraft-0.18.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/soundcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "soundcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "soundcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "soundcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "SoundCraft",
+  "package": "soundcraft.mac",
+  "slug": "soundcraft-mac",
+  "category": "Media",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/soundcraft.mac.png",
+  "subcategory": "Audio",
+  "description": "Open-source digital audio workstation with multitrack audio and MIDI, a full mixing console and built-in plugins. In development; scriptable from the CLI and an MCP server.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/soundcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.18.0/soundcraft-0.18.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/soundcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "soundcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "soundcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "soundcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "soundcraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "SpeedCrunch",
   "package": "speedcrunch.windows",
   "slug": "speedcrunch-windows",
@@ -55668,6 +57602,136 @@
   "rating_source": null
  },
  {
+  "name": "TextureCraft",
+  "package": "texturecraft.windows",
+  "slug": "texturecraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/texturecraft.windows.png",
+  "subcategory": "Design",
+  "description": "Open-source 3D texture painting: paint PBR materials onto models in layers, bake mesh maps and export for any engine. In development; agents can paint and bake over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/texturecraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/texturecraft/releases/download/v0.4.0/texturecraft-0.4.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/texturecraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "texturecraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "texturecraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "texturecraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "TextureCraft",
+  "package": "texturecraft.mac",
+  "slug": "texturecraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/texturecraft.mac.png",
+  "subcategory": "Design",
+  "description": "Open-source 3D texture painting: paint PBR materials onto models in layers, bake mesh maps and export for any engine. In development; agents can paint and bake over MCP.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/texturecraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/texturecraft/releases/download/v0.4.0/texturecraft-0.4.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/texturecraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "texturecraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "texturecraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "texturecraft-windows",
+  "sibling_platform": "windows"
+ },
+ {
   "name": "The Battle for Wesnoth",
   "package": "org.wesnoth.Wesnoth",
   "slug": "org-wesnoth-wesnoth",
@@ -58200,6 +60264,134 @@
   "windows11": null,
   "brew_id": null,
   "rating_source": null
+ },
+ {
+  "name": "VectorCraft",
+  "package": "vectorcraft.windows",
+  "slug": "vectorcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/vectorcraft.windows.png",
+  "subcategory": "Design",
+  "description": "Open-source vector illustration with pen tools, booleans, live effects and image tracing. In development; an MCP server lets AI agents draw and edit.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/vectorcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.22.0/vectorcraft-0.22.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/vectorcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "vectorcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "vectorcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "vectorcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "VectorCraft",
+  "package": "vectorcraft.mac",
+  "slug": "vectorcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/vectorcraft.mac.png",
+  "subcategory": "Design",
+  "description": "Open-source vector illustration with pen tools, booleans, live effects and image tracing. In development; an MCP server lets AI agents draw and edit.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/vectorcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.22.0/vectorcraft-0.22.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/vectorcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "vectorcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "vectorcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "vectorcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "vectorcraft-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "Velune",
@@ -61988,6 +64180,136 @@
   "windows11": null,
   "brew_id": null,
   "rating_source": null
+ },
+ {
+  "name": "WordCraft",
+  "package": "wordcraft.windows",
+  "slug": "wordcraft-windows",
+  "category": "Productivity",
+  "platform": "windows",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/wordcraft.windows.png",
+  "subcategory": "Office",
+  "description": "Open-source word processor with the ribbon, styles, track changes and native .docx support. In development; 389 commands are open to a CLI, JSON channel and MCP server.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/wordcraft",
+   "alternatives": [
+    {
+     "label": "Windows installer (MSI)",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.16.0/wordcraft-0.16.0-windows-x64.msi"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/wordcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "wordcraft.mac",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": null,
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "wordcraft-mac",
+    "platform": "macos"
+   }
+  ],
+  "sibling_slug": "wordcraft-mac",
+  "sibling_platform": "macos"
+ },
+ {
+  "name": "WordCraft",
+  "package": "wordcraft.mac",
+  "slug": "wordcraft-mac",
+  "category": "Productivity",
+  "platform": "macos",
+  "promises": {
+   "no_ads": true,
+   "no_iap": true,
+   "no_subs": true
+  },
+  "icon_svg": null,
+  "icon": "assets/icons/wordcraft.mac.png",
+  "subcategory": "Office",
+  "description": "Open-source word processor with the ribbon, styles, track changes and native .docx support. In development; 389 commands are open to a CLI, JSON channel and MCP server.",
+  "stores": {
+   "play": null,
+   "fdroid": false,
+   "izzy": null,
+   "github": null,
+   "openapk": null,
+   "appstore": null
+  },
+  "downloads": {
+   "official": "https://getartcraft.com/apps/wordcraft",
+   "alternatives": [
+    {
+     "label": "Mac disk image (DMG)",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.16.0/wordcraft-0.16.0-macos-universal.dmg"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/storytold/wordcraft"
+    }
+   ]
+  },
+  "rating": null,
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "made_by_us": false,
+  "per_badge": false,
+  "free_enough": false,
+  "free_enough_reason": "",
+  "needs_account": false,
+  "personal_use": false,
+  "tags": [],
+  "needs_review": false,
+  "review_notes": "",
+  "sibling_package": "wordcraft.windows",
+  "winget_id": null,
+  "windows11": null,
+  "brew_id": "wordcraft",
+  "rating_source": null,
+  "siblings": [
+   {
+    "slug": "wordcraft-windows",
+    "platform": "windows"
+   }
+  ],
+  "sibling_slug": "wordcraft-windows",
+  "sibling_platform": "windows"
  },
  {
   "name": "Workrave",

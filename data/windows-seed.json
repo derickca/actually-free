@@ -10033,5 +10033,534 @@
    "needs_account": true
   },
   "notes": "License Apache-2.0 (open source). Core use requires a Zulip organization account. official_url from page text, not the verbatim Full URLs list."
+ },
+ {
+  "name": "PhotoCraft",
+  "package": "photocraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Open-source image editor with layers, masks, adjustment layers and PSD round-tripping. Early alpha; every action is also a command an AI agent can drive.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/photocraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/photocraft/releases/download/v0.21.0/photocraft-0.21.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/photocraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.21.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: early alpha (developer's own label).",
+  "sibling": "photocraft.mac"
+ },
+ {
+  "name": "VectorCraft",
+  "package": "vectorcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Open-source vector illustration with pen tools, booleans, live effects and image tracing. In development; an MCP server lets AI agents draw and edit.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/vectorcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/vectorcraft/releases/download/v0.22.0/vectorcraft-0.22.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/vectorcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.22.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "vectorcraft.mac"
+ },
+ {
+  "name": "FilmCraft",
+  "package": "filmcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Open-source video editor with a multitrack timeline, its own native codecs, color grading and scopes. In development; commands are drivable over MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/filmcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/filmcraft/releases/download/v0.18.0/filmcraft-0.18.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/filmcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.18.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "filmcraft.mac"
+ },
+ {
+  "name": "LightCraft",
+  "package": "lightcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Photos",
+  "description": "Open-source photo library and non-destructive raw developer that runs entirely on your machine. In development; drivable end to end by AI agents over MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/lightcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/lightcraft/releases/download/v0.19.0/lightcraft-0.19.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/lightcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.19.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "lightcraft.mac"
+ },
+ {
+  "name": "PdfCraft",
+  "package": "pdfcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Open-source PDF workbench: read, organize, combine, split and secure PDFs, with no account or telemetry. Early alpha; includes an opt-in MCP server for agents.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/pdfcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/pdfcraft/releases/download/v0.19.0/pdfcraft-0.19.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/pdfcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.19.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: early alpha (developer's own label).",
+  "sibling": "pdfcraft.mac"
+ },
+ {
+  "name": "EffectCraft",
+  "package": "effectcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Open-source motion graphics and VFX compositor with layers, keyframes, 259 effects and a render queue. In development; engine commands run over CLI, JSON and MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/effectcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/effectcraft/releases/download/v0.22.0/effectcraft-0.22.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/effectcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.22.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "effectcraft.mac"
+ },
+ {
+  "name": "DesignCraft",
+  "package": "designcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Open-source page layout and publishing with threaded stories, styles and print-ready PDF export. In development; drivable over a JSON control channel and MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/designcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/designcraft/releases/download/v0.18.0/designcraft-0.18.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/designcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.18.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "designcraft.mac"
+ },
+ {
+  "name": "FigCraft",
+  "package": "figcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Open-source interface design and prototyping with auto layout, components, variants and live sessions. Early alpha; 400+ commands are open to CLI, JSON and MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/figcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/figcraft/releases/download/v0.16.0/figcraft-0.16.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/figcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.16.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: early alpha (developer's own label).",
+  "sibling": "figcraft.mac"
+ },
+ {
+  "name": "TextureCraft",
+  "package": "texturecraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Open-source 3D texture painting: paint PBR materials onto models in layers, bake mesh maps and export for any engine. In development; agents can paint and bake over MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/texturecraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/texturecraft/releases/download/v0.4.0/texturecraft-0.4.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/texturecraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.4.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "texturecraft.mac"
+ },
+ {
+  "name": "MaterialCraft",
+  "package": "materialcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Open-source node-based procedural materials: build tileable PBR maps in a graph and export for any engine. In development; drivable from the CLI, JSON and MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/materialcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/materialcraft/releases/download/v0.2.0/materialcraft-0.2.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/materialcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.2.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "materialcraft.mac"
+ },
+ {
+  "name": "WordCraft",
+  "package": "wordcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Open-source word processor with the ribbon, styles, track changes and native .docx support. In development; 389 commands are open to a CLI, JSON channel and MCP server.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/wordcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/wordcraft/releases/download/v0.16.0/wordcraft-0.16.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/wordcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "offline": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.16.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "wordcraft.mac"
+ },
+ {
+  "name": "SoundCraft",
+  "package": "soundcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Audio",
+  "description": "Open-source digital audio workstation with multitrack audio and MIDI, a full mixing console and built-in plugins. In development; scriptable from the CLI and an MCP server.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/soundcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/soundcraft/releases/download/v0.18.0/soundcraft-0.18.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/soundcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.18.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "soundcraft.mac"
+ },
+ {
+  "name": "DeckCraft",
+  "package": "deckcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Open-source presentation app with slide masters, themes, transitions and presenter view; opens and saves .pptx. In development; 200+ commands scriptable over CLI, JSON and MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/deckcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/deckcraft/releases/download/v0.16.0/deckcraft-0.16.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/deckcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.16.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "deckcraft.mac"
+ },
+ {
+  "name": "CADCraft",
+  "package": "cadcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Design",
+  "description": "Open-source CAD and drafting with a command line, object snaps, layers, dimensions and DXF/DWG support. In development; built for people and AI agents over MCP.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/cadcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/cadcraft/releases/download/v0.18.0/cadcraft-0.18.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/cadcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.18.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "cadcraft.mac"
+ },
+ {
+  "name": "GridCraft",
+  "package": "gridcraft.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Productivity",
+  "subcategory": "Office",
+  "description": "Open-source spreadsheet with 500+ functions, dynamic arrays, PivotTables and charts; reads and writes .xlsx. In development; agents can drive it over MCP, CLI and JSON.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/gridcraft",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/gridcraft/releases/download/v0.17.0/gridcraft-0.17.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/gridcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.17.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: in development (developer's own label).",
+  "sibling": "gridcraft.mac"
+ },
+ {
+  "name": "Craft Anything",
+  "package": "craft.anything.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Dev tools",
+  "description": "Open-source tool for studying how software works, then building your own version with a coding agent. Early alpha; its 320 tools are each a CLI command and an MCP tool.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/craft-anything",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/craft-anything/releases/download/v0.5.0/craft-anything-0.5.0-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/craft-anything"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.5.0 released 2026-11-06. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher. Development state: early alpha (developer's own label).",
+  "sibling": "craft.anything.mac"
+ },
+ {
+  "name": "ArtCraft Launcher",
+  "package": "artcraft.launcher.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Utilities",
+  "subcategory": "Apps",
+  "description": "Open-source launcher that installs every ArtCraft Crafting App, keeps them up to date and opens them from one place. Early alpha. This is the suite's installer.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/craft-launcher/releases/download/v0.16.1/artcraft-launcher-0.16.1-windows-x64.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/craft-launcher"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "no_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.16.1 released 2026-11-08. Pure Rust, native builds for Windows, macOS and Linux; the ArtCraft suite's installer and updater; Derick has it installed and in use (2026-11-07). Development state: early alpha (developer's own label).",
+  "sibling": "artcraft.launcher.mac"
+ },
+ {
+  "name": "ArtCraft Studio",
+  "package": "artcraft.studio.windows",
+  "platform": "windows",
+  "status": "include",
+  "category": "Media",
+  "subcategory": "Video",
+  "description": "Open-source generative studio for images and video: compose scenes in 2D and 3D, then render them with the latest models. The app itself is free; the outside models it calls may charge.",
+  "license": "oss",
+  "personal_use": false,
+  "free_enough_reason": "",
+  "official_url": "https://getartcraft.com/apps/studio",
+  "alt_downloads": [
+   {
+    "label": "Windows installer (MSI)",
+    "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.1/ArtCraft_0.41.1_x64_en-US.msi"
+   },
+   {
+    "label": "GitHub",
+    "url": "https://github.com/storytold/artcraft"
+   }
+  ],
+  "attrs": {
+   "open_source": true,
+   "needs_account": true
+  },
+  "notes": "MIT or Apache-2.0 (dual-licensed); artcraft-v0.41.1 released 2026-11-07. Pure Rust, native builds for Windows, macOS and Linux; part of the ArtCraft suite, installed and kept up to date by ArtCraft Launcher.",
+  "sibling": "artcraft.studio.mac"
  }
 ]
