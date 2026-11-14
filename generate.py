@@ -685,6 +685,7 @@ def head(title, description, og_path="", og_image="og-share.png"):
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#fdf4e7">
 <link rel="stylesheet" href="/assets/styles.css">
+<script async src="/c/c.js"></script>
 </head>"""
 
 
