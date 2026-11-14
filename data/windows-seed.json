@@ -1718,25 +1718,6 @@
   "notes": "License verified earlier as GPL-2.0 open source; could not verify official download URL in this pass. URL: The developer's site thehive.xbee.net is dead (the domain now serves unrelated content). PortableApps co-publishes DiffImg Portable, so its release page is primary."
  },
  {
-  "name": "Diffpdf",
-  "package": "diffpdf.windows",
-  "platform": "windows",
-  "status": "include",
-  "category": "Utilities",
-  "subcategory": "Gadgets",
-  "description": "A tool that compares two PDF files page by page and highlights text and layout differences.",
-  "license": "oss",
-  "personal_use": false,
-  "free_enough_reason": "",
-  "official_url": "https://www.qtrac.eu/diffpdf.html",
-  "alt_downloads": [],
-  "attrs": {
-   "open_source": true,
-   "needs_account": false
-  },
-  "notes": "License verified earlier as GPL-2 open source; could not verify official download URL in this pass. URL: Official site of the author (Qtrac / Mark Summerfield), confirmed by multiple mirrors and GitHub forks."
- },
- {
   "name": "digiKam",
   "package": "digikam.windows",
   "platform": "windows",

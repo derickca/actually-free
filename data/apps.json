@@ -12356,53 +12356,6 @@
   "rating_source": null
  },
  {
-  "name": "Diffpdf",
-  "package": "diffpdf.windows",
-  "slug": "diffpdf-windows",
-  "category": "Utilities",
-  "platform": "windows",
-  "promises": {
-   "no_ads": true,
-   "no_iap": true,
-   "no_subs": true
-  },
-  "icon_svg": null,
-  "icon": null,
-  "subcategory": "Gadgets",
-  "description": "A tool that compares two PDF files page by page and highlights text and layout differences.",
-  "stores": {
-   "play": null,
-   "fdroid": false,
-   "izzy": null,
-   "github": null,
-   "openapk": null,
-   "appstore": null
-  },
-  "downloads": {
-   "official": "https://www.qtrac.eu/diffpdf.html",
-   "alternatives": []
-  },
-  "rating": null,
-  "attrs": {
-   "open_source": true,
-   "needs_account": false
-  },
-  "made_by_us": false,
-  "per_badge": false,
-  "free_enough": false,
-  "free_enough_reason": "",
-  "needs_account": false,
-  "personal_use": false,
-  "tags": [],
-  "needs_review": false,
-  "review_notes": "",
-  "sibling_package": null,
-  "winget_id": null,
-  "windows11": null,
-  "brew_id": null,
-  "rating_source": null
- },
- {
   "name": "digiKam",
   "package": "digikam.windows",
   "slug": "digikam-windows",
