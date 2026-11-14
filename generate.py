@@ -2019,24 +2019,6 @@ JS_CONTENT = r"""
 /* Actually Free — directory client logic. Vanilla JS, no dependencies. */
 (function () {
   "use strict";
-  var cfg = window.AF_CONFIG || {};
-  var GC = cfg.GOATCOUNTER_CODE || "";
-
-  /* ---------- Goatcounter (skipped silently until Derick pastes a code) --- */
-  function gcReady() { return GC && GC.indexOf("PASTE") !== 0 && window.goatcounter; }
-  function gcEvent(path) {
-    if (gcReady()) {
-      try { window.goatcounter.count({ path: "event/" + path, event: true }); } catch (e) {}
-    }
-  }
-  if (GC && GC.indexOf("PASTE") !== 0) {
-    var s = document.createElement("script");
-    s.async = true;
-    s.setAttribute("data-goatcounter", "https://" + GC + ".goatcounter.com/count");
-    s.src = "https://gc.zgo.at/count.js";
-    document.head.appendChild(s);
-  }
-
   /* ---------- mode + theme (persisted, orthogonal) ------------------------- */
   var root = document.documentElement;
   var MASCOTS = { playful: "/assets/mascot-friendly.webp", geek: "/assets/mascot-geek.webp" };
@@ -2193,7 +2175,6 @@ JS_CONTENT = r"""
         })
           .then(function (r) {
             if (!r.ok) throw new Error("status " + r.status);
-            gcEvent("feedback-sent/" + kind);
             finish();
           })
           .catch(function () {
@@ -2447,9 +2428,6 @@ __PLATFORM_NAMES__
         ? r.list.length + " of " + total + " actually-free apps"
         : total + " actually-free apps";
     }
-    grid.querySelectorAll(".tile").forEach(function (t) {
-      t.addEventListener("click", function () { gcEvent("tile-view/" + t.getAttribute("data-slug")); });
-    });
     saveFilters();
   }
 
@@ -2522,7 +2500,6 @@ __PLATFORM_NAMES__
     searchTimer = setTimeout(function () {
       state.query = searchInput.value;
       var r = filtered();
-      gcEvent("search/" + (r.list.length ? "results/" : "zero/") + encodeURIComponent(norm(state.query)).slice(0, 80));
       render();
     }, 220);
   });
@@ -2545,7 +2522,6 @@ __PLATFORM_NAMES__
       c.addEventListener("click", function () {
         var s = c.getAttribute("data-subcat");
         state.subcat = (state.subcat === s) ? "" : s;
-        gcEvent("filter/subcategory/" + encodeURIComponent(state.subcat || "all").slice(0, 60));
         renderSubcats();
         render();
       });
@@ -2636,7 +2612,6 @@ __PLATFORM_NAMES__
     btn.classList.add("on");
     state.cat = btn.getAttribute("data-cat");
     state.subcat = "";
-    gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
     renderSubcats();
     render();
   }
@@ -2645,7 +2620,6 @@ __PLATFORM_NAMES__
     var k = p.getAttribute(kind === "store" ? "data-store" : "data-attr");
     if (store[k]) delete store[k]; else store[k] = true;
     p.classList.toggle("on", !!store[k]);
-    gcEvent((kind === "store" ? "store/" : "filter/") + k);
     render();
   }
 
@@ -2706,7 +2680,6 @@ __PLATFORM_NAMES__
       b.classList.add("on");
       state.platform = b.getAttribute("data-platform");
       state.platformChosen = true;
-      gcEvent("filter/platform/" + (state.platform || "all"));
       render();
     });
   });
@@ -2750,7 +2723,6 @@ __PLATFORM_NAMES__
         var detected = detectPlatform();
         if (detected && apps.some(function (a) { return a.platform === detected; })) {
           state.platform = detected;
-          gcEvent("filter/platform-auto/" + detected);
         }
       }
       /* A restored category that no longer exists (stale after a data
@@ -2800,31 +2772,17 @@ __PLATFORM_NAMES__
 """
 
 CONFIG_JS_TEMPLATE = """/* Actually Free — site configuration.
-   GOATCOUNTER_CODE: your Goatcounter site code (the subdomain part of your
-   Goatcounter URL). Free signup at https://www.goatcounter.com — no API key
-   needed. Until this is set, analytics are skipped silently.
-
    Feedback reports ("doesn't work" / "broke a promise" / corrections /
    app suggestions) POST as JSON to the shared msg service at
    https://feedback.certifiable.media/api/submit, which stores them for review.
    No per-build secret, no third party. */
-window.AF_CONFIG = {{
-  GOATCOUNTER_CODE: "{gc}"
-}};
+window.AF_CONFIG = {};
 """
 
 
 def build_config_js():
-    """config.js for the deployed site: Goatcounter code preserved."""
-    gc = ""
-    try:
-        with open(os.path.join(HERE, "assets", "config.js"), encoding="utf-8") as f:
-            m = re.search(r'GOATCOUNTER_CODE\s*:\s*"([^"]*)"', f.read())
-            if m:
-                gc = m.group(1)
-    except OSError:
-        pass
-    return CONFIG_JS_TEMPLATE.format(gc=gc or "PASTE-YOUR-CODE-HERE")
+    """config.js for the deployed site."""
+    return CONFIG_JS_TEMPLATE
 
 README_MD = """# Actually Free — actually-free.com
 
@@ -2855,9 +2813,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
    the transparency brand) and push this folder.
 2. **Cloudflare Pages**: connect the repo, then add the custom domain
    `actually-free.com` (free SSL included).
-3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
-   and redeploy.
-4. **Feedback** goes to the shared msg service (msg.certifiable.media) —
+3. **Feedback** goes to the shared msg service (msg.certifiable.media) —
    no setup needed on the build machine. New reports land in the inbox at
    https://msg.certifiable.media and notify Derick.
 

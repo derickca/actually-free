@@ -1,24 +1,6 @@
 /* Actually Free — directory client logic. Vanilla JS, no dependencies. */
 (function () {
   "use strict";
-  var cfg = window.AF_CONFIG || {};
-  var GC = cfg.GOATCOUNTER_CODE || "";
-
-  /* ---------- Goatcounter (skipped silently until Derick pastes a code) --- */
-  function gcReady() { return GC && GC.indexOf("PASTE") !== 0 && window.goatcounter; }
-  function gcEvent(path) {
-    if (gcReady()) {
-      try { window.goatcounter.count({ path: "event/" + path, event: true }); } catch (e) {}
-    }
-  }
-  if (GC && GC.indexOf("PASTE") !== 0) {
-    var s = document.createElement("script");
-    s.async = true;
-    s.setAttribute("data-goatcounter", "https://" + GC + ".goatcounter.com/count");
-    s.src = "https://gc.zgo.at/count.js";
-    document.head.appendChild(s);
-  }
-
   /* ---------- mode + theme (persisted, orthogonal) ------------------------- */
   var root = document.documentElement;
   var MASCOTS = { playful: "/assets/mascot-friendly.webp", geek: "/assets/mascot-geek.webp" };
@@ -175,7 +157,6 @@
         })
           .then(function (r) {
             if (!r.ok) throw new Error("status " + r.status);
-            gcEvent("feedback-sent/" + kind);
             finish();
           })
           .catch(function () {
@@ -439,9 +420,6 @@ var PLATFORM_NAMES = {
         ? r.list.length + " of " + total + " actually-free apps"
         : total + " actually-free apps";
     }
-    grid.querySelectorAll(".tile").forEach(function (t) {
-      t.addEventListener("click", function () { gcEvent("tile-view/" + t.getAttribute("data-slug")); });
-    });
     saveFilters();
   }
 
@@ -514,7 +492,6 @@ var PLATFORM_NAMES = {
     searchTimer = setTimeout(function () {
       state.query = searchInput.value;
       var r = filtered();
-      gcEvent("search/" + (r.list.length ? "results/" : "zero/") + encodeURIComponent(norm(state.query)).slice(0, 80));
       render();
     }, 220);
   });
@@ -537,7 +514,6 @@ var PLATFORM_NAMES = {
       c.addEventListener("click", function () {
         var s = c.getAttribute("data-subcat");
         state.subcat = (state.subcat === s) ? "" : s;
-        gcEvent("filter/subcategory/" + encodeURIComponent(state.subcat || "all").slice(0, 60));
         renderSubcats();
         render();
       });
@@ -628,7 +604,6 @@ var PLATFORM_NAMES = {
     btn.classList.add("on");
     state.cat = btn.getAttribute("data-cat");
     state.subcat = "";
-    gcEvent("filter/category/" + encodeURIComponent(state.cat || "all").slice(0, 60));
     renderSubcats();
     render();
   }
@@ -637,7 +612,6 @@ var PLATFORM_NAMES = {
     var k = p.getAttribute(kind === "store" ? "data-store" : "data-attr");
     if (store[k]) delete store[k]; else store[k] = true;
     p.classList.toggle("on", !!store[k]);
-    gcEvent((kind === "store" ? "store/" : "filter/") + k);
     render();
   }
 
@@ -698,7 +672,6 @@ var PLATFORM_NAMES = {
       b.classList.add("on");
       state.platform = b.getAttribute("data-platform");
       state.platformChosen = true;
-      gcEvent("filter/platform/" + (state.platform || "all"));
       render();
     });
   });
@@ -742,7 +715,6 @@ var PLATFORM_NAMES = {
         var detected = detectPlatform();
         if (detected && apps.some(function (a) { return a.platform === detected; })) {
           state.platform = detected;
-          gcEvent("filter/platform-auto/" + detected);
         }
       }
       /* A restored category that no longer exists (stale after a data

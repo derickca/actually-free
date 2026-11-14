@@ -27,9 +27,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
    the transparency brand) and push this folder.
 2. **Cloudflare Pages**: connect the repo, then add the custom domain
    `actually-free.com` (free SSL included).
-3. **Paste your Goatcounter code** into `assets/config.js` (`GOATCOUNTER_CODE`)
-   and redeploy.
-4. **Feedback** goes to the shared msg service (msg.certifiable.media) —
+3. **Feedback** goes to the shared msg service (msg.certifiable.media) —
    no setup needed on the build machine. New reports land in the inbox at
    https://msg.certifiable.media and notify Derick.
 
