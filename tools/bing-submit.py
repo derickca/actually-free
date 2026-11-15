@@ -210,12 +210,20 @@ def submit(key, urls):
 
 def quota_remaining(why):
     """The day's remaining submission quota a refusal names,
-    or None when the refusal is not the API's quota answer.
-    The quota answer is ErrorCode 8, whose message carries
-    'Quota remaining for today: N, Submitted: M' — Bing
-    refuses a batch whole when it runs past what is left."""
+    or None when the refusal is not one of the API's quota
+    answers. Both quota answers (ErrorCode 8) count: the
+    'Quota remaining for today: N, Submitted: M' refusal
+    names what is left — Bing refuses a batch whole when it
+    runs past it — and the 'You have exceeded your daily url
+    submission quota' refusal means nothing is left. The
+    second shape is the one a run meets when an earlier
+    run's refused batches have already spent the day."""
     m = re.search(r"Quota remaining for today: (\d+)", why or "")
-    return int(m.group(1)) if m else None
+    if m:
+        return int(m.group(1))
+    if "exceeded your daily url submission quota" in (why or ""):
+        return 0
+    return None
 
 
 def report(line):
