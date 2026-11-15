@@ -32,6 +32,10 @@ Cases:
      exactly the remaining quota, those URLs are accepted,
      the rest stay due, and the next run submits them.
   8. A 105-page set goes in batches of at most 100.
+  9. The stub answers with the day's quota already exceeded
+     (the API's other ErrorCode 8 shape, the one the second
+     production run met): one request only, the run exits 0,
+     the quota is reported spent and the manifest stands.
 
 Usage:  python3 test_bing_submit.py
 Exit 0 = every case passed, 1 = a failure (named on its line).
@@ -81,6 +85,9 @@ class Stub:
         # enforced the way Bing's real API enforces it: a batch
         # that runs past it is refused whole with ErrorCode 8.
         self.quota = None
+        # True = the day is already spent: every request gets
+        # the API's exceeded-quota answer.
+        self.exceeded = False
         outer = self
 
         class Handler(BaseHTTPRequestHandler):
@@ -90,7 +97,14 @@ class Stub:
                 outer.requests.append((self.path, raw))
                 status = outer.status
                 body = b'{"d": null}'
-                if status == 200 and outer.quota is not None:
+                if outer.exceeded:
+                    status = 400
+                    body = json.dumps({
+                        "ErrorCode": 8,
+                        "Message": "ERROR!!! You have exceeded "
+                        "your daily url submission quota : "
+                        "100"}).encode()
+                elif status == 200 and outer.quota is not None:
                     count = len(json.loads(raw).get("urlList") or [])
                     if count > outer.quota:
                         status = 400
@@ -336,7 +350,23 @@ def main():
                   manifest2.read_text())["urls"]) == 105,
               f"rc={r.returncode} sizes={sizes}")
 
-    print(f"test_bing_submit: {8 - len(failures)}/8 cases passed"
+        # Case 9 — the day's quota is already exceeded (the
+        # API's other ErrorCode 8 shape): one request only,
+        # exit 0, the spent quota reported, the manifest stands.
+        (staged / "index.html").write_text("home page v3")
+        before = manifest.read_text()
+        stub.exceeded = True
+        stub.requests.clear()
+        r = run()
+        check("case 9: an exceeded quota stops after one request",
+              r.returncode == 0 and len(stub.requests) == 1
+              and "quota is spent" in r.stdout
+              and manifest.read_text() == before,
+              f"rc={r.returncode} requests={len(stub.requests)} "
+              f"out={r.stdout.strip()[:160]}")
+        stub.exceeded = False
+
+    print(f"test_bing_submit: {9 - len(failures)}/9 cases passed"
           if not failures else
           f"test_bing_submit: FAILURES in: {', '.join(failures)}")
     return 1 if failures else 0
