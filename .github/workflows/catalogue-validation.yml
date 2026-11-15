@@ -1,13 +1,25 @@
 name: Catalogue validation
 on:
   pull_request:
+    # Documentation files are inputs to no check here, so a
+    # docs-only change runs nothing (Test, Build and Release, \u00a74).
+    paths-ignore:
+      - '*.md'
+      - '**/*.md'
   push:
     branches: [main]
+    paths-ignore:
+      - '*.md'
+      - '**/*.md'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   validate:
+    # A fork's pull request gets no automatic run: a stranger's
+    # code never runs unattended (Test, Build and Release, \u00a74).
+    # A maintainer runs a fork's checks by hand before merging.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

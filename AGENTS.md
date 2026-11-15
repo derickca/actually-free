@@ -8,6 +8,29 @@ Rules for anyone working in this repository. General working rules are in the ho
 - data/apps.json is assembled from the seed files. Edit `~/workspace/certifiable-apps/apps-seed.json` and the in-repo mirror `data/apps-seed.json` (the two copies are kept identical), plus `data/windows-seed.json` for Windows records, `data/macos-seed.json` for Mac records and `data/ios-seed.json` for iOS records. Validate Apple seeds with `python3 tools/check-apple.py` (rules in `apple_catalog.py`) and Windows seeds with `tools/check-windows.py`. Then run generate.py, validate and commit everything, including the regenerated apps.json.
 - Taxonomy drift is checked with `tools/taxonomy_check.py`, run by hand when the catalogue is edited. There is no scheduled taxonomy check.
 
+## Testing \u2014 the exact commands
+
+The gate stands in docs/E2E.md: the tests named for the changed
+surfaces run before the push and gate the push. The commands:
+
+- Site surface: `python3 test_site.py` \u2014 it regenerates the tree,
+  serves it locally and drives headless Chrome through it. Its
+  smallest named subset: `python3 test_site.py --standards-only`.
+- Catalogue surfaces: `python3 tools/check-windows.py`,
+  `python3 tools/check-apple.py` and
+  `python3 -m unittest test_windows_catalog.py test_apple_catalog.py`.
+- One catalogue test on its own:
+  `python3 -m unittest test_windows_catalog.WindowsCatalogueTests.test_seed`
+  \u2014 the same shape names any single test in either catalogue file.
+- Screenshots of a changed view, at 1280 and 390:
+  `python3 tools/shots.py [path ...]`, looked at before the push.
+- The deploy smoke stands in docs/E2E.md; it runs as
+  `python3 tools/smoke.py` inside the deploy workflow, after the
+  publish step.
+
+No typecheck or lint command stands for this repo. The suites
+above are the whole gate.
+
 ## The promise and the submission bars
 
 The directory's promise, without exception: no ads, no purchases, no subscriptions, no trials, no nagging and no surprise bundles. A listing is a promise a visitor can rely on. Listing statuses are include (promise verified on evidence), free-enough (paid extras exist but the free tier is the complete product, with the paid element named), flag (borderline or unverifiable, held out of the catalogue) and exclude (breaks the promise).

@@ -367,7 +367,17 @@ def main():
     import threading, os
     os.chdir(HERE)
     threading.Thread(target=srv.serve_forever, daemon=True).start()
-    time.sleep(0.5)
+    # Condition wait, never a fixed sleep: poll until the server
+    # answers, bounded, so a slow start cannot race the first check.
+    _deadline = time.time() + 10
+    while True:
+        try:
+            urllib.request.urlopen(f"http://127.0.0.1:{PORT}/", timeout=2)
+            break
+        except Exception:
+            if time.time() >= _deadline:
+                raise
+            time.sleep(0.1)
 
     # 5. Collapsed state: zero height, no overlap, gap to attr pills.
     t = chrome_eval("", """
