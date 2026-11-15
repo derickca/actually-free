@@ -15,12 +15,18 @@ Build Tests run on a change, before the push, and they gate the push.
 
 - The site surface: `python3 test_site.py` — it regenerates the tree,
   serves it locally and drives headless Chrome through the directory's
-  behaviour at desktop and phone widths.
+  behaviour at desktop and phone widths. Its smallest named subset:
+  `python3 test_site.py --standards-only`.
 - The catalogue surfaces: `python3 tools/check-windows.py`,
   `python3 tools/check-apple.py` and
   `python3 -m unittest test_windows_catalog.py test_apple_catalog.py`.
   The catalogue suites also run in the Catalogue validation workflow
   on every push and pull request.
+- One catalogue test on its own:
+  `python3 -m unittest test_windows_catalog.WindowsCatalogueTests.test_seed`
+  — the same shape names any single test in either catalogue file.
+- No typecheck or lint command stands for this repo. The suites
+  above are the whole gate.
 - Screenshots: a change that touches a view takes screenshots of that
   view at 1280 and 390 widths with `python3 tools/shots.py`, and the
   person or agent landing the change looks at them before the push.
