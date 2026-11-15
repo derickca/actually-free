@@ -83,9 +83,14 @@ STAGED = Path(os.environ.get("BING_STAGED_DIR", ROOT))
 MANIFEST = Path(os.environ.get(
     "BING_MANIFEST",
     Path.home() / ".actuallyfree-bing-manifest.json"))
-# SubmitUrlbatch takes up to 10,000 URLs at once; the site's
-# whole set is about 1,300. 500 keeps any one request small.
-BATCH = 500
+# SubmitUrlbatch takes up to 10,000 URLs at once, but the
+# API's daily quota for this site stood at 100 on 2026-11-15
+# (the ErrorCode 8 answer to the first production run), and
+# a batch that runs past the day's remaining quota is
+# refused whole, not trimmed. 100 keeps a batch inside the
+# smallest quota seen; the quota handling in main() fits a
+# partly spent day and stops when the day is spent.
+BATCH = 100
 
 
 def url_to_file(url):
@@ -203,6 +208,16 @@ def submit(key, urls):
     return True, ""
 
 
+def quota_remaining(why):
+    """The day's remaining submission quota a refusal names,
+    or None when the refusal is not the API's quota answer.
+    The quota answer is ErrorCode 8, whose message carries
+    'Quota remaining for today: N, Submitted: M' — Bing
+    refuses a batch whole when it runs past what is left."""
+    m = re.search(r"Quota remaining for today: (\d+)", why or "")
+    return int(m.group(1)) if m else None
+
+
 def report(line):
     print(line)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -247,16 +262,44 @@ def main():
 
     accepted = dict(standing)
     failed = []
+    quota_done = False
     for i in range(0, len(changed), BATCH):
         batch = changed[i:i + BATCH]
+        if quota_done:
+            # The day's quota is spent; every further batch
+            # would be refused the same way. These stay due.
+            failed.extend(batch)
+            continue
         ok, why = submit(key, batch)
         if ok:
             for u in batch:
                 accepted[u] = current[u]
-        else:
+            continue
+        left = quota_remaining(why)
+        if left is None:
             failed.extend(batch)
             report(f"Bing submit: FAILED — Bing refused a batch of "
                    f"{len(batch)} URL(s): {why}.")
+            continue
+        # A quota refusal: hand Bing exactly what fits in the
+        # day's remaining quota, then stop — the rest of the
+        # day would be refused the same way, and what was not
+        # accepted stays due for the next publish.
+        quota_done = True
+        if 0 < left < len(batch):
+            ok, why = submit(key, batch[:left])
+            if ok:
+                for u in batch[:left]:
+                    accepted[u] = current[u]
+                failed.extend(batch[left:])
+                report(f"Bing submit: the day's quota is spent — "
+                       f"{left} URL(s) accepted, the rest stay "
+                       f"due for the next publish.")
+                continue
+        failed.extend(batch)
+        report(f"Bing submit: FAILED — Bing refused a batch of "
+               f"{len(batch)} URL(s): {why}; the day's quota is "
+               f"spent, the rest stay due for the next publish.")
     # The manifest holds exactly the URLs Bing has accepted, at
     # the hashes it accepted them at: retired URLs fall away,
     # unsubmitted changes keep their old hash (or none) and so

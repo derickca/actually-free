@@ -26,6 +26,12 @@ Cases:
      is reported, no request is made, the manifest stands.
   6. --dry-run: the pending URL is named, no request is made,
      the manifest stands.
+  7. The stub enforces a daily quota smaller than the batch
+     (the answer Bing's real API gave the first production
+     run, ErrorCode 8): the refused batch is retried at
+     exactly the remaining quota, those URLs are accepted,
+     the rest stay due, and the next run submits them.
+  8. A 105-page set goes in batches of at most 100.
 
 Usage:  python3 test_bing_submit.py
 Exit 0 = every case passed, 1 = a failure (named on its line).
@@ -71,15 +77,31 @@ class Stub:
     def __init__(self):
         self.requests = []
         self.status = 200
+        # None = no quota. A number = the day's remaining quota,
+        # enforced the way Bing's real API enforces it: a batch
+        # that runs past it is refused whole with ErrorCode 8.
+        self.quota = None
         outer = self
 
         class Handler(BaseHTTPRequestHandler):
             def do_POST(self):
                 n = int(self.headers.get("Content-Length") or 0)
-                outer.requests.append(
-                    (self.path, self.rfile.read(n).decode()))
+                raw = self.rfile.read(n).decode()
+                outer.requests.append((self.path, raw))
+                status = outer.status
                 body = b'{"d": null}'
-                self.send_response(outer.status)
+                if status == 200 and outer.quota is not None:
+                    count = len(json.loads(raw).get("urlList") or [])
+                    if count > outer.quota:
+                        status = 400
+                        body = json.dumps({
+                            "ErrorCode": 8,
+                            "Message": "ERROR!!! Quota remaining "
+                            f"for today: {outer.quota}, "
+                            f"Submitted: {count}"}).encode()
+                    else:
+                        outer.quota -= count
+                self.send_response(status)
                 self.send_header("Content-Type", "application/json")
                 self.send_header("Content-Length", str(len(body)))
                 self.end_headers()
@@ -251,7 +273,70 @@ def main():
               and manifest.read_text() == before,
               f"out={r.stdout.strip()[:160]}")
 
-    print(f"test_bing_submit: {6 - len(failures)}/6 cases passed"
+        # Case 7 — the day's quota (3) is smaller than the batch
+        # (the whole 5-page set): the batch is refused whole,
+        # retried at exactly the quota, and the rest stay due
+        # until the next run.
+        manifest.unlink()
+        stub.quota = 3
+        stub.requests.clear()
+        r = run()
+        check("case 7: a quota refusal still exits 0",
+              r.returncode == 0, f"rc={r.returncode}")
+        check("case 7: two requests — the refused batch, the fit",
+              len(stub.requests) == 2,
+              f"{len(stub.requests)} requests")
+        check("case 7: manifest holds exactly the quota's worth",
+              sorted(manifest_urls()) == all_urls[:3],
+              f"manifest={sorted(manifest_urls())}")
+        check("case 7: the spent quota is reported",
+              "quota is spent" in r.stdout
+              and "3 of 5" in r.stdout,
+              f"out={r.stdout.strip()[:200]}")
+        stub.quota = None
+        stub.requests.clear()
+        r = run()
+        check("case 7: the next run submits what stayed due",
+              r.returncode == 0
+              and sorted(manifest_urls()) == all_urls,
+              f"manifest={sorted(manifest_urls())}")
+
+        # Case 8 — 105 pages go in batches of at most 100.
+        staged2 = td / "site2"
+        locs = []
+        for i in range(105):
+            f = staged2 / "app" / f"p{i:03}.html"
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(f"page {i} v1")
+            locs.append(
+                f"  <url><loc>{SITE}/app/p{i:03}</loc></url>")
+        (staged2 / "sitemap.xml").write_text(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/'
+            'sitemap/0.9">\n' + "\n".join(locs) + "\n</urlset>\n")
+        manifest2 = td / "manifest2.json"
+        env = dict(os.environ)
+        env.update({
+            "BING_STAGED_DIR": str(staged2),
+            "BING_MANIFEST": str(manifest2),
+            "BING_SUBMIT_ENDPOINT": stub.endpoint,
+            "OP_SECRET_SH": str(helper),
+        })
+        env.pop("BING_WEBMASTER_API_KEY", None)
+        env.pop("GITHUB_STEP_SUMMARY", None)
+        stub.requests.clear()
+        r = subprocess.run(
+            [sys.executable, str(SCRIPT)],
+            capture_output=True, text=True, env=env, timeout=60)
+        sizes = [len(json.loads(b).get("urlList") or [])
+                 for _, b in stub.requests]
+        check("case 8: 105 pages accepted in batches of at most 100",
+              r.returncode == 0 and sizes == [100, 5]
+              and len(json.loads(
+                  manifest2.read_text())["urls"]) == 105,
+              f"rc={r.returncode} sizes={sizes}")
+
+    print(f"test_bing_submit: {8 - len(failures)}/8 cases passed"
           if not failures else
           f"test_bing_submit: FAILURES in: {', '.join(failures)}")
     return 1 if failures else 0
