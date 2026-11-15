@@ -21,6 +21,19 @@ drops out of the manifest silently — the API takes
 submissions, not removals; Bing meets a retired page on its
 next crawl and drops it then.
 
+The order they go in is the owner's rule (2026-11-15): new
+pages before updated pages, because the first concern is
+that Bing knows a page exists at all. A due URL is new when
+the manifest does not name it — Bing has never been handed
+it — and updated when its hash moved since the submission
+Bing accepted. New pages go newest first, by the sitemap's
+lastmod; a new page the sitemap does not date goes after
+the dated ones. Updated pages follow in address order, and
+the address breaks every tie, so the order is the same on
+every run. While the day's quota stands at 100 and a
+backlog is still draining, the order decides which pages
+Bing meets that day: the new ones.
+
 The API key is fetched at run time and rests nowhere: the
 runner's own 1Password road (~/workspace/tools/op-secret.sh,
 which stands on Certifiable99 beside the runner) reads the
@@ -129,6 +142,47 @@ def current_hashes():
             continue
         out[url] = hashlib.sha256(f.read_bytes()).hexdigest()
     return out
+
+
+def sitemap_lastmods():
+    """{url: lastmod text} for the staged sitemap's dated
+    entries. Each <url> entry pairs a <loc> with an optional
+    <lastmod>; an entry without one leaves its URL out, and
+    a sitemap that cannot be read dates nothing. The values
+    compare as the ISO text the sitemap carries (a date, or
+    a datetime): later text is a newer page."""
+    sitemap = STAGED / "sitemap.xml"
+    if not sitemap.is_file():
+        return {}
+    out = {}
+    for entry in re.findall(r"<url>(.*?)</url>",
+                            sitemap.read_text(), re.S):
+        loc = re.search(r"<loc>([^<]+)</loc>", entry)
+        mod = re.search(r"<lastmod>([^<]+)</lastmod>", entry)
+        if loc and mod:
+            out[loc.group(1)] = mod.group(1)
+    return out
+
+
+def submission_order(current, standing):
+    """The due URLs in the order they go to Bing: new pages
+    first, updated pages after (the owner's rule, stated in
+    the header). New is a URL the manifest does not name;
+    updated is one whose hash moved. Among new pages the
+    sitemap's lastmod decides, newest first, and a page the
+    sitemap does not date goes after the dated ones; the
+    address breaks every tie, so the order is stable."""
+    due = [u for u, h in current.items() if standing.get(u) != h]
+    new = sorted(u for u in due if u not in standing)
+    updated = sorted(u for u in due if u in standing)
+    if new:
+        lastmods = sitemap_lastmods()
+        # Address order first, then a stable newest-first
+        # pass on the date: one date's pages keep their
+        # address order, and an undated page's empty date
+        # sorts it after every dated one.
+        new.sort(key=lambda u: lastmods.get(u, ""), reverse=True)
+    return new + updated
 
 
 def read_manifest():
@@ -248,7 +302,7 @@ def main():
     if current is None:
         return 0
     standing = read_manifest()
-    changed = sorted(u for u, h in current.items() if standing.get(u) != h)
+    changed = submission_order(current, standing)
     if not changed:
         report(f"Bing submit: no changed URLs among the "
                f"{len(current)} the sitemap names; nothing to submit.")
