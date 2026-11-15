@@ -22,6 +22,9 @@ Build Tests run on a change, before the push, and they gate the push.
   `python3 -m unittest test_windows_catalog.py test_apple_catalog.py`.
   The catalogue suites also run in the Catalogue validation workflow
   on every push and pull request.
+- The Bing submission step: `python3 test_bing_submit.py` — it runs
+  tools/bing-submit.py against a fixture tree and a local stub
+  endpoint. The real Bing API and the real key are never touched.
 - One catalogue test on its own:
   `python3 -m unittest test_windows_catalog.WindowsCatalogueTests.test_seed`
   — the same shape names any single test in either catalogue file.
