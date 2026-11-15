@@ -96,6 +96,14 @@ jobs:
           # no silent retry.
           npx --yes wrangler@4 pages deploy "$RUNNER_TEMP/site" --project-name actually-free --branch main --commit-hash "$GITHUB_SHA"
 
+      - name: Smoke the published copy
+        if: steps.hold.outputs.publish == 'true'
+        # The deploy smoke named in docs/E2E.md: three happy paths on
+        # the copy that just published. A red smoke fails this run —
+        # there is no promotion to hold, so the failed run is the
+        # loud alarm.
+        run: python3 tools/smoke.py
+
       - name: Say what happened
         if: always()
         env:
