@@ -10512,7 +10512,7 @@
    "open_source": true,
    "no_account": true
   },
-  "notes": "MIT or Apache-2.0 (dual-licensed); v0.16.1 released 2026-11-08. Pure Rust, native builds for Windows, macOS and Linux; the ArtCraft suite's installer and updater; Derick has it installed and in use (2026-11-07). Development state: early alpha (developer's own label).",
+  "notes": "MIT or Apache-2.0 (dual-licensed); v0.16.1 released 2026-11-08. Pure Rust, native builds for Windows, macOS and Linux; the ArtCraft suite's installer and updater; The owner has it installed and in use (2026-11-07). Development state: early alpha (developer's own label).",
   "sibling": "artcraft.launcher.mac"
  },
  {

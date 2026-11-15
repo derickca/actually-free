@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regression tests for the Actually Free site.
 
-Covers the failure modes Derick has caught in review:
+Covers the failure modes the owner has caught in review:
   1. Taxonomy placements (data/apps.json) — specific apps in expected homes.
   2. Subcategory filter order is alphabetical.
   3. Collapsed subcategory row: zero height, no overlap, gap preserved.
@@ -206,7 +206,7 @@ def main():
     apps = json.loads((HERE / "data/apps.json").read_text())
     m = {a["name"]: (a["category"], a["subcategory"]) for a in apps}
 
-    # 2. Taxonomy placements (Derick's rulings)
+    # 2. Taxonomy placements (the owner's rulings)
     expected = {
         "Chess Clock": ("Games", "Puzzle"),
         "Suspension Setup": ("Lifestyle", "Health"),
@@ -505,7 +505,7 @@ def main():
 
     # 10. Filter survives tile -> detail -> back: set filters, reload the
     # page (what back-button navigation does), filters are restored.
-    # (Derick, 2026-10-12.)
+    # (Decided 2026-10-12.)
     t = chrome_eval("", """
       if (!sessionStorage.getItem('af-test-phase')) {
         sessionStorage.setItem('af-test-phase', '1');
@@ -531,7 +531,7 @@ def main():
     check("filters: hero follows restored platform", d["hero"] == "Actually free Windows apps.", t)
     check("filters: grid non-empty after restore", d["tiles"] > 0, t)
 
-    # 11. Arrival auto-detect (Derick, 2026-10-16): a fresh visit with no
+    # 11. Arrival auto-detect (decided 2026-10-16): a fresh visit with no
     # saved filters preselects the visitor's own platform, headline
     # included; one tap on All clears it; platforms with no listings and
     # unknown platforms land on All. Each probe clears saved filters and
@@ -620,7 +620,7 @@ def main():
     check("arrive: iPhone hero copy", d["hero"] == "Actually free iOS apps.", t)
     check("arrive: iPhone grid non-empty", d["total"] > 0, t)
 
-    # 12. Saved state vs auto-detect (Derick, 2026-10-16): he visited on
+    # 12. Saved state vs auto-detect (decided 2026-10-16): he visited on
     # his Android phone, saw the Android view, then it reverted to All.
     # Cause: the pre-detection build had already saved a filter state
     # with platform "" into the tab session, and the new build treated

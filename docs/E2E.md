@@ -26,6 +26,12 @@ Build Tests run on a change, before the push, and they gate the push.
   person or agent landing the change looks at them before the push.
   Screenshots stay on the machine that took them; they never go to
   the results store.
+- The public-readiness guard: `python3 tools/check-public-readiness.py`
+  scans tracked files for personal information before a push. The
+  values it looks for stand in one machine-local private file,
+  never in this repo (the Privacy and Secrets Policy, section 6);
+  a run that finds no private file reports NOT RUN, which is not
+  a pass.
 
 A flake budget stands over Build Tests and Scenario Review. A test
 or scenario that fails and then passes, twice in a month, is

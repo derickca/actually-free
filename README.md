@@ -21,7 +21,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
 - `sitemap.xml`, `robots.txt`
 - `assets/` — styles.css, app.js, config.js, mascots
 
-## Derick's setup steps
+## The owner's setup steps
 
 1. **Create the repo** at `github.com/derickca/actually-free` (public fits
    the transparency brand) and push this folder.
@@ -29,7 +29,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
    `actually-free.com` (free SSL included).
 3. **Feedback** goes to the shared msg service (msg.certifiable.media) —
    no setup needed on the build machine. New reports land in the inbox at
-   https://msg.certifiable.media and notify Derick.
+   https://msg.certifiable.media and notify the owner.
 
 ## Corpus rules (baked into generate.py)
 
@@ -48,7 +48,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
   listings are the deliberate exception: ad-free, but their Play
   IAP/subscription labels are reported honestly instead of promised away.
 
-## Awaiting Derick's call (7 — not listed)
+## Awaiting the owner's call (7 — not listed)
 
 - **Retro Music** — FLAG: Play labels clean 2026-10-04, but a separate 'Retro Music Premium' unlocker app exists — verify the base app never upsells before featuring.
 - **Aves Libre** — FLAG: the Play listing (deckers.thibault.aves) is label-clean, but a paid Pro version exists — the F-Droid 'Libre' build is the fully-free one, listed here.

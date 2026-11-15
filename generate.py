@@ -24,7 +24,7 @@ SEED = os.path.expanduser("~/workspace/certifiable-apps/apps-seed.json")
 SEED_ORIGINS = {}
 SITE_URL = "https://actually-free.com"
 TAGLINE = "Find the free apps they don't want you to see."
-# The front-page bar, in Derick's words (2026-10-11): six promises, no Oxford comma.
+# The front-page bar, in the owner's words (2026-10-11): six promises, no Oxford comma.
 PROMISES = ["No ads", "No purchases", "No subscriptions", "No trials", "No nagging", "No surprise bundles"]
 
 # Platform glyphs: tiny inline SVGs identifying Android vs Windows listings.
@@ -264,7 +264,7 @@ CATEGORY_FIXUPS = {
 }
 
 # (category, subcategory) -> (new category, new subcategory).
-# The max-10 taxonomy proposal, decided with Derick in the taxonomy-map
+# The max-10 taxonomy proposal, decided with the owner in the taxonomy-map
 # session 2026-10-06 (~/workspace/taxonomy-map/build_map.py). Games 12->7,
 # Media 15->8, Utilities 31->12. Applied at build time so the seed keeps
 # the raw values, same pattern as CATEGORY_FIXUPS.
@@ -273,19 +273,19 @@ SUB_REMAP = {
     ("Games", "Word"): ("Games", "Puzzle"),
     ("Games", "Shooter"): ("Games", "Arcade"),
     ("Games", "Roguelike"): ("Games", "RPG"),
-    ("Games", "Sandbox"): ("Games", "Arcade"),          # Derick's call
-    ("Games", "Streaming"): ("Games", "Players"),      # Derick 2026-10-06
-    ("Games", "Emulator"): ("Games", "Players"),       # Derick 2026-10-06
+    ("Games", "Sandbox"): ("Games", "Arcade"),          # the owner's call
+    ("Games", "Streaming"): ("Games", "Players"),      # decided 2026-10-06
+    ("Games", "Emulator"): ("Games", "Players"),       # decided 2026-10-06
     # Media: 15 -> 8
     ("Media", "Audio recorder"): ("Media", "Audio"),
     ("Media", "Books"): ("Media", "Read"),
     ("Media", "Comics"): ("Media", "Read"),
     ("Media", "RSS reader"): ("Media", "Read"),
     ("Media", "Camera"): ("Media", "Photos"),
-    ("Media", "Image editor"): ("Media", "Photos"),    # Derick's call
-    ("Media", "Video player"): ("Media", "Video"),     # Derick's call
-    ("Media", "Video editor"): ("Media", "Video"),     # Derick's call
-    ("Media", "Downloads"): ("Media", "Video"),        # Derick's call
+    ("Media", "Image editor"): ("Media", "Photos"),    # the owner's call
+    ("Media", "Video player"): ("Media", "Video"),     # the owner's call
+    ("Media", "Video editor"): ("Media", "Video"),     # the owner's call
+    ("Media", "Downloads"): ("Media", "Video"),        # the owner's call
     # Utilities: 31 -> 12
     ("Utilities", "File manager"): ("Utilities", "Files"),
     ("Utilities", "File Sync"): ("Utilities", "Files"),
@@ -308,24 +308,24 @@ SUB_REMAP = {
     ("Utilities", "Flashlight"): ("Utilities", "Gadgets"),
     ("Utilities", "Automation"): ("Utilities", "Automate"),
     ("Utilities", "AI Assistant"): ("Utilities", "Automate"),
-    ("Utilities", "Password manager"): ("System", "Security"),  # Derick 2026-10-06
-    ("Utilities", "Backup"): ("System", "Security"),            # Derick 2026-10-06
-    ("Utilities", "Safety"): ("System", "Security"),            # Derick 2026-10-06
+    ("Utilities", "Password manager"): ("System", "Security"),  # decided 2026-10-06
+    ("Utilities", "Backup"): ("System", "Security"),            # decided 2026-10-06
+    ("Utilities", "Safety"): ("System", "Security"),            # decided 2026-10-06
     ("Utilities", "Email"): ("Communications", "Messaging"),
-    ("Utilities", "QR tools"): ("Utilities", "Gadgets"),        # Derick 2026-10-06
-    ("Utilities", "Visual search"): ("Utilities", "Internet"),  # Derick 2026-10-06
-    ("Utilities", "Data collection"): ("Utilities", "Internet"),# Derick 2026-10-06
-    # Lifestyle stragglers (Derick 2026-10-06)
+    ("Utilities", "QR tools"): ("Utilities", "Gadgets"),        # decided 2026-10-06
+    ("Utilities", "Visual search"): ("Utilities", "Internet"),  # decided 2026-10-06
+    ("Utilities", "Data collection"): ("Utilities", "Internet"),# decided 2026-10-06
+    # Lifestyle stragglers (decided 2026-10-06)
     ("Lifestyle", "Pedometer"): ("Lifestyle", "Health"),
-    # Media: Graphics folds into Photos; Media center + TV tracker become Home Theater (Derick 2026-10-06)
+    # Media: Graphics folds into Photos; Media center + TV tracker become Home Theater (decided 2026-10-06)
     ("Media", "Graphics"): ("Media", "Photos"),
     ("Media", "Media center"): ("Media", "Home Theater"),
     ("Media", "TV tracker"): ("Media", "Home Theater"),
-    # Utilities -> System: Files, Internet, Automate move up a level (Derick 2026-10-06)
+    # Utilities -> System: Files, Internet, Automate move up a level (decided 2026-10-06)
     ("Utilities", "Files"): ("System", "Files"),
     ("Utilities", "Internet"): ("System", "Internet"),
     ("Utilities", "Automate"): ("System", "Automate"),
-    # Taxonomy v2 (Derick 2026-10-11, Windows expansion): new top-level
+    # Taxonomy v2 (decided 2026-10-11, Windows expansion): new top-level
     # Productivity. Old Lifestyle/Productivity becomes Productivity/Office
     # (avoids confusion with the top-level name); System/Files moves under
     # Productivity. Chains resolve iteratively, so Utilities/Files still
@@ -368,7 +368,7 @@ APP_REMAP = {
     "MakeACopy": ("Productivity", "Office"),             # document scanner, v2
     "BetterCounter": ("Lifestyle", "Health"),        # habit tracker; Loop is in Health
     "Suspension Setup": ("Lifestyle", "Health"),     # bike suspension tracker -> fitness
-    # Taxonomy v2 (Derick 2026-10-11): office-type file tools -> Productivity/Office
+    # Taxonomy v2 (decided 2026-10-11): office-type file tools -> Productivity/Office
     "FairScan \u2013 PDF Scanner & OCR": ("Productivity", "Office"),
     "Gander": ("Productivity", "Office"),
     "Google Docs": ("Productivity", "Office"),
@@ -508,7 +508,7 @@ def load_corpus():
         with open(win_seed, encoding="utf-8") as f:
             wseed = json.load(f)
         take(wseed, win_seed)
-    # Mac and iOS listings likewise (Apple platforms, Derick 2026-10-16).
+    # Mac and iOS listings likewise (Apple platforms, decided 2026-10-16).
     for extra in ("macos-seed.json", "ios-seed.json"):
         extra_seed = os.path.join(HERE, "data", extra)
         if os.path.exists(extra_seed):
@@ -559,7 +559,7 @@ def resolve_siblings(apps):
 # ---------------------------------------------------------------------------
 # Feedback — the browser POSTs JSON to the shared msg service
 # (https://feedback.certifiable.media/api/submit), which stores it and notifies
-# Derick. No per-build secret, no third party. Anti-spam, all client-side:
+# the owner. No per-build secret, no third party. Anti-spam, all client-side:
 # honeypot trap, 3-second open rule, 3-per-10-minutes / 10-per-day limits,
 # length caps; the service re-checks server-side.
 # ---------------------------------------------------------------------------
@@ -832,7 +832,7 @@ STORE_LABELS = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"), ("openapk", "Ope
 # whether a pill appears is decided by the apps.json payload at runtime (a pill
 # with no matching apps is dropped, so a stale page can never show a pill that
 # empties the grid). The client renders them; nothing filterable is baked into
-# the HTML shell. STORE order is Derick's preferred filter order.
+# the HTML shell. STORE order is the owner's preferred filter order.
 FILTER_STORES = [("fdroid", "F-Droid"), ("izzy", "IzzyOnDroid"),
                  ("openapk", "OpenAPK"), ("play", "Google Play"),
                  ("appstore", "App Store"),
@@ -1164,7 +1164,7 @@ def build_suggest(forms):
 
 
 def build_free_bar(forms):
-    # "What Is Free?" — the quality bar, in Derick's words (2026-10-11).
+    # "What Is Free?" — the quality bar, in the owner's words (2026-10-11).
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head("What Is Free? \\u2014 Actually Free",
@@ -2459,7 +2459,7 @@ __PLATFORM_NAMES__
     if (typeof f.sort === "string") state.sort = f.sort;
     return true;
   }
-  /* Arrival auto-detect (Derick, 2026-10-16): the platform the visitor
+  /* Arrival auto-detect (decided 2026-10-16): the platform the visitor
      is browsing on, or "" when it cannot be told. iPads in desktop mode
      send a Macintosh UA, so touch points break the tie toward iOS.
      Android is tested before Linux (its UA carries both) and iPhone
@@ -2713,7 +2713,7 @@ __PLATFORM_NAMES__
          saved by an earlier build (or by renders before the visitor
          ever touched the control) holds platform "" without any choice
          behind it, and treating that as a deliberate All suppressed
-         detection for returning visitors (Derick, 2026-10-16 — saw
+         detection for returning visitors (decided 2026-10-16 — saw
          the Android view, then it reverted to All). A real tap on the
          segment sets platformChosen and always wins. Detection also
          applies only when the catalogue has listings for the
@@ -2807,7 +2807,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
 - `sitemap.xml`, `robots.txt`
 - `assets/` — styles.css, app.js, config.js, mascots
 
-## Derick's setup steps
+## The owner's setup steps
 
 1. **Create the repo** at `github.com/derickca/actually-free` (public fits
    the transparency brand) and push this folder.
@@ -2815,7 +2815,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
    `actually-free.com` (free SSL included).
 3. **Feedback** goes to the shared msg service (msg.certifiable.media) —
    no setup needed on the build machine. New reports land in the inbox at
-   https://msg.certifiable.media and notify Derick.
+   https://msg.certifiable.media and notify the owner.
 
 ## Corpus rules (baked into generate.py)
 
@@ -2834,7 +2834,7 @@ verified listings (`include` + `per-badge` + `free-enough`), adds QR Cards, and 
   listings are the deliberate exception: ad-free, but their Play
   IAP/subscription labels are reported honestly instead of promised away.
 
-## Awaiting Derick's call (7 — not listed)
+## Awaiting the owner's call (7 — not listed)
 
 {awaiting}
 

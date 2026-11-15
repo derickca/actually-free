@@ -1165,7 +1165,7 @@
    "fdroid_antifeatures": [],
    "method": "play-labels-span"
   },
-  "notes": "VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label. Sources: (1) in-app donations to the Signal Foundation via Google Pay (non-blocking, all features free — fits Derick's donate rule); (2) NEW Sep 2026 beta: $2.99 one-time fee for optional phone-numberless registration (anti-spam measure; standard phone-number registration remains free). Not a subscription or feature paywall, but money does change hands in-app. https://cyberinsider.com/signal-tests-account-registration-without-phone-number-on-android/",
+  "notes": "VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label. Sources: (1) in-app donations to the Signal Foundation via Google Pay (non-blocking, all features free — fits the owner's donate rule); (2) NEW Sep 2026 beta: $2.99 one-time fee for optional phone-numberless registration (anti-spam measure; standard phone-number registration remains free). Not a subscription or feature paywall, but money does change hands in-app. https://cyberinsider.com/signal-tests-account-registration-without-phone-number-on-android/",
   "category": "Utilities",
   "status": "flag"
  },
@@ -1282,7 +1282,7 @@
    "fdroid_antifeatures": [],
    "method": "play-labels-span"
   },
-  "notes": "VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label, almost certainly the Thunderbird donation option (non-blocking). F-Droid build clean, no anti-features. If donations-only, qualifies per Derick's donate rule; list via F-Droid badge regardless. Note: Play rating 3.05 reflects the K-9→Thunderbird transition grumbles.",
+  "notes": "VERDICT: NEEDS HUMAN CALL — Play shows In-App Purchases label, almost certainly the Thunderbird donation option (non-blocking). F-Droid build clean, no anti-features. If donations-only, qualifies per the owner's donate rule; list via F-Droid badge regardless. Note: Play rating 3.05 reflects the K-9→Thunderbird transition grumbles.",
   "category": "Utilities",
   "status": "flag"
  },
@@ -9851,7 +9851,7 @@
    "method": "fdroid"
   },
   "description": "Meditation timer with session log, stats, and Nextcloud sync.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -9875,7 +9875,7 @@
    "method": "play+fdroid"
   },
   "description": "A modern, open-source podcast app for Android.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -9897,7 +9897,7 @@
    "method": "fdroid"
   },
   "description": "Fast, natural, private text-to-speech for your whole phone. Works offline.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -9919,7 +9919,7 @@
    "method": "play+fdroid"
   },
   "description": "Encrypted mesh chat over Wi-Fi Aware and Bluetooth — no internet, no servers.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -9941,7 +9941,7 @@
    "method": "play+fdroid"
   },
   "description": "Lightweight and privacy-conscious virtual keyboard for Android.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -9963,7 +9963,7 @@
    "method": "fdroid"
   },
   "description": "Advanced activities and shortcuts launcher.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -9985,7 +9985,7 @@
    "method": "fdroid"
   },
   "description": "A privacy-first, open-source platform for knowledge management.",
-  "notes": "Held for Derick's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
+  "notes": "Held for the owner's review 2026-10-04; verified clean 2026-10-05 (F-Droid anti-feature-free; Play labels clean where listed).",
   "status": "include",
   "needs_review": false,
   "review_notes": ""
@@ -11022,7 +11022,7 @@
   "description": "Cleaning routines based on the FlyLady method: morning, afternoon, and evening checklists plus weekly zone missions.",
   "has_iap": true,
   "free_enough_reason": "The FlyLadyPlus subscription (~$5/mo, in-app purchase) unlocks custom zones and achievements — but the free tier is the complete FlyLady method: morning, afternoon, and evening routines, zone cleaning lists, daily missions, and reminders. No ads.",
-  "notes": "Free Enough charter member 2026-10-06 (Derick's seed example): Play shows In-app purchases; free = full method, no ads.",
+  "notes": "Free Enough charter member 2026-10-06 (the owner's seed example): Play shows In-app purchases; free = full method, no ads.",
   "status": "free-enough"
  },
  {
@@ -11064,7 +11064,7 @@
   "description": "Local-first Markdown notes with plugins and themes; free for personal and commercial use.",
   "has_iap": false,
   "free_enough_reason": "Sync (~$4/mo) and Publish (~$16/mo) are separate services sold on obsidian.md — the app itself is the full local-first notes app with plugins and themes, and nothing in it requires payment. No ads, no in-app purchases.",
-  "notes": "Free Enough charter member 2026-10-06 (Derick's seed example): Play labels clean; paid tiers are website-only services.",
+  "notes": "Free Enough charter member 2026-10-06 (the owner's seed example): Play labels clean; paid tiers are website-only services.",
   "status": "free-enough"
  },
  {
