@@ -36,6 +36,14 @@ Cases:
      (the API's other ErrorCode 8 shape, the one the second
      production run met): one request only, the run exits 0,
      the quota is reported spent and the manifest stands.
+ 10. Submission order, class before date (the owner's rule,
+     2026-11-15): with a brand-new page and two updated pages
+     due and a quota of one, the one accepted URL is the new
+     page; the updated pages stay due and go on the next run.
+ 11. Submission order among new pages: on a dated sitemap
+     with no manifest standing, the pages go newest first by
+     lastmod — not in sitemap order and not in address
+     order — and a page the sitemap does not date goes last.
 
 Usage:  python3 test_bing_submit.py
 Exit 0 = every case passed, 1 = a failure (named on its line).
@@ -366,7 +374,107 @@ def main():
               f"out={r.stdout.strip()[:160]}")
         stub.exceeded = False
 
-    print(f"test_bing_submit: {9 - len(failures)}/9 cases passed"
+        # Case 10 — order, class first: a brand-new page and
+        # two updated pages are due (the home page's v3 bytes
+        # from case 9 are still unsubmitted, and /suggest
+        # changes again here), and the day's quota fits one.
+        # The one URL Bing accepts is the new page.
+        new_url = SITE + "/app/new-tool-windows"
+        (staged / "app" / "new-tool-windows.html").write_text(
+            "new tool v1")
+        (staged / "suggest.html").write_text("suggest page v3")
+        locs = [f"  <url><loc>{SITE}{p}</loc></url>" for p in PAGES]
+        locs.append(f"  <url><loc>{new_url}</loc></url>")
+        (staged / "sitemap.xml").write_text(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/'
+            'sitemap/0.9">\n' + "\n".join(locs) + "\n</urlset>\n")
+        stub.quota = 1
+        stub.requests.clear()
+        r = run()
+        fitted = []
+        if len(stub.requests) == 2:
+            fitted = json.loads(
+                stub.requests[1][1]).get("urlList") or []
+        check("case 10: with quota for one, the new page goes "
+              "before updated pages",
+              r.returncode == 0 and len(stub.requests) == 2
+              and fitted == [new_url],
+              f"rc={r.returncode} requests={len(stub.requests)} "
+              f"fitted={fitted}")
+        home_v3 = hashlib.sha256(b"home page v3").hexdigest()
+        check("case 10: the new page stands in the manifest, "
+              "the updated home page stays due",
+              manifest_urls().get(new_url) is not None
+              and manifest_urls().get(SITE + "/") != home_v3,
+              f"manifest={sorted(manifest_urls())}")
+        stub.quota = None
+        stub.requests.clear()
+        r = run()
+        check("case 10: the next run submits the updated pages "
+              "that stayed due",
+              r.returncode == 0
+              and manifest_urls().get(SITE + "/") == home_v3
+              and manifest_urls().get(SITE + "/suggest")
+              == hashlib.sha256(b"suggest page v3").hexdigest(),
+              f"manifest={sorted(manifest_urls())}")
+
+        # Case 11 — order among new pages: a dated sitemap, no
+        # manifest. The sitemap lists the pages in neither date
+        # nor address order; the submission goes newest first
+        # by lastmod, and the undated page goes last.
+        staged3 = td / "site3"
+        dated = [
+            ("/app/aaa-oldest", "2026-11-01"),
+            ("/app/bbb-undated", None),
+            ("/app/zzz-newest", "2026-11-14"),
+            ("/app/mmm-middle", "2026-11-08"),
+        ]
+        locs = []
+        for path, mod in dated:
+            f = staged3 / url_to_file(SITE + path)
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(f"{path} v1")
+            entry = f"  <url><loc>{SITE}{path}</loc>"
+            if mod:
+                entry += f"<lastmod>{mod}</lastmod>"
+            locs.append(entry + "</url>")
+        (staged3 / "sitemap.xml").write_text(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/'
+            'sitemap/0.9">\n' + "\n".join(locs) + "\n</urlset>\n")
+        manifest3 = td / "manifest3.json"
+        env = dict(os.environ)
+        env.update({
+            "BING_STAGED_DIR": str(staged3),
+            "BING_MANIFEST": str(manifest3),
+            "BING_SUBMIT_ENDPOINT": stub.endpoint,
+            "OP_SECRET_SH": str(helper),
+        })
+        env.pop("BING_WEBMASTER_API_KEY", None)
+        env.pop("GITHUB_STEP_SUMMARY", None)
+        stub.requests.clear()
+        r = subprocess.run(
+            [sys.executable, str(SCRIPT)],
+            capture_output=True, text=True, env=env, timeout=60)
+        sent = []
+        if stub.requests:
+            sent = json.loads(
+                stub.requests[0][1]).get("urlList") or []
+        want_order = [SITE + "/app/zzz-newest",
+                      SITE + "/app/mmm-middle",
+                      SITE + "/app/aaa-oldest",
+                      SITE + "/app/bbb-undated"]
+        check("case 11: new pages go newest first by lastmod, "
+              "the undated page last",
+              r.returncode == 0 and len(stub.requests) == 1
+              and sent == want_order,
+              f"rc={r.returncode} sent={sent}")
+        check("case 11: manifest written with every new page",
+              sorted(json.loads(
+                  manifest3.read_text())["urls"]) == sorted(want_order))
+
+    print(f"test_bing_submit: {11 - len(failures)}/11 cases passed"
           if not failures else
           f"test_bing_submit: FAILURES in: {', '.join(failures)}")
     return 1 if failures else 0
