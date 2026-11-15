@@ -104,6 +104,35 @@ jobs:
         # loud alarm.
         run: python3 tools/smoke.py
 
+      # Bing URL submission (issue #40): the pages this publish
+      # changed go to Bing's Webmaster API in the same run, so
+      # discovery stops waiting on Bing's own schedule. The step
+      # runs after the publish and its smoke — only a publish
+      # that landed is submitted. tools/bing-submit.py hashes
+      # the staged tree this run published and diffs the hashes
+      # against the manifest its last accepted submission left
+      # on this runner's disk: publishing is batched by the
+      # PUBLISH_HOLD switch, so no push range can name what a
+      # publish changed — the staged bytes can. The API key is
+      # fetched at run time from the owner's 1Password through
+      # the runner's own op-secret.sh (the 'Bing Webmaster API
+      # Key' item, Service Accounts vault) and rests nowhere;
+      # the step adds no Actions secret. The step cannot fail
+      # the run: the script fails soft by design and reports in
+      # the log and the step summary, and this step's own exit
+      # is pinned to 0 behind it — a publish never waits on
+      # Bing, and the manifest only advances on acceptance, so
+      # an unsubmitted change is retried by the next publish.
+      - name: Submit changed URLs to Bing
+        if: steps.hold.outputs.publish == 'true'
+        env:
+          BING_STAGED_DIR: ${{ runner.temp }}/site
+        run: |
+          set +e
+          python3 tools/bing-submit.py | tee /tmp/bing-submit.txt
+          grep '^Bing submit:' /tmp/bing-submit.txt | tail -1 >> "$GITHUB_STEP_SUMMARY" || true
+          exit 0
+
       - name: Say what happened
         if: always()
         env:
