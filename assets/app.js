@@ -451,7 +451,7 @@ var PLATFORM_NAMES = {
     if (typeof f.sort === "string") state.sort = f.sort;
     return true;
   }
-  /* Arrival auto-detect (Derick, 2026-10-16): the platform the visitor
+  /* Arrival auto-detect (decided 2026-10-16): the platform the visitor
      is browsing on, or "" when it cannot be told. iPads in desktop mode
      send a Macintosh UA, so touch points break the tie toward iOS.
      Android is tested before Linux (its UA carries both) and iPhone
@@ -705,7 +705,7 @@ var PLATFORM_NAMES = {
          saved by an earlier build (or by renders before the visitor
          ever touched the control) holds platform "" without any choice
          behind it, and treating that as a deliberate All suppressed
-         detection for returning visitors (Derick, 2026-10-16 — saw
+         detection for returning visitors (decided 2026-10-16 — saw
          the Android view, then it reverted to All). A real tap on the
          segment sets platformChosen and always wins. Detection also
          applies only when the catalogue has listings for the
