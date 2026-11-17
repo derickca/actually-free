@@ -1236,6 +1236,127 @@ def build_404(forms):
 """
 
 
+def build_ops_page():
+    # The Ops page's full face (issue #32). Served by the /ops
+    # Pages Function (functions/ops.js) to a session holding the
+    # Ops grant or the test standing; everyone else is served
+    # the 404 page. The function's substitutions stand as the
+    # three HTML comments: the account mark (the kit's own
+    # initials drawing), the account name, and the test banner.
+    # The standings themselves are read from /ops/data by the
+    # page's script, so the face carries no standing of its own.
+    return """<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ops \\u2014 Actually Free</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/mascot-friendly.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="ops-header">
+  <div class="ops-header-inner">
+    <a class="ops-brand" href="/">
+      <img src="/assets/mascot-friendly.webp" alt="" width="36" height="36">
+      <span>Actually Free <em>Ops</em></span>
+    </a>
+    <div class="ops-account">
+      <button id="account-btn" class="ops-account-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Your MemberSpark account"><!--ACCOUNT_MARK--></button>
+      <div class="ops-menu" id="account-menu" hidden>
+        <p class="ops-menu-name"><!--ACCOUNT_NAME--></p>
+        <a href="https://memberspark.ca">Your MemberSpark account</a>
+        <form method="post" action="/ops-signout"><button type="submit" id="signout-btn">Sign out</button></form>
+      </div>
+    </div>
+  </div>
+</header>
+<!--TEST_BANNER-->
+<main class="ops-main">
+  <h1>Ops</h1>
+  <p class="ops-sub">Actually Free's standing, read from its own machinery. This page only reads; the controls live where they always have.</p>
+  <section class="ops-panel"><h2>Publishing</h2><div data-panel="publishing"><p class="ops-note">Reading\\u2026</p></div></section>
+  <section class="ops-panel"><h2>Checks</h2><div data-panel="checks"><p class="ops-note">Reading\\u2026</p></div></section>
+  <section class="ops-panel"><h2>The site</h2><div data-panel="site"><p class="ops-note">Reading\\u2026</p></div></section>
+  <section class="ops-panel"><h2>Backup</h2><div data-panel="backup"><p class="ops-note">Reading\\u2026</p></div></section>
+  <section class="ops-panel"><h2>Doors</h2><div data-panel="doors"><p class="ops-note">Reading\\u2026</p></div></section>
+</main>
+<script>
+(function () {
+  var btn = document.getElementById("account-btn");
+  var menu = document.getElementById("account-menu");
+  btn.addEventListener("click", function () {
+    var open = menu.hidden;
+    menu.hidden = !open;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  document.addEventListener("click", function (e) {
+    if (!menu.hidden && !e.target.closest(".ops-account")) {
+      menu.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function when(iso) { return iso ? String(iso).replace("T", " ").slice(0, 16) + " UTC" : "\\u2014"; }
+  function rows(el, pairs) {
+    el.innerHTML = pairs.map(function (p) {
+      return '<div class="ops-row"><span class="k">' + esc(p[0]) + '</span><span class="v">' + esc(p[1]) + "</span></div>";
+    }).join("");
+  }
+  function note(el, text) { el.innerHTML = '<p class="ops-note">' + esc(text) + "</p>"; }
+  fetch("/ops/data", { headers: { "accept": "application/json" } })
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      var pub = document.querySelector('[data-panel="publishing"]');
+      if (!d.publishing.configured) note(pub, d.publishing.note);
+      else rows(pub, [
+        ["Last publish run", when(d.publishing.at)],
+        ["Run result", d.publishing.result],
+        ["Publish step", d.publishing.published],
+        ["Commit", d.publishing.commit]
+      ]);
+      var chk = document.querySelector('[data-panel="checks"]');
+      if (!d.checks.configured) note(chk, d.checks.note);
+      else rows(chk, d.checks.rows.map(function (c) { return [c.name, c.result + " \\u00b7 " + when(c.at)]; }));
+      rows(document.querySelector('[data-panel="site"]'), [
+        ["Listings", String(d.build.listings)],
+        ["App pages", String(d.build.appPages)],
+        ["Sitemap addresses", String(d.build.sitemapUrls)],
+        ["Site built", when(d.build.generatedAt)],
+        ["Build stamp", d.build.buildStamp]
+      ]);
+      note(document.querySelector('[data-panel="backup"]'), d.backup.line);
+      rows(document.querySelector('[data-panel="doors"]'), [
+        ["Signed in as", d.identity.name || d.identity.email],
+        ["Standing", d.identity.standing],
+        ["Sign-in", "MemberSpark"]
+      ]);
+    })
+    .catch(function () {
+      document.querySelectorAll("[data-panel]").forEach(function (el) {
+        note(el, "The standing could not be read just now.");
+      });
+    });
+})();
+</script>
+</body>
+</html>
+"""
+
+
+def js_string_module(export_name, value, header):
+    """A generated JS module carrying one string, byte for byte
+    (the certifiablemedia shop's ops-page module shape)."""
+    return header + "export const " + export_name + " = " + json.dumps(value) + ";\n"
+
+
 def source_date(path):
     """The date a source file last changed: its last git commit date, or
     the file's own modified date when no git history answers."""
@@ -2013,6 +2134,35 @@ a.store-badge:hover { filter: brightness(0.96); }
   .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
   .detail-card { padding: 18px; }
 }
+
+/* ---------- Ops surface (issue #32) ---------- */
+/* The /ops page is served by a Pages Function to a session with
+   standing; these rules dress it in the site's own tokens. */
+.ops-header { background: var(--header-bg); border-bottom: 1px solid var(--card-edge); }
+.ops-header-inner { max-width: 880px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+.ops-brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; }
+.ops-brand img { width: 36px; height: 36px; }
+.ops-brand em { font-style: normal; color: var(--accent); }
+.ops-account { margin-left: auto; position: relative; }
+.ops-account-btn { background: none; border: none; padding: 2px; cursor: pointer; border-radius: 50%; line-height: 0; }
+.ops-mark { display: block; width: 38px; height: 38px; border-radius: 50%; overflow: hidden; }
+.ops-mark svg { display: block; width: 38px; height: 38px; }
+.ops-mark-fallback { display: flex; align-items: center; justify-content: center; background: var(--accent); color: var(--on-accent); font-weight: 700; }
+.ops-menu { position: absolute; right: 0; top: calc(100% + 8px); background: var(--card); border: 1px solid var(--card-edge); border-radius: 12px; box-shadow: var(--shadow); padding: 10px; min-width: 230px; z-index: 20; }
+.ops-menu-name { margin: 2px 6px 8px; font-weight: 600; color: var(--ink); }
+.ops-menu a, .ops-menu form button { display: block; width: 100%; box-sizing: border-box; text-align: left; padding: 8px 6px; color: var(--ink); text-decoration: none; background: none; border: none; font: inherit; cursor: pointer; border-radius: 8px; }
+.ops-menu a:hover, .ops-menu form button:hover { background: var(--accent-soft); }
+.ops-banner { background: var(--accent-soft); color: var(--ink); text-align: center; padding: 8px 12px; font-weight: 600; }
+.ops-main { max-width: 880px; margin: 0 auto; padding: 20px 16px 40px; }
+.ops-main h1 { margin: 6px 0 4px; }
+.ops-sub { color: var(--muted); margin: 0 0 18px; }
+.ops-panel { background: var(--card); border: 1px solid var(--card-edge); border-radius: var(--radius); padding: 16px 18px; margin: 0 0 14px; }
+.ops-panel h2 { margin: 0 0 10px; font-size: 1.05rem; }
+.ops-row { display: flex; justify-content: space-between; gap: 16px; padding: 7px 0; border-top: 1px solid var(--card-edge); }
+.ops-row:first-of-type { border-top: none; }
+.ops-row .k { color: var(--muted); }
+.ops-row .v { text-align: right; font-weight: 600; }
+.ops-note { color: var(--muted); margin: 8px 0 0; }
 """
 
 JS_CONTENT = r"""
@@ -2924,6 +3074,12 @@ self.addEventListener("activate", (e) => {{
 self.addEventListener("fetch", (e) => {{
   const u = new URL(e.request.url);
   if (e.request.method !== "GET" || u.origin !== self.location.origin) return;
+  // The Ops surface and the MemberSpark sign-in road are fenced
+  // from this cache by construction (issue #32): the worker
+  // never answers for them and never stores their answers, so
+  // no signed-in face can be served to another request.
+  if (u.pathname === "/ops" || u.pathname.startsWith("/ops/") ||
+      u.pathname === "/ops-signout" || u.pathname.startsWith("/auth/memberspark/")) return;
   e.respondWith(
     caches.match(e.request).then((hit) => {{
       if (hit) return hit;
@@ -3064,7 +3220,8 @@ def main():
     write("index.html", index_html)
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
-    write("404.html", build_404(forms))
+    not_found_html = build_404(forms)
+    write("404.html", not_found_html)
     for app in apps:
         write(f"app/{app['slug']}.html", build_detail(app, forms))
     # Prune detail pages whose app has left the catalogue. A rename or
@@ -3076,7 +3233,8 @@ def main():
         if stale.endswith(".html") and stale not in keep:
             os.remove(os.path.join(app_dir, stale))
             print(f"pruned stale detail page: app/{stale}")
-    write("sitemap.xml", build_sitemap(apps))
+    sitemap_text = build_sitemap(apps)
+    write("sitemap.xml", sitemap_text)
     write("robots.txt", ROBOTS)
     write("assets/styles.css", CSS_CONTENT.strip() + "\n")
     write("assets/app.js", app_js)
@@ -3086,6 +3244,43 @@ def main():
     write("manifest.webmanifest", MANIFEST)
     write("sw.js", build_sw(build_id))
     print("pwa: manifest, sw.js (%s), icons" % build_id)
+    # The Ops surface's generated modules (issue #32): the /ops
+    # Function serves the Ops page and the 404 page from these
+    # modules, never from published static files, and reads the
+    # build record for the site panel. The 404 module carries
+    # build_404's exact bytes, so the face the Function serves
+    # to a non-holder is the site's ordinary 404 page.
+    write("functions/lib/not-found-page.js", js_string_module(
+        "NOT_FOUND_HTML", not_found_html,
+        "// The site's ordinary 404 page, generated from\n"
+        "// build_404 in generate.py \u2014 do not edit by hand\n"
+        "// (issue #32). Served by functions/ops.js, with status\n"
+        "// 404, to anyone who does not hold the Ops grant: the\n"
+        "// same bytes Pages serves for any missing page.\n"))
+    write("functions/lib/ops-page.js", js_string_module(
+        "OPS_PAGE_HTML", build_ops_page(),
+        "// The Ops page's full face, generated from\n"
+        "// build_ops_page in generate.py \u2014 do not edit by\n"
+        "// hand (issue #32). Served by functions/ops.js only\n"
+        "// to a session with standing; everyone else is served\n"
+        "// the not-found page (functions/lib/not-found-page.js).\n"))
+    build_record = {
+        "generatedAt": datetime.datetime.now(
+            datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "buildStamp": build_id,
+        "listings": len(apps),
+        "appPages": len(apps),
+        "sitemapUrls": sitemap_text.count("<loc>"),
+    }
+    write("functions/lib/build-record.js",
+          "// The build record the Ops surface reads for its\n"
+          "// site panel, generated by generate.py \u2014 do not\n"
+          "// edit by hand (issue #32). It states what this\n"
+          "// tree's generation knew: when it ran and what the\n"
+          "// catalogue held. It is a read, never a writer.\n"
+          "export const BUILD_RECORD = "
+          + json.dumps(build_record, indent=1) + ";\n")
+    print("ops: page, not-found and build-record modules written")
     write("README.md", build_readme())
     print("done: index, %d detail pages, sitemap, robots, assets, README"
           % len(apps))
