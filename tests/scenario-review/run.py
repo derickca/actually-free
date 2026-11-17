@@ -178,8 +178,9 @@ def main(argv):
                         results.append(walk(rig, base))
                     for result in results:
                         for page in result.get("pages") or []:
-                            slug = (page.strip("/").replace("/", "-")
-                                    or "home")
+                            slug = (page.strip("/")
+                                    .removesuffix(".html")
+                                    .replace("/", "-") or "home")
                             drive.screenshot(
                                 rig, base, page,
                                 weekday_dir / f"{run_id}-{slug}.png")
