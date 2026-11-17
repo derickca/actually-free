@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Public-readiness guard: no personal information in tracked files.
 
-The Privacy and Secrets Policy (agents-policy,
-docs/privacy-and-secrets-policy.md, section 6) requires a
-public-readiness guard that checks tracked files for personal
-information. The names and values it looks for are themselves
+The Privacy and Secrets standard (agents-policy,
+standards/how-we-work/privacy-and-secrets.md, section 6)
+requires a public-readiness guard that checks tracked files
+for personal information. The names and values it looks for are themselves
 private, so they never stand in this repo: they live in one
 machine-local private file, provisioned by the owner once per
 machine (the policy, section 3).
