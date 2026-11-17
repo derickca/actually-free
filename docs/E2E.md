@@ -25,7 +25,8 @@ Build Tests run on a change, before the push, and they gate the push.
   `python3 tools/check-apple.py` and
   `python3 -m unittest test_windows_catalog.py test_apple_catalog.py`.
   The catalogue suites also run in the Catalogue validation workflow
-  on every push and pull request.
+  on every push to main and every pull request — a docs-only change
+  runs nothing there (Test, Build and Release, §4).
 - The Bing submission step: `python3 test_bing_submit.py` — it runs
   tools/bing-submit.py against a fixture tree and a local stub
   endpoint. The real Bing API and the real key are never touched.
@@ -102,6 +103,15 @@ journey or the owner signs off on the gap. A core journey is never
 deleted. No test or scenario stands quarantined today.
 
 ## The deploy smoke
+
+Landing and publishing are separate acts (the PUBLISH_HOLD switch
+in AGENTS.md); a hand dispatch publishes at once. A docs-only push
+runs no deploy at all: documentation is nothing the service serves
+(Test, Build and Release, §4), so the deploy workflow's push trigger
+ignores Markdown-only pushes, the same exclusion the Catalogue
+validation workflow carries. The docs ride the next real publish's
+archive, and no publish means no Release Review row is declared for
+a change that published nothing.
 
 Two publish guards stand inside the deploy before the publish
 step, in the same workflow (issue #37): the publish-set check

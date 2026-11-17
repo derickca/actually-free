@@ -16,6 +16,13 @@ name: Deploy site to Cloudflare (Pages)
 on:
   push:
     branches: [main]
+    # Documentation files are nothing the service serves, so a
+    # docs-only push runs nothing (Test, Build and Release, §4) —
+    # the same exclusion the Catalogue validation workflow carries.
+    # The docs ride the next real publish's archive, as they do today.
+    paths-ignore:
+      - '*.md'
+      - '**/*.md'
   workflow_dispatch:
 
 permissions:
