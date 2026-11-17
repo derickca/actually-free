@@ -1,0 +1,49 @@
+name: Scenario Review
+
+# Actually Free's Scenario Review clock (issue #28; the
+# contract stands in docs/E2E.md). Twice a day the suite
+# builds a fresh rig from the committed tree on this repo's
+# own runner, walks the public directory as a visitor does,
+# reports the round to the central results store under the
+# group's standing interval registration, and files any
+# failed or never-ran scenario on the standing issue (#27).
+# A green round files nothing. It runs internal only —
+# never on production, never on staging — and it never
+# blocks anything: its exit is 0 whatever it found.
+#
+# Screenshots stay on this runner, in weekday folders under
+# ~/.actually-free/scenario-review/; they never leave the
+# machine. The reporter credential is the repository secret
+# the centre placed for this app, handed to the job for
+# that run only; the GitHub token is the workflow's own,
+# used by the report-failure step to comment on #27.
+
+on:
+  schedule:
+    - cron: "10 6,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: scenario-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Walk the directory on a fresh rig
+        env:
+          MEMBERSPARK_RESULTS_TOKEN: ${{ secrets.MEMBERSPARK_RESULTS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          python3 tests/scenario-review/run.py --started-by schedule | tee /tmp/scenario-review.txt
+          grep '^Scenario Review:' /tmp/scenario-review.txt | tail -6 >> "$GITHUB_STEP_SUMMARY" || true
+          exit 0

@@ -50,6 +50,16 @@ Build Tests run on a change, before the push, and they gate the push.
   day grouping, the due rule, the changed-view mapping and
   a full review's report. Real GitHub, the real site and
   the real credential are never touched.
+- The Scenario Review machinery: `python3
+  test_scenario_review.py` — it drives the suite's own files
+  (tests/scenario-review/) against local fixtures: the
+  journey registry against this contract, the wire names
+  against the store's name shape, the report-failure file
+  against a fake gh, the driver's condition wait against a
+  local server, and the run's payload through the reporter
+  seam's shaper. The browser walks themselves are proven by
+  the suite's own twice-daily runs, not here. Real GitHub,
+  the real intake and the real credential are never touched.
 - The whole set in one run: `python3 tools/build-tests.py`
   runs every suite above as one check each and reports the
   run as the change's Build Tests run (see Results). It
@@ -187,11 +197,43 @@ One standing issue on the tracker, "Scenario Review: failed and
 never-ran scenarios (standing)", names the scenarios that failed
 and the scenarios that never ran. A green round files nothing.
 
-The suite itself — run, journey, drive and report-failure files, a
-fresh rig each run and the rig destroyed after it — stands filed on
-the tracker as its own build. Until it lands, no Scenario Review
-runs, and that absence stands recorded on the review issue rather
-than passed over.
+The suite stands built (issue #28) in the standard's appendix
+shape — four files at tests/scenario-review/, beside this
+contract:
+
+- run.py builds the fresh rig (a git archive of the committed
+  tree, unpacked into a throwaway directory and served
+  locally), walks the journeys, photographs each walked page,
+  reports the round and files its failures, and the rig is
+  destroyed when the round ends, however it ends.
+- journey.py is the contract above as walks: the core journey
+  lands on the home page, chooses the Android platform,
+  filters by the first category that stands, opens the first
+  listing the filtered grid offers, and checks the listing's
+  store or download link stands on its page; the Suggest
+  journey checks the page renders and its form stands with
+  its fields and submit control; the What is free journey
+  checks the page renders and names the six promises.
+- drive.py is the suite's hands: it finds the headless Chrome
+  shell, serves the rig, and walks a page by running a script
+  inside the real page. The suite waits on conditions, never
+  on sleeps — the server is polled until it answers and a
+  walk polls the page until each condition it names stands.
+- report_failure.py files a round on the standing issue
+  (#27): one comment naming the run, each failed scenario
+  with its failed checks, and each scenario that never ran.
+  A green round files nothing.
+
+The twice-daily run is the Scenario Review workflow
+(.github/workflows/scenario-review.yml): 06:10 and 18:10 UTC
+on this repo's own self-hosted runner on Certifiable99,
+internal only. Screenshots stay on the runner in weekday
+folders under ~/.actually-free/scenario-review/ and never go
+to the results store; the round's full record stands beside
+them as a results file. The round reports to the central
+results store through the reporter seam (see Results) under
+the standing interval registration, and its exit is pinned
+to 0 in the workflow: the review reports, it never blocks.
 
 ## The centre's groups and the test accounts
 
