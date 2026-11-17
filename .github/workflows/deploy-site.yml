@@ -123,8 +123,38 @@ jobs:
         # The deploy smoke named in docs/E2E.md: three happy paths on
         # the copy that just published. A red smoke fails this run —
         # there is no promotion to hold, so the failed run is the
-        # loud alarm.
-        run: python3 tools/smoke.py
+        # loud alarm. The run's checks are also written as JSON for
+        # the report step below.
+        env:
+          SMOKE_RESULTS: ${{ runner.temp }}/smoke-results.json
+        run: python3 tools/smoke.py --results "$SMOKE_RESULTS"
+
+      # Results reporting (issue #29): the deploy's Build Tests
+      # report and the day's Release Review declaration go to the
+      # central results store. The step runs whether the smoke
+      # passed or failed, whenever this run published: it declares
+      # the deploy's Build Tests expectation (due one hour after,
+      # grace two hours) and sends the smoke's start and finish
+      # reports, then declares the day's Release Review
+      # expectation under the day's review run name (due
+      # 30 minutes after the publish, grace two hours) — the row
+      # the Release Review runner's report earns. The reporter
+      # credential is the repository secret the centre placed for
+      # this app, handed to this step for that run only. The step
+      # cannot fail the run: the script is fail-soft by design and
+      # this step's own exit is pinned to 0 behind it — a publish
+      # never waits on the results store.
+      - name: Report the deploy smoke
+        if: always() && steps.hold.outputs.publish == 'true'
+        env:
+          MEMBERSPARK_RESULTS_TOKEN: ${{ secrets.MEMBERSPARK_RESULTS_TOKEN }}
+          SMOKE_RESULTS: ${{ runner.temp }}/smoke-results.json
+          DEPLOY_RUN_ID: ${{ github.run_id }}
+        run: |
+          set +e
+          python3 tools/report-deploy.py | tee /tmp/report-deploy.txt
+          grep '^Results report:' /tmp/report-deploy.txt | tail -2 >> "$GITHUB_STEP_SUMMARY" || true
+          exit 0
 
       # Bing URL submission (issue #40): the pages this publish
       # changed go to Bing's Webmaster API in the same run, so

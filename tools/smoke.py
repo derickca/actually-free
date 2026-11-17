@@ -13,6 +13,13 @@ run is the loud alarm the E2E standard names, there being no
 promotion to hold. Run by hand any time:
 
   python3 tools/smoke.py [--base https://actually-free.com]
+
+--results <file> also writes the run's checks as JSON —
+{ checks: [{ name, ok, detail? }], result } — the shape the
+deploy's Build Tests report sends to the central results
+store (issue #29). The Release Review runner imports
+run_checks() for its heartbeat: the same three checks, one
+source.
 """
 import json
 import sys
@@ -23,6 +30,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
 
 failures = []
+results = []
 
 
 def get(url):
@@ -34,14 +42,22 @@ def get(url):
 def check(name, cond, detail=""):
     print(f"[{'PASS' if cond else 'FAIL'}] {name}" +
           (f" — {detail}" if detail and not cond else ""))
+    entry = {"name": name, "ok": bool(cond)}
+    if detail and not cond:
+        entry["detail"] = detail
+    results.append(entry)
     if not cond:
         failures.append(name)
 
 
-def main():
-    base = BASE
-    if "--base" in sys.argv:
-        base = sys.argv[sys.argv.index("--base") + 1].rstrip("/")
+def run_checks(base=BASE):
+    """The three named checks as data: a list of
+    { name, ok, detail? } in the results store's shape. The
+    command line prints them as it goes; importers (the
+    Release Review runner's heartbeat) take the list."""
+    failures.clear()
+    results.clear()
+    base = base.rstrip("/")
 
     try:
         status, home = get(base + "/")
@@ -70,6 +86,22 @@ def main():
                   first["name"])
         except Exception as e:
             check("listing: answers 200", False, str(e))
+
+    return list(results)
+
+
+def main():
+    base = BASE
+    if "--base" in sys.argv:
+        base = sys.argv[sys.argv.index("--base") + 1].rstrip("/")
+
+    checks = run_checks(base)
+
+    if "--results" in sys.argv:
+        out = sys.argv[sys.argv.index("--results") + 1]
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump({"checks": checks,
+                       "result": "fail" if failures else "pass"}, f, indent=2)
 
     if failures:
         print(f"\nSMOKE FAILED: {len(failures)} check(s): "
