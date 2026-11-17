@@ -1314,17 +1314,14 @@ def build_ops_page():
   fetch("/ops/data", { headers: { "accept": "application/json" } })
     .then(function (r) { return r.json(); })
     .then(function (d) {
-      var pub = document.querySelector('[data-panel="publishing"]');
-      if (!d.publishing.configured) note(pub, d.publishing.note);
-      else rows(pub, [
+      rows(document.querySelector('[data-panel="publishing"]'), [
         ["Last publish run", when(d.publishing.at)],
         ["Run result", d.publishing.result],
         ["Publish step", d.publishing.published],
         ["Commit", d.publishing.commit]
       ]);
-      var chk = document.querySelector('[data-panel="checks"]');
-      if (!d.checks.configured) note(chk, d.checks.note);
-      else rows(chk, d.checks.rows.map(function (c) { return [c.name, c.result + " \\u00b7 " + when(c.at)]; }));
+      rows(document.querySelector('[data-panel="checks"]'),
+        d.checks.rows.map(function (c) { return [c.name, c.result + " \\u00b7 " + when(c.at)]; }));
       rows(document.querySelector('[data-panel="site"]'), [
         ["Listings", String(d.build.listings)],
         ["App pages", String(d.build.appPages)],

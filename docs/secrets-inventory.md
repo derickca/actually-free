@@ -13,7 +13,7 @@ docs/privacy-and-secrets-policy.md, section 5).
 | MEMBERSPARK_CLIENT_ID | Cloudflare Pages project settings (actually-free) | The Ops surface's MemberSpark client id — the client the centre registered for this product (actually-free #32). Not a secret in itself; it stands in the project's settings beside its secret. | Not yet placed (#32) |
 | MEMBERSPARK_CLIENT_SECRET | Cloudflare Pages project settings (actually-free) | The Ops door's client secret, the pair to the client id above. Read by the sign-in road only; it never stands in the repo or a published file. | Not yet placed (#32) |
 | TEST_ACCOUNT_SUBS | Cloudflare Pages project settings (actually-free) | The centre's placement naming the test accounts' subs for this product, so the Ops surface admits the test standing read-only (actually-free #32). Subs only, never an address. | Not yet placed (#32) |
-| OPS_GITHUB_TOKEN | Cloudflare Pages project settings (actually-free) | A read-only GitHub token the Ops surface reads the repo's own Actions standings with (actually-free #32). Optional: without it the surface's publishing and checks panels say so in words. | Not yet placed (#32) |
+| OPS_GITHUB_TOKEN | Cloudflare Pages project settings (actually-free) | Optional: a read-only GitHub token for the Ops surface's Actions standings (actually-free #32). Not needed while the repo stands public — the surface reads GitHub's public API with no credential, and the token is sent only when one stands. It is owed only if the repo goes private, when the unauthenticated read would be refused. | Not placed — not needed while the repo is public (#32) |
 
 Standing notes:
 
