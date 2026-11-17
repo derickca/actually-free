@@ -123,7 +123,7 @@ a { color: var(--accent); }
 .switcher button.on { background: var(--ink); color: var(--bg); }
 /* Icon-only theme buttons (FundingSpark's half-circle / sun / moon) */
 .switcher.theme-switcher button { padding: 6px 9px; line-height: 0; }
-.switcher.theme-switcher button svg { width: 17px; height: 17px; display: block; }
+.switcher.theme-switcher button svg { width: 20px; height: 20px; display: block; }
 /* ---------- layout ---------- */
 main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0.2em 0 0.1em; }
