@@ -87,22 +87,27 @@ sign-in road, so no signed-in face can be cached for another
 request.
 
 The surface only reads. It fronts the publishing standing and
-the checks' standing from the repo's own Actions records (read
-with OPS_GITHUB_TOKEN when the Pages project carries one; the
-panels say in words when it does not), the build record of the
-tree it rides in, and the backup standing above in words. It is
-never a second writer beside the machinery, and it holds no
-acts.
+the checks' standing from the repo's own Actions records, the
+build record of the tree it rides in, and the backup standing
+above in words. It is never a second writer beside the
+machinery, and it holds no acts.
 
-One production step stands between this code and a live surface:
-the Pages project needs its door settings placed —
-MEMBERSPARK_CLIENT_ID and MEMBERSPARK_CLIENT_SECRET (the client
-the centre registered for this product), TEST_ACCOUNT_SUBS (the
-centre's placement, subs only) and, for the Actions panels,
-OPS_GITHUB_TOKEN. Until they are placed the door reads as
-unconfigured and /ops answers the ordinary 404 to everyone,
-which is the safe face. The names stand in
-docs/secrets-inventory.md.
+The Actions records are read from GitHub's public API with no
+credential: the repo is public, so its workflow runs stand
+readable to anyone, and the panels show them as they stand.
+OPS_GITHUB_TOKEN is optional — the surface sends it when the
+Pages project carries one, and it is owed only if the repo
+ever goes private, when the unauthenticated read would be
+refused and the panels would stand at Not read until the
+token is placed. A read GitHub refuses stands in the panels
+as Not read; the surface invents none of it.
+
+The surface stands live on the door settings the centre
+placed on the Pages project — MEMBERSPARK_CLIENT_ID and
+MEMBERSPARK_CLIENT_SECRET (the client the centre registered
+for this product) and TEST_ACCOUNT_SUBS (the centre's
+placement, subs only) — proven with real accounts on #32.
+The names stand in docs/secrets-inventory.md.
 
 ## If the shape changes
 

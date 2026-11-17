@@ -11,9 +11,12 @@
 // the 15-minute session — against the 90-day Ops session; the
 // cache fences (no-store on every surface answer, and the
 // service worker's bypass standing in the generated sw.js and
-// in generate.py's build_sw, so regeneration keeps it); and
-// the generated-module pins (the 404 module is 404.html's exact
-// bytes).
+// in generate.py's build_sw, so regeneration keeps it); the
+// generated-module pins (the 404 module is 404.html's exact
+// bytes); and the Actions standings read — public with no
+// credential (the repo is public), the token sent as a Bearer
+// header when one stands, and a refused read standing in the
+// panels as Not read.
 //
 // Run: node test_ops.mjs
 import { readFileSync } from "node:fs";
@@ -302,9 +305,10 @@ let opsCookie;
       d.backup && typeof d.backup.line === "string" && d.backup.line.length > 0
   );
   check(
-    "without a GitHub token the panels say so, inventing nothing",
-    d.publishing && d.publishing.configured === false &&
-      d.checks && d.checks.configured === false
+    "the data's Actions panels stand in the read shape, never a not-configured note",
+    d.publishing && typeof d.publishing.result === "string" &&
+      d.checks && Array.isArray(d.checks.rows) &&
+      !("note" in d.publishing) && !("note" in d.checks)
   );
   const tampered =
     opsCookie.slice(0, -2) + (opsCookie.endsWith("A") ? "B" : "A") + opsCookie.slice(-1);
@@ -313,6 +317,132 @@ let opsCookie;
     env: ENV,
   });
   check("a tampered session reads as no session (404)", forged.status === 404);
+}
+
+// ---------- the Actions standings read ----------
+// The publishing and checks standings are read from the
+// repo's own Actions records through the door's fetch seam,
+// judged here against a stub GitHub — never the live API.
+// Each shape gets a fresh copy of the door module (so its
+// read cache starts empty) and a fabricated holder session:
+// opsData reads only the session's name and address.
+const HOLDER_SESSION = {
+  sub: "ops-person-1",
+  name: "Ops Person",
+  email: "ops@example.test",
+};
+function githubStub(answer) {
+  const seen = [];
+  const fetchImpl = async (url, opts = {}) => {
+    const u = new URL(url);
+    seen.push({ url, headers: (opts && opts.headers) || {} });
+    if (u.hostname !== "api.github.com") {
+      return fake.fetch(new Request(url, opts));
+    }
+    return answer(u);
+  };
+  return { fetchImpl, seen };
+}
+function githubAnswers() {
+  const runsBody = (id) => ({
+    workflow_runs: [{
+      id,
+      head_sha: "1234567890abcdef",
+      status: "completed",
+      conclusion: "success",
+      created_at: "2026-11-17T10:00:00Z",
+      updated_at: "2026-11-17T10:05:00Z",
+    }],
+  });
+  const json = (body) =>
+    new Response(JSON.stringify(body), {
+      status: 200,
+      headers: { "content-type": "application/json" },
+    });
+  return (u) => {
+    if (u.pathname.endsWith("/actions/workflows/deploy-site.yml/runs")) {
+      return json(runsBody(4242));
+    }
+    if (u.pathname.includes("/actions/runs/4242/jobs")) {
+      return json({
+        jobs: [{
+          steps: [{
+            name: "Publish to Cloudflare Pages",
+            status: "completed",
+            conclusion: "success",
+          }],
+        }],
+      });
+    }
+    if (u.pathname.endsWith("/actions/workflows/catalogue-validation.yml/runs")) {
+      return json(runsBody(4343));
+    }
+    if (u.pathname.endsWith("/actions/workflows/link-check.yml/runs")) {
+      return json(runsBody(4444));
+    }
+    return new Response("not found (stub)", { status: 404 });
+  };
+}
+async function opsDataWith(env, tag) {
+  const door = await import(
+    pathToFileURL(join(ROOT, "functions/lib/ops-door.js")) + "?github=" + tag
+  );
+  return door.opsData(door.getSettings(env), HOLDER_SESSION, "ops");
+}
+{
+  const stub = githubStub(githubAnswers());
+  const d = await opsDataWith({ ...ENV, __OPS_FETCH: stub.fetchImpl }, "plain");
+  check(
+    "with no GitHub token the public read returns the standings",
+    d.publishing.result === "Success" &&
+      d.publishing.published === "Published" &&
+      d.publishing.commit === "1234567" &&
+      d.checks.rows.length === 2 &&
+      d.checks.rows.every((r) => r.result === "Success"),
+    JSON.stringify(d.publishing)
+  );
+  check(
+    "the no-token read sends no authorization header",
+    stub.seen.length > 0 &&
+      stub.seen.every((s) => !("authorization" in s.headers))
+  );
+}
+{
+  const stub = githubStub(githubAnswers());
+  const d = await opsDataWith(
+    {
+      ...ENV,
+      OPS_GITHUB_TOKEN: "ops-suite-github-token",
+      __OPS_FETCH: stub.fetchImpl,
+    },
+    "token"
+  );
+  check(
+    "with a token the read returns the same standings",
+    d.publishing.result === "Success" &&
+      d.publishing.published === "Published" &&
+      d.checks.rows.length === 2
+  );
+  check(
+    "the tokened read sends the token as its Bearer header",
+    stub.seen.length > 0 &&
+      stub.seen.every(
+        (s) => s.headers.authorization === "Bearer ops-suite-github-token"
+      )
+  );
+}
+{
+  const stub = githubStub(
+    () => new Response("forbidden (stub)", { status: 403 })
+  );
+  const d = await opsDataWith({ ...ENV, __OPS_FETCH: stub.fetchImpl }, "refused");
+  check(
+    "a refused GitHub read stands as Not read, inventing nothing",
+    d.publishing.result === "Not read" &&
+      d.checks.rows.length === 2 &&
+      d.checks.rows.every((r) => r.result === "Not read"),
+    JSON.stringify(d.publishing)
+  );
 }
 
 // ---------- the test account: read-only standing ----------

@@ -51,6 +51,10 @@ export function getSettings(env = {}) {
     // document names — the API host, never the site host.
     issuer: (env.MEMBERSPARK_ISSUER || "https://api.memberspark.ca").replace(/\/$/, ""),
     testAccountSubs: parseTestAccountSubs(env.TEST_ACCOUNT_SUBS),
+    // Optional: the Actions read is public (the repo is
+    // public), so no token is owed; one is sent when it
+    // stands, and it is needed only if the repo goes
+    // private.
     githubToken: env.OPS_GITHUB_TOKEN || "",
     // A fetch seam the ops suite uses to stand the kit
     // against the kit's own fake. Production env never
@@ -163,23 +167,31 @@ export function escHtml(value) {
 // writer beside the machinery. The build record is this
 // tree's own generation record. The publishing and checks
 // standings are read from the repo's own Actions records —
-// the machinery's home — with a read-only token the Pages
-// project carries (OPS_GITHUB_TOKEN); without it the panels
-// say so in words and invent nothing. The GitHub read is
-// cached in the isolate for a minute so a reading page does
-// not spend the token's rate on refreshes.
+// the machinery's home. The repo is public, so the read
+// goes to GitHub's public API with no credential at all;
+// OPS_GITHUB_TOKEN, when the Pages project carries one, is
+// sent with the read, and it is owed only if the repo ever
+// goes private — the unauthenticated read would then be
+// refused, and the panels would stand at Not read until the
+// token is placed. A read GitHub refuses stands in the
+// panels as Not read and invents nothing. The GitHub read
+// is cached in the isolate for a minute so a reading page
+// does not spend the API's rate on refreshes.
 
 let githubCache = { at: 0, value: null };
 
 async function githubJson(settings, path) {
   const fetchImpl = settings.fetch || fetch;
-  const res = await fetchImpl("https://api.github.com" + path, {
-    headers: {
-      authorization: "Bearer " + settings.githubToken,
-      accept: "application/vnd.github+json",
-      "user-agent": "actually-free-ops",
-    },
-  });
+  const headers = {
+    accept: "application/vnd.github+json",
+    "user-agent": "actually-free-ops",
+  };
+  // The token rides only when one stands: the repo is
+  // public, and the plain read is the standing shape.
+  if (settings.githubToken) {
+    headers.authorization = "Bearer " + settings.githubToken;
+  }
+  const res = await fetchImpl("https://api.github.com" + path, { headers });
   if (!res.ok) throw new Error("github read answered " + res.status);
   return res.json();
 }
@@ -195,7 +207,7 @@ async function readPublishing(settings) {
     `/repos/${GITHUB_REPO}/actions/workflows/${PUBLISH_WORKFLOW}/runs?per_page=1`
   );
   const run = (runs.workflow_runs || [])[0];
-  if (!run) return { configured: true, at: null, result: "No runs stand", published: "—", commit: "—" };
+  if (!run) return { at: null, result: "No runs stand", published: "—", commit: "—" };
   let published = "—";
   try {
     const jobs = await githubJson(
@@ -217,7 +229,6 @@ async function readPublishing(settings) {
     // The run read stands; the step's word stays unknown.
   }
   return {
-    configured: true,
     at: run.updated_at || run.created_at || null,
     result: word(run.conclusion || run.status),
     published,
@@ -243,7 +254,7 @@ async function readChecks(settings) {
       rows.push({ name, at: null, result: "Not read" });
     }
   }
-  return { configured: true, rows };
+  return { rows };
 }
 
 export async function opsData(settings, session, standing) {
@@ -254,16 +265,11 @@ export async function opsData(settings, session, standing) {
   };
   let publishing;
   let checks;
-  if (!settings.githubToken) {
-    const note =
-      "The GitHub read is not configured on this surface. The standing stands where it always has — in the repo's own Actions runs — and this page invents none of it.";
-    publishing = { configured: false, note };
-    checks = { configured: false, note };
-  } else if (githubCache.value && Date.now() - githubCache.at < 60 * 1000) {
+  if (githubCache.value && Date.now() - githubCache.at < 60 * 1000) {
     ({ publishing, checks } = githubCache.value);
   } else {
     publishing = await readPublishing(settings).catch(() => ({
-      configured: true, at: null, result: "Not read", published: "—", commit: "—",
+      at: null, result: "Not read", published: "—", commit: "—",
     }));
     checks = await readChecks(settings);
     githubCache = { at: Date.now(), value: { publishing, checks } };
