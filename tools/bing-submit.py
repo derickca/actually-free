@@ -43,7 +43,7 @@ lands in the repo, a workflow file, the manifest or a log
 line — every report below names counts, URLs and statuses,
 never the key. BING_WEBMASTER_API_KEY in the environment
 stands in for the fetch (the test suite's road). The deploy's
-two Actions secrets stay exactly the two AGENTS.md names:
+Actions secrets stay the ones the secrets inventory names:
 this step adds none.
 
 Fail soft, by design: a publish never waits on Bing. A
