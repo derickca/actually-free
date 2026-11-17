@@ -25,6 +25,10 @@ Build Tests run on a change, before the push, and they gate the push.
 - The Bing submission step: `python3 test_bing_submit.py` — it runs
   tools/bing-submit.py against a fixture tree and a local stub
   endpoint. The real Bing API and the real key are never touched.
+- The deploy guards: `python3 test_deploy_guards.py` — it runs
+  tools/check-publish-set.py and tools/check-removal-tripwire.py
+  against fixture trees and a local stub sitemap. The live site
+  is never touched.
 - One catalogue test on its own:
   `python3 -m unittest test_windows_catalog.WindowsCatalogueTests.test_seed`
   — the same shape names any single test in either catalogue file.
@@ -53,6 +57,18 @@ journey or the owner signs off on the gap. A core journey is never
 deleted. No test or scenario stands quarantined today.
 
 ## The deploy smoke
+
+Two publish guards stand inside the deploy before the publish
+step, in the same workflow (issue #37): the publish-set check
+(tools/check-publish-set.py) proves the staged tree is complete
+against its own sitemap and catalogue, and the removal tripwire
+(tools/check-removal-tripwire.py) compares the staged sitemap
+against the live one — a live page missing from the staged set
+stops the publish unless its retirement stands recorded in
+retired-pages.txt. The standard's third guard, the
+destructive-migration guard, does not apply here: the site has
+no migrations and holds no stored data. A trip fails the run
+before anything is published, and stops that one publish only.
 
 At deploy, Build Tests smoke the copy that just published, on
 production, in the publish run itself. The checks stand named here
