@@ -1,0 +1,56 @@
+name: Release Review
+
+# Actually Free's Release Review clock (issue #29; the
+# contract stands in docs/E2E.md). Releases group by day:
+# one review covers a day's publishes and runs 30 minutes
+# after the day's last publish. GitHub Actions has no
+# "30 minutes after that publish" trigger, so this workflow
+# wakes every 15 minutes and the runner reviews each
+# day-group whose last publish is at least 30 minutes old
+# and whose coverage no review has earned yet — the first
+# tick at least 30 minutes after the day's last publish,
+# inside the expectation's two-hour grace. The runner reads
+# the publishes from the deploy workflow's own record (a
+# run whose Publish step succeeded), checks the live site,
+# and reports to the central results store under the day's
+# run name. It never blocks anything: its exit is 0 whatever
+# it found. Coverage state stands on this runner at
+# ~/.actually-free/release-review-state.json, beside the
+# Bing manifest — the runner is the same self-hosted machine
+# the deploy publishes from.
+#
+# The reporter credential is the repository secret the
+# centre placed for this app; it is handed to the job for
+# that run only. The GitHub token is the workflow's own,
+# with read access to Actions so the runner can read the
+# deploy record.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: release-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Review the day's publishes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MEMBERSPARK_RESULTS_TOKEN: ${{ secrets.MEMBERSPARK_RESULTS_TOKEN }}
+        run: |
+          set +e
+          python3 tools/release-review.py | tee /tmp/release-review.txt
+          grep '^Release Review:' /tmp/release-review.txt | tail -3 >> "$GITHUB_STEP_SUMMARY" || true
+          exit 0
