@@ -19,6 +19,10 @@ import {
 } from "./lib/memberspark-kit/memberspark.js";
 import { OPS_PAGE_HTML } from "./lib/ops-page.js";
 import {
+  recordFunctionError,
+  recordSignInRefusal,
+} from "./lib/ops-log.js";
+import {
   TEST_BANNER,
   escHtml,
   getSettings,
@@ -49,8 +53,37 @@ function accountMark(session) {
 
 export async function onRequest({ request, env }) {
   const settings = getSettings(env);
+  try {
+    return await serve(request, settings);
+  } catch (err) {
+    // A failure of the road itself (issue #50): the error
+    // log carries it before it propagates, and the failure
+    // itself is unchanged.
+    await recordFunctionError(settings, {
+      signature: "ops_page_failure",
+      where: "/ops",
+      cause: err,
+    });
+    throw err;
+  }
+}
+
+async function serve(request, settings) {
   const session = await sessionOf(settings, request);
   const standing = standingOf(settings, session);
+
+  // The gate's audit entry (issue #50): a signed-in arrival
+  // answered with the 404 face for want of standing writes
+  // its refusal before the answer leaves. A signed-out
+  // arrival is the ordinary missing page and writes nothing;
+  // a test account's gated write is the test gate's refusal,
+  // not an audit event, and writes nothing either.
+  if (session && !standing) {
+    await recordSignInRefusal(settings, {
+      door: "ops-page",
+      reason: "no-standing",
+    });
+  }
 
   if (request.method !== "GET" && request.method !== "HEAD") {
     // TA-7: a test account's every change is refused at the

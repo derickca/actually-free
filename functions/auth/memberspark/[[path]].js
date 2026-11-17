@@ -22,6 +22,14 @@
 // kit's not-a-return page; every other failure gets the
 // kit's problem page. Every answer carries no-store.
 //
+// The door's own audit log (issue #50, lib/ops-log.js):
+// every refusal above writes its entry before the answer
+// leaves, and a completed sign-in writes its completion
+// beside the session it mints — fixed words, no personal
+// fields, best-effort. A failure this road cannot answer
+// (a throwable that is no refusal) is written to the error
+// log before it propagates.
+//
 // Two kit roads are not wired in this build and answer the
 // site's ordinary 404 page: backchannel-logout (this
 // product holds no session store for the centre to end by
@@ -35,6 +43,11 @@ import {
   signInProblemPage,
 } from "../../lib/memberspark-kit/memberspark.js";
 import { NOT_FOUND_HTML } from "../../lib/not-found-page.js";
+import {
+  recordFunctionError,
+  recordSignInCompletion,
+  recordSignInRefusal,
+} from "../../lib/ops-log.js";
 import {
   clearSessionCookieHeader,
   mintSessionCookie,
@@ -103,20 +116,53 @@ function signedOutPage(origin) {
   return htmlPage(html, { "set-cookie": clearSessionCookieHeader() });
 }
 
+// The door's audit writes (issue #50): every refusal this
+// road answers writes its entry to the product's own audit
+// log before the answer leaves, under the fixed word the
+// road names — the kit flags in plain words, or the problem
+// page's own reason. A completed sign-in writes its
+// completion beside the session it mints. The writes are
+// best-effort (lib/ops-log.js): no answer changes because
+// its record could not be written. Answers the refusal here
+// (the restart redirect, the not-a-return page) or returns
+// null, leaving the problem page to the caller.
+async function auditRefusal(settings, err, origin) {
+  if (err && err.noFlow) {
+    await recordSignInRefusal(settings, { door: "ops-door", reason: "no-flow" });
+    return redirect303(ROUTES.signIn);
+  }
+  if (err && err.unknownIssuer) {
+    await recordSignInRefusal(settings, {
+      door: "ops-door",
+      reason: "foreign-issuer",
+    });
+    return htmlPage(
+      signInNotReturnPage({
+        productName: PRODUCT_NAME,
+        homeUrl: origin + "/",
+      })
+    );
+  }
+  if (err instanceof Error) {
+    await recordSignInRefusal(settings, {
+      door: "ops-door",
+      reason: problemReason(err) || "unverified",
+    });
+  }
+  return null;
+}
+
 async function handleCallback(settings, ms, request) {
   let done;
   try {
     done = await ms.callback(request);
   } catch (err) {
-    if (err && err.noFlow) return redirect303(ROUTES.signIn);
-    if (err && err.unknownIssuer) {
-      return htmlPage(
-        signInNotReturnPage({
-          productName: PRODUCT_NAME,
-          homeUrl: new URL(request.url).origin + "/",
-        })
-      );
-    }
+    const answered = await auditRefusal(
+      settings,
+      err,
+      new URL(request.url).origin
+    );
+    if (answered) return answered;
     return htmlPage(
       signInProblemPage({
         productName: PRODUCT_NAME,
@@ -142,6 +188,12 @@ async function handleCallback(settings, ms, request) {
     standing,
     identity.hasOps(PRODUCT_ID)
   );
+  // The completion's audit entry, beside the session it
+  // mints (issue #50): the standing the session carries,
+  // and no identity.
+  await recordSignInCompletion(settings, {
+    standing: standing === null ? "none" : standing,
+  });
   // Compose: this product's session cookie goes FIRST on
   // the answer, ahead of the kit's own Set-Cookie lines, at
   // Path=/ so it reaches /ops (the shop's #165 shape).
@@ -182,15 +234,8 @@ export async function onRequest({ request, env }) {
     const res = await ms.route(request, {});
     return res || plain404();
   } catch (err) {
-    if (err && err.noFlow) return redirect303(ROUTES.signIn);
-    if (err && err.unknownIssuer) {
-      return htmlPage(
-        signInNotReturnPage({
-          productName: PRODUCT_NAME,
-          homeUrl: url.origin + "/",
-        })
-      );
-    }
+    const answered = await auditRefusal(settings, err, url.origin);
+    if (answered) return answered;
     if (err instanceof Error) {
       return htmlPage(
         signInProblemPage({
@@ -200,6 +245,14 @@ export async function onRequest({ request, env }) {
         })
       );
     }
+    // Not an answerable refusal: the road itself failed.
+    // The error log carries it before it propagates (issue
+    // #50), and the failure itself is unchanged.
+    await recordFunctionError(settings, {
+      signature: "auth_road_failure",
+      where: "/auth/memberspark/*",
+      cause: err,
+    });
     throw err;
   }
 }

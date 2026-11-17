@@ -62,7 +62,10 @@ that does not exist.
   inside itself: no enrolments, no per-app operator lists, no
   allowlists. The fleet's operator roles are defined in Admin, and
   nothing here mirrors them.
-- No logs. docs/LOGGING.md carries that standing.
+- The door's two logs only: the audit log of the Ops door's
+  sign-in refusals and completions, and the error log of
+  Function failures, in the product's own store (issue #50).
+  docs/LOGGING.md carries that standing.
 
 ## The Ops surface
 

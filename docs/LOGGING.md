@@ -16,38 +16,86 @@ part of the standard below is read against that shape.
 
 ## The logs the product keeps
 
-The product keeps no error log and no audit log. Nothing in the
-product writes an entry anywhere: the Functions record nothing,
-the pages record nothing and no sender sends a log anywhere.
+Two logs stand now, both the product's own, in one KV store
+bound on the Pages project as AF_LOGS (issue #50). The
+writers stand in functions/lib/ops-log.js; the shapes are
+the certifiablemedia shop's, carried over where they fit.
 
-The standard names this standing. A product with no log stands
-named as having none, never as quiet and never as healthy. The
-naming stands in the centre's log monitoring registry, in
-derickca/MemberSpark at docs/spec/log-monitoring-registry.md, and
-in the build spec beside it. This file carries the same standing
-in the app's own repo. The registry entry was last checked on
-2026-11-15, against the shape before the Ops surface landed; the
-gap the next section names stands from that landing, and the
-entry's update is the centre's to make.
+The audit log holds the Ops door's sign-in family, one entry
+per event, under family keys:
+
+- A sign-in refusal: {kind: "sign-in-refusal", action:
+  "sign-in-refusal", door, reason, at}. The door is one of
+  ops-door (the sign-in road),
+  ops-page or ops-data (the surface gates). The reason is a
+  fixed word from the door's own vocabulary: no-flow,
+  foreign-issuer, iss-mismatch, state-mismatch, token-invalid
+  or unverified at the callback, and no-standing where a
+  signed-in arrival is answered with the surface's 404 face
+  for want of standing. The writer refuses any word outside
+  the fixed sets, so no road can store an entry outside them.
+- A sign-in completion: {kind: "sign-in-completion", door:
+  "ops-door", standing, at}, written by the callback beside
+  the session it mints. The standing is the door's own word —
+  ops, test, or none for a session that admits nothing.
+
+No entry carries a personal field: no email, no sub, no
+name. An entry proves an event at the door, never whose.
+
+The error log holds the product's Function failures, one
+entry per occurrence: {kind: "site-error", at, where,
+signature, cause}. The signature is from a fixed list, one
+per Function road (auth_road_failure, ops_page_failure,
+ops_data_failure, ops_signout_failure); the where is the
+road's fixed address pattern, never a request's own address;
+and the cause is the failure's message, scrubbed (no address,
+no token-shaped run, no long digit run) and bounded before it
+stands.
+
+Every writer is best-effort and never throws: each call site
+awaits its write before the answer leaves, so the entry
+stands before the answer does, and no answer ever changes
+because its record could not be written. Where the store
+does not stand bound, the writers write nothing and the door
+answers exactly as it did before the logs stood. The writes
+are the product's own machinery, never a person's act: they
+ride the door's roads for every standing alike, and the test
+gate's refusals are not audit events and write nothing.
+
+Two pieces of the shop's shape do not stand here, because
+nothing here reads them: the running audit sequence (it
+feeds the shop's door answers and the centre's summaries;
+this product has no operator door and sends no summaries)
+and the daily error counts (the per-occurrence entries are
+the record; nothing counts them).
+
+Before this build the product kept no log at all, and the
+standard named that standing: a product with no log stands
+named as having none, never as quiet and never as healthy.
+The naming stands in the centre's log monitoring registry,
+in derickca/MemberSpark at docs/spec/log-monitoring-
+registry.md, and in the build spec beside it. The registry
+entry was last checked on 2026-11-15, against the shape
+before the Ops surface landed; its update to the standing
+this file now records is the centre's to make.
 
 ## What the standard owes, and what arises now
 
-One owed family arises here now. The sign-in road takes sign-ins,
-and the refusals on this product's own side of it — a callback
-with no standing flow, a foreign issuer, a token that does not
-verify, and a signed-in arrival the Ops surface answers with its
-404 face for want of standing — are answered to the person and
-recorded nowhere in this product. The standard names sign-in
-refusals and security events as events that must be audited, and
-a refused sign-in is written to the audit log, never the error
-log. The centre's own audit log records the centre's side of the
-exchange; this product keeps no record of its own door. The gap
-stands named here: it closes with an audit log of the product's
-own, a build of its own, and not with a sentence in this file.
-Product-side failures stand in the same position: a Function that
-fails is answered to the caller and recorded nowhere, where the
-standard's error log would carry it under a signature from a
-fixed list.
+One owed family arises here, and it stands built (issue
+#50). The sign-in road takes sign-ins, and the refusals on
+this product's own side of it — a callback with no standing
+flow, a foreign issuer, a token that does not verify, and a
+signed-in arrival the Ops surface answers with its 404 face
+for want of standing — are written to the product's own
+audit log at the moment they are answered, never to the
+error log, as the standard names them. Completions stand
+beside them. The centre's own audit log records the centre's
+side of the exchange; this product now keeps the record of
+its own door too. Product-side failures stand in the same
+position and are covered the same way: a Function that fails
+is answered to the caller as it was before, and the failure
+is written to the error log under its road's fixed signature
+before it propagates.
 
 The rest of the owed families still never arise. The Ops surface
 holds no acts: it only reads, so there are no admin changes to
@@ -70,8 +118,13 @@ side has no backend to receive one.
 ## What the centre reads, and what is sent
 
 The product has no operator door, so the centre reads no log
-answers from it and none are owed: no log stands to answer from.
-No log summaries are sent to the centre — none exist to send.
+answers from it and none are owed. The logs' read-back is the
+Ops surface itself: the data read behind the Doors panel
+carries the door's recent audit entries and error entries,
+worded for the panel, to a session holding the grant — and to
+no one else, the surface's ordinary 404 face standing for
+everyone else exactly as before. No log summaries are sent to
+the centre — none are made.
 
 The product's results reports are a different road, under the
 E2E Testing standard: Build Tests, Release Review and Scenario
@@ -87,11 +140,17 @@ Scenario Review's failure comments on actually-free #27 carry
 the run, its times and the failed checks' names from a
 throwaway rig — no screenshot and no person's data.
 
-No heartbeat is owed for a log. There is no log writer whose
-silence a heartbeat would prove.
+No heartbeat is owed for these logs. Their writers are the
+door's own roads, exercised by every sign-in arrival, and no
+centre read watches them; a silence in the entries reads on
+the surface as what it is — no arrivals — and the panel names
+the store's standing plainly when no store stands bound.
 
-No retention rule stands for a log, because no log is kept. The
-standard's floors bind logs that exist, and none does.
+Entries carry no expiry: they stand in the store until the
+store itself is cleared. The volume is the door's own
+traffic — sign-ins and failures, nothing else writes — and
+the standard's floors bind the logs that stand, which these
+now do.
 
 ## Where visitor failures go
 
@@ -108,9 +167,9 @@ its logs and its summaries are the centre's side of the line.
 ## If the shape changes
 
 If this product grows acts of its own, a store or a door, the
-standing ends. The two logs come first, before the feature that
-needs them: an error log with signatures from a fixed list, and
-an append-only audit log covering the standard's owed families —
-the sign-in family among them, from the first day. The registry
-entry is updated in the same act, the centre's reads start on the
-standard's clocks, and this file is rewritten to name the roads.
+standing ends. The two logs stand already (issue #50): any new
+owed family joins the audit log in the same act as the feature
+that needs it, an entry shape and fixed words first, never
+after. The registry entry is updated in the same act, the
+centre's reads start on the standard's clocks, and this file
+is rewritten to name the roads.
