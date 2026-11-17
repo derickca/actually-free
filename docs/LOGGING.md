@@ -24,8 +24,9 @@ the certifiablemedia shop's, carried over where they fit.
 The audit log holds the Ops door's sign-in family, one entry
 per event, under family keys:
 
-- A sign-in refusal: {kind: "sign-in-refusal", door, reason,
-  at}. The door is one of ops-door (the sign-in road),
+- A sign-in refusal: {kind: "sign-in-refusal", action:
+  "sign-in-refusal", door, reason, at}. The door is one of
+  ops-door (the sign-in road),
   ops-page or ops-data (the surface gates). The reason is a
   fixed word from the door's own vocabulary: no-flow,
   foreign-issuer, iss-mismatch, state-mismatch, token-invalid
