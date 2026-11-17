@@ -10,12 +10,20 @@ docs/privacy-and-secrets-policy.md, section 5).
 | CLOUDFLARE_ACCOUNT_ID | GitHub Actions secrets | The Cloudflare account the deploy and zone jobs act on. An account identifier, held as a secret because it names the account the deploy credential reaches. | 2026-10-24 |
 | CLOUDFLARE_API_TOKEN | GitHub Actions secrets | Deploys the site to Cloudflare Pages (deploy-site.yml) and writes the www redirect rule (www-redirect.yml). Handed to a job for the run only. | 2026-10-24 |
 | MEMBERSPARK_RESULTS_TOKEN | GitHub Actions secrets | The results-store reporter credential for product actually-free (centre registry id 31b0624a), placed by the MemberSpark centre for the reporting senders (actually-free #29). | 2026-11-15 |
+| MEMBERSPARK_CLIENT_ID | Cloudflare Pages project settings (actually-free) | The Ops surface's MemberSpark client id — the client the centre registered for this product (actually-free #32). Not a secret in itself; it stands in the project's settings beside its secret. | Not yet placed (#32) |
+| MEMBERSPARK_CLIENT_SECRET | Cloudflare Pages project settings (actually-free) | The Ops door's client secret, the pair to the client id above. Read by the sign-in road only; it never stands in the repo or a published file. | Not yet placed (#32) |
+| TEST_ACCOUNT_SUBS | Cloudflare Pages project settings (actually-free) | The centre's placement naming the test accounts' subs for this product, so the Ops surface admits the test standing read-only (actually-free #32). Subs only, never an address. | Not yet placed (#32) |
+| OPS_GITHUB_TOKEN | Cloudflare Pages project settings (actually-free) | A read-only GitHub token the Ops surface reads the repo's own Actions standings with (actually-free #32). Optional: without it the surface's publishing and checks panels say so in words. | Not yet placed (#32) |
 
 Standing notes:
 
-- The site itself holds no secrets. It is a static tree; the
-  feedback form posts to the shared msg service with no per-build
-  secret, and nothing in the published files is a credential.
+- No published file holds a secret. The site is a static tree;
+  the feedback form posts to the shared msg service with no
+  per-build secret, and nothing in the published files is a
+  credential. The Ops surface's door settings stand in the
+  Pages project's own settings, read by its Functions at run
+  time; they are never written into the tree the project
+  publishes.
 - PUBLISH_HOLD is a repository variable, not a secret: a publish
   switch whose value is meant to be read in the open.
 - The site-verification files (BingSiteAuth.xml and the root

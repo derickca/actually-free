@@ -64,23 +64,45 @@ that does not exist.
   nothing here mirrors them.
 - No logs. docs/LOGGING.md carries that standing.
 
-## The Ops surface gap
+## The Ops surface
 
 The standard requires every app to carry an Ops surface, and names
 this product's shape: an app with no sign-in of its own still
 carries an Ops surface, at /ops, and MemberSpark provides the
-sign-in for it. No surface stands today. The gap is filed on this
-repo as actually-free #32, with the build's requirements: admission
-on the Ops role as the MemberSpark session carries it, the test
-role admitted read-only for the Login Review, and the surface
-fenced from the cache by construction, because this domain is
-edge-cached and the site's service worker caches every same-origin
-GET.
+sign-in for it. The surface stands in this repo (actually-free
+#32): /ops is served by a Pages Function, never as a published
+static page. Sign-in runs on the pinned MemberSpark kit
+(functions/lib/memberspark-kit/, pin recorded in
+docs/memberspark-kit/PINNED.json). Admission is the Ops role as
+the verified token carries it — the kit's hasOps judged for this
+product at sign-in, the decision stored in the session, never the
+claim — and the Login Review's test account is admitted
+read-only by its sub, re-judged on every request from the
+TEST_ACCOUNT_SUBS placement. Anyone without the grant, signed
+out or signed in, is answered with the site's ordinary 404 page,
+the same status and the same bytes as any missing page. Every
+answer the surface gives carries Cache-Control: no-store, and
+the service worker never answers for the surface's roads or the
+sign-in road, so no signed-in face can be cached for another
+request.
 
-Until the surface stands, the standings it would show stand in the
-machinery named above: the workflow runs and their summaries, the
-switch's state in the repository variables, and the secret standings
-in GitHub's list.
+The surface only reads. It fronts the publishing standing and
+the checks' standing from the repo's own Actions records (read
+with OPS_GITHUB_TOKEN when the Pages project carries one; the
+panels say in words when it does not), the build record of the
+tree it rides in, and the backup standing above in words. It is
+never a second writer beside the machinery, and it holds no
+acts.
+
+One production step stands between this code and a live surface:
+the Pages project needs its door settings placed —
+MEMBERSPARK_CLIENT_ID and MEMBERSPARK_CLIENT_SECRET (the client
+the centre registered for this product), TEST_ACCOUNT_SUBS (the
+centre's placement, subs only) and, for the Actions panels,
+OPS_GITHUB_TOKEN. Until they are placed the door reads as
+unconfigured and /ops answers the ordinary 404 to everyone,
+which is the safe face. The names stand in
+docs/secrets-inventory.md.
 
 ## If the shape changes
 

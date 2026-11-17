@@ -29,6 +29,14 @@ Build Tests run on a change, before the push, and they gate the push.
   tools/check-publish-set.py and tools/check-removal-tripwire.py
   against fixture trees and a local stub sitemap. The live site
   is never touched.
+- The Ops surface: `node test_ops.mjs` — it drives the /ops
+  Pages Functions against the MemberSpark kit's own fake (a
+  stub centre with its own signing key): the sign-in journey,
+  admission on the ops claim, the ordinary-404 face for
+  non-holders, the test account's read-only standing and
+  banner, the session lifetimes, and the cache fences (the
+  no-store answers and the service worker's bypass). Real
+  MemberSpark and the live site are never touched.
 - One catalogue test on its own:
   `python3 -m unittest test_windows_catalog.WindowsCatalogueTests.test_seed`
   — the same shape names any single test in either catalogue file.
