@@ -27,6 +27,7 @@ import {
 } from "./memberspark-kit/memberspark.js";
 import { NOT_FOUND_HTML } from "./not-found-page.js";
 import { BUILD_RECORD } from "./build-record.js";
+import { readDoorLog } from "./ops-log.js";
 import {
   parseTestAccountSubs,
   sessionFromRequest,
@@ -56,6 +57,12 @@ export function getSettings(env = {}) {
     // stands, and it is needed only if the repo goes
     // private.
     githubToken: env.OPS_GITHUB_TOKEN || "",
+    // The door's own log store (issue #50): the KV namespace
+    // the product's two logs stand in, bound as AF_LOGS.
+    // Absent where the binding does not stand on the project
+    // yet — the writers then write nothing and the door
+    // answers exactly as it did before the logs stood.
+    logs: env.AF_LOGS || null,
     // A fetch seam the ops suite uses to stand the kit
     // against the kit's own fake. Production env never
     // carries it; the kit's default road is the global fetch.
@@ -257,6 +264,64 @@ async function readChecks(settings) {
   return { rows };
 }
 
+// The door's own log, read back for the Doors panel (issue
+// #50): the recent audit entries and error entries from the
+// product's own store (lib/ops-log.js), worded here in the
+// surface's plain words. The entries carry no personal
+// fields — the panel shows what happened at the door and
+// when, never who. Where no store stands bound, the panel
+// names that standing instead of inventing a quiet log.
+const REFUSAL_WORDS = {
+  "no-flow": "no standing flow",
+  "foreign-issuer": "foreign issuer",
+  "iss-mismatch": "issuer mismatch",
+  "state-mismatch": "state mismatch",
+  "token-invalid": "token did not verify",
+  unverified: "could not be verified",
+  "no-standing": "no standing at this surface",
+};
+const COMPLETION_WORDS = {
+  ops: "Ops role",
+  test: "test account",
+  none: "no Ops standing",
+};
+const ERROR_WORDS = {
+  auth_road_failure: "the sign-in road failed",
+  ops_page_failure: "the Ops page failed",
+  ops_data_failure: "the Ops data read failed",
+  ops_signout_failure: "sign-out failed",
+};
+const DOOR_LOG_NOTES = {
+  "not-placed":
+    "The door's log store does not stand on this project yet, so the door is keeping no entries.",
+  "not-read": "The door's log could not be read just now.",
+  empty: "No entries stand yet.",
+};
+
+async function readDoorLogPanel(settings) {
+  const log = await readDoorLog(settings);
+  return {
+    entries: log.entries.map((entry) =>
+      entry.kind === "sign-in-refusal"
+        ? {
+            at: entry.at,
+            label: "Sign-in refused",
+            detail: REFUSAL_WORDS[entry.reason] || entry.reason,
+          }
+        : {
+            at: entry.at,
+            label: "Sign-in completed",
+            detail: COMPLETION_WORDS[entry.standing] || entry.standing,
+          }
+    ),
+    errors: log.errors.map((entry) => ({
+      at: entry.at,
+      detail: ERROR_WORDS[entry.signature] || entry.signature,
+    })),
+    note: log.note ? DOOR_LOG_NOTES[log.note] : null,
+  };
+}
+
 export async function opsData(settings, session, standing) {
   const identity = {
     name: session.name,
@@ -279,6 +344,7 @@ export async function opsData(settings, session, standing) {
     build: BUILD_RECORD,
     publishing,
     checks,
+    doorLog: await readDoorLogPanel(settings),
     backup: {
       // docs/OPS.md's standing, in the surface's own words:
       // no store stands, the repo is the record, and

@@ -8,6 +8,10 @@
 // (TA-6) with the read-only mark on the answer (TA-9), and
 // its every write is refused at the gate (TA-7).
 import {
+  recordFunctionError,
+  recordSignInRefusal,
+} from "../lib/ops-log.js";
+import {
   getSettings,
   jsonResponse,
   notFoundResponse,
@@ -19,8 +23,34 @@ import {
 
 export async function onRequest({ request, env }) {
   const settings = getSettings(env);
+  try {
+    return await serve(request, settings);
+  } catch (err) {
+    // A failure of the road itself (issue #50): the error
+    // log carries it before it propagates, and the failure
+    // itself is unchanged.
+    await recordFunctionError(settings, {
+      signature: "ops_data_failure",
+      where: "/ops/data",
+      cause: err,
+    });
+    throw err;
+  }
+}
+
+async function serve(request, settings) {
   const session = await sessionOf(settings, request);
   const standing = standingOf(settings, session);
+
+  // The gate's audit entry (issue #50): a signed-in arrival
+  // answered for want of standing writes its refusal before
+  // the answer leaves, as at the page gate.
+  if (session && !standing) {
+    await recordSignInRefusal(settings, {
+      door: "ops-data",
+      reason: "no-standing",
+    });
+  }
 
   const gated = testGate(settings, session, standing, request);
   if (gated) return gated;

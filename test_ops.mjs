@@ -13,10 +13,13 @@
 // service worker's bypass standing in the generated sw.js and
 // in generate.py's build_sw, so regeneration keeps it); the
 // generated-module pins (the 404 module is 404.html's exact
-// bytes); and the Actions standings read — public with no
+// bytes); the Actions standings read — public with no
 // credential (the repo is public), the token sent as a Bearer
 // header when one stands, and a refused read standing in the
-// panels as Not read.
+// panels as Not read; and the door's own two logs (issue
+// #50): the audit entries a refusal and a completion write,
+// the error entry a Function failure writes, and their
+// read-back through the surface.
 //
 // Run: node test_ops.mjs
 import { readFileSync } from "node:fs";
@@ -542,6 +545,297 @@ async function opsDataWith(env, tag) {
     env: ENV,
   });
   check("sign-out by GET is the 404 face", getOut.status === 404);
+}
+
+// ---------- the door's own logs (issue #50) ----------
+// The audit log (sign-in refusals and completions) and the
+// error log (Function failures) stand in the product's own
+// KV store, faked here in memory. The entries carry fixed
+// words and no personal fields; the writes are the door's
+// machinery, riding every standing alike.
+const opsLog = await import(
+  pathToFileURL(join(ROOT, "functions/lib/ops-log.js"))
+);
+function fakeKv() {
+  const map = new Map();
+  return {
+    map,
+    async get(key, type) {
+      const value = map.get(key);
+      if (value === undefined) return null;
+      return type === "json" ? JSON.parse(value) : value;
+    },
+    async put(key, value) {
+      map.set(key, String(value));
+    },
+    async list({ prefix = "" } = {}) {
+      const names = [...map.keys()].filter((k) => k.startsWith(prefix)).sort();
+      return { keys: names.map((name) => ({ name })), list_complete: true };
+    },
+  };
+}
+const LOG_KV = fakeKv();
+const LOGENV = { ...ENV, AF_LOGS: LOG_KV };
+const LOG_SETTINGS = { logs: LOG_KV };
+async function logEntries(family) {
+  const { keys } = await LOG_KV.list({ prefix: family + ":" });
+  const out = [];
+  for (const k of keys) out.push(await LOG_KV.get(k.name, "json"));
+  return out;
+}
+async function journeyWith(env, sub) {
+  const start = await authRoad.onRequest({
+    request: new Request(ORIGIN + ROUTES.signIn),
+    env,
+  });
+  const loc = start.headers.get("location") || "";
+  const flowCookies = setCookies(start).map(cookiePair).join("; ");
+  const authUrl = new URL(loc);
+  authUrl.searchParams.set("fake_sub", sub);
+  const authRes = await fake.fetch(new Request(authUrl));
+  const back = authRes.headers.get("location") || "";
+  const cb = await authRoad.onRequest({
+    request: new Request(back, { headers: { cookie: flowCookies } }),
+    env,
+  });
+  const cookies = setCookies(cb);
+  const session = cookies.find((c) => c.startsWith("af-ops-session="));
+  return { cb, sessionCookie: session ? cookiePair(session) : null };
+}
+{
+  // The writers enforce the fixed vocabularies themselves.
+  check(
+    "the refusal writer refuses a word outside the fixed set",
+    (await opsLog.recordSignInRefusal(LOG_SETTINGS, {
+      door: "ops-door",
+      reason: "bogus",
+    })) === false &&
+      (await opsLog.recordSignInCompletion(LOG_SETTINGS, {
+        standing: "owner",
+      })) === false &&
+      (await opsLog.recordFunctionError(LOG_SETTINGS, {
+        signature: "bogus",
+        where: "/ops",
+        cause: "x",
+      })) === false &&
+      LOG_KV.map.size === 0
+  );
+  // The scrubber strips an address, a token-shaped run and
+  // a long digit run — and an address inside a spaceless
+  // JSON body is stripped alone, its neighbours surviving.
+  const scrubbed = opsLog.scrubLogText(
+    '{"errors":"currency is not enabled for this account","email":"a@b.co","after":"kept"}'
+  );
+  check(
+    "the scrubber strips the address and keeps the body's tail",
+    !scrubbed.includes("a@b.co") &&
+      scrubbed.includes("currency is not enabled") &&
+      scrubbed.includes("kept"),
+    scrubbed
+  );
+  check(
+    "the scrubber strips token-shaped and digit runs",
+    !opsLog.scrubLogText("tok abcdefghij1234567890 card 1234567890123456")
+      .includes("abcdefghij1234567890") &&
+      !opsLog.scrubLogText("card 1234567890123456").includes("1234567890123456")
+  );
+}
+{
+  const res = await authRoad.onRequest({
+    request: get(
+      ROUTES.callback + "?code=x&state=y&iss=" + encodeURIComponent(fake.issuer)
+    ),
+    env: LOGENV,
+  });
+  const refusals = await logEntries("sign-in-refusal");
+  check(
+    "a no-flow callback writes its refusal, fixed word, no personal field",
+    res.status === 303 &&
+      refusals.length === 1 &&
+      refusals[0].kind === "sign-in-refusal" &&
+      refusals[0].door === "ops-door" &&
+      refusals[0].reason === "no-flow" &&
+      !("email" in refusals[0]) &&
+      !("sub" in refusals[0]) &&
+      !JSON.stringify(refusals[0]).includes("@"),
+    JSON.stringify(refusals)
+  );
+}
+{
+  const res = await authRoad.onRequest({
+    request: get(ROUTES.callback + "?code=x&state=y&iss=https://evil.example"),
+    env: LOGENV,
+  });
+  const refusals = await logEntries("sign-in-refusal");
+  check(
+    "a foreign-issuer callback writes its refusal",
+    res.status === 200 &&
+      refusals.some(
+        (e) => e.door === "ops-door" && e.reason === "foreign-issuer"
+      )
+  );
+}
+let logPlainCookie;
+{
+  const ops = await journeyWith(LOGENV, "ops-person-1");
+  const plain = await journeyWith(LOGENV, "plain-person-1");
+  const test = await journeyWith(LOGENV, TEST_SUB);
+  logPlainCookie = plain.sessionCookie;
+  const completions = await logEntries("sign-in-completion");
+  const byStanding = {};
+  for (const e of completions) byStanding[e.standing] = e;
+  check(
+    "each completed sign-in writes its completion, standing in the door's words",
+    Boolean(ops.sessionCookie && plain.sessionCookie && test.sessionCookie) &&
+      completions.length === 3 &&
+      byStanding.ops && byStanding.ops.door === "ops-door" &&
+      byStanding.none && byStanding.test &&
+      completions.every(
+        (e) => !("email" in e) && !("sub" in e) && !JSON.stringify(e).includes("@")
+      ),
+    JSON.stringify(completions)
+  );
+}
+{
+  const page = await opsPage.onRequest({
+    request: get("/ops", logPlainCookie),
+    env: LOGENV,
+  });
+  const data = await opsData.onRequest({
+    request: get("/ops/data", logPlainCookie),
+    env: LOGENV,
+  });
+  const refusals = await logEntries("sign-in-refusal");
+  check(
+    "a no-standing arrival writes its refusal at each gate, the face unchanged",
+    page.status === 404 &&
+      (await page.text()) === NOT_FOUND_HTML &&
+      data.status === 404 &&
+      refusals.some((e) => e.door === "ops-page" && e.reason === "no-standing") &&
+      refusals.some((e) => e.door === "ops-data" && e.reason === "no-standing"),
+    JSON.stringify(refusals)
+  );
+  const before = (await logEntries("sign-in-refusal")).length;
+  await opsPage.onRequest({ request: get("/ops"), env: LOGENV });
+  check(
+    "a signed-out arrival writes nothing",
+    (await logEntries("sign-in-refusal")).length === before
+  );
+  const auditBefore =
+    (await logEntries("sign-in-refusal")).length +
+    (await logEntries("sign-in-completion")).length;
+  const testJourney = await journeyWith(LOGENV, TEST_SUB);
+  const gated = await opsPage.onRequest({
+    request: new Request(ORIGIN + "/ops", {
+      method: "POST",
+      headers: { cookie: testJourney.sessionCookie },
+    }),
+    env: LOGENV,
+  });
+  const auditAfter =
+    (await logEntries("sign-in-refusal")).length +
+    (await logEntries("sign-in-completion")).length;
+  check(
+    "a test account's gated write is refused and writes no audit entry",
+    gated.status === 403 && auditAfter === auditBefore + 1,
+    "audit " + auditBefore + " -> " + auditAfter
+  );
+}
+{
+  const broken = {
+    method: "GET",
+    headers: {
+      get(name) {
+        if (name === "cookie") throw new Error("headers exploded");
+        return null;
+      },
+    },
+  };
+  let threw = false;
+  try {
+    await opsPage.onRequest({ request: broken, env: LOGENV });
+  } catch {
+    threw = true;
+  }
+  const errors = await logEntries("site-error");
+  check(
+    "a Function failure writes its error entry and still propagates",
+    threw &&
+      errors.some(
+        (e) =>
+          e.signature === "ops_page_failure" &&
+          e.where === "/ops" &&
+          e.cause === "headers exploded"
+      ),
+    JSON.stringify(errors)
+  );
+  await opsLog.recordFunctionError(LOG_SETTINGS, {
+    signature: "ops_data_failure",
+    where: "/ops/data",
+    cause: "read failed for ops@example.test with token abcdefghij1234567890",
+  });
+  const stored = (await logEntries("site-error")).find(
+    (e) => e.signature === "ops_data_failure"
+  );
+  check(
+    "an error entry's cause is scrubbed before it stands",
+    stored &&
+      !stored.cause.includes("@") &&
+      !stored.cause.includes("abcdefghij1234567890"),
+    stored && stored.cause
+  );
+}
+{
+  // The read-back: the holder's data carries the door's
+  // recent entries, worded for the panel, newest first.
+  const stub = githubStub(githubAnswers());
+  const door = await import(
+    pathToFileURL(join(ROOT, "functions/lib/ops-door.js")) + "?log=read"
+  );
+  const d = await door.opsData(
+    door.getSettings({ ...LOGENV, __OPS_FETCH: stub.fetchImpl }),
+    HOLDER_SESSION,
+    "ops"
+  );
+  check(
+    "the data read carries the door log, worded and newest first",
+    d.doorLog &&
+      d.doorLog.entries.some(
+        (e) => e.label === "Sign-in refused" && e.detail === "no standing at this surface"
+      ) &&
+      d.doorLog.entries.some(
+        (e) => e.label === "Sign-in completed" && e.detail === "Ops role"
+      ) &&
+      d.doorLog.errors.some((e) => e.detail === "the Ops page failed") &&
+      d.doorLog.entries.every(
+        (e, i, a) => i === 0 || a[i - 1].at >= e.at
+      ) &&
+      d.doorLog.note === null,
+    JSON.stringify(d.doorLog)
+  );
+  const road = await opsData.onRequest({
+    request: get("/ops/data", logPlainCookie),
+    env: LOGENV,
+  });
+  check(
+    "the no-standing data read stays 404 while the log stands behind the grant",
+    road.status === 404
+  );
+  const door2 = await import(
+    pathToFileURL(join(ROOT, "functions/lib/ops-door.js")) + "?log=none"
+  );
+  const d2 = await door2.opsData(
+    door2.getSettings({ ...ENV, __OPS_FETCH: stub.fetchImpl }),
+    HOLDER_SESSION,
+    "ops"
+  );
+  check(
+    "with no store bound the panel names the standing, inventing no entries",
+    d2.doorLog.entries.length === 0 &&
+      typeof d2.doorLog.note === "string" &&
+      d2.doorLog.note.includes("does not stand"),
+    JSON.stringify(d2.doorLog)
+  );
 }
 
 // ---------- the service worker fence ----------

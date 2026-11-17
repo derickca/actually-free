@@ -1245,6 +1245,9 @@ def build_ops_page():
     # initials drawing), the account name, and the test banner.
     # The standings themselves are read from /ops/data by the
     # page's script, so the face carries no standing of its own.
+    # The Doors panel also fronts the door's own log (issue
+    # #50): the recent sign-in refusals and completions and
+    # the Function failures, read from the same answer.
     return """<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 <head>
@@ -1330,11 +1333,19 @@ def build_ops_page():
         ["Build stamp", d.build.buildStamp]
       ]);
       note(document.querySelector('[data-panel="backup"]'), d.backup.line);
-      rows(document.querySelector('[data-panel="doors"]'), [
+      var doorRows = [
         ["Signed in as", d.identity.name || d.identity.email],
         ["Standing", d.identity.standing],
         ["Sign-in", "MemberSpark"]
-      ]);
+      ];
+      (d.doorLog.entries || []).forEach(function (e) {
+        doorRows.push([e.label, e.detail + ", " + when(e.at)]);
+      });
+      (d.doorLog.errors || []).forEach(function (e) {
+        doorRows.push(["Function failure", e.detail + ", " + when(e.at)]);
+      });
+      if (d.doorLog.note) doorRows.push(["Door log", d.doorLog.note]);
+      rows(document.querySelector('[data-panel="doors"]'), doorRows);
     })
     .catch(function () {
       document.querySelectorAll("[data-panel]").forEach(function (el) {
