@@ -59,14 +59,26 @@ def wait_for_server(url, timeout=30.0, interval=0.2):
     return False
 
 
+class _QuietHandler(SimpleHTTPRequestHandler):
+    def log_message(self, *args):
+        pass
+
+
+class _RigHTTPServer(ThreadingHTTPServer):
+    def handle_error(self, request, client_address):
+        # A browser closing a connection mid-answer is the
+        # rig's ordinary weather, not a failure to report.
+        pass
+
+
 class RigServer:
     """Serve a directory on 127.0.0.1 at an OS-chosen port."""
 
     def __init__(self, root):
         self.root = Path(root)
-        handler = lambda *a, **kw: SimpleHTTPRequestHandler(  # noqa: E731
+        handler = lambda *a, **kw: _QuietHandler(  # noqa: E731
             *a, directory=str(self.root), **kw)
-        self.server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
+        self.server = _RigHTTPServer(("127.0.0.1", 0), handler)
         self.port = self.server.server_address[1]
         self.thread = threading.Thread(
             target=self.server.serve_forever, daemon=True)
