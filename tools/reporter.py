@@ -71,10 +71,10 @@ AF_QUARANTINE_STATE_FILE), advanced once per finish per
 quarantined check. When nothing stands quarantined the
 block stands in the report as an empty list, never omitted.
 
-The Scenario Review seam (issue #28's suite is its own
-build): report_scenario_review() below shapes a suite's
-results into the group's start and finish reports, the way
-the centre's own shaper shapes them — checks named
+The Scenario Review seam (the suite built under issue #28
+calls it when its run ends): report_scenario_review() below
+shapes a suite's results into the group's start and finish
+reports, the way the centre's own shaper shapes them — checks named
 "<journey>:<check>", a NOT-RUN journey's name in not_run,
 started_by "schedule" (the group's standing expectation is
 an interval registration the centre holds; the suite
