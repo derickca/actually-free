@@ -1,13 +1,17 @@
 # E2E testing — Actually Free
 
 How this app is tested under the fleet's E2E Testing standard. The
-standard lives in agents-policy at docs/e2e-testing-standard.md; this
-file is the app's own contract under it.
+standard lives in agents-policy at
+standards/engineering/e2e-testing.md; this file is the app's own
+contract under it.
 
-Actually Free is a generated static directory. It has no backend, no
-sign-in and no accounts. The pages a visitor sees are built by
-generate.py from the seed files and committed; publishing uploads the
-committed tree. Every group below is read against that shape.
+Actually Free is a generated static directory. The public directory
+has no backend, no visitor sign-in and no visitor accounts. Its one
+signed-in surface is the Ops page at /ops, signed in through
+MemberSpark (issue #32; docs/OPS.md carries that surface's own
+contract). The pages a visitor sees are built by generate.py from
+the seed files and committed; publishing uploads the committed
+tree. Every group below is read against that shape.
 
 ## Build Tests
 
@@ -58,8 +62,8 @@ Build Tests run on a change, before the push, and they gate the push.
   against a fake gh, the driver's condition wait against a
   local server, and the run's payload through the reporter
   seam's shaper. The browser walks themselves are proven by
-  the suite's own twice-daily runs, not here. Real GitHub,
-  the real intake and the real credential are never touched.
+  running the suite itself, not here. Real GitHub, the real
+  intake and the real credential are never touched.
 - The whole set in one run: `python3 tools/build-tests.py`
   runs every suite above as one check each and reports the
   run as the change's Build Tests run (see Results). It
@@ -72,9 +76,9 @@ Build Tests run on a change, before the push, and they gate the push.
   above are the whole gate.
 - Screenshots: a change that touches a view takes screenshots of that
   view at 1280 and 390 widths with `python3 tools/shots.py`, and the
-  person or agent landing the change looks at them before the push.
-  Screenshots stay on the machine that took them; they never go to
-  the results store.
+  person or agent landing the change looks at them before the push
+  and says so in the commit or on the issue. Screenshots stay on
+  the machine that took them; they never go to the results store.
 - The public-readiness guard: `python3 tools/check-public-readiness.py`
   scans tracked files for personal information before a push. The
   values it looks for stand in one machine-local private file,
@@ -123,6 +127,14 @@ and run as `python3 tools/smoke.py`, a step in
 There is no preview copy and no promotion to hold, so a red smoke
 fails the deploy run: that failure is the loud alarm. A held publish
 runs no smoke, because nothing reached production.
+
+The checks that run on production — this smoke and the Release
+Review below — write nothing on production. They read the site and
+the deploy record; their only writes are their results reports and
+runner-local state. No repo test sends email, and no repo suite
+signs in through Google: the repo's sign-in tests run against the
+kit's fake, and any real sign-in proof is the centre's Login Review
+alone.
 
 The smoke's checks also go to the central results store as the
 deploy's Build Tests report (see Results): a step after the smoke
@@ -179,9 +191,9 @@ starts with the runner.
 
 Scenario Review runs twice a day, internal on Certifiable99,
 against a throwaway local copy of the committed tree. It never runs
-on production and never on staging. The app has no accounts, so the
-journeys use no person's data: they walk the public directory as a
-visitor does.
+on production and never on staging. The journeys use no account and
+no person's data: they walk the public directory as a visitor does
+and never walk the Ops surface.
 
 The contract, in the order a person lives it:
 
@@ -238,24 +250,67 @@ to 0 in the workflow: the review reports, it never blocks.
 ## The centre's groups and the test accounts
 
 Login Review, Heartbeat Check and Standards Review are the centre's
-groups, run by MemberSpark. This app has no sign-in, no accounts and
-no owner or admin surfaces, so Login Review has no door to walk
-here; the heartbeat the centre checks is the live site answering.
+groups, run by MemberSpark. None of them is built or run from this
+repo.
+
+Login Review walks this app on production: the public home, and,
+once a day, the app's owner surface — the Ops page at /ops, through
+its MemberSpark sign-in. The standing test account is admitted
+there read-only: its standing is judged on every request by its sub
+against the TEST_ACCOUNT_SUBS placement the centre made on the
+Pages project, with the test account's banner on the page, its
+X-Viewer mark on the other answers and a 15-minute session, under
+the test-accounts standard. Its live proof stands on issue #32: on
+2026-11-17 the centre's Login Review legs signed the test account
+in at this site's door and /ops served with the banner standing.
+Login Review is the only road that signs in through Google; no
+repo group, suite or lane does.
+
+Heartbeat Check is the centre's, every 30 minutes on production:
+the live site answers, and the Ops sign-in starts cleanly. Its
+alarms are the centre's to raise. The Release Review runner's own
+heartbeat above covers the public site alone; the sign-in start
+stands under this check and Login Review, not under that runner.
+
+Standards Review is the centre's, twice a day: it renders the live
+site, measures the shared chrome the site standards require and
+reports only. No group compares screenshots automatically.
 
 The product keeps no sign-ins, arrivals, claim rows or account
-counts of its own, so there are no numbers for the standing test
-accounts to be left out of. The visitor counter on the pages is
-MemberSpark's; its counting is the centre's side of the line.
+counts of its own, so there are no product numbers for the standing
+test accounts to be left out of; the standings the Ops page shows
+are machinery standings — listings, publishes and checks — not
+account counts. The visitor counter on the pages is MemberSpark's;
+its counting is the centre's side of the line. The test accounts'
+identifiers stand only as subs in the centre's TEST_ACCOUNT_SUBS
+placement; no tracked file in this repo carries the list.
 
 ## Results
 
-Every run reports to the central results store: Build Tests from
-the change and the deploy smoke, Release Review from its runner,
-Scenario Review from the suite. The sender is tools/reporter.py,
-on the store's own intake shape (POST /api/v1/results/reports);
-the Scenario Review seam — the shaping call the suite makes when
-its run ends — stands in the same file, ready for the suite's own
-build.
+The standing machinery, as built under issue #29 on the centre's
+own record for this app (MemberSpark #1258), reports every run to
+the central results store: Build Tests from the change and the
+deploy smoke, Release Review from its runner, Scenario Review from
+the suite. The sender is tools/reporter.py, on the store's own
+intake shape (POST /api/v1/results/reports); the Scenario Review
+seam — the shaping call the suite makes when its run ends — stands
+in the same file, and the suite built under issue #28 calls it.
+
+One tension stands open against that machinery, recorded on issue
+#46: the standard as amended on 2026-11-16 (the owner's direct-reads
+ruling) says a product's Build Tests and Release Review standing is
+not reported to the store — MemberSpark Admin reads it from the
+product's own store through its operator door — and the watchers
+spec carries the same scope, with no expectation row standing for
+either group. This app has no operator door: docs/OPS.md records
+that Admin asks it no question a door would answer. The centre's
+#1258 record for this app, made after that amendment, holds the
+reporter credential and the event declarations below as this app's
+standing road. Which of the two the centre settles on — a door for
+this app, or the standard amended to name this road — is the
+MemberSpark chat's to clear. Until it is cleared, the paragraphs
+below state the machinery as it stands; they do not claim the
+tension away.
 
 The reporter credential stands minted by the centre and placed as
 the MEMBERSPARK_RESULTS_TOKEN repository secret; senders read it
@@ -275,8 +330,16 @@ the same credential, the row's subject the run name of the report
 that will earn it. A change and a deploy each declare a Build
 Tests row due one hour after the event, grace two hours; a
 publish declares the day's Release Review row due 30 minutes
-after it, grace two hours. The standing failure issue for
+after it, grace two hours. Those two event roads are the ones the
+tension above stands against. The standing failure issue for
 Scenario Review is the tracker's "Scenario Review: failed and
 never-ran scenarios (standing)" and its cadence word is
 twice-daily — the two words the centre registered the interval
 from.
+
+A run is proven at the far end: a claim that a run ran names the
+read that would fail if it never ran — the store's record, the
+workflow's run record or the door's answer — never a sender-side
+success, a passing unit test or a valid credential alone. An
+absence a never-ran run and a ran-and-reported-nothing run both
+produce proves neither.
