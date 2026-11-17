@@ -85,6 +85,28 @@ jobs:
           mkdir -p "$RUNNER_TEMP/site"
           git archive HEAD | tar -x -C "$RUNNER_TEMP/site"
 
+      # Publish guards (issue #37): two of the three guards the
+      # Test, Build and Release Standard names at the moment of
+      # publishing, run against the staged tree before anything
+      # is published. The publish-set check proves the staged
+      # tree is complete against its own sitemap and catalogue —
+      # every sitemap URL maps to a file, every listing has its
+      # page and its sitemap URL. The removal tripwire compares
+      # the staged sitemap against the live site's: a live page
+      # missing from the staged set stops this publish, unless
+      # the removal stands recorded as deliberate in
+      # retired-pages.txt in this repo. The third guard, the
+      # destructive-migration guard, does not apply here: the
+      # site has no migrations and holds no stored data. A trip
+      # fails this run before the publish step, so nothing is
+      # published; it stops this one publish and no other — the
+      # next push or dispatch runs the guards afresh.
+      - name: Guard the publish set
+        if: steps.hold.outputs.publish == 'true'
+        run: |
+          python3 tools/check-publish-set.py --staged-dir "$RUNNER_TEMP/site"
+          python3 tools/check-removal-tripwire.py --staged "$RUNNER_TEMP/site/sitemap.xml" --retired retired-pages.txt
+
       - name: Publish to Cloudflare Pages
         if: steps.hold.outputs.publish == 'true'
         env:

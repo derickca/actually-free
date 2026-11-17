@@ -1,0 +1,14 @@
+# Deliberate page retirements — the record the removal tripwire
+# (tools/check-removal-tripwire.py) reads at publish time.
+#
+# When a page or listing is retired on purpose, add one line here
+# in the same landing that removes it: the page's path, then the
+# date and a few words on why. The tripwire compares the live
+# sitemap against the staged one; a live page that vanishes
+# without a line here stops the publish.
+#
+# Format:  /path  YYYY-MM-DD — reason
+#
+# Example (not an entry):
+# /app/old-listing 2026-11-17 — retired by the owner, delisted
+
