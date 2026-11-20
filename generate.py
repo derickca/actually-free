@@ -556,6 +556,90 @@ def resolve_siblings(apps):
             a["sibling_slug"] = sibs[0]["slug"]
             a["sibling_platform"] = sibs[0]["platform"]
 
+
+# ---------------------------------------------------------------------------
+# Internal linking (issue #52): the spine, the doorways, the clusters.
+#
+# Google has indexed only a small share of the catalogue; most app
+# pages were reachable in the static HTML only through the client-side
+# grid, which is to say barely at all. The fix is structural: static
+# hub pages carry the crawl from the home page down to every app.
+# ---------------------------------------------------------------------------
+
+def hub_slug(name):
+    """URL slug for a category or subcategory name ('Dev tools' ->
+    'dev-tools'). Names are plain words and spaces today; anything
+    that is not a letter or a digit folds to a hyphen."""
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def category_path(category):
+    return f"category/{hub_slug(category)}"
+
+
+def subcategory_path(category, subcategory):
+    return f"category/{hub_slug(category)}/{hub_slug(subcategory)}"
+
+
+def subcategory_groups(apps):
+    groups = {}
+    for a in apps:
+        groups.setdefault((a["category"], a["subcategory"]), []).append(a)
+    return groups
+
+
+def _rating_value(app):
+    try:
+        return float(app["rating"]) if app.get("rating") else None
+    except (TypeError, ValueError):
+        return None
+
+
+def doorway_order(group):
+    """A subcategory's apps strongest first: rated apps before
+    unrated, highest rating first, ties and the unrated in the
+    catalogue's own name order. The catalogue carries no traffic
+    signal, so the store rating is the strength signal that stands;
+    a subcategory page in this order is the subcategory's doorway."""
+    def key(a):
+        r = _rating_value(a)
+        return (0 if r is not None else 1, -(r or 0.0),
+                a["name"].lower(), a["slug"])
+    return sorted(group, key=key)
+
+
+# A cluster names at most this many neighbours; in a subcategory
+# larger than that, the doorway apps plus the nearest neighbours in
+# doorway order carry the links.
+CLUSTER_CAP = 12
+CLUSTER_DOORWAY = 4
+
+
+def resolve_clusters(apps):
+    """Attach each app's same-subcategory cluster (app['cluster']):
+    the listings its detail page links under 'More <subcategory>
+    apps'. Small subcategories link everyone; larger ones link the
+    doorway apps (so they gather links from every page in the
+    subcategory) plus the app's nearest neighbours in doorway order
+    (so every app is linked from the pages around it)."""
+    for group in subcategory_groups(apps).values():
+        ordered = doorway_order(group)
+        n = len(ordered)
+        for i, a in enumerate(ordered):
+            others = [b for b in ordered if b is not a]
+            if len(others) <= CLUSTER_CAP:
+                picks = others
+            else:
+                chosen = {b["slug"] for b in others[:CLUSTER_DOORWAY]}
+                for j in range(max(0, i - 5), min(n, i + 6)):
+                    if ordered[j] is not a:
+                        chosen.add(ordered[j]["slug"])
+                picks = [b for b in others
+                         if b["slug"] in chosen][:CLUSTER_CAP]
+            a["cluster"] = [{"slug": b["slug"], "name": b["name"],
+                             "platform": b.get("platform") or "android"}
+                            for b in picks]
+
 # ---------------------------------------------------------------------------
 # Feedback — the browser POSTs JSON to the shared msg service
 # (https://feedback.certifiable.media/api/submit), which stores it and notifies
@@ -761,13 +845,21 @@ def site_footer(forms):
 # index.html — the directory shell (tiles render client-side from apps.json)
 # ---------------------------------------------------------------------------
 
-def build_index(forms):
+def build_index(apps, forms):
     # Filter controls are rendered client-side from the apps.json payload (see
     # renderFilters in JS_CONTENT): the shell carries no filterable values, so
     # a stale page can never disagree with fresh data. The promise line is the
     # single PROMISES list, not a second hardcoded copy.
     promise_line = " \u00b7 ".join(
         f'<span class="lock">\u2713 {esc(p)}</span>' for p in PROMISES)
+    # The browse section is the spine's first link (issue #52): static
+    # links from the home page to every category page, so the whole
+    # catalogue stands within two clicks of home in plain HTML.
+    counts = Counter(a["category"] for a in apps)
+    browse_items = "\n".join(
+        f'      <li><a href="/{category_path(c)}">{esc(c)}</a>'
+        f' <span class="hub-meta">{counts[c]} apps</span></li>'
+        for c in sorted(counts))
     filter_defs = json.dumps(
         {"stores": FILTER_STORES, "attrs": FILTER_ATTRS},
         ensure_ascii=False).replace("</", "<\\/")
@@ -816,6 +908,12 @@ def build_index(forms):
   </section>
   <section id="grid" class="grid" aria-label="Apps"></section>
   <p id="empty-state" class="empty-state" hidden></p>
+  <section class="browse" aria-label="Browse by category">
+    <h2>Browse by category</h2>
+    <ul class="hub-list">
+{browse_items}
+    </ul>
+  </section>
 </main>
 {site_footer(forms)}
 </body>
@@ -1095,6 +1193,25 @@ def build_detail(app, forms):
         joined = (links[0] if len(links) == 1
                   else ", ".join(links[:-1]) + " and " + links[-1])
         sib = f'<p class="sibling-link">Also available on {joined}</p>'
+    # The category line links up the spine to the hub pages, and the
+    # cluster links across it to the same-subcategory neighbours
+    # (issue #52; the picks are resolved by resolve_clusters).
+    cat_line = (f'<a href="/{category_path(app["category"])}">'
+                f'{esc(app["category"])}</a>')
+    if app["subcategory"]:
+        cat_line += (f' \u00b7 <a href="/{subcategory_path(app["category"], app["subcategory"])}">'
+                     f'{esc(app["subcategory"])}</a>')
+    cluster_html = ""
+    picks = app.get("cluster") or []
+    if picks:
+        items = "\n".join(
+            f'<li><a href="/app/{esc(p["slug"])}">{esc(p["name"])}</a>'
+            f' <span class="hub-meta">'
+            f'{esc(PLATFORM_NAMES.get(p["platform"], p["platform"]))}</span></li>'
+            for p in picks)
+        cluster_html = (
+            f'<div class="cluster"><h2>More {esc(app["subcategory"])} apps</h2>\n'
+            f'<ul class="hub-list">\n{items}\n</ul></div>')
     return f"""<!DOCTYPE html>
 <html lang="en" data-mode="playful" data-theme="default">
 {head(title, desc, f"app/{app['slug']}.html")}
@@ -1107,7 +1224,7 @@ def build_detail(app, forms):
       {icon_block}
       <div>
         <h1>{esc(app["name"])} {ribbon}</h1>
-        <p class="cat">{esc(app["category"])}{" \u00b7 " + esc(app["subcategory"]) if app["subcategory"] else ""}</p>
+        <p class="cat">{cat_line}</p>
         {rating}
         {platform_line}
         {sib}
@@ -1124,10 +1241,100 @@ def build_detail(app, forms):
     {personal_note}
     {promise_block}
     {pills_block}
+    {cluster_html}
     <h2>Something wrong?</h2>
     <p class="feedback-note">Reports go to a human review queue. No timeline promised
     \u2014 this is a small pilot, but every report gets read.</p>
 {forms.report_form(app)}
+  </article>
+</main>
+{site_footer(forms)}
+</body>
+</html>
+"""
+
+
+def _hub_app_item(app):
+    """One app in a hub list: its name linking to its page, with the
+    platform and, where one stands, its store rating beside it."""
+    plat = PLATFORM_NAMES.get(app.get("platform") or "android", "Android")
+    meta = esc(plat)
+    if _rating_value(app) is not None:
+        meta += f' \u00b7 \u2605 {esc(app["rating"])}'
+    return (f'<li><a href="/app/{esc(app["slug"])}">{esc(app["name"])}</a>'
+            f' <span class="hub-meta">{meta}</span></li>')
+
+
+def build_category_page(category, groups, forms):
+    """A category hub: links to the category's subcategory pages,
+    then every app in the category grouped under its subcategory,
+    strongest first within each group (issue #52). Linking every app
+    here is what puts each app page two clicks from home."""
+    subs = sorted(s for (c, s) in groups if c == category)
+    total = sum(len(groups[(category, s)]) for s in subs)
+    title = f"{category} apps \u2014 actually free, no ads | Actually Free"
+    desc = (f"{total} actually free {category} apps for Android, Windows, "
+            f"Mac and iPhone: no ads, no purchases, no subscriptions, "
+            f"no trials, no nagging and no surprise bundles.")
+    nav = "\n".join(
+        f'<li><a href="/{subcategory_path(category, s)}">{esc(s)}</a>'
+        f' <span class="hub-meta">{len(groups[(category, s)])} apps</span></li>'
+        for s in subs)
+    sections = []
+    for s in subs:
+        items = "\n".join(_hub_app_item(a)
+                          for a in doorway_order(groups[(category, s)]))
+        sections.append(
+            f'<h2><a href="/{subcategory_path(category, s)}">{esc(s)}</a></h2>\n'
+            f'<ul class="hub-list">\n{items}\n</ul>')
+    body = "\n".join(sections)
+    return f"""<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+{head(title, desc, category_path(category) + ".html")}
+<body>
+{site_header()}
+<main class="detail">
+  <p><a class="back" href="/">&larr; Back to the directory</a></p>
+  <article class="detail-card">
+    <h1>{esc(category)}</h1>
+    <p class="hub-count">{total} apps, in {len(subs)} subcategories.</p>
+    <ul class="hub-list">
+{nav}
+    </ul>
+{body}
+  </article>
+</main>
+{site_footer(forms)}
+</body>
+</html>
+"""
+
+
+def build_subcategory_page(category, subcategory, group, forms):
+    """A subcategory hub: the subcategory's doorway (issue #52).
+    Every app in the subcategory, strongest first, so the crawl
+    meets the apps that matter most at the top of the page."""
+    title = (f"{subcategory} apps in {category} \u2014 actually free, "
+             f"no ads | Actually Free")
+    desc = (f"{len(group)} actually free {subcategory} apps in {category} "
+            f"for Android, Windows, Mac and iPhone: no ads, no purchases, "
+            f"no subscriptions, no trials, no nagging and no surprise "
+            f"bundles.")
+    items = "\n".join(_hub_app_item(a) for a in doorway_order(group))
+    return f"""<!DOCTYPE html>
+<html lang="en" data-mode="playful" data-theme="default">
+{head(title, desc, subcategory_path(category, subcategory) + ".html")}
+<body>
+{site_header()}
+<main class="detail">
+  <p><a class="back" href="/{category_path(category)}">&larr; {esc(category)}</a></p>
+  <article class="detail-card">
+    <h1>{esc(subcategory)}</h1>
+    <p class="hub-count">{len(group)} apps in
+    <a href="/{category_path(category)}">{esc(category)}</a>.</p>
+    <ul class="hub-list">
+{items}
+    </ul>
   </article>
 </main>
 {site_footer(forms)}
@@ -1398,6 +1605,16 @@ def build_sitemap(apps):
     urls = [f"  <url><loc>{SITE_URL}/</loc><lastmod>{site_date}</lastmod></url>",
             f"  <url><loc>{SITE_URL}/suggest</loc><lastmod>{site_date}</lastmod></url>",
             f"  <url><loc>{SITE_URL}/what-is-free</loc><lastmod>{site_date}</lastmod></url>"]
+    # The hub pages (issue #52): they render the whole catalogue's
+    # data, so they carry the site date like the home page.
+    groups = subcategory_groups(apps)
+    for cat in sorted({c for c, _ in groups}):
+        urls.append(f"  <url><loc>{SITE_URL}/{category_path(cat)}</loc>"
+                    f"<lastmod>{site_date}</lastmod></url>")
+        for sub in sorted(s for (c, s) in groups if c == cat):
+            urls.append(
+                f"  <url><loc>{SITE_URL}/{subcategory_path(cat, sub)}</loc>"
+                f"<lastmod>{site_date}</lastmod></url>")
     for app in apps:
         d = date_of(SEED_ORIGINS[app["slug"]])
         urls.append(f"  <url><loc>{SITE_URL}/app/{app['slug']}</loc>"
@@ -1889,6 +2106,17 @@ a.store-badge:hover { filter: brightness(0.96); }
 .dl-official:hover { filter: brightness(0.94); }
 .sibling-link { font-size: 0.85rem; color: var(--muted); margin: 4px 0 0; }
 .sibling-link a { color: var(--accent); }
+/* Hub pages and clusters (issue #52): plain link lists, one app per
+   line, the platform and rating riding muted beside the name. */
+.detail-card > h1 { font-size: 1.6rem; margin: 0 0 4px; }
+.hub-count { color: var(--muted); margin: 4px 0 14px; }
+.hub-list { list-style: none; margin: 0 0 18px; padding: 0; }
+.hub-list li { padding: 5px 0; border-bottom: 1px solid var(--card-edge); }
+.hub-list li:last-child { border-bottom: none; }
+.hub-meta { color: var(--muted); font-size: 0.85em; }
+.detail-head .cat a { color: var(--accent); }
+.browse { margin-top: 28px; }
+.browse h2 { font-size: 1.05rem; margin: 0 0 10px; }
 .per-badge-note {
   background: var(--accent-soft);
   border-radius: 12px;
@@ -3208,6 +3436,7 @@ def check_filter_consistency(apps, index_html, app_js):
 def main():
     apps = load_corpus()
     resolve_siblings(apps)
+    resolve_clusters(apps)
     print(f"{len(apps)} apps "
           f"({sum(1 for a in apps if a['made_by_us'])} made by us, "
           f"{sum(1 for a in apps if a['per_badge'])} per-badge, "
@@ -3217,14 +3446,20 @@ def main():
 
     mark_clashes(apps)
     apply_openapk(apps)
-    index_html = build_index(forms)
+    index_html = build_index(apps, forms)
     app_js = (JS_CONTENT.replace("__PLATFORM_SVGS__", PLATFORM_SVGS_JS)
               .replace("__PLATFORM_NAMES__", PLATFORM_NAMES_JS))
     if "__PLATFORM_SVGS__" in app_js or "__PLATFORM_NAMES__" in app_js:
         print("warning: platform SVGs placeholder survived replacement")
     app_js = app_js.strip() + "\n"
     check_filter_consistency(apps, index_html, app_js)
-    write("data/apps.json", json.dumps(apps, indent=1, ensure_ascii=False) + "\n")
+    # The cluster picks are build-time only — they stand baked into
+    # the detail pages' HTML — so they are stripped from the written
+    # records and the published payload stays catalogue data.
+    payload = [{k: v for k, v in a.items() if k != "cluster"}
+               for a in apps]
+    write("data/apps.json",
+          json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
     write("index.html", index_html)
     write("suggest.html", build_suggest(forms))
     write("what-is-free.html", build_free_bar(forms))
@@ -3241,6 +3476,30 @@ def main():
         if stale.endswith(".html") and stale not in keep:
             os.remove(os.path.join(app_dir, stale))
             print(f"pruned stale detail page: app/{stale}")
+    # The hub pages (issue #52): one per category, one per
+    # subcategory, pruned the same way when a hub empties out.
+    groups = subcategory_groups(apps)
+    hub_keep = set()
+    for cat in sorted({c for c, _ in groups}):
+        rel = category_path(cat) + ".html"
+        write(rel, build_category_page(cat, groups, forms))
+        hub_keep.add(rel)
+        for sub in sorted(s for (c, s) in groups if c == cat):
+            rel = subcategory_path(cat, sub) + ".html"
+            write(rel, build_subcategory_page(
+                cat, sub, groups[(cat, sub)], forms))
+            hub_keep.add(rel)
+    cat_dir = os.path.join(HERE, "category")
+    if os.path.isdir(cat_dir):
+        for dirpath, _dirs, files in os.walk(cat_dir):
+            for stale in sorted(files):
+                if not stale.endswith(".html"):
+                    continue
+                full = os.path.join(dirpath, stale)
+                rel = os.path.relpath(full, HERE).replace(os.sep, "/")
+                if rel not in hub_keep:
+                    os.remove(full)
+                    print(f"pruned stale hub page: {rel}")
     sitemap_text = build_sitemap(apps)
     write("sitemap.xml", sitemap_text)
     write("robots.txt", ROBOTS)

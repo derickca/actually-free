@@ -89,6 +89,10 @@ def standards_checks():
              "what-is-free.html": SITE + "/what-is-free"}
     for f in sorted((HERE / "app").glob("*.html")):
         pages[f"app/{f.name}"] = SITE + "/app/" + f.name[:-5]
+    if (HERE / "category").is_dir():
+        for f in sorted((HERE / "category").rglob("*.html")):
+            rel = f.relative_to(HERE).as_posix()
+            pages[rel] = SITE + "/" + rel[:-5]
 
     # Icons: a real favicon.ico, a true 32px PNG, the declared set.
     ico = HERE / "favicon.ico"
@@ -358,6 +362,182 @@ def main():
             return 1
         print("All standards checks passed.")
         return 0
+
+    # 4h. Internal linking (issue #52): the spine (home -> category
+    # pages -> subcategory pages -> app pages), a doorway per
+    # subcategory (its strongest apps first), and clusters (each app
+    # page links its same-subcategory neighbours). Measured on the
+    # generated files themselves, static links only — the shape a
+    # crawler sees before any of the directory's JavaScript runs.
+    _link_fns = ("category_path", "subcategory_path", "doorway_order",
+                 "resolve_clusters", "build_category_page",
+                 "build_subcategory_page")
+    _has_linking = all(hasattr(_gen, n) for n in _link_fns)
+    check("linking: generator carries the hub builders", _has_linking)
+    if _has_linking:
+        def _hrefs(rel):
+            text = (HERE / rel).read_text(encoding="utf-8")
+            out = []
+            for h in re.findall(r'href="([^"]*)"', text):
+                if not h.startswith("/") or h.startswith("//"):
+                    continue
+                h = h.split("#")[0].split("?")[0]
+                if h.endswith(".html"):
+                    h = h[:-5]
+                if len(h) > 1 and h.endswith("/"):
+                    h = h[:-1]
+                out.append(h or "/")
+            return out
+
+        def _rel_of(path):
+            return "index.html" if path == "/" else path.lstrip("/") + ".html"
+
+        def _article_hrefs(rel):
+            # A hub page's own links, scoped to its article: the
+            # shared header and footer carry their own app link,
+            # which is not part of the hub's listing.
+            text = (HERE / rel).read_text(encoding="utf-8")
+            m = re.search(r'<article class="detail-card">(.*?)</article>',
+                          text, re.S)
+            if not m:
+                return []
+            out = []
+            for h in re.findall(r'href="([^"]*)"', m.group(1)):
+                if h.startswith("/app/"):
+                    out.append(h[:-5] if h.endswith(".html") else h)
+                elif h.startswith("/"):
+                    out.append(h)
+            return out
+
+        _by_slug = {a["slug"]: a for a in apps}
+        _groups = {}
+        for a in apps:
+            _groups.setdefault((a["category"], a["subcategory"]),
+                               []).append(a)
+        _cats = sorted({c for c, _ in _groups})
+
+        # Hub pages stand for every category and subcategory.
+        _missing = []
+        for c in _cats:
+            if not (HERE / (_gen.category_path(c) + ".html")).exists():
+                _missing.append(c)
+            for s in sorted(s for (cc, s) in _groups if cc == c):
+                if not (HERE / (_gen.subcategory_path(c, s)
+                                + ".html")).exists():
+                    _missing.append(f"{c}/{s}")
+        check("linking: every category and subcategory has a page",
+              not _missing, str(_missing[:5]))
+
+        # The home page links every category page in its static HTML.
+        _index_hrefs = set(_hrefs("index.html"))
+        check("linking: home links every category page",
+              all("/" + _gen.category_path(c) in _index_hrefs
+                  for c in _cats))
+
+        # Click-depth: BFS over static links from home; every app
+        # page within two clicks.
+        _pages = {"index.html", "suggest.html", "what-is-free.html"}
+        _pages |= {f"app/{f.name}" for f in (HERE / "app").glob("*.html")}
+        if (HERE / "category").is_dir():
+            _pages |= {f.relative_to(HERE).as_posix()
+                       for f in (HERE / "category").rglob("*.html")}
+        _depth = {"/": 0}
+        _queue = ["/"]
+        while _queue:
+            _cur = _queue.pop(0)
+            for _nxt in _hrefs(_rel_of(_cur)):
+                if _rel_of(_nxt) in _pages and _nxt not in _depth:
+                    _depth[_nxt] = _depth[_cur] + 1
+                    _queue.append(_nxt)
+        _too_deep = [a["slug"] for a in apps
+                     if _depth.get(f"/app/{a['slug']}", 99) > 2]
+        check("linking: every app page within two clicks of home",
+              not _too_deep, str(_too_deep[:5]))
+
+        # Doorways: each subcategory page lists its apps strongest
+        # first, all of them; each category page links every app in
+        # the category and every one of its subcategory pages.
+        _bad_order = []
+        for (c, s), group in sorted(_groups.items()):
+            _want = [a["slug"] for a in _gen.doorway_order(group)]
+            _got = [h[len("/app/"):] for h in
+                    _article_hrefs(_gen.subcategory_path(c, s) + ".html")
+                    if h.startswith("/app/")]
+            if _got != _want:
+                _bad_order.append(f"{c}/{s}")
+        check("linking: subcategory pages list strongest apps first",
+              not _bad_order, str(_bad_order[:5]))
+        _bad_cat = []
+        for c in _cats:
+            _href_list = _article_hrefs(_gen.category_path(c) + ".html")
+            _want_apps = {a["slug"] for a in apps if a["category"] == c}
+            _got_apps = {h[len("/app/"):] for h in _href_list
+                         if h.startswith("/app/")}
+            _want_subs = {"/" + _gen.subcategory_path(c, s)
+                          for (cc, s) in _groups if cc == c}
+            if _got_apps != _want_apps or not _want_subs <= set(_href_list):
+                _bad_cat.append(c)
+        check("linking: category pages link their whole category",
+              not _bad_cat, str(_bad_cat[:5]))
+
+        # Clusters: in a subcategory with company, every app page's
+        # cluster section links at least one other app of the
+        # subcategory, nothing outside it, and the subcategory's
+        # strongest other app.
+        _bad_cluster = []
+        for (c, s), group in sorted(_groups.items()):
+            if len(group) < 2:
+                continue
+            _ordered = _gen.doorway_order(group)
+            for a in group:
+                _html = (HERE / f"app/{a['slug']}.html").read_text(
+                    encoding="utf-8")
+                _m = re.search(r'<div class="cluster">(.*?)</div>',
+                               _html, re.S)
+                _links = ([] if not _m else
+                          [h[len("/app/"):] for h in
+                           re.findall(r'href="(/app/[^"]*)"',
+                                      _m.group(1))])
+                _want_top = next(b["slug"] for b in _ordered
+                                 if b["slug"] != a["slug"])
+                if (not _links or _want_top not in _links or
+                        any((_by_slug[l]["category"],
+                             _by_slug[l]["subcategory"]) != (c, s)
+                            for l in _links)):
+                    _bad_cluster.append(a["slug"])
+        check("linking: app pages link their subcategory cluster",
+              not _bad_cluster, str(_bad_cluster[:5]))
+
+        # The ordering and cluster rules themselves, on synthetic
+        # records: rated before unrated, highest first, name breaks
+        # ties; a big subcategory's cluster is capped, never names
+        # the app itself, and carries the doorway app from every
+        # other page in the subcategory.
+        def _mk(name, rating=None):
+            rec = _gen.clean_record(
+                {"name": name,
+                 "package": "test." + name.lower().replace(" ", "."),
+                 "status": "include", "category": "Utilities",
+                 "subcategory": "Gadgets", "platform": "android"})
+            rec["rating"] = rating
+            return rec
+
+        _synth = [_mk("Zulu", "3.0"), _mk("Alpha", "4.9"),
+                  _mk("Mid", None), _mk("Beta", "4.9")]
+        _ord = [a["name"] for a in _gen.doorway_order(_synth)]
+        check("linking: doorway order is rated first, highest first",
+              _ord == ["Alpha", "Beta", "Zulu", "Mid"], str(_ord))
+        _big = [_mk(f"App {i:02d}", str(5.0 - i * 0.1)) for i in range(20)]
+        _gen.resolve_clusters(_big)
+        _door = _gen.doorway_order(_big)[0]
+        check("linking: cluster capped and carries the doorway app",
+              all(len(a["cluster"]) <= 12 for a in _big) and
+              all(_door["slug"] in {p["slug"] for p in a["cluster"]}
+                  for a in _big[1:]),
+              str([len(a.get("cluster", [])) for a in _big]))
+        check("linking: cluster excludes the app itself",
+              all(a["slug"] not in {p["slug"] for p in a["cluster"]}
+                  for a in _big))
 
     # Serve + browser checks
     class H(SimpleHTTPRequestHandler):
