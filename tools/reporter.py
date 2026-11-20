@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
-"""Results reporting for Actually Free — issue #29.
+"""Run reporting for Actually Free — issues #29 and #53.
 
-Every run of the app's groups reports to the central results
-store (POST /api/v1/results/reports on the MemberSpark intake),
-and the event groups declare their expectation on the same road
-(POST /api/v1/results/expectations) as the event lands. The
-shapes are the store's own, read from the centre's intake
-(derickca/MemberSpark, service/src/results.js) and its sender
-tool (service/tools/send-run-report.mjs):
+Every run of the app's groups reports to the centre's
+run-record home — the run-record home in the centre's own
+sign-in store (MemberSpark #1508) — on the MemberSpark intake
+(POST /api/v1/centre/runs), and the event groups declare
+their expectation on the same road (POST
+/api/v1/centre/expectations) as the event lands. The centre
+home is where this app's finishes land under the
+results-store retirement (the end state stands on MemberSpark
+#1510); the results store is retired for this app. The
+shapes are the centre home's own, judged by the same send
+validator that judged the store's sends; they were read from
+the centre's intake (derickca/MemberSpark,
+service/src/results.js) and its sender tool
+(service/tools/send-run-report.mjs):
 
   report:      { product, group, kind, run_id, phase,
                  started_by, started_at, finished_at, result,
@@ -24,12 +31,12 @@ tool (service/tools/send-run-report.mjs):
   got? } with expected and got the check's own short plain
   values (a non-empty string of at most 200 characters).
 - An event declaration's subject is the run_id of the report
-  that will earn it: the store matches a finish to its row by
+  that will earn it: the centre matches a finish to its row by
   that name. The standing windows are the centre's: a change's
   or deploy's Build Tests report is due one hour after the
   event, a release's Release Review report 30 minutes after,
   each with a two-hour grace.
-- A check's name meets the store's name shape (#649): at most
+- A check's name meets the centre's name shape (#649): at most
   80 characters of letters, digits, hyphens, underscores, dots,
   spaces, colons, slashes, apostrophes, parentheses, commas
   and em dashes, with no unbroken run of 20 or more letters
@@ -128,7 +135,7 @@ def now_iso():
 
 
 def check_name_refusal(name):
-    """None when the name meets the store's shape, else the
+    """None when the name meets the centre's shape, else the
     broken rule in plain words (the centre's shaper's test,
     mirrored)."""
     if not isinstance(name, str) or not name:
@@ -141,7 +148,7 @@ def check_name_refusal(name):
         return ("it carries an unbroken run of 20 or more letters "
                 "and digits, which reads as a token")
     if not NAME_SHAPE.match(name):
-        return "it carries a character the store's names do not carry"
+        return "it carries a character the centre's names do not carry"
     return None
 
 
@@ -262,7 +269,7 @@ class RunReporter:
                 window["grace_seconds"] if grace_seconds is None
                 else grace_seconds,
         }
-        outcome = self._post("/api/v1/results/expectations", payload)
+        outcome = self._post("/api/v1/centre/expectations", payload)
         if outcome.get("sent"):
             print(f"Results report: {self.group} expectation declared "
                   f"for {self.run_id}.")
@@ -284,7 +291,7 @@ class RunReporter:
         extra = {}
         if self.details:
             extra["details"] = dict(self.details)
-        outcome = self._post("/api/v1/results/reports",
+        outcome = self._post("/api/v1/centre/runs",
                              self._core("start", extra))
         if outcome.get("sent"):
             print(f"Results report: {self.group} start sent "
@@ -333,14 +340,14 @@ class RunReporter:
 
     def finish(self, result=None, checks=(), not_run=(), screenshots=()):
         """Send the finish report. A check name outside the
-        store's shape refuses the send before the wire, the
+        centre's shape refuses the send before the wire, the
         way the centre's shaper refuses it."""
         emitted = []
         for check in checks:
             refusal = check_name_refusal(check.get("name"))
             if refusal:
                 print(f"Results report: the check name "
-                      f"{check.get('name')!r} refuses the store's "
+                      f"{check.get('name')!r} refuses the centre's "
                       f"name shape: {refusal}. Nothing was sent.")
                 return {"sent": False, "refused_name": check.get("name")}
             emitted.append(self._emit_check(check))
@@ -361,7 +368,7 @@ class RunReporter:
         })
         if screenshots:
             report["screenshots"] = list(screenshots)
-        outcome = self._post("/api/v1/results/reports", report)
+        outcome = self._post("/api/v1/centre/runs", report)
         if outcome.get("sent"):
             print(f"Results report: {self.group} finish sent "
                   f"for {self.run_id} ({result}).")
@@ -372,8 +379,8 @@ class RunReporter:
 
 
 def shape_scenario_reports(suite, started_by="schedule"):
-    """A Scenario Review suite's results in the store's start
-    and finish shapes — the centre's own shaper's mapping:
+    """A Scenario Review suite's results in the centre home's
+    start and finish shapes — the centre's own shaper's mapping:
     checks named "<journey>:<check>", a NOT-RUN journey's name
     in not_run, the counts in details."""
     run_id = suite.get("runId") or (
@@ -431,8 +438,8 @@ def report_scenario_review(suite, started_by="schedule", env=None):
     reporter = RunReporter("Scenario Review", started_by,
                            run_id=shaped["start"]["run_id"], env=env)
     reporter.started_at = suite["startedAt"]
-    start_outcome = reporter._post("/api/v1/results/reports", shaped["start"])
-    finish_outcome = reporter._post("/api/v1/results/reports", shaped["finish"])
+    start_outcome = reporter._post("/api/v1/centre/runs", shaped["start"])
+    finish_outcome = reporter._post("/api/v1/centre/runs", shaped["finish"])
     return {"start": start_outcome, "finish": finish_outcome}
 
 

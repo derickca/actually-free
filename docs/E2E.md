@@ -59,7 +59,7 @@ Build Tests run on a change, before the push, and they gate the push.
   test_scenario_review.py` — it drives the suite's own files
   (tests/scenario-review/) against local fixtures: the
   journey registry against this contract, the wire names
-  against the store's name shape, the report-failure file
+  against the centre's name shape, the report-failure file
   against a fake gh, the driver's condition wait against a
   local server, and the run's payload through the reporter
   seam's shaper. The browser walks themselves are proven by
@@ -79,7 +79,7 @@ Build Tests run on a change, before the push, and they gate the push.
   view at 1280 and 390 widths with `python3 tools/shots.py`, and the
   person or agent landing the change looks at them before the push
   and says so in the commit or on the issue. Screenshots stay on
-  the machine that took them; they never go to the results store.
+  the machine that took them; they never go to the centre.
 - The public-readiness guard: `python3 tools/check-public-readiness.py`
   scans tracked files for personal information before a push. The
   values it looks for stand in one machine-local private file,
@@ -146,7 +146,7 @@ signs in through Google: the repo's sign-in tests run against the
 kit's fake, and any real sign-in proof is the centre's Login Review
 alone.
 
-The smoke's checks also go to the central results store as the
+The smoke's checks also go to the centre's run-record home as the
 deploy's Build Tests report (see Results): a step after the smoke
 declares the deploy's expectation and sends the start and finish,
 whether the smoke passed or failed, whenever the run published.
@@ -181,7 +181,7 @@ change stands for the whole tree. The report goes under the day's
 run name, release-review-<UTC day>, naming each publish it covers
 in its details. Coverage state stands on the runner at
 ~/.actually-free/release-review-state.json and advances only when
-the store accepted the finish.
+the centre accepted the finish.
 
 Two honest differences from the bare declaration above, recorded
 plainly: the 30 minutes is measured to the next quarter-hour tick
@@ -251,9 +251,9 @@ The twice-daily run is the Scenario Review workflow
 on this repo's own self-hosted runner on Certifiable99,
 internal only. Screenshots stay on the runner in weekday
 folders under ~/.actually-free/scenario-review/ and never go
-to the results store; the round's full record stands beside
-them as a results file. The round reports to the central
-results store through the reporter seam (see Results) under
+to the centre; the round's full record stands beside
+them as a results file. The round reports to the centre's
+run-record home through the reporter seam (see Results) under
 the standing interval registration, and its exit is pinned
 to 0 in the workflow: the review reports, it never blocks.
 
@@ -299,12 +299,16 @@ placement; no tracked file in this repo carries the list.
 
 The standing machinery, as built under issue #29 on the centre's
 own record for this app (MemberSpark #1258), reports every run to
-the central results store: Build Tests from the change and the
+the centre's run-record home: Build Tests from the change and the
 deploy smoke, Release Review from its runner, Scenario Review from
-the suite. The sender is tools/reporter.py, on the store's own
-intake shape (POST /api/v1/results/reports); the Scenario Review
+the suite. The sender is tools/reporter.py, on the centre home's own
+intake shape (POST /api/v1/centre/runs); the Scenario Review
 seam — the shaping call the suite makes when its run ends — stands
 in the same file, and the suite built under issue #28 calls it.
+The home is the run-record home in the centre's own sign-in store
+(MemberSpark #1508), where this app's finishes land under the
+results-store retirement (issue #53; the end state stands on
+MemberSpark #1510).
 
 One tension stands open against that machinery, recorded on issue
 #46: the standard as amended on 2026-11-16 (the owner's direct-reads
@@ -348,7 +352,7 @@ twice-daily — the two words the centre registered the interval
 from.
 
 A run is proven at the far end: a claim that a run ran names the
-read that would fail if it never ran — the store's record, the
+read that would fail if it never ran — the centre's record, the
 workflow's run record or the door's answer — never a sender-side
 success, a passing unit test or a valid credential alone. An
 absence a never-ran run and a ran-and-reported-nothing run both

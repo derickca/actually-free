@@ -12,7 +12,7 @@ name: Release Review
 # inside the expectation's two-hour grace. The runner reads
 # the publishes from the deploy workflow's own record (a
 # run whose Publish step succeeded), checks the live site,
-# and reports to the central results store under the day's
+# and reports to the centre's run-record home under the day's
 # run name. It never blocks anything: its exit is 0 whatever
 # it found. Coverage state stands on this runner at
 # ~/.actually-free/release-review-state.json, beside the

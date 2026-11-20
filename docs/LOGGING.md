@@ -128,10 +128,12 @@ the centre — none are made.
 
 The product's results reports are a different road, under the
 E2E Testing standard: Build Tests, Release Review and Scenario
-Review finishes are reported to the central results store, and
+Review finishes are reported to the centre's run-record home, and
 expectations stand registered for them (actually-free #29 and
-#28). That road is this app's named exception to the door shape
-and stands until its door stands (MemberSpark #1260). It
+#28). That road is this app's named exception to the door shape;
+under the results-store retirement its finishes land in the
+centre's own keeping (MemberSpark #1508), the end state
+recorded on MemberSpark #1510. It
 carries no log lines and no person's data: the reporter refuses
 a check name shaped like an address or a token before the wire,
 caps a check's values at 200 characters, names a commit by its

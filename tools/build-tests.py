@@ -6,7 +6,7 @@ suite, the catalogue checks and unittests, the Bing suite,
 the deploy guards, the Ops suite, the reporter suite, the
 Release Review suite and the Scenario Review suite — each as
 one check in the run's report,
-and reports the run to the central results store as the
+and reports the run to the centre's run-record home as the
 group's Build Tests run: the event expectation declared as
 the run starts (due one hour after, grace two hours), the
 start report, then the finish with each suite's verdict.
@@ -35,7 +35,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import reporter as reporter_mod  # noqa: E402
 
 # (check name, command, timeout seconds). The names meet the
-# results store's name shape; each suite's own output streams
+# centre's name shape; each suite's own output streams
 # through, so a failure reads where it happened.
 SUITES = [
     ("Site suite", ["python3", "test_site.py"], 1800),

@@ -4,7 +4,7 @@
 Serves the committed tree locally and photographs each view at
 desktop (1280) and phone (390) widths into shots/, for the person
 or agent landing a change to look at before the push. Screenshots
-stay on this machine; they never go to the results store.
+stay on this machine; they never go to the centre.
 
 Usage: python3 tools/shots.py [path ...]
 Paths default to the home page, Suggest, What is free, and the

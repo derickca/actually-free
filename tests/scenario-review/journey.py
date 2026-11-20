@@ -11,7 +11,7 @@ A journey returns { id, verdict, checks } in the shape the
 results reporter seam (tools/reporter.py) shapes: a check
 is { id, ok }, and the seam names it "<journey>:<check>" on
 the wire, so check ids here are short plain phrases that
-meet the store's name shape. A journey whose walk cannot
+meet the centre's name shape. A journey whose walk cannot
 start at all comes back NOT-RUN with no checks; a journey
 that walks and finds a step wanting comes back FAIL with
 the step's check False. Detail a check carries stays in

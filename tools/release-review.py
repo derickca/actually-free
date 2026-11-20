@@ -25,7 +25,7 @@ data stands for the whole tree, so the feature check then
 samples the home page, the catalogue and the first
 listings. At most ten changed views are walked.
 
-The report goes to the central results store under the
+The report goes to the centre's run-record home under the
 day's run name, release-review-<UTC day> — the subject the
 publishes declared their expectation under — with the
 publishes it covers named in its details. A later publish
@@ -39,7 +39,7 @@ Coverage state stands on the runner at
 ~/.actually-free/release-review-state.json (AF_RELEASE_
 REVIEW_STATE overrides it): the publish run ids each day's
 standing review covered. State advances only when the
-store accepted the finish, so a refused send is retried by
+centre accepted the finish, so a refused send is retried by
 the next tick. Groups whose last publish is more than 48
 hours old stand outside the runner's watch — the standing
 starts with the runner, and the expectations it answers

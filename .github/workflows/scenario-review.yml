@@ -4,7 +4,7 @@ name: Scenario Review
 # contract stands in docs/E2E.md). Twice a day the suite
 # builds a fresh rig from the committed tree on this repo's
 # own runner, walks the public directory as a visitor does,
-# reports the round to the central results store under the
+# reports the round to the centre's run-record home under the
 # group's standing interval registration, and files any
 # failed or never-ran scenario on the standing issue (#27).
 # A green round files nothing. It runs internal only —

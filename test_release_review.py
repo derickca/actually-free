@@ -141,7 +141,7 @@ class IntakeStub:
 
     def reports(self):
         return [b for (p, b) in self.bodies
-                if p == "/api/v1/results/reports"]
+                if p == "/api/v1/centre/runs"]
 
 
 APPS = [{"slug": "foo", "name": "Foo App"},

@@ -138,7 +138,7 @@ jobs:
 
       # Results reporting (issue #29): the deploy's Build Tests
       # report and the day's Release Review declaration go to the
-      # central results store. The step runs whether the smoke
+      # centre's run-record home. The step runs whether the smoke
       # passed or failed, whenever this run published: it declares
       # the deploy's Build Tests expectation (due one hour after,
       # grace two hours) and sends the smoke's start and finish
@@ -150,7 +150,7 @@ jobs:
       # this app, handed to this step for that run only. The step
       # cannot fail the run: the script is fail-soft by design and
       # this step's own exit is pinned to 0 behind it — a publish
-      # never waits on the results store.
+      # never waits on the centre.
       - name: Report the deploy smoke
         if: always() && steps.hold.outputs.publish == 'true'
         env:

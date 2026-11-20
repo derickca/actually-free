@@ -12,8 +12,8 @@ One round, in order:
    page. Screenshots stay on this machine, in a weekday
    folder — ~/.actually-free/scenario-review/<Weekday>/ by
    default, AF_SCENARIO_SHOTS names another root — and
-   never go to the results store.
-3. Report the round to the central results store through
+   never go to the centre.
+3. Report the round to the centre's run-record home through
    the reporter seam (tools/reporter.py's
    report_scenario_review), under the group's standing
    interval registration: the suite declares nothing. With
