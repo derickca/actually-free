@@ -16,8 +16,8 @@ promotion to hold. Run by hand any time:
 
 --results <file> also writes the run's checks as JSON —
 { checks: [{ name, ok, detail? }], result } — the shape the
-deploy's Build Tests report sends to the central results
-store (issue #29). The Release Review runner imports
+deploy's Build Tests report sends to the centre's run-
+record home (issue #29). The Release Review runner imports
 run_checks() for its heartbeat: the same three checks, one
 source.
 """
@@ -52,7 +52,7 @@ def check(name, cond, detail=""):
 
 def run_checks(base=BASE):
     """The three named checks as data: a list of
-    { name, ok, detail? } in the results store's shape. The
+    { name, ok, detail? } in the centre home's shape. The
     command line prints them as it goes; importers (the
     Release Review runner's heartbeat) take the list."""
     failures.clear()

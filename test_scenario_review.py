@@ -3,7 +3,7 @@
 
 Drives the suite's own files (tests/scenario-review/) against
 local fixtures only: the journey registry against the contract
-in docs/E2E.md, the wire names against the results store's name
+in docs/E2E.md, the wire names against the centre's name
 shape, the report-failure file against a fake gh, the driver's
 condition wait against a local server, and the run's payload
 through the reporter seam's shaper. The browser walks
@@ -38,7 +38,7 @@ class JourneyRegistryTests(unittest.TestCase):
 
     def test_every_wire_name_meets_the_store_shape(self):
         # Walk each journey's check ids as the seam names
-        # them: "<journey>:<check>" must pass the store's
+        # them: "<journey>:<check>" must pass the centre's
         # own refusal test.
         seen = {
             "core": ["home renders the catalogue grid",

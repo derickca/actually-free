@@ -2,7 +2,7 @@
 """The results reporter's own suite (issue #29).
 
 Drives tools/reporter.py against a local stub standing in
-for the MemberSpark results intake: the stub captures each
+for the MemberSpark centre intake: the stub captures each
 request — path, headers, body — and answers as the case
 directs. The real intake and the real credential are never
 touched; the token in the environment is a fake one.
@@ -11,7 +11,7 @@ Cases:
   1. A Build Tests run's three sends: the event declaration
      (its subject the run's id, due one hour, grace two),
      the start report and the finish report, each in the
-     store's shape, under the Bearer credential and the
+     centre's shape, under the Bearer credential and the
      named user agent.
   2. A Release Review declaration carries its own standing
      window: due 30 minutes, grace two hours.
@@ -22,7 +22,7 @@ Cases:
   5. A refused send (the stub answers 422) and an
      unreachable intake: the finish returns not-sent and
      never raises.
-  6. A check name outside the store's shape — a token-long
+  6. A check name outside the centre's shape — a token-long
      run of letters, an email address, a name past 80
      characters — refuses the send before the wire.
   7. The Scenario Review seam: a suite's results shape into
@@ -132,7 +132,7 @@ def main():
         ])
         check("case 1: finish sent", outcome.get("sent") is True,
               str(outcome))
-        decls = stub.bodies("/api/v1/results/expectations")
+        decls = stub.bodies("/api/v1/centre/expectations")
         check("case 1: one declaration", len(decls) == 1,
               f"{len(decls)} declarations")
         if decls:
@@ -148,7 +148,7 @@ def main():
                   and d["due_after_seconds"] == 3600
                   and d["grace_seconds"] == 7200,
                   json.dumps(d))
-        reports = stub.bodies("/api/v1/results/reports")
+        reports = stub.bodies("/api/v1/centre/runs")
         check("case 1: start and finish sent", len(reports) == 2,
               f"{len(reports)} reports")
         if len(reports) == 2:
@@ -189,7 +189,7 @@ def main():
             "Release Review", "GitHub Actions",
             run_id="release-review-2026-11-17", env=env)
         review.declare(at="2026-11-17T15:00:00Z")
-        decls = stub.bodies("/api/v1/results/expectations")
+        decls = stub.bodies("/api/v1/centre/expectations")
         check("case 2: release window",
               len(decls) == 1
               and decls[0]["due_after_seconds"] == 1800
@@ -208,7 +208,7 @@ def main():
             "Build Tests", "change", run_id="build-tests-case3b", env=env)
         run3b.finish(result="fail", checks=[{"name": "Site suite",
                                              "ok": True}])
-        reports = stub.bodies("/api/v1/results/reports")
+        reports = stub.bodies("/api/v1/centre/runs")
         check("case 3: a failing check fails the finish",
               len(reports) == 2 and reports[0]["result"] == "fail"
               and reports[0]["details"]["failed"] == 1
@@ -271,7 +271,7 @@ def main():
                   and o6.get("refused_name") == bad,
                   str(o6))
         check("case 6: nothing reached the wire",
-              not stub.bodies("/api/v1/results/reports"),
+              not stub.bodies("/api/v1/centre/runs"),
               f"{len(stub.requests)} requests")
 
         # Case 7: the Scenario Review seam.
@@ -288,7 +288,7 @@ def main():
             ],
         }
         outcomes = reporter_mod.report_scenario_review(suite, env=env)
-        reports = stub.bodies("/api/v1/results/reports")
+        reports = stub.bodies("/api/v1/centre/runs")
         check("case 7: the seam sends start and finish",
               outcomes["finish"].get("sent") is True
               and len(reports) == 2,
@@ -318,7 +318,7 @@ def main():
                 env=env, quarantine_file=qfile)
             stub.requests.clear()
             run8.finish(checks=[{"name": "Ops surface suite", "ok": True}])
-            reports = stub.bodies("/api/v1/results/reports")
+            reports = stub.bodies("/api/v1/centre/runs")
             if reports:
                 seen.append(reports[0]["details"]["quarantine"])
         check("case 8: skipped counts advance 1 then 2",
@@ -333,7 +333,7 @@ def main():
         run9.finish(checks=[
             {"name": "Site suite", "ok": False,
              "expected": "e" * 200, "got": "g" * 201}])
-        reports = stub.bodies("/api/v1/results/reports")
+        reports = stub.bodies("/api/v1/centre/runs")
         check("case 9: values ride within the cap only",
               len(reports) == 1
               and reports[0]["checks"][0].get("expected") == "e" * 200
