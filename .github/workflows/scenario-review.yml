@@ -41,6 +41,7 @@ jobs:
       - name: Walk the directory on a fresh rig
         env:
           MEMBERSPARK_RESULTS_TOKEN: ${{ secrets.MEMBERSPARK_RESULTS_TOKEN }}
+          AF_RUN_RECORD_KEY: ${{ secrets.AF_RUN_RECORD_KEY }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set +e

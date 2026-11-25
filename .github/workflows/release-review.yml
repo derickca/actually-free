@@ -49,6 +49,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           MEMBERSPARK_RESULTS_TOKEN: ${{ secrets.MEMBERSPARK_RESULTS_TOKEN }}
+          AF_RUN_RECORD_KEY: ${{ secrets.AF_RUN_RECORD_KEY }}
         run: |
           set +e
           python3 tools/release-review.py | tee /tmp/release-review.txt

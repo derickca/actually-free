@@ -1,1 +1,1 @@
-{"exclude":[],"include":["/ops","/ops/*","/ops-signout","/auth/memberspark/*"],"version":1}
+{"exclude":[],"include":["/ops","/ops/*","/ops-signout","/auth/memberspark/*","/operator/*"],"version":1}

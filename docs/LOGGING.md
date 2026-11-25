@@ -65,9 +65,12 @@ gate's refusals are not audit events and write nothing.
 Two pieces of the shop's shape do not stand here, because
 nothing here reads them: the running audit sequence (it
 feeds the shop's door answers and the centre's summaries;
-this product has no operator door and sends no summaries)
-and the daily error counts (the per-occurrence entries are
-the record; nothing counts them).
+this product's operator door — issue #55 — counts its
+families from their entries and their key names, and no
+sequence stands behind its answers, and it sends no
+summaries) and the daily error counts (the per-occurrence
+entries are the record; the door's errors answer counts
+them per window at the ask, and no count is kept).
 
 Before this build the product kept no log at all, and the
 standard named that standing: a product with no log stands
@@ -117,14 +120,17 @@ side has no backend to receive one.
 
 ## What the centre reads, and what is sent
 
-The product has no operator door, so the centre reads no log
-answers from it and none are owed. The logs' read-back is the
-Ops surface itself: the data read behind the Doors panel
-carries the door's recent audit entries and error entries,
-worded for the panel, to a session holding the grant — and to
-no one else, the surface's ordinary 404 face standing for
-everyone else exactly as before. No log summaries are sent to
-the centre — none are made.
+The centre reads this product's log answers through its
+operator door (issue #55): the errors and audit questions
+compose their answers live from these families at the ask,
+each call written to the door's own audit log before it
+answers. The logs' other
+read-back is the Ops surface itself: the data read behind
+the Doors panel carries the door's recent audit entries and
+error entries, worded for the panel, to a session holding
+the grant — and to no one else, the surface's ordinary 404
+face standing for everyone else exactly as before. No log
+summaries are sent to the centre — none are made.
 
 The product's results reports are a different road, under the
 E2E Testing standard: Build Tests, Release Review and Scenario
