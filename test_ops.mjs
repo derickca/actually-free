@@ -149,9 +149,15 @@ const get = (path, cookie) =>
 // ---------- pins: routes and generated modules ----------
 const routes = JSON.parse(readFileSync(join(ROOT, "_routes.json"), "utf8"));
 check(
-  "routes include exactly the surface and the sign-in road",
+  "routes include exactly the surface, the sign-in road and the operator door",
   JSON.stringify(routes.include) ===
-    JSON.stringify(["/ops", "/ops/*", "/ops-signout", "/auth/memberspark/*"])
+    JSON.stringify([
+      "/ops",
+      "/ops/*",
+      "/ops-signout",
+      "/auth/memberspark/*",
+      "/operator/*",
+    ])
 );
 check(
   "the 404 module is 404.html's exact bytes",
