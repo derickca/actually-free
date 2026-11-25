@@ -32,6 +32,16 @@ Cases:
      in each finish with its skipped count advancing.
   9. expected and got ride within the 200-character cap
      and are dropped past it.
+ 10. The local run record (issue #55): with the run-record
+     key standing, a run's start and finish also land at the
+     product's own run-record door, under that door's key —
+     the record the operator door's test_standing reads.
+     The declaration never rides the local road.
+ 11. No run-record key standing: no local send is made and
+     the centre sends stand exactly as they did.
+ 12. A local door that refuses or does not answer never
+     changes the centre outcome and never raises; the
+     Scenario Review seam seats its two reports locally too.
 
 Usage:  python3 test_reporter.py
 Exit 0 = every case passed, 1 = a failure (named on its line).
@@ -339,6 +349,87 @@ def main():
               and reports[0]["checks"][0].get("expected") == "e" * 200
               and "got" not in reports[0]["checks"][0],
               json.dumps(reports)[:200])
+
+        # Cases 10-12: the local run record (issue #55). A
+        # second stub stands in for the product's own site,
+        # whose run-record door the reporter seats each start
+        # and finish through, beside the centre send.
+        site = Stub()
+        try:
+            env_local = make_env(stub, tmp)
+            env_local["AF_RUN_RECORD_KEY"] = "run-record-key"
+            env_local["AF_RUN_RECORD_INTAKE"] = site.url
+
+            # Case 10: start and finish land locally too.
+            stub.requests.clear()
+            run10 = reporter_mod.RunReporter(
+                "Build Tests", "change", run_id="build-tests-case10",
+                env=env_local)
+            run10.declare(at="2026-11-17T10:00:00Z")
+            run10.start()
+            outcome10 = run10.finish(checks=[
+                {"name": "Site suite", "ok": True}])
+            local = site.bodies("/operator/run-record")
+            check("case 10: the local record took the start and the finish",
+                  outcome10.get("sent") is True and len(local) == 2
+                  and local[0]["phase"] == "start"
+                  and local[0]["run_id"] == "build-tests-case10"
+                  and local[1]["phase"] == "finish"
+                  and local[1]["result"] == "pass",
+                  json.dumps(local)[:200])
+            local_headers = [h for (p, h, b) in site.requests]
+            check("case 10: the local sends carry the door's own key",
+                  all(h.get("authorization") == "Bearer run-record-key"
+                      for h in local_headers),
+                  json.dumps(local_headers[:1]))
+            check("case 10: the declaration never rides the local road",
+                  len(site.requests) == 2,
+                  f"{len(site.requests)} local requests")
+
+            # Case 11: no local key — no local send at all.
+            site.requests.clear()
+            run11 = reporter_mod.RunReporter(
+                "Build Tests", "change", run_id="build-tests-case11",
+                env=env)
+            run11.start()
+            run11.finish(checks=[{"name": "Site suite", "ok": True}])
+            check("case 11: no run-record key, no local send",
+                  site.requests == [],
+                  json.dumps(site.requests)[:200])
+
+            # Case 12: a refusing local door changes nothing,
+            # and the Scenario seam seats its reports locally.
+            site.status = 500
+            run12 = reporter_mod.RunReporter(
+                "Build Tests", "change", run_id="build-tests-case12",
+                env=env_local)
+            run12.start()
+            outcome12 = run12.finish(checks=[
+                {"name": "Site suite", "ok": True}])
+            check("case 12: a refused local send never reaches the run",
+                  outcome12.get("sent") is True,
+                  str(outcome12))
+            site.status = 201
+            site.requests.clear()
+            suite = {
+                "runId": "scenario-case12",
+                "startedAt": "2026-11-17T06:10:00Z",
+                "finishedAt": "2026-11-17T06:12:00Z",
+                "passed": 1, "failed": 0,
+                "results": [{"id": "home", "verdict": "PASS",
+                             "checks": [{"id": "loads", "ok": True}]}],
+            }
+            reporter_mod.report_scenario_review(suite, env=env_local)
+            local = site.bodies("/operator/run-record")
+            check("case 12: the Scenario seam seats its start and finish locally",
+                  len(local) == 2
+                  and local[0]["group"] == "Scenario Review"
+                  and local[0]["phase"] == "start"
+                  and local[1]["phase"] == "finish"
+                  and local[1]["run_id"] == "scenario-case12",
+                  json.dumps(local)[:200])
+        finally:
+            site.stop()
     finally:
         stub.stop()
 

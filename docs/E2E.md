@@ -42,13 +42,32 @@ Build Tests run on a change, before the push, and they gate the push.
   banner, the session lifetimes, and the cache fences (the
   no-store answers and the service worker's bypass). Real
   MemberSpark and the live site are never touched.
+- The operator door: `node test_operator_door.mjs` — it
+  drives the /operator/door and /operator/run-record Pages
+  Functions against a stub centre (a real EC signing key
+  whose key set the door reads through its fetch seam) and
+  an in-memory log store: the dark door's ordinary-404
+  face, the credential's and assertion's refusals
+  (including the machinery shape refused at the proof gate
+  and the centre-as-itself shape's fence), the audit entry
+  standing before the answer and a failed write answering
+  nothing, each standing question's shape against planted
+  records, explain_finding's recorded answer and shape
+  refusals, every act refused, and the run-record door the
+  reporter seats finishes through, read back through
+  test_standing. Real MemberSpark and the live site are
+  never touched.
 - The results reporter: `python3 test_reporter.py` — it
   drives tools/reporter.py against a local stub intake: the
   declaration and report shapes, the event windows, the
   unconfigured no-op, the fail-soft sends, the name shape's
   refusals, the Scenario Review seam and the quarantine
-  block. The real intake and the real credential are never
-  touched.
+  block. It also drives the local run record (issue #55)
+  against a second stub standing in for the product's own
+  run-record door: the start and finish seated locally
+  beside the centre sends, the unconfigured no-op and the
+  refused local send that never reaches the run. The real
+  intake and the real credentials are never touched.
 - The Release Review runner: `python3 test_release_review.py`
   — it drives tools/release-review.py against a fake deploy
   record, a fake site and a stub intake: publish detection,
@@ -310,21 +329,24 @@ The home is the run-record home in the centre's own sign-in store
 results-store retirement (issue #53; the end state stands on
 MemberSpark #1510).
 
-One tension stands open against that machinery, recorded on issue
+One tension stood open against that machinery, recorded on issue
 #46: the standard as amended on 2026-11-16 (the owner's direct-reads
 ruling) says a product's Build Tests and Release Review standing is
 not reported to the store — MemberSpark Admin reads it from the
 product's own store through its operator door — and the watchers
 spec carries the same scope, with no expectation row standing for
-either group. This app has no operator door: docs/OPS.md records
-that Admin asks it no question a door would answer. The centre's
-#1258 record for this app, made after that amendment, holds the
-reporter credential and the event declarations below as this app's
-standing road. Which of the two the centre settles on — a door for
-this app, or the standard amended to name this road — is the
-MemberSpark chat's to clear. Until it is cleared, the paragraphs
-below state the machinery as it stands; they do not claim the
-tension away.
+either group. The centre settled it on the door: its walk-coverage
+audit (MemberSpark #1679) filed issue #55, and the door now stands
+at /operator/door, answering explain_finding and the five
+per-product questions from this product's own records, in the
+contract's shapes. The centre sends above stand untouched — the
+event declarations and the centre home's record are the centre's
+own machinery — and beside each centre send of a start or finish
+the reporter now seats the same report in the product's own store
+through its run-record door (/operator/run-record), the record the
+door's test_standing answer reads. The door ships dark: until the
+centre mints its credential and it is placed here, every call to it
+answers the site's ordinary 404.
 
 The reporter credential stands minted by the centre and placed as
 the MEMBERSPARK_RESULTS_TOKEN repository secret; senders read it

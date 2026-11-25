@@ -93,6 +93,23 @@ line for a suite in any language:
 with results.json carrying { runId?, startedAt, finishedAt,
 passed, failed, results: [{ id, verdict, checks:
 [{ id, ok }] }], quarantined?: [{ check, skipped }] }.
+
+The local run record (issue #55): beside every centre send
+of a start or finish report, the same report is seated in
+the product's own store through the product's run-record
+door (POST /operator/run-record on the site itself), the
+record the operator door's test_standing question answers
+from. The door's key stands in the environment as
+AF_RUN_RECORD_KEY (a repository secret in GitHub Actions,
+placed on the Pages project as the same name; it never
+rests in this repo), and the site's address can be
+overridden with AF_RUN_RECORD_INTAKE for rigs and suites.
+The local send is fail-soft exactly as the centre send is:
+with no key standing it is a clean no-op printing one plain
+line, and a refused or unreachable door is printed and
+returned, never raised — a run's local record never fails
+the run it describes. Declarations never ride the local
+road: an expectation is the centre's row, not a run.
 """
 
 import json
@@ -110,6 +127,13 @@ DEFAULT_INTAKE = "https://api.memberspark.ca"
 TOKEN_ENV = "MEMBERSPARK_RESULTS_TOKEN"
 INTAKE_ENV = "MEMBERSPARK_RESULTS_INTAKE"
 USER_AGENT = "ActuallyFreeReporter/1.0"
+
+# The local run record's road (issue #55): the product's own
+# run-record door, on the site itself.
+RUN_RECORD_KEY_ENV = "AF_RUN_RECORD_KEY"
+RUN_RECORD_INTAKE_ENV = "AF_RUN_RECORD_INTAKE"
+DEFAULT_RUN_RECORD_INTAKE = "https://actually-free.com"
+RUN_RECORD_PATH = "/operator/run-record"
 
 GROUPS = ("Build Tests", "Release Review", "Scenario Review")
 
@@ -183,6 +207,10 @@ class RunReporter:
         self.env = env if env is not None else os.environ
         self.token = self.env.get(TOKEN_ENV) or None
         self.intake = (self.env.get(INTAKE_ENV) or DEFAULT_INTAKE).rstrip("/")
+        self.run_record_key = self.env.get(RUN_RECORD_KEY_ENV) or None
+        self.run_record_intake = (
+            self.env.get(RUN_RECORD_INTAKE_ENV)
+            or DEFAULT_RUN_RECORD_INTAKE).rstrip("/")
         self.run_id = run_id or self._make_run_id(group)
         self.started_at = now_iso()
         self.details = dict(details or {})
@@ -244,6 +272,45 @@ class RunReporter:
             return {"sent": False, "status": status}
         return {"sent": True, "status": status}
 
+    def _post_local(self, payload):
+        """One local send: the same report, seated in the
+        product's own store through its run-record door
+        (issue #55). Returns {"sent": bool, ...}; never
+        raises, exactly as _post never does."""
+        if not self.run_record_key:
+            print("Run-record reporting is not configured "
+                  f"({RUN_RECORD_KEY_ENV} is not set); "
+                  "this local send is skipped.")
+            return {"sent": False, "unconfigured": True}
+        req = urllib.request.Request(
+            self.run_record_intake + RUN_RECORD_PATH,
+            data=json.dumps(payload).encode("utf-8"),
+            method="POST",
+            headers={
+                "authorization": "Bearer " + self.run_record_key,
+                "content-type": "application/json",
+                "user-agent": USER_AGENT,
+            })
+        try:
+            status, raw = self._opener(req)
+        except urllib.error.HTTPError as e:
+            try:
+                raw = e.read().decode("utf-8", "replace")
+            except Exception:
+                raw = ""
+            print(f"Run record: the product's door refused the "
+                  f"send ({e.code}): {raw[:200]}")
+            return {"sent": False, "status": e.code}
+        except Exception as e:
+            print(f"Run record: the local send did not reach "
+                  f"the product's door: {e}")
+            return {"sent": False, "error": str(e)}
+        if status not in (200, 201):
+            print(f"Run record: the product's door answered "
+                  f"{status}: {raw[:200]}")
+            return {"sent": False, "status": status}
+        return {"sent": True, "status": status}
+
     # -- the three acts -------------------------------------------
 
     def declare(self, at=None, due_after_seconds=None,
@@ -291,11 +358,12 @@ class RunReporter:
         extra = {}
         if self.details:
             extra["details"] = dict(self.details)
-        outcome = self._post("/api/v1/centre/runs",
-                             self._core("start", extra))
+        report = self._core("start", extra)
+        outcome = self._post("/api/v1/centre/runs", report)
         if outcome.get("sent"):
             print(f"Results report: {self.group} start sent "
                   f"for {self.run_id}.")
+        self._post_local(report)
         return outcome
 
     def _quarantine_block(self):
@@ -372,6 +440,7 @@ class RunReporter:
         if outcome.get("sent"):
             print(f"Results report: {self.group} finish sent "
                   f"for {self.run_id} ({result}).")
+        self._post_local(report)
         return outcome
 
 
@@ -440,6 +509,8 @@ def report_scenario_review(suite, started_by="schedule", env=None):
     reporter.started_at = suite["startedAt"]
     start_outcome = reporter._post("/api/v1/centre/runs", shaped["start"])
     finish_outcome = reporter._post("/api/v1/centre/runs", shaped["finish"])
+    reporter._post_local(shaped["start"])
+    reporter._post_local(shaped["finish"])
     return {"start": start_outcome, "finish": finish_outcome}
 
 

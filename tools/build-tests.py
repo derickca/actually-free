@@ -3,9 +3,10 @@
 
 Runs the whole standing set named in docs/E2E.md — the site
 suite, the catalogue checks and unittests, the Bing suite,
-the deploy guards, the Ops suite, the reporter suite, the
-Release Review suite and the Scenario Review suite — each as
-one check in the run's report,
+the deploy guards, the Ops suite, the operator door suite,
+the reporter suite, the Release Review suite and the
+Scenario Review suite — each as one check in the run's
+report,
 and reports the run to the centre's run-record home as the
 group's Build Tests run: the event expectation declared as
 the run starts (due one hour after, grace two hours), the
@@ -47,6 +48,7 @@ SUITES = [
     ("Bing submission suite", ["python3", "test_bing_submit.py"], 600),
     ("Deploy guards suite", ["python3", "test_deploy_guards.py"], 600),
     ("Ops surface suite", ["node", "test_ops.mjs"], 600),
+    ("Operator door suite", ["node", "test_operator_door.mjs"], 600),
     ("Reporter suite", ["python3", "test_reporter.py"], 600),
     ("Release Review suite", ["python3", "test_release_review.py"], 600),
     ("Scenario Review suite", ["python3", "test_scenario_review.py"], 600),

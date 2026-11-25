@@ -54,10 +54,18 @@ that does not exist.
   records, so the standard's person acts (suspend, lift, erase,
   merge, note, email change) do not arise here; they bind a product
   that has persons.
-- No operator door. Admin directs no acts at this product and asks
-  it no question a door would answer. Its test standings travel by
-  the results intake (docs/E2E.md) and its view counts by
-  MemberSpark's counter; both are centre roads, not doors.
+- The operator door (issue #55) stands at /operator/door, on the
+  fleet operator contract: Admin directs no acts at this product —
+  every act is refused, none being named for it — and asks it the
+  questions a door answers from the product's own store:
+  explain_finding and the five per-product questions (errors,
+  audit, backups, test_standing, adoption), each written to the
+  product's own audit log before it answers. Its test standings
+  also travel by the results intake (docs/E2E.md), and the
+  reporter seats the same finishes in the product's own store
+  beside those sends, through the run-record door; its view
+  counts travel by MemberSpark's counter, a centre road, not a
+  door.
 - No operator standing of its own. The product grants no standing
   inside itself: no enrolments, no per-app operator lists, no
   allowlists. The fleet's operator roles are defined in Admin, and
