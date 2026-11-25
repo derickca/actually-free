@@ -4,8 +4,8 @@
 // tree's generation knew: when it ran and what the
 // catalogue held. It is a read, never a writer.
 export const BUILD_RECORD = {
- "generatedAt": "2026-11-20T07:16:01Z",
- "buildStamp": "202611200716",
+ "generatedAt": "2026-11-25T22:08:57Z",
+ "buildStamp": "202611252208",
  "listings": 1306,
  "appPages": 1306,
  "sitemapUrls": 1360

@@ -1,5 +1,5 @@
-// Actually Free service worker — build 202611200716
-const CACHE = "actually-free-202611200716";
+// Actually Free service worker — build 202611252208
+const CACHE = "actually-free-202611252208";
 const PRECACHE = [
   "/", "/suggest", "/what-is-free", "/manifest.webmanifest",
   "/assets/styles.css", "/assets/app.js", "/assets/config.js",
@@ -18,12 +18,14 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const u = new URL(e.request.url);
   if (e.request.method !== "GET" || u.origin !== self.location.origin) return;
-  // The Ops surface and the MemberSpark sign-in road are fenced
-  // from this cache by construction (issue #32): the worker
-  // never answers for them and never stores their answers, so
-  // no signed-in face can be served to another request.
+  // The Ops surface, the MemberSpark sign-in road and the
+  // operator door are fenced from this cache by construction
+  // (issues #32 and #55): the worker never answers for them
+  // and never stores their answers, so no signed-in face can
+  // be served to another request.
   if (u.pathname === "/ops" || u.pathname.startsWith("/ops/") ||
-      u.pathname === "/ops-signout" || u.pathname.startsWith("/auth/memberspark/")) return;
+      u.pathname === "/ops-signout" || u.pathname.startsWith("/auth/memberspark/") ||
+      u.pathname.startsWith("/operator/")) return;
   e.respondWith(
     caches.match(e.request).then((hit) => {
       if (hit) return hit;
